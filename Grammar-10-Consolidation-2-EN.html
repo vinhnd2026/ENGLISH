@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 10 — Consolidation 2 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-10-Consolidation-2.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-10-Consolidation-2-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 10 — Consolidation 2</h1>
+  <p>Indirect speech · Conditionals · Wish · Passives</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+
+<div class="card">
+  <h2>🔄 Quick review — The four grammar areas in this unit</h2>
+  <p>This consolidation unit brings together the four areas you have just studied: indirect speech, conditionals, <i>wish</i> and the passive. Read through the summaries below, then do the exercises to check yourself.</p>
+
+  <h3>a) Indirect speech (Reported speech)</h3>
+  <p>When we report what someone said with a verb in the past tense (<i>said, told, asked</i>…), we usually <b>move the tense one step back</b>, and change pronouns and time/place expressions to fit the person reporting. Yes/No questions use <i>if/whether</i>; questions with a question word keep the question word, and both types use <b>statement word order</b> (no inversion). Advice, reminders and orders are often reported with <i>advise / remind / tell / ask + object + to V</i>; accusing someone uses <i>accuse somebody of + V-ing</i>.</p>
+  <div class="ex"><div class="en">He said, 'I am busy.' → He said (that) he was busy.</div><div class="vi">(am → was: the tense moves one step back.)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">'Did you see anything?' → They asked me if I had seen anything.</div><div class="vi">(A Yes/No question uses if, with statement word order.)</div><div class="tts"></div></div>
+
+  <h3>b) Conditionals</h3>
+  <div class="formula">Type 2: If + Past Simple, S + would + V &nbsp;·&nbsp; Type 3: If + Past Perfect, S + would have + V₃</div>
+  <p>Type 2 talks about things that are <b>not true in the present</b>; type 3 talks about things that <b>did not happen in the past</b>. <i>Unless</i> has an equivalent meaning to <i>if … not</i>.</p>
+  <div class="ex"><div class="en">If the weather hadn't been so bad, I would have ridden my bike.</div><div class="vi">(A type 3 conditional.)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">We won't go out unless the weather is good.</div><div class="vi">(unless = if … not)</div><div class="tts"></div></div>
+
+  <h3>c) Wish · It's time · I'd rather</h3>
+  <div class="formula">wish + Past Simple (present) · wish + Past Perfect (past) · wish + would (wanting a change) · It's time + S + Past Simple · I'd rather + S + Past Simple</div>
+  <p><i>Wish</i> expresses something contrary to the facts, or a regret. After <i>It's (high) time</i> and after <i>I'd rather</i> (talking about someone else's actions) we use the past simple even though the meaning is present.</p>
+  <div class="ex"><div class="en">I wish I had known about that.</div><div class="vi">(wish + Past Perfect: regretting something in the past.)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">It's time we went home. I'd rather you didn't open the window.</div><div class="tts"></div></div>
+
+  <h3>d) Passives</h3>
+  <div class="formula">be + V₃ &nbsp;·&nbsp; It is said that … ↔ S is said to V / to have V₃ &nbsp;·&nbsp; have/get + O + V₃</div>
+  <p>The passive is used when the action is more important than the person who does it, or when that person is unknown or need not be named. With reporting verbs (<i>say, think, believe</i>…) there are two parallel structures. The <i>have something done</i> structure is used when we arrange for someone to do a job (or when someone does something to us).</p>
+  <div class="ex"><div class="en">My bike had been stolen. The thieves are thought to have put the bikes in a van.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">We had our house painted last month.</div><div class="vi">(have something done)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>Indirect speech:</b> move the tense back when the reporting verb is in the past; Yes/No questions use <i>if/whether</i>, question-word questions keep the question word — both use statement word order.</li>
+    <li><b>advise / remind / tell / ask + object + to V</b> report advice, reminders and orders; <b>accuse somebody of + V-ing</b> makes an accusation; notice the difference between <i>say (that)…</i> and <i>tell somebody (that)…</i>.</li>
+    <li><b>Type 3 conditionals</b> are for things not true in the past: <i>If + Past Perfect, would have + V₃</i>; <i>unless</i> = <i>if … not</i>.</li>
+    <li><b>wish + Past Perfect</b> regrets a past event; <b>wish + would</b> complains or wants a change; <b>It's time + Past Simple</b>; <b>I'd rather + S + Past Simple</b>.</li>
+    <li><b>Reporting passives:</b> <i>It is thought that…</i> ↔ <i>S is thought to have + V₃</i> when the event happened earlier; <b>have/get + O + V₃</b> for jobs done by someone else.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Rewrite the sentences (using the word given)</h2>
+  <p>Complete the second sentence so that it has the same meaning as the first sentence, using the word given (do not change the form of the word given). You must use <b>between two and five words</b>, including the word given. Sentence a) is given as an example — here, answer all 10 sentences.</p>
+  <div class="q"><p>a) Please don't open the window. <i>(you)</i><br>I'd <input class="blank" data-answers="rather you didn't" data-display="rather you didn't"> open the window.</p></div>
+  <div class="q"><p>b) Fiona wanted to know the time. <i>(what)</i><br>Fiona wanted to know <input class="blank" data-answers="what the time|what time it" data-display="what the time"> was.</p></div>
+  <div class="q"><p>c) We won't go out if the weather is bad. <i>(won't)</i><br>We <input class="blank" data-answers="won't go out unless|will not go out unless" data-display="won't go out unless"> the weather is good.</p></div>
+  <div class="q"><p>d) I would like you to be here! <i>(wish)</i><br>I <input class="blank" data-answers="wish you were" data-display="wish you were"> here.</p></div>
+  <div class="q"><p>e) Catherine refused to let me go. <i>(couldn't)</i><br>Catherine <input class="blank" data-answers="said I couldn't|said that I couldn't|said I could not|said that I could not" data-display="said (that) I couldn't"> go.</p></div>
+  <div class="q"><p>f) If I were you, I'd try to get some sleep. <i>(advise)</i><br>I <input class="blank" data-answers="advise you" data-display="advise you"> to try to get some sleep.</p></div>
+  <div class="q"><p>g) What a pity we didn't see the match. <i>(wish)</i><br>I <input class="blank" data-answers="wish we had seen" data-display="wish we had seen"> the match.</p></div>
+  <div class="q"><p>h) The old man introduced himself. <i>(us)</i><br>The old man <input class="blank" data-answers="told us his" data-display="told us his"> name.</p></div>
+  <div class="q"><p>i) David told me the time of the next train. <i>(what)</i><br>David told <input class="blank" data-answers="me what time the next" data-display="me what time the next"> train left.</p></div>
+  <div class="q"><p>j) The police inspector said I had killed Mrs Burns. <i>(of)</i><br>The police inspector <input class="blank" data-answers="accused me of" data-display="accused me of"> killing Mrs Burns.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Exercise 2 — Multiple choice: The stolen bike</h2>
+  <p>Read the text and choose the answer (A, B, C or D) which best fits each space.</p>
+  <p>One morning last week I realised that my bike <b>(1)</b> ______ stolen from my garden. I phoned the police and two officers called at my house the next day. They <b>(2)</b> ______ me if I had seen or heard anything. I told <b>(3)</b> ______ I had been out that evening, and hadn't noticed anything suspicious when I came home. 'If I had seen anything, I <b>(4)</b> ______ you,' I replied. 'It was raining hard too. If the weather <b>(5)</b> ______ so bad, I would have ridden my bike.' The officers told me that lots of people <b>(6)</b> ______ their bikes stolen lately. 'The thieves <b>(7)</b> ______ to have put the bikes in a van,' said one of the officers. 'I <b>(8)</b> ______ I had known about that,' I said. 'I saw a black van that evening. In fact, it <b>(9)</b> ______ opposite my house.' The officers asked me what the van's number <b>(10)</b> ______, but I couldn't remember. '<b>(11)</b> ______ you saw the van again, <b>(12)</b> ______ you recognise it?' one of them asked. 'It <b>(13)</b> ______ painting. I remember that,' I replied. However, there was a happy ending to this story. After the officers had left, I <b>(14)</b> ______ by a friend of mine. 'By the way,' she said, '<b>(15)</b> ______ you want your bike, I'll bring it back this afternoon. I borrowed it a couple of days ago.'</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>(1) my bike ______ stolen</p><div class="opts"><button type="button">had</button><button type="button">had been</button><button type="button">had had itself</button><button type="button">had not</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(2) They ______ me if I had seen anything</p><div class="opts"><button type="button">reminded</button><button type="button">questioned</button><button type="button">told</button><button type="button">asked</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(3) I told ______ I had been out</p><div class="opts"><button type="button">them</button><button type="button">that</button><button type="button">if</button><button type="button">later</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(4) If I had seen anything, I ______ you</p><div class="opts"><button type="button">called</button><button type="button">would</button><button type="button">had called</button><button type="button">would have called</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(5) If the weather ______ so bad</p><div class="opts"><button type="button">wasn't</button><button type="button">wouldn't be</button><button type="button">hadn't been</button><button type="button">wouldn't have been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(6) lots of people ______ their bikes stolen lately</p><div class="opts"><button type="button">had</button><button type="button">had had</button><button type="button">had to have</button><button type="button">hadn't</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(7) The thieves ______ to have put the bikes in a van</p><div class="opts"><button type="button">think</button><button type="button">are thought</button><button type="button">have thought</button><button type="button">are thinking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(8) I ______ I had known about that</p><div class="opts"><button type="button">would</button><button type="button">realise</button><button type="button">wish</button><button type="button">thought</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(9) it ______ opposite my house</p><div class="opts"><button type="button">was parked</button><button type="button">had parking</button><button type="button">is parked</button><button type="button">has parked</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(10) what the van's number ______</p><div class="opts"><button type="button">is</button><button type="button">was</button><button type="button">had</button><button type="button">wrote</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(11) ______ you saw the van again</p><div class="opts"><button type="button">If</button><button type="button">When</button><button type="button">Remember</button><button type="button">Suppose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(12) ______ you recognise it?</p><div class="opts"><button type="button">do</button><button type="button">can</button><button type="button">would</button><button type="button">if</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(13) It ______ painting</p><div class="opts"><button type="button">needed</button><button type="button">had been</button><button type="button">looked like</button><button type="button">seemed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(14) I ______ by a friend of mine</p><div class="opts"><button type="button">called up</button><button type="button">was phoned</button><button type="button">had a phone call</button><button type="button">heard some news</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(15) ______ you want your bike, I'll bring it back</p><div class="opts"><button type="button">unless</button><button type="button">if only</button><button type="button">if</button><button type="button">as long as</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 2: <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Rewrite the sentences (using the word given)</h2>
+  <p>Complete the second sentence so that it has the same meaning as the first sentence, using the word given (do not change the form of the word given). You must use <b>between two and five words</b>, including the word given. Sentence a) is given as an example — here, answer all 10 sentences.</p>
+  <div class="q"><p>a) Excuse me, is somebody serving you, sir? <i>(being)</i><br>Excuse me, <input class="blank" data-answers="are you being served" data-display="are you being served">, sir?</p></div>
+  <div class="q"><p>b) I think we should go home. <i>(went)</i><br>It's <input class="blank" data-answers="time we went" data-display="time we went"> home.</p></div>
+  <div class="q"><p>c) The painters painted our house last month. <i>(had)</i><br>We <input class="blank" data-answers="had our house painted" data-display="had our house painted"> last month.</p></div>
+  <div class="q"><p>d) It's a pity that Charles always complains so much. <i>(wouldn't)</i><br>I <input class="blank" data-answers="wish Charles wouldn't complain|wish Charles would not complain" data-display="wish Charles wouldn't complain"> so much.</p></div>
+  <div class="q"><p>e) Someone will meet you at the airport. <i>(be)</i><br>You <input class="blank" data-answers="will be met" data-display="will be met"> at the airport.</p></div>
+  <div class="q"><p>f) People think that train-robber Dave Briggs has escaped. <i>(have)</i><br>Train-robber Dave Briggs <input class="blank" data-answers="is thought to have" data-display="is thought to have"> escaped.</p></div>
+  <div class="q"><p>g) 'Don't forget to buy some bread, Mum,' said Pauline. <i>(reminded)</i><br>Pauline <input class="blank" data-answers="reminded her Mum to" data-display="reminded her Mum to"> buy some bread.</p></div>
+  <div class="q"><p>h) Have you received your salary yet? <i>(been)</i><br>Have <input class="blank" data-answers="you been paid" data-display="you been paid"> yet?</p></div>
+  <div class="q"><p>i) I think I'll manage to finish the letters by 4.00. <i>(get)</i><br>I think I'll <input class="blank" data-answers="get the letters finished" data-display="get the letters finished"> by 4.00.</p></div>
+  <div class="q"><p>j) My parents made me study every night. <i>(was)</i><br>I <input class="blank" data-answers="was made to study" data-display="was made to study"> every night by my parents.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Verb forms: A friend in the rain</h2>
+  <p>Fill in a suitable form for each verb in brackets. Blank (1) <i>was walking</i> is given as an example — here, fill in all 20 blanks.</p>
+  <div class="q"><p>Last week I (1) <input class="blank" data-answers="was walking" data-display="was walking"> (walk) home after playing tennis when it (2) <input class="blank" data-answers="started" data-display="started"> (start) raining very heavily. 'Oh no, I (3) <input class="blank" data-answers="will get" data-display="will get"> (get) soaked before I (4) <input class="blank" data-answers="reach" data-display="reach"> (reach) home,' I thought. 'I wish I (5) <input class="blank" data-answers="had remembered" data-display="had remembered"> (remember) to bring my raincoat.' But unfortunately I (6) <input class="blank" data-answers="had left" data-display="had left"> (leave) it at home. How stupid of me! I (7) <input class="blank" data-answers="am always forgetting|always forget" data-display="am always forgetting / always forget"> (always forget) to bring it with me. Luckily just then a friend of mine passed in her car and offered me a lift. '(8) <input class="blank" data-answers="Are you going" data-display="Are you going"> (you go) home?' she asked, 'or (9) <input class="blank" data-answers="do you want" data-display="do you want"> (you want) to go for a drink?' 'I think I'd rather you (10) <input class="blank" data-answers="took" data-display="took"> (take) me home,' I said. 'If I (11) <input class="blank" data-answers="don't change|do not change" data-display="don't change"> (not change) my clothes, I know I (12) <input class="blank" data-answers="will fall" data-display="will fall"> (fall) ill, and then I (13) <input class="blank" data-answers="won't be able|will not be able" data-display="won't be able"> (not be able) to play in the tennis tournament next week. And I (14) <input class="blank" data-answers="have been practising|have been practicing" data-display="have been practising"> (practise) hard for the last month.' 'I (15) <input class="blank" data-answers="will wait" data-display="will wait"> (wait) for you to change if you (16) <input class="blank" data-answers="like" data-display="like"> (like),' she told me. 'I think it's time you (17) <input class="blank" data-answers="relaxed" data-display="relaxed"> (relax) for a change. You (18) <input class="blank" data-answers="have been worrying" data-display="have been worrying"> (worry) too much about things lately. And people who (19) <input class="blank" data-answers="worry" data-display="worry"> (worry) too much (20) <input class="blank" data-answers="fall" data-display="fall"> (fall) ill more easily. It's got nothing to do with the rain!'</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Verb forms: The facts about sugar</h2>
+  <p>Fill in a suitable form for each verb in brackets — this text is mostly in the passive. Blank (1) <i>is extracted</i> is given as an example — here, fill in all 20 blanks.</p>
+  <div class="q"><p>Packet sugar from the supermarket (1) <input class="blank" data-answers="is extracted" data-display="is extracted"> (extract) from either sugar cane or sugar beet. These products (2) <input class="blank" data-answers="are mixed" data-display="are mixed"> (mix) with hot water, which (3) <input class="blank" data-answers="dissolves" data-display="dissolves"> (dissolve) their natural sugar. Sugar (4) <input class="blank" data-answers="is also found" data-display="is also found"> (also find) in fruit some of which, such as dates and grapes, (5) <input class="blank" data-answers="contain" data-display="contain"> (contain) very high amounts of sugar. To be a little more specific, sugar should (6) <input class="blank" data-answers="be called" data-display="be called"> (call) sucrose. Sucrose (7) <input class="blank" data-answers="is made up" data-display="is made up"> (make up) of two substances: glucose, which (8) <input class="blank" data-answers="is used" data-display="is used"> (use) for instant energy, and fructose, which (9) <input class="blank" data-answers="lasts" data-display="lasts"> (last) longer as a source of energy. The sugar in fruit is mainly fructose. So when we (10) <input class="blank" data-answers="eat" data-display="eat"> (eat) fruit, we (11) <input class="blank" data-answers="also eat|are also eating" data-display="also eat / are also eating"> (also eat) quite large amounts of natural sugar. Some scientists (12) <input class="blank" data-answers="believe" data-display="believe"> (believe) that too much sugar (13) <input class="blank" data-answers="is eaten" data-display="is eaten"> (eat) in sweets, cake and biscuits. It (14) <input class="blank" data-answers="is said" data-display="is said"> (say) to be generally bad for the health, although nothing (15) <input class="blank" data-answers="has been definitely proved|has definitely been proved" data-display="has been definitely proved"> (definitely prove) so far. However, it (16) <input class="blank" data-answers="is known" data-display="is known"> (be known) that sugar (17) <input class="blank" data-answers="causes" data-display="causes"> (cause) tooth decay. As one expert put it: 'If other foods (18) <input class="blank" data-answers="damaged" data-display="damaged"> (damage) our body as much as sugar (19) <input class="blank" data-answers="damages" data-display="damages"> (damage) our teeth, they (20) <input class="blank" data-answers="would be banned" data-display="would be banned"> (ban) immediately.'</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Find the extra word in each line</h2>
+  <p>Read each line of the letter carefully. Some lines are <b>completely correct</b>, and some lines have <b>one extra word</b> that should not be there. If the line is correct, type <b>✓</b> (or the word <i>ok</i>). If there is an extra word, type that extra word. The first two lines are given as examples: line 1 is correct (✓), line 2 has the extra word <i>was</i>.</p>
+  <p class="small"><b>A holiday in Scotland</b> — Examples: “Some friends of mine decided to go on holiday” → ✓ · “to Scotland. They asked me if I was wanted to go” → <i>was</i></p>
+  <div class="q"><p>1) too, but I had already arranged to go to Italy. <input class="blank" data-answers="✓|ok" data-display="✓"></p></div>
+  <div class="q"><p>2) I told them so that I had been to Scotland before, <input class="blank" data-answers="so" data-display="so"></p></div>
+  <div class="q"><p>3) so they asked me to give them some ideas. <input class="blank" data-answers="✓|ok" data-display="✓"></p></div>
+  <div class="q"><p>4) I advised them to take up warm clothes and <input class="blank" data-answers="up" data-display="up"></p></div>
+  <div class="q"><p>5) raincoats. 'If I were like you, I'd always carry <input class="blank" data-answers="like" data-display="like"></p></div>
+  <div class="q"><p>6) umbrellas!' I told them. 'I doubt that whether <input class="blank" data-answers="that" data-display="that"></p></div>
+  <div class="q"><p>7) you'll have any sunny days.' I didn't see <input class="blank" data-answers="✓|ok" data-display="✓"></p></div>
+  <div class="q"><p>8) them again until was after their holiday. They <input class="blank" data-answers="was" data-display="was"></p></div>
+  <div class="q"><p>9) were all very sun-tanned, and they told to me <input class="blank" data-answers="to" data-display="to"></p></div>
+  <div class="q"><p>10) that they had had very hot weather. <input class="blank" data-answers="✓|ok" data-display="✓"></p></div>
+  <div class="q"><p>11) 'If we had been taken your advice, we would <input class="blank" data-answers="been" data-display="been"></p></div>
+  <div class="q"><p>12) have made a terrible mistake,' they said me. <input class="blank" data-answers="me" data-display="me"></p></div>
+  <div class="q"><p>13) 'Luckily we were told us before we <input class="blank" data-answers="us" data-display="us"></p></div>
+  <div class="q"><p>14) left that it was very hot in Scotland. <input class="blank" data-answers="✓|ok" data-display="✓"></p></div>
+  <div class="q"><p>15) It is said to they have been the hottest summer ever! <input class="blank" data-answers="they" data-display="they"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>90</b> (Exercise 1: 10 · Exercise 2: 15 · Exercise 3: 10 · Exercise 4: 20 blanks · Exercise 5: 20 blanks · Exercise 6: 15 lines).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
