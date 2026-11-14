@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 20 — Consolidation 4 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-20-Consolidation-4.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-20-Consolidation-4-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 20 — Consolidation 4</h1>
+  <p>Review: Modal verbs in the present, future and past · Functions</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>🔁 Review — What this unit covers</h2>
+  <p>This consolidation unit has no new grammar. It brings together three areas: <b>modal verbs in the present and future</b>, <b>modal verbs in the past</b>, and <b>functions</b> (inviting, requesting, asking permission, asking the way, and so on).</p>
+  <h3>a) Modal verbs — present and future</h3>
+  <div class="formula">must / mustn't · don't have to · can / could · may / might · should / ought to · have to · be able to · be bound to</div>
+  <p><i>must</i> expresses certainty (deduction) or obligation; <i>mustn't</i> is prohibition; <i>don't have to</i> means something is not necessary. <i>may / might</i> express possibility. <i>should / ought to</i> give advice or obligation. <i>be able to</i> completes <i>can</i> in other tenses. <i>be bound to</i> means something is certain to happen.</p>
+  <h3>b) Modal verbs — past</h3>
+  <div class="formula">must have + past participle · can't have + past participle · might/could have + past participle · should have + past participle · needn't have + past participle</div>
+  <p><i>must have</i> = certainly did; <i>can't have</i> = certainly did not; <i>might/could have</i> = possibly did; <i>should have</i> = it was the right thing to do, but it was not done; <i>needn't have</i> = it was done but was not necessary — different from <i>didn't need to</i> (not necessary, and not done).</p>
+  <h3>c) Functions</h3>
+  <div class="formula">Would you like…? · Could you… please? · Is it all right if I…? · Could you tell me the way to…?</div>
+  <p>Inviting and offering: <i>Would you like…?</i>; polite requests: <i>Could you… please?</i>; asking permission: <i>Is it all right if I…?</i>; asking the way: <i>Could you tell me the way to…?</i>; asking for advice: <i>What do you think I should do?</i></p>
+
+  <div class="ex"><div class="en">I should have taken a taxi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You needn't have come early today.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Could you tell me the way to the station, please?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Would you like some tea?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jack can't have left home yet.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jean's plane might have been delayed.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You must be thirsty.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm bound to get lost.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>Deduction about the past: <b>must have + past participle</b> = certainly did; <b>can't have + past participle</b> = certainly did not; <b>might/could have + past participle</b> = possibly did.</li>
+    <li><b>should have / ought to have + past participle</b> = it was right to do it, but it was not done; <b>needn't have + past participle</b> = it was done but was not necessary.</li>
+    <li><b>must</b> (obligation / certainty) ≠ <b>don't have to</b> (not necessary) ≠ <b>mustn't</b> (prohibited).</li>
+    <li>Polite functions: invite with <i>Would you like…?</i>, request with <i>Could you… please?</i>, ask permission with <i>Is it all right if I…?</i></li>
+    <li>Use <b>be able to</b> where <i>can</i> has no form (will be able to, was able to); <b>be bound to</b> = certain to happen.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Put one suitable word in each space: Asking for directions</h2>
+  <p>Put <b>one word only</b> in each space. Space (1) <i>had</i> is the worked example — here all 15 spaces are graded.</p>
+  <p>Have you ever tried asking people for directions? I (1) <input class="blank" data-answers="had" data-display="had"> to go to London on business recently, and I soon realised that I (2) <input class="blank" data-answers="should" data-display="should"> have bought a street map. Whenever I followed the directions of passers-by I got lost. 'You can't (3) <input class="blank" data-answers="miss" data-display="miss"> it,' they would say. 'Carry straight (4) <input class="blank" data-answers="on" data-display="on">, it's opposite the bank.'</p>
+  <p>After walking for half an hour, I would realise that I (5) <input class="blank" data-answers="must" data-display="must"> have gone wrong somewhere. '(6) <input class="blank" data-answers="can|could" data-display="Can/Could"> you tell me where the bank (7) <input class="blank" data-answers="is" data-display="is">, please?' I would ask someone. I (8) <input class="blank" data-answers="ought" data-display="ought"> to have known that this was a mistake.</p>
+  <p>'Which bank do you mean? I think you (9) <input class="blank" data-answers="should" data-display="should"> go back to the station ...' I now see that I (10) <input class="blank" data-answers="should" data-display="should"> have taken a taxi. After all, London taxi drivers (11) <input class="blank" data-answers="have" data-display="have"> to pass a test on their knowledge of its streets. But of course, whenever I thought of this, I (12) <input class="blank" data-answers="could" data-display="could"> not find a taxi.</p>
+  <p>In the end I found a solution. I went up to the first tourists I saw and asked if I (13) <input class="blank" data-answers="could" data-display="could"> look at their tourist map. They turned out to be from Scotland, and they (14) <input class="blank" data-answers="gave" data-display="gave"> me very detailed instructions. The only problem was that I was not (15) <input class="blank" data-answers="able" data-display="able"> to understand exactly what they said.</p>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Complete the second sentence so it means the same as the first, using the word given</h2>
+  <p>Use the word given (do not change it) and write <b>between two and five words</b> in each space. Item a) is the worked example — here all 8 items are graded.</p>
+  <div class="q"><p>a) I'm sorry I broke your keyboard. <i>(apologise)</i><br>→ I do <input class="blank" data-answers="apologise for breaking" data-display="apologise for breaking"> your keyboard.</p></div>
+  <div class="q"><p>b) Can you give me directions for the station? <i>(how)</i><br>→ Could you tell <input class="blank" data-answers="me how to get to" data-display="me how to get to"> the station?</p></div>
+  <div class="q"><p>c) You must be thirsty, so can I offer you some tea? <i>(like)</i><br>→ You must be thirsty, so <input class="blank" data-answers="would you like some" data-display="would you like some"> tea?</p></div>
+  <div class="q"><p>d) If I were you, I wouldn't buy a dog. <i>(should)</i><br>→ I don't <input class="blank" data-answers="think you should buy a" data-display="think you should buy a"> dog.</p></div>
+  <div class="q"><p>e) I'm sure that Jack hasn't left home yet. <i>(have)</i><br>→ Jack <input class="blank" data-answers="can't have left|cannot have left" data-display="can't have left"> home yet.</p></div>
+  <div class="q"><p>f) I suppose that this is Trafalgar Square. <i>(be)</i><br>→ This <input class="blank" data-answers="must be" data-display="must be"> Trafalgar Square.</p></div>
+  <div class="q"><p>g) Perhaps Jean's plane was delayed. <i>(been)</i><br>→ Jean's plane <input class="blank" data-answers="might have been|could have been" data-display="might/could have been"> delayed.</p></div>
+  <div class="q"><p>h) It was unnecessary for you to come early today. <i>(have)</i><br>→ You <input class="blank" data-answers="needn't have" data-display="needn't have"> come early today.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Find the extra word in each line: Putting up a friend</h2>
+  <p>Look carefully at each line of the letter. Some lines are correct and some have <b>one word which should not be there</b>. Type the extra word; if the line is correct, type <b>✓</b>. The first two lines are the worked examples (✓ and <i>to</i>) — here all 17 lines are graded.</p><p><i>Putting up a friend</i><br>Dear Brenda,</p>
+  <div class="q"><p>mẫu 1) Thanks for replying so quickly to my last letter. <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>mẫu 2) You must to have been surprised when you received <input class="blank" data-answers="to" data-display="to"></p></div>
+  <div class="q"><p>1) a letter from me. I'm glad you will be able <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>2) to have put me up when I come to London. <input class="blank" data-answers="have" data-display="have"></p></div>
+  <div class="q"><p>3) Could you be possibly give me some directions <input class="blank" data-answers="be" data-display="be"></p></div>
+  <div class="q"><p>4) for your flat? I'm bound to get lost. Do I <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>5) have to take a taxi from the station, or is it <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>6) near enough to walk? Perhaps if I should buy <input class="blank" data-answers="if" data-display="if"></p></div>
+  <div class="q"><p>7) a street map of Birmingham when I am arrive. And <input class="blank" data-answers="am" data-display="am"></p></div>
+  <div class="q"><p>8) is it all right if I can bring my little brother, Tim? <input class="blank" data-answers="can" data-display="can"></p></div>
+  <div class="q"><p>9) By the way, congratulations on your new job. <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>10) You must not be very happy. Do you think that <input class="blank" data-answers="not" data-display="not"></p></div>
+  <div class="q"><p>11) you made the right decision, though? I think <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>12) you should or have gone to university like me. <input class="blank" data-answers="or" data-display="or"></p></div>
+  <div class="q"><p>13) I'm sure that you would have been enjoyed it. I <input class="blank" data-answers="been" data-display="been"></p></div>
+  <div class="q"><p>14) have done to study a lot, but with any luck I should <input class="blank" data-answers="done" data-display="done"></p></div>
+  <div class="q"><p>15) get a good job when I finish. I'd be better post <input class="blank" data-answers="be" data-display="be"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <p class="small">…this letter now.<br>Best wishes,<br>Sheila</p>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/17</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>Exercise 4 — Choose the most suitable expression for each situation</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) You want to invite someone you have just met to go to the theatre with you.</p><div class="opts"><button type="button">May I go to the theatre?</button><button type="button">Would you like to come to the theatre?</button><button type="button">Do you think you should go to the theatre?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) You are recommending a new restaurant to a friend.</p><div class="opts"><button type="button">You really must try the new Italian restaurant in Green Street.</button><button type="button">You had better try the new Italian restaurant in Green Street.</button><button type="button">You would try the new Italian restaurant in Green Street.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) Your boss suggests that you work overtime on Saturday but you don't want to.</p><div class="opts"><button type="button">You must be joking!</button><button type="button">It's nice of you to ask, but I refuse.</button><button type="button">Sorry, but I have something already arranged.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) You want to ask the waiter to bring you another drink.</p><div class="opts"><button type="button">I'd like another beer, please.</button><button type="button">Excuse me, but do you think I could take another beer?</button><button type="button">You can bring me a beer if you like.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) You want someone to move out of the way.</p><div class="opts"><button type="button">Look out!</button><button type="button">Excuse me!</button><button type="button">Pardon!</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) You greet a friend you haven't seen for a few weeks.</p><div class="opts"><button type="button">Hello Pauline, how do you do?</button><button type="button">Hello Pauline, what's going on?</button><button type="button">Hello Pauline, how are you?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) You are sitting on a bus and want the person in front of you to shut the window.</p><div class="opts"><button type="button">Could you shut the window, please?</button><button type="button">May I shut the window, please?</button><button type="button">Do you want to shut the window, please?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) You want to know how to get to the station, and you ask a stranger.</p><div class="opts"><button type="button">Tell me, where is the station?</button><button type="button">Do you mind telling me where the station is?</button><button type="button">Could you tell me the way to the station, please?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) You want some advice from a friend.</p><div class="opts"><button type="button">What do you think I should do?</button><button type="button">Tell me what I must do.</button><button type="button">What could you do if you were me?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) You ask your boss for permission to leave work early.</p><div class="opts"><button type="button">Do you mind leaving early?</button><button type="button">Is it all right if I go now?</button><button type="button">I'm off now, bye!</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 4: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Exercise 5 — Decide which answer best fits each space: The lost property office</h2>
+  <p>Read the whole text, then choose the answer for each space below. Space (1), <i>C that</i>, is the worked example — here all 15 spaces are graded.</p><p><i>The lost property office</i><br>Recently I read a magazine article about the things (1) ______ people lose when they travel on the London Underground. I (2) ______ believe it at first. (3) ______ you are a violinist, and when you (4) ______ off at your station, you leave your violin (5) ______ the train. It seems strange that nobody says, '(6) ______ me, but I think you have forgotten something.' I suppose the violinist (7) ______ have been thinking of something else, and there might (8) ______ have been any other (9) ______ on the train. Still, why didn't the violinist go (10) ______ the lost property office? All the lost property on the underground system (11) ______ to be sent to this office, so if you lose anything you (12) ______ easily get it back. In this case, the violinist must have (13) ______ very absent minded. Perhaps he or she didn't (14) ______ to play the violin ever again after this journey. Or perhaps they were just too embarrassed (15) ______ go to the office.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>1) …about the things ______ people lose when they travel…</p><div class="opts"><button type="button">A who</button><button type="button">B whose</button><button type="button">C that</button><button type="button">D a</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>2) I ______ believe it at first.</p><div class="opts"><button type="button">A wasn't</button><button type="button">B haven't</button><button type="button">C shouldn't</button><button type="button">D couldn't</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>3) ______ you are a violinist, and when you get off at your station…</p><div class="opts"><button type="button">A If</button><button type="button">B Suppose</button><button type="button">C Why</button><button type="button">D Sometimes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>4) …and when you ______ off at your station, you leave your violin on the train.</p><div class="opts"><button type="button">A get</button><button type="button">B go</button><button type="button">C fall</button><button type="button">D are</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>5) …you leave your violin ______ the train.</p><div class="opts"><button type="button">A at</button><button type="button">B for</button><button type="button">C on</button><button type="button">D by</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>6) '______ me, but I think you have forgotten something.'</p><div class="opts"><button type="button">A Help</button><button type="button">B it's</button><button type="button">C Excuse</button><button type="button">D Correct</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>7) I suppose the violinist ______ have been thinking of something else…</p><div class="opts"><button type="button">A who</button><button type="button">B might</button><button type="button">C should</button><button type="button">D to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>8) …and there might ______ have been any other passengers on the train.</p><div class="opts"><button type="button">A not</button><button type="button">B then</button><button type="button">C often</button><button type="button">D so</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>9) …any other ______ on the train.</p><div class="opts"><button type="button">A pedestrians</button><button type="button">B customers</button><button type="button">C audience</button><button type="button">D passengers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>10) …why didn't the violinist go ______ the lost property office?</p><div class="opts"><button type="button">A in</button><button type="button">B at</button><button type="button">C to</button><button type="button">D for</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>11) All the lost property on the underground system ______ to be sent to this office…</p><div class="opts"><button type="button">A should</button><button type="button">B must</button><button type="button">C needs</button><button type="button">D has</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>12) …so if you lose anything you ______ easily get it back.</p><div class="opts"><button type="button">A can</button><button type="button">B can't</button><button type="button">C don't</button><button type="button">D are</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>13) In this case, the violinist must have ______ very absent minded.</p><div class="opts"><button type="button">A been</button><button type="button">B or</button><button type="button">C had</button><button type="button">D because</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>14) Perhaps he or she didn't ______ to play the violin ever again after this journey.</p><div class="opts"><button type="button">A know</button><button type="button">B like</button><button type="button">C have</button><button type="button">D used</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>15) Or perhaps they were just too embarrassed ______ go to the office.</p><div class="opts"><button type="button">A and</button><button type="button">B to</button><button type="button">C must</button><button type="button">D so</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 5: <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>65</b> (Exercise 1: 15 spaces · Exercise 2: 8 sentences · Exercise 3: 17 lines · Exercise 4: 10 · Exercise 5: 15 spaces).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

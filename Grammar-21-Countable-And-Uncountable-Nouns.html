@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 21 — Countable and Uncountable Nouns</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-21-Countable-And-Uncountable-Nouns-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Grammar-21-Countable-And-Uncountable-Nouns-EN.html">🇬🇧 English</a>
+  <h1>Grammar 21 — Countable and Uncountable Nouns</h1>
+  <p>Danh từ đếm được và không đếm được: Countable nouns · Uncountable nouns · Danh từ chỉ có dạng số nhiều · Danh từ tập thể</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Danh từ đếm được và không đếm được — Khái niệm cơ bản</h2>
+  <h3>a) Danh từ đếm được (Countable nouns)</h3>
+  <div class="formula">có dạng số ít và số nhiều · dùng được với số đếm: a shirt, shirts, some shirts, four shirts</div>
+  <p>Danh từ đếm được có dạng số ít và số nhiều; động từ đi kèm có thể ở số ít hoặc số nhiều, và ta có thể đếm bằng số.</p>
+  <div class="ex"><div class="en">Where is my shirt?</div><div class="vi">Áo sơ mi của tôi đâu?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Where are my shirts?</div><div class="vi">Mấy cái áo sơ mi của tôi đâu?</div><div class="tts"></div></div>
+  <h3>b) Danh từ không đếm được (Uncountable nouns)</h3>
+  <div class="formula">chỉ có một dạng · động từ luôn số ít · không dùng với số đếm và không có a/an trực tiếp</div>
+  <p>Danh từ không đếm được chỉ có một dạng, luôn đi với động từ số ít và không đếm trực tiếp bằng số được. Ta chỉ đếm gián tiếp qua cụm như <i>a piece of, a bit of</i>.</p>
+  <div class="ex"><div class="en">Here is some advice for you.</div><div class="vi">Đây là vài lời khuyên cho bạn.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">When I left home my mother gave me two useful bits of advice.</div><div class="vi">Khi tôi rời nhà, mẹ cho tôi hai lời khuyên hữu ích.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've found out several interesting pieces of information.</div><div class="vi">Tôi đã tìm ra vài thông tin thú vị.</div><div class="tts"></div></div>
+  <p>Một số danh từ không đếm được kết thúc bằng <i>-s</i> nhưng vẫn theo quy tắc số ít:</p>
+  <div class="ex"><div class="en">The news is very bad today.</div><div class="vi">Tin tức hôm nay rất xấu.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Billiards is an interesting game.</div><div class="vi">Bi-a là một trò chơi thú vị.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Các danh từ không đếm được tiêu biểu</h2>
+  <p><b>Chất liệu/chất:</b> water, air, coffee, plastic, iron, paper &nbsp;·&nbsp; <b>Ý niệm trừu tượng:</b> life, fun, freedom, health, time, progress &nbsp;·&nbsp; <b>Hoạt động:</b> work, travel, sleep, football, help, research &nbsp;·&nbsp; <b>Cảm xúc:</b> happiness, anger, honesty, hope, respect, courage &nbsp;·&nbsp; <b>Nhóm đồ vật:</b> furniture, luggage</p>
+  <p>Đặc biệt lưu ý các từ <b>không đếm được trong tiếng Anh nhưng đếm được trong nhiều ngôn ngữ khác</b>: accommodation, advice, behaviour, business, cash, equipment, furniture, health, homework, information, knowledge, luggage, money, permission, rubbish, scenery, traffic, travel, weather, work.</p>
+</div>
+
+<div class="card">
+  <h2>3. Dùng như một loại (category) và đổi nghĩa</h2>
+  <p>Một số danh từ không đếm được có thể dùng theo cách đếm được khi chúng chỉ <b>một loại/một hạng mục</b>:</p>
+  <div class="ex"><div class="en">Would you like some fruit after your coffee?</div><div class="vi">Bạn có muốn ăn ít trái cây sau cà phê không?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There are two main fruits exported from Madeira, bananas and pineapples.</div><div class="vi">Có hai loại trái cây chính được xuất khẩu từ Madeira: chuối và dứa.</div><div class="tts"></div></div>
+  <p>Một số từ <b>đổi nghĩa</b> tùy theo dùng đếm được hay không đếm được:</p>
+  <ul>
+    <li><i>an iron</i> (bàn là) ↔ <i>some iron</i> (sắt, chất liệu); <i>a wood</i> (rừng nhỏ) ↔ <i>some wood</i> (gỗ); <i>a paper</i> (tờ báo) ↔ <i>some paper</i> (giấy); <i>a chicken</i> (con gà) ↔ <i>chicken</i> (thịt gà)</li>
+    <li><i>a coffee</i> = một tách cà phê ↔ <i>coffee</i> = cà phê (chất)</li>
+    <li><i>business</i> (việc kinh doanh nói chung) ↔ <i>a business</i> (một công ty); <i>gossip</i> (chuyện phiếm) ↔ <i>a gossip</i> (người hay ngồi lê); <i>hair</i> (tóc, cả đầu) ↔ <i>a hair</i> (một sợi tóc); <i>help</i> (sự giúp đỡ) ↔ <i>a help</i> (người/vật hữu ích); <i>toast</i> (bánh mì nướng) ↔ <i>a toast</i> (lời chúc rượu); <i>work</i> (công việc) ↔ <i>a work</i> (một tác phẩm)</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>4. Danh từ chỉ có dạng số nhiều và danh từ tập thể</h2>
+  <h3>a) Danh từ chỉ có dạng số nhiều (Plural nouns)</h3>
+  <div class="formula">trousers, stairs, clothes, contents, feelings, goods, jeans, means, outskirts, surroundings, thanks + động từ số nhiều</div>
+  <div class="ex"><div class="en">My trousers are too tight.</div><div class="vi">Quần của tôi chật quá.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The stairs are very steep.</div><div class="vi">Cầu thang rất dốc.</div><div class="tts"></div></div>
+  <h3>b) Danh từ tập thể (Group nouns)</h3>
+  <div class="formula">government, army, audience, class, company, crew, crowd, family, group, media, press, public, staff, team + động từ số ít hoặc số nhiều</div>
+  <p>Động từ số ít khi nghĩ về cả nhóm như một thể thống nhất; số nhiều khi nghĩ về từng thành viên. Riêng <i>cattle, police, people</i> chỉ đi với động từ số nhiều.</p>
+  <div class="ex"><div class="en">I think the government is/are wrong.</div><div class="vi">Tôi nghĩ chính phủ sai.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The police are arriving shortly.</div><div class="vi">Cảnh sát sắp đến.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li>Luôn tra từ điển để chắc chắn một danh từ là <b>đếm được hay không đếm được</b>.</li>
+    <li>Nghĩa của danh từ có thể <b>thay đổi</b> tùy theo dùng theo cách đếm được hay không đếm được (a paper = tờ báo; paper = giấy).</li>
+    <li>Một số danh từ kết thúc bằng <i>-s</i> vẫn dùng động từ <b>số ít</b>: <i>The news is bad today.</i></li>
+    <li>Một số danh từ chỉ có dạng <b>số nhiều</b> và dùng động từ số nhiều: <i>The police are arriving shortly.</i>, trousers, stairs, clothes.</li>
+    <li>Muốn đếm danh từ không đếm được, dùng cụm đếm gián tiếp: <i>a piece of advice/information, a slice of toast, a glass of milk</i>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Bài 1 — Chọn từ phù hợp nhất trong mỗi câu</h2>
+  <p class="small">Câu a) là câu mẫu đã làm sẵn (<i>weather</i>) — ở đây làm cả 8 câu.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Different countries have different ______.</p><div class="opts"><button type="button">weather</button><button type="button">weathers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) All areas of the skin are in fact covered in tiny ______.</p><div class="opts"><button type="button">hair</button><button type="button">hairs</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) We've looked at the menu and we'd all like ______.</p><div class="opts"><button type="button">chicken</button><button type="button">chickens</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Jack is a millionaire and owns a lot of ______.</p><div class="opts"><button type="button">business</button><button type="button">businesses</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Have you a copy of the complete ______ of Dante?</p><div class="opts"><button type="button">work</button><button type="button">works</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) None of the passengers had insured their ______.</p><div class="opts"><button type="button">baggage</button><button type="button">baggages</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Students must pass their ______ to the front.</p><div class="opts"><button type="button">paper</button><button type="button">papers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I'm afraid we can't find cheap ______ for all of you.</p><div class="opts"><button type="button">accommodation</button><button type="button">accommodations</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 1: <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Bài 2 — Hoàn thành mỗi câu bằng a / an / some hoặc bỏ trống</h2>
+  <p>Gõ <b>a</b>, <b>an</b> hoặc <b>some</b>; nếu chỗ trống phải để trống thì gõ <b>none</b>.</p>
+  <div class="q"><p>a) When the play ended, there was <input class="blank" data-answers="none" data-display="none"> lengthy applause.</p></div>
+  <div class="q"><p>b) I can't come out tonight. I have <input class="blank" data-answers="some|none" data-display="some"> homework to do.</p></div>
+  <div class="q"><p>c) Sue received <input class="blank" data-answers="an" data-display="an"> excellent education.</p></div>
+  <div class="q"><p>d) The inside is strengthened with <input class="blank" data-answers="a" data-display="a"> steel frame.</p></div>
+  <div class="q"><p>e) My friends bought me <input class="blank" data-answers="a" data-display="a"> coffee maker for my birthday.</p></div>
+  <div class="q"><p>f) David has just bought <input class="blank" data-answers="some" data-display="some"> new furniture.</p></div>
+  <div class="q"><p>g) Let me give you <input class="blank" data-answers="some" data-display="some"> advice.</p></div>
+  <div class="q"><p>h) My trousers need pressing. Can you lend me <input class="blank" data-answers="an" data-display="an"> iron?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Kiểm tra Bài 2</button><button type="button" onclick="showFill('ex2')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex2')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 2: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Bài 3 — Chọn từ phù hợp nhất trong mỗi câu</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) I would love to go on a long ______ by train.</p><div class="opts"><button type="button">journey</button><button type="button">travel</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) What's the latest news? Can I look at your ______?</p><div class="opts"><button type="button">paper</button><button type="button">journal</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Here's your ticket. Do you have any ______?</p><div class="opts"><button type="button">luggage</button><button type="button">suitcase</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Don't forget to buy a sliced ______.</p><div class="opts"><button type="button">bread</button><button type="button">loaf</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Why don't we leave the car in this ______?</p><div class="opts"><button type="button">car park</button><button type="button">parking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) I can't come to work today. I have a bad ______.</p><div class="opts"><button type="button">cold</button><button type="button">flu</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Excuse me sir, but do you have a ______ for this gun?</p><div class="opts"><button type="button">licence</button><button type="button">permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Brighton has quite a good ______.</p><div class="opts"><button type="button">beach</button><button type="button">seaside</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 3: <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Điền một từ thích hợp vào mỗi chỗ trống</h2>
+  <p class="small">Câu a) là câu mẫu đã làm sẵn (<i>accommodation</i>) — ở đây làm cả 10 câu.</p>
+  <div class="q"><p>a) I'm looking for <input class="blank" data-answers="accommodation" data-display="accommodation">. Do you know anywhere I can stay?</p></div>
+  <div class="q"><p>b) Take my <input class="blank" data-answers="advice" data-display="advice">, don't go out alone after dark.</p></div>
+  <div class="q"><p>c) The government plans to improve <input class="blank" data-answers="education" data-display="education"> by paying teachers more.</p></div>
+  <div class="q"><p>d) Can you lend me some <input class="blank" data-answers="paper" data-display="paper">? I want to print out a letter.</p></div>
+  <div class="q"><p>e) I need some <input class="blank" data-answers="information|advice" data-display="information / advice"> about language schools. Can you help me?</p></div>
+  <div class="q"><p>f) Richard is unemployed, and he is looking for a <input class="blank" data-answers="job" data-display="job">.</p></div>
+  <div class="q"><p>g) Could I have some <input class="blank" data-answers="fruit" data-display="fruit">? Those apples and oranges look nice.</p></div>
+  <div class="q"><p>h) I used to have long <input class="blank" data-answers="hair" data-display="hair">, but I had it cut.</p></div>
+  <div class="q"><p>i) I can't do this on my own. Could you give me some <input class="blank" data-answers="help" data-display="help">?</p></div>
+  <div class="q"><p>j) If you can't undo the knot, cut the string with some <input class="blank" data-answers="scissors" data-display="scissors">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Bài 5 — Hoàn thành mỗi câu bằng từ hoặc cụm từ phù hợp nhất</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I like your new trousers. Where did you buy ______?</p><div class="opts"><button type="button">A it</button><button type="button">B them</button><button type="button">C them both</button><button type="button">D them all</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) There is always a very large ______ at the church I go to.</p><div class="opts"><button type="button">A congregation</button><button type="button">B audience</button><button type="button">C spectator</button><button type="button">D company</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) The local ______ has agreed to repair the road outside our house.</p><div class="opts"><button type="button">A government</button><button type="button">B people</button><button type="button">C council</button><button type="button">D jury</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>d) When the police arrived, we were pleased to see ______.</p><div class="opts"><button type="button">A him</button><button type="button">B him or her</button><button type="button">C it</button><button type="button">D them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) The car turned over, but luckily it didn't suffer serious ______.</p><div class="opts"><button type="button">A damage</button><button type="button">B injury</button><button type="button">C damages</button><button type="button">D injuries</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Sorry, I'm late, but I had a lot of ______ to do.</p><div class="opts"><button type="button">A job</button><button type="button">B work</button><button type="button">C task</button><button type="button">D labour</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Julie bought herself a complete new ______ for winter.</p><div class="opts"><button type="button">A outfit</button><button type="button">B cloth</button><button type="button">C clothing</button><button type="button">D wear</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) I feel like going out tonight. Let's go to a/an ______.</p><div class="opts"><button type="button">A dancing</button><button type="button">B night</button><button type="button">C club</button><button type="button">D entertainment</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>i) Thanks for a great weekend! We really had a/an ______.</p><div class="opts"><button type="button">A fun</button><button type="button">B enjoyment</button><button type="button">C hospitality</button><button type="button">D good time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) In order to prove Smith is guilty, we must find some ______.</p><div class="opts"><button type="button">A information</button><button type="button">B evidence</button><button type="button">C knowledge</button><button type="button">D means</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 5: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>Bài 6 — Chọn nghĩa phù hợp nhất cho mỗi câu</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) You mustn't lose heart.</p><div class="opts"><button type="button">1) Don't have an operation.</button><button type="button">2) Don't give up hope.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Where's my glass?</p><div class="opts"><button type="button">1) I need a drink.</button><button type="button">2) I can't see.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Jack has a new post.</p><div class="opts"><button type="button">1) The postman has delivered a letter.</button><button type="button">2) He has a different job.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) All goods must be paid for in advance.</p><div class="opts"><button type="button">1) Nothing enjoyable in life is free.</button><button type="button">2) You have to pay for these things first.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I've joined a new company.</p><div class="opts"><button type="button">1) I have a new job.</button><button type="button">2) I have some new friends.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) This hotel has class.</p><div class="opts"><button type="button">1) You can study hotel management here.</button><button type="button">2) It is a good quality hotel.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) I don't have the means to help you.</p><div class="opts"><button type="button">1) I'm not able to help.</button><button type="button">2) I can't understand what help you need.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I'd like some china.</p><div class="opts"><button type="button">1) I want to go abroad.</button><button type="button">2) I need some cups and plates.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Do you have any cash?</p><div class="opts"><button type="button">1) Do you only have a cheque?</button><button type="button">2) Isn't there a place to pay in this shop?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) They have a business in Leeds.</p><div class="opts"><button type="button">1) They have to go there to do a job.</button><button type="button">2) They own a company there.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 6: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Bài 7 — Hoàn thành câu thứ hai sao cho nghĩa tương tự câu đầu, dùng từ cho sẵn</h2>
+  <p>Dùng từ cho sẵn (không đổi dạng từ đó), viết <b>từ 2 đến 5 từ</b> vào mỗi ô. Câu a) là câu mẫu đã làm sẵn — ở đây làm cả 8 câu.</p>
+  <div class="q"><p>a) This island has a large population. <i>(people)</i><br>→ There <input class="blank" data-answers="are a lot of people" data-display="are a lot of people"> on this island.</p></div>
+  <div class="q"><p>b) Do you own these things? <i>(your)</i><br>→ Are <input class="blank" data-answers="these your" data-display="these your"> belongings?</p></div>
+  <div class="q"><p>c) The weather was good on our holiday. <i>(had)</i><br>→ We <input class="blank" data-answers="had good weather" data-display="had good weather"> on our holiday.</p></div>
+  <div class="q"><p>d) There were a lot of cars on the road to Manchester. <i>(traffic)</i><br>→ There <input class="blank" data-answers="was a lot of traffic|was lots of traffic" data-display="was a lot of / lots of traffic"> on the road to Manchester.</p></div>
+  <div class="q"><p>e) Gerry is a very strong person, in my opinion. <i>(strength)</i><br>→ Gerry <input class="blank" data-answers="has great strength" data-display="has great strength">, in my opinion.</p></div>
+  <div class="q"><p>f) There are pieces of paper all over the floor! <i>(litter)</i><br>→ There <input class="blank" data-answers="is litter" data-display="is litter"> all over the floor!</p></div>
+  <div class="q"><p>g) Can I park my car here? <i>(allowed)</i><br>→ Is <input class="blank" data-answers="parking allowed" data-display="parking allowed"> here?</p></div>
+  <div class="q"><p>h) I know these machines are very expensive. <i>(machinery)</i><br>→ I know <input class="blank" data-answers="this machinery is" data-display="this machinery is"> very expensive.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Kiểm tra Bài 7</button><button type="button" onclick="showFill('ex7')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex7')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 7: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>Bài 8 — Hoàn thành mỗi câu bằng một từ trong khung</h2>
+  <p>Từ trong khung: <b>piece · item · flight · sheet · head · slice · set · clap</b>. Câu a) là câu mẫu đã làm sẵn (<i>piece</i>) — ở đây làm cả 8 câu.</p>
+  <div class="q"><p>a) Let me give you a <input class="blank" data-answers="piece" data-display="piece"> of advice.</p></div>
+  <div class="q"><p>b) There is an interesting <input class="blank" data-answers="item" data-display="item"> of news in the paper.</p></div>
+  <div class="q"><p>c) A <input class="blank" data-answers="flight" data-display="flight"> of stairs takes you to the top of the house.</p></div>
+  <div class="q"><p>d) Could I have another <input class="blank" data-answers="sheet" data-display="sheet"> of paper, please?</p></div>
+  <div class="q"><p>e) Helen has a lovely <input class="blank" data-answers="head" data-display="head"> of hair.</p></div>
+  <div class="q"><p>f) Do you want another <input class="blank" data-answers="slice" data-display="slice"> of toast?</p></div>
+  <div class="q"><p>g) We bought Mike and Lynn a <input class="blank" data-answers="set" data-display="set"> of cutlery for a wedding present.</p></div>
+  <div class="q"><p>h) The lightning was followed by a <input class="blank" data-answers="clap" data-display="clap"> of thunder.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ Kiểm tra Bài 8</button><button type="button" onclick="showFill('ex8')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex8')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 8: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>Bài 9 — Hoàn thành mỗi câu bằng một từ trong khung</h2>
+  <p>Từ trong khung: <b>bread · spelling · parking · cash · information · lightning · advice · luggage · cookery · accommodation</b>. Câu a) là câu mẫu đã làm sẵn (<i>bread</i>) — ở đây làm cả 10 câu.</p>
+  <div class="q"><p>a) I can't cut this loaf. Do you have a proper <input class="blank" data-answers="bread" data-display="bread"> knife?</p></div>
+  <div class="q"><p>b) I'm afraid that 'neice' is a <input class="blank" data-answers="spelling" data-display="spelling"> mistake.</p></div>
+  <div class="q"><p>c) There's usually a/an <input class="blank" data-answers="parking" data-display="parking"> space opposite the cinema.</p></div>
+  <div class="q"><p>d) We need a/an <input class="blank" data-answers="cash" data-display="cash"> box to keep the money in.</p></div>
+  <div class="q"><p>e) The tourist board have built a/an <input class="blank" data-answers="information" data-display="information"> centre near the castle.</p></div>
+  <div class="q"><p>f) We decided to put a/an <input class="blank" data-answers="lightning" data-display="lightning"> conductor on the roof.</p></div>
+  <div class="q"><p>g) Marjorie used to write a/an <input class="blank" data-answers="advice" data-display="advice"> column in a magazine.</p></div>
+  <div class="q"><p>h) These suitcases are very heavy. We must find a/an <input class="blank" data-answers="luggage" data-display="luggage"> trolley.</p></div>
+  <div class="q"><p>i) I must rush. I'm going to a/an <input class="blank" data-answers="cookery" data-display="cookery"> lesson.</p></div>
+  <div class="q"><p>j) Julie found her flat through a/an <input class="blank" data-answers="accommodation" data-display="accommodation"> agency.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ Kiểm tra Bài 9</button><button type="button" onclick="showFill('ex9')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex9')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 9: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex10">
+  <h2>Bài 10 — Chọn đáp án đúng nhất cho mỗi chỗ trống: Food habits</h2>
+  <p>Đọc cả đoạn, rồi chọn đáp án cho từng chỗ trống ở dưới. Chỗ (1) đáp án <i>B meals</i> là ví dụ đã làm sẵn — ở đây làm cả 15 chỗ.</p><p><i>Food habits</i><br>Breakfast is one of those (1) ______ that varies from person to person, and country to country. For some (2) ______ it means a (3) ______ of toast and some coffee. In various places I've also been offered (4) ______ or fruit. (5) ______ executives might eat breakfast at the (6) ______, while for many schoolchildren breakfast is a (7) ______ of milk at home, and then a long wait (8) ______ the first break of the morning, when they eat (9) ______ or (10) ______ chocolate bar. Some families sit down and eat together (11) ______ the morning, and listen to (12) ______ news on the radio or (13) ______ early morning television. For other people, the early morning is a rush (14) ______ work or school, and there just simply isn't (15) ______.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>1) Breakfast is one of those ______ that varies from person to person…</p><div class="opts"><button type="button">A times</button><button type="button">B meals</button><button type="button">C foods</button><button type="button">D plates</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>2) For some ______ it means a slice of toast and some coffee.</p><div class="opts"><button type="button">A people</button><button type="button">B persons</button><button type="button">C breakfasts</button><button type="button">D us</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>3) …it means a ______ of toast and some coffee.</p><div class="opts"><button type="button">A sheet</button><button type="button">B loaf</button><button type="button">C slice</button><button type="button">D sandwich</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>4) In various places I've also been offered ______ or fruit.</p><div class="opts"><button type="button">A a cheese</button><button type="button">B the cheese</button><button type="button">C cheese</button><button type="button">D cheeses</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>5) ______ executives might eat breakfast at the office…</p><div class="opts"><button type="button">A Business</button><button type="button">B A business</button><button type="button">C Business's</button><button type="button">D Businessmen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>6) …might eat breakfast at the ______.</p><div class="opts"><button type="button">A train</button><button type="button">B street</button><button type="button">C morning</button><button type="button">D office</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>7) …for many schoolchildren breakfast is a ______ of milk at home…</p><div class="opts"><button type="button">A glass</button><button type="button">B piece</button><button type="button">C warm</button><button type="button">D box</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>8) …and then a long wait ______ the first break of the morning…</p><div class="opts"><button type="button">A to</button><button type="button">B is</button><button type="button">C until</button><button type="button">D which</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>9) …when they eat ______ or a chocolate bar.</p><div class="opts"><button type="button">A sandwich</button><button type="button">B the sandwich</button><button type="button">C a sandwiches</button><button type="button">D sandwiches</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>10) …or ______ chocolate bar.</p><div class="opts"><button type="button">A a</button><button type="button">B some</button><button type="button">C a piece</button><button type="button">D a glass of</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>11) Some families sit down and eat together ______ the morning…</p><div class="opts"><button type="button">A for</button><button type="button">B in</button><button type="button">C at</button><button type="button">D while</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>12) …and listen to ______ news on the radio…</p><div class="opts"><button type="button">A a</button><button type="button">B what</button><button type="button">C some</button><button type="button">D the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>13) …or ______ early morning television.</p><div class="opts"><button type="button">A look</button><button type="button">B watch</button><button type="button">C see</button><button type="button">D regard</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>14) …the early morning is a rush ______ work or school…</p><div class="opts"><button type="button">A to</button><button type="button">B from</button><button type="button">C at</button><button type="button">D and</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>15) …and there just simply isn't ______.</p><div class="opts"><button type="button">A there</button><button type="button">B it</button><button type="button">C enough</button><button type="button">D time</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 10: <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu được chấm trong bài này: <b>95</b> (Bài 1: 8 câu · Bài 2: 8 ô · Bài 3: 8 câu · Bài 4: 10 ô · Bài 5: 10 câu · Bài 6: 10 câu · Bài 7: 8 câu · Bài 8: 8 ô · Bài 9: 10 ô · Bài 10: 15 chỗ trống).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
