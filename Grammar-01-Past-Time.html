@@ -24,6 +24,7 @@ button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;bord
 button:hover{background:#eef3fb}
 button.primary{background:#14335c;color:#fff;border-color:#14335c}
 button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
 .tts button{padding:3px 10px;font-size:.85rem}
 .note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
 .keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
@@ -54,15 +55,18 @@ em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
 <div class="wrap">
 
 <header class="top">
-  <a href="index.html">← Mục lục (index.html)</a>
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-01-Past-Time-JP.html">🇯🇵 日本語版</a>
   <h1>Grammar 1 — Past Time</h1>
   <p>Thì quá khứ: Past Simple · Past Continuous · Past Perfect · Used to · Would · Mệnh đề phân từ</p>
 </header>
 
 <div class="card">
   <h2>🎧 Nghe ví dụ</h2>
-  <p>Mỗi câu ví dụ có nút nghe giọng Anh 🇬🇧 và giọng Mỹ 🇺🇸. Chọn tốc độ:</p>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn.</p>
   <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
     <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
     <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
   </div>
@@ -259,26 +263,43 @@ em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
 
 </div>
 <script>
-function speak(text, lang){
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var v = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; })[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function speak(text){
   try{
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
-    u.lang = lang;
+    u.lang = accent;
     u.rate = parseFloat(document.getElementById('rate').value || '0.9');
-    var vs = speechSynthesis.getVoices().filter(function(v){return v.lang === lang;});
-    if(vs.length) u.voice = vs[0];
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
     speechSynthesis.speak(u);
   }catch(e){}
 }
+updateAccentButtons();
 document.querySelectorAll('.ex').forEach(function(box){
   var en = box.querySelector('.en'), tts = box.querySelector('.tts');
   if(!en || !tts) return;
   var text = en.textContent.trim();
-  var b1 = document.createElement('button'); b1.type='button'; b1.textContent='🔊 🇬🇧 Anh';
-  b1.onclick = function(){ speak(text, 'en-GB'); };
-  var b2 = document.createElement('button'); b2.type='button'; b2.textContent='🔊 🇺🇸 Mỹ';
-  b2.onclick = function(){ speak(text, 'en-US'); };
-  tts.appendChild(b1); tts.appendChild(b2);
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
 });
 if('speechSynthesis' in window){ speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = function(){ speechSynthesis.getVoices(); }; }
 

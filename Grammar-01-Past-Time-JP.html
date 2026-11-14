@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 1 — Past Time | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-01-Past-Time.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 1 — Past Time</h1>
+  <p>過去の表現：過去形（Past Simple）・過去進行形（Past Continuous）・過去完了形（Past Perfect）・used to・would・分詞構文（Participle clauses）</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2>1. 過去の出来事を語る</h2>
+
+  <h3>a) 過去形（Past Simple）— 主な出来事・完了したこと</h3>
+  <div class="formula">S + V-ed / V₂ &nbsp;·&nbsp; <i>went, bought, saw…</i></div>
+  <p>過去に<b>完了した</b>動作や出来事に使います。物語の主な出来事を語る時制です。</p>
+  <div class="ex"><div class="en">Susan went into the station and bought a ticket.</div><div class="vi">スーザンは駅に入り、切符を買った。</div><div class="tts"></div></div>
+
+  <h3>b) 過去進行形（Past Continuous）— 背景・進行中の動作</h3>
+  <div class="formula">S + was / were + V-ing</div>
+  <p>過去のある時点で<b>進行中だった</b>動作に使います。主な出来事の周りの背景を描写することが多いです。</p>
+  <div class="ex"><div class="en">There were a lot of people waiting in the station. Some were sleeping on the benches, and others were walking up and down.</div><div class="vi">駅には大勢の人が待っていた。ベンチで寝ている人もいれば、行ったり来たり歩いている人もいた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Susan was looking for Graham, so she didn't sit down.</div><div class="vi">スーザンはグレアムを探していたので、座らなかった。</div><div class="tts"></div></div>
+  <p>よくあるパターン：<b>過去進行形（背景・長い動作）＋過去形（突然割り込む短い出来事）</b>：</p>
+  <div class="ex"><div class="en">While Susan was trying to get onto the platform, a man grabbed her handbag.</div><div class="vi">スーザンがホームに上がろうとしていたとき、男が彼女のハンドバッグをひったくった。</div><div class="tts"></div></div>
+
+  <h3>c) 過去完了形（Past Perfect）—「過去の過去」</h3>
+  <div class="formula">S + had + V₃ (past participle)</div>
+  <p>過去の出来事が2つあるとき、<b>先に起こった</b>方に過去完了形（Past Perfect）を使うと、順序がはっきりします。</p>
+  <div class="ex"><div class="en">By the time the train arrived, Susan had managed to push her way to the front of the crowd.</div><div class="vi">電車が到着したときまでに、スーザンは人混みをかき分けて前に出ることができていた。（前に出る＝先、電車の到着＝後）</div><div class="tts"></div></div>
+  <p><i>before / after</i> で順序が明らかな場合は、過去完了形（Past Perfect）は<b>必須ではありません</b>：</p>
+  <div class="ex"><div class="en">Before the train arrived, Susan managed to push her way to the front of the crowd.</div><div class="vi">電車が到着する前に、スーザンは人混みをかき分けて前に出た。</div><div class="tts"></div></div>
+  <div class="note">⚠️ 「ずっと前に起こった」という理由だけで過去完了形（Past Perfect）を使わないでください。<b>2つの過去の時点の前後関係</b>を示す必要があるときに使います。</div>
+
+  <h3>d) 分詞構文（Participle clauses）</h3>
+  <div class="formula">Before / After / While + V-ing, + 主節</div>
+  <p><i>before / after / while + V-ing</i> の句が文頭に来て、その後に主節が続きます。必須条件：<b>両方の節の主語が同じ人・物であること</b>。</p>
+  <div class="ex"><div class="en">After struggling with him, Susan pulled the bag from his hands.</div><div class="vi">彼ともみ合った後、スーザンは彼の手からバッグを引き戻した。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 過去の習慣</h2>
+
+  <h3>a) 過去形（Past Simple）</h3>
+  <p>過去の習慣や状態も表せますが、通常は<b>時を表す表現</b>が必要です。</p>
+  <div class="ex"><div class="en">I always got up at six in those days.</div><div class="vi">あの頃、私はいつも6時に起きていた。（習慣）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I lived in Austria for several years.</div><div class="vi">私はオーストリアに数年間住んでいた。（状態）</div><div class="tts"></div></div>
+
+  <h3>b) used to</h3>
+  <div class="formula">S + used to + V &nbsp;·&nbsp; 否定形： didn't use to &nbsp;·&nbsp; 疑問形： Did … use to …?</div>
+  <p>過去の習慣や状態を表し、時を表す表現は<b>不要</b>です。<i>used to</i> は、そのことが<b>今はもうない</b>ことを強くほのめかし、現在との対比を作ります。過去専用で、現在形はありません。</p>
+  <div class="ex"><div class="en">I used to get up at six, but now I get up at eight.</div><div class="vi">以前は6時に起きていたが、今は8時に起きる。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I used to own a horse.</div><div class="vi">以前、馬を飼っていた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I didn't use to like beer. — Did you use to swim every day?</div><div class="vi">以前はビールが好きではなかった。— 以前は毎日泳いでいたのですか？</div><div class="tts"></div></div>
+
+  <h3>c) would</h3>
+  <div class="formula">S + would + V（繰り返される動作のみ）</div>
+  <p>過去におけるその人らしい、繰り返される活動を表します。文章や個人的な回想でよく使われます。<i>used to</i> との違い：<b>would は状態を表せません</b>（「以前はダンサーだった」という意味で *<i>would be a dancer</i> とは言いません）。また、現在との対比も弱めです。</p>
+  <div class="ex"><div class="en">Every evening was the same. Jack would turn on the radio, light his pipe and fall asleep.</div><div class="vi">毎晩同じだった。ジャックはいつもラジオをつけ、パイプに火をつけて、そのまま眠ってしまった。</div><div class="tts"></div></div>
+
+  <h3>d) 過去進行形（Past Continuous）＋ always — 迷惑な習慣</h3>
+  <p>過去進行形（Past Continuous）は頻度を表す副詞（<i>always</i> など）と一緒に使うと、過去の繰り返される動作、たいていは迷惑な習慣を表せます。</p>
+  <div class="ex"><div class="en">When Peter was younger, he was always getting into trouble.</div><div class="vi">若い頃、ピーターはいつもトラブルを起こしていた。</div><div class="tts"></div></div>
+  <div class="note">⚠️ 上記の用法を除き、過去進行形（Past Continuous）は過去の普通の習慣・日常的なことには<b>使いません</b>。それは過去形（Past Simple）／used to／would の役割です。</div>
+
+  <h3>e) 丁寧さ・ためらいを表す</h3>
+  <p>過去進行形（Past Continuous）を <i>think, hope, wonder</i> と使うと、言い方が柔らかく、丁寧で控えめになります。</p>
+  <div class="ex"><div class="en">I was thinking of having a party next week. I was hoping you would join us. I was wondering if you could help me.</div><div class="vi">来週パーティーを開こうかと考えていました。あなたにも参加してもらえたらと思っていました。手伝ってもらえないかと思っていたのですが。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>過去形（Past Simple）</b>：過去に完了した出来事（物語の主な出来事）。過去の習慣・日常的なことも表します。</li>
+    <li><b>過去進行形（Past Continuous）</b>：(a) 背景の描写、(b) 進行中の動作（たいてい突然の出来事と対比）。過去の日常的なことには使いません。</li>
+    <li><b>分詞構文（Participle clauses）</b>（<i>Before/After/While + V-ing</i>）が主節の前に来ます。両方の主語は同じでなければなりません。</li>
+    <li><b>過去完了形（Past Perfect）</b>：もう1つの過去の出来事より前に起こった過去の出来事。<i>before/after</i> がある場合は任意です。「ずっと前に起こった」という理由だけでは使いません。</li>
+    <li><b>used to</b>：過去専用で、現在形はありません。</li>
+    <li><b>would</b>：過去の習慣的な動作を表し、主に文章で使われます。現在との対比は <i>used to</i> より弱いです。状態には<b>使いません</b>。例：<i>Jim would always make his mother a cup of tea after lunch</i>（動作）。一方、<i>Sally used to be a dancer</i>（状態）のように言います。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — それぞれの絵に合う説明を選ぼう</h2>
+  <p>4つの絵が言葉で次のように説明されています：</p>
+  <ul>
+    <li><b>絵1：</b> クローズアップ — ピーターがジャケットのポケットの中のパスポートと財布を持っている。</li>
+    <li><b>絵2：</b> ピーターが電話で話しながらメモを取っている。</li>
+    <li><b>絵3：</b> ピーターがベッドの上のスーツケースに荷物を詰めている。</li>
+    <li><b>絵4：</b> ピーターがバッグを肩にかけて家を出るところ。</li>
+  </ul>
+  <p>用意されている文：</p>
+  <ol type="a">
+    <li>When he left the house, Peter forgot that he had put his passport and wallet in his other jacket.</li>
+    <li>After phoning the airport, Peter packed his suitcase.</li>
+    <li>When he returned from Portugal in March, Peter put his passport and wallet in his jacket pocket.</li>
+    <li>A few days before leaving for his summer holiday, Peter phoned the airport to check his flight.</li>
+    <li>While Peter was packing his suitcase, he realised that he hadn't checked his flight.</li>
+    <li>While Peter was packing his suitcase, the phone rang.</li>
+  </ol>
+  <p class="small">注意：文は6つありますが、絵は4つだけです。2つの文はダミーです。各絵に合う文字を押してください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p><b>絵1</b> — 正しい文は：</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>絵2</b> — 正しい文は：</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>絵3</b> — 正しい文は：</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>絵4</b> — 正しい文は：</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/4</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — 最も適切な動詞の形を選ぼう</h2>
+  <p class="small">a) はすでに解かれている例題です（<i>had forgotten</i>）。ここでは11問すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I suddenly remembered that I ______ my keys.</p><div class="opts"><button type="button">forgot</button><button type="button">had forgotten</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) While Diana ______ her favourite television programme, there was a power-cut.</p><div class="opts"><button type="button">watched</button><button type="button">was watching</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Tom ______ in the house at the end of the street.</p><div class="opts"><button type="button">used to live</button><button type="button">would live</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Who ______ the car at the time of the accident?</p><div class="opts"><button type="button">was driving</button><button type="button">drove</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) By the time Sheila got back, Chris ______.</p><div class="opts"><button type="button">went</button><button type="button">had gone</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) David ______ Japanese food before, so he knew what to order.</p><div class="opts"><button type="button">ate</button><button type="button">had eaten</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) I ______ some shopping yesterday, when I saw that Dutch friend of yours.</p><div class="opts"><button type="button">did</button><button type="button">was doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I ______ sweets much more than I do now.</p><div class="opts"><button type="button">used to like</button><button type="button">was liking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) What exactly ______ when I came into your office yesterday?</p><div class="opts"><button type="button">were you doing</button><button type="button">did you do</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Laura missed the party because no-one ______ her about it.</p><div class="opts"><button type="button">was telling</button><button type="button">had told</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>k) Tanya ______ be a doctor.</p><div class="opts"><button type="button">would</button><button type="button">used to</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/11</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — かっこ内の動詞を活用させよう</h2>
+  <p>適切な過去の形を入れてください。<b>過去完了形（Past Perfect）は本当に必要なときだけ使ってください。</b>a) には <i>was trying</i> が入っています。</p>
+  <div class="q"><p>a) While I <b>was trying</b> (try) to get my car started, a passing car <input class="blank" data-answers="stopped" data-display="stopped"> (stop) and the driver <input class="blank" data-answers="offered" data-display="offered"> (offer) to help me.</p></div>
+  <div class="q"><p>b) The police <input class="blank" data-answers="paid" data-display="paid"> (pay) no attention to Clare's complaint because she <input class="blank" data-answers="had phoned" data-display="had phoned"> (phone) them so many times before.</p></div>
+  <div class="q"><p>c) Mary <input class="blank" data-answers="was not wearing|wasn't wearing" data-display="was not wearing"> (not wear) her glasses at the time, so she <input class="blank" data-answers="did not notice|didn't notice" data-display="didn't notice"> (not notice) what kind of car the man <input class="blank" data-answers="was driving" data-display="was driving"> (drive).</p></div>
+  <div class="q"><p>d) Nick <input class="blank" data-answers="lay" data-display="lay"> (lie) down on the grass for a while, next to some tourists who <input class="blank" data-answers="were feeding" data-display="were feeding"> (feed) the ducks.</p></div>
+  <div class="q"><p>e) Tony <input class="blank" data-answers="admitted" data-display="admitted"> (admit) that he <input class="blank" data-answers="had hit" data-display="had hit"> (hit) the other car, but said that he <input class="blank" data-answers="had not damaged|hadn't damaged" data-display="hadn't damaged"> (not damage) it.</p></div>
+  <div class="q"><p>f) Sorry, I <input class="blank" data-answers="was not listening|wasn't listening" data-display="wasn't listening"> (not listen) to you. I <input class="blank" data-answers="was thinking" data-display="was thinking"> (think) about something else.</p></div>
+  <div class="q"><p>g) Helen <input class="blank" data-answers="felt|was feeling" data-display="felt / was feeling"> (feel) very tired, and when she <input class="blank" data-answers="finished|had finished" data-display="finished / had finished"> (finish) her work, she <input class="blank" data-answers="fell" data-display="fell"> (fall) asleep.</p></div>
+  <div class="q"><p>h) The police <input class="blank" data-answers="got" data-display="got"> (get) to Clare's house as fast as they could, but the burglars <input class="blank" data-answers="had disappeared" data-display="had disappeared"> (disappear).</p></div>
+  <div class="q"><p>i) I <input class="blank" data-answers="phoned" data-display="phoned"> (phone) you last night but you <input class="blank" data-answers="did not answer|didn't answer" data-display="didn't answer"> (not answer). What <input class="blank" data-answers="were you doing" data-display="were you doing"> (you do)?</p></div>
+  <div class="q"><p>j) We <input class="blank" data-answers="did not go|didn't go" data-display="didn't go"> (not go) out yesterday because it <input class="blank" data-answers="was raining" data-display="was raining"> (rain).</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/24</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>問題4 — Suitable か Unsuitable か？</h2>
+  <p>各文の<em class="hl">斜体でハイライトされた</em>動詞の形を見てください。その使い方は<b>適切（suitable）</b>ですか、<b>不適切（unsuitable）</b>ですか？a) は例です：<i>unsuitable</i>。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) While I <em class="hl">had</em> a bath, someone knocked on the door.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Sally <em class="hl">didn't go</em> to a boxing match before.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Harry tried to repair the car, but he didn't really know what he <em class="hl">was doing</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) What <em class="hl">did you wear</em> to the Ponsonby's party?</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) <em class="hl">Were you eating</em> spaghetti every day when you lived in Italy?</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) I didn't know you <em class="hl">had bought</em> a new car.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) They all wanted to believe her, but suspected she <em class="hl">was lying</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) As Peggy walked home, she tried to remember what <em class="hl">happened</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) 'What a terrible day!' thought Lucy. Everything <em class="hl">had gone</em> wrong!</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Although it rained a lot, I <em class="hl">was enjoying</em> my holiday last year.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題4の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 読んで動詞を活用させよう：The Lost City</h2>
+  <p>文章中の20個の動詞に適切な過去の形を入れてください。(1) の <i>invited</i> はすでに解かれている例です。ここでは20か所すべてに答えてください。</p>
+  <div class="q"><p>When Professor Mallory, the famous archaeologist, (1) <input class="blank" data-answers="invited" data-display="invited"> (invite) me to take part in his expedition to find the Lost City of the Himalayas, I (2) <input class="blank" data-answers="did not hesitate|didn't hesitate" data-display="did not hesitate"> (not hesitate) to accept his invitation. Mallory (3) <input class="blank" data-answers="had discovered" data-display="had discovered"> (discover) an ancient map showing the position of the city, although no European (4) <input class="blank" data-answers="had ever been" data-display="had ever been"> (ever go) to the area before. In fact, most of Mallory's colleagues either (5) <input class="blank" data-answers="believed" data-display="believed"> (believe) that the city (6) <input class="blank" data-answers="never existed|had never existed" data-display="never existed / had never existed"> (never exist) or (7) <input class="blank" data-answers="felt" data-display="felt"> (feel) that it (8) <input class="blank" data-answers="vanished|had vanished" data-display="vanished / had vanished"> (vanish) long ago and (9) <input class="blank" data-answers="become|had become" data-display="become / had become"> (become) simply a legend. According to the Professor, the builders of the city (10) <input class="blank" data-answers="had hidden" data-display="had hidden"> (hide) it among the mountains in order to protect its immense riches. He (11) <input class="blank" data-answers="believed" data-display="believed"> (believe) that the descendants of these ancient people (12) <input class="blank" data-answers="were still keeping|still kept" data-display="were still keeping / still kept"> (still keep) themselves apart from the rest of mankind for the very same reasons. So when we (13) <input class="blank" data-answers="set off" data-display="set off"> (set off) on a cool May morning towards the distant mountains, each of us (14) <input class="blank" data-answers="was looking forward" data-display="was looking forward"> (look forward) to exciting discoveries. For a week or more we (15) <input class="blank" data-answers="climbed" data-display="climbed"> (climb) higher and higher, following the map, which Mallory (16) <input class="blank" data-answers="studied" data-display="studied"> (study) from time to time. Then one afternoon, while we (17) <input class="blank" data-answers="were resting" data-display="were resting"> (rest) at the top of a valley, we (18) <input class="blank" data-answers="noticed" data-display="noticed"> (notice) that a rider on a horse (19) <input class="blank" data-answers="was waving" data-display="was waving"> (wave) at us from the other side of the valley. A rider whose clothes (20) <input class="blank" data-answers="shone|were shining" data-display="shone / were shining"> (shine) like gold!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 分詞構文（Participle clauses）を使って文を書き換えよう</h2>
+  <p>与えられた言葉で始めて、<i>Before / After / While + V-ing</i> の句を使って各文を書き換えてください。完成した文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> Norman collected the parcel, but then he realised it was the wrong one. → <i>After collecting the parcel, Norman realised it was the wrong one.</i></div>
+  <div class="q"><p>b) Sue left the house but first she checked that she had her keys. — <b>Before …</b></p><input class="blank wide" data-answers="Before leaving the house, Sue checked that she had her keys." data-display="Before leaving the house, Sue checked that she had her keys." placeholder="Before …"><div class="fb"></div></div>
+  <div class="q"><p>c) Mark was parking his car when he noticed the wing-mirror was broken. — <b>While …</b></p><input class="blank wide" data-answers="While parking his car, Mark noticed the wing-mirror was broken." data-display="While parking his car, Mark noticed the wing-mirror was broken." placeholder="While …"><div class="fb"></div></div>
+  <div class="q"><p>d) Julia cleaned the house, but then she fell asleep on the sofa. — <b>After …</b></p><input class="blank wide" data-answers="After cleaning the house, Julia fell asleep on the sofa." data-display="After cleaning the house, Julia fell asleep on the sofa." placeholder="After …"><div class="fb"></div></div>
+  <div class="q"><p>e) Brian bought a new television, but first he checked all the prices. — <b>Before …</b></p><input class="blank wide" data-answers="Before buying a new television, Brian checked all the prices." data-display="Before buying a new television, Brian checked all the prices." placeholder="Before …"><div class="fb"></div></div>
+  <div class="q"><p>f) Alan was skiing in Switzerland and met his old friend, Ken. — <b>While …</b></p><input class="blank wide" data-answers="While skiing in Switzerland, Alan met his old friend, Ken." data-display="While skiing in Switzerland, Alan met his old friend, Ken." placeholder="While …"><div class="fb"></div></div>
+  <div class="q"><p>g) Kate took two aspirins, and then she felt a lot better. — <b>After …</b></p><input class="blank wide" data-answers="After taking two aspirins, Kate felt a lot better." data-display="After taking two aspirins, Kate felt a lot better." placeholder="After …"><div class="fb"></div></div>
+  <div class="q"><p>h) Sheila went out for the evening, but first she washed her hair. — <b>Before …</b></p><input class="blank wide" data-answers="Before going out for the evening, Sheila washed her hair." data-display="Before going out for the evening, Sheila washed her hair." placeholder="Before …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。問題6では、1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>76</b> 問です（問題1：4 · 問題2：11 · 問題3：24か所 · 問題4：10 · 問題5：20か所 · 問題6：7文）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var v = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; })[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = function(){ speechSynthesis.getVoices(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+</body>
+</html>
