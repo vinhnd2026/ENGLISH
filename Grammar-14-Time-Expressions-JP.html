@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 14 — Time Expressions | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-14-Time-Expressions.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 14 — Time Expressions</h1>
+  <p>時間表現：Nowadays・these days・in / on / at・for / since / ago・by / until・on time / in time・at the end / in the end / at last</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 現在と未来を表す表現</h2>
+
+  <h3>a) Nowadays / these days — 今と昔の対比</h3>
+  <p>どちらも現在を<b>過去と対比</b>して表します（「最近では」「このごろ」）。</p>
+  <div class="ex"><div class="en">Nowadays more women have careers.</div><div class="vi">最近では、キャリアを持つ女性が増えている。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">What are you up to these days?</div><div class="vi">このごろ何をしているの？</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>actually</i> は多くのヨーロッパ言語と違い、時間の意味はありません。<i>actually</i> は「実は、本当は」（in fact / really）という意味です。</div>
+
+  <h3>b) In + 期間 — 未来を表す</h3>
+  <p><i>in</i> は未来の時間を表すこともあります。今から数えた期間の<b>終わりの時点</b>を指します。</p>
+  <div class="formula">in + 期間 → その期間が過ぎた時点</div>
+  <div class="ex"><div class="en">I'll be there in a moment.</div><div class="vi">すぐに（あと少しで）着きます。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll be back in a week.</div><div class="vi">1週間後に戻ります。</div><div class="tts"></div></div>
+
+  <h3>c) カレンダーでの言い方（今日が月曜日だとすると）</h3>
+  <p>水曜日は <i>the day after tomorrow</i> または <i>the day after next</i>（あさって）、<i>in two days' time</i>（2日後）とも言えます。来週の月曜日は <i>this time next week</i>（来週の今ごろ）です。</p>
+  <div class="ex"><div class="en">Wednesday is in two days' time.</div><div class="vi">水曜日は2日後だ。</div><div class="tts"></div></div>
+
+  <h3>d) At the end / in the end / at last</h3>
+  <p><i>At the end</i> は出来事の<b>最後の時点</b>。<i>In the end</i> は「結局、最終的には」（= eventually）。<i>At last</i> も「ついに」ですが、<b>待ち時間が終わった喜び</b>を含みます。</p>
+  <div class="ex"><div class="en">I left at the end of the film.</div><div class="vi">映画の終わりに席を立った。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">We waited for ages, and in the end we left.</div><div class="vi">ずっと待ったが、結局帰ってしまった。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">At last you have arrived!</div><div class="vi">ついに来たね！</div><div class="tts"></div></div>
+
+  <h3>e) Presently</h3>
+  <p><i>Presently</i> は「まもなく、すぐに」という意味のフォーマルな用法です。</p>
+  <div class="ex"><div class="en">Just a minute. I'll be with you presently.</div><div class="vi">少々お待ちください。すぐに対応いたします。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 過去を表す表現と混同しやすいペア</h2>
+
+  <h3>a) Once — 2つの意味</h3>
+  <p><i>Once</i> は「かつて」（過去）の意味と、「〜したらすぐに、ひとたび」（when）の意味があります。</p>
+  <div class="ex"><div class="en">I lived here once.</div><div class="vi">かつてここに住んでいた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Once she gets here, we can leave.</div><div class="vi">彼女が着きさえすれば、出発できる。</div><div class="tts"></div></div>
+
+  <h3>b) Last は night とだけ使う</h3>
+  <p><i>Last</i> は <i>night</i> とは使えますが、<i>morning / afternoon / evening</i> とは使えません。その場合は <i>yesterday</i> を使います。</p>
+  <div class="ex"><div class="en">They left yesterday morning and came back last night.</div><div class="vi">昨日の朝出発し、昨夜戻ってきた。</div><div class="tts"></div></div>
+  <p>今日が月曜日なら、土曜の夜は <i>the night before last</i>（一昨日の夜）です。</p>
+
+  <h3>c) In those days / at that time</h3>
+  <p>どちらも、すでに話題に出た<b>過去の時点</b>を指し直す表現です。</p>
+  <div class="ex"><div class="en">I met Janet in 1980. In those days I was a keen dancer.</div><div class="vi">ジャネットとは1980年に出会った。当時、私はダンスに夢中だった。</div><div class="tts"></div></div>
+
+  <h3>d) After / later / afterwards</h3>
+  <p><i>After</i> の後には目的語が必要です。<i>Later</i> は「あとで」で目的語は不要。<i>Afterwards</i> は「その出来事のあとで」という意味です。</p>
+  <div class="ex"><div class="en">I'll see you after the holidays.</div><div class="vi">休みのあとで会いましょう。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm busy now. I'll call you back later.</div><div class="vi">今は忙しい。あとでかけ直すよ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The film is starting now. I'll tell you afterwards.</div><div class="vi">映画が始まるよ。話はあとでね。</div><div class="tts"></div></div>
+
+  <h3>e) 時間を表す in / on / at</h3>
+  <div class="formula">in + 月・年・時間帯 &nbsp;·&nbsp; on + 日・曜日 &nbsp;·&nbsp; at + 時刻・時点</div>
+  <p><i>In January, in 1968, in the morning/afternoon/evening</i>;<i>on Thursday, on my birthday</i>;<i>at six o'clock, at night, at midday/midnight, at the weekend</i>。</p>
+
+  <h3>f) For / since / ago</h3>
+  <div class="formula">for + 期間 &nbsp;·&nbsp; since + 開始時点 &nbsp;·&nbsp; ago = 〜前</div>
+  <div class="ex"><div class="en">I lived there for ten years.</div><div class="vi">そこに10年間住んだ。（for + 期間）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I have lived here since 1999.</div><div class="vi">1999年からここに住んでいる。（since + 開始点）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Edward died two years ago.</div><div class="vi">エドワードは2年前に亡くなった。（ago = どれだけ前か）</div><div class="tts"></div></div>
+
+  <h3>g) By / until</h3>
+  <p><i>By</i> は「〜までには（遅くとも）」。<i>Until</i> は「〜までずっと」。</p>
+  <div class="ex"><div class="en">I need your homework by next week.</div><div class="vi">宿題は来週までに必要だ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll be away until next week.</div><div class="vi">来週まで不在だ。</div><div class="tts"></div></div>
+
+  <h3>h) On time / in time</h3>
+  <p><i>On time</i> は「時間どおりに」。<i>In time</i> は「間に合って、遅すぎないうちに」。</p>
+  <div class="ex"><div class="en">Bill is never late, he's always on time.</div><div class="vi">ビルは決して遅刻せず、いつも時間どおりだ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Luckily the police arrived in time to help.</div><div class="vi">幸運にも警察が助けに間に合った。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>Nowadays / these days</b>:現在と過去の対比。<i>Actually</i> に時間の意味はなく、「実は」という意味。</li>
+    <li><b>In + 期間</b> は未来も表せる：その期間の終わりの時点（<i>I'll be back in a week</i>）。</li>
+    <li><b>At the end</b>（出来事の最後の時点）≠ <b>in the end</b>（結局は、= eventually）≠ <b>at last</b>（ついに。待ち終わった喜び）。</li>
+    <li><b>Last</b> は <i>night</i> とだけ：<i>last night</i> だが、<i>yesterday morning / afternoon / evening</i> と言う。</li>
+    <li><b>After</b> には目的語が必要。<b>later</b> と <b>afterwards</b> には不要。</li>
+    <li><b>For</b> + 期間、<b>since</b> + 開始点、<b>ago</b> は過去形と使い「どれだけ前か」を表す。</li>
+    <li><b>By</b> = その時までには（期限）。<b>Until</b> = その時までずっと（継続）。</li>
+    <li><b>On time</b> = 時間どおり。<b>In time</b> = 間に合って。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選んだり入力したりしたら「チェック」を押してすぐに点数を確認しましょう。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 最も適切な語（句）を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I haven't seen Jim ______ we worked together in London.</p><div class="opts"><button type="button">before</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) I'll finish the letter now and you can post it ______.</p><div class="opts"><button type="button">after</button><button type="button">later</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) What were you doing ______ when I called?</p><div class="opts"><button type="button">last evening</button><button type="button">yesterday evening</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Did you live here ______ 1987?</p><div class="opts"><button type="button">in</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Diana hasn't finished her course ______.</p><div class="opts"><button type="button">already</button><button type="button">yet</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) What do you usually do ______?</p><div class="opts"><button type="button">in the afternoon</button><button type="button">this afternoon</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Have you seen Jean and Chris ______?</p><div class="opts"><button type="button">nowadays</button><button type="button">recently</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) Helen arrived here ______.</p><div class="opts"><button type="button">at Thursday night</button><button type="button">on Thursday night</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) It's really ages ______ I saw you last.</p><div class="opts"><button type="button">since</button><button type="button">when</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Ann is going to be famous ______.</p><div class="opts"><button type="button">once</button><button type="button">one day</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 各空所に1語を入れよう</h2>
+  <p>a) は例題です：<i>the Friday before <b>last</b></i>。</p>
+  <div class="q"><p>a) Graham came to see us over a week ago, the Friday before <b>last</b>.</p></div>
+  <div class="q"><p>b) Is it very warm here <input class="blank" data-answers="in" data-display="in"> the winter?</p></div>
+  <div class="q"><p>c) No thanks, I've had some tea <input class="blank" data-answers="already" data-display="already">.</p></div>
+  <div class="q"><p>d) Don't worry, it won't hurt and I'll <input class="blank" data-answers="soon" data-display="soon"> be finished.</p></div>
+  <div class="q"><p>e) I liked the book. I didn't know what was going to happen <input class="blank" data-answers="next" data-display="next">.</p></div>
+  <div class="q"><p>f) I think that people had much more spare time in the <input class="blank" data-answers="past" data-display="past">.</p></div>
+  <div class="q"><p>g) This is very urgent. Please send it at <input class="blank" data-answers="once" data-display="once">.</p></div>
+  <div class="q"><p>h) Harry isn't here. He left about five minutes <input class="blank" data-answers="ago" data-display="ago">.</p></div>
+  <div class="q"><p>i) The film doesn't start until 7.30. We're half an hour <input class="blank" data-answers="early" data-display="early">.</p></div>
+  <div class="q"><p>j) Would you mind waiting for <input class="blank" data-answers="just" data-display="just"> a moment, please?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — ボックスの語（句）で文を完成させよう</h2>
+  <p>ボックス：<i>afterwards · eventually · in the end · nowadays · soon · immediately · lately · once · yet</i>。a) は例題（<i>nowadays</i>）です。</p>
+  <div class="q"><p>a) There is far too much traffic on the roads <b>nowadays</b>.</p></div>
+  <div class="q"><p>b) Never mind. I'm sure we'll find what we are looking for <input class="blank" data-answers="eventually" data-display="eventually">.</p></div>
+  <div class="q"><p>c) I haven't seen you for ages. What have you been doing <input class="blank" data-answers="lately" data-display="lately">?</p></div>
+  <div class="q"><p>d) Jack hasn't left. He hasn't finished his work <input class="blank" data-answers="yet" data-display="yet">.</p></div>
+  <div class="q"><p>e) Take some notes in the meeting, and we'll discuss them <input class="blank" data-answers="afterwards" data-display="afterwards">.</p></div>
+  <div class="q"><p>f) If you don't mind waiting, Brenda will be back <input class="blank" data-answers="soon" data-display="soon">.</p></div>
+  <div class="q"><p>g) I considered taking a new job, but decided against it <input class="blank" data-answers="in the end" data-display="in the end">.</p></div>
+  <div class="q"><p>h) Norman and I worked for the same company <input class="blank" data-answers="once" data-display="once">.</p></div>
+  <div class="q"><p>i) You didn't fool me! I recognised you <input class="blank" data-answers="immediately" data-display="immediately">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>問題4 — 最も適切な語（句）を選ぼう（A–D）</h2>
+  <p class="small">a) はすでに解かれている例題です（答えは B の <i>just</i>）。ここでは10問すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) We ran into the station and caught the train ______ in time.</p><div class="opts"><button type="button">right</button><button type="button">just</button><button type="button">early</button><button type="button">already</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>b) Lunch will be ready ______ the time you get back.</p><div class="opts"><button type="button">at</button><button type="button">during</button><button type="button">in</button><button type="button">by</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) I haven't been feeling well ______, doctor.</p><div class="opts"><button type="button">recently</button><button type="button">afterwards</button><button type="button">suddenly</button><button type="button">at last</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Long ______, the valley you can see was actually a lake.</p><div class="opts"><button type="button">past</button><button type="button">ago</button><button type="button">since</button><button type="button">before</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Jean bought an expensive watch, but regretted it ______.</p><div class="opts"><button type="button">at the end</button><button type="button">later</button><button type="button">then</button><button type="button">after</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) I haven't had a Chinese meal for ______.</p><div class="opts"><button type="button">long</button><button type="button">it's ages</button><button type="button">years</button><button type="button">the summer</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>g) I've cleaned all the parts, but the motor ______ doesn't work.</p><div class="opts"><button type="button">at last</button><button type="button">now</button><button type="button">always</button><button type="button">still</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) ______ you get used to the job, it won't seem so bad.</p><div class="opts"><button type="button">since</button><button type="button">while</button><button type="button">once</button><button type="button">as</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) I haven't ______ decided where to go on holiday.</p><div class="opts"><button type="button">yet</button><button type="button">already</button><button type="button">still</button><button type="button">just</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) The first time I noticed something was wrong was ______ I got home.</p><div class="opts"><button type="button">since</button><button type="button">when</button><button type="button">for</button><button type="button">until</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題4の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — ボックスのフレーズで文を完成させよう</h2>
+  <p>ボックス：<i>all night long · from time to time · all the time · in a few moments · over and over again · all the year round · in the nick of time · the other day · for hours on end · once and for all · this time next week · one at a time</i>。a) は例題（<i>one at a time</i>）です。</p>
+  <div class="q"><p>a) Don't carry the boxes all together. We'll move them <b>one at a time</b>.</p></div>
+  <div class="q"><p>b) I've told you <input class="blank" data-answers="over and over again" data-display="over and over again">, don't leave it here.</p></div>
+  <div class="q"><p>c) It's time you stopped biting your nails <input class="blank" data-answers="once and for all" data-display="once and for all">.</p></div>
+  <div class="q"><p>d) Sheila grabbed Bill <input class="blank" data-answers="in the nick of time" data-display="in the nick of time"> before he fell.</p></div>
+  <div class="q"><p>e) Hurry up! The bomb will go off <input class="blank" data-answers="in a few moments" data-display="in a few moments">.</p></div>
+  <div class="q"><p>f) We shouldn't have trusted Michael. He was lying <input class="blank" data-answers="all the time" data-display="all the time">.</p></div>
+  <div class="q"><p>g) Gerry sits staring at the television <input class="blank" data-answers="for hours on end" data-display="for hours on end">.</p></div>
+  <div class="q"><p>h) <input class="blank" data-answers="This time next week" data-display="This time next week"> I'll be lying on the beach, not working in the office!</p></div>
+  <div class="q"><p>i) The swimming pool on the common is open <input class="blank" data-answers="all the year round" data-display="all the year round">.</p></div>
+  <div class="q"><p>j) I met your friend Janet in the cafe <input class="blank" data-answers="the other day" data-display="the other day">.</p></div>
+  <div class="q"><p>k) Dave isn't a keen fisherman, but he goes fishing <input class="blank" data-answers="from time to time" data-display="from time to time">.</p></div>
+  <div class="q"><p>l) The party finished at dawn after we had danced <input class="blank" data-answers="all night long" data-display="all night long">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/11</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 各空所に1語を入れよう</h2>
+  <p>a) は例題です：<i>salary <b>at</b> the end of the month</i>。</p>
+  <div class="q"><p>a) You will receive your salary <b>at</b> the end of the month.</p></div>
+  <div class="q"><p>b) I feel really tired. I think I'll go to bed early <input class="blank" data-answers="tonight" data-display="tonight">.</p></div>
+  <div class="q"><p>c) The weather has been terrible so far <input class="blank" data-answers="this" data-display="this"> month.</p></div>
+  <div class="q"><p>d) I'll see what David says, and <input class="blank" data-answers="then" data-display="then"> I'll come back and tell you.</p></div>
+  <div class="q"><p>e) I'm a bit busy <input class="blank" data-answers="now" data-display="now">, but I can talk to you later.</p></div>
+  <div class="q"><p>f) If you haven't finished <input class="blank" data-answers="yet" data-display="yet">, don't worry.</p></div>
+  <div class="q"><p>g) Are you doing anything <input class="blank" data-answers="on" data-display="on"> Friday evening?</p></div>
+  <div class="q"><p>h) Where's Brian? He should be here <input class="blank" data-answers="by" data-display="by"> now.</p></div>
+  <div class="q"><p>i) We cannot accept applications sent <input class="blank" data-answers="after" data-display="after"> the closing date.</p></div>
+  <div class="q"><p>j) <input class="blank" data-answers="Once" data-display="Once"> upon a time, there were three bears.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex7">
+  <h2>問題7 — イタリックのフレーズと同じ意味のものを選ぼう（A–C）</h2>
+  <p><em class="hl">ハイライトされたフレーズ</em>と同じ意味になるものを選んでください。a) はすでに解かれている例題です（答えは B の <i>eventually</i>）。ここでは10問すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) The weather was bad at first, but it cleared up <em class="hl">in the end</em>.</p><div class="opts"><button type="button">at last</button><button type="button">eventually</button><button type="button">lately</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Jane was leading the race, but <em class="hl">all at once</em> she fell over.</p><div class="opts"><button type="button">suddenly</button><button type="button">one by one</button><button type="button">after that</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Have you been swimming <em class="hl">recently</em>?</p><div class="opts"><button type="button">lately</button><button type="button">already</button><button type="button">yet</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) I enjoy going skiing <em class="hl">every now and again</em>.</p><div class="opts"><button type="button">frequently</button><button type="button">immediately</button><button type="button">occasionally</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I saw Terry in the street <em class="hl">the other day</em>.</p><div class="opts"><button type="button">recently</button><button type="button">yesterday</button><button type="button">last night</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I think we've solved this problem <em class="hl">once and for all</em>.</p><div class="opts"><button type="button">in the end</button><button type="button">forever</button><button type="button">temporarily</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Kath told Martin that she was leaving <em class="hl">for good</em>.</p><div class="opts"><button type="button">for ever</button><button type="button">for a while</button><button type="button">early</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) We arrived for the train <em class="hl">in good time</em>.</p><div class="opts"><button type="button">on time</button><button type="button">at the right moment</button><button type="button">with time to spare</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) I believe we met <em class="hl">on a previous occasion</em>.</p><div class="opts"><button type="button">once before</button><button type="button">the last time</button><button type="button">completely by chance</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) The political situation seems to be changing <em class="hl">minute by minute</em>.</p><div class="opts"><button type="button">from time to time</button><button type="button">time after time</button><button type="button">very rapidly</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題7の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>67</b> 問です（問題1：10 · 問題2：9か所 · 問題3：8か所 · 問題4：10 · 問題5：11か所 · 問題6：9か所 · 問題7：10）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
