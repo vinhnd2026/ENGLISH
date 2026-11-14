@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 11 — Relative Clauses | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-11-Relative-Clauses.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 11 — Relative Clauses</h1>
+  <p>関係節（Relative clauses）：who・which・that・whom・whose ・ 主語／目的語 ・ 限定用法と非限定用法 ・ 関係代名詞の省略</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 関係節（Relative clauses）— 基本</h2>
+
+  <h3>a) 関係代名詞は主語にも目的語にもなる（Subject or object）</h3>
+  <p>関係節（Relative clauses）は、主節の名詞について追加の情報を与えます。関係節は関係代名詞（Relative pronoun）<i>who, which, that, whom, whose</i> で始まります。関係代名詞は関係節の<b>主語</b>になることがあります：</p>
+  <div class="ex"><div class="en">That's the woman who bought my car.</div><div class="vi">あれは私の車を買った女性です。（女性が bought の主語）</div><div class="tts"></div></div>
+  <p>また、関係節の<b>目的語</b>になることもあります：</p>
+  <div class="ex"><div class="en">That's the car that I used to own.</div><div class="vi">あれは私が以前所有していた車です。（I が主語、車が目的語）</div><div class="tts"></div></div>
+  <p>2つの文を1つにするとき、関係代名詞に置き換えられた名詞は関係節の中で<b>繰り返しません</b>：<i>This is Jean. She bought my car.</i> → <i>Jean is the person who bought my car.</i>（she は繰り返さない）；<i>That is Jean's car. I used to own it.</i> → <i>That's the car that I used to own.</i>（it は繰り返さない）。</p>
+
+  <h3>b) 限定用法と非限定用法（Defining / Non-defining）</h3>
+  <p><b>限定用法</b>（Defining）の関係節は、どの人・物なのかを正確に特定する重要な情報を与えます。これがないと意味が分かりにくくなることがあります。コンマは<b>使いません</b>：</p>
+  <div class="ex"><div class="en">That book which you lent me is really good.</div><div class="vi">あなたが貸してくれたあの本は本当に良い。（どの本かを示している）</div><div class="tts"></div></div>
+  <p><b>非限定用法</b>（Non-defining）の関係節は追加の情報だけを与えます。書き言葉では<b>コンマ</b>で区切り、話し言葉では節の前後でポーズを置きます。この節を省いても意味ははっきりしています：</p>
+  <div class="ex"><div class="en">The book, which I hadn't read, was still on the shelf.</div><div class="vi">その本は、私は読んでいなかったのだが、まだ棚にあった。</div><div class="tts"></div></div>
+
+  <h3>c) 関係代名詞の省略（Omitting the relative pronoun）</h3>
+  <p><b>限定用法</b>の関係節では、関係代名詞が<b>目的語</b>なら省略できます：</p>
+  <div class="ex"><div class="en">That's the car (that) I used to own.</div><div class="vi">あれは私が以前所有していた車です。（that は目的語なので省略できる）</div><div class="tts"></div></div>
+  <p>しかし、関係代名詞が<b>主語</b>の場合は省略できません（<i>That's the woman who bought my car</i> — who は省けない）。<b>非限定用法</b>では、関係代名詞は<b>決して</b>省略できません。</p>
+</div>
+
+<div class="card">
+  <h2>2. Which, who, that, whom, whose</h2>
+
+  <h3>a) which や who の代わりの that</h3>
+  <p><b>物</b>については、<i>which</i> の代わりに <i>that</i> が非常によく使われます。特に話し言葉で一般的です：</p>
+  <div class="ex"><div class="en">Is this the house that you bought?</div><div class="vi">これはあなたが買った家ですか？</div><div class="tts"></div></div>
+  <p><b>人</b>についても、<i>who</i> の代わりに <i>that</i> が使えます。頻度は低めですが、特に話し言葉で見られます：</p>
+  <div class="ex"><div class="en">Have you met the boy that Sue is going to marry?</div><div class="vi">スーが結婚する予定の男の子に会いましたか？</div><div class="tts"></div></div>
+
+  <h3>b) that の2つの制限</h3>
+  <p><i>that</i> は<b>非限定用法</b>の関係節を始めることはできません。そこでは <i>which/who</i> を使います：</p>
+  <div class="ex"><div class="en">The hotel, which was a hundred years old, was very comfortable.</div><div class="vi">そのホテルは、築100年だったが、とても快適だった。（コンマの後では that は使えない）</div><div class="tts"></div></div>
+  <p>また、<i>that</i> は前置詞の直後にも置けません。話し言葉では前置詞を文末に置き、改まった文では前置詞を <i>which</i> の前に置きます：</p>
+  <div class="ex"><div class="en">This is the car (that/which) I paid £2000 for. — This is the car for which I paid £2000.</div><div class="vi">これは私が2,000ポンド払った車です。（後者はより改まった言い方）</div><div class="tts"></div></div>
+
+  <h3>c) whom と whose</h3>
+  <p><i>whom</i> は <i>who</i> の目的格で、前置詞の後では必須ですが、改まった表現でかなりまれです。話し言葉では普通、前置詞を文末に移し、<i>who/that</i> を使うか省略します：</p>
+  <div class="ex"><div class="en">This is the person to whom I sold my car. — This is the person (who) I sold my car to.</div><div class="vi">この人が私が車を売った相手です。（前者は改まった文、後者は話し言葉）</div><div class="tts"></div></div>
+  <p><i>whose</i> は「〜の（of whom）」という意味で、普通は人について使います。<i>This is Jack. His sister is staying with us.</i> の2文を結びます：</p>
+  <div class="ex"><div class="en">This is Jack, whose sister is staying with us.</div><div class="vi">こちらはジャックです。彼のお姉さんが私たちの家に滞在しています。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>関係代名詞が<b>主語</b>の場合は省略できません。<b>目的語</b>で限定用法の場合は省略できます。</li>
+    <li><b>限定用法</b>：コンマなし、必須の情報。<b>非限定用法</b>：コンマあり、追加の情報のみで、関係代名詞は省略できません。</li>
+    <li><i>that</i> は話し言葉で <i>which</i>（物）や時には <i>who</i>（人）の代わりによく使われますが、非限定用法の節を始めることや、前置詞の直後に置くことはできません。</li>
+    <li><i>whom</i> は <i>who</i> の改まった目的格で、前置詞の後で使います（<i>to whom…</i>）。話し言葉では前置詞を文末に置くのが普通です。</li>
+    <li><i>whose</i> は所有を表します：「<i>the woman whose jewels were stolen…</i>」</li>
+    <li>関係節のある長い文は<b>書き言葉</b>に多く見られます。話し言葉では短い節に分けたり、目的語の関係代名詞を省略したり、前置詞を節の末尾に置いたりします。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 省略できる関係代名詞はどれ？</h2>
+  <p>各文の<em class="hl">斜体でハイライトされた</em>関係代名詞は、<b>省略できますか</b>、それとも<b>省略できませんか</b>？</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) I think that my boss is the person <em class="hl">who</em> I admire most.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Harry, <em class="hl">who</em> was tired, went to bed very early.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) We're taking the train <em class="hl">that</em> leaves at 6.00.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Have you seen the book <em class="hl">that</em> I left here on the desk?</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) The film <em class="hl">which</em> we liked most was the French one.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) My radio, <em class="hl">which</em> isn't very old, has suddenly stopped working.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) The clothes <em class="hl">which</em> you left behind are at the reception desk.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) The couple <em class="hl">who</em> met me at the station took me out to dinner.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Last week I ran into an old friend <em class="hl">who</em> I hadn't seen for ages.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) Don't cook the meat <em class="hl">that</em> I put in the freezer — it's for the dog.</p><div class="opts"><button type="button">省略できる</button><button type="button">省略できない</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — that に置き換えられる？</h2>
+  <p>各文の<em class="hl">斜体でハイライトされた</em>関係代名詞は、<b>that に置き換えられますか</b>、それとも<b>置き換えられませんか</b>？a) は例です：置き換えられます（<i>This is the magazine that I told you about</i>）。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) This is the magazine <em class="hl">which</em> I told you about.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) John's flat, <em class="hl">which</em> is in the same block as mine, is much larger.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) The girl <em class="hl">whose</em> bag I offered to carry turned out to be an old friend.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) The policeman <em class="hl">who</em> arrested her had recognised her car.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I work with someone <em class="hl">who</em> knows you.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) We don't sell goods <em class="hl">which</em> have been damaged.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Brighton, <em class="hl">which</em> is on the south coast, is a popular holiday resort.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I don't know anyone <em class="hl">whose</em> clothes would fit you.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) There's a cafe near here <em class="hl">which</em> serves very good meals.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) People <em class="hl">who</em> park outside get given parking tickets.</p><div class="opts"><button type="button">that に置き換えられる</button><button type="button">置き換えられない</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>問題3 — 最も適切な単語を選ぼう</h2>
+  <p>各文に最も適した関係代名詞を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>a) My friend Jack, ______ parents live in Glasgow, invited me to spend Christmas in Scotland.</p><div class="opts"><button type="button">that</button><button type="button">who</button><button type="button">whose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Here's the computer program ______ I told you about.</p><div class="opts"><button type="button">that</button><button type="button">whom</button><button type="button">whose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) I don't believe the story ______ she told us.</p><div class="opts"><button type="button">that</button><button type="button">who</button><button type="button">whom</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) Peter comes from Witney, ______ is near Oxford.</p><div class="opts"><button type="button">that</button><button type="button">who</button><button type="button">which</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) This is the gun with ______ the murder was committed.</p><div class="opts"><button type="button">that</button><button type="button">whom</button><button type="button">which</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) Have you received the parcel ______ we sent you?</p><div class="opts"><button type="button">whom</button><button type="button">whose</button><button type="button">which</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Is this the person ______ you asked me about?</p><div class="opts"><button type="button">who</button><button type="button">which</button><button type="button">whose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) That's the girl ______ brother sits next to me at school.</p><div class="opts"><button type="button">that</button><button type="button">who</button><button type="button">whose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) The meal, ______ wasn't very tasty, was quite expensive.</p><div class="opts"><button type="button">that</button><button type="button">which</button><button type="button">whose</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) We didn't enjoy the play ______ we went to see.</p><div class="opts"><button type="button">that</button><button type="button">who</button><button type="button">whose</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題3の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 関係代名詞を入れよう（または空欄にしよう）</h2>
+  <p>各空所に適切な関係代名詞を入れてください。関係代名詞が<b>不要</b>な場合は <b>none</b> と入力してください。a) は例です（<i>which</i>）。ここでは9か所すべてに答えてください。</p>
+  <div class="q"><p>a) My bike, <input class="blank" data-answers="which" data-display="which"> I had left at the gate, had disappeared.</p></div>
+  <div class="q"><p>b) The shoes <input class="blank" data-answers="none" data-display="— (empty)"> I bought were the ones <input class="blank" data-answers="none" data-display="— (empty)"> I tried on first.</p></div>
+  <div class="q"><p>c) The bag in <input class="blank" data-answers="which" data-display="which"> the robbers put the money was found later.</p></div>
+  <div class="q"><p>d) The medicine <input class="blank" data-answers="none" data-display="— (empty)"> the doctor gave me had no effect at all.</p></div>
+  <div class="q"><p>e) Peter, <input class="blank" data-answers="who" data-display="who"> couldn't see the screen, decided to change his seat.</p></div>
+  <div class="q"><p>f) I really liked that tea <input class="blank" data-answers="none" data-display="— (empty)"> you made me this morning.</p></div>
+  <div class="q"><p>g) What was the name of your friend <input class="blank" data-answers="whose" data-display="whose"> tent we borrowed?</p></div>
+  <div class="q"><p>h) The flight <input class="blank" data-answers="none" data-display="— (empty)"> Joe was leaving on was cancelled.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 大文字で与えられた単語を使って2文を1文にしよう</h2>
+  <p>示された書き出しと大文字の単語を使って、各文のペアを1文にしてください。完成した文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> Brenda is a friend. I went on holiday with her. (WHO) → <i>Brenda is the friend who I went on holiday with.</i></div>
+  <div class="q"><p>b) This is Mr Smith. His son Bill plays in our team. — <b>WHOSE</b> · 書き出し： <i>This is Mr Smith …</i></p><input class="blank wide" data-answers="This is Mr Smith whose son Bill plays in our team." data-display="This is Mr Smith whose son Bill plays in our team." placeholder="This is Mr Smith …"><div class="fb"></div></div>
+  <div class="q"><p>c) Her book was published last year. It became a best seller. — <b>WHICH</b> · 書き出し： <i>Her book …</i></p><input class="blank wide" data-answers="Her book, which was published last year, became a best seller." data-display="Her book, which was published last year, became a best seller." placeholder="Her book …"><div class="fb"></div></div>
+  <div class="q"><p>d) This is the bank. We borrowed the money from it. — <b>WHICH</b> · 書き出し： <i>This is the bank from …</i></p><input class="blank wide" data-answers="This is the bank from which we borrowed the money." data-display="This is the bank from which we borrowed the money." placeholder="This is the bank from …"><div class="fb"></div></div>
+  <div class="q"><p>e) I told you about a person. She is at the door. — <b>WHO</b> · 書き出し： <i>The person …</i></p><input class="blank wide" data-answers="The person who I told you about is at the door.|The person I told you about is at the door.|The person that I told you about is at the door." data-display="The person who I told you about is at the door." placeholder="The person …"><div class="fb"></div></div>
+  <div class="q"><p>f) Jack's car had broken down. He had to take a bus. — <b>WHOSE</b> · 書き出し： <i>Jack, …</i></p><input class="blank wide" data-answers="Jack, whose car had broken down, had to take a bus." data-display="Jack, whose car had broken down, had to take a bus." placeholder="Jack, …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 文のグループを1文にしよう</h2>
+  <p>示された書き出しを使って、各文のグループを1文にしてください。完成した文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> The hotel was full of guests. The hotel was miles from anywhere. The guests had gone there to admire the scenery. → <i>The hotel, which was miles from anywhere, was full of guests who had gone there to admire the scenery.</i></div>
+  <div class="q"><p>b) I lent you a book. It was written by a friend of mine. She lives in France. — 書き出し： <i>The book I …</i></p><input class="blank wide" data-answers="The book I lent you was written by a friend of mine who lives in France.|The book that I lent you was written by a friend of mine who lives in France." data-display="The book I lent you was written by a friend of mine who lives in France." placeholder="The book I …"><div class="fb"></div></div>
+  <div class="q"><p>c) A woman's jewels were stolen. A police officer was staying in the same hotel. The woman was interviewed by him. — 書き出し： <i>The woman whose …</i></p><input class="blank wide" data-answers="The woman whose jewels were stolen was interviewed by a police officer who was staying in the same hotel." data-display="The woman whose jewels were stolen was interviewed by a police officer who was staying in the same hotel." placeholder="The woman whose …"><div class="fb"></div></div>
+  <div class="q"><p>d) A goal was scored by a teenager. He had come on as substitute. This goal won the match. — 書き出し： <i>The goal which …</i></p><input class="blank wide" data-answers="The goal which won the match was scored by a teenager who had come on as a substitute.|The goal that won the match was scored by a teenager who had come on as a substitute." data-display="The goal which won the match was scored by a teenager who had come on as a substitute." placeholder="The goal which …"><div class="fb"></div></div>
+  <div class="q"><p>e) I was sitting next to a boy in the exam. He told me the answers. — 書き出し： <i>The boy I …</i></p><input class="blank wide" data-answers="The boy I was sitting next to in the exam told me the answers." data-display="The boy I was sitting next to in the exam told me the answers." placeholder="The boy I …"><div class="fb"></div></div>
+  <div class="q"><p>f) My wallet contained over £100. It was found in the street by a schoolboy. He returned it. — 書き出し： <i>My wallet, …</i></p><input class="blank wide" data-answers="My wallet, which contained over £100, was found in the street by a schoolboy who returned it.|My wallet, which contained over £100, was returned by a schoolboy who found it in the street." data-display="My wallet, which contained over £100, was found in the street by a schoolboy who returned it." placeholder="My wallet, …"><div class="fb"></div></div>
+  <div class="q"><p>g) My friend Albert has decided to buy a motorbike. His car was stolen last week. — 書き出し： <i>My friend Albert, …</i></p><input class="blank wide" data-answers="My friend Albert, whose car was stolen last week, has decided to buy a motorbike." data-display="My friend Albert, whose car was stolen last week, has decided to buy a motorbike." placeholder="My friend Albert, …"><div class="fb"></div></div>
+  <div class="q"><p>h) Carol is a vegetarian. I cooked a meal for her last week. She enjoyed it. — 書き出し： <i>Carol, …</i></p><input class="blank wide" data-answers="Carol, who is a vegetarian, enjoyed the meal I cooked for her last week." data-display="Carol, who is a vegetarian, enjoyed the meal I cooked for her last week." placeholder="Carol, …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>問題7 — 各空所に1語を入れよう：Murder At The Station</h2>
+  <p>各空所に適切な関係代名詞を1語入れてください。不要な場合は <b>none</b> と入力してください。(1) の <i>who</i> はすでに解かれている例です。ここでは15か所すべてに答えてください。（探偵小説 <i>Murder At The Station</i>、Lorraine Small 作、第5話 — これまでのあらすじ：）</p>
+  <div class="q"><p>Jane Platt, (1) <input class="blank" data-answers="who" data-display="who"> is travelling to London because of a mysterious letter, is the only person (2) <input class="blank" data-answers="who" data-display="who"> witnesses a murder at Victoria Station. The detective to (3) <input class="blank" data-answers="whom" data-display="whom"> she gives her statement then disappears. Jane goes to an office in Soho to answer the letter (4) <input class="blank" data-answers="none" data-display="— (empty)"> she had received. There she discovers that her uncle Gordon, (5) <input class="blank" data-answers="who" data-display="who"> lives in South America, has sent her a small box (6) <input class="blank" data-answers="which" data-display="which"> she is only to open if in trouble. Jane, (7) <input class="blank" data-answers="whose" data-display="whose"> parents have never mentioned an Uncle Gordon, is suspicious of the box, (8) <input class="blank" data-answers="which" data-display="which"> she gives to her friend Tony. They go to Scotland Yard and see Inspector Groves, (9) <input class="blank" data-answers="who" data-display="who"> has not heard of the Victoria Station murder, (10) <input class="blank" data-answers="which" data-display="which"> was not reported to the police. Jane gives Inspector Groves the murdered man's ticket (11) <input class="blank" data-answers="which" data-display="which"> she found beside his body. Then Jane and Tony decide to go to Redhill, (12) <input class="blank" data-answers="which" data-display="which"> was the town (13) <input class="blank" data-answers="none" data-display="— (empty)"> the murdered man had come from. On the train they meet a man, (14) <input class="blank" data-answers="whose" data-display="whose"> face is somehow familiar to Jane, (15) <input class="blank" data-answers="who" data-display="who"> says he knows her Uncle Gordon…</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ 問題7をチェック</button><button type="button" onclick="showFill('ex7')">👁 答えを見る</button><button type="button" onclick="resetFill('ex7')">↺ やり直す</button></div>
+  <span class="score">問題7の点数： <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>問題8 — 前置詞で終わる文に書き換えよう</h2>
+  <p>以下の文はすべて文法的には可能ですが、話し言葉には適していません。各文を、元の文で斜体になっている前置詞で<b>終わる</b>ように書き換えてください。完成した文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> Margaret is the girl with whom I went on holiday. → <i>Margaret is the girl I went on holiday with.</i></div>
+  <div class="q"><p>b) The golf club is the only club of <i>which</i> I am a member.</p><input class="blank wide" data-answers="The golf club is the only club I am a member of." data-display="The golf club is the only club I am a member of." placeholder="The golf club is the only club …"><div class="fb"></div></div>
+  <div class="q"><p>c) That's the girl about <i>whom</i> we were talking.</p><input class="blank wide" data-answers="That's the girl we were talking about." data-display="That's the girl we were talking about." placeholder="That's the girl …"><div class="fb"></div></div>
+  <div class="q"><p>d) It was a wonderful present, for <i>which</i> I was extremely grateful.</p><input class="blank wide" data-answers="It was a wonderful present, which I was extremely grateful for." data-display="It was a wonderful present, which I was extremely grateful for." placeholder="It was a wonderful present, …"><div class="fb"></div></div>
+  <div class="q"><p>e) This is the school to <i>which</i> I used to go.</p><input class="blank wide" data-answers="This is the school I used to go to." data-display="This is the school I used to go to." placeholder="This is the school …"><div class="fb"></div></div>
+  <div class="q"><p>f) Is this the case in <i>which</i> we should put the wine glasses?</p><input class="blank wide" data-answers="Is this the case we should put the wine glasses in?" data-display="Is this the case we should put the wine glasses in?" placeholder="Is this the case …"><div class="fb"></div></div>
+  <div class="q"><p>g) Can you move the chair on <i>which</i> you are sitting?</p><input class="blank wide" data-answers="Can you move the chair you are sitting on?" data-display="Can you move the chair you are sitting on?" placeholder="Can you move the chair …"><div class="fb"></div></div>
+  <div class="q"><p>h) That's the shop from <i>which</i> I got my shoes.</p><input class="blank wide" data-answers="That's the shop I got my shoes from." data-display="That's the shop I got my shoes from." placeholder="That's the shop …"><div class="fb"></div></div>
+  <div class="q"><p>i) Is that the person next to <i>whom</i> you usually sit?</p><input class="blank wide" data-answers="Is that the person you usually sit next to?" data-display="Is that the person you usually sit next to?" placeholder="Is that the person …"><div class="fb"></div></div>
+  <div class="q"><p>j) This is Bill, about <i>whom</i> you have heard so much.</p><input class="blank wide" data-answers="This is Bill, who you've heard so much about.|This is Bill, who you have heard so much about." data-display="This is Bill, who you've heard so much about." placeholder="This is Bill, …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ 問題8をチェック</button><button type="button" onclick="showFill('ex8')">👁 答えを見る</button><button type="button" onclick="resetFill('ex8')">↺ やり直す</button></div>
+  <span class="score">問題8の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>問題9 — 文のグループを1文にしよう</h2>
+  <p>示された書き出しを使って、各文のグループを1文にしてください。完成した文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> I got on a train. I wanted to go to a station. The train didn't stop there. → <i>The train I got on didn't stop at the station I wanted to go to.</i></div>
+  <div class="q"><p>b) I read a book. You recommended a book to me. This was the book. — 書き出し： <i>The book I …</i></p><input class="blank wide" data-answers="The book I read was the book you recommended to me.|The book I read was the one you recommended to me." data-display="The book I read was the book you recommended to me." placeholder="The book I …"><div class="fb"></div></div>
+  <div class="q"><p>c) The ship hit an iceberg and sank. Warning messages had been sent to it. The ship ignored these. — 書き出し： <i>The ship, …</i></p><input class="blank wide" data-answers="The ship, which had ignored the warning messages sent to it, hit an iceberg and sank." data-display="The ship, which had ignored the warning messages sent to it, hit an iceberg and sank." placeholder="The ship, …"><div class="fb"></div></div>
+  <div class="q"><p>d) The postman realised I was on holiday. You had sent me a parcel. The postman left it next door. — 書き出し： <i>The postman, …</i></p><input class="blank wide" data-answers="The postman, who realised I was on holiday, left the parcel you had sent me next door.|The postman, who realised I was on holiday, left the parcel you sent me next door." data-display="The postman, who realised I was on holiday, left the parcel you (had) sent me next door." placeholder="The postman, …"><div class="fb"></div></div>
+  <div class="q"><p>e) I used to own a dog. People came to the door. The dog never barked at them. — 書き出し： <i>The dog I …</i></p><input class="blank wide" data-answers="The dog I used to own never barked at people who came to the door." data-display="The dog I used to own never barked at people who came to the door." placeholder="The dog I …"><div class="fb"></div></div>
+  <div class="q"><p>f) I bought my car from a woman. She lives in a house. You can see the house over there. — 書き出し： <i>The woman I …</i></p><input class="blank wide" data-answers="The woman I bought my car from lives in the house you can see over there." data-display="The woman I bought my car from lives in the house you can see over there." placeholder="The woman I …"><div class="fb"></div></div>
+  <div class="q"><p>g) We went to a beach on the first day of our holiday. It was covered in seaweed. This smelled a lot. — 書き出し： <i>The beach we …</i></p><input class="blank wide" data-answers="The beach we went to on the first day of our holiday was covered in seaweed which smelled a lot.|The beach we went to on the first day of our holiday was covered in seaweed that smelled a lot." data-display="The beach we went to on the first day of our holiday was covered in seaweed which smelled a lot." placeholder="The beach we …"><div class="fb"></div></div>
+  <div class="q"><p>h) My neighbours have three small children. The children make a lot of noise. My neighbours never apologise. — 書き出し： <i>My neighbours, …</i></p><input class="blank wide" data-answers="My neighbours, whose three small children make a lot of noise, never apologise." data-display="My neighbours, whose three small children make a lot of noise, never apologise." placeholder="My neighbours, …"><div class="fb"></div></div>
+  <div class="q"><p>i) I bought a new computer. It cost me a lot of money. — 書き出し： <i>The new …</i></p><input class="blank wide" data-answers="The new computer I bought cost me a lot of money." data-display="The new computer I bought cost me a lot of money." placeholder="The new …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ 問題9をチェック</button><button type="button" onclick="showFill('ex9')">👁 答えを見る</button><button type="button" onclick="resetFill('ex9')">↺ やり直す</button></div>
+  <span class="score">問題9の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>83</b> 問です（問題1：10 · 問題2：10 · 問題3：10 · 問題4：9か所 · 問題5：5文 · 問題6：7文 · 問題7：15か所 · 問題8：9文 · 問題9：8文）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
