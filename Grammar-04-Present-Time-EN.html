@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 4 — Present Time | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-04-Present-Time.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-04-Present-Time-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 4 — Present Time</h1>
+  <p>Present time: Present Simple · Present Continuous · State verbs · Spelling of the -ing form</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+<div class="card">
+  <h2>1. The Present Simple</h2>
+
+  <h3>a) Permanent facts and truths</h3>
+  <div class="formula">S + V / V-s,es &nbsp;·&nbsp; <i>takes, flows, work…</i></div>
+  <p>Used for facts that are <b>always true and permanent</b> — common in scientific and geographical descriptions, and for situations that are generally true in everyday life.</p>
+  <div class="ex"><div class="en">The light from the Sun takes 8 mins 20 secs to reach the Earth.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The River Po flows into the Adriatic Sea.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I work in an office and live in a flat in the suburbs.</div><div class="tts"></div></div>
+
+  <h3>b) Habits and repeated actions</h3>
+  <p>Used for <b>habits and routines</b>; it often goes with an adverb of frequency (<i>usually, always, often…</i>).</p>
+  <div class="ex"><div class="en">I usually take the bus to work.</div><div class="tts"></div></div>
+
+  <h3>c) Summaries of events</h3>
+  <p>It can be used to <b>summarise the events</b> of a story, a film or a book, or in a chronological table of historical events.</p>
+  <div class="ex"><div class="en">In Chapter 1, Susan meets David, and agrees to go to the school dance with him.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">In 1789 the French Revolution begins.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. The Present Continuous</h2>
+  <div class="formula">S + am / is / are + V-ing</div>
+
+  <h3>a) Actions in progress, not finished</h3>
+  <p>Used for actions that are <b>temporary and unfinished</b> — happening at the moment of speaking, or around the present time.</p>
+  <div class="ex"><div class="en">I'm doing the washing-up.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm reading one of the Harry Potter books at the moment.</div><div class="tts"></div></div>
+
+  <h3>b) Temporary habits and repeated actions over a short period</h3>
+  <p>It can also describe a habit that lasts only for <b>a short period</b>, or a single repeated action — in that case a <b>time expression is needed</b>. Used with <i>always</i>, it often has an exaggerated or complaining tone.</p>
+  <div class="ex"><div class="en">At the moment we're sending all the mail by courier, because the Post Office is on strike.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Whenever I see Tom he's smoking.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You're always borrowing money from me!</div><div class="vi">(a complaint)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. State verbs — a common point of confusion</h2>
+
+  <h3>a) Verbs not normally used in the continuous form</h3>
+  <p>Some verbs describe <b>states that already last over a period of time</b>, so they are not normally used in the continuous form. These are called <b>state verbs</b>:</p>
+  <p><i>be, believe, cost, depend, have, hear, know, matter, smell, suppose, taste, think, understand</i></p>
+
+  <h3>b) A change of meaning in the continuous form</h3>
+  <p>A few of the verbs above <b>can</b> be used in the continuous form — but then their meaning changes to an “action” meaning:</p>
+  <div class="ex"><div class="en">Tim is being rather difficult at the moment.</div><div class="vi">(be = behave: how someone acts)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm having breakfast.</div><div class="vi">(have = eat)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm tasting the soup, to check if it needs more salt.</div><div class="vi">(taste = sample, try the flavour of)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm thinking of buying a new car.</div><div class="vi">(think = consider)</div><div class="tts"></div></div>
+
+  <h3>c) Simple or continuous: permanent or temporary?</h3>
+  <p>Many situations can use both forms: the simple form for a <b>permanent situation or general habit</b>, the continuous form for a <b>temporary</b> one.</p>
+  <div class="ex"><div class="en">I live in London.</div><div class="vi">(that is my permanent home)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm living in London.</div><div class="vi">(just for a year — my home is in Athens)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Do you sleep a lot?</div><div class="vi">(asking about a habit)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Are you sleeping enough?</div><div class="vi">(asking about the present situation)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>The <b>Present Simple</b> describes facts and habitual actions. The <b>Present Continuous</b> describes an action still in progress at the time of speaking.</li>
+    <li>Many verbs describing a <b>state</b> (not a momentary event) are used only in the simple form. Verbs of mental activity such as <i>understand, know</i> belong to this group.</li>
+    <li>Some verbs have both a state meaning and an event meaning, but <b>the two meanings are not the same</b>.</li>
+    <li>When we describe a photograph, we usually describe the scene as if it <b>were happening right now</b> → use the Present Continuous.</li>
+    <li>Present forms are also used to talk about <b>future time</b> (see Grammar 3 — Future time).</li>
+    <li>There are cases where English uses the <b>Present Perfect</b> where other languages use a present tense (see Grammar 2): <i>I've lived in Milan all my life.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the most suitable verb form</h2>
+  <p>Choose the correct verb form in each sentence.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) What sort of work ______?</p><div class="opts"><button type="button">do you do</button><button type="button">are you doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) I can't talk now. I ______ the dinner.</p><div class="opts"><button type="button">cook</button><button type="button">I'm cooking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) What shall we have? ______ fish?</p><div class="opts"><button type="button">Do you like</button><button type="button">Are you liking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Can I borrow this typewriter? Or ______ it?</p><div class="opts"><button type="button">do you use</button><button type="button">are you using</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) What ______ in the evenings?</p><div class="opts"><button type="button">do the people here do</button><button type="button">are the people here doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) Follow that bus. Then you ______ left.</p><div class="opts"><button type="button">turn</button><button type="button">are turning</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) A lot of people think that the Sun ______ around the Earth.</p><div class="opts"><button type="button">goes</button><button type="button">is going</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) Excuse me, ______ your newspaper? Could I borrow it?</p><div class="opts"><button type="button">do you read</button><button type="button">are you reading</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) ______ for the bus to Newcastle?</p><div class="opts"><button type="button">Do you wait</button><button type="button">Are you waiting</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Andy ______ his own house in the country.</p><div class="opts"><button type="button">builds</button><button type="button">is building</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Put the verbs in: Present Simple or Present Continuous?</h2>
+  <p>Put each verb in brackets into the present simple or the present continuous. In sentence a) the first box (<i>do we do</i>) is a worked example — here, fill in all 16 boxes.</p>
+  <div class="q"><p>a) There's nobody here, and the door's locked. What <input class="blank" data-answers="do we do" data-display="do we do"> (we do) now?</p></div>
+  <div class="q"><p>b) What <input class="blank" data-answers="are you looking" data-display="are you looking"> (you look) at? <input class="blank" data-answers="Am I wearing" data-display="Am I wearing"> (I wear) the wrong clothes?</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="am looking after" data-display="am looking after"> (look after) Jack's dog this weekend. <input class="blank" data-answers="Do you want" data-display="Do you want"> (you want) to take it for a walk?</p></div>
+  <div class="q"><p>d) Who <input class="blank" data-answers="drives" data-display="drives"> (drive) the Mercedes that's parked outside?</p></div>
+  <div class="q"><p>e) I <input class="blank" data-answers="still have" data-display="still have"> (still have) a pain in my leg but it <input class="blank" data-answers="is getting" data-display="is getting"> (get) better.</p></div>
+  <div class="q"><p>f) Who <input class="blank" data-answers="is Sue dancing" data-display="is Sue dancing"> (Sue dance) with? That's not her brother, is it?</p></div>
+  <div class="q"><p>g) Harry always <input class="blank" data-answers="looks" data-display="looks"> (look) untidy! He <input class="blank" data-answers="wears" data-display="wears"> (wear) dirty jeans.</p></div>
+  <div class="q"><p>h) I <input class="blank" data-answers="am writing" data-display="am writing"> (write) in reply to your advertisement in the Daily News.</p></div>
+  <div class="q"><p>i) That plant I bought <input class="blank" data-answers="is not growing|isn't growing" data-display="is not growing"> (not grow) very much. And I <input class="blank" data-answers="water" data-display="water"> (water) it every day.</p></div>
+  <div class="q"><p>j) Which hotel <input class="blank" data-answers="do you stay" data-display="do you stay"> (you stay) in when you <input class="blank" data-answers="come" data-display="come"> (come) here?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/16</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Present or future?</h2>
+  <p>Decide whether the verb form in each sentence refers to <b>present (Present)</b> time or <b>future (Future)</b> time. Sentence a) is the example: <i>future</i>.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) Where are you staying on Saturday night?</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) George retires at the end of next year.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) What are we doing when the guests arrive?</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) I'm trying really hard to understand this book.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Wait for me here until I get back.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Sue is leaving in the morning.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) I'm waiting for the bus.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I'm off now and I'm taking the car.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) They're showing a Woody Allen film on Channel 4 tonight.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) I'm going for a walk this evening.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — The -ing form and spelling rules</h2>
+  <p>Write the -ing form of the 10 verbs, then complete the 3 spelling rules. Rule bank: <i>drop the e and add -ing · double the consonant and add -ing · just add -ing</i>.</p>
+  <div class="q"><p>a) Write the -ing form: &nbsp; write → <input class="blank" data-answers="writing" data-display="writing"> &nbsp;·&nbsp; swim → <input class="blank" data-answers="swimming" data-display="swimming"> &nbsp;·&nbsp; get → <input class="blank" data-answers="getting" data-display="getting"> &nbsp;·&nbsp; admit → <input class="blank" data-answers="admitting" data-display="admitting"> &nbsp;·&nbsp; annoy → <input class="blank" data-answers="annoying" data-display="annoying"> &nbsp;·&nbsp; begin → <input class="blank" data-answers="beginning" data-display="beginning"> &nbsp;·&nbsp; study → <input class="blank" data-answers="studying" data-display="studying"> &nbsp;·&nbsp; like → <input class="blank" data-answers="liking" data-display="liking"> &nbsp;·&nbsp; try → <input class="blank" data-answers="trying" data-display="trying"> &nbsp;·&nbsp; decide → <input class="blank" data-answers="deciding" data-display="deciding"></p></div>
+  <div class="q"><p>b) Rule 1 — If a word ends in <i>vowel + consonant + -e</i> (like <i>write</i>): <input class="blank" data-answers="drop the e and add -ing" data-display="drop the e and add -ing"></p></div>
+  <div class="q"><p>c) Rule 2 — If a word ends in <i>vowel + consonant</i> (like <i>swim</i>): <input class="blank" data-answers="double the consonant and add -ing" data-display="double the consonant and add -ing"></p></div>
+  <div class="q"><p>d) Rule 3 — Words ending in <i>-y</i> (like <i>try, annoy</i>): <input class="blank" data-answers="just add -ing|add -ing" data-display="just add -ing"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Rewrite the sentences using a verb from the box</h2>
+  <p>Use a verb from the box to replace the <i>italic part</i> of each sentence. Verb box: <i>be · cost · feel · have · see · smell · taste · think of</i>. Example a) <i>This flower has a wonderful perfume.</i> → <i>The flower smells wonderful.</i></p>
+  <div class="q"><p>b) <i>I think you are behaving in a very silly way.</i><br>→ I think you <input class="blank" data-answers="are being" data-display="are being"> very silly.</p></div>
+  <div class="q"><p>c) <i>She is expecting a baby in the summer.</i><br>→ She <input class="blank" data-answers="is having" data-display="is having"> a baby in the summer.</p></div>
+  <div class="q"><p>d) <i>Nancy is considering moving to Scotland.</i><br>→ Nancy <input class="blank" data-answers="is thinking of" data-display="is thinking of"> moving to Scotland.</p></div>
+  <div class="q"><p>e) <i>Don't go in. They are holding a meeting.</i><br>→ Don't go in. They <input class="blank" data-answers="are having" data-display="are having"> a meeting.</p></div>
+  <div class="q"><p>f) <i>I am meeting Janet this evening actually.</i><br>→ I <input class="blank" data-answers="am seeing" data-display="am seeing"> Janet this evening actually.</p></div>
+  <div class="q"><p>g) <i>Good clothes are becoming more and more expensive.</i><br>→ Good clothes <input class="blank" data-answers="cost" data-display="cost"> more and more.</p></div>
+  <div class="q"><p>h) <i>I am trying the soup to see if it needs more salt.</i><br>→ I <input class="blank" data-answers="am tasting" data-display="am tasting"> the soup to see if it needs more salt.</p></div>
+  <div class="q"><p>i) <i>Helen is taking a bath at the moment.</i><br>→ Helen <input class="blank" data-answers="is having" data-display="is having"> a bath at the moment.</p></div>
+  <div class="q"><p>j) <i>I think that you would be happier in another job.</i><br>→ I <input class="blank" data-answers="feel" data-display="feel"> that you would be happier in another job.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Read and complete: Katherine's letter</h2>
+  <p>Put each verb in brackets into the present simple or the present continuous. Box (1) (<i>am just writing</i>) is a worked example — here, fill in all 20 boxes.</p>
+  <div class="q"><p>Dear Aunt Jean,<br>I (1) <input class="blank" data-answers="am just writing" data-display="am just writing"> (just write) to tell you how much I (2) <input class="blank" data-answers="appreciate" data-display="appreciate"> (appreciate) the money you sent me, and to tell you how I (3) <input class="blank" data-answers="am getting on" data-display="am getting on"> (get on) in my first term at university. Actually I (4) <input class="blank" data-answers="am really enjoying" data-display="am really enjoying"> (really enjoy) myself! I (5) <input class="blank" data-answers="am studying" data-display="am studying"> (study) quite hard as well, but at the moment I (6) <input class="blank" data-answers="am spending|spend" data-display="am spending / spend"> (spend) a lot of time just making friends. I (7) <input class="blank" data-answers="am still staying" data-display="am still staying"> (still stay) with my friend Sue, and I (8) <input class="blank" data-answers="am looking for" data-display="am looking for"> (look for) somewhere of my own to live. Only a few of the first-year students (9) <input class="blank" data-answers="live" data-display="live"> (live) in college here, and I (10) <input class="blank" data-answers="seem" data-display="seem"> (seem) to be spending a lot of time travelling backwards and forwards. I (11) <input class="blank" data-answers="go" data-display="go"> (go) to lectures every morning, and most afternoons I (12) <input class="blank" data-answers="study" data-display="study"> (study) in the library. In fact I (13) <input class="blank" data-answers="am writing" data-display="am writing"> (write) this letter instead of an essay on Hamlet! I (14) <input class="blank" data-answers="think" data-display="think"> (think) I'll buy some new clothes with the money you sent. Everything (15) <input class="blank" data-answers="costs" data-display="costs"> (cost) a lot here, and I (16) <input class="blank" data-answers="am saving" data-display="am saving"> (save) to buy a winter coat. It (17) <input class="blank" data-answers="gets" data-display="gets"> (get) really cold here in the evenings. I now (18) <input class="blank" data-answers="know" data-display="know"> (know) some other students and generally speaking we (19) <input class="blank" data-answers="have" data-display="have"> (have) quite a good time socially! I (20) <input class="blank" data-answers="am also learning" data-display="am also learning"> (also learn) to drive. See you soon.<br>Katherine</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>78</b> (Exercise 1: 10 · Exercise 2: 16 blanks · Exercise 3: 10 · Exercise 4: 13 blanks (10 -ing forms + 3 spelling rules) · Exercise 5: 9 blanks · Exercise 6: 20 blanks).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
