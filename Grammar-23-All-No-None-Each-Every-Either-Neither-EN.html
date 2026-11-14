@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 23 — All, no, none, each, every, either, neither | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-23-All-No-None-Each-Every-Either-Neither.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-23-All-No-None-Each-Every-Either-Neither-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 23 — All, no, none, each, every, either, neither</h1>
+  <p>Quantity and choice: all · no · none · each · every · either · neither</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. All · No · None</h2>
+  <h3>a) All — the whole quantity</h3><p>Use <i>all (of)</i> + noun to talk about the total quantity. For emphasis, <i>all</i> can come after the subject.</p>
+  <div class="ex"><div class="en">Jim was there all the time.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They all wore white shorts and shirts.</div><div class="tts"></div></div>
+  <p><i>All</i> + subject + verb means “the only thing”: <i>All I want is some peace and quiet.</i></p>
+  <div class="note">⚠️ Do not use <i>all</i> on its own as a subject or object — use <i>everything</i>: <i>Everything has gone wrong!</i> (not <i>*All has gone wrong!</i>)</div>
+  <h3>b) No — equals “not any”</h3><p><i>No</i> + noun gives a complete negative. Use <i>no</i> before comparatives: <i>no worse than</i>, <i>no less than 500</i>. <i>No</i> is not normally used on its own before an adjective.</p>
+  <div class="ex"><div class="en">There are no plates left.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There were no less than 500 applications for the job.</div><div class="tts"></div></div>
+  <p>Idiomatic uses: <i>no good</i> (= useless); <i>no</i> + verb-ing in notices: <i>No smoking.</i></p>
+  <h3>c) None — not one / not any of them</h3><p>We do not say <i>*no of</i> — use <i>none of</i>, or <i>none</i> on its own. The verb after <i>none</i> is usually plural in everyday speech and singular in formal writing. For emphasis: <i>none at all</i> / <i>not one</i>.</p>
+  <div class="ex"><div class="en">None of the films that are showing in town look very interesting.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">How many people came to the party? — None at all!</div><div class="tts"></div></div>
+</div>
+<div class="card">
+  <h2>2. Each · Every</h2>
+  <p><i>Each</i> and <i>every</i> are similar in meaning and are often interchangeable. Both are used with a singular noun and a singular verb.</p>
+  <div class="ex"><div class="en">Each time I come here, I go to my favourite restaurant.</div><div class="tts"></div></div>
+  <h3>The difference</h3><p><i>Each</i> looks at items <b>one by one</b>; <i>every</i> looks at them <b>together as a group</b>. So <i>each</i> suits smaller numbers — even just two; <i>every</i> is used for larger numbers and for repeated actions (like <i>every day</i>).</p>
+  <div class="ex"><div class="en">They gave a medal to each member of the team.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I believe every word he says.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She kissed him on each cheek.</div><div class="tts"></div></div>
+  <div class="note">⚠️ We say <i>each of</i>, but not <i>*every of</i>: <i>Each of them was given a medal.</i> <i>Each</i> can also come after the subject or at the end of the sentence: <i>The members each received a medal. / The members received a medal each.</i></div>
+</div>
+<div class="card">
+  <h2>3. Either · Neither</h2>
+  <p><i>Either</i> and <i>neither</i> talk about <b>two</b> things or people: <i>either</i> = one or the other (it does not matter which), <i>neither</i> = not one and not the other. Both are used with singular nouns and verbs.</p>
+  <div class="ex"><div class="en">Monday or Tuesday? Yes, either day is fine.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm sorry, but neither day is convenient.</div><div class="tts"></div></div>
+  <p><i>Not … either</i> has the same meaning as <i>neither</i>. <i>Either</i> can also mean “both”, as in <i>on either side</i>.</p>
+  <div class="ex"><div class="en">I didn't like either of those films.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">On either side of the house there are shops.</div><div class="tts"></div></div>
+</div>
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><i>All</i> + subject + verb means “the only thing”: <i>All we need now is a new car.</i> But do not use <i>all</i> on its own as a subject — use <i>everything</i>: <i>Everything is missing, I'm afraid.</i></li>
+    <li><i>No</i> is used idiomatically in notices and fixed phrases: <i>No parking. No smoking. It's no use. It's no good.</i></li>
+    <li><i>Each</i> looks at items one by one; <i>every</i> looks at the group together and is used for larger numbers. Both take a singular verb. We say <i>each of</i> but not <i>*every of</i>: <i>Each of these books has its interesting points.</i></li>
+    <li><i>Either</i> and <i>neither</i> refer to two items separately and take a singular verb: <i>Neither of these hotels is very comfortable. Either one would be OK.</i></li>
+    <li>After <i>none</i>, the verb is often plural in everyday speech and singular in formal writing: <i>None of the students have/has answered the question correctly.</i></li>
+  </ol>
+</div>
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Rewrite the sentences with the word in capitals</h2>
+  <p>Rewrite each sentence so that it has the same meaning, using the word given. Type the whole new sentence in the box.</p>
+  <div class="note">📌 <b>Example a)</b> This is the only money I have left. (<b>ALL</b>) → <i>This is all the money I have left.</i></div>
+  <b>b)</b> There wasn't anyone at the meeting. (<b>NO</b>)<br><span style="display:inline-block;margin-top:4px"></span><input class="blank wide" data-answers="There were no people at the meeting." data-display="There were no people at the meeting.">
+  <b>c)</b> Both singers had bad voices. (<b>NEITHER</b>)<br><input class="blank wide" data-answers="Neither singer had a good voice.|Neither of the singers had a good voice." data-display="Neither singer had a good voice.">
+  <b>d)</b> All of the cups are dirty. (<b>NONE</b>)<br><input class="blank wide" data-answers="None of the cups are clean.|None of the cups is clean." data-display="None of the cups are clean.">
+  <b>e)</b> Everyone was cheering loudly. (<b>ALL</b>)<br><input class="blank wide" data-answers="All the people were cheering loudly." data-display="All the people were cheering loudly.">
+  <b>f)</b> You both deserve promotion. (<b>EACH</b>)<br><input class="blank wide" data-answers="Each of you deserves promotion.|You each deserve promotion." data-display="Each of you deserves promotion.">
+  <b>g)</b> I read both books, but I liked neither of them. (<b>EITHER</b>)<br><input class="blank wide" data-answers="I read both books, but I didn't like either of them." data-display="I read both books, but I didn't like either of them.">
+  <b>h)</b> Whenever I cross the Channel by boat I feel seasick. (<b>EVERY</b>)<br><input class="blank wide" data-answers="Every time I cross the Channel by boat I feel seasick." data-display="Every time I cross the Channel by boat I feel seasick.">
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Rewrite the sentences beginning as shown</h2>
+  <p>Rewrite each sentence so that it has the same meaning, beginning as shown. Type the missing part in the box.</p>
+  <div class="note">📌 <b>Example a)</b> Everyone in the office was given a personal parking space. → <i>Each person in the office was given a personal parking space.</i></div>
+  <b>b)</b> This town doesn't have any good hotels.<br><b>There are</b> <input class="blank" data-answers="no good hotels in this town" data-display="no good hotels in this town" style="width:min(520px,100%)"> 
+  <b>c)</b> Love is the only thing that you need.<br><b>All</b> <input class="blank" data-answers="you need is love" data-display="you need is love" style="width:min(520px,100%)"> 
+  <b>d)</b> These two pens don't write properly.<br><b>Neither</b> <input class="blank" data-answers="of these pens writes properly" data-display="of these pens writes properly" style="width:min(520px,100%)"> 
+  <b>e)</b> We are all responsible for our own actions.<br><b>Each</b> <input class="blank" data-answers="of us is responsible for our own actions" data-display="of us is responsible for our own actions" style="width:min(520px,100%)"> 
+  <b>f)</b> All of us feel lonely sometimes.<br><b>We</b> <input class="blank" data-answers="all feel lonely sometimes" data-display="all feel lonely sometimes" style="width:min(520px,100%)"> 
+  <b>g)</b> All of the shops are closed.<br><b>None</b> <input class="blank" data-answers="of the shops is open|of the shops are open" data-display="of the shops is/are open" style="width:min(520px,100%)"> 
+  <b>h)</b> Both jobs were unsuitable for Helen.<br><b>Neither</b> <input class="blank" data-answers="job was suitable for Helen" data-display="job was suitable for Helen" style="width:min(520px,100%)"> 
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Choose the correct answer A–D</h2>
+  <p>Choose the most suitable answer A, B, C or D to complete each sentence.</p>
+  <div class="note">📌 <b>Note:</b> item a) is the worked example with its answer printed (C). Here you answer all 10 items.</div>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p><b>a)</b> Jack walked into the room with a gun in either ______.</p><div class="opts"><button type="button">A) side</button><button type="button">B) door</button><button type="button">C) hand</button><button type="button">D) one</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>b)</b> I had ______ a hundred offers for my house.</p><div class="opts"><button type="button">A) neither</button><button type="button">B) each</button><button type="button">C) all</button><button type="button">D) no less than</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>c)</b> I feel so tired this evening. I've been working hard ______.</p><div class="opts"><button type="button">A) all day</button><button type="button">B) every day</button><button type="button">C) each day</button><button type="button">D) day by day</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>d)</b> The two cars for sale were in poor condition, so I didn't buy ______.</p><div class="opts"><button type="button">A) either of them</button><button type="button">B) both of them</button><button type="button">C) neither of them</button><button type="button">D) each of them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>e)</b> I tried to lift the heavy trunk but it was ______.</p><div class="opts"><button type="button">A) not good</button><button type="button">B) no less than good</button><button type="button">C) neither good</button><button type="button">D) no good</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>f)</b> The room was full of people and ______ were speaking.</p><div class="opts"><button type="button">A) neither of them</button><button type="button">B) all of them</button><button type="button">C) none of them</button><button type="button">D) each of them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>g)</b> ______ spent more time walking a century ago.</p><div class="opts"><button type="button">A) People all</button><button type="button">B) All persons</button><button type="button">C) each people</button><button type="button">D) All</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>h)</b> My friend Jonathan has a gold earring in ______.</p><div class="opts"><button type="button">A) his two ears</button><button type="button">B) each ear</button><button type="button">C) every year</button><button type="button">D) the ears</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>i)</b> I looked everywhere for my pen and it was here ______.</p><div class="opts"><button type="button">A) none of the time</button><button type="button">B) every time</button><button type="button">C) all the time</button><button type="button">D) each time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>j)</b> People say that there is ______ like show business.</p><div class="opts"><button type="button">A) all business</button><button type="button">B) no business</button><button type="button">C) not business</button><button type="button">D) all business</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Complete the sentences with a word from the box</h2>
+  <p>Complete each sentence with a word from the box. You may use a word more than once.</p>
+  <div class="note"><b>all · each · either · every · no · none</b></div>
+  <div class="q"><p><b>a)</b> Is <b>either</b> of you interested in working on Saturday this week? (example)</p></div>
+  <b>b)</b> I am afraid there are <input class="blank" data-answers="no" data-display="no"> vacancies in the company at present.
+  <b>c)</b> I think we should be given at least £50 <input class="blank" data-answers="each" data-display="each">.
+  <b>d)</b> <input class="blank" data-answers="every" data-display="Every"> other Saturday we watch our local hockey team.
+  <b>e)</b> Let's start now. There's <input class="blank" data-answers="no" data-display="no"> time like the present!
+  <b>f)</b> <input class="blank" data-answers="all" data-display="All"> you are interested in doing is going to the cafe!
+  <b>g)</b> There are two beds. You can sleep in <input class="blank" data-answers="either" data-display="either"> one, it doesn't matter.
+  <b>h)</b> Sally gave a present to <input class="blank" data-answers="each" data-display="each"> and every one of us!
+  <b>i)</b> And the star of our show is <input class="blank" data-answers="none" data-display="none"> other than Dorothy Rogers!
+  <b>j)</b> My boss has given me <input class="blank" data-answers="every" data-display="every"> chance to succeed.
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Rewrite the sentences with the word given</h2>
+  <p>Rewrite each sentence so that it has the same meaning, beginning as shown. Type the missing part in the box.</p>
+  <div class="note">📌 <b>Example a)</b> I go to the cinema on Thursdays in winter. (<i>Thursday</i>) → <i>I go to the cinema <b>every Thursday</b> in winter.</i></div>
+  <b>b)</b> This has nothing to do with you! (<i>none</i>)<br><b>This is</b> <input class="blank" data-answers="none of your" data-display="none of your" style="width:min(520px,100%)"> business!
+  <b>c)</b> I'm afraid there aren't any empty seats at the front. (<i>all</i>)<br><b>I'm afraid</b> <input class="blank" data-answers="all the seats|all of the seats" data-display="all the seats" style="width:min(520px,100%)"> at the front are taken.
+  <b>d)</b> From today, lorries are not allowed to go through the town centre. (<i>no</i>)<br><b>From today</b> <input class="blank" data-answers="no lorries are allowed" data-display="no lorries are allowed" style="width:min(520px,100%)"> to go through the town centre.
+  <b>e)</b> The days get colder and colder. (<i>it</i>)<br><b>Each</b> <input class="blank" data-answers="day it gets" data-display="day it gets" style="width:min(520px,100%)"> colder.
+  <b>f)</b> Both questions were impossible to understand. (<i>couldn't</i>)<br><b>I</b> <input class="blank" data-answers="couldn't understand either" data-display="couldn't understand either" style="width:min(520px,100%)"> question.
+  <b>g)</b> You only want to listen to rock music! (<i>is</i>)<br><b>All you</b> <input class="blank" data-answers="want to do is listen" data-display="want to do is listen" style="width:min(520px,100%)"> to rock music.
+  <b>h)</b> As many as 20,000 people are thought to have attended the concert. (<i>than</i>)<br><b>No</b> <input class="blank" data-answers="fewer than 20,000 people" data-display="fewer than 20,000 people" style="width:min(520px,100%)"> are thought to have attended the concert.
+  <b>i)</b> Each child was given £100. (<i>were</i>)<br><b>The</b> <input class="blank" data-answers="children were given" data-display="children were given" style="width:min(520px,100%)"> £100 each.
+  <b>j)</b> We cannot waste any time! (<i>no</i>)<br><b>There</b> <input class="blank" data-answers="is no time to" data-display="is no time to" style="width:min(520px,100%)"> waste.
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Find the extra word in each line</h2>
+  <p>In the text “Supermarkets” below, some lines contain one extra word. Type the extra word of each line in the box; if the line is correct, type <b>none</b>.</p>
+  <div class="note">📌 <b>Example lines:</b> “The every time I go to a supermarket I ask” → extra word: <b>The</b>. · “myself why I go shopping there so often.” → correct line (type <b>none</b>).</div>
+  <b>1</b> Last time I ended up buying all the kinds of things <input class="blank" data-answers="the" data-display="the">
+  <b>2</b> when the all I really wanted was a packet of <input class="blank" data-answers="the" data-display="the">
+  <b>3</b> rice and a small loaf, but could find neither <input class="blank" data-answers="none|✓" data-display="none">
+  <b>4</b> of them. I looked in every one corner of the shop <input class="blank" data-answers="one" data-display="one">
+  <b>5</b> but there was simply no a sign of these products. <input class="blank" data-answers="a" data-display="a">
+  <b>6</b> I looked carefully on either side of the aisles <input class="blank" data-answers="none|✓" data-display="none">
+  <b>7</b> but it was no any good. I ought to confess here <input class="blank" data-answers="any" data-display="any">
+  <b>8</b> that I had forgotten my glasses! All of I could see <input class="blank" data-answers="of" data-display="of">
+  <b>9</b> was rows of colourful shapes of all sizes. I decided <input class="blank" data-answers="none|✓" data-display="none">
+  <b>10</b> to ask an assistant. They were all a busy of course <input class="blank" data-answers="a" data-display="a">
+  <b>11</b> and none of them was anywhere nearby in any <input class="blank" data-answers="none|✓" data-display="none">
+  <b>12</b> case. Meanwhile I had been filling my basket with <input class="blank" data-answers="none|✓" data-display="none">
+  <b>13</b> all the kinds of things I thought I wanted. After I <input class="blank" data-answers="the" data-display="the">
+  <b>14</b> had paid, I had no money left for the weekend, <input class="blank" data-answers="none|✓" data-display="none">
+  <b>15</b> but I hadn't bought the either of the things I wanted! <input class="blank" data-answers="the" data-display="the">
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>57</b> (Exercise 1: 7 · Exercise 2: 7 · Exercise 3: 10 · Exercise 4: 9 · Exercise 5: 9 · Exercise 6: 15).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

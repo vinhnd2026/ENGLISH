@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 23 — All, no, none, each, every, either, neither | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-23-All-No-None-Each-Every-Either-Neither.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-23-All-No-None-Each-Every-Either-Neither-EN.html">🇬🇧 English</a>
+  <h1>Grammar 23 — All, no, none, each, every, either, neither</h1>
+  <p>数量と選択：all・no・none・each・every・either・neither</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. All・No・None</h2>
+  <h3>a) All — 全体・すべて</h3><p><i>All (of)</i> ＋名詞は、数量全体を表します。強調する場合、<i>all</i> は主語の後に置くこともできます。</p>
+  <div class="ex"><div class="en">Jim was there all the time.</div><div class="vi">ジムはずっとそこにいました。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They all wore white shorts and shirts.</div><div class="vi">彼らはみんな白い半ズボンとシャツを着ていました。</div><div class="tts"></div></div>
+  <p><i>All</i> ＋主語＋動詞は「唯一のこと」という意味になります：<i>All I want is some peace and quiet.</i>（私が望むのは静かな時間だけです。）</p>
+  <div class="note">⚠️ <i>all</i> だけを主語・目的語にはしません。<i>everything</i> を使います：<i>Everything has gone wrong!</i>（<i>*All has gone wrong!</i> とは言いません）</div>
+  <h3>b) No — 「〜がまったくない」（＝ not any）</h3><p><i>No</i> ＋名詞は完全な否定を表します。比較級の前にも使います：<i>no worse than</i>（〜より悪くない）、<i>no less than 500</i>（500も）。通常、<i>no</i> だけを形容詞の前には置きません。</p>
+  <div class="ex"><div class="en">There are no plates left.</div><div class="vi">お皿が1枚も残っていません。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There were no less than 500 applications for the job.</div><div class="vi">その仕事には500件もの応募がありました。</div><div class="tts"></div></div>
+  <p>慣用表現：<i>no good</i>（だめ・役に立たない）、禁止表示の <i>no</i> ＋ -ing：<i>No smoking.</i></p>
+  <h3>c) None — 「どれも〜ない・誰も〜ない」</h3><p><i>*no of</i> とは言いません。<i>none of</i> か、単独の <i>none</i> を使います。<i>none</i> の後の動詞は、日常会話では複数扱いが普通で、改まった文章では単数扱いにします。強調：<i>none at all</i> / <i>not one</i>。</p>
+  <div class="ex"><div class="en">None of the films that are showing in town look very interesting.</div><div class="vi">町で上映中の映画は、どれもあまり面白そうではありません。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">How many people came to the party? — None at all!</div><div class="vi">パーティーには何人来ましたか。— まったく誰も来ませんでした！</div><div class="tts"></div></div>
+</div>
+<div class="card">
+  <h2>2. Each・Every</h2>
+  <p><i>Each</i> と <i>every</i> は意味が近く、交換できる場合も多くあります。どちらも単数名詞・単数動詞と一緒に使います。</p>
+  <div class="ex"><div class="en">Each time I come here, I go to my favourite restaurant.</div><div class="vi">ここに来るたびに、お気に入りのレストランに行きます。</div><div class="tts"></div></div>
+  <h3>違い</h3><p><i>Each</i> は物を<b>1つずつ</b>見るとき、<i>every</i> は<b>グループ全体</b>として見るときに使います。そのため <i>each</i> は小さいグループ（2つの場合も可）に、<i>every</i> はもっと大きな数や、繰り返される行動（<i>every day</i> など）に使います。</p>
+  <div class="ex"><div class="en">They gave a medal to each member of the team.</div><div class="vi">チームのメンバー1人1人にメダルが渡されました。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I believe every word he says.</div><div class="vi">彼の言うことは一言残らず信じます。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She kissed him on each cheek.</div><div class="vi">彼女は彼の両頬にキスをしました。</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>each of</i> とは言えますが、<i>*every of</i> とは言いません：<i>Each of them was given a medal.</i> また <i>each</i> は主語の後や文末にも置けます：<i>The members each received a medal. / The members received a medal each.</i></div>
+</div>
+<div class="card">
+  <h2>3. Either・Neither</h2>
+  <p><i>Either</i> と <i>neither</i> は<b>2つ</b>の物・人について使います。<i>either</i> は「どちらか一方（どちらでもよい）」、<i>neither</i> は「どちらも〜ない」という意味です。どちらも単数名詞・単数動詞と一緒に使います。</p>
+  <div class="ex"><div class="en">Monday or Tuesday? Yes, either day is fine.</div><div class="vi">月曜日か火曜日？うん、どちらの日でも大丈夫です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm sorry, but neither day is convenient.</div><div class="vi">すみませんが、どちらの日も都合がつきません。</div><div class="tts"></div></div>
+  <p><i>Not … either</i> は <i>neither</i> と同じ意味になります。また <i>either</i> は <i>on either side</i>（両側に）のように「両方」の意味にもなります。</p>
+  <div class="ex"><div class="en">I didn't like either of those films.</div><div class="vi">その2本の映画はどちらも気に入りませんでした。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">On either side of the house there are shops.</div><div class="vi">家の両側に店があります。</div><div class="tts"></div></div>
+</div>
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><i>All</i> ＋主語＋動詞は「唯一のこと」という意味です：<i>All we need now is a new car.</i> ただし <i>all</i> だけを主語にはせず、<i>everything</i> を使います：<i>Everything is missing, I'm afraid.</i></li>
+    <li><i>No</i> には標識や決まった言い回しの慣用的な使い方があります：<i>No parking. No smoking. It's no use. It's no good.</i></li>
+    <li><i>Each</i> は1つずつ、<i>every</i> はグループ全体・大きな数を表します。どちらも単数動詞と一緒に使います。<i>each of</i> とは言いますが <i>*every of</i> とは言いません：<i>Each of these books has its interesting points.</i></li>
+    <li><i>Either</i> と <i>neither</i> は2つの物を別々に指し、単数動詞と一緒に使います：<i>Neither of these hotels is very comfortable. Either one would be OK.</i></li>
+    <li><i>None</i> の後の動詞は、日常会話では複数扱いが普通で、改まった文章では単数扱いにします：<i>None of the students have/has answered the question correctly.</i></li>
+  </ol>
+</div>
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+<div class="card fill-sec" id="ex1">
+  <h2>問題1 — 与えられた大文字の語を使って書き換えよう</h2>
+  <p>与えられた語を使って、意味が変わらないように各文を書き換えてください。新しい文全体を空所に入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> This is the only money I have left. (<b>ALL</b>) → <i>This is all the money I have left.</i></div>
+  <b>b)</b> There wasn't anyone at the meeting. (<b>NO</b>)<br><span style="display:inline-block;margin-top:4px"></span><input class="blank wide" data-answers="There were no people at the meeting." data-display="There were no people at the meeting.">
+  <b>c)</b> Both singers had bad voices. (<b>NEITHER</b>)<br><input class="blank wide" data-answers="Neither singer had a good voice.|Neither of the singers had a good voice." data-display="Neither singer had a good voice.">
+  <b>d)</b> All of the cups are dirty. (<b>NONE</b>)<br><input class="blank wide" data-answers="None of the cups are clean.|None of the cups is clean." data-display="None of the cups are clean.">
+  <b>e)</b> Everyone was cheering loudly. (<b>ALL</b>)<br><input class="blank wide" data-answers="All the people were cheering loudly." data-display="All the people were cheering loudly.">
+  <b>f)</b> You both deserve promotion. (<b>EACH</b>)<br><input class="blank wide" data-answers="Each of you deserves promotion.|You each deserve promotion." data-display="Each of you deserves promotion.">
+  <b>g)</b> I read both books, but I liked neither of them. (<b>EITHER</b>)<br><input class="blank wide" data-answers="I read both books, but I didn't like either of them." data-display="I read both books, but I didn't like either of them.">
+  <b>h)</b> Whenever I cross the Channel by boat I feel seasick. (<b>EVERY</b>)<br><input class="blank wide" data-answers="Every time I cross the Channel by boat I feel seasick." data-display="Every time I cross the Channel by boat I feel seasick.">
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ 問題1をチェック</button><button type="button" onclick="showFill('ex1')">👁 答えを見る</button><button type="button" onclick="resetFill('ex1')">↺ やり直す</button></div>
+  <span class="score">問題1の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 示された書き出しで文を書き換えよう</h2>
+  <p>示された書き出しを使って、意味が変わらないように各文を書き換えてください。足りない部分を空所に入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> Everyone in the office was given a personal parking space. → <i>Each person in the office was given a personal parking space.</i></div>
+  <b>b)</b> This town doesn't have any good hotels.<br><b>There are</b> <input class="blank" data-answers="no good hotels in this town" data-display="no good hotels in this town" style="width:min(520px,100%)"> 
+  <b>c)</b> Love is the only thing that you need.<br><b>All</b> <input class="blank" data-answers="you need is love" data-display="you need is love" style="width:min(520px,100%)"> 
+  <b>d)</b> These two pens don't write properly.<br><b>Neither</b> <input class="blank" data-answers="of these pens writes properly" data-display="of these pens writes properly" style="width:min(520px,100%)"> 
+  <b>e)</b> We are all responsible for our own actions.<br><b>Each</b> <input class="blank" data-answers="of us is responsible for our own actions" data-display="of us is responsible for our own actions" style="width:min(520px,100%)"> 
+  <b>f)</b> All of us feel lonely sometimes.<br><b>We</b> <input class="blank" data-answers="all feel lonely sometimes" data-display="all feel lonely sometimes" style="width:min(520px,100%)"> 
+  <b>g)</b> All of the shops are closed.<br><b>None</b> <input class="blank" data-answers="of the shops is open|of the shops are open" data-display="of the shops is/are open" style="width:min(520px,100%)"> 
+  <b>h)</b> Both jobs were unsuitable for Helen.<br><b>Neither</b> <input class="blank" data-answers="job was suitable for Helen" data-display="job was suitable for Helen" style="width:min(520px,100%)"> 
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card" id="ex3">
+  <h2>問題3 — A〜D から正しい答えを選ぼう</h2>
+  <p>A、B、C、D の中から、各文を完成させる最も適切な答えを選んでください。</p>
+  <div class="note">📌 <b>注：</b>a) は答え（C）が印刷されている例です。このレッスンでは10問すべてに答えてください。</div>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p><b>a)</b> Jack walked into the room with a gun in either ______.</p><div class="opts"><button type="button">A) side</button><button type="button">B) door</button><button type="button">C) hand</button><button type="button">D) one</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>b)</b> I had ______ a hundred offers for my house.</p><div class="opts"><button type="button">A) neither</button><button type="button">B) each</button><button type="button">C) all</button><button type="button">D) no less than</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>c)</b> I feel so tired this evening. I've been working hard ______.</p><div class="opts"><button type="button">A) all day</button><button type="button">B) every day</button><button type="button">C) each day</button><button type="button">D) day by day</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>d)</b> The two cars for sale were in poor condition, so I didn't buy ______.</p><div class="opts"><button type="button">A) either of them</button><button type="button">B) both of them</button><button type="button">C) neither of them</button><button type="button">D) each of them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>e)</b> I tried to lift the heavy trunk but it was ______.</p><div class="opts"><button type="button">A) not good</button><button type="button">B) no less than good</button><button type="button">C) neither good</button><button type="button">D) no good</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>f)</b> The room was full of people and ______ were speaking.</p><div class="opts"><button type="button">A) neither of them</button><button type="button">B) all of them</button><button type="button">C) none of them</button><button type="button">D) each of them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>g)</b> ______ spent more time walking a century ago.</p><div class="opts"><button type="button">A) People all</button><button type="button">B) All persons</button><button type="button">C) each people</button><button type="button">D) All</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>h)</b> My friend Jonathan has a gold earring in ______.</p><div class="opts"><button type="button">A) his two ears</button><button type="button">B) each ear</button><button type="button">C) every year</button><button type="button">D) the ears</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>i)</b> I looked everywhere for my pen and it was here ______.</p><div class="opts"><button type="button">A) none of the time</button><button type="button">B) every time</button><button type="button">C) all the time</button><button type="button">D) each time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>j)</b> People say that there is ______ like show business.</p><div class="opts"><button type="button">A) all business</button><button type="button">B) no business</button><button type="button">C) not business</button><button type="button">D) all business</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題3の点数： <span class="score-num">0</span>/10</span>
+</div>
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — ボックスの語で文を完成させよう</h2>
+  <p>ボックスの中の語を使って各文を完成させてください。同じ語を複数回使ってもかまいません。</p>
+  <div class="note"><b>all · each · either · every · no · none</b></div>
+  <div class="q"><p><b>a)</b> Is <b>either</b> of you interested in working on Saturday this week?（例）</p></div>
+  <b>b)</b> I am afraid there are <input class="blank" data-answers="no" data-display="no"> vacancies in the company at present.
+  <b>c)</b> I think we should be given at least £50 <input class="blank" data-answers="each" data-display="each">.
+  <b>d)</b> <input class="blank" data-answers="every" data-display="Every"> other Saturday we watch our local hockey team.
+  <b>e)</b> Let's start now. There's <input class="blank" data-answers="no" data-display="no"> time like the present!
+  <b>f)</b> <input class="blank" data-answers="all" data-display="All"> you are interested in doing is going to the cafe!
+  <b>g)</b> There are two beds. You can sleep in <input class="blank" data-answers="either" data-display="either"> one, it doesn't matter.
+  <b>h)</b> Sally gave a present to <input class="blank" data-answers="each" data-display="each"> and every one of us!
+  <b>i)</b> And the star of our show is <input class="blank" data-answers="none" data-display="none"> other than Dorothy Rogers!
+  <b>j)</b> My boss has given me <input class="blank" data-answers="every" data-display="every"> chance to succeed.
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 与えられた語を使って書き換えよう</h2>
+  <p>示された書き出しを使って、意味が変わらないように各文を書き換えてください。足りない部分を空所に入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> I go to the cinema on Thursdays in winter. (<i>Thursday</i>) → <i>I go to the cinema <b>every Thursday</b> in winter.</i></div>
+  <b>b)</b> This has nothing to do with you! (<i>none</i>)<br><b>This is</b> <input class="blank" data-answers="none of your" data-display="none of your" style="width:min(520px,100%)"> business!
+  <b>c)</b> I'm afraid there aren't any empty seats at the front. (<i>all</i>)<br><b>I'm afraid</b> <input class="blank" data-answers="all the seats|all of the seats" data-display="all the seats" style="width:min(520px,100%)"> at the front are taken.
+  <b>d)</b> From today, lorries are not allowed to go through the town centre. (<i>no</i>)<br><b>From today</b> <input class="blank" data-answers="no lorries are allowed" data-display="no lorries are allowed" style="width:min(520px,100%)"> to go through the town centre.
+  <b>e)</b> The days get colder and colder. (<i>it</i>)<br><b>Each</b> <input class="blank" data-answers="day it gets" data-display="day it gets" style="width:min(520px,100%)"> colder.
+  <b>f)</b> Both questions were impossible to understand. (<i>couldn't</i>)<br><b>I</b> <input class="blank" data-answers="couldn't understand either" data-display="couldn't understand either" style="width:min(520px,100%)"> question.
+  <b>g)</b> You only want to listen to rock music! (<i>is</i>)<br><b>All you</b> <input class="blank" data-answers="want to do is listen" data-display="want to do is listen" style="width:min(520px,100%)"> to rock music.
+  <b>h)</b> As many as 20,000 people are thought to have attended the concert. (<i>than</i>)<br><b>No</b> <input class="blank" data-answers="fewer than 20,000 people" data-display="fewer than 20,000 people" style="width:min(520px,100%)"> are thought to have attended the concert.
+  <b>i)</b> Each child was given £100. (<i>were</i>)<br><b>The</b> <input class="blank" data-answers="children were given" data-display="children were given" style="width:min(520px,100%)"> £100 each.
+  <b>j)</b> We cannot waste any time! (<i>no</i>)<br><b>There</b> <input class="blank" data-answers="is no time to" data-display="is no time to" style="width:min(520px,100%)"> waste.
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 各行の余分な語を見つけよう</h2>
+  <p>下の「Supermarkets」の文章には、余分な語が1つ含まれる行があります。各行の余分な語を入力してください。その行が正しい場合は <b>none</b> と入力してください。</p>
+  <div class="note">📌 <b>見本の行：</b>「The every time I go to a supermarket I ask」→ 余分な語：<b>The</b>。「myself why I go shopping there so often.」→ 正しい行（<b>none</b> と入力）。</div>
+  <b>1</b> Last time I ended up buying all the kinds of things <input class="blank" data-answers="the" data-display="the">
+  <b>2</b> when the all I really wanted was a packet of <input class="blank" data-answers="the" data-display="the">
+  <b>3</b> rice and a small loaf, but could find neither <input class="blank" data-answers="none|✓" data-display="none">
+  <b>4</b> of them. I looked in every one corner of the shop <input class="blank" data-answers="one" data-display="one">
+  <b>5</b> but there was simply no a sign of these products. <input class="blank" data-answers="a" data-display="a">
+  <b>6</b> I looked carefully on either side of the aisles <input class="blank" data-answers="none|✓" data-display="none">
+  <b>7</b> but it was no any good. I ought to confess here <input class="blank" data-answers="any" data-display="any">
+  <b>8</b> that I had forgotten my glasses! All of I could see <input class="blank" data-answers="of" data-display="of">
+  <b>9</b> was rows of colourful shapes of all sizes. I decided <input class="blank" data-answers="none|✓" data-display="none">
+  <b>10</b> to ask an assistant. They were all a busy of course <input class="blank" data-answers="a" data-display="a">
+  <b>11</b> and none of them was anywhere nearby in any <input class="blank" data-answers="none|✓" data-display="none">
+  <b>12</b> case. Meanwhile I had been filling my basket with <input class="blank" data-answers="none|✓" data-display="none">
+  <b>13</b> all the kinds of things I thought I wanted. After I <input class="blank" data-answers="the" data-display="the">
+  <b>14</b> had paid, I had no money left for the weekend, <input class="blank" data-answers="none|✓" data-display="none">
+  <b>15</b> but I hadn't bought the either of the things I wanted! <input class="blank" data-answers="the" data-display="the">
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>57</b> 問です（問題1：7 · 問題2：7 · 問題3：10 · 問題4：9 · 問題5：9 · 問題6：15）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

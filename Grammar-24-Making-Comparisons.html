@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 24 — Making Comparisons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-24-Making-Comparisons-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Grammar-24-Making-Comparisons-EN.html">🇬🇧 English</a>
+  <h1>Grammar 24 — Making Comparisons</h1>
+  <p>So sánh hơn · So sánh nhất · Trạng từ so sánh · Mệnh đề so sánh (as … as, the … the)</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. Tính từ so sánh hơn (Comparative adjectives)</h2>
+
+  <h3>a) Thêm -er</h3>
+  <div class="formula">small → smaller &nbsp;·&nbsp; early → earlier &nbsp;·&nbsp; late → later</div>
+  <p>Tính từ <b>một âm tiết</b> và tính từ hai âm tiết <b>kết thúc bằng -y</b> thường thêm <i>-er</i> để tạo dạng so sánh hơn (chữ <i>y</i> đổi thành <i>i</i>). Tính từ kết thúc bằng <i>-e</i> chỉ thêm <i>-r</i>.</p>
+
+  <h3>b) Dùng more / less</h3>
+  <div class="formula">more / less modern &nbsp;·&nbsp; more / less interesting</div>
+  <p>Các tính từ hai âm tiết còn lại và tính từ có từ ba âm tiết trở lên dùng <i>more</i> hoặc <i>less</i>.</p>
+
+  <h3>c) Cả hai dạng đều được</h3>
+  <div class="formula">polite → politer / more polite</div>
+  <p>Một nhóm nhỏ tính từ hai âm tiết có cả hai dạng: <i>clever, common, narrow, polite, quiet, simple, tired</i>.</p>
+
+  <h3>d) Dạng bất quy tắc</h3>
+  <div class="formula">good → better &nbsp;·&nbsp; bad → worse &nbsp;·&nbsp; far → farther / further</div>
+  <p><i>Further</i> có hai nghĩa: nghĩa thông thường là “xa hơn”, và một nghĩa nữa là “thêm, hơn nữa”.</p>
+  <div class="ex"><div class="en">How much further do we have to go?</div><div class="vi">Ta còn phải đi xa thêm bao nhiêu nữa? (xa hơn)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I can't really advise you any further.</div><div class="vi">Tôi thật sự không thể khuyên bạn thêm được nữa. (thêm nữa)</div><div class="tts"></div></div>
+  <p><i>Old</i> có dạng đều <i>older</i> và dạng bất quy tắc <i>elder</i> — <i>elder</i> chỉ dùng như tính từ đứng trước danh từ:</p>
+  <div class="ex"><div class="en">This is my elder sister.</div><div class="vi">Đây là chị gái của tôi.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Tính từ so sánh nhất (Superlative adjectives)</h2>
+  <div class="formula">small → smaller → the smallest &nbsp;·&nbsp; early → earlier → the earliest &nbsp;·&nbsp; late → later → the latest</div>
+  <div class="formula">modern → more modern → the most modern &nbsp;·&nbsp; interesting → more interesting → the most interesting</div>
+  <p>So sánh nhất theo quy tắc tương tự so sánh hơn: tính từ ngắn dùng <i>(the) -est</i>, tính từ dài dùng <i>(the) most</i>. Hai dạng bất quy tắc cần nhớ:</p>
+  <div class="formula">good → the best &nbsp;·&nbsp; bad → the worst</div>
+</div>
+
+<div class="card">
+  <h2>3. Trạng từ so sánh (Comparatives of adverbs)</h2>
+  <div class="formula">fast → faster → the fastest &nbsp;·&nbsp; early → earlier → the earliest &nbsp;·&nbsp; efficiently → more / less efficiently → the most / least efficiently</div>
+  <p>Trạng từ tuân theo cùng quy tắc như tính từ: một âm tiết thêm <i>-er / -est</i>; hai âm tiết kết thúc bằng <i>-y</i> cũng vậy; trạng từ dài dùng <i>more / less</i> và <i>the most / least</i>. Riêng <i>well</i> và <i>badly</i> là bất quy tắc:</p>
+  <div class="formula">well → better → the best &nbsp;·&nbsp; badly → worse → the worst</div>
+</div>
+
+<div class="card">
+  <h2>4. Các cách so sánh (Making comparisons)</h2>
+  <p>Dạng so sánh đơn giản nhất dùng <i>than</i>:</p>
+  <div class="ex"><div class="en">You look younger than your brother.</div><div class="vi">Bạn trông trẻ hơn anh/em trai của bạn.</div><div class="tts"></div></div>
+  <p>Có thể <b>lặp lại</b> dạng so sánh hơn để diễn tả sự thay đổi liên tục, ngày càng tăng:</p>
+  <div class="ex"><div class="en">This lesson seems to be getting longer and longer.</div><div class="vi">Bài học này dường như cứ dài ra mãi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jim started feeling more and more tired.</div><div class="vi">Jim bắt đầu cảm thấy ngày càng mệt hơn.</div><div class="tts"></div></div>
+  <p>Làm cho so sánh <b>mạnh hơn</b> bằng <i>much, far, a lot</i>; làm <b>nhẹ đi</b> bằng <i>a bit, a little</i>:</p>
+  <div class="ex"><div class="en">This book is much more expensive.</div><div class="vi">Quyển sách này đắt hơn nhiều.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This book is a little more expensive.</div><div class="vi">Quyển sách này đắt hơn một chút.</div><div class="tts"></div></div>
+  <p>Lưu ý mẫu câu lặp lại từ <i>the</i> ở cả hai vế — vế trước thay đổi thì vế sau thay đổi theo:</p>
+  <div class="ex"><div class="en">The faster you drive, the more petrol you use.</div><div class="vi">Bạn lái càng nhanh thì càng tốn xăng.</div><div class="tts"></div></div>
+  <p>Một số cách diễn đạt với <i>best</i>:</p>
+  <div class="ex"><div class="en">Sorry, but this is the best I can do.</div><div class="vi">Xin lỗi, nhưng đây là điều tốt nhất tôi có thể làm.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I tried my best.</div><div class="vi">Tôi đã cố hết sức.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">May the best man win.</div><div class="vi">Chúc người giỏi nhất thắng. (dùng được cho hai người hoặc nhiều hơn)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>5. Mệnh đề so sánh (Comparative clauses)</h2>
+  <h3>a) Với than</h3>
+  <div class="ex"><div class="en">Food here is more expensive than I thought.</div><div class="vi">Đồ ăn ở đây đắt hơn tôi tưởng.</div><div class="tts"></div></div>
+  <h3>b) Với not as / so … as — “không … bằng”</h3>
+  <div class="ex"><div class="en">Being a nurse is not as interesting as being a doctor.</div><div class="vi">Làm y tá không thú vị bằng làm bác sĩ.</div><div class="tts"></div></div>
+  <h3>c) Với (just) as … as — “bằng / cũng … như”</h3>
+  <div class="ex"><div class="en">Living in the country is just as expensive as living in London.</div><div class="vi">Sống ở nông thôn cũng đắt đỏ như sống ở London.</div><div class="tts"></div></div>
+  <h3>d) Với such … as</h3>
+  <div class="ex"><div class="en">I've never been to such a good party as that one.</div><div class="vi">Tôi chưa từng dự bữa tiệc nào tuyệt như bữa tiệc đó.</div><div class="tts"></div></div>
+  <h3>e) Trợ động từ ở cuối câu</h3>
+  <p>Khi so sánh hành động, có thể đặt trợ động từ ở cuối câu để tránh lặp lại động từ chính. Động từ khuyết thiếu như <i>can</i> thì lặp lại chính nó, còn động từ thường dùng một dạng của <i>do</i>:</p>
+  <div class="ex"><div class="en">I can swim a lot better than Jack can.</div><div class="vi">Tôi bơi giỏi hơn Jack nhiều.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You paid more for your car than I did.</div><div class="vi">Bạn trả tiền mua xe nhiều hơn tôi.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li><b>Chính tả khi thêm -er / -est</b>: tính từ một âm tiết kết thúc bằng một phụ âm thì gấp đôi phụ âm cuối: <i>big → bigger → the biggest</i>. Tính từ kết thúc bằng <i>-y</i> thì đổi <i>y</i> thành <i>i</i>: <i>happy → happier → the happiest</i>.</li>
+    <li><b>Trạng từ</b> tạo dạng so sánh giống hệt tính từ: <i>fast → faster → the fastest</i>.</li>
+    <li><b>Trợ động từ cuối mệnh đề so sánh</b> giúp tránh lặp động từ: <i>Wendy works twice as hard as I do</i>. (Không nói <i>… as I work</i>.)</li>
+    <li><b>Further</b> vừa có nghĩa “xa hơn” vừa có nghĩa “thêm nữa”; <b>elder</b> chỉ dùng như tính từ bổ nghĩa (<i>my elder sister</i>), không dùng với <i>than</i>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Điền một từ phù hợp vào mỗi chỗ trống</h2>
+  <p>Điền <b>một từ</b> phù hợp vào mỗi chỗ trống. Câu a) là câu mẫu đã làm sẵn (<i>than</i>) — ở đây làm cả 8 câu.</p>
+<div class="q"><p>a) My brother is two years older <input class="blank" data-answers="than" data-display="than"> me.</p></div>
+  <div class="q"><p>b) The train takes just <input class="blank" data-answers="as" data-display="as"> long as the bus.</p></div>
+  <div class="q"><p>c) I thought the second hotel we stayed in was <input class="blank" data-answers="much" data-display="much"> more friendly.</p></div>
+  <div class="q"><p>d) Unfortunately we are <input class="blank" data-answers="less" data-display="less"> well-off than we used to be.</p></div>
+  <div class="q"><p>e) Do you think you could make a <input class="blank" data-answers="little" data-display="little"> less noise?</p></div>
+  <div class="q"><p>f) These exercises seem to be getting harder and <input class="blank" data-answers="harder" data-display="harder">.</p></div>
+  <div class="q"><p>g) Jean doesn't need as much help as Harry <input class="blank" data-answers="does" data-display="does">.</p></div>
+  <div class="q"><p>h) David didn't enjoy the match as much as I <input class="blank" data-answers="did" data-display="did">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Bài 2 — Viết lại câu</h2>
+  <p>Viết lại mỗi câu, bắt đầu như đã cho và <b>không đổi nghĩa</b>. Câu a) là câu mẫu đã làm sẵn — ở đây làm cả 10 câu.</p>
+<div class="q"><p>a) Jill can run faster than Peter.<br>Peter can't <input class="blank" data-answers="run as fast as Jill|run as fast as Jill can" data-display="run as fast as Jill (can)">.</p></div>
+  <div class="q"><p>b) I thought this journey would last longer than it did.<br>This journey didn't <input class="blank" data-answers="last as long as I thought it would" data-display="last as long as I thought it would">.</p></div>
+  <div class="q"><p>c) I didn't arrive as early as I expected.<br>I arrived <input class="blank" data-answers="later than I expected" data-display="later than I expected">.</p></div>
+  <div class="q"><p>d) You are working too slowly.<br>You'll have to <input class="blank" data-answers="work harder|work faster" data-display="work harder">.</p></div>
+  <div class="q"><p>e) I have a brother who is older than me.<br>I have an <input class="blank" data-answers="elder brother|older brother" data-display="elder brother">.</p></div>
+  <div class="q"><p>f) Martin thought the second part of the film was more interesting.<br>Martin didn't think the first <input class="blank" data-answers="part of the film was as interesting" data-display="part of the film was as interesting">.</p></div>
+  <div class="q"><p>g) Paula's work is less careful than before.<br>Paula has been working <input class="blank" data-answers="less carefully than before" data-display="less carefully than before">.</p></div>
+  <div class="q"><p>h) There aren't any trains earlier than this one.<br>This is <input class="blank" data-answers="the earliest train" data-display="the earliest train">.</p></div>
+  <div class="q"><p>i) All other cafes are further away.<br>This café <input class="blank" data-answers="is the nearest" data-display="is the nearest">.</p></div>
+  <div class="q"><p>j) Is this the best price you can offer?<br>Can't you <input class="blank" data-answers="offer a better price" data-display="offer a better price">?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Kiểm tra Bài 2</button><button type="button" onclick="showFill('ex2')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex2')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 2: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Bài 3 — Chọn từ hoặc cụm từ phù hợp nhất</h2>
+  <p>Hoàn thành mỗi câu bằng từ hoặc cụm từ phù hợp nhất trong bốn lựa chọn.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>a) I really think that apologising is ______ you can do.</p><div class="opts"><button type="button">not as much as</button><button type="button">a little</button><button type="button">the least</button><button type="button">as far as</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) I can't stand this weather. It's getting ______.</p><div class="opts"><button type="button">more and more</button><button type="button">worse and worse</button><button type="button">coldest and coldest</button><button type="button">further and further</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Although Brenda came last, everyone agreed she had ______ her best.</p><div class="opts"><button type="button">done</button><button type="button">made</button><button type="button">had</button><button type="button">got</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>d) I wish Charles worked as hard as Mary ______.</p><div class="opts"><button type="button">did</button><button type="button">can</button><button type="button">will</button><button type="button">does</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>e) The more you water this plant, the ______ it will grow.</p><div class="opts"><button type="button">best</button><button type="button">tall</button><button type="button">wetter</button><button type="button">faster</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) From now on, we won't be able to go out as much as we ______.</p><div class="opts"><button type="button">were</button><button type="button">had</button><button type="button">used to</button><button type="button">will</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) I've never owned ______ independent cat as this one!</p><div class="opts"><button type="button">a more than</button><button type="button">such an</button><button type="button">a so</button><button type="button">as much an</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Brian has been working ______ since he was promoted.</p><div class="opts"><button type="button">much harder</button><button type="button">as harder</button><button type="button">just as hardly</button><button type="button">more hardly</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>i) I've been feeling ______ tired lately, doctor.</p><div class="opts"><button type="button">such a</button><button type="button">the most</button><button type="button">more and more</button><button type="button">much</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) This exercise will give you ______ practice.</p><div class="opts"><button type="button">farther</button><button type="button">much more</button><button type="button">as better</button><button type="button">a lot</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Điền từ bắt đầu bằng chữ cái cho sẵn</h2>
+  <p>Điền một từ phù hợp vào mỗi chỗ trống; từ đó phải bắt đầu bằng chữ cái cho trong ngoặc. Câu a) là câu mẫu đã làm sẵn (<i>better</i>) — ở đây làm cả 10 câu.</p>
+<div class="q"><p>a) Is William feeling any <input class="blank" data-answers="better" data-display="better"> today? (b…)</p></div>
+  <div class="q"><p>b) Everyone ate a lot, but Chris ate the <input class="blank" data-answers="most" data-display="most">. (m…)</p></div>
+  <div class="q"><p>c) What's the <input class="blank" data-answers="latest" data-display="latest"> news about the situation in India? (l…)</p></div>
+  <div class="q"><p>d) I'd feel a lot <input class="blank" data-answers="happier" data-display="happier"> if you let me help. (h…)</p></div>
+  <div class="q"><p>e) Graham has been sinking <input class="blank" data-answers="deeper" data-display="deeper"> into debt lately. (d…)</p></div>
+  <div class="q"><p>f) It's 35 degrees today! It must be the <input class="blank" data-answers="hottest" data-display="hottest"> day so far this year. (h…)</p></div>
+  <div class="q"><p>g) Only £45? Is that all? Oh well, it's <input class="blank" data-answers="better" data-display="better"> than nothing. (b…)</p></div>
+  <div class="q"><p>h) He had to wait a <input class="blank" data-answers="further" data-display="further"> two months before he got his promotion. (f…)</p></div>
+  <div class="q"><p>i) Ruth wore her <input class="blank" data-answers="best" data-display="best"> dress to her sister's wedding. (b…)</p></div>
+  <div class="q"><p>j) Harry has got over the <input class="blank" data-answers="worst" data-display="worst"> of his cold. (w…)</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Viết lại câu</h2>
+  <p>Viết lại mỗi câu, bắt đầu như đã cho và <b>không đổi nghĩa</b>. Câu a) là câu mẫu đã làm sẵn — ở đây làm cả 10 câu.</p>
+<div class="q"><p>a) That's the best meal I've ever eaten.<br>I've never eaten a <input class="blank" data-answers="better" data-display="better"> meal.</p></div>
+  <div class="q"><p>b) Fish and meat are the same price in some countries.<br>Fish costs just <input class="blank" data-answers="as much as meat in some countries" data-display="as much as meat in some countries">.</p></div>
+  <div class="q"><p>c) I've never enjoyed myself so much.<br>I've never had <input class="blank" data-answers="such a good time" data-display="such a good time">.</p></div>
+  <div class="q"><p>d) If you run a lot, you will get fitter.<br>The more <input class="blank" data-answers="you run, the fitter you will get" data-display="you run, the fitter you will get">.</p></div>
+  <div class="q"><p>e) The doctor can't see you earlier than Wednesday, I'm afraid.<br>Wednesday is <input class="blank" data-answers="the earliest the doctor can see you, I'm afraid" data-display="the earliest the doctor can see you, I'm afraid">.</p></div>
+  <div class="q"><p>f) I must have a rest. I can't walk any more.<br>I must have a rest. I can't go <input class="blank" data-answers="on any further|any further" data-display="(on) any further">.</p></div>
+  <div class="q"><p>g) Home computers used to be much more expensive.<br>Home computers aren't <input class="blank" data-answers="as expensive as they used to be" data-display="as expensive as they used to be">.</p></div>
+  <div class="q"><p>h) I don't know as much Italian as Sue does.<br>Sue knows <input class="blank" data-answers="more Italian than I do" data-display="more Italian than I do">.</p></div>
+  <div class="q"><p>i) I thought that learning to drive would be difficult, but it isn't.<br>Learning to drive <input class="blank" data-answers="isn't as difficult as I thought it would be|is not as difficult as I thought it would be|is easier than I thought it would be" data-display="isn't as difficult as I thought it would be">.</p></div>
+  <div class="q"><p>j) Barbara can skate just as well as John can.<br>John isn't <input class="blank" data-answers="a better skater than Barbara" data-display="a better skater than Barbara">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Bài 6 — Hoàn thành câu với từ cho sẵn</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương tự câu thứ nhất, dùng <b>từ cho sẵn</b> (không được đổi dạng từ đó). Dùng từ <b>hai đến năm từ</b>, kể cả từ cho sẵn. Câu a) là câu mẫu đã làm sẵn — ở đây làm cả 10 câu.</p>
+<div class="q"><p>a) Your car was cheaper than mine. <b>(cost)</b><br>Your car <input class="blank" data-answers="cost less than mine" data-display="cost less than mine"> did.</p></div>
+  <div class="q"><p>b) I'm not as good at maths as you are. <b>(better)</b><br>You <input class="blank" data-answers="are better at maths than" data-display="are better at maths than"> I am.</p></div>
+  <div class="q"><p>c) Keith is slightly taller than Nigel. <b>(little)</b><br>Keith <input class="blank" data-answers="is a little taller than" data-display="is a little taller than"> Nigel.</p></div>
+  <div class="q"><p>d) Bill was growing angrier all the time. <b>(and)</b><br>Bill <input class="blank" data-answers="was growing angrier and" data-display="was growing angrier and"> angrier.</p></div>
+  <div class="q"><p>e) Sally tried as hard as she could. <b>(did)</b><br>Sally <input class="blank" data-answers="did her" data-display="did her"> best.</p></div>
+  <div class="q"><p>f) I thought this film would be better. <b>(as)</b><br>This film <input class="blank" data-answers="isn't as good as|is not as good as|wasn't as good as|was not as good as" data-display="isn't as good as"> I expected.</p></div>
+  <div class="q"><p>g) This is the bumpiest road I've ever driven along! <b>(such)</b><br>I've never <input class="blank" data-answers="driven along such a bumpy" data-display="driven along such a bumpy"> road.</p></div>
+  <div class="q"><p>h) When you eat a lot, you get fat. <b>(more)</b><br>The <input class="blank" data-answers="more you eat, the fatter" data-display="more you eat, the fatter"> you get.</p></div>
+  <div class="q"><p>i) George said he couldn't do any better. <b>(could)</b><br>George said it <input class="blank" data-answers="was the best he could" data-display="was the best he could"> do.</p></div>
+  <div class="q"><p>j) This year's exam and last year's exam were equally difficult. <b>(just)</b><br>This year's exam <input class="blank" data-answers="was just as difficult as" data-display="was just as difficult as"> last year's exam.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 6: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex7">
+  <h2>Bài 7 — Tìm từ thừa trong từng dòng (Transport solutions)</h2>
+  <p>Đọc kỹ đoạn văn <i>Transport solutions</i>. Một số dòng <b>đúng</b>, một số dòng có <b>một từ thừa</b> không nên có. Với mỗi dòng: nếu dòng đúng, chọn <b>✓ (dòng đúng)</b>; nếu có từ thừa, chọn đúng từ đó. Hai dòng đầu là mẫu đã làm sẵn (<i>✓</i> và <i>the</i>) — ở đây làm cả 17 dòng.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p><b>Dòng mẫu 1:</b> “First of all, walking is obviously the cheapest”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">walking</button><button type="button">cheapest</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng mẫu 2:</b> “means of travelling, and can be the quicker”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">the</button><button type="button">quicker</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 1:</b> “in a city centre. Of course, the further you have”</p><div class="opts"><button type="button">further</button><button type="button">city</button><button type="button">✓ (dòng đúng)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 2:</b> “to go, the more so tired you will become.”</p><div class="opts"><button type="button">so</button><button type="button">✓ (dòng đúng)</button><button type="button">more</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 3:</b> “In some ways walking is more healthier than”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">more</button><button type="button">healthier</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 4:</b> “travelling by bus or car, but it can be just as the”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">just</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 5:</b> “unhealthy because cities are the much more”</p><div class="opts"><button type="button">the</button><button type="button">✓ (dòng đúng)</button><button type="button">much</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 6:</b> “polluted than they used to be. Cars are faster”</p><div class="opts"><button type="button">polluted</button><button type="button">✓ (dòng đúng)</button><button type="button">faster</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 7:</b> “of course and more than convenient, but as cities”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">more</button><button type="button">than</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 8:</b> “become more of crowded, parking is getting”</p><div class="opts"><button type="button">of</button><button type="button">✓ (dòng đúng)</button><button type="button">more</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 9:</b> “harder. Sometimes public transport is better,”</p><div class="opts"><button type="button">harder</button><button type="button">✓ (dòng đúng)</button><button type="button">better</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 10:</b> “even though buses don't go as fast as cars do it.”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">fast</button><button type="button">it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 11:</b> “Cars are a lot more and convenient but as they”</p><div class="opts"><button type="button">and</button><button type="button">✓ (dòng đúng)</button><button type="button">more</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 12:</b> “cause most pollution, it is the better to avoid”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">the</button><button type="button">better</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 13:</b> “using them if possible. In a city the fastest way”</p><div class="opts"><button type="button">using</button><button type="button">fastest</button><button type="button">✓ (dòng đúng)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 14:</b> “of travelling is on a bike, which keeps you fitter”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">bike</button><button type="button">fitter</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 15:</b> “and is not so that noisy as a motorbike or a car.”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">that</button><button type="button">so</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 7: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>75</b> (Bài 1: 8 · Bài 2: 10 · Bài 3: 10 · Bài 4: 10 · Bài 5: 10 · Bài 6: 10 · Bài 7: 17 dòng).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
