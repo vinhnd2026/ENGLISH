@@ -485,7 +485,8 @@ function lookupWord(raw){
   var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
   pop.classList.add('show');
   body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
-  if(dictCache[word]){ renderDict(word, dictCache[word]); return; }
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
   var data = {ipa:'', pos:'', def:'', tr:''};
   var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
     .then(function(r){ return r.ok ? r.json() : null; })
@@ -507,7 +508,7 @@ function lookupWord(raw){
         .catch(function(){});
     });
   Promise.all([p1, p2]).then(function(){
-    dictCache[word] = data;
+    dictCache[cacheKey] = data;
     try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
     renderDict(word, data);
   });
