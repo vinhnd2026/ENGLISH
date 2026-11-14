@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 13 — Linking Words 1 | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-13-Linking-Words-1.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 13 — Linking Words 1</h1>
+  <p>つなぎ言葉（Linking words）：目的・結果・対比 — so that・to・such・too / enough・although・despite</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 目的（Purpose）</h2>
+
+  <h3>a) So (that) — 「〜するために」</h3>
+  <div class="formula">S + V + so (that) + S + can / could / will / would + V</div>
+  <p><i>So that</i> は目的（なぜその行動をするのか）を表します。後ろには通常 <i>can, could, will, would</i> が来ます。</p>
+  <div class="ex"><div class="en">The police locked the door so (that) no-one could get in.</div><div class="vi">警察は誰も入れないようにドアに鍵をかけた。</div><div class="tts"></div></div>
+
+  <h3>b) To — 目的を表す不定詞（Infinitive of purpose）</h3>
+  <div class="formula">S + V + to + V &nbsp;·&nbsp; 主節と目的の節の主語が同じこと</div>
+  <p><i>to</i> + 動詞の原形でも目的を表せますが、主節と目的の節の主語が<b>同一</b>であることが条件です。<i>for to study</i> とは言いません。</p>
+  <div class="ex"><div class="en">Jack went to England to study engineering.</div><div class="vi">ジャックは工学を学ぶためにイギリスへ行った。</div><div class="tts"></div></div>
+  <p>主語が<b>異なる</b>場合は <i>to</i> は使えず、<i>so that</i> が必要です：</p>
+  <div class="ex"><div class="en">Jack went to England so that his brother would have some help working in the restaurant.</div><div class="vi">ジャックは、弟がレストランの仕事を手伝ってもらえるようにイギリスへ行った。</div><div class="tts"></div></div>
+
+  <h3>c) In order to, so as to — 形式ばった言い方</h3>
+  <div class="formula">in order to + V · so as to + V · 否定形: in order not to · so as not to</div>
+  <div class="ex"><div class="en">Scientists used only local materials, in order to save money.</div><div class="vi">科学者たちはお金を節約するために、地元の材料だけを使った。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The soldiers moved at night, so as not to alarm the villagers.</div><div class="vi">兵士たちは村人を驚かせないように、夜に移動した。</div><div class="tts"></div></div>
+
+  <h3>d) For + V-ing — 「〜するためのもの」</h3>
+  <p><i>For</i> + V-ing は、物が<b>何に使われるか</b>（用途）を表します。</p>
+  <div class="ex"><div class="en">This button is for starting the engine. This is for the lights.</div><div class="vi">このボタンはエンジンを始動するためのものだ。これはライト用だ。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 結果（Result）</h2>
+
+  <h3>a) So … (that) / Such a … (that)</h3>
+  <div class="formula">so + 形容詞 / 副詞 (+ that …) · such a + 形容詞 + 単数名詞 (+ that …)</div>
+  <div class="ex"><div class="en">Jim was so tall (that) he hit his head on the ceiling.</div><div class="vi">ジムは背が高すぎて、天井に頭をぶつけた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jim drove so quickly (that) they reached the station twenty minutes early.</div><div class="vi">ジムがとても速く運転したので、彼らは20分早く駅に着いた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Helen is such a busy person (that) she never feels bored.</div><div class="vi">ヘレンはとても忙しい人で、退屈を感じることが決してない。</div><div class="tts"></div></div>
+
+  <h3>b) So many / so much / so few / so little</h3>
+  <div class="formula">so many / so few + 複数名詞 · so much / so little + 不可算名詞</div>
+  <div class="ex"><div class="en">There were so many passengers (that) we couldn't find a seat.</div><div class="vi">乗客がとても多くて、席が見つからなかった。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There was so much noise (that) I didn't get to sleep until 3 a.m.</div><div class="vi">騒音がひどくて、午前3時まで眠れなかった。</div><div class="tts"></div></div>
+
+  <h3>c) Too / Not enough + to</h3>
+  <div class="formula">too + 形容詞 + to + V（〜すぎて…できない）· not + 形容詞 + enough + to + V（…するほど十分に〜でない）</div>
+  <p><i>Too</i> は「必要以上」,<i>not enough</i> は「必要な水準に達しない」を表します。どちらも形容詞 + <i>to</i> と使います：</p>
+  <div class="ex"><div class="en">The bookcase was too big to get down the stairs. The bookcase was not small enough to get down the stairs.</div><div class="vi">その本棚は大きすぎて階段を下ろせなかった。その本棚は階段を下ろせるほど小さくなかった。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. 対比（Contrast）</h2>
+
+  <h3>a) Although, though, even though</h3>
+  <p><i>Although</i> は会話ではよく <i>though</i> になります。<i>Though</i> は文末にも置けますが、<i>although</i> は置けません。<i>Even though</i> は <i>although</i> より対比が強くなります。</p>
+  <div class="ex"><div class="en">Although I asked her, she didn't come. I asked her, but she didn't come, though.</div><div class="vi">私が誘ったのに、彼女は来なかった。誘ったけれど、彼女は来なかったんだ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Even though I asked her, she didn't come.</div><div class="vi">あれほど誘ったのに、彼女は来なかった。（本当に意外だった）</div><div class="tts"></div></div>
+
+  <h3>b) While, whereas</h3>
+  <p>形式ばった話し言葉・書き言葉で、2つの事実を比べて違いを強調します。</p>
+  <div class="ex"><div class="en">While United were fast and accurate, City were slow and careless.</div><div class="vi">ユナイテッドが速くて正確だったのに対し、シティは遅くて不注意だった。</div><div class="tts"></div></div>
+
+  <h3>c) However, nevertheless</h3>
+  <p><i>However</i> は形式ばった文脈で対比を表し、文の最初・途中・最後に置け、コンマで区切ります。<i>Nevertheless</i> はさらに形式ばった表現です。</p>
+  <div class="ex"><div class="en">Normally we don't refund money without a receipt. However, on this occasion I'll do it.</div><div class="vi">通常、レシートなしでは返金しません。しかし、今回は対応します。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm not happy with your work. Nevertheless, I'm going to give you one last chance.</div><div class="vi">あなたの仕事には満足していません。それでも、最後のチャンスをあげます。</div><div class="tts"></div></div>
+
+  <h3>d) Despite と in spite of</h3>
+  <div class="formula">despite / in spite of + 名詞または V-ing &nbsp;·&nbsp; 節（主語＋動詞）は続かない</div>
+  <div class="ex"><div class="en">In spite of the rain, we went out.</div><div class="vi">雨にもかかわらず、私たちは出かけた。（＝ Although it was raining, we went out.）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Despite losing, we celebrated.</div><div class="vi">負けたにもかかわらず、私たちは祝った。（＝ Although we lost, we celebrated.）</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>目的を表す不定詞（<i>to</i> + V）は、主節と<b>同じ主語</b>でなければなりません：<i>I went to the shops to buy some fruit.</i> この用法では <i>for</i> は使いません。</li>
+    <li>主語が異なる場合は <i>so that</i> + can/could/will/would を使います。</li>
+    <li><i>In order to</i> は <i>to</i> より形式ばっています。通常の会話では <i>to</i> だけで十分です。否定形は <i>in order not to, so as not to</i>。</li>
+    <li><i>So</i> + 形容詞/副詞、<i>such a</i> + 形容詞 + 単数名詞、<i>so many/few</i> + 複数名詞、<i>so much/little</i> + 不可算名詞。</li>
+    <li><i>Too</i> + 形容詞 + <i>to</i> は「〜すぎて…できない」,<i>not</i> + 形容詞 + <i>enough</i> + <i>to</i> は「…するほど〜でない」。</li>
+    <li><i>Despite / in spite of</i> の後ろは名詞または V-ing で、節（主語＋動詞）は続きません。</li>
+    <li><i>While, whereas, nevertheless</i> による対比は、形式ばった話し言葉・書き言葉で使います。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 最も適切な語（句）を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) Janet went out ______ Harry a present.</p><div class="opts"><button type="button">so that she bought</button><button type="button">to buy</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) This food is much too hot ______.</p><div class="opts"><button type="button">to eat</button><button type="button">to be eaten</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) ______ it was late, I decided to phone Brian.</p><div class="opts"><button type="button">However</button><button type="button">Though</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) ______ the car was cheap, it was in good condition.</p><div class="opts"><button type="button">Although</button><button type="button">Despite</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Let's check once more, ______ sure.</p><div class="opts"><button type="button">for being</button><button type="button">so as to be</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) We could go to the club. Is it worth it, ______?</p><div class="opts"><button type="button">even though</button><button type="button">though</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) It was ______ that half the trees had blown down.</p><div class="opts"><button type="button">so windy</button><button type="button">such a windy</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) The batteries were ______ to fit the radio.</p><div class="opts"><button type="button">not enough small</button><button type="button">too small</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) Despite ______, we went sailing.</p><div class="opts"><button type="button">of the weather</button><button type="button">the weather</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) Bill had ______ fun that he stayed another week.</p><div class="opts"><button type="button">so much</button><button type="button">so that</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 与えられた語を使って文を完成させよう</h2>
+  <p>1文目と同じ意味になるよう、与えられた語（形は変えない）を使って2文目を完成させてください。与えられた語を含めて<b>2〜5語</b>で答えます。a) はお手本として解いてありますが、ここでは7問すべてに取り組みます。</p>
+  <div class="q"><p>a) Sue went shopping so she could buy herself a new television. <i>(to)</i><br>Sue went shopping <input class="blank" data-answers="to buy" data-display="to buy"> herself a new television.</p></div>
+  <div class="q"><p>b) You use this to open wine bottles. <i>(for)</i><br>This <input class="blank" data-answers="is for opening|is used for opening" data-display="is (used) for opening"> wine bottles.</p></div>
+  <div class="q"><p>c) I put the food in the fridge because I wanted it to get cold. <i>(would)</i><br>I put the food in the fridge <input class="blank" data-answers="so it would get|so that it would get" data-display="so (that) it would get"> cold.</p></div>
+  <div class="q"><p>d) Harry left early because he didn't want to miss the bus. <i>(as)</i><br>Harry left early <input class="blank" data-answers="so as not" data-display="so as not"> to miss the bus.</p></div>
+  <div class="q"><p>e) I saved up some money to buy a motorbike. <i>(could)</i><br>I saved up some money <input class="blank" data-answers="so I could buy|so that I could buy" data-display="so (that) I could buy"> a motorbike.</p></div>
+  <div class="q"><p>f) Jane gave up smoking because she wanted to save money. <i>(order)</i><br>Jane gave up smoking <input class="blank" data-answers="in order to save" data-display="in order to save"> money.</p></div>
+  <div class="q"><p>g) I came here so that I could see you. <i>(to)</i><br>I <input class="blank" data-answers="came here to see" data-display="came here to see"> you.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 示された始め方で文を書き換えよう</h2>
+  <p>書き換えた文の続きを入力してください（始めの部分は与えられています）。a) はお手本として解いてありますが、ここでは8問すべてに取り組みます。</p>
+  <div class="q"><p>a) Sam lost his job because he was lazy.<br>Sam was <input class="blank wide" data-answers="so lazy that he lost his job" data-display="so lazy that he lost his job"></p></div>
+  <div class="q"><p>b) I couldn't buy the house because it was expensive.<br>The house was too <input class="blank wide" data-answers="expensive for me to buy" data-display="expensive for me to buy"></p></div>
+  <div class="q"><p>c) The book was so interesting that I couldn't put it down.<br>It was <input class="blank wide" data-answers="such an interesting book that I couldn't put it down|such an interesting book that I could not put it down" data-display="such an interesting book that I couldn't put it down"></p></div>
+  <div class="q"><p>d) There was too much noise, so we couldn't hear the speech.<br>There was so <input class="blank wide" data-answers="much noise that we couldn't hear the speech|much noise that we could not hear the speech" data-display="much noise that we couldn't hear the speech"></p></div>
+  <div class="q"><p>e) The house was too small to live in comfortably.<br>The house wasn't <input class="blank wide" data-answers="large enough to live in comfortably|big enough to live in comfortably" data-display="large enough to live in comfortably"></p></div>
+  <div class="q"><p>f) We can't eat now because there isn't enough time.<br>There is too <input class="blank wide" data-answers="little time for us to eat now" data-display="little time for us to eat now"></p></div>
+  <div class="q"><p>g) I can't come to your party because I'm too busy.<br>I'm too <input class="blank wide" data-answers="busy to come to your party" data-display="busy to come to your party"></p></div>
+  <div class="q"><p>h) The class was cancelled because there weren't enough students.<br>There were so <input class="blank wide" data-answers="few students that the class was cancelled" data-display="few students that the class was cancelled"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 適切な語を1語ずつ入れよう</h2>
+  <p>a) には <i>enough</i> が入ります（お手本）。ここでは10問すべてに取り組みます。</p>
+  <div class="q"><p>a) I couldn't run fast <input class="blank" data-answers="enough" data-display="enough"> to catch the shoplifter.</p></div>
+  <div class="q"><p>b) They were <input class="blank" data-answers="such" data-display="such"> good roads that we could drive at high speed.</p></div>
+  <div class="q"><p>c) It was <input class="blank" data-answers="so" data-display="so"> dark that I couldn't see a thing.</p></div>
+  <div class="q"><p>d) The trousers were <input class="blank" data-answers="not" data-display="not"> long enough to fit Jean.</p></div>
+  <div class="q"><p>e) We had <input class="blank" data-answers="such" data-display="such"> a good time that we decided to go there again.</p></div>
+  <div class="q"><p>f) It was <input class="blank" data-answers="so" data-display="so"> late that we couldn't get a bus home.</p></div>
+  <div class="q"><p>g) I took a taxi as it was <input class="blank" data-answers="too" data-display="too"> far to walk.</p></div>
+  <div class="q"><p>h) The ladder wasn't tall <input class="blank" data-answers="enough" data-display="enough"> to reach the window.</p></div>
+  <div class="q"><p>i) There are <input class="blank" data-answers="such" data-display="such"> lovely fish that you don't feel like eating meat.</p></div>
+  <div class="q"><p>j) There were <input class="blank" data-answers="so" data-display="so"> many dishes that I couldn't make up my mind.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 対比の文を書き換えよう</h2>
+  <p>書き換えた文の続きを入力してください。2文を1文にまとめる場合もあります。a) はお手本として解いてありますが、ここでは8問すべてに取り組みます。</p>
+  <div class="q"><p>a) Despite the cold weather, we all went for a walk.<br>Although <input class="blank wide" data-answers="it was cold, we all went for a walk" data-display="it was cold, we all went for a walk"></p></div>
+  <div class="q"><p>b) John has done well in French, but not so well in Maths.<br>While <input class="blank wide" data-answers="John has done well in French, he has not done so well in Maths|John has done well in French, he hasn't done so well in Maths" data-display="John has done well in French, he has not done so well in Maths"></p></div>
+  <div class="q"><p>c) I tried to persuade her. I didn't succeed, however.<br>Although <input class="blank wide" data-answers="I tried to persuade her, I didn't succeed" data-display="I tried to persuade her, I didn't succeed"></p></div>
+  <div class="q"><p>d) It was raining, but I went swimming anyway.<br>In spite of <input class="blank wide" data-answers="the rain, I went swimming" data-display="the rain, I went swimming"></p></div>
+  <div class="q"><p>e) Ann felt ill, but insisted on going to work.<br>Despite <input class="blank wide" data-answers="feeling ill, Ann insisted on going to work" data-display="feeling ill, Ann insisted on going to work"></p></div>
+  <div class="q"><p>f) In spite of his early lead, Hudson lost the race.<br>Although <input class="blank wide" data-answers="he had an early lead, Hudson lost the race" data-display="he had an early lead, Hudson lost the race"></p></div>
+  <div class="q"><p>g) I'm not going to pay, although I know that I should.<br>While <input class="blank wide" data-answers="I know that I should pay, I'm not going to pay|I know that I should pay, I am not going to pay" data-display="I know that I should pay, I'm not going to pay"></p></div>
+  <div class="q"><p>h) We expected Larry to accept the job, but he didn't.<br>Even though Larry <input class="blank wide" data-answers="was expected to accept the job, he didn't" data-display="was expected to accept the job, he didn't"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — これは何に使うもの？</h2>
+  <p>枠内の動詞を1つずつ使って、各物の用途を説明してください：<b>clean · keep · lock · open · paint · put · stick · wash</b>。文全体を入力します（例：<i>It's for painting things.</i>）。a) はお手本ですが、ここでは8問すべてに取り組みます。</p>
+  <div class="q"><p>a) brush</p><input class="blank wide" data-answers="It's for painting things.|It is for painting things." data-display="It's for painting things."><div class="fb"></div></div>
+  <div class="q"><p>b) glue</p><input class="blank wide" data-answers="It's for sticking things.|It is for sticking things." data-display="It's for sticking things."><div class="fb"></div></div>
+  <div class="q"><p>c) fridge</p><input class="blank wide" data-answers="It's for keeping things cold.|It is for keeping things cold." data-display="It's for keeping things cold."><div class="fb"></div></div>
+  <div class="q"><p>d) sink</p><input class="blank wide" data-answers="It's for washing dishes in.|It is for washing dishes in." data-display="It's for washing dishes in."><div class="fb"></div></div>
+  <div class="q"><p>e) dustbin</p><input class="blank wide" data-answers="It's for putting rubbish in.|It is for putting rubbish in." data-display="It's for putting rubbish in."><div class="fb"></div></div>
+  <div class="q"><p>f) toothbrush</p><input class="blank wide" data-answers="It's for cleaning your teeth with.|It is for cleaning your teeth with." data-display="It's for cleaning your teeth with."><div class="fb"></div></div>
+  <div class="q"><p>g) corkscrew</p><input class="blank wide" data-answers="It's for opening wine bottles with.|It is for opening wine bottles with." data-display="It's for opening wine bottles with."><div class="fb"></div></div>
+  <div class="q"><p>h) key</p><input class="blank wide" data-answers="It's for locking doors with.|It is for locking doors with." data-display="It's for locking doors with."><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>問題7 — 各行の余分な語を見つけよう</h2>
+  <p>作文コースの案内文を読んでください。正しい行もあれば、<b>余分な語が1つ</b>ある行もあります。余分な語を入力してください。正しい行には <b>✓</b> と入力してください。最初の2行はお手本（✓ と <i>it</i>）ですが、ここでは17行すべてに取り組みます。</p>
+  <div class="q"><p>例1) Jane was one of those students who has problems <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>例2) with writing. First, her handwriting it was so bad <input class="blank" data-answers="it" data-display="it"></p></div>
+  <div class="q"><p>1) that most teachers couldn't to read it. The letters were <input class="blank" data-answers="to" data-display="to"></p></div>
+  <div class="q"><p>2) so small, that the words were extremely difficult to <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>3) read. Even though she tried to change her handwriting, <input class="blank" data-answers="even" data-display="even"></p></div>
+  <div class="q"><p>4) she felt discouraged. Secondly, she made so the many <input class="blank" data-answers="the" data-display="the"></p></div>
+  <div class="q"><p>5) mistakes in spelling and punctuation, so that her work <input class="blank" data-answers="so" data-display="so"></p></div>
+  <div class="q"><p>6) always gave a bad impression. As well as this, she <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>7) had problems with organizing her writing, in despite <input class="blank" data-answers="in" data-display="in"></p></div>
+  <div class="q"><p>8) making plans and writing notes. One day, though, she <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>9) took a Goodwriter writing course, so to learn how to <input class="blank" data-answers="so" data-display="so"></p></div>
+  <div class="q"><p>10) be an effective writer. At Goodwriters we taught her <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>11) how to organize her ideas. Although however she found <input class="blank" data-answers="however" data-display="however"></p></div>
+  <div class="q"><p>12) it difficult at first, so she soon made progress. She <input class="blank" data-answers="so" data-display="so"></p></div>
+  <div class="q"><p>13) learned to revise her writing, so as to improve it. <input class="blank" data-answers="✓|tick|correct|ok" data-display="✓"></p></div>
+  <div class="q"><p>14) She started reading so too much that her spelling <input class="blank" data-answers="too" data-display="too"></p></div>
+  <div class="q"><p>15) improved, so while her handwriting became clearer too. <input class="blank" data-answers="so" data-display="so"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ 問題7をチェック</button><button type="button" onclick="showFill('ex7')">👁 答えを見る</button><button type="button" onclick="resetFill('ex7')">↺ やり直す</button></div>
+  <span class="score">問題7の点数： <span class="fill-score">—</span>/17</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>68</b> 問です（問題1：10 · 問題2：7 · 問題3：8 · 問題4：10 · 問題5：8 · 問題6：8 · 問題7：17）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
