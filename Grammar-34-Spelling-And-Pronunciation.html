@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 34 — Spelling and Pronunciation</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-34-Spelling-And-Pronunciation-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Grammar-34-Spelling-And-Pronunciation-EN.html">🇬🇧 English</a>
+  <h1>Grammar 34 — Spelling and Pronunciation</h1>
+  <p>Chính tả &amp; phát âm: Hậu tố -ful · Gấp đôi phụ âm · Từ kết thúc bằng -y · ie và ei · Vần &amp; âm nguyên âm</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Các vấn đề chính tả thường gặp</h2>
+
+  <h3>a) Hậu tố -ful (Words ending in -ful)</h3>
+  <div class="formula">useful · helpful — hậu tố -ful chỉ có MỘT chữ l &nbsp;·&nbsp; trạng từ: usefully · helpfully</div>
+  <p>Khi <i>-ful</i> là một hậu tố, nó chỉ viết với <b>một chữ l</b>: <i>useful, helpful</i>. Nhưng các tính từ này khi thêm <i>-ly</i> để thành trạng từ lại viết thành <i>usefully, helpfully</i>.</p>
+  <div class="ex"><div class="en">A good map is very useful when you are travelling.</div><div class="vi">Một tấm bản đồ tốt rất hữu ích khi bạn đi du lịch. (useful — chỉ một chữ l)</div><div class="tts"></div></div>
+
+  <h3>b) Gấp đôi phụ âm cuối (Doubling of consonants)</h3>
+  <div class="formula">swim → swimming · fit → fitted · thin → thinner</div>
+  <p>Từ <b>một âm tiết</b> kết thúc bằng <b>một nguyên âm + một phụ âm</b> sẽ gấp đôi phụ âm cuối khi thêm <i>-ing, -ed</i> hoặc <i>-er</i>.</p>
+  <p>Hầu hết từ <b>hai âm tiết</b> có cùng kiểu kết thúc cũng gấp đôi, nhất là khi trọng âm rơi vào <b>âm tiết thứ hai</b>: <i>prefer → preferred</i>. Nếu trọng âm ở âm tiết đầu thì không gấp đôi: <i>bother → bothering</i>. Một ngoại lệ quen thuộc là <i>travel → traveller</i> vẫn gấp đôi.</p>
+  <div class="ex"><div class="en">The children are swimming in the lake.</div><div class="vi">Bọn trẻ đang bơi trong hồ. (swimming — gấp đôi m)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He fitted the new lock on the door himself.</div><div class="vi">Anh ấy tự lắp ổ khóa mới vào cửa. (fitted — gấp đôi t)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I preferred the first plan to the second one.</div><div class="vi">Tôi thích phương án đầu hơn phương án thứ hai. (preferred — gấp đôi r)</div><div class="tts"></div></div>
+
+  <h3>c) Từ kết thúc bằng -y (Words ending in -y)</h3>
+  <div class="formula">spy → spies · try → tries, tried · boy → boys · joy → joyful · shy → shyness</div>
+  <p>Danh từ và động từ kết thúc bằng <b>phụ âm + y</b> sẽ đổi <i>-y</i> thành <i>-i</i> trong dạng số nhiều và thì quá khứ: <i>spy → spies; try → tries, tried</i>. Từ hai âm tiết cũng theo quy tắc này: <i>reply → replies, replied; happy → happiness; beauty → beautiful</i>.</p>
+  <p>Nhưng nếu trước <i>-y</i> là <b>một nguyên âm</b> thì không đổi: <i>boy → boys; destroy → destroyed</i>. Khi thêm <i>-ful</i> và <i>-ness</i> vào từ một âm tiết, <i>-y</i> cũng giữ nguyên: <i>joy → joyful; shy → shyness</i>.</p>
+  <div class="note">⚠️ Các quy tắc đổi -y ở trên <b>không áp dụng</b> khi thêm <i>-ing</i>: <i>try → trying; study → studying; annoy → annoying</i>.</div>
+  <div class="ex"><div class="en">The spies were watching the house all night.</div><div class="vi">Các điệp viên theo dõi ngôi nhà suốt đêm. (spies — y đổi thành i)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She tried again and finally succeeded.</div><div class="vi">Cô ấy thử lại và cuối cùng đã thành công. (tried — y đổi thành i)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">It was a joyful day for the whole family.</div><div class="vi">Đó là một ngày vui vẻ cho cả gia đình. (joyful — giữ nguyên y)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Their happiness was easy to see.</div><div class="vi">Niềm hạnh phúc của họ ai cũng nhận thấy. (happiness — y đổi thành i)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">What a beautiful garden!</div><div class="vi">Khu vườn đẹp quá! (beautiful — y đổi thành i)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He is studying hard this week.</div><div class="vi">Tuần này anh ấy học rất chăm. (studying — trước -ing không đổi y)</div><div class="tts"></div></div>
+
+  <h3>d) ie và ei</h3>
+  <div class="formula">i before e, except after c — khi âm đọc là /iː/: receive · relief</div>
+  <p>Quy tắc chung là viết <b>i trước e</b>, trừ khi đứng <b>sau chữ c</b>, với điều kiện âm đọc là <b>/iː/</b>: <i>receive, relief</i>. Nếu âm không phải /iː/ thì quy tắc không áp dụng, như <i>feign</i> (đọc là /feɪn/).</p>
+  <div class="ex"><div class="en">Did you receive my letter yesterday?</div><div class="vi">Hôm qua bạn có nhận được thư của tôi không? (receive — ei sau chữ c)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She felt great relief when the exam ended.</div><div class="vi">Cô ấy nhẹ nhõm hẳn khi kỳ thi kết thúc. (relief — ie)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Phát âm: vần và âm nguyên âm</h2>
+  <p>Hai từ <b>vần</b> với nhau (rhyme) khi phần âm cuối của chúng giống hệt nhau — dù cách viết có thể rất khác: <i>hate</i> vần với <i>wait</i>, <i>rough</i> vần với <i>stuff</i>. Ngược lại, nhiều từ viết gần giống nhau lại mang <b>âm nguyên âm khác hẳn</b>: trong nhóm <i>lost / post / toast / ghost / host</i>, chỉ mình <i>lost</i> đọc khác. Cách chắc nhất là nghe và đọc to từng từ để cảm nhận âm thanh thật.</p>
+  <div class="ex"><div class="en">The words "hate" and "wait" rhyme.</div><div class="vi">Hai từ "hate" và "wait" vần với nhau (cùng âm cuối /eɪt/).</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The words "rough" and "stuff" rhyme, although they are spelled very differently.</div><div class="vi">Hai từ "rough" và "stuff" vần với nhau dù cách viết rất khác nhau.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li>Hậu tố <b>-ful</b> chỉ có một chữ l: <i>useful, helpful</i> — nhưng trạng từ là <i>usefully, helpfully</i>.</li>
+    <li>Từ kết thúc bằng một nguyên âm + một phụ âm: <b>gấp đôi phụ âm cuối</b> trước <i>-ing/-ed/-er</i> (<i>swim → swimming</i>); từ hai âm tiết trọng âm ở âm tiết hai cũng vậy (<i>prefer → preferred</i>); ngoại lệ quen thuộc: <i>traveller</i>.</li>
+    <li><b>Phụ âm + y</b>: đổi y → i trước -s/-ed (<i>try → tries, tried; happy → happiness</i>), nhưng <b>không đổi</b> trước <i>-ing</i> (<i>trying, studying</i>).</li>
+    <li><b>Nguyên âm + y</b>: giữ nguyên y (<i>boy → boys, destroy → destroyed</i>); thêm -ful/-ness vào từ một âm tiết cũng giữ y (<i>joyful, shyness</i>).</li>
+    <li><b>ie/ei</b>: i trước e, trừ sau c — khi âm là /iː/ (<i>receive, relief</i>); âm khác thì không theo quy tắc này (<i>feign</i>).</li>
+    <li>Cách viết không quyết định cách đọc: phải kiểm tra <b>âm nguyên âm</b> và <b>vần</b> của từng từ (<i>lost</i> khác với <i>post / toast / ghost / host</i>).</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Sửa các từ sai chính tả (đợt 1)</h2>
+  <p>Viết lại mỗi từ cho đúng chính tả vào ô trống. Nếu từ đã đúng sẵn, gõ lại chính từ đó. Từ a) là mẫu đã làm sẵn (<i>studing → studying</i>) — ở đây làm cả 20 từ.</p>
+  <div class="q"><p>a) studing → <input class="blank" data-answers="studying" data-display="studying"></p></div>
+  <div class="q"><p>b) destroying → <input class="blank" data-answers="destroying" data-display="destroying"></p></div>
+  <div class="q"><p>c) donkies → <input class="blank" data-answers="donkeys" data-display="donkeys"></p></div>
+  <div class="q"><p>d) flys → <input class="blank" data-answers="flies" data-display="flies"></p></div>
+  <div class="q"><p>e) niece → <input class="blank" data-answers="niece" data-display="niece"></p></div>
+  <div class="q"><p>f) hurryed → <input class="blank" data-answers="hurried" data-display="hurried"></p></div>
+  <div class="q"><p>g) furnichure → <input class="blank" data-answers="furniture" data-display="furniture"></p></div>
+  <div class="q"><p>h) enough → <input class="blank" data-answers="enough" data-display="enough"></p></div>
+  <div class="q"><p>i) wellcome → <input class="blank" data-answers="welcome" data-display="welcome"></p></div>
+  <div class="q"><p>j) hotter → <input class="blank" data-answers="hotter" data-display="hotter"></p></div>
+  <div class="q"><p>k) reciept → <input class="blank" data-answers="receipt" data-display="receipt"></p></div>
+  <div class="q"><p>l) wonderfull → <input class="blank" data-answers="wonderful" data-display="wonderful"></p></div>
+  <div class="q"><p>m) swimming → <input class="blank" data-answers="swimming" data-display="swimming"></p></div>
+  <div class="q"><p>n) regreted → <input class="blank" data-answers="regretted" data-display="regretted"></p></div>
+  <div class="q"><p>o) hopefuly → <input class="blank" data-answers="hopefully" data-display="hopefully"></p></div>
+  <div class="q"><p>p) applying → <input class="blank" data-answers="applying" data-display="applying"></p></div>
+  <div class="q"><p>q) heard → <input class="blank" data-answers="heard" data-display="heard"></p></div>
+  <div class="q"><p>r) inshurance → <input class="blank" data-answers="insurance" data-display="insurance"></p></div>
+  <div class="q"><p>s) happily → <input class="blank" data-answers="happily" data-display="happily"></p></div>
+  <div class="q"><p>t) advertisment → <input class="blank" data-answers="advertisement" data-display="advertisement"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Bài 2 — Tìm từ vần với từ cho sẵn</h2>
+  <p>Hộp từ: <b>search · wait · stuff · go · home · come · cow · white · plumber · store</b>. Chọn từ trong hộp <b>vần</b> với từ cho sẵn. Câu a) là mẫu đã làm sẵn (<i>church → search</i>) — ở đây làm cả 10 câu.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) <b>church</b></p><div class="opts"><button type="button">search</button><button type="button">wait</button><button type="button">home</button><button type="button">cow</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) <b>hate</b></p><div class="opts"><button type="button">go</button><button type="button">wait</button><button type="button">store</button><button type="button">search</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) <b>rough</b></p><div class="opts"><button type="button">home</button><button type="button">come</button><button type="button">stuff</button><button type="button">white</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) <b>throw</b></p><div class="opts"><button type="button">go</button><button type="button">cow</button><button type="button">plumber</button><button type="button">wait</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) <b>comb</b></p><div class="opts"><button type="button">store</button><button type="button">stuff</button><button type="button">home</button><button type="button">come</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) <b>dumb</b></p><div class="opts"><button type="button">plumber</button><button type="button">come</button><button type="button">white</button><button type="button">go</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>g) <b>plough</b></p><div class="opts"><button type="button">white</button><button type="button">search</button><button type="button">store</button><button type="button">cow</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) <b>height</b></p><div class="opts"><button type="button">white</button><button type="button">stuff</button><button type="button">cow</button><button type="button">home</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) <b>summer</b></p><div class="opts"><button type="button">come</button><button type="button">plumber</button><button type="button">wait</button><button type="button">go</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) <b>pour</b></p><div class="opts"><button type="button">search</button><button type="button">home</button><button type="button">store</button><button type="button">stuff</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 2: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Bài 3 — Viết từ với hậu tố cho sẵn</h2>
+  <p>Viết từ hoàn chỉnh sau khi thêm hậu tố trong ngoặc. Câu a) là mẫu đã làm sẵn (<i>supplying</i>) — ở đây làm cả 10 câu.</p>
+  <div class="q"><p>a) supply + (-ing) → <input class="blank" data-answers="supplying" data-display="supplying"></p></div>
+  <div class="q"><p>b) destroy + (-ed) → <input class="blank" data-answers="destroyed" data-display="destroyed"></p></div>
+  <div class="q"><p>c) apply + (-ed) → <input class="blank" data-answers="applied" data-display="applied"></p></div>
+  <div class="q"><p>d) lonely + (-ness) → <input class="blank" data-answers="loneliness" data-display="loneliness"></p></div>
+  <div class="q"><p>e) employ + (-s) → <input class="blank" data-answers="employs" data-display="employs"></p></div>
+  <div class="q"><p>f) cry + (-s) → <input class="blank" data-answers="cries" data-display="cries"></p></div>
+  <div class="q"><p>g) silly + (-ness) → <input class="blank" data-answers="silliness" data-display="silliness"></p></div>
+  <div class="q"><p>h) annoy + (-s) → <input class="blank" data-answers="annoys" data-display="annoys"></p></div>
+  <div class="q"><p>i) beauty + (-ful) → <input class="blank" data-answers="beautiful" data-display="beautiful"></p></div>
+  <div class="q"><p>j) pretty + (-ness) → <input class="blank" data-answers="prettiness" data-display="prettiness"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Kiểm tra Bài 3</button><button type="button" onclick="showFill('ex3')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex3')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>Bài 4 — Tìm từ có âm nguyên âm khác nhóm</h2>
+  <p>Mỗi nhóm có một từ mang <b>âm nguyên âm khác</b> với các từ còn lại. Chọn từ đó. (Bấm 🔊 ở các câu ví dụ phía trên hoặc tự đọc to từng từ để so sánh âm.)</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="3"><p>a) become · sung · company · cold · flood</p><div class="opts"><button type="button">become</button><button type="button">sung</button><button type="button">company</button><button type="button">cold</button><button type="button">flood</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) plate · treat · wait · weight · great</p><div class="opts"><button type="button">plate</button><button type="button">treat</button><button type="button">wait</button><button type="button">weight</button><button type="button">great</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>c) lose · used · choose · blouse · few</p><div class="opts"><button type="button">lose</button><button type="button">used</button><button type="button">choose</button><button type="button">blouse</button><button type="button">few</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) doubt · bough · ought · now · shout</p><div class="opts"><button type="button">doubt</button><button type="button">bough</button><button type="button">ought</button><button type="button">now</button><button type="button">shout</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) lost · post · toast · ghost · host</p><div class="opts"><button type="button">lost</button><button type="button">post</button><button type="button">toast</button><button type="button">ghost</button><button type="button">host</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>f) mist · missed · list · iced · kissed</p><div class="opts"><button type="button">mist</button><button type="button">missed</button><button type="button">list</button><button type="button">iced</button><button type="button">kissed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) love · done · gone · sunk · won</p><div class="opts"><button type="button">love</button><button type="button">done</button><button type="button">gone</button><button type="button">sunk</button><button type="button">won</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) bird · search · heart · word · church</p><div class="opts"><button type="button">bird</button><button type="button">search</button><button type="button">heart</button><button type="button">word</button><button type="button">church</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) two · show · though · go · owe</p><div class="opts"><button type="button">two</button><button type="button">show</button><button type="button">though</button><button type="button">go</button><button type="button">owe</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>j) about · wonder · suppose · refer · colour</p><div class="opts"><button type="button">about</button><button type="button">wonder</button><button type="button">suppose</button><button type="button">refer</button><button type="button">colour</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 4: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Sửa các từ sai chính tả (đợt 2)</h2>
+  <p>Như Bài 1: viết lại từng từ cho đúng chính tả; từ nào đã đúng thì gõ lại nguyên văn. Mỗi hàng có hai từ — tổng cộng 20 ô.</p>
+  <div class="q"><p>a) sincerly → <input class="blank" data-answers="sincerely" data-display="sincerely"> &nbsp;·&nbsp; dictionry → <input class="blank" data-answers="dictionary" data-display="dictionary"></p></div>
+  <div class="q"><p>b) different → <input class="blank" data-answers="different" data-display="different"> &nbsp;·&nbsp; intresting → <input class="blank" data-answers="interesting" data-display="interesting"></p></div>
+  <div class="q"><p>c) loverly → <input class="blank" data-answers="lovely" data-display="lovely"> &nbsp;·&nbsp; necessary → <input class="blank" data-answers="necessary" data-display="necessary"></p></div>
+  <div class="q"><p>d) writing → <input class="blank" data-answers="writing" data-display="writing"> &nbsp;·&nbsp; unninteresting → <input class="blank" data-answers="uninteresting" data-display="uninteresting"></p></div>
+  <div class="q"><p>e) pulover → <input class="blank" data-answers="pullover" data-display="pullover"> &nbsp;·&nbsp; definitly → <input class="blank" data-answers="definitely" data-display="definitely"></p></div>
+  <div class="q"><p>f) friend → <input class="blank" data-answers="friend" data-display="friend"> &nbsp;·&nbsp; responsable → <input class="blank" data-answers="responsible" data-display="responsible"></p></div>
+  <div class="q"><p>g) holliday → <input class="blank" data-answers="holiday" data-display="holiday"> &nbsp;·&nbsp; quantity → <input class="blank" data-answers="quantity" data-display="quantity"></p></div>
+  <div class="q"><p>h) likelihood → <input class="blank" data-answers="likelihood" data-display="likelihood"> &nbsp;·&nbsp; lugage → <input class="blank" data-answers="luggage" data-display="luggage"></p></div>
+  <div class="q"><p>i) impatient → <input class="blank" data-answers="impatient" data-display="impatient"> &nbsp;·&nbsp; studient → <input class="blank" data-answers="student" data-display="student"></p></div>
+  <div class="q"><p>j) finaly → <input class="blank" data-answers="finally" data-display="finally"> &nbsp;·&nbsp; pavement → <input class="blank" data-answers="pavement" data-display="pavement"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>70</b> (Bài 1: 20 từ · Bài 2: 10 · Bài 3: 10 · Bài 4: 10 · Bài 5: 20 từ).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
