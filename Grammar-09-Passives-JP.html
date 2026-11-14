@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 9 — Passives | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-09-Passives.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 9 — Passives</h1>
+  <p>受動態：Passive・伝達動詞（Reporting verbs）・Have something done・Need doing</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. 受動態（Passive）— 使える場合</h2>
+
+  <h3>a) 他動詞だけが受動態にできる</h3>
+  <p>目的語を取る動詞（他動詞 Transitive verbs）だけが受動態にできます。目的語を取らない動詞（自動詞 Intransitive verbs）はできません。</p>
+  <div class="ex"><div class="en">They sent the letter. → The letter was sent.</div><div class="vi">彼らは手紙を送った。→ 手紙は送られた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They arrived late.</div><div class="vi">彼らは遅れて着いた。（受動態にはできない）</div><div class="tts"></div></div>
+  <p>直接目的語と間接目的語の両方を取る動詞は、2通りの受動態が作れます：</p>
+  <div class="ex"><div class="en">They sent me the letter. → I was sent the letter. / The letter was sent to me.</div><div class="vi">彼らは私に手紙を送った。→ 私は手紙を送られた。／手紙は私のもとに送られた。</div><div class="tts"></div></div>
+  <p>ただし、他動詞でも用法によっては受動態にできないものがあります。たとえば <i>like</i> や <i>love</i> です：<i>I like this place.</i>（この文は受動態にできない）</p>
+
+  <h3>b) 焦点の移動と動作主の省略</h3>
+  <p>目的語を文頭に置くことで、文の<b>焦点（フォーカス）</b>を変えられます：</p>
+  <div class="ex"><div class="en">United were beaten by Arsenal.</div><div class="vi">ユナイテッドはアーセナルに敗れた。（関心はユナイテッドの方にある）</div><div class="tts"></div></div>
+  <p>受動態は、動作主（行為者）が<b>重要でない・不明・状況から明らか</b>な場合によく使われます：</p>
+  <div class="ex"><div class="en">Students are asked not to smoke.</div><div class="vi">生徒は喫煙しないよう求められている。（非人称的な表現）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">My bike has been stolen!</div><div class="vi">自転車が盗まれた！（動作主不明）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The box was opened with a knife.</div><div class="vi">箱はナイフで開けられた。（方法に焦点）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 特殊な受動態の構文</h2>
+
+  <h3>a) 伝達動詞（Reporting verbs）</h3>
+  <div class="formula">S + is said / believed / known … + to 不定詞 / to be 〜ing / to have + 過去分詞</div>
+  <p><i>say, believe, understand, know</i> などの伝達動詞と受動態を組み合わせると、漠然とした <i>they / people</i> を主語にする言い方を避けられます：</p>
+  <div class="ex"><div class="en">People say that John Wilson lives in New York. → John Wilson is said to live in New York.</div><div class="vi">ジョン・ウィルソンはニューヨークに住んでいると言われている。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They say John Wilson is travelling in Africa. → John Wilson is said to be travelling in Africa.</div><div class="vi">彼はアフリカを旅行中だと言われている。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">People say John Wilson has arrived in Australia. → John Wilson is said to have arrived in Australia.</div><div class="vi">彼はオーストラリアに到着したと言われている。</div><div class="tts"></div></div>
+
+  <h3>b) Have / Get something done</h3>
+  <div class="formula">have / get + 目的語 + 過去分詞</div>
+  <p>誰かに仕事をしてもらうときは <i>have something done</i> を使います。<i>have</i> の代わりに <i>get</i> を使うとよりくだけた言い方になり、難しいことをやり遂げたというニュアンスも出せます。</p>
+  <div class="ex"><div class="en">Last year I had new tiles put on the roof.</div><div class="vi">去年、屋根に新しい瓦を葺いてもらった。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm having my hair cut this afternoon.</div><div class="vi">今日の午後、髪を切ってもらう。</div><div class="tts"></div></div>
+  <p>同じ構文で、誰か分からない人による<b>不運な出来事</b>も表せます：</p>
+  <div class="ex"><div class="en">Peter had his car stolen last week.</div><div class="vi">ピーターは先週、車を盗まれた。</div><div class="tts"></div></div>
+
+  <h3>c) Need doing = need to be done</h3>
+  <div class="formula">need + 〜ing &nbsp;（= need to be + 過去分詞）</div>
+  <div class="ex"><div class="en">The floor is filthy. It needs cleaning. (= It needs to be cleaned.)</div><div class="vi">床がひどく汚れている。掃除が必要だ。</div><div class="tts"></div></div>
+
+  <h3>d) その他の注意点</h3>
+  <p>動詞と結びつく前置詞は、受動態でも<b>そのまま残ります</b>：</p>
+  <div class="ex"><div class="en">People shouted at the Prime Minister during his speech. → The Prime Minister was shouted at during his speech.</div><div class="vi">首相は演説中にヤジを飛ばされた。</div><div class="tts"></div></div>
+  <p><i>Be born</i> は受動態の形ですが、はっきりした受動の意味はありません：</p>
+  <div class="ex"><div class="en">I was born near Kyoto.</div><div class="vi">私は京都の近くで生まれた。</div><div class="tts"></div></div>
+  <p>「強制する」意味の <i>make</i> は、受動態では <i>to</i> が必要です：</p>
+  <div class="ex"><div class="en">They made David work hard. → David was made to work hard.</div><div class="vi">デイビッドは一生懸命働かされた。</div><div class="tts"></div></div>
+  <p>動作主は普通は省略され、述べたい場合は <i>by</i> を使います：<i>This letter was delivered this morning (by courier).</i></p>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>すべての動詞が受動態にできるわけではありません。辞書で、その動詞が<b>他動詞（transitive）</b>か<b>自動詞（intransitive）</b>かを確認してください。</li>
+    <li><b>動作主（agent）</b>は、その情報が必要な場合にだけ述べます。</li>
+    <li>受動態は<b>非人称的（impersonal）</b>な見方を表すのによく使われます。</li>
+    <li>受動態を能動態に変えると意味が少し変わります。特に<b>関心の焦点</b>が変わるため、文脈によっては受動態が向いている場合も、向いていない場合もあります。</li>
+    <li>受動態は<b>書き言葉</b>、特に科学・技術の言語でより多く使われる傾向があります。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 使えない動詞の形を見つけよう</h2>
+  <p>各文で、マークされた動詞の形が使える場合は <b>Possible</b>、使えない場合は <b>Not possible</b> を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) My car <em class="hl">has being stolen</em>.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Jack <em class="hl">was borned</em> on a Thursday.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Then I realised that none of the guests <em class="hl">had been sent</em> an invitation.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Mary's car <em class="hl">is being serviced</em> today.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Your order <em class="hl">will been sent</em> as soon as possible.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) The hole in the road <em class="hl">was being repaired</em> when I came home.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) This swimming pool <em class="hl">is used</em> by over a thousand people each week.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) When <em class="hl">was</em> this church <em class="hl">built</em>?</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) An address <em class="hl">is writing</em> on the back of the envelope.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Customers <em class="hl">are request</em> to ask for a receipt.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — 最も適切な動詞の形を選ぼう</h2>
+  <p>各文で最も適切な動詞の形を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Their new house ______ yet.</p><div class="opts"><button type="button">hasn't been finished</button><button type="button">wasn't finished</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) The robbers ______ as soon as they left the bank.</p><div class="opts"><button type="button">were arrested</button><button type="button">have been arrested</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Sue told us her baby ______ two weeks earlier than expected.</p><div class="opts"><button type="button">is born</button><button type="button">had been born</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) If there is too much snow, the match ______.</p><div class="opts"><button type="button">has been cancelled</button><button type="button">will be cancelled</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) By the time we got there, the rain ______.</p><div class="opts"><button type="button">had stopped</button><button type="button">had been stopped</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) When ______ about the new rules?</p><div class="opts"><button type="button">were you told</button><button type="button">have you been told</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Most of the passengers ______ easily to the shore.</p><div class="opts"><button type="button">were swimming</button><button type="button">were swum</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) The winning horse ______ by Pat Murphy.</p><div class="opts"><button type="button">was ridden</button><button type="button">was riding</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) I looked again for the old man, but he ______.</p><div class="opts"><button type="button">was vanished</button><button type="button">had vanished</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) I don't think that you ______ to show your passport.</p><div class="opts"><button type="button">will be asked</button><button type="button">are being asked</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — かっこ内の動詞を受動態にしよう</h2>
+  <p>かっこ内の動詞を適切な受動態の形に変えてください。a) の <i>has already been sold</i> は解かれている例です — ここでは10問すべてに答えてください。</p>
+  <div class="q"><p>a) I'm sorry, madam, but this carpet <input class="blank" data-answers="has already been sold" data-display="has already been sold"> (already sell).</p></div>
+  <div class="q"><p>b) The old house on the corner <input class="blank" data-answers="was knocked down" data-display="was knocked down"> (knock down) last year.</p></div>
+  <div class="q"><p>c) When exactly <input class="blank" data-answers="was John given|will John be given" data-display="was John given / will John be given"> (John give) his prize?</p></div>
+  <div class="q"><p>d) Most people agree that America <input class="blank" data-answers="was not discovered|wasn't discovered" data-display="was not discovered"> (not discover) by Christopher Columbus.</p></div>
+  <div class="q"><p>e) All complaints about products <input class="blank" data-answers="are dealt with|will be dealt with" data-display="are dealt with / will be dealt with"> (deal with) by our customer services department.</p></div>
+  <div class="q"><p>f) Police confirmed that the murder weapon <input class="blank" data-answers="has since been discovered" data-display="has since been discovered"> (since discover) in a nearby lake.</p></div>
+  <div class="q"><p>g) It <input class="blank" data-answers="was announced" data-display="was announced"> (announce) yesterday that the government has decided not to raise income tax.</p></div>
+  <div class="q"><p>h) Good news! I <input class="blank" data-answers="have been asked" data-display="have been asked"> (ask) to take over as the new manager.</p></div>
+  <div class="q"><p>i) I don't believe that this play <input class="blank" data-answers="was written" data-display="was written"> (write) by Shakespeare.</p></div>
+  <div class="q"><p>j) Ann really likes <input class="blank" data-answers="being invited" data-display="being invited"> (invite) to dinner parties.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 受動態に書き換えよう（できない文もあり）</h2>
+  <p>各文の動詞を、可能なら受動態に書き換えてください。動作主を入れる必要があるかどうかも考えてください。受動態に<b>できない</b>文は、答えの欄に <i>not possible</i> と入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> I really like this hotel. → <i>not possible</i>（受動態にできない）<br>📌 <b>例 b)</b> Jane won the poetry competition. → <i>The poetry competition was won by Jane.</i></div>
+  <div class="q"><p>c) Peter's new car cost over £20,000.</p><input class="blank wide" data-answers="not possible" data-display="not possible" placeholder="書き換えた文…または not possible"><div class="fb"></div></div>
+  <div class="q"><p>d) Martin always wears casual clothes.</p><input class="blank wide" data-answers="not possible" data-display="not possible" placeholder="書き換えた文…または not possible"><div class="fb"></div></div>
+  <div class="q"><p>e) One of our visitors lost this cigarette lighter.</p><input class="blank wide" data-answers="This cigarette lighter was lost by one of our visitors." data-display="This cigarette lighter was lost by one of our visitors." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>f) They haven't decided the exact time of the match yet.</p><input class="blank wide" data-answers="The exact time of the match hasn't been decided yet.|The exact time of the match has not been decided yet." data-display="The exact time of the match hasn't been decided yet." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>g) Most of the guests had left the hotel by midday.</p><input class="blank wide" data-answers="not possible" data-display="not possible" placeholder="書き換えた文…または not possible"><div class="fb"></div></div>
+  <div class="q"><p>h) Some parents read to their children every night.</p><input class="blank wide" data-answers="Some children are read to by their parents every night." data-display="Some children are read to by their parents every night." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>i) This bike belongs to my sisters.</p><input class="blank wide" data-answers="not possible" data-display="not possible" placeholder="書き換えた文…または not possible"><div class="fb"></div></div>
+  <div class="q"><p>j) People ate most of the food at the party.</p><input class="blank wide" data-answers="Most of the food at the party was eaten." data-display="Most of the food at the party was eaten." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。問題4では、1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 与えられた単語を使って文を書き換えよう</h2>
+  <p>与えられた単語を使って、2つ目の文が1つ目の文とほぼ同じ意味になるように完成させてください。与えられた単語は変えず、与えられた単語を含めて2〜5語で書いてください。a) は解かれている例です — ここでは10問すべてに答えてください。</p>
+  <div class="q"><p>a) Last Thursday we appointed a new marketing manager. <b>(was)</b><br>A new <input class="blank" data-answers="marketing manager was appointed" data-display="marketing manager was appointed"> last Thursday.</p></div>
+  <div class="q"><p>b) Smith Ltd are supplying our company with furniture. <b>(supplied)</b><br>Our company <input class="blank" data-answers="is being supplied with furniture" data-display="is being supplied with furniture"> by Smith Ltd.</p></div>
+  <div class="q"><p>c) William the Conqueror built the castle in the 11th century. <b>(by)</b><br>The castle <input class="blank" data-answers="was built by" data-display="was built by"> William the Conqueror in the 11th century.</p></div>
+  <div class="q"><p>d) No decision has yet been made. <b>(decided)</b><br>Nothing <input class="blank" data-answers="has been decided" data-display="has been decided"> yet.</p></div>
+  <div class="q"><p>e) People believe that someone murdered Jenkins. <b>(was)</b><br>It <input class="blank" data-answers="is believed that Jenkins was" data-display="is believed that Jenkins was"> murdered.</p></div>
+  <div class="q"><p>f) Your hair needs cutting. <b>(get)</b><br>You ought <input class="blank" data-answers="to get your hair" data-display="to get your hair"> cut.</p></div>
+  <div class="q"><p>g) The police were following the suspects. <b>(were)</b><br>The suspects <input class="blank" data-answers="were being followed by the" data-display="were being followed by the"> police.</p></div>
+  <div class="q"><p>h) No-one has seen Peter since the day of the party. <b>(been)</b><br>Peter <input class="blank" data-answers="has not been seen since|hasn't been seen since" data-display="has not been seen since"> the day of the party.</p></div>
+  <div class="q"><p>i) We put up a notice about the trip on the notice board yesterday. <b>(was)</b><br>A notice <input class="blank" data-answers="about the trip was put" data-display="about the trip was put"> up on the notice board yesterday.</p></div>
+  <div class="q"><p>j) People think that an apple a day is good for you. <b>(to)</b><br>An apple a day <input class="blank" data-answers="is thought to be good" data-display="is thought to be good"> for you.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — <i>have something done</i> を使って書き換えよう</h2>
+  <p>各文を <i>have something done</i> の形を含む文に書き換えてください。動作主は入れないでください。文全体を入力してください。</p>
+  <div class="note">📌 <b>例 a)</b> A painter painted our house last month. → <i>We had our house painted last month.</i></div>
+  <div class="q"><p>b) The hairdresser is cutting my hair this afternoon.</p><input class="blank wide" data-answers="I am having my hair cut this afternoon.|I'm having my hair cut this afternoon." data-display="I am having my hair cut this afternoon." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>c) Someone has stolen my motorbike.</p><input class="blank wide" data-answers="I have had my motorbike stolen." data-display="I have had my motorbike stolen." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>d) The dentist has taken out all of Ricky's teeth.</p><input class="blank wide" data-answers="Ricky has had all his teeth taken out." data-display="Ricky has had all his teeth taken out." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>e) I haven't been to the car-wash for a long time.</p><input class="blank wide" data-answers="I haven't had my car washed for a long time.|I have not had my car washed for a long time." data-display="I haven't had my car washed for a long time." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>f) The men are coming to put in the new central heating on Saturday.</p><input class="blank wide" data-answers="We are having the new central heating put in on Saturday." data-display="We are having the new central heating put in on Saturday." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>g) Someone broke Harry's nose in a fight.</p><input class="blank wide" data-answers="Harry had his nose broken in a fight." data-display="Harry had his nose broken in a fight." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>h) Isn't it time someone fixed your television?</p><input class="blank wide" data-answers="Isn't it time you had your television fixed?" data-display="Isn't it time you had your television fixed?" placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。問題6では、1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>問題7 — 受動態を使って書き換えよう</h2>
+  <p>各文を受動態を含む文に書き換え、斜体の単語は使わないでください。文全体を入力してください。</p>
+  <div class="q"><p>a) <i>Apparently</i>, Freddie has a wife in Scotland.</p><input class="blank wide" data-answers="Freddie is said to have a wife in Scotland." data-display="Freddie is said to have a wife in Scotland." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>b) <i>Nobody</i> knows <i>anything</i> about Brenda's family.</p><input class="blank wide" data-answers="Nothing is known about Brenda's family." data-display="Nothing is known about Brenda's family." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>c) <i>People</i> think that <i>someone</i> started the fire deliberately.</p><input class="blank wide" data-answers="The fire is thought to have been started deliberately.|It is thought that the fire was started deliberately." data-display="The fire is thought to have been started deliberately." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>d) You should <i>ask</i> a doctor to see to that cut.</p><input class="blank wide" data-answers="You should have that cut seen to by a doctor." data-display="You should have that cut seen to by a doctor." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>e) <i>People</i> say that Chris was in the army.</p><input class="blank wide" data-answers="Chris is said to have been in the army." data-display="Chris is said to have been in the army." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>f) My trousers <i>need</i> to be pressed before I leave.</p><input class="blank wide" data-answers="I must have my trousers pressed before I leave." data-display="I must have my trousers pressed before I leave." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>g) <i>No-one</i> has signed this letter.</p><input class="blank wide" data-answers="This letter has not been signed.|This letter hasn't been signed." data-display="This letter has not been signed." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="q"><p>h) Mary's hair still <i>needs</i> cutting.</p><input class="blank wide" data-answers="Mary hasn't had her hair cut yet.|Mary has not had her hair cut yet." data-display="Mary hasn't had her hair cut yet." placeholder="書き換えた文…"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ 問題7をチェック</button><button type="button" onclick="showFill('ex7')">👁 答えを見る</button><button type="button" onclick="resetFill('ex7')">↺ やり直す</button></div>
+  <span class="score">問題7の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。問題7では、1〜2語の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card" id="ex8">
+  <h2>問題8 — 各行の余分な単語を見つけよう（Opening of new Gulliver Sports Centre）</h2>
+  <p>文章 <i>Opening of new Gulliver Sports Centre</i> を読んでください。<b>正しい</b>行もあれば、<b>余分な単語が1つ</b>入っている行もあります。各行について、正しければ <b>✓（正しい行）</b> を、余分な単語があればその単語を選んでください。最初の2行は解かれている例です（<i>✓</i> と <i>been</i>）— ここでは17行すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p><b>例の行1：</b> “The Gulliver Sports Centre, which has been”</p><div class="opts"><button type="button">Centre</button><button type="button">✓（正しい行）</button><button type="button">been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>例の行2：</b> “completely rebuilt, was been reopened yesterday”</p><div class="opts"><button type="button">been</button><button type="button">rebuilt</button><button type="button">was</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>1行目：</b> “by the Minister of Sport. The building it was”</p><div class="opts"><button type="button">building</button><button type="button">was</button><button type="button">it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>2行目：</b> “originally used to as a market, but was sold”</p><div class="opts"><button type="button">to</button><button type="button">used</button><button type="button">market</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>3行目：</b> “to Fairdene Council in 1981, and it then converted”</p><div class="opts"><button type="button">then</button><button type="button">it</button><button type="button">Council</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>4行目：</b> “into a sports hall. Local schools were played football”</p><div class="opts"><button type="button">played</button><button type="button">schools</button><button type="button">were</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>5行目：</b> “and basketball indoors, and keep-fit classes were held”</p><div class="opts"><button type="button">✓（正しい行）</button><button type="button">classes</button><button type="button">held</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>6行目：</b> “there. In 1990 the hall was damaged when by a fire”</p><div class="opts"><button type="button">damaged</button><button type="button">when</button><button type="button">fire</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>7行目：</b> “which was broke out in the heating system. The hall”</p><div class="opts"><button type="button">broke</button><button type="button">was</button><button type="button">heating</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>8行目：</b> “could not be used, and remained empty while discussions”</p><div class="opts"><button type="button">remained</button><button type="button">✓（正しい行）</button><button type="button">empty</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>9行目：</b> “continued about its future. It was then and decided that”</p><div class="opts"><button type="button">and</button><button type="button">then</button><button type="button">decided</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>10行目：</b> “the hall would to be rebuilt, and an appeal for money”</p><div class="opts"><button type="button">would</button><button type="button">rebuilt</button><button type="button">to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>11行目：</b> “was launched. Two years ago a local businessman offered”</p><div class="opts"><button type="button">launched</button><button type="button">✓（正しい行）</button><button type="button">offered</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>12行目：</b> “to pay for the building work, and plans were drawn up.”</p><div class="opts"><button type="button">✓（正しい行）</button><button type="button">plans</button><button type="button">drawn</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>13行目：</b> “The new hall is includes a swimming pool, running track”</p><div class="opts"><button type="button">includes</button><button type="button">is</button><button type="button">pool</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>14行目：</b> “and other sports facilities which can be used by anyone”</p><div class="opts"><button type="button">facilities</button><button type="button">used</button><button type="button">✓（正しい行）</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>15行目：</b> “in the Fairdene area. The Minister was made a speech in which she congratulated everyone involved.”</p><div class="opts"><button type="button">Minister</button><button type="button">was</button><button type="button">made</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題8の点数： <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>80</b> 問です（問題1：10 · 問題2：10 · 問題3：10か所 · 問題4：8文 · 問題5：10か所 · 問題6：7文 · 問題7：8文 · 問題8：17行）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
