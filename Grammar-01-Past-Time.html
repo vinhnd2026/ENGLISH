@@ -516,7 +516,7 @@ function lookupWord(raw){
 function renderDict(word, d){
   var body = document.getElementById('dictBody');
   var h = '<span class="dw">' + esc(word) + '</span>';
-  if(d.ipa) h += '<span class="dp">' + esc(d.ipa) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
   h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
   if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
   if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
