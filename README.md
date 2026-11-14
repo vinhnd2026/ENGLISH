@@ -12,15 +12,17 @@ Bài học tiếng Anh tương tác (HTML) xây dựng theo sách:
 
 | Bài | Nội dung | Trạng thái |
 |---|---|---|
-| [Grammar 1 — Past Time](Grammar-01-Past-Time.html) | Past simple, past continuous, past perfect, used to, would, participle clauses (sách tr. 1–6) | ✅ Bài mẫu — đã có |
-| Grammar 2–35 | Present perfect → Consolidation 7 (sách tr. 7–202, gồm 7 bài Consolidation) | 🚧 Sắp có |
-| Vocabulary 1–21 | Travel and holidays → Collocations (sách tr. 203–299) | 🚧 Sắp có |
+| [Grammar 1 — Past Time](Grammar-01-Past-Time.html) | Past simple, past continuous, past perfect, used to, would, participle clauses (sách tr. 1–6) | ✅ Đã có (VN · JP · EN) |
+| Grammar 2–35 | Present perfect → Consolidation 7 (sách tr. 7–202, gồm 7 bài Consolidation) | ✅ Đã có (VN · JP · EN) |
+| Vocabulary 1–21 | Travel and holidays → Collocations (sách tr. 203–299) | ✅ Đã có (VN · JP · EN) |
 
 Tổng lộ trình: **56 unit** (35 Grammar + 21 Vocabulary), xem đầy đủ ở [index.html](index.html).
 
 ## Cấu trúc mỗi bài
 
-- Giải thích ngữ pháp tóm tắt bằng tiếng Việt (diễn đạt lại, không sao chép nguyên văn sách) + hộp **Key points**
+- Mỗi bài có 3 bản: tiếng Việt, tiếng Nhật (cho người Nhật học tiếng Anh) và toàn tiếng Anh
+- Giải thích tóm tắt diễn đạt lại (không sao chép nguyên văn sách) + hộp **Key points**
+- Nút 🔍 Tra từ: bấm vào bất kỳ từ tiếng Anh nào để xem IPA (chuẩn Cambridge), nghe phát âm, nghĩa và định nghĩa
 - Ví dụ có nút nghe giọng Anh 🇬🇧 / Mỹ 🇺🇸 (Web Speech API)
 - Bài tập tương tác: trắc nghiệm chọn dạng đúng, điền dạng động từ, phán đoán suitable/unsuitable, viết lại câu — chấm điểm ngay
 - Đáp án đối chiếu phần **Grammar Answers / Vocabulary Answers** ở cuối sách
