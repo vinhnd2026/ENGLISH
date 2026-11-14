@@ -1,10 +1,4 @@
-# English — First Certificate Language Practice
-
-Bài học tiếng Anh tương tác (HTML) xây dựng theo sách:
-
-- **Sách:** *First Certificate Language Practice*
-- **Tác giả:** Michael Vince
-- **Nhà xuất bản:** Macmillan, 2003 (bản with key, ISBN 1 405 00766 4)
+Bài học tiếng Anh tương tác
 
 🌐 **Xem trực tuyến (GitHub Pages):** https://vinhnd2026.github.io/ENGLISH/
 
