@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 26 — Phrasal Verbs 1 | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-26-Phrasal-Verbs-1.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-26-Phrasal-Verbs-1-EN.html">🇬🇧 English</a>
+  <h1>Grammar 26 — Phrasal Verbs 1</h1>
+  <p>句動詞（Phrasal verbs）1：二つのパーティクルを取る動詞・一つのパーティクルを取る分離できない動詞（inseparable）</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 句動詞（phrasal verb）とは？</h2>
+  <p>動詞の後には <b>パーティクル</b>（particle：副詞または前置詞）— <i>back, off, through, up</i> など — がよく続きます。動詞とパーティクルがそれぞれ通常の意味を持つ場合もあれば、結びつくことで<b>まったく新しい意味</b>になる場合もあります。比べてみましょう。</p>
+  <div class="ex"><div class="en">Can you bring up the radio from downstairs?</div><div class="ja">ラジオを下の階から持って上がってくれますか。（bring up = 持って上がる ― 通常の意味）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She has brought up two children on her own.</div><div class="ja">彼女は一人で二人の子どもを育てました。（bring up = 育てる ― 新しい意味）</div><div class="tts"></div></div>
+  <p><b>句動詞</b>（phrasal verb）という用語は後者の場合、つまり動詞＋パーティクルで特別な意味を持つ場合に使います。句動詞はくだけた英語（informal English）でとてもよく使われます。</p>
+  <p>一つの句動詞が<b>複数の異なる意味</b>を持つことも多く、正しい意味は文脈からしか分かりません。</p>
+  <p>句動詞には4つのタイプがあり、Grammar 26 と 27 で扱います。Grammar 26 は、(1) <b>二つのパーティクル</b>を取る動詞、(2) <b>一つのパーティクル</b>を取る動詞（目的語が必要で、パーティクルは<b>分離できない</b>＝inseparable）です。</p>
+</div>
+<div class="card">
+  <h2>2. 二つのパーティクルを取る動詞（verbs with two particles）</h2>
+  <p>リストの動詞の多くは目的語を必要とし、目的語は<b>一番最後</b>にしか置けません（つまり分離できません）。</p>
+  <div class="formula">V + particle + particle + O</div>
+  <div class="ex"><div class="en">I’m looking forward to my holidays.</div><div class="ja">休暇を楽しみにしています。</div><div class="tts"></div></div>
+  <p><b>＊</b>の付いた動詞にはもう一つの形があります。<b>目的語がなく</b>、最後のパーティクルを使いません。</p>
+  <div class="ex"><div class="en">I’ve decided to cut down on smoking. — I’ve decided to cut down.</div><div class="ja">タバコの量を減らすことにしました。（cut down on = 量を減らす）</div><div class="tts"></div></div>
+  <ul>
+    <li><b>cut down on*</b> — reduce the amount of — 量を減らす</li>
+    <li><b>catch up with*</b> — reach the same place as — 追いつく</li>
+    <li><b>come up against</b> — meet, find (a problem) — （問題に）直面する</li>
+    <li><b>come up with</b> — think of — 思いつく</li>
+    <li><b>drop in on*</b> — visit for a short time — ちょっと立ち寄る</li>
+    <li><b>face up to</b> — accept, deal with — 受け入れる、立ち向かう</li>
+    <li><b>feel up to</b> — have the strength and energy to do — 〜する元気・体力がある</li>
+    <li><b>get away with</b> — do something bad and not be punished — 悪いことをして罰を逃れる</li>
+    <li><b>get along/on with*</b> — have good relations with — 仲良くやっていく</li>
+    <li><b>get on with</b> — continue with — 続ける</li>
+    <li><b>get out of</b> — avoid a responsibility — （責任などを）逃れる</li>
+    <li><b>get round to</b> — find time to do — やっと〜する時間を作る</li>
+    <li><b>get up to</b> — do something bad — （悪いことを）しでかす</li>
+    <li><b>go in for</b> — have as a hobby — 趣味として好む</li>
+    <li><b>grow out of</b> — become too old for — 大きくなって卒業する</li>
+    <li><b>keep up with*</b> — stay in the same place as — 後れを取らずについていく</li>
+    <li><b>look down on</b> — feel superior to — 見下す</li>
+    <li><b>look up to</b> — respect — 尊敬する</li>
+    <li><b>look forward to</b> — think we will enjoy — 楽しみにする</li>
+    <li><b>make up for</b> — compensate for — 埋め合わせる</li>
+    <li><b>put up with</b> — accept without complaining — 我慢する</li>
+    <li><b>run out of*</b> — have no more of — 使い果たす、なくなる</li>
+    <li><b>stand up for</b> — defend — 擁護する、味方する</li>
+  </ul>
+  <div class="ex"><div class="en">They are too far ahead for us to catch up with them.</div><div class="ja">あまりに先を行っていて、追いつけません。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Have you come up with an answer yet?</div><div class="ja">もう答えを思いつきましたか。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jack stole the money and got away with it.</div><div class="ja">ジャックはお金を盗んで、罰を逃れました。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I can’t put up with these screaming children!</div><div class="ja">叫んでいる子どもたちにはもう我慢できません！</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Oh dear, we’ve run out of petrol!</div><div class="ja">大変、ガソリンがなくなりました！</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You must learn to stand up for yourself!</div><div class="ja">自分の身を守ることを学ばなければなりません！</div><div class="tts"></div></div>
+</div>
+<div class="card">
+  <h2>3. 一つのパーティクルを取る動詞：他動詞・分離できない（inseparable）</h2>
+  <p>これらの句動詞は目的語を取り、目的語は<b>必ずパーティクルの後</b>に置きます。動詞とパーティクルの間には置けません。</p>
+  <div class="formula">V + particle + O</div>
+  <div class="ex"><div class="en">I love coffee. I can’t do without it in the morning!</div><div class="ja">コーヒーが大好きです。朝はコーヒーがないとやっていけません！（do without = なしで済ます。「do it without」とは言いません）</div><div class="tts"></div></div>
+  <ul>
+    <li><b>ask after</b> — ask for news of — （人の）様子を尋ねる</li>
+    <li><b>call for</b> — come to your house and collect you — 家まで迎えに行く</li>
+    <li><b>call on</b> — visit for a short time — ちょっと訪問する</li>
+    <li><b>come across</b> — find by chance — 偶然見つける</li>
+    <li><b>come into</b> — inherit — 相続する</li>
+    <li><b>count on</b> — depend on — あてにする</li>
+    <li><b>deal with</b> — take action to solve a problem — 対処する、取り組む</li>
+    <li><b>do without</b> — manage without having — なしで済ます</li>
+    <li><b>get at</b> — suggest — ほのめかす</li>
+    <li><b>get over</b> — recover from — 回復する、乗り越える</li>
+    <li><b>go over</b> — discuss the details — 詳しく検討する</li>
+    <li><b>join in</b> — take part in, contribute to — 参加する</li>
+    <li><b>live on</b> — have as income — （収入）で暮らす</li>
+    <li><b>look into</b> — investigate — 調査する</li>
+    <li><b>look round</b> — look at everything — あたりを見て回る</li>
+    <li><b>make for</b> — go in the direction of — 〜へ向かう</li>
+    <li><b>pick on</b> — choose a person to punish — （人を）いじめる、からかう</li>
+    <li><b>run into</b> — meet by chance — 偶然出会う</li>
+    <li><b>see about</b> — make arrangements — 手配する</li>
+    <li><b>see to</b> — attend to, take care of — 世話をする、対処する</li>
+    <li><b>stand for</b> — tolerate; be a candidate for — 我慢する；立候補する</li>
+    <li><b>take after</b> — have the same characteristics as — （親などに）似ている</li>
+  </ul>
+  <div class="ex"><div class="en">Joe came across this old painting in the attic.</div><div class="ja">ジョーは屋根裏でこの古い絵を偶然見つけました。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Sue came into a large sum of money.</div><div class="ja">スーは大金を相続しました。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I’m counting on you to help me.</div><div class="ja">助けてくれるとあてにしています。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Helen takes after her mother.</div><div class="ja">ヘレンは母親に似ています。</div><div class="tts"></div></div>
+</div>
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>新しい句動詞に出会ったら、<b>辞書で使い方を調べましょう</b>。</li>
+    <li>多くの句動詞には<b>複数の意味</b>があります。文脈から正しい意味を判断しましょう。</li>
+    <li>句動詞は、改まった文章よりも<b>話し言葉やくだけた書き言葉</b>でよく使われます。</li>
+  </ol>
+</div>
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+<div class="card fill-sec" id="ex1">
+  <h2>問題1 — 与えられた句動詞を使って文を書き換えよう</h2>
+<p>かっこ内の句動詞が含まれるように各文を書き換えましょう（形を変える必要がある場合があります）。不足部分を空所に入力してください。</p>
+  <p class="small">a) はすでに解かれている例題です（<i>got round to fixing your bike</i>）。ここでは10文すべてに挑戦します。</p>
+  <div class="q"><p>a) Sorry, but I haven’t found time to fix your bike yet. (get round to)<br>→ Sorry, but I haven’t <input class="blank" data-answers="got round to fixing your bike" data-display="got round to fixing your bike"> yet.</p></div>
+  <div class="q"><p>b) Oh bother, we don’t have any milk left. (run out of)<br>→ Oh bother, we <input class="blank" data-answers="have run out of milk" data-display="have run out of milk">.</p></div>
+  <div class="q"><p>c) It took me a long time to recover from my illness. (get over)<br>→ It took me a long time to <input class="blank" data-answers="get over my illness" data-display="get over my illness">.</p></div>
+  <div class="q"><p>d) Julie must be too old to bite her nails. (grow out of)<br>→ Julie must have <input class="blank" data-answers="grown out of biting her nails" data-display="grown out of biting her nails">.</p></div>
+  <div class="q"><p>e) I think we’ve found an answer to the problem. (come up with)<br>→ I think we’ve <input class="blank" data-answers="come up with an answer to the problem" data-display="come up with an answer to the problem">.</p></div>
+  <div class="q"><p>f) I don’t think I’m well enough to play football today. (feel up to)<br>→ I don’t think I <input class="blank" data-answers="feel up to playing football" data-display="feel up to playing football"> today.</p></div>
+  <div class="q"><p>g) Ann is someone I really respect. (look up to)<br>→ Ann is someone I really <input class="blank" data-answers="look up to" data-display="look up to">.</p></div>
+  <div class="q"><p>h) I must arrange to have the kitchen painted. (see about)<br>→ I must <input class="blank" data-answers="see about having the kitchen painted" data-display="see about having the kitchen painted">.</p></div>
+  <div class="q"><p>i) Please help me. I’m relying on you. (count on)<br>→ Please help me. I’m <input class="blank" data-answers="counting on you" data-display="counting on you">.</p></div>
+  <div class="q"><p>j) Peter is just like his father! (take after)<br>→ Peter <input class="blank" data-answers="takes after his father" data-display="takes after his father">!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ 問題1をチェック</button><button type="button" onclick="showFill('ex1')">👁 答えを見る</button><button type="button" onclick="resetFill('ex1')">↺ やり直す</button></div>
+  <span class="score">問題1の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 与えられた単語を使って二つ目の文を完成させよう</h2>
+<p>与えられた単語を使って、二つ目の文が一つ目と同じ意味になるように完成させましょう。<b>与えられた単語は変えず</b>、その単語を含めて<b>2〜5語</b>で答えてください。</p>
+  <p class="small">a) はすでに解かれている例題です（<i>ran into</i>）。</p>
+  <div class="q"><p>a) Quite by chance, Brenda met Philip at the station. (ran)<br>→ Brenda <input class="blank" data-answers="ran into" data-display="ran into"> Philip at the station.</p></div>
+  <div class="q"><p>b) You’ll just have to learn to accept the facts! (face)<br>→ You’ll just <input class="blank" data-answers="have to face up to" data-display="have to face up to"> the facts!</p></div>
+  <div class="q"><p>c) How can you bear so much traffic noise? (put)<br>→ How can you <input class="blank" data-answers="put up with so much" data-display="put up with so much"> traffic noise?</p></div>
+  <div class="q"><p>d) Charles cheated in his exams, and didn’t get caught. (got)<br>→ Charles cheated in his exams, and <input class="blank" data-answers="got away with" data-display="got away with"> it.</p></div>
+  <div class="q"><p>e) I visited a few friends while I was in Manchester. (called)<br>→ I <input class="blank" data-answers="called on a few friends" data-display="called on a few friends"> while I was in Manchester.</p></div>
+  <div class="q"><p>f) What are you trying to say? (getting)<br>→ What <input class="blank" data-answers="are you getting" data-display="are you getting"> at?</p></div>
+  <div class="q"><p>g) I must go to the dentist, and get my teeth taken care of. (seen)<br>→ I must go to the dentist <input class="blank" data-answers="and get my teeth seen" data-display="and get my teeth seen"> to.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 枠内の単語を一つ入れて文を完成させよう</h2>
+<p>各文を<b>枠内の一語</b>で完成させましょう。</p>
+  <p><b>across · against · for · in · into · on · round · to · up · with</b></p>
+  <p class="small">a) はすでに解かれている例題です（<i>for</i>）。</p>
+  <div class="q"><p>a) I’ll send someone to call <input class="blank" data-answers="for" data-display="for"> the parcel on Thursday.</p></div>
+  <div class="q"><p>b) You’ll have to work hard to keep <input class="blank" data-answers="up" data-display="up"> with the rest of the class.</p></div>
+  <div class="q"><p>c) Jean didn’t expect to come up <input class="blank" data-answers="against" data-display="against"> such difficulties.</p></div>
+  <div class="q"><p>d) It’s not fair. You’re always picking <input class="blank" data-answers="on" data-display="on"> me.</p></div>
+  <div class="q"><p>e) Terry sang the first verse and then everyone joined <input class="blank" data-answers="in" data-display="in">.</p></div>
+  <div class="q"><p>f) I came <input class="blank" data-answers="across" data-display="across"> one of your novels in a second-hand bookshop.</p></div>
+  <div class="q"><p>g) I’m not interested in buying anything. I’m just looking <input class="blank" data-answers="round" data-display="round">.</p></div>
+  <div class="q"><p>h) Don’t you think the manager should deal <input class="blank" data-answers="with" data-display="with"> this problem?</p></div>
+  <div class="q"><p>i) George came <input class="blank" data-answers="into" data-display="into"> a lot of money when his uncle died.</p></div>
+  <div class="q"><p>j) You look very guilty! What have you been getting up <input class="blank" data-answers="to" data-display="to">?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card" id="ex4">
+  <h2>問題4 — 最も適切な単語・語句を選ぼう</h2>
+<p>各文を完成させるのに最も適切な単語・語句を選びましょう。</p>
+  <p class="small">a) は例題です：答えは B（<i>making for</i>）。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) The weather was fine, and everyone was ______ the coast.</p><div class="opts"><button type="button">A) going in for</button><button type="button">B) making for</button><button type="button">C) joining in</button><button type="button">D) seeing about</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>b) How much money do you manage to ______?</p><div class="opts"><button type="button">A) come into</button><button type="button">B) go in for</button><button type="button">C) deal with</button><button type="button">D) live on</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) There isn’t any sugar, I’m afraid. You’ll have to ______.</p><div class="opts"><button type="button">A) run out</button><button type="button">B) put up with</button><button type="button">C) do without</button><button type="button">D) make for</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) I was passing their house, so I ______ Claire and Michael.</p><div class="opts"><button type="button">A) dropped in on</button><button type="button">B) came up with</button><button type="button">C) got on with</button><button type="button">D) ran into</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) I don’t really ______ winter sports very much.</p><div class="opts"><button type="button">A) deal with</button><button type="button">B) face up to</button><button type="button">C) go in for</button><button type="button">D) get round to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>f) Losing my job was a great shock, but I think I’m ______ it.</p><div class="opts"><button type="button">A) seeing to</button><button type="button">B) putting up with</button><button type="button">C) standing for</button><button type="button">D) getting over</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Sheila’s gone to ______ having a new phone installed.</p><div class="opts"><button type="button">A) see about</button><button type="button">B) deal with</button><button type="button">C) get round to</button><button type="button">D) ask after</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I’ve had to ______ a lot of insulting behaviour from you!</p><div class="opts"><button type="button">A) look down on</button><button type="button">B) put up with</button><button type="button">C) stand up for</button><button type="button">D) get on with</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>i) The hotel was terrible, but the wonderful beach ______ our disappointment.</p><div class="opts"><button type="button">A) got over</button><button type="button">B) faced up to</button><button type="button">C) saw to</button><button type="button">D) made up for</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) Jack has decided to ______ the time he spends watching television.</p><div class="opts"><button type="button">A) run out of</button><button type="button">B) see to</button><button type="button">C) cut down on</button><button type="button">D) come up with</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題4の点数： <span class="score-num">0</span>/10</span>
+</div>
+<div class="card" id="ex5">
+  <h2>問題5 — 最も適切な文の結末を選ぼう</h2>
+<p>各文に最も適切な結末を選びましょう。注意：ここでは、説明の部分で学んだ意味とは違う意味で使われている句動詞もあります。</p>
+  <p class="small">a) は例題です：答えは B。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I can’t put up with</p><div class="opts"><button type="button">A) you if you should come to London.</button><button type="button">B) people who smoke all the time.</button><button type="button">C) the plates onto the top shelf.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) The chairperson of the committee then called on Tony</p><div class="opts"><button type="button">A) but his line was engaged.</button><button type="button">B) to make a speech in reply.</button><button type="button">C) so that his voice could be heard above the crowd.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) Mary has been chosen to stand for</p><div class="opts"><button type="button">A) the bad behaviour of her colleagues.</button><button type="button">B) herself in future.</button><button type="button">C) Parliament in the next election.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) After my holidays it takes me a few days to catch up with</p><div class="opts"><button type="button">A) the people running in front of me.</button><button type="button">B) all the news I’ve missed.</button><button type="button">C) a really bad cold.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Small children soon grow out of</p><div class="opts"><button type="button">A) their shoes.</button><button type="button">B) all the good food they eat.</button><button type="button">C) the habits they have when they get older.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) I’ve decided to go in for</p><div class="opts"><button type="button">A) eating fruit for breakfast.</button><button type="button">B) a few days rest in the country.</button><button type="button">C) a photography competition in Photographer’s Weekly.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) I’m afraid that our plans to open a new factory have run into</p><div class="opts"><button type="button">A) some old friends.</button><button type="button">B) a tree by the side of the road.</button><button type="button">C) a few unexpected difficulties.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) We find that this type of tyre makes for</p><div class="opts"><button type="button">A) safer driving in wet weather.</button><button type="button">B) the first place it can stop.</button><button type="button">C) all smaller types of cars.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>i) I saw my old friend John last week. I couldn’t get over</p><div class="opts"><button type="button">A) my cold before I saw him, though.</button><button type="button">B) near enough to talk to him though.</button><button type="button">C) how young he looked.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) Here people are only worried about keeping up with</p><div class="opts"><button type="button">A) others who are faster.</button><button type="button">B) late-night television programmes.</button><button type="button">C) the Joneses.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題5の点数： <span class="score-num">0</span>/10</span>
+</div>
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>47</b> 問です（問題1：10か所 · 問題2：7か所 · 問題3：10か所 · 問題4：10 · 問題5：10）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

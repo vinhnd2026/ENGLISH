@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 30 — Consolidation 6</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-30-Consolidation-6.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-30-Consolidation-6-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 30 — Consolidation 6</h1>
+  <p>Review: Phrasal verbs · Verbs followed by -ing / infinitive · Verb &amp; adjective + preposition</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>🔁 Review — What this lesson revises</h2>
+  <p>This lesson has no new grammar. It brings together three areas you have already studied: <b>phrasal verbs</b>, <b>verbs followed by -ing / the infinitive</b>, and <b>verbs and adjectives with fixed prepositions</b>.</p>
+  <h3>a) Phrasal verbs</h3>
+  <div class="formula">put up with · take after · deal with · show off · grow out of · take up · get over · get away · come across · come up with · come into · come up against · break out · run out of · stand for · leave out · take over · get round to · turn up · clear up · face up to · keep up with · look into · fill in</div>
+  <p>The meaning of a phrasal verb often <b>cannot be guessed</b> from the main verb, so learn each combination in context. The verbs that form the most phrasal verbs include <i>get, come, put, take, look, break</i> and <i>turn</i>.</p>
+  <h3>b) Verbs followed by -ing or infinitive</h3>
+  <div class="formula">miss / regret / deny / mind / avoid / imagine / consider + V-ing &nbsp;·&nbsp; decide / forget / promise + to V &nbsp;·&nbsp; mean + V-ing (= involve)</div>
+  <p><i>Miss, regret, deny</i> and <i>mind</i> are followed by -ing; <i>decide, forget</i> (forget to do something you should do) and <i>promise</i> are followed by the infinitive. Note that <i>mean</i> + -ing means “involve”. After a preposition (such as <i>without</i>), always use -ing.</p>
+  <h3>c) Verb / adjective + fixed preposition</h3>
+  <div class="formula">capable of · fond of · ashamed of · jealous of · accused of · famous for · believe in · search for · laugh at · certain about · right about · anxious about · upset about · unhappy about</div>
+  <p>Many verbs and adjectives go with one fixed preposition — learn the whole combination: <i>fond of</i>, <i>ashamed of</i>, <i>anxious about</i>, and so on.</p>
+  <div class="ex"><div class="en">She had to put up with noisy games in the house.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The burglar got away.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I came across these old photographs in my desk yesterday.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I miss working in the evenings.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Jim denied stealing the jewels.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The old house was famous for its ghost.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Mrs White is very fond of animals.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I feel anxious about missing the plane.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>Learn <b>phrasal verbs</b> as whole units: the meaning cannot be guessed from the main verb (<i>put up with</i> = tolerate, <i>take after</i> = resemble).</li>
+    <li><i>get</i> and <i>come</i> form many common combinations: <i>get on with, get over, get away, getting at; come out, come up with, come across, come into, come up against</i>.</li>
+    <li>After a <b>preposition</b>, always use <b>-ing</b>: <i>without talking it over</i>.</li>
+    <li>Verbs that must be followed by <b>-ing</b>: <i>miss, regret, deny, mind, avoid, imagine, consider</i>.</li>
+    <li><i>mean</i> + -ing = involve; <i>decide</i> + infinitive; <i>forget</i> + infinitive = forget to do something you should do.</li>
+    <li>Fixed adjective + preposition combinations: <i>capable of, fond of, ashamed of, jealous of; certain/right/anxious/upset about; famous for</i>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Put one suitable word in each space: Parents and children</h2>
+  <p>Put <b>one suitable word</b> in each space. Space (1), <i>grew</i>, is given as an example — here, complete all 15 spaces.</p>
+  <div class="q"><p>I was reading an article last week in which the writer describes how her children had changed as they (1) <input class="blank" data-answers="grew" data-display="grew"> up. When they were small, she had to (2) <input class="blank" data-answers="put" data-display="put"> up with noisy games in the house, or (3) <input class="blank" data-answers="join" data-display="join"> in their interminable games of football in the garden which (4) <input class="blank" data-answers="wore" data-display="wore"> her out. If the house went quiet, she wondered what the monsters were (5) <input class="blank" data-answers="getting" data-display="getting"> up to, or what crisis she would have to (6) <input class="blank" data-answers="deal" data-display="deal"> with next. She dreaded the fact that they might (7) <input class="blank" data-answers="take" data-display="take"> after her husband, who admitted having been an uncontrollable child who (8) <input class="blank" data-answers="spent" data-display="spent"> most of the time (9) <input class="blank" data-answers="showing" data-display="showing"> off to his friends by breaking things or (10) <input class="blank" data-answers="getting" data-display="getting"> into fights. What was worse was that everyone else thought he was a sweet child, and he (11) <input class="blank" data-answers="got" data-display="got"> away with terrible things! However, she had experienced an even greater shock with her children. They had (12) <input class="blank" data-answers="grown" data-display="grown"> out of all their naughty behaviour, and (13) <input class="blank" data-answers="taken" data-display="taken"> up serious hobbies such as chess and playing the piano. They never did anything without (14) <input class="blank" data-answers="talking|thinking" data-display="talking / thinking"> it over first, and coming to a serious decision. She had to (15) <input class="blank" data-answers="face" data-display="face"> up to the fact that they made her feel rather childish, and that in some ways she preferred them when they were young and noisy!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Complete each sentence with an expression with get</h2>
+  <p>Complete each sentence with an expression with <i>get</i>. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) When are you going to <input class="blank" data-answers="get round" data-display="get round"> to writing to the bank?</p></div>
+  <div class="q"><p>b) I'm afraid I don't <input class="blank" data-answers="get on" data-display="get on"> very well with my teacher.</p></div>
+  <div class="q"><p>c) I don't understand what you are <input class="blank" data-answers="getting at" data-display="getting at">. What do you mean?</p></div>
+  <div class="q"><p>d) How are you feeling? Have you <input class="blank" data-answers="got over" data-display="got over"> your cold yet?</p></div>
+  <div class="q"><p>e) Jim chased the burglar, but unfortunately the burglar <input class="blank" data-answers="got away" data-display="got away">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Complete each sentence with an expression with come</h2>
+  <p>Complete each sentence with an expression with <i>come</i>. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) Has the new book of tests <input class="blank" data-answers="come out" data-display="come out"> yet?</p></div>
+  <div class="q"><p>b) It's a difficult situation and we haven't <input class="blank" data-answers="come up with" data-display="come up with"> a solution yet.</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="came across" data-display="came across"> these old photographs in my desk yesterday.</p></div>
+  <div class="q"><p>d) Julie became rich when she <input class="blank" data-answers="came into" data-display="came into"> a fortune.</p></div>
+  <div class="q"><p>e) I'm afraid we've <input class="blank" data-answers="come up against" data-display="come up against"> a lot of problems in this project.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Rewrite each sentence using the word given (two to five words)</h2>
+  <p>Complete the second sentence so that it has a similar meaning to the first sentence, using the word given — do not change the word given. You must use between <b>two and five words</b>, including the word given. Sentence a) is given as an example — here, complete all 10 sentences.</p>
+  <div class="q"><p>a) I wish I could work in the evenings as I used to. <b>(miss)</b><br>I <input class="blank wide" data-answers="miss working" data-display="miss working"> in the evenings.</p></div>
+  <div class="q"><p>b) If I take the job, I'll have to move to London. <b>(mean)</b><br>Taking the job <input class="blank wide" data-answers="will mean moving to" data-display="will mean moving to"> London.</p></div>
+  <div class="q"><p>c) Neil wishes he hadn't sold his car. <b>(having)</b><br>Neil <input class="blank wide" data-answers="regrets having sold his" data-display="regrets having sold his"> car.</p></div>
+  <div class="q"><p>d) Please see that you post all the letters. <b>(to)</b><br>Please don't <input class="blank wide" data-answers="forget to post" data-display="forget to post"> all the letters.</p></div>
+  <div class="q"><p>e) Sheila has decided to take driving lessons. <b>(how)</b><br>Sheila has decided <input class="blank wide" data-answers="to learn how to" data-display="to learn how to"> drive.</p></div>
+  <div class="q"><p>f) Jim said he hadn't stolen the jewels. <b>(stealing)</b><br>Jim <input class="blank wide" data-answers="denied stealing" data-display="denied stealing"> the jewels.</p></div>
+  <div class="q"><p>g) How about going to the theatre tonight? <b>(like)</b><br>Would <input class="blank wide" data-answers="you like to go to" data-display="you like to go to"> the theatre tonight?</p></div>
+  <div class="q"><p>h) Peter will look after the children — he has no objection. <b>(looking)</b><br>Peter doesn't <input class="blank wide" data-answers="mind looking after the" data-display="mind looking after the"> children.</p></div>
+  <div class="q"><p>i) 'I'll definitely be here by eight,' Ann promised. <b>(would)</b><br>Ann <input class="blank wide" data-answers="promised that she would be there|promised she would be there" data-display="promised (that) she would be there"> by eight.</p></div>
+  <div class="q"><p>j) We first met in 1978. Do you remember? <b>(our)</b><br>Do you remember <input class="blank wide" data-answers="our first meeting in" data-display="our first meeting in"> 1978?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Exercise 5 — Decide which answer (A, B, C or D) best fits each space: I don't believe in ghosts!</h2>
+  <p>Read the passage and choose the answer that best fits each space. Space (1) is given as an example, <b>B</b> (<i>for</i>) — here, answer all 15 questions.</p><div class="note">📖 <b>I don't believe in ghosts!</b><br>Last year I stayed for a few days in an old house in Scotland which was famous (1) ___ its ghost. I don't really believe (2) ___ ghosts, so I'm not afraid (3) ___ them of course. So when my hosts suggested (4) ___ up all night to see their ghost, I simply laughed (5) ___ them. Then they told me (6) ___ the woman who haunted their house. She had been accused (7) ___ murdering her husband in the eighteenth century because she had been jealous (8) ___ him, but she had avoided (9) ___ tried, and had disappeared. She appeared quite regularly, walking through the house as if she was searching (10) ___ something. I agreed to watch that night, although it would (11) ___ sitting for hours in the cold. I expected one of my friends to appear dressed (12) ___ the ghost, and so when the figure of a woman finally came (13) ___ me, I (14) ___ to be terrified. You can imagine my surprise when the figure took a knife from her dress, and then vanished. I decided to disappear myself, and drove home to London as (15) ___ as I could.</div>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>1) … an old house in Scotland which was famous ___ its ghost.</p><div class="opts"><button type="button">with</button><button type="button">for</button><button type="button">from</button><button type="button">as</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>2) I don't really believe ___ ghosts, …</p><div class="opts"><button type="button">for</button><button type="button">to</button><button type="button">at</button><button type="button">in</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>3) … so I'm not afraid ___ them of course.</p><div class="opts"><button type="button">with</button><button type="button">for</button><button type="button">of</button><button type="button">by</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>4) … my hosts suggested ___ up all night to see their ghost, …</p><div class="opts"><button type="button">waking</button><button type="button">getting</button><button type="button">staying</button><button type="button">coming</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>5) … I simply laughed ___ them.</p><div class="opts"><button type="button">at</button><button type="button">with</button><button type="button">about</button><button type="button">to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>6) Then they told me ___ the woman who haunted their house.</p><div class="opts"><button type="button">for</button><button type="button">that</button><button type="button">with</button><button type="button">about</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>7) She had been accused ___ murdering her husband …</p><div class="opts"><button type="button">that</button><button type="button">of</button><button type="button">for</button><button type="button">while</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>8) … because she had been jealous ___ him, …</p><div class="opts"><button type="button">of</button><button type="button">by</button><button type="button">to</button><button type="button">or</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>9) … but she had avoided ___ tried, and had disappeared.</p><div class="opts"><button type="button">and</button><button type="button">being</button><button type="button">but</button><button type="button">having</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>10) … walking through the house as if she was searching ___ something.</p><div class="opts"><button type="button">like</button><button type="button">after</button><button type="button">with</button><button type="button">for</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>11) I agreed to watch that night, although it would ___ sitting for hours in the cold.</p><div class="opts"><button type="button">mean</button><button type="button">be</button><button type="button">have</button><button type="button">uncomfortable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>12) I expected one of my friends to appear dressed ___ the ghost, …</p><div class="opts"><button type="button">with</button><button type="button">for</button><button type="button">as</button><button type="button">in</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>13) … when the figure of a woman finally came ___ me, …</p><div class="opts"><button type="button">about</button><button type="button">towards</button><button type="button">round</button><button type="button">through</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>14) … I ___ to be terrified.</p><div class="opts"><button type="button">wanted</button><button type="button">imagined</button><button type="button">pretended</button><button type="button">supposed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>15) … and drove home to London as ___ as I could.</p><div class="opts"><button type="button">quickly</button><button type="button">then</button><button type="button">well</button><button type="button">though</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 5: <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Put one suitable word in each space</h2>
+  <p>Put <b>one suitable word</b> in each space. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) Don't go so fast! I can hardly <input class="blank" data-answers="keep" data-display="keep"> up with you.</p></div>
+  <div class="q"><p>b) Don't be such a coward! <input class="blank" data-answers="stand" data-display="Stand"> up for yourself!</p></div>
+  <div class="q"><p>c) Please don't let me down. I'm <input class="blank" data-answers="relying|counting|depending" data-display="relying / counting / depending"> on you.</p></div>
+  <div class="q"><p>d) We don't know who started the fire, but we're <input class="blank" data-answers="looking" data-display="looking"> into it.</p></div>
+  <div class="q"><p>e) I must go to the dentist's and have my teeth <input class="blank" data-answers="seen" data-display="seen"> to.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Exercise 7 — Complete each sentence with an expression containing of</h2>
+  <p>Complete each sentence with an expression containing <i>of</i>. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) Jim's boss didn't think he was <input class="blank" data-answers="capable of" data-display="capable of"> working on his own.</p></div>
+  <div class="q"><p>b) Mrs White is very <input class="blank" data-answers="fond of" data-display="fond of"> animals, and has six cats.</p></div>
+  <div class="q"><p>c) I know I shouldn't have stolen the money. I'm <input class="blank" data-answers="ashamed of" data-display="ashamed of"> myself.</p></div>
+  <div class="q"><p>d) It was very <input class="blank" data-answers="good of" data-display="good of"> you to help me carry my shopping.</p></div>
+  <div class="q"><p>e) Georgina is very <input class="blank" data-answers="jealous of" data-display="jealous of"> anyone who dances with her husband.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Check Exercise 7</button><button type="button" onclick="showFill('ex7')">👁 Show answers</button><button type="button" onclick="resetFill('ex7')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 7: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>Exercise 8 — Complete each sentence with an expression containing about</h2>
+  <p>Complete each sentence with an expression containing <i>about</i>. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) I knew I'd really seen a ghost. I was <input class="blank" data-answers="certain about" data-display="certain about"> it!</p></div>
+  <div class="q"><p>b) Bill was very <input class="blank" data-answers="unhappy about" data-display="unhappy about"> missing my birthday party.</p></div>
+  <div class="q"><p>c) You were <input class="blank" data-answers="right about" data-display="right about"> the film. It was awful, just as you said.</p></div>
+  <div class="q"><p>d) I always get worried at airports. I feel <input class="blank" data-answers="anxious about" data-display="anxious about"> missing the plane.</p></div>
+  <div class="q"><p>e) Poor Lucy has lost her job. She's very <input class="blank" data-answers="upset about" data-display="upset about"> it.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ Check Exercise 8</button><button type="button" onclick="showFill('ex8')">👁 Show answers</button><button type="button" onclick="resetFill('ex8')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 8: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>Exercise 9 — Complete each sentence with a word ending in -ing</h2>
+  <p>Complete each sentence with a word ending in <i>-ing</i>. Sentence a) is given as an example — here, complete all 5 sentences.</p>
+  <div class="q"><p>a) That's all right, I don't mind <input class="blank" data-answers="washing" data-display="washing"> up the dirty dishes.</p></div>
+  <div class="q"><p>b) Most people try to avoid <input class="blank" data-answers="looking" data-display="looking"> up words in the dictionary.</p></div>
+  <div class="q"><p>c) Can you imagine <input class="blank" data-answers="bringing" data-display="bringing"> up six small children?</p></div>
+  <div class="q"><p>d) I was considering <input class="blank" data-answers="taking" data-display="taking"> up golf, actually.</p></div>
+  <div class="q"><p>e) We're rather hard up. It means <input class="blank" data-answers="doing|going" data-display="doing / going"> without a holiday this year.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ Check Exercise 9</button><button type="button" onclick="showFill('ex9')">👁 Show answers</button><button type="button" onclick="resetFill('ex9')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 9: <span class="fill-score">—</span>/5</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex10">
+  <h2>Exercise 10 — Put one suitable word in each space</h2>
+  <p>Put <b>one suitable word</b> in each space. Sentence a) is given as an example — here, complete all 9 sentences.</p>
+  <div class="q"><p>a) Have you ever thought of <input class="blank" data-answers="taking" data-display="taking"> up cycling?</p></div>
+  <div class="q"><p>b) Harry had a serious illness, but he has <input class="blank" data-answers="got" data-display="got"> over it now.</p></div>
+  <div class="q"><p>c) We have decided to <input class="blank" data-answers="put" data-display="put"> off our holiday until next month.</p></div>
+  <div class="q"><p>d) I think that you <input class="blank" data-answers="made" data-display="made"> up the whole story!</p></div>
+  <div class="q"><p>e) What are the children <input class="blank" data-answers="getting" data-display="getting"> up to in the garden?</p></div>
+  <div class="q"><p>f) Everyone says that Chris <input class="blank" data-answers="takes" data-display="takes"> after his father.</p></div>
+  <div class="q"><p>g) You'll never guess who <input class="blank" data-answers="turned" data-display="turned"> up at the end-of-term party!</p></div>
+  <div class="q"><p>h) Please <input class="blank" data-answers="think" data-display="think"> over our offer before you make a decision.</p></div>
+  <div class="q"><p>i) After the party, John had to <input class="blank" data-answers="clear|clean" data-display="clear / clean"> up all the mess.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex10')">✔ Check Exercise 10</button><button type="button" onclick="showFill('ex10')">👁 Show answers</button><button type="button" onclick="resetFill('ex10')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 10: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex11">
+  <h2>Exercise 11 — Rewrite each sentence using the word given (two to five words)</h2>
+  <p>Complete the second sentence so that it has a similar meaning to the first sentence, using the word given — do not change the word given. You must use between <b>two and five words</b>, including the word given. Sentence a) is given as an example — here, complete all 10 sentences.</p>
+  <div class="q"><p>a) The minister responsible has promised to investigate the problem. <b>(into)</b><br>The minister responsible has promised <input class="blank wide" data-answers="to look into" data-display="to look into"> the problem.</p></div>
+  <div class="q"><p>b) Sorry, we must end there, as there is no more time. <b>(run)</b><br>Sorry, we must end there, as <input class="blank wide" data-answers="we have run out of" data-display="we have run out of"> time.</p></div>
+  <div class="q"><p>c) All passengers are asked to complete this immigration form. <b>(in)</b><br>All passengers are asked to <input class="blank wide" data-answers="fill in" data-display="fill in"> this immigration form.</p></div>
+  <div class="q"><p>d) The war began when the army crossed the border. <b>(out)</b><br>The war <input class="blank wide" data-answers="broke out" data-display="broke out"> when the army crossed the border.</p></div>
+  <div class="q"><p>e) I don't understand what Ann is trying to say in this letter. <b>(at)</b><br>I don't understand what Ann is <input class="blank wide" data-answers="getting at" data-display="getting at"> in this letter.</p></div>
+  <div class="q"><p>f) Your behaviour is intolerable! I won't tolerate it! <b>(for)</b><br>Your behaviour is intolerable! I <input class="blank wide" data-answers="won't stand for|will not stand for" data-display="won't stand for"> it!</p></div>
+  <div class="q"><p>g) I always omit the garlic from this recipe. <b>(out)</b><br>I always <input class="blank wide" data-answers="leave out" data-display="leave out"> the garlic from this recipe.</p></div>
+  <div class="q"><p>h) Have you ever discovered a writer called Jack Common? <b>(across)</b><br>Have you ever <input class="blank wide" data-answers="come across" data-display="come across"> a writer called Jack Common?</p></div>
+  <div class="q"><p>i) I'll do some of the driving, when you feel like a rest. <b>(over)</b><br>I'll <input class="blank wide" data-answers="take over" data-display="take over"> , when you feel like a rest from driving.</p></div>
+  <div class="q"><p>j) I'll do the garden soon, but I just haven't found the time yet. <b>(got)</b><br>I'll do the garden soon, but I just haven't <input class="blank wide" data-answers="got round to it" data-display="got round to it"> yet.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex11')">✔ Check Exercise 11</button><button type="button" onclick="showFill('ex11')">👁 Show answers</button><button type="button" onclick="resetFill('ex11')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 11: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>89</b> (Exercise 1: 15 blanks · Exercise 2: 5 blanks · Exercise 3: 5 blanks · Exercise 4: 10 blanks · Exercise 5: 15 · Exercise 6: 5 blanks · Exercise 7: 5 blanks · Exercise 8: 5 blanks · Exercise 9: 5 blanks · Exercise 10: 9 blanks · Exercise 11: 10 blanks).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
