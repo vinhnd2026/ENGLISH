@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 19 — Functions 2 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-19-Functions-2.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-19-Functions-2-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 19 — Functions 2</h1>
+  <p>Language functions 2: special occasions · opinions · asking for and giving permission · preferences · promising · reassuring · suggesting · requests · thanking</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. The functions practised in this lesson</h2>
+  <p>This lesson practises another set of communicative functions, along with the appropriate response for each one:</p>
+  <ul>
+    <li><b>Things to say on special occasions</b>: <i>Congratulations! · Well done! · Bless you! · Cheers!</i></li>
+    <li><b>Asking for and giving an opinion</b>: <i>What did you think of the film, then?</i></li>
+    <li><b>Pausing to think</b>: <i>Wait a minute, let me see.</i></li>
+    <li><b>Asking for permission</b>: <i>Would it be all right if I left a bit early today?</i></li>
+    <li><b>Giving and refusing permission</b>: <i>Sure, go ahead. / You may not.</i></li>
+    <li><b>Expressing preferences</b>: <i>I think I'd rather have fish, actually.</i></li>
+    <li><b>Promising</b>: <i>I'll definitely bring your camera back tomorrow.</i></li>
+    <li><b>Reassuring</b>: <i>Don't worry, everything will turn out all right.</i></li>
+    <li><b>Recommending</b>: <i>I recommend the Hilton.</i></li>
+    <li><b>Refusing to do something</b>: <i>Sorry, no, I won't do it.</i></li>
+    <li><b>Making and responding to a request</b>: <i>Could you possibly turn on the air conditioning?</i></li>
+    <li><b>Suggesting</b>: <i>Why don't we have a party next weekend?</i></li>
+    <li><b>Thanking</b>: <i>That's very kind of you, I appreciate it.</i></li>
+  </ul>
+  <div class="ex"><div class="en">Congratulations!</div><div class="vi">— Said when someone has just achieved something good.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Bless you!</div><div class="vi">— The familiar phrase said when someone sneezes.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">What did you think of the film, then?</div><div class="vi">— Asking for an opinion.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Wait a minute, let me see.</div><div class="vi">— Pausing to think before replying.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Responding appropriately</h2>
+  <p>Each function usually comes with a suitable kind of response. Responding in the wrong "way" sounds very strange, even if the grammar is correct: for example, when you are introduced to someone and hear "How do you do", the correct reply is "How do you do" — not "Very well, thank you". Similarly, when refusing a request, "I can't, I'm afraid" usually sounds softer and more suitable than "No, I won't".</p>
+  <div class="formula">Hear the function → respond with the matching function, at the right level of politeness</div>
+  <div class="ex"><div class="en">How kind, you really shouldn't have bothered. — It was nothing, really.</div><div class="vi">— Responding to thanks when receiving a gift.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I can't stop worrying about my exam tomorrow. — I'm sure you'll do well.</div><div class="vi">— Reassuring someone who is worried.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Would you mind moving your bag from the seat? — Oh, sorry.</div><div class="vi">— Responding to a request with an apology and an action.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Is it all right if I use your bike? — Sure, go ahead.</div><div class="vi">— Giving permission, informally.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Do you want beer or wine? — I'd prefer beer, please.</div><div class="vi">— Expressing a preference with I'd prefer.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>How we choose our words depends on the <b>situation</b>, on our <b>relationship</b> with the person we are talking to, and on the <b>subject</b> of the conversation.</li>
+    <li><b>Respond appropriately</b> — informally or politely — based on those factors, and on how the other person spoke to us first.</li>
+    <li>If we fail to use a polite form when one is needed, the listener may think we are <b>rude</b>, and the conversation may not achieve the result we want.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Match each sentence with one function</h2>
+  <p>Match each sentence (a–j) with the correct function in the list:</p>
+  <ol>
+    <li>Promising</li>
+    <li>Refusing</li>
+    <li>Suggesting</li>
+    <li>Expressing a preference</li>
+    <li>Pausing to think</li>
+    <li>Making a request</li>
+    <li>Thanking</li>
+    <li>Asking for an opinion</li>
+    <li>Reassuring</li>
+    <li>Asking permission</li>
+  </ol>
+  <p class="small">Sentence a) is given as an example (answer: 5) — here, do all 10 sentences.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="4"><p>a) Wait a minute, let me see.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="7"><p>b) What did you think of the film, then?</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) I'll definitely bring your camera back tomorrow.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="9"><p>d) Would it be all right if I left a bit early today?</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Sorry, no, I won't do it.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="5"><p>f) Could you possibly turn on the air conditioning?</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>g) I think I'd rather have fish, actually.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) Why don't we have a party next weekend?</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="6"><p>i) That's very kind of you, I appreciate it.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="8"><p>j) Don't worry, everything will turn out all right.</p><div class="opts"><button type="button">1 · Promising</button><button type="button">2 · Refusing</button><button type="button">3 · Suggesting</button><button type="button">4 · Expressing a preference</button><button type="button">5 · Pausing to think</button><button type="button">6 · Making a request</button><button type="button">7 · Thanking</button><button type="button">8 · Asking for an opinion</button><button type="button">9 · Reassuring</button><button type="button">10 · Asking permission</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Exercise 2 — Match each sentence with one function</h2>
+  <p>Match each sentence (a–j) with the correct function in the list:</p>
+  <ol>
+    <li>Praising someone's performance</li>
+    <li>Expressing annoyance</li>
+    <li>Wishing someone good health when drinking</li>
+    <li>Expressing happiness at someone's success</li>
+    <li>Attracting attention or asking someone to move out of your way</li>
+    <li>Expressing sympathy</li>
+    <li>Expressing that something has/has nearly gone wrong</li>
+    <li>Giving a warning</li>
+    <li>Showing that you have misheard or misunderstood</li>
+    <li>Said when another person sneezes</li>
+  </ol>
+  <p class="small">Sentence a) is given as an example (answer: 4) — here, do all 10 sentences.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="3"><p>a) Congratulations!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="7"><p>b) Look out!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Oh bother!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="6"><p>d) Whoops!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Well done!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="4"><p>f) Excuse me!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="8"><p>g) Pardon?</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="9"><p>h) Bless you!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>i) Cheers!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="5"><p>j) You poor thing!</p><div class="opts"><button type="button">1 · Praising someone's performance</button><button type="button">2 · Expressing annoyance</button><button type="button">3 · Wishing someone good health when drinking</button><button type="button">4 · Expressing happiness at someone's success</button><button type="button">5 · Attracting attention / asking someone to move</button><button type="button">6 · Expressing sympathy</button><button type="button">7 · Expressing that something has (nearly) gone wrong</button><button type="button">8 · Giving a warning</button><button type="button">9 · Showing you misheard or misunderstood</button><button type="button">10 · Said when another person sneezes</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 2: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Choose the most suitable reply</h2>
+  <p>For each remark, choose the most suitable reply (1 or 2).</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) What do you think of my new car?</p><div class="opts"><button type="button">1) It's all right I suppose.</button><button type="button">2) I think a lot.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Do you promise to pay me back at the end of the month?</p><div class="opts"><button type="button">1) I'll pay.</button><button type="button">2) I promise.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Can I use your phone?</p><div class="opts"><button type="button">1) You may not.</button><button type="button">2) Of course.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Where do you suggest I stay?</p><div class="opts"><button type="button">1) I recommend the Hilton.</button><button type="button">2) Let's stay at the Hilton.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Do you want beer or wine?</p><div class="opts"><button type="button">1) I'd prefer beer, please.</button><button type="button">2) I'd rather beer, please.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I can't stop worrying about my exam tomorrow.</p><div class="opts"><button type="button">1) That's all right, never mind.</button><button type="button">2) I'm sure you'll do well.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Janet, make us some tea, will you?</p><div class="opts"><button type="button">1) No I won't, I'm afraid.</button><button type="button">2) I can't, I'm afraid.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Would you mind moving your bag from the seat?</p><div class="opts"><button type="button">1) Oh, sorry.</button><button type="button">2) No, I wouldn't.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) How kind, you really shouldn't have bothered.</p><div class="opts"><button type="button">1) It was nothing, really.</button><button type="button">2) Don't worry, I didn't bother.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Is it all right if I use your bike?</p><div class="opts"><button type="button">1) Please accept it with my best wishes.</button><button type="button">2) Sure, go ahead.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Complete the sentences so the meaning stays the same, using the word given</h2>
+  <p>Complete the second sentence so that it means the same as the first, using the word given (do not change the form of the word). Use between two and five words, including the word given.</p>
+  <div class="note">📌 <b>Example a)</b> What's your opinion of Roger's new book? (<b>think</b>) → What do <b>you think of</b> Roger's new book?</div>
+  <div class="q"><p>b) Thank you very much for your help. (<b>am</b>)<br>I <input class="blank" data-answers="am grateful" data-display="am grateful"> for your help.</p></div>
+  <div class="q"><p>c) May I leave my bag here? (<b>if</b>)<br>Is it <input class="blank" data-answers="all right if I" data-display="all right if I"> leave my bag here?</p></div>
+  <div class="q"><p>d) Let's go to the beach tomorrow. (<b>we</b>)<br>Why <input class="blank" data-answers="don't we go" data-display="don't we go"> to the beach tomorrow?</p></div>
+  <div class="q"><p>e) I like going sailing more than swimming. (<b>rather</b>)<br>I'd <input class="blank" data-answers="rather go sailing than" data-display="rather go sailing than"> swimming.</p></div>
+  <div class="q"><p>f) Could you open a window? (<b>think</b>)<br>Do <input class="blank" data-answers="you think you could open" data-display="you think you could open"> the window?</p></div>
+  <div class="q"><p>g) Is it all right if you take care of the children? (<b>mind</b>)<br>Do <input class="blank" data-answers="you mind taking" data-display="you mind taking"> care of the children?</p></div>
+  <div class="q"><p>h) I recommend going by train. (<b>go</b>)<br>I think you <input class="blank" data-answers="should go" data-display="should go"> by train.</p></div>
+  <div class="q"><p>i) Excuse me, I can't get past you! (<b>in</b>)<br>Excuse me, you <input class="blank" data-answers="are in my" data-display="are in my"> way.</p></div>
+  <div class="q"><p>j) 'You've passed your driving test, Ron! Well done!' said Carol. (<b>on</b>)<br>Carol congratulated <input class="blank" data-answers="Ron on passing his" data-display="Ron on passing his"> driving test.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Exercise 5 — Find the extra word in each line (Say one thing, mean another)</h2>
+  <p>Read the passage <i>Say one thing, mean another</i>. Some lines are <b>correct</b>, and some have <b>one extra word</b> that should not be there. For each line: if the line is correct, choose the <b>✓</b> option; if there is an extra word, choose that word. The first two lines are given as examples (<i>✓</i> and <i>you</i>) — here, do all 17 lines. The passage ends with the line “wonder why?” (the continuation of line 15, which is not graded).</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p><b>Example line 1:</b> “Do you ever get annoyed by people who say one”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">annoyed</button><button type="button">people</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Example line 2:</b> “thing but mean another? For example, they say you,”</p><div class="opts"><button type="button">another</button><button type="button">you</button><button type="button">example</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 1:</b> “'That's a very kind of you, I'd love to,' when you”</p><div class="opts"><button type="button">kind</button><button type="button">a</button><button type="button">love</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 2:</b> “are invite them to the cinema, but really they”</p><div class="opts"><button type="button">invite</button><button type="button">cinema</button><button type="button">are</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 3:</b> “are thinking of an excuse so they can avoid you!”</p><div class="opts"><button type="button">thinking</button><button type="button">excuse</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 4:</b> “People who ask for an advice also annoy me. They”</p><div class="opts"><button type="button">an</button><button type="button">advice</button><button type="button">ask</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 5:</b> “say things like 'What do you think I should do?'”</p><div class="opts"><button type="button">think</button><button type="button">✓ (correct line)</button><button type="button">should</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 6:</b> “but then they don't listen to what you tell with them.”</p><div class="opts"><button type="button">listen</button><button type="button">with</button><button type="button">tell</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 7:</b> “Sometimes they don't even let you answer, but”</p><div class="opts"><button type="button">answer</button><button type="button">even</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 8:</b> “answer themselves! This really gets on to my nerves.”</p><div class="opts"><button type="button">to</button><button type="button">gets</button><button type="button">nerves</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 9:</b> “Politeness is also a problem. When people ask to you”</p><div class="opts"><button type="button">ask</button><button type="button">also</button><button type="button">to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 10:</b> “to open a window, they say 'Excuse me, but it could”</p><div class="opts"><button type="button">could</button><button type="button">it</button><button type="button">window</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 11:</b> “you possibly open the window for me?' I prefer to”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">possibly</button><button type="button">prefer</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 12:</b> “be more direct. Why shouldn't we just ever say”</p><div class="opts"><button type="button">direct</button><button type="button">just</button><button type="button">ever</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 13:</b> “'Can you to open the window?' or something like that?”</p><div class="opts"><button type="button">open</button><button type="button">window</button><button type="button">to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 14:</b> “I've tried this a few times, but people either look”</p><div class="opts"><button type="button">tried</button><button type="button">✓ (correct line)</button><button type="button">either</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 15:</b> “annoyed, or they don't do it what I ask them to. I”</p><div class="opts"><button type="button">it</button><button type="button">what</button><button type="button">ask</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 5: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>56</b> (Exercise 1: 10 · Exercise 2: 10 · Exercise 3: 10 · Exercise 4: 9 blanks · Exercise 5: 17 lines).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
