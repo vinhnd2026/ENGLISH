@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 7 — Conditionals</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-07-Conditionals-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 7 — Conditionals</h1>
+  <p>Câu điều kiện (Conditionals): loại 1 · loại 2 · loại 3 · dạng hỗn hợp · unless / provided / as long as · should · were to</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. Điều kiện thật / có khả năng xảy ra — First conditional</h2>
+  <div class="formula">If + hiện tại đơn, &nbsp;will / won't + V</div>
+  <p>Câu điều kiện loại 1 (first conditional) mô tả tình huống <b>thật hoặc có khả năng xảy ra</b>. Sau <i>if</i> dùng thì hiện tại nhưng thời gian được nói tới là tương lai; mệnh đề kết quả thường dùng <i>will / won't</i>, có thể thay bằng <i>going to</i> hoặc <i>can</i>.</p>
+  <div class="ex"><div class="en">If you fall, I won't be able to catch you!</div><div class="vi">Nếu bạn ngã, tôi sẽ không đỡ kịp đâu! (khả năng xảy ra thật)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If it rains, we're going to get wet.</div><div class="vi">Nếu trời mưa, chúng ta sẽ bị ướt. (going to thay cho will)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If the cases are too heavy, I can help you carry them.</div><div class="vi">Nếu va li nặng quá, tôi có thể giúp bạn mang. (can ở mệnh đề kết quả)</div><div class="tts"></div></div>
+  <h3>Unless, provided, as long as</h3>
+  <p><i>Unless</i> nghĩa là <i>If … not</i> (nếu … không / trừ khi). <i>Provided</i> và <i>as long as</i> cũng dùng để mở đầu một điều kiện (miễn là…).</p>
+  <div class="ex"><div class="en">Unless you leave at once, I'll call the police. (= If you don't leave at once, I'll call the police.)</div><div class="vi">Nếu anh không rời đi ngay, tôi sẽ gọi cảnh sát.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Provided you leave now, you'll catch the train.</div><div class="vi">Miễn là bạn đi ngay bây giờ, bạn sẽ kịp chuyến tàu.</div><div class="tts"></div></div>
+  <h3>Dùng mệnh lệnh thay cho mệnh đề kết quả; dùng <i>should</i> thay <i>if</i></h3>
+  <p>Thường dùng câu mệnh lệnh thay cho mệnh đề <i>if</i>: <i>Get me some cigarettes, and I'll pay you later.</i> Ngoài ra có thể dùng <i>should</i> thay <i>if</i> với nghĩa “nếu tình cờ…” — khiến sự việc nghe ít khả năng xảy ra hơn.</p>
+  <div class="ex"><div class="en">Should you see John, can you give him a message?</div><div class="vi">Nếu tình cờ gặp John, bạn nhắn giúp tôi một câu được không?</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Điều kiện không thật ở hiện tại / tương lai — Second conditional</h2>
+  <div class="formula">If + quá khứ đơn, &nbsp;would + V</div>
+  <p>Câu điều kiện loại 2 (second conditional) mô tả tình huống <b>không thật hoặc tưởng tượng</b>. Sau <i>if</i> dùng thì quá khứ đơn nhưng thời gian nói tới vẫn là tương lai; mệnh đề kết quả thường dùng <i>would</i>, hoặc <i>might / could</i> khi chưa chắc chắn.</p>
+  <div class="ex"><div class="en">If you fell, you would hurt yourself.</div><div class="vi">Nếu bạn ngã (thật ra khó xảy ra), bạn sẽ bị thương. (tình huống tưởng tượng)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you became a millionaire, you might be unhappy.</div><div class="vi">Nếu trở thành triệu phú, chưa chắc bạn đã hạnh phúc. (might = dự đoán không chắc)</div><div class="tts"></div></div>
+  <h3>Were và were to</h3>
+  <p>Trong văn trang trọng, <i>were</i> thường được dùng thay cho <i>was</i> với mọi ngôi. <i>Were to</i> cũng là một cách diễn đạt điều kiện loại 2.</p>
+  <div class="ex"><div class="en">If I were taller, I'd join the basketball team. · If I were you, I'd leave now.</div><div class="vi">Nếu tôi cao hơn, tôi đã vào đội bóng rổ. · Nếu tôi là bạn, tôi sẽ đi ngay.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If they were to offer me the job, I'd turn it down.</div><div class="vi">Nếu họ có mời tôi làm việc đó, tôi cũng sẽ từ chối.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Điều kiện không thật trong quá khứ — Third conditional &amp; dạng hỗn hợp</h2>
+  <div class="formula">If + quá khứ hoàn thành, &nbsp;would have + V₃</div>
+  <p>Câu điều kiện loại 3 (third conditional) mô tả tình huống <b>không thật trong quá khứ</b>: người nói tưởng tượng một quá khứ khác với những gì đã thực sự xảy ra. <i>Might / could</i> cũng hay gặp ở mệnh đề kết quả.</p>
+  <div class="ex"><div class="en">If John had studied more, he would have got better marks.</div><div class="vi">Nếu John học chăm hơn (thực tế là không), anh ấy đã đạt điểm cao hơn.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you had tried harder, you might have succeeded.</div><div class="vi">Nếu bạn cố gắng hơn, có lẽ bạn đã thành công.</div><div class="tts"></div></div>
+  <h3>Điều kiện hỗn hợp (Mixed conditions)</h3>
+  <p>Với sự việc quá khứ mà hệ quả kéo dài tới hiện tại, ta có thể dùng dạng loại 3 ở mệnh đề <i>if</i> và dạng loại 2 ở mệnh đề kết quả.</p>
+  <div class="ex"><div class="en">If you had saved some money, you wouldn't be so hard up.</div><div class="vi">Nếu trước đây bạn dành dụm được ít tiền, giờ bạn đã không túng thiếu thế này.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. Các cách dùng khác của if</h2>
+  <p><i>If</i> có thể mang nghĩa <i>when / whenever</i> (mỗi khi) — loại câu này dùng hiện tại đơn ở cả hai mệnh đề. <i>If</i> cũng có thể mang nghĩa “nếu đúng là…”. Và <i>if</i> + quá khứ đơn dùng cho sự việc quá khứ có khả năng thật hoặc đã biết là thật, không theo quy tắc đặc biệt nào.</p>
+  <div class="ex"><div class="en">If/When/Whenever it rains, we play football indoors instead.</div><div class="vi">Mỗi khi trời mưa, chúng tôi lại đá bóng trong nhà thay thế.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you missed the TV programme last night, you can borrow my recording.</div><div class="vi">Nếu tối qua bạn lỡ chương trình TV đó, bạn có thể mượn bản ghi của tôi.</div><div class="tts"></div></div>
+</div>
+
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li>Dạng hiện tại trong câu điều kiện loại 1 <b>không</b> chỉ thời gian hiện tại — nó chỉ tương lai.</li>
+    <li>Dạng quá khứ trong câu điều kiện loại 2 <b>không</b> chỉ thời gian quá khứ — nó cũng chỉ tương lai.</li>
+    <li>Sự khác biệt giữa loại 1 và loại 2 có thể tùy thuộc vào <b>thái độ của người nói</b>: khả năng xảy ra cao → loại 1; khả năng thấp / tưởng tượng → loại 2. <i>If she falls, she'll land in the safety net.</i> (cô ấy thật sự có thể ngã) so với <i>If she fell, she would land in the safety net.</i> (chỉ là tình huống giả định).</li>
+    <li><i>Might</i> và <i>could</i> hay gặp trong câu điều kiện khi ta không chắc chắn về dự đoán.</li>
+    <li>Có thể dùng <b>dạng hỗn hợp</b>, nhất là khi sự việc quá khứ để lại hệ quả ở hiện tại: <i>If Brenda hadn't stolen the money, she wouldn't be in prison.</i></li>
+    <li><i>Unless, provided</i> và <i>as long as</i> đều có thể mở đầu một điều kiện.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+<div class="card" id="ex1">
+<h2>Bài 1 — Chọn dạng động từ phù hợp (1)</h2>
+<p>Chọn dạng động từ phù hợp nhất cho từng chỗ trống. Mỗi câu gốc có 2 chỗ trống, được tách thành 2 câu hỏi (chỗ trống còn lại đã điền sẵn đáp án đúng để bạn tập trung vào chỗ đang hỏi).</p>
+<div class="quiz-mc">
+<div class="q" data-correct="0"><p>a-1) If the machine ______, you press this button.</p><div class="opts"><button type="button">stops</button><button type="button">will stop</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>a-2) If the machine stops, you ______ this button.</p><div class="opts"><button type="button">press</button><button type="button">will press</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>b-1) I can't understand what he sees in her! If anyone ______ me like that, I would be extremely angry!</p><div class="opts"><button type="button">treats</button><button type="button">will treat</button><button type="button">treated</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>b-2) I can't understand what he sees in her! If anyone treated me like that, I ______ extremely angry!</p><div class="opts"><button type="button">am</button><button type="button">will be</button><button type="button">would be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>c-1) If you ______ me with this exercise, I will do the same for you one day.</p><div class="opts"><button type="button">help</button><button type="button">helped</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>c-2) If you help me with this exercise, I ______ do the same for you one day.</p><div class="opts"><button type="button">will</button><button type="button">would</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-1) According to the timetable, if the train ______ on time, we will arrive at 5.30.</p><div class="opts"><button type="button">leaves</button><button type="button">left</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-2) According to the timetable, if the train leaves on time, we ______ arrive at 5.30.</p><div class="opts"><button type="button">will</button><button type="button">would</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>e-1) If it ______ fine tomorrow, we will go to the coast.</p><div class="opts"><button type="button">is</button><button type="button">will be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>e-2) If it is fine tomorrow, we ______ to the coast.</p><div class="opts"><button type="button">go</button><button type="button">will go</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>f-1) If we ______ a taxi, we will get there before the play starts.</p><div class="opts"><button type="button">find</button><button type="button">found</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>f-2) If we find a taxi, we ______ there before the play starts.</p><div class="opts"><button type="button">will get</button><button type="button">would get</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>g-1) It's quite simple really. If you ______ these tablets every day, then you will lose weight.</p><div class="opts"><button type="button">take</button><button type="button">will take</button><button type="button">took</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>g-2) It's quite simple really. If you take these tablets every day, then you ______ weight.</p><div class="opts"><button type="button">lose</button><button type="button">will lose</button><button type="button">lost</button><button type="button">would lose</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>h-1) I don't like this flat. I think I ______ happier if I lived in a house in the country.</p><div class="opts"><button type="button">am</button><button type="button">will be</button><button type="button">I'd be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="3"><p>h-2) I don't like this flat. I think I'd be happier if I ______ in a house in the country.</p><div class="opts"><button type="button">live</button><button type="button">will live</button><button type="button">would live</button><button type="button">lived</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>i-1) I don't know how to play baseball, but I'm sure that if I ______, I would play a lot better than anyone in this awful team!</p><div class="opts"><button type="button">will do</button><button type="button">did</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>i-2) I don't know how to play baseball, but I'm sure that if I did, I ______ a lot better than anyone in this awful team!</p><div class="opts"><button type="button">play</button><button type="button">will play</button><button type="button">would play</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>j-1) If I ______ you tonight, will you be in?</p><div class="opts"><button type="button">phone</button><button type="button">will phone</button><button type="button">phoned</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-2) If I phone you tonight, ______ in?</p><div class="opts"><button type="button">are you</button><button type="button">will you be</button><button type="button">would you be</button></div><div class="fb"></div></div>
+</div>
+<span class="score">Điểm Bài 1: <span class="score-num">0</span>/20</span>
+</div>
+<div class="card" id="ex2">
+<h2>Bài 2 — Chọn dạng động từ phù hợp (2)</h2>
+<p>Chọn dạng động từ phù hợp nhất cho từng chỗ trống (cách tách câu hỏi như Bài 1).</p>
+<div class="quiz-mc">
+<div class="q" data-correct="1"><p>a-1) Why didn't you tell me? If you ______ me, I would have helped you.</p><div class="opts"><button type="button">told</button><button type="button">had told</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>a-2) Why didn't you tell me? If you had told me, I ______ you.</p><div class="opts"><button type="button">had helped</button><button type="button">would have helped</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>b-1) If Bill ______ the car, he wouldn't be in prison now.</p><div class="opts"><button type="button">didn't steal</button><button type="button">hadn't stolen</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>b-2) If Bill hadn't stolen the car, he ______ in prison now.</p><div class="opts"><button type="button">wasn't</button><button type="button">wouldn't be</button><button type="button">hadn't been</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>c-1) If Ann ______ so fast, her car wouldn't have crashed into a tree.</p><div class="opts"><button type="button">wasn't driving</button><button type="button">didn't drive</button><button type="button">hadn't driven</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>c-2) If Ann hadn't driven so fast, her car ______ into a tree.</p><div class="opts"><button type="button">didn't crash</button><button type="button">wouldn't crash</button><button type="button">wouldn't have crashed</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-1) Let me give you some advice. If you ______ less, you wouldn't feel so tired.</p><div class="opts"><button type="button">smoked</button><button type="button">would smoke</button><button type="button">had smoked</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>d-2) Let me give you some advice. If you smoked less, you ______ so tired.</p><div class="opts"><button type="button">didn't feel</button><button type="button">wouldn't feel</button><button type="button">wouldn't have felt</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>e-1) What bad luck! If Alan ______ over, he would have won the race.</p><div class="opts"><button type="button">didn't fall</button><button type="button">hadn't fallen</button><button type="button">wouldn't fall</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>e-2) What bad luck! If Alan hadn't fallen over, he ______ the race.</p><div class="opts"><button type="button">won</button><button type="button">would win</button><button type="button">would have won</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>f-1) If you ______ me last week, I would have been able to come.</p><div class="opts"><button type="button">invited</button><button type="button">had invited</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>f-2) If you had invited me last week, I ______ to come.</p><div class="opts"><button type="button">was able</button><button type="button">had been able</button><button type="button">would have been able</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>g-1) I'm sure your letter hasn't arrived yet. If it ______, I'm sure I would have noticed it.</p><div class="opts"><button type="button">came</button><button type="button">had come</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>g-2) I'm sure your letter hasn't arrived yet. If it had come, I'm sure I ______ it.</p><div class="opts"><button type="button">noticed</button><button type="button">had noticed</button><button type="button">would have noticed</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>h-1) We have a suggestion to make. How ______ if we offered you the job of assistant manager?</p><div class="opts"><button type="button">do you feel</button><button type="button">would you feel</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>h-2) We have a suggestion to make. How would you feel if we ______ you the job of assistant manager?</p><div class="opts"><button type="button">offered</button><button type="button">would offer</button><button type="button">had offered</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>i-1) If you ______ us the money, we would pay you back next week.</p><div class="opts"><button type="button">lent</button><button type="button">had lent</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>i-2) If you lent us the money, we ______ you back next week.</p><div class="opts"><button type="button">paid</button><button type="button">would pay</button><button type="button">had paid</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-1) Terry never catches anything when he goes fishing. And if he ______ a fish, he would throw it back!</p><div class="opts"><button type="button">catches</button><button type="button">caught</button><button type="button">had caught</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-2) Terry never catches anything when he goes fishing. And if he caught a fish, he ______ it back!</p><div class="opts"><button type="button">throws</button><button type="button">would throw</button></div><div class="fb"></div></div>
+</div>
+<span class="score">Điểm Bài 2: <span class="score-num">0</span>/20</span>
+</div>
+<div class="card fill-sec" id="ex3">
+<h2>Bài 3 — Chia động từ trong ngoặc</h2>
+<p>Điền dạng động từ phù hợp cho mỗi động từ trong ngoặc. Ở câu a), <i>had known</i> là phần đã làm mẫu.</p>
+<div class="q"><p>a) Why didn't you phone? If I (know) <input class="blank" data-answers="had known" data-display="had known"> you were coming, I (meet) <input class="blank" data-answers="would have met" data-display="would have met"> you at the airport.</p></div>
+<div class="q"><p>b) It's a pity you missed the party. If you (come) <input class="blank" data-answers="had come" data-display="had come">, you (meet) <input class="blank" data-answers="would have met" data-display="would have met"> my friends from Hungary.</p></div>
+<div class="q"><p>c) If we (have) <input class="blank" data-answers="had" data-display="had"> some tools, we (be able) <input class="blank" data-answers="would be able" data-display="would be able"> to repair the car, but we haven't got any with us.</p></div>
+<div class="q"><p>d) If you (not help) <input class="blank" data-answers="hadn't helped|had not helped|didn't help|did not help" data-display="hadn't helped"> me, I (not pass) <input class="blank" data-answers="wouldn't have passed|would not have passed" data-display="wouldn't have passed"> the exam.</p></div>
+<div class="q"><p>e) It's a beautiful house, and I (buy) <input class="blank" data-answers="would buy" data-display="would buy"> it if I (have) <input class="blank" data-answers="had" data-display="had"> the money, but I can't afford it.</p></div>
+<div class="q"><p>f) I can't imagine what I (do) <input class="blank" data-answers="would do" data-display="would do"> with the money if I (win) <input class="blank" data-answers="won" data-display="won"> the lottery.</p></div>
+<div class="q"><p>g) If Mark (train) <input class="blank" data-answers="trained" data-display="trained"> harder, he (be) <input class="blank" data-answers="would be" data-display="would be"> a good runner.</p></div>
+<div class="q"><p>h) If Claire (listen) <input class="blank" data-answers="had listened" data-display="had listened"> to her mother, she (not marry) <input class="blank" data-answers="wouldn't have married|would not have married" data-display="wouldn't have married"> David in the first place.</p></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Kiểm tra Bài 3</button><button type="button" onclick="showFill('ex3')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex3')">↺ Làm lại</button></div>
+<span class="score">Điểm Bài 3: <span class="fill-score">—</span>/16</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex4">
+<h2>Bài 4 — Viết lại câu điều kiện</h2>
+<p>Viết lại mỗi câu, bắt đầu bằng từ cho sẵn, không đổi nghĩa. Gõ cả phần còn lại của câu vào ô.</p>
+<div class="note">📌 <b>Câu mẫu a)</b> I didn't have an umbrella with me and so I got wet. → <i>I wouldn't have got wet if I'd had an umbrella with me.</i></div>
+<div class="q"><p>b) I'll call the police if you don't leave me alone! — <b>Unless …</b></p><input class="blank wide" data-answers="you leave me alone, I'll call the police|you leave me alone, I will call the police" data-display="you leave me alone, I'll call the police" placeholder="you leave me alone, …"><div class="fb"></div></div>
+<div class="q"><p>c) In the snowy weather we don't go to school. — <b>If …</b></p><input class="blank wide" data-answers="it's snowing, we don't go to school|it is snowing, we don't go to school|it's snowing, we do not go to school" data-display="it's snowing, we don't go to school" placeholder="it's snowing, …"><div class="fb"></div></div>
+<div class="q"><p>d) Without Jack's help, I wouldn't have been able to move the table. — <b>If …</b></p><input class="blank wide" data-answers="Jack hadn't helped me, I wouldn't have been able to move the table|Jack hadn't helped me, I would not have been able to move the table" data-display="Jack hadn't helped me, I wouldn't have been able to move the table" placeholder="Jack hadn't helped me, …"><div class="fb"></div></div>
+<div class="q"><p>e) Make me some coffee, and I'll give you one of my biscuits. — <b>If …</b></p><input class="blank wide" data-answers="you make me some coffee, I'll give you one of my biscuits|you make me some coffee, I will give you one of my biscuits" data-display="you make me some coffee, I'll give you one of my biscuits" placeholder="you make me some coffee, …"><div class="fb"></div></div>
+<div class="q"><p>f) If you hadn't told me about Sue's hair, I wouldn't have noticed. — <b>Unless …</b></p><input class="blank wide" data-answers="you'd told me about Sue's hair, I wouldn't have noticed|you had told me about Sue's hair, I wouldn't have noticed|you'd told me about Sue's hair, I would not have noticed" data-display="you'd told me about Sue's hair, I wouldn't have noticed" placeholder="you'd told me about Sue's hair, …"><div class="fb"></div></div>
+<div class="q"><p>g) If you see Peter, tell him to be here at 8.00. — <b>Should …</b></p><input class="blank wide" data-answers="you see Peter, tell him to be here at 8.00" data-display="you see Peter, tell him to be here at 8.00" placeholder="you see Peter, …"><div class="fb"></div></div>
+<div class="q"><p>h) I wouldn't accept if you asked me to marry you! — <b>If you were …</b></p><input class="blank wide" data-answers="to ask me to marry you, I wouldn't accept|to ask me to marry you, I would not accept" data-display="to ask me to marry you, I wouldn't accept" placeholder="to ask me to marry you, …"><div class="fb"></div></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+<span class="score">Điểm Bài 4: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card" id="ex5">
+<h2>Bài 5 — Chọn câu phù hợp với tình huống</h2>
+<p>Mỗi tình huống dưới đây được mô tả bằng lời. Chọn câu điều kiện phù hợp nhất với tình huống.</p>
+<div class="quiz-mc">
+<div class="q" data-correct="0"><p><b>Tình huống a)</b> Một nghệ sĩ xiếc đang biểu diễn trên dây cao, phía dưới có lưới an toàn. Cô ấy thật sự có thể ngã.</p><div class="opts"><button type="button">If she falls, she'll land in the safety net.</button><button type="button">If she fell, she'd land in the safety net.</button><button type="button">If she had fallen, she would have landed in the safety net.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p><b>Tình huống b)</b> Hai người bạn vừa ăn xong một bữa ăn dở tệ ở nhà hàng. Họ đã không gọi món súp — và giờ họ thấy mừng vì điều đó.</p><div class="opts"><button type="button">It's worse if we order soup.</button><button type="button">It would be worse if we ordered soup.</button><button type="button">It would have been worse if we'd ordered soup.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p><b>Tình huống c)</b> Một người phụ nữ đang nhìn một con chó rất to, trông dữ tợn trong công viên. Con chó không phải của cô ấy — cô ấy chỉ đang tưởng tượng nếu mình nuôi một con như thế.</p><div class="opts"><button type="button">If I own a dog like that, I'll keep it on a lead.</button><button type="button">If I owned a dog like that, I'd keep it on a lead.</button><button type="button">If I had owned a dog like that, I'd have kept it on a lead.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p><b>Tình huống d)</b> Một vị khách trong phòng tranh đang ngắm một bức tranh trừu tượng và ước nó là tranh chân dung giống người thật.</p><div class="opts"><button type="button">I like it more if it looks like someone I know.</button><button type="button">I'd like it more if it looked like someone I knew.</button><button type="button">I'd have liked it more if it had looked like someone I knew.</button></div><div class="fb"></div></div>
+</div>
+<span class="score">Điểm Bài 5: <span class="score-num">0</span>/4</span>
+</div>
+<div class="card fill-sec" id="ex6">
+<h2>Bài 6 — Viết lại bằng dạng rút gọn</h2>
+<p>Viết lại mỗi câu bằng dạng rút gọn (contracted forms).</p>
+<div class="note">📌 <b>Câu mẫu a)</b> If I had known, I would have told you. → <i>If I'd known, I'd have told you.</i></div>
+<div class="q"><p>b) Tony would not have crashed if he had been more careful.</p><input class="blank wide" data-answers="Tony wouldn't have crashed if he'd been more careful.|Tony wouldn't have crashed if he had been more careful." data-display="Tony wouldn't have crashed if he'd been more careful." placeholder="Tony wouldn't have crashed …"><div class="fb"></div></div>
+<div class="q"><p>c) If I had my credit card with me, I would have bought the coat.</p><input class="blank wide" data-answers="If I'd had my credit card with me, I'd have bought the coat." data-display="If I'd had my credit card with me, I'd have bought the coat." placeholder="If I'd had …"><div class="fb"></div></div>
+<div class="q"><p>d) You would not have got lost if you had taken the map.</p><input class="blank wide" data-answers="You wouldn't have got lost if you'd taken the map.|You wouldn't have got lost if you had taken the map." data-display="You wouldn't have got lost if you'd taken the map." placeholder="You wouldn't have got lost …"><div class="fb"></div></div>
+<div class="q"><p>e) If Graham had not lost his watch, he would not have missed the plane.</p><input class="blank wide" data-answers="If Graham hadn't lost his watch, he wouldn't have missed the plane.|If Graham hadn't lost his watch, he would not have missed the plane." data-display="If Graham hadn't lost his watch, he wouldn't have missed the plane." placeholder="If Graham hadn't lost …"><div class="fb"></div></div>
+<div class="q"><p>f) If you had not told me her name, I would have found out from someone else.</p><input class="blank wide" data-answers="If you hadn't told me her name, I would've found out from someone else.|If you hadn't told me her name, I would have found out from someone else." data-display="If you hadn't told me her name, I would've found out from someone else." placeholder="If you hadn't told me …"><div class="fb"></div></div>
+<div class="q"><p>g) If I were you, I would try getting up earlier.</p><input class="blank wide" data-answers="If I were you, I'd try getting up earlier." data-display="If I were you, I'd try getting up earlier." placeholder="If I were you, …"><div class="fb"></div></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+<span class="score">Điểm Bài 6: <span class="fill-score">—</span>/6</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>73 câu (Bài 1: 20 · Bài 2: 20 · Bài 3: 16 ô · Bài 4: 7 · Bài 5: 4 · Bài 6: 6)</b></p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
