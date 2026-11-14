@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary 9 — Crime and the law</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Vocabulary-09-Crime-And-The-Law.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Vocabulary-09-Crime-And-The-Law-JP.html">🇯🇵 日本語版</a>
+  <h1>Vocabulary 9 — Crime and the law</h1>
+  <p>Crimes and criminals · Police, court and punishment · Prepositional phrases and a detective story</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Crimes and criminals</h2>
+  <p><b>break the law</b> — do something illegal; <b>commit a crime</b> — do a crime (always use <i>commit</i>, not <i>make</i>); <b>illegal</b> — against the law; <b>prohibited / banned</b> — not allowed; <b>compulsory</b> — must be done.</p>
+  <p>People who break the law: a <b>hijacker</b> takes control of a plane or boat by force; a <b>kidnapper</b> takes people and demands money for their return; a <b>blackmailer</b> gets money by threatening to tell secrets; a <b>smuggler</b> brings goods into a country illegally; a <b>forger</b> makes illegal copies of paintings or documents; a <b>burglar</b> steals from houses; a <b>pickpocket</b> steals wallets in a crowd; a <b>shoplifter</b> steals from shops; a <b>murderer</b> kills someone on purpose; a <b>vandal</b> damages other people's property; a <b>hooligan</b> causes trouble at football matches.</p>
+  <p>A <b>witness</b> is a person who sees what happens during a crime or accident; an <b>offence</b> is a crime or illegal act (a first offence).</p>
+  <div class="ex"><div class="en">The two men were arrested before they could commit any more crimes.</div><div class="vi">Use commit with crime — not make or perform.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Smoking is prohibited near the petrol tanks.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The hijackers took fifteen people hostage and demanded £1,000,000 from the authorities.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Police, court and punishment</h2>
+  <p>The process: <b>arrest</b> — take someone to a police station as a prisoner; <b>charge someone with</b> a crime — accuse them officially; a <b>suspect</b> — a person the police think committed a crime; the <b>accused</b> — the person on trial; <b>evidence</b> — facts that show what happened; a <b>statement</b> — what a witness says officially; <b>sue</b> — start a legal case against someone; <b>take someone to court</b>.</p>
+  <p>At the trial: the <b>court</b>, the <b>trial</b> itself, the <b>judge</b>, the <b>jury</b> (ordinary people who decide guilty or not), the <b>verdict</b> (their decision), <b>guilty</b>, a <b>defence lawyer</b>, and the <b>case</b> (the judge dismissed the case = stopped the trial because there was no evidence).</p>
+  <p>Punishments: a <b>fine</b> (money paid as punishment), a <b>sentence</b> (the punishment the judge gives), a <b>life sentence</b>, <b>prison</b>, <b>corporal punishment</b> (physical punishment), <b>capital punishment</b> (the death penalty), being <b>pardoned</b> (officially forgiven and set free), and police officers in <b>plain clothes</b> (ordinary clothes, not uniform).</p>
+  <div class="ex"><div class="en">The murderer of the children received a life sentence.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Pauline decided to sue the police because she had been wrongly accused.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Charles could not deny having been at the scene of the crime.</div><div class="vi">deny + -ing: deny having been …</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If your dog damages your neighbour's property, you could be liable.</div><div class="vi">liable = legally responsible for paying for damage.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Phrasal verbs and set phrases</h2>
+  <p><b>break into</b> — enter by force; <b>hold up</b> — rob using threats or weapons; <b>get away</b> — escape; <b>get away with</b> — do something bad without being punished; <b>be let off</b> — be allowed to go without serious punishment; <b>be taken in</b> — be deceived or cheated; <b>find someone guilty</b> — decide officially that they committed the crime.</p>
+  <p>Fixed phrases: <i>against the law</i>, <i>a life of crime</i>, <i>under arrest</i>, <i>in self-defence</i>, <i>in trouble with the police</i>, <i>hidden from sight</i>, <i>in danger</i>, <i>off duty</i>, <i>by mistake</i>, <i>on purpose</i>, <i>in secret</i>, <i>send (something) to</i>.</p>
+  <div class="ex"><div class="en">The bank at the end of the street was held up by two masked men last week.</div><div class="vi">hold up = to rob a bank or shop using threats.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">As it was Sheila's first offence she was let off with only a warning.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I regret to tell you that you are under arrest.</div><div class="vi">under arrest — a fixed phrase with under.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>commit a crime</b> — always use <i>commit</i> (not <i>make</i> or <i>perform</i>); <b>break the law</b> = do something illegal.</li>
+    <li><b>rob</b> vs <b>steal</b>: you <i>rob</i> a person or place (robbed of their purses), but you <i>steal</i> a thing.</li>
+    <li>Verb patterns: <b>accuse someone of doing</b> · <b>charge someone with</b> · <b>sentence someone to</b> · <b>deny doing</b> · <b>admit/confess to doing</b> · <b>refuse to do</b>.</li>
+    <li><b>guilty</b> (did the crime) ↔ <b>innocent</b>; <b>liable</b> = legally responsible for paying for damage; <b>corporal punishment</b> = physical punishment, <b>capital punishment</b> = the death penalty.</li>
+    <li>Fixed phrases: <i>against the law, under arrest, in self-defence, by mistake, on purpose, in secret, in danger, off duty, in trouble with</i>.</li>
+    <li><b>take someone to court</b> = sue someone; <b>get away with</b> something = do something bad without being punished.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the most suitable word</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Sally didn't realise that she had ______ the law.</p><div class="opts"><button type="button">broken</button><button type="button">countered</button><button type="button">denied</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) The police have ______ parking in this street.</p><div class="opts"><button type="button">banned</button><button type="button">cancelled</button><button type="button">refused</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) I must remember to get a/an ______ for my television.</p><div class="opts"><button type="button">agreement</button><button type="button">licence</button><button type="button">permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) The president admitted that there had been a breakdown of law and ______.</p><div class="opts"><button type="button">crime</button><button type="button">government</button><button type="button">order</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) Jim's parents wouldn't ______ him go to the demonstration.</p><div class="opts"><button type="button">agree</button><button type="button">allow</button><button type="button">let</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Jake was arrested because he had entered the country ______.</p><div class="opts"><button type="button">falsely</button><button type="button">illegally</button><button type="button">wrongly</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) Talking to other students is against the ______ of the examination.</p><div class="opts"><button type="button">law</button><button type="button">orders</button><button type="button">rules</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) The two men were arrested before they could ______ any more crimes.</p><div class="opts"><button type="button">commit</button><button type="button">make</button><button type="button">perform</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) I had to take the company to ______ to get the money they owed me.</p><div class="opts"><button type="button">court</button><button type="button">justice</button><button type="button">law</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Smoking is ______ near the petrol tanks.</p><div class="opts"><button type="button">compulsory</button><button type="button">prohibited</button><button type="button">refused</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Match each description with a word from the box</h2>
+  <div class="formula">blackmailer · burglar · forger · hijacker · hooligan · kidnapper · murderer · pickpocket · shoplifter · smuggler · vandal · witness</div><p class="small">Item a) is the printed worked example — here you do all 12 items.</p>
+  <div class="q"><p>a) This person takes control of a plane or boat by force. <input class="blank" data-answers="hijacker" data-display="hijacker"></p></div>
+  <div class="q"><p>b) This person sees what happens during a crime or accident. <input class="blank" data-answers="witness" data-display="witness"></p></div>
+  <div class="q"><p>c) This person brings goods into the country illegally. <input class="blank" data-answers="smuggler" data-display="smuggler"></p></div>
+  <div class="q"><p>d) This person might steal food from a supermarket. <input class="blank" data-answers="shoplifter" data-display="shoplifter"></p></div>
+  <div class="q"><p>e) This person kills someone on purpose. <input class="blank" data-answers="murderer" data-display="murderer"></p></div>
+  <div class="q"><p>f) This person takes people and demands money for their return. <input class="blank" data-answers="kidnapper" data-display="kidnapper"></p></div>
+  <div class="q"><p>g) This person makes illegal copies of paintings, documents, etc. <input class="blank" data-answers="forger" data-display="forger"></p></div>
+  <div class="q"><p>h) This person damages other people's property. <input class="blank" data-answers="vandal" data-display="vandal"></p></div>
+  <div class="q"><p>i) This person might steal your wallet in a crowd. <input class="blank" data-answers="pickpocket" data-display="pickpocket"></p></div>
+  <div class="q"><p>j) This person steals from houses. <input class="blank" data-answers="burglar" data-display="burglar"></p></div>
+  <div class="q"><p>k) This person gets money from others by threatening to tell secrets. <input class="blank" data-answers="blackmailer" data-display="blackmailer"></p></div>
+  <div class="q"><p>l) This person causes trouble at football matches. <input class="blank" data-answers="hooligan" data-display="hooligan"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/12</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Complete each sentence with a suitable ending</h2>
+  <ol><li>in by a salesman who cheated them out of their money.</li><li>away by stealing a car parked nearby.</li><li>up at the police station, charged with shoplifting.</li><li>it, although everyone suspected what had happened.</li><li>into my house and stole my stereo.</li><li>off with only a warning.</li><li>with paying only £100 damages.</li><li>hostage and demanded £1,000,000 from the authorities.</li><li>guilty and sentenced to six months in prison.</li><li>up by two masked men last week.</li></ol><p class="small">Item a) is the printed worked example — here you do all 10 items.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="4"><p>a) I decided to buy a burglar alarm after someone broke ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>b) When Alan was stopped outside the supermarket he ended ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="5"><p>c) As it was Sheila's first offence she was let ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) After climbing over the prison wall, Peter managed to get ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) The old couple who live opposite were taken ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="8"><p>f) At the end of the trial Hilary was found ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="6"><p>g) My neighbours admitted denting my car but got away ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="9"><p>h) The bank at the end of the street was held ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>i) Nobody saw Jack cheating and he got away with ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="7"><p>j) The hijackers took fifteen people ______.</p><div class="opts"><button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Complete each sentence with a word from the box</h2>
+  <div class="formula">accused · charged · evidence · fine · guilty · jury · lawyer · sentence · statement · suspect</div><p class="small">Item a) is the printed worked example — here you do all 10 items.</p>
+  <div class="q"><p>a) The customs officers arrested Bob and <input class="blank" data-answers="charged" data-display="charged"> him with smuggling.</p></div>
+  <div class="q"><p>b) The police spent all morning searching the house for <input class="blank" data-answers="evidence" data-display="evidence">.</p></div>
+  <div class="q"><p>c) Jean left her car in a no-parking area and had to pay a/an <input class="blank" data-answers="fine" data-display="fine">.</p></div>
+  <div class="q"><p>d) Unfortunately at the end of the trial my brother was found <input class="blank" data-answers="guilty" data-display="guilty">.</p></div>
+  <div class="q"><p>e) The trial took a long time as the <input class="blank" data-answers="jury" data-display="jury"> couldn't reach a verdict.</p></div>
+  <div class="q"><p>f) George won his case because he had a very good defence <input class="blank" data-answers="lawyer" data-display="lawyer">.</p></div>
+  <div class="q"><p>g) The police visited Dawn and asked her to make a/an <input class="blank" data-answers="statement" data-display="statement">.</p></div>
+  <div class="q"><p>h) Because of his past criminal record, Brian was the main <input class="blank" data-answers="suspect" data-display="suspect">.</p></div>
+  <div class="q"><p>i) Pauline decided to sue the police because she had been wrongly <input class="blank" data-answers="accused" data-display="accused">.</p></div>
+  <div class="q"><p>j) The murderer of the children received a life <input class="blank" data-answers="sentence" data-display="sentence">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Exercise 5 — Choose the most suitable word or phrase</h2>
+  <p class="small">Item a) is the printed worked example — here you do all 10 items.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="3"><p>a) Most schools in my country no longer have ______ punishment.</p><div class="opts"><button type="button">physical</button><button type="button">capital</button><button type="button">bodily</button><button type="button">corporal</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) The policemen following the robbers were in ______ clothes.</p><div class="opts"><button type="button">plain</button><button type="button">ordinary</button><button type="button">normal</button><button type="button">simple</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) The two old ladies were ______ of their purses.</p><div class="opts"><button type="button">stolen</button><button type="button">attacked</button><button type="button">robbed</button><button type="button">snatched</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) At the end of the story, the hero manages to arrest the ______.</p><div class="opts"><button type="button">offenders</button><button type="button">villains</button><button type="button">wrongs</button><button type="button">evils</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I had to answer question A because it was ______.</p><div class="opts"><button type="button">compulsory</button><button type="button">necessary</button><button type="button">a must</button><button type="button">an obligation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) Charles could not ______ having been at the scene of the crime.</p><div class="opts"><button type="button">refuse</button><button type="button">object</button><button type="button">deny</button><button type="button">alter</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>g) As there was no evidence, the judge dismissed the ______.</p><div class="opts"><button type="button">trial</button><button type="button">witness</button><button type="button">court</button><button type="button">case</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) If your dog damages your neighbour's property, you could be ______.</p><div class="opts"><button type="button">guilty</button><button type="button">liable</button><button type="button">payable</button><button type="button">illegal</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) After ten years in prison, Stephen was ______ and set free.</p><div class="opts"><button type="button">pardoned</button><button type="button">released</button><button type="button">innocent</button><button type="button">forgiven</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) The detective inspector told the young ______ to make some tea.</p><div class="opts"><button type="button">officer</button><button type="button">official</button><button type="button">guardian</button><button type="button">police</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 5: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Rewrite each sentence so that the meaning stays the same</h2>
+  <p class="small">Item a) is the printed worked example — here you do all 10 items.</p>
+  <div class="q"><p>a) They said that John had stolen the money. — <b>They accused …</b></p><input class="blank wide" data-answers="They accused John of stealing the money." data-display="They accused John of stealing the money." placeholder="They accused …"><div class="fb"></div></div>
+  <div class="q"><p>b) Ian said that he hadn't punched anybody. — <b>Ian denied …</b></p><input class="blank wide" data-answers="Ian denied punching anybody.|Ian denied having punched anybody." data-display="Ian denied punching anybody." placeholder="Ian denied …"><div class="fb"></div></div>
+  <div class="q"><p>c) 'OK, Andy, you can go now,' said the detective. — <b>The detective gave Andy …</b></p><input class="blank wide" data-answers="The detective gave Andy permission to go." data-display="The detective gave Andy permission to go." placeholder="The detective gave Andy …"><div class="fb"></div></div>
+  <div class="q"><p>d) 'James Frogget, you will go to prison for ten years,' said the judge. — <b>The judge sentenced …</b></p><input class="blank wide" data-answers="The judge sentenced James Frogget to ten years in prison.|The judge sentenced James Frogget to ten years' imprisonment." data-display="The judge sentenced James Frogget to ten years in prison." placeholder="The judge sentenced …"><div class="fb"></div></div>
+  <div class="q"><p>e) 'I forged the signature,' said Mary. — <b>Mary admitted …</b></p><input class="blank wide" data-answers="Mary admitted forging the signature.|Mary admitted having forged the signature." data-display="Mary admitted forging the signature." placeholder="Mary admitted …"><div class="fb"></div></div>
+  <div class="q"><p>f) Harry stole £60,000 and was arrested. — <b>Harry was arrested …</b></p><input class="blank wide" data-answers="Harry was arrested for stealing £60,000.|Harry was arrested for stealing 60000 pounds." data-display="Harry was arrested for stealing £60,000." placeholder="Harry was arrested …"><div class="fb"></div></div>
+  <div class="q"><p>g) 'We saw the accused break into the car,' said the witnesses. — <b>The witnesses stated …</b></p><input class="blank wide" data-answers="The witnesses stated that they had seen the accused break into the car." data-display="The witnesses stated that they had seen the accused break into the car." placeholder="The witnesses stated …"><div class="fb"></div></div>
+  <div class="q"><p>h) Graham said that he wouldn't go to the police station. — <b>Graham refused …</b></p><input class="blank wide" data-answers="Graham refused to go to the police station." data-display="Graham refused to go to the police station." placeholder="Graham refused …"><div class="fb"></div></div>
+  <div class="q"><p>i) 'It's true,' said Norman, 'I murdered Alan.' — <b>Norman confessed to …</b></p><input class="blank wide" data-answers="Norman confessed to murdering Alan.|Norman confessed to having murdered Alan.|Norman confessed to Alan's murder." data-display="Norman confessed to murdering Alan." placeholder="Norman confessed to …"><div class="fb"></div></div>
+  <div class="q"><p>j) 'Can you come with me, please,' the detective said to Helen. — <b>The detective asked …</b></p><input class="blank wide" data-answers="The detective asked Helen to go with him.|The detective asked Helen to go with her.|The detective asked Helen to come with him.|The detective asked Helen to come with her." data-display="The detective asked Helen to go with him/her." placeholder="The detective asked …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span><p class="small">Grading tip: capitalisation and punctuation are ignored. If the checker marks you wrong only because of one or two different words, press “Show answers” and compare for yourself.</p>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Exercise 7 — Word formation: Arthur's life of crime</h2>
+  <p>Use the word given in capitals to form a word that fits in the space in the same line. Number (1) is the printed example — here you do all 10 gaps.</p>
+  <p><b>Arthur's life of crime</b></p>
+  <div class="q"><p>At his last trial, nobody believed in Arthur's (1) <input class="blank" data-answers="innocence" data-display="innocence"> (INNOCENT). He had been accused of the (2) <input class="blank" data-answers="theft" data-display="theft"> (THIEF) of a valuable Chinese vase, and was also charged with ten other (3) <input class="blank" data-answers="offences" data-display="offences"> (OFFEND). The value of the (4) <input class="blank" data-answers="stolen" data-display="stolen"> (STEAL) goods was said to be over £20,000. Arthur said in his own (5) <input class="blank" data-answers="defence" data-display="defence"> (DEFEND) that the vase had been put into his car (6) <input class="blank" data-answers="accidentally" data-display="accidentally"> (ACCIDENT). He also pointed out that the Chinese vase was a fake, and was almost (7) <input class="blank" data-answers="worthless" data-display="worthless"> (WORTH). The judge did not believe Arthur's story. He told Arthur he was a hardened (8) <input class="blank" data-answers="criminal" data-display="criminal"> (CRIME) and that he deserved a severe (9) <input class="blank" data-answers="punishment" data-display="punishment"> (PUNISH). Then the judge sentenced Arthur to five years' (10) <input class="blank" data-answers="imprisonment" data-display="imprisonment"> (PRISON). Arthur just smiled. He had spent most of his life in prison and so he was used to it.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Check Exercise 7</button><button type="button" onclick="showFill('ex7')">👁 Show answers</button><button type="button" onclick="resetFill('ex7')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 7: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex8">
+  <h2>Exercise 8 — Choose the most suitable preposition</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Harry was told that fishing in the lake was ______ the law.</p><div class="opts"><button type="button">against</button><button type="button">by</button><button type="button">over</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>b) Catherine led a secret life ______ crime before she was caught.</p><div class="opts"><button type="button">for</button><button type="button">in</button><button type="button">of</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Having trouble with your phone? Send ______ Fix-a-phone!</p><div class="opts"><button type="button">at</button><button type="button">for</button><button type="button">to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) I regret to tell you that you are ______ arrest.</p><div class="opts"><button type="button">for</button><button type="button">in</button><button type="button">under</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) I only attacked the young man ______ self-defence.</p><div class="opts"><button type="button">from</button><button type="button">in</button><button type="button">with</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) David was often ______ trouble with the police when he was young.</p><div class="opts"><button type="button">at</button><button type="button">in</button><button type="button">with</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) The robbers' car was hidden ______ sight behind the bank.</p><div class="opts"><button type="button">below</button><button type="button">by</button><button type="button">from</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) The kidnappers have been caught, and the child is no longer ______ danger.</p><div class="opts"><button type="button">at</button><button type="button">in</button><button type="button">on</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Tony was caught by a policeman who was ______ duty and cycling to work.</p><div class="opts"><button type="button">off</button><button type="button">out</button><button type="button">away</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) The thieves took the wrong painting ______ mistake.</p><div class="opts"><button type="button">by</button><button type="button">in</button><button type="button">under</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>k) The suspicious manager left the safe unlocked ______ purpose.</p><div class="opts"><button type="button">from</button><button type="button">on</button><button type="button">with</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>l) The robbers met to plan the bank raid ______ secret.</p><div class="opts"><button type="button">from</button><button type="button">in</button><button type="button">with</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 8: <span class="score-num">0</span>/12</span>
+</div>
+
+<div class="card" id="ex9">
+  <h2>Exercise 9 — Choose the best answer for each gap</h2>
+  <p><b>Inspector Crumb investigates</b></p>
+  <p>'I think I know the identity of the murderer,' said Inspector Crumb, 'and at (1) ______ one of the guests in this hotel was a/an (2) ______ to the crime, probably by (3) ______. I believe that the same guest is also a (4) ______, and has been given money by the killer.' 'So whoever (5) ______ this terrible crime is still here,' I said. 'But of course. In (6) ______ he — or she — is in this room, and will soon be (7) ______ arrest.' There was silence for a moment. I noticed that everyone was trying to look (8) ______, but they all looked guilty instead! 'Do you have any (9) ______, Inspector,' asked Lady Grimshaw finally, 'or are you simply (10) ______ people for fun? If you intend to (11) ______ someone, you should do it now.' The Inspector smiled. 'I asked you here (12) ______ purpose, Lady Grimshaw. I have been reading your (13) ______, you see, and it is quite clear that you have told several (14) ______. 'How dare you!' Lady Grimshaw spluttered. 'Do you (15) ______ that you were with Tim Dawson in the garden on the night of the murder?' the Inspector said. 'You forgot about the security cameras, you see …'</p>
+  <p class="small">Number (1) is the printed worked example (answer B) — here you do all 15 items.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>(1) …and at ______ one of the guests in this hotel…</p><div class="opts"><button type="button">last</button><button type="button">least</button><button type="button">the</button><button type="button">school</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(2) …was a/an ______ to the crime…</p><div class="opts"><button type="button">witness</button><button type="button">offender</button><button type="button">guilty</button><button type="button">verdict</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(3) …probably by ______.</p><div class="opts"><button type="button">now</button><button type="button">damages</button><button type="button">law</button><button type="button">accident</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(4) I believe that the same guest is also a ______.</p><div class="opts"><button type="button">blackmailer</button><button type="button">hostage</button><button type="button">hooligan</button><button type="button">forger</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(5) So whoever ______ this terrible crime is still here.</p><div class="opts"><button type="button">confessed</button><button type="button">committed</button><button type="button">admitted</button><button type="button">performed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(6) In ______ he — or she — is in this room…</p><div class="opts"><button type="button">crime</button><button type="button">self-defence</button><button type="button">fact</button><button type="button">danger</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(7) …and will soon be ______ arrest.</p><div class="opts"><button type="button">to</button><button type="button">having</button><button type="button">under</button><button type="button">my</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(8) I noticed that everyone was trying to look ______.</p><div class="opts"><button type="button">accused</button><button type="button">suspicious</button><button type="button">ordinary</button><button type="button">innocent</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(9) Do you have any ______, Inspector?</p><div class="opts"><button type="button">evidence</button><button type="button">witness</button><button type="button">permission</button><button type="button">body</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(10) …or are you simply ______ people for fun?</p><div class="opts"><button type="button">suspecting</button><button type="button">suing</button><button type="button">denying</button><button type="button">accusing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(11) If you intend to ______ someone, you should do it now.</p><div class="opts"><button type="button">trial</button><button type="button">charge</button><button type="button">sentence</button><button type="button">confess</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(12) I asked you here ______ purpose, Lady Grimshaw.</p><div class="opts"><button type="button">with</button><button type="button">for</button><button type="button">on</button><button type="button">by</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(13) I have been reading your ______, you see.</p><div class="opts"><button type="button">statement</button><button type="button">biography</button><button type="button">evident</button><button type="button">history</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(14) …it is quite clear that you have told several ______.</p><div class="opts"><button type="button">people</button><button type="button">errors</button><button type="button">times</button><button type="button">lies</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(15) Do you ______ that you were with Tim Dawson…?</p><div class="opts"><button type="button">refuse</button><button type="button">deny</button><button type="button">contradict</button><button type="button">suppose</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 9: <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>99</b> (Exercise 1: 10 · Exercise 2: 12 blanks · Exercise 3: 10 · Exercise 4: 10 blanks · Exercise 5: 10 · Exercise 6: 10 sentences · Exercise 7: 10 blanks · Exercise 8: 12 · Exercise 9: 15).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
