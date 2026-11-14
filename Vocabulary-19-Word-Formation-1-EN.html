@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary 19 — Word Formation 1 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Vocabulary-19-Word-Formation-1.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Vocabulary-19-Word-Formation-1-JP.html">🇯🇵 日本語版</a>
+  <h1>Vocabulary 19 — Word Formation 1</h1>
+  <p>Word formation 1: prefixes · suffixes · compound words · verb phrases with make / do / take…</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Prefixes — added to the beginning of a word</h2>
+  <p>A prefix is added to the <b>beginning</b> of a word to make a new word. It usually changes the meaning: many prefixes are negative, or mean “wrongly”, “too much”, “again”, “together”, and so on. When you meet a long word, try splitting off the prefix to guess its meaning.</p>
+  <div class="formula">dis- · un- · in- · mis- · over- · re- · non- · vice- · trans- · sub- · pre- · multi- · co- · out-</div>
+  <div class="ex"><div class="en">The children never do what I tell them to! They are very disobedient.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you co-operate with the police you will receive a light sentence.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Mr Jones is incredibly rich. In fact he's a multi-millionaire.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Suffixes — added to the end of a word</h2>
+  <p>A suffix is added to the <b>end</b> of a word. Unlike a prefix, a suffix usually <b>changes the word class</b>: it makes nouns, adjectives, nouns for people, or adverbs. This is the fastest way to grow your vocabulary: knowing one base word means knowing a whole word family.</p>
+  <div class="formula">-dom · -ful · -ian · -age · -ing · -ment · -ish · -wards · -less · -ship · -ee</div>
+  <div class="ex"><div class="en">I don't want to be a slave! I demand my freedom.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">How kind of you to bring flowers! That was very thoughtful.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Martin plays the guitar, but he isn't a very good musician.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Compound words</h2>
+  <p>A compound word is made when <b>two separate words join</b> to form a new word with its own meaning. Compounds may be written as one word (gunfire) or as two words (soap powder, crash helmet) — and their meaning cannot always be guessed from the parts.</p>
+  <div class="formula">gunfire · thunderstorm · handwriting · haircut · soap powder · crash helmet · bookcase · rainbow · footsteps · fireplace</div>
+  <div class="ex"><div class="en">We had to take shelter during a severe thunderstorm.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Nobody can read the doctor's handwriting.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">At one end of the room is a lovely old stone fireplace.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. Fixed verb phrases with make, do, take…</h2>
+  <p>Some verbs combine with a fixed noun (a collocation) and change their form with the tense. They cannot be translated word by word; learn <b>the whole phrase</b>: make a noise, feel like, take your time, set foot on, give permission, do a favour, put the blame on, fall in love, draw attention to.</p>
+  <div class="formula">make a noise · feel like · take your time · set foot on · give permission · do a favour · put the blame on · fall in love · draw attention to</div>
+  <div class="ex"><div class="en">You don't have to hurry. You can take your time.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Armstrong was the first person to set foot on the Moon.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">When something goes wrong, people always put the blame on me!</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>Prefixes change the meaning of the base word: <b>dis-/un-/in-</b> negative, <b>mis-</b> wrongly, <b>over-</b> too much, <b>re-</b> again, <b>non-</b> not, <b>vice-</b> deputy, <b>trans-</b> across, <b>sub-</b> under, <b>pre-</b> before/in advance, <b>multi-</b> many, <b>co-</b> together.</li>
+    <li>Suffixes usually change the word class: <b>-dom, -age, -ment, -ship</b> make nouns; <b>-ful, -less, -ish</b> make adjectives; <b>-ian, -ee</b> make nouns for people; <b>-wards</b> makes adverbs of direction.</li>
+    <li>Compounds may be written as one word (gunfire) or two (soap powder, crash helmet); the meaning cannot always be guessed from the parts.</li>
+    <li>Learn verb phrases as wholes and change the verb with the tense: making a noise, gave permission, has fallen in love…</li>
+    <li>One base word can take several prefixes/suffixes: satisfy → satisfied → <b>dissatisfied</b>; charge → <b>overcharged</b>; employ → <b>employee</b>; home → <b>homeless</b>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Complete the word in each sentence</h2>
+  <p>Complete the word in each sentence (use a dictionary if you need to). The beginning of each word is given — type the missing part or the whole word.</p>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) The children never do what I tell them to! They are very dis<input class="blank" data-answers="disobedient|obedient" data-display="disobedient">.</p></div>
+    <div class="q"><p>b) It won't rain in August, surely! That seems extremely un<input class="blank" data-answers="unlikely|likely" data-display="unlikely">.</p></div>
+    <div class="q"><p>c) No, I told you not to sell the shares! You must have mis<input class="blank" data-answers="misunderstood|understood" data-display="misunderstood">.</p></div>
+    <div class="q"><p>d) Jack gets very good marks, and is an out<input class="blank" data-answers="outstanding|standing" data-display="outstanding"> student.</p></div>
+    <div class="q"><p>e) If you co<input class="blank" data-answers="co-operate|cooperate|operate" data-display="co-operate"> with the police you will receive a light sentence.</p></div>
+    <div class="q"><p>f) Dave was in the first sub<input class="blank" data-answers="submarine|marine" data-display="submarine"> that sailed to the North Pole.</p></div>
+    <div class="q"><p>g) Just heat up the rice, it's been pre<input class="blank" data-answers="pre-cooked|precooked|cooked" data-display="pre-cooked">.</p></div>
+    <div class="q"><p>h) Mr Jones is incredibly rich. In fact he's a multi<input class="blank" data-answers="multi-millionaire|multimillionaire|millionaire" data-display="multi-millionaire">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Form a word with a prefix from the box</h2>
+  <p>Complete each sentence with a word formed from the word in italics, beginning with a prefix from the box.</p>
+  <div class="formula">dis- · in- · non- · over- · re- · un- · vice- · trans-</div>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) I'm not <i>satisfied</i> with your work. I am <input class="blank" data-answers="dissatisfied" data-display="dissatisfied"> with it.</p></div>
+    <div class="q"><p>b) She doesn't have the <i>usual</i> kind of haircut. It's very <input class="blank" data-answers="unusual" data-display="unusual">.</p></div>
+    <div class="q"><p>c) Mary is sailing across the <i>Atlantic</i>. She is on a <input class="blank" data-answers="transatlantic" data-display="transatlantic"> voyage.</p></div>
+    <div class="q"><p>d) Dan is the <i>President's</i> assistant. He is the <input class="blank" data-answers="vice-president" data-display="vice-president">.</p></div>
+    <div class="q"><p>e) Terry is no longer a <i>smoker</i>. Now he is a <input class="blank" data-answers="non-smoker" data-display="non-smoker">.</p></div>
+    <div class="q"><p>f) Don't wear a <i>formal</i> suit. The dinner is quite <input class="blank" data-answers="informal" data-display="informal">.</p></div>
+    <div class="q"><p>g) You haven't <i>written</i> this clearly. It'll have to be <input class="blank" data-answers="rewritten" data-display="rewritten">.</p></div>
+    <div class="q"><p>h) This steak is <i>cooked</i> too much. It's <input class="blank" data-answers="overcooked" data-display="overcooked">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Form a word ending as shown</h2>
+  <p>Complete each sentence with a word formed from a word in the box, ending as shown. Type the missing first part or the whole word.</p>
+  <div class="formula">astonish · fool · music · thought · back · free · lead · short</div>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) I don't want to be a slave! I demand my <input class="blank" data-answers="free|freedom" data-display="freedom">dom.</p></div>
+    <div class="q"><p>b) How kind of you to bring flowers! That was very <input class="blank" data-answers="thought|thoughtful" data-display="thoughtful">ful.</p></div>
+    <div class="q"><p>c) Martin plays the guitar, but he isn't a very good <input class="blank" data-answers="music|musician" data-display="musician">ian.</p></div>
+    <div class="q"><p>d) Our school has closed because there is a <input class="blank" data-answers="short|shortage" data-display="shortage">age of teachers.</p></div>
+    <div class="q"><p>e) Brian is one of the world's <input class="blank" data-answers="lead|leading" data-display="leading">ing architects.</p></div>
+    <div class="q"><p>f) Imagine my <input class="blank" data-answers="astonish|astonishment" data-display="astonishment">ment when the cat started to speak!</p></div>
+    <div class="q"><p>g) Don't be <input class="blank" data-answers="fool|foolish" data-display="foolish">ish! There is no such thing as a ghost!</p></div>
+    <div class="q"><p>h) I prefer to begin at the end and go <input class="blank" data-answers="back|backwards" data-display="backwards">wards.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Form words from Box A with Box B</h2>
+  <p>Complete each sentence with a word formed from a word in Box A. Use one of the prefixes or suffixes in Box B.</p>
+  <div class="formula">A: care · employ · home · postpone · satisfied · charge · friend · night · pronounce · skirts</div>
+  <div class="formula">B: dis- · mis- · out- · over- · -less · -ment · -ship · -ee</div>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) I travelled to Scotland on the <input class="blank" data-answers="overnight" data-display="overnight"> train and slept all the way.</p></div>
+    <div class="q"><p>b) You're always breaking things! Why are you so <input class="blank" data-answers="careless" data-display="careless">?</p></div>
+    <div class="q"><p>c) Jane knows a lot of French words, but she tends to <input class="blank" data-answers="mispronounce" data-display="mispronounce"> them.</p></div>
+    <div class="q"><p>d) We all believe in <input class="blank" data-answers="friendship" data-display="friendship"> between the people of different nations.</p></div>
+    <div class="q"><p>e) Bad weather caused the <input class="blank" data-answers="postponement" data-display="postponement"> of nearly all the football programme.</p></div>
+    <div class="q"><p>f) George was very <input class="blank" data-answers="dissatisfied" data-display="dissatisfied"> with the service at the hotel.</p></div>
+    <div class="q"><p>g) We live in a flat on the <input class="blank" data-answers="outskirts" data-display="outskirts"> of London.</p></div>
+    <div class="q"><p>h) Patsy thought the shop assistant had <input class="blank" data-answers="overcharged" data-display="overcharged"> her.</p></div>
+    <div class="q"><p>i) David was tired of being a/an <input class="blank" data-answers="employee" data-display="employee"> so he started his own company.</p></div>
+    <div class="q"><p>j) The government is providing more money to help <input class="blank" data-answers="homeless" data-display="homeless"> people.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Complete the compound words</h2>
+  <p>Complete the compound word in each sentence with a word from the box. Type the missing part or the whole compound.</p>
+  <div class="formula">bow · cut · helmet · powder · storm · case · fire · place · steps · writing</div>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) I could hear the sound of gun<input class="blank" data-answers="fire|gunfire" data-display="gunfire"> coming from the main square.</p></div>
+    <div class="q"><p>b) We had to take shelter during a severe thunder<input class="blank" data-answers="storm|thunderstorm" data-display="thunderstorm">.</p></div>
+    <div class="q"><p>c) Nobody can read the doctor's hand<input class="blank" data-answers="writing|handwriting" data-display="handwriting">.</p></div>
+    <div class="q"><p>d) You look awful. Why don't you have a hair<input class="blank" data-answers="cut|haircut" data-display="haircut">?</p></div>
+    <div class="q"><p>e) I wanted to do some washing but I've run out of soap <input class="blank" data-answers="powder|soap powder" data-display="soap powder">.</p></div>
+    <div class="q"><p>f) If you ride a motorbike you have to wear a crash <input class="blank" data-answers="helmet|crash helmet" data-display="crash helmet">.</p></div>
+    <div class="q"><p>g) There isn't room in here for another book<input class="blank" data-answers="case|bookcase" data-display="bookcase">.</p></div>
+    <div class="q"><p>h) After the shower, the sun came out and there was a rain<input class="blank" data-answers="bow|rainbow" data-display="rainbow">.</p></div>
+    <div class="q"><p>i) I could hear the sound of foot<input class="blank" data-answers="steps|footsteps" data-display="footsteps">. Someone was coming!</p></div>
+    <div class="q"><p>j) At one end of the room is a lovely old stone fire<input class="blank" data-answers="place|fireplace" data-display="fireplace">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Word formation: Evening classes</h2>
+  <p>Use the word given in capitals at the end of each line to form a word that fits in the space in the same line.</p>
+  <p class="small">Item (1) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>Evening classes — Recently I decided to go to evening classes twice a week. During the day I work in a (1) <input class="blank" data-answers="secretarial" data-display="secretarial"> agency <b>(SECRETARY)</b> as a telephonist. It is not a very interesting (2) <input class="blank" data-answers="occupation" data-display="occupation"> <b>(OCCUPY)</b> and I get bored. I also got tired of coming home every evening, putting a (3) <input class="blank" data-answers="frozen" data-display="frozen"> <b>(FREEZE)</b> meal in the oven and then watching TV. So I decided to take up (4) <input class="blank" data-answers="carpentry" data-display="carpentry"> <b>(CARPENTER)</b> as a hobby. Perhaps I should give you an (5) <input class="blank" data-answers="explanation" data-display="explanation"> <b>(EXPLAIN)</b> for my choice. Learning a skill is a good (6) <input class="blank" data-answers="solution" data-display="solution"> <b>(SOLVE)</b> to the problem of boring work. Also, I felt I was a (7) <input class="blank" data-answers="failure" data-display="failure"> <b>(FAIL)</b> because any time I tried to put up a shelf, for example, it always fell down! Now I am quite a (8) <input class="blank" data-answers="successful" data-display="successful"> <b>(SUCCESS)</b> wood-worker! I am working on the (9) <input class="blank" data-answers="construction" data-display="construction"> <b>(CONSTRUCT)</b> of some furniture at the moment. And although there are only two other girls in the class, I don't feel any (10) <input class="blank" data-answers="embarrassment" data-display="embarrassment"> <b>(EMBARRASS)</b>. I've turned out to be the best student in the class!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex7">
+  <h2>Exercise 7 — Choose the most suitable word</h2>
+  <p>Choose the most suitable word of the two to complete each sentence.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) Helen doesn't look well. She is extremely ______.</p><div class="opts"><button type="button">slim</button><button type="button">thin</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) It's really hot today, but it's nice and ______ in here.</p><div class="opts"><button type="button">chilly</button><button type="button">cool</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Peter ______ his head in agreement.</p><div class="opts"><button type="button">nodded</button><button type="button">shook</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) I can't pay you anything for this old coin. It's ______.</p><div class="opts"><button type="button">priceless</button><button type="button">worthless</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) The house was surrounded by a ______ fence.</p><div class="opts"><button type="button">high</button><button type="button">tall</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) The sun is shining, and it's a/an ______ day.</p><div class="opts"><button type="button">attractive</button><button type="button">lovely</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) This chicken is good. It's very ______.</p><div class="opts"><button type="button">tasteful</button><button type="button">tasty</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Be careful of the next corner. It's rather ______.</p><div class="opts"><button type="button">dangerous</button><button type="button">harmful</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Graham left the film before the end because he was ______.</p><div class="opts"><button type="button">bored</button><button type="button">lazy</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) When I saw him scratch my car I got very ______.</p><div class="opts"><button type="button">angry</button><button type="button">nervous</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 7: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>Exercise 8 — Complete the sentences with a verb from the box</h2>
+  <p>Complete each sentence with a word formed from a word in the box — put the verb into the correct form (tense, -ing form, participle…).</p>
+  <div class="formula">do · fall · get · make · set · draw · feel · give · put · take</div>
+  <p class="small">Item a) is the worked example — it is included in the grading here.</p>
+    <div class="q"><p>a) Those children next door are <input class="blank" data-answers="making" data-display="making"> a lot of noise.</p></div>
+    <div class="q"><p>b) I don't really <input class="blank" data-answers="feel" data-display="feel"> like going out this evening.</p></div>
+    <div class="q"><p>c) You don't have to hurry. You can <input class="blank" data-answers="take" data-display="take"> your time.</p></div>
+    <div class="q"><p>d) Armstrong was the first person to <input class="blank" data-answers="set" data-display="set"> foot on the Moon.</p></div>
+    <div class="q"><p>e) The director <input class="blank" data-answers="gave" data-display="gave"> us permission to park our motorbikes here.</p></div>
+    <div class="q"><p>f) Can you <input class="blank" data-answers="do" data-display="do"> me a favour? I need some help with the garden.</p></div>
+    <div class="q"><p>g) I can't talk now. I'm just <input class="blank" data-answers="getting" data-display="getting"> lunch.</p></div>
+    <div class="q"><p>h) When something goes wrong, people always <input class="blank" data-answers="put" data-display="put"> the blame on me!</p></div>
+    <div class="q"><p>i) Tom has just <input class="blank" data-answers="fallen" data-display="fallen"> in love yet again!</p></div>
+    <div class="q"><p>j) I would like to <input class="blank" data-answers="draw" data-display="draw"> your attention to these instructions.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ Check Exercise 8</button><button type="button" onclick="showFill('ex8')">👁 Show answers</button><button type="button" onclick="resetFill('ex8')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 8: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>Exercise 9 — Rewrite the sentences with the given word</h2>
+  <p>Rewrite each sentence so that it has the same meaning, and contains the word given in capitals. Do not change the word in any way. Type the whole sentence.</p>
+  <div class="note">📌 <b>Example a)</b> The forest outside the town started burning last night. (CAUGHT) → <i>The forest outside the town caught fire last night.</i></div>
+    <div class="q"><p>b) Suddenly Janet started crying. — <b>TEARS</b></p><input class="blank wide" data-answers="Suddenly Janet burst into tears." data-display="Suddenly Janet burst into tears." placeholder="Suddenly Janet …"><div class="fb"></div></div>
+    <div class="q"><p>c) What's your occupation? — <b>DO</b></p><input class="blank wide" data-answers="What do you do for a living?|What do you do?" data-display="What do you do (for a living)?" placeholder="What do you …"><div class="fb"></div></div>
+    <div class="q"><p>d) We'll have to decide soon. — <b>DECISION</b></p><input class="blank wide" data-answers="We'll have to make a decision soon.|We'll have to take a decision soon.|We will have to make a decision soon.|We will have to take a decision soon." data-display="We'll have to make/take a decision soon." placeholder="We'll have to …"><div class="fb"></div></div>
+    <div class="q"><p>e) Can you look after my plants while I'm away? — <b>TAKE</b></p><input class="blank wide" data-answers="Can you take care of my plants while I'm away?" data-display="Can you take care of my plants while I'm away?" placeholder="Can you take …"><div class="fb"></div></div>
+    <div class="q"><p>f) You will write or phone, won't you? — <b>TOUCH</b></p><input class="blank wide" data-answers="You will keep in touch, won't you?" data-display="You will keep in touch, won't you?" placeholder="You will keep …"><div class="fb"></div></div>
+    <div class="q"><p>g) Diane had a baby boy last week. — <b>GAVE</b></p><input class="blank wide" data-answers="Diane gave birth to a baby boy last week." data-display="Diane gave birth to a baby boy last week." placeholder="Diane gave …"><div class="fb"></div></div>
+    <div class="q"><p>h) Peter always remains calm in an emergency. — <b>HEAD</b></p><input class="blank wide" data-answers="Peter always keeps his head in an emergency." data-display="Peter always keeps his head in an emergency." placeholder="Peter always keeps …"><div class="fb"></div></div>
+    <div class="q"><p>i) Stop holding the steering wheel! — <b>LET</b></p><input class="blank wide" data-answers="Let go of the steering wheel!" data-display="Let go of the steering wheel!" placeholder="Let …"><div class="fb"></div></div>
+    <div class="q"><p>j) He can't possibly win the race. — <b>STANDS</b></p><input class="blank wide" data-answers="He stands no chance of winning the race." data-display="He stands no chance of winning the race." placeholder="He stands …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ Check Exercise 9</button><button type="button" onclick="showFill('ex9')">👁 Show answers</button><button type="button" onclick="resetFill('ex9')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 9: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+  <p class="small">Grading tip: capitalisation and punctuation are ignored. In this exercise, if the checker marks you wrong only because of one or two different words, press “Show answers” and compare for yourself.</p>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>83</b> (Exercise 1: 8 blanks · Exercise 2: 8 blanks · Exercise 3: 8 blanks · Exercise 4: 10 blanks · Exercise 5: 10 blanks · Exercise 6: 10 blanks · Exercise 7: 10 · Exercise 8: 10 blanks · Exercise 9: 9 sentences).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
