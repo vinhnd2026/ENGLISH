@@ -376,6 +376,130 @@ body.dict-on{cursor:help}
 </style>
 <button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
 <div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"able":"EY1 B AH0 L","about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","accident":"AE1 K S AH0 D AH0 N T","accommodation":"AH0 K AA2 M AH0 D EY1 SH AH0 N","according":"AH0 K AO1 R D IH0 NG","account":"AH0 K AW1 N T","across":"AH0 K R AO1 S","actual":"AE1 K CH AH0 W AH0 L","actually":"AE1 K CH UW2 AH0 L IY0","adding":"AE1 D IH0 NG","addition":"AH0 D IH1 SH AH0 N","advantages":"AE0 D V AE1 N T IH0 JH IH0 Z","after":"AE1 F T ER0","afterwards":"AE1 F T ER0 W ER0 D Z","again":"AH0 G EH1 N","age":"EY1 JH","all":"AO1 L","allow":"AH0 L AW1","also":"AO1 L S OW0","although":"AO2 L DH OW1","always":"AO1 L W EY2 Z","american":"AH0 M EH1 R AH0 K AH0 N","an":"AE1 N","and":"AH0 N D","annual":"AE1 N Y UW0 AH0 L","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","appliances":"AH0 P L AY1 AH0 N S AH0 Z","are":"AA1 R","argument":"AA1 R G Y AH0 M AH0 N T","as":"AE1 Z","at":"AE1 T","attractive":"AH0 T R AE1 K T IH0 V","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","bad":"B AE1 D","be":"B IY1","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","becoming":"B IH0 K AH1 M IH0 NG","bed":"B EH1 D","before":"B IH0 F AO1 R","begin":"B IH0 G IH1 N","beginning":"B IH0 G IH1 N IH0 NG","below":"B IH0 L OW1","besides":"B IH0 S AY1 D Z","best":"B EH1 S T","better":"B EH1 T ER0","between":"B IH0 T W IY1 N","blanks":"B L AE1 NG K S","breakfast":"B R EH1 K F AH0 S T","bring":"B R IH1 NG","british":"B R IH1 T IH0 SH","building":"B IH1 L D IH0 NG","but":"B AH1 T","button":"B AH1 T AH0 N","by":"B AY1","called":"K AO1 L D","came":"K EY1 M","can":"K AE1 N","cannot":"K AE1 N AA0 T","car":"K AA1 R","carry":"K AE1 R IY0","cars":"K AA1 R Z","cause":"K AA1 Z","changed":"CH EY1 N JH D","check":"CH EH1 K","choose":"CH UW1 Z","cities":"S IH1 T IY0 Z","city":"S IH1 T IY0","clauses":"K L AO1 Z AH0 Z","clear":"K L IH1 R","click":"K L IH1 K","closed":"K L OW1 Z D","come":"K AH1 M","comma":"K AA1 M AH0","common":"K AA1 M AH0 N","company":"K AH1 M P AH0 N IY2","comparison":"K AH0 M P EH1 R AH0 S AH0 N","completely":"K AH0 M P L IY1 T L IY0","conclusion":"K AH0 N K L UW1 ZH AH0 N","conducted":"K AH0 N D AH1 K T AH0 D","consequently":"K AA1 N S AH0 K W AH0 N T L IY0","context":"K AA1 N T EH0 K S T","contrast":"K AA1 N T R AE0 S T","convenience":"K AH0 N V IY1 N Y AH0 N S","crowded":"K R AW1 D AH0 D","day":"D EY1","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","delayed":"D IH0 L EY1 D","demand":"D IH0 M AE1 N D","depend":"D IH0 P EH1 N D","depressed":"D IH0 P R EH1 S T","destroy":"D IH0 S T R OY1","destroyed":"D IH0 S T R OY1 D","development":"D IH0 V EH1 L AH0 P M AH0 N T","device":"D IH0 V AY1 S","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","difference":"D IH1 F ER0 AH0 N S","dinner":"D IH1 N ER0","dirty":"D ER1 T IY0","disadvantages":"D IH2 S AH0 D V AE1 N T IH0 JH IH0 Z","doesn't":"D AH1 Z AH0 N T","don't":"D OW1 N T","down":"D AW1 N","driving":"D R AY1 V IH0 NG","due":"D UW1","each":"IY1 CH","earth":"ER1 TH","electrical":"IH0 L EH1 K T R IH0 K AH0 L","end":"EH1 N D","english":"IH1 NG G L IH0 SH","enlarge":"EH2 N L AA1 R JH","entirely":"IH0 N T AY1 ER0 L IY0","especially":"AH0 S P EH1 SH L IY0","essential":"EH0 S EH1 N SH AH0 L","events":"IH0 V EH1 N T S","every":"EH1 V ER0 IY0","everyone":"EH1 V R IY0 W AH2 N","everywhere":"EH1 V R IY0 W EH2 R","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","exit":"EH1 G Z IH0 T","expensive":"IH0 K S P EH1 N S IH0 V","expressed":"IH0 K S P R EH1 S T","expressions":"IH0 K S P R EH1 SH AH0 N Z","facilities":"F AH0 S IH1 L AH0 T IY0 Z","factory":"F AE1 K T ER0 IY0","farming":"F AA1 R M IH0 NG","feel":"F IY1 L","few":"F Y UW1","finally":"F AY1 N AH0 L IY0","finish":"F IH1 N IH0 SH","first":"F ER1 S T","fits":"F IH1 T S","flight":"F L AY1 T","flow":"F L OW1","flying":"F L AY1 IH0 NG","follow":"F AA1 L OW0","followed":"F AA1 L OW0 D","follows":"F AA1 L OW0 Z","food":"F UW1 D","for":"F AO1 R","forever":"F ER0 EH1 V ER0","formal":"F AO1 R M AH0 L","friends":"F R EH1 N D Z","from":"F R AH1 M","furthermore":"F ER1 DH ER0 M AO2 R","gap":"G AE1 P","give":"G IH1 V","given":"G IH1 V AH0 N","giving":"G IH1 V IH0 NG","go":"G OW1","good":"G UH1 D","goods":"G UH1 D Z","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","guest":"G EH1 S T","had":"HH AE1 D","hand":"HH AE1 N D","harbour":"HH AA1 R B ER0","hard":"HH AA1 R D","has":"HH AE1 Z","have":"HH AE1 V","he":"HH IY1","heavy":"HH EH1 V IY0","help":"HH EH1 L P","her":"HH ER1","here":"HH IY1 R","high":"HH AY1","home":"HH OW1 M","hotels":"HH OW0 T EH1 L Z","house":"HH AW1 S","houses":"HH AW1 S AH0 Z","however":"HH AW2 EH1 V ER0","html":"EY2 CH T IY2 EH2 M EH1 L","ideas":"AY0 D IY1 AH0 Z","if":"IH1 F","ignored":"IH2 G N AO1 R D","impressive":"IH2 M P R EH1 S IH0 V","in":"IH0 N","include":"IH2 N K L UW1 D","increased":"IH2 N K R IY1 S T","independent":"IH2 N D IH0 P EH1 N D AH0 N T","index":"IH1 N D EH0 K S","instance":"IH1 N S T AH0 N S","interesting":"IH1 N T R AH0 S T IH0 NG","introduced":"IH2 N T R AH0 D UW1 S T","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","item":"AY1 T AH0 M","items":"AY1 T AH0 M Z","its":"IH1 T S","john":"JH AA1 N","join":"JH OY1 N","just":"JH AH1 S T","key":"K IY1","kitchen":"K IH1 CH AH0 N","know":"N OW1","land":"L AE1 N D","language":"L AE1 NG G W AH0 JH","large":"L AA1 R JH","last":"L AE1 S T","lastly":"L AE1 S T L IY0","late":"L EY1 T","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","life":"L AY1 F","lifts":"L IH1 F T S","like":"L AY1 K","linking":"L IH1 NG K IH0 NG","links":"L IH1 NG K S","listed":"L IH1 S T AH0 D","listen":"L IH1 S AH0 N","listeners":"L IH1 S AH0 N ER0 Z","lists":"L IH1 S T S","live":"L AY1 V","loads":"L OW1 D Z","local":"L OW1 K AH0 L","long":"L AO1 NG","longer":"L AO1 NG G ER0","lot":"L AA1 T","make":"M EY1 K","making":"M EY1 K IH0 NG","many":"M EH1 N IY0","mean":"M IY1 N","meaning":"M IY1 N IH0 NG","means":"M IY1 N Z","middle":"M IH1 D AH0 L","might":"M AY1 T","mistake":"M IH0 S T EY1 K","mixers":"M IH1 K S ER0 Z","mode":"M OW1 D","model":"M AA1 D AH0 L","monday":"M AH1 N D IY0","money":"M AH1 N IY0","more":"M AO1 R","moreover":"M AO0 R OW1 V ER0","most":"M OW1 S T","motorway":"M OW1 T ER0 W EY2","moving":"M UW1 V IH0 NG","much":"M AH1 CH","my":"M AY1","narrative":"N AE1 R AH0 T IH0 V","needs":"N IY1 D Z","nervous":"N ER1 V AH0 S","nevertheless":"N EH2 V ER0 DH AH0 L EH1 S","new":"N UW1","next":"N EH1 K S T","no":"N OW1","noisy":"N OY1 Z IY0","not":"N AA1 T","note":"N OW1 T","noun":"N AW1 N","nowadays":"N AW1 AH0 D EY2 Z","number":"N AH1 M B ER0","numbers":"N AH1 M B ER0 Z","oaks":"OW1 K S","objections":"AH0 B JH EH1 K SH AH0 N Z","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","offering":"AO1 F ER0 IH0 NG","often":"AO1 F AH0 N","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","opens":"OW1 P AH0 N Z","opinion":"AH0 P IH1 N Y AH0 N","opinions":"AH0 P IH1 N Y AH0 N Z","options":"AA1 P SH AH0 N Z","or":"AO1 R","order":"AO1 R D ER0","ordinary":"AO1 R D AH0 N EH2 R IY0","organization":"AO2 R G AH0 N AH0 Z EY1 SH AH0 N","organized":"AO1 R G AH0 N AY2 Z D","organizers":"AO1 R G AH0 N AY2 Z ER0 Z","other":"AH1 DH ER0","others":"AH1 DH ER0 Z","our":"AW1 ER0","outweigh":"AW1 T W EY2","owing":"OW1 IH0 NG","own":"OW1 N","owning":"OW1 N IH0 NG","page":"P EY1 JH","paragraphs":"P AE1 R AH0 G R AE2 F S","park":"P AA1 R K","parking":"P AA1 R K IH0 NG","particularly":"P AA2 R T IH1 K Y AH0 L ER0 L IY0","pattern":"P AE1 T ER0 N","peaceful":"P IY1 S F AH0 L","pedestrians":"P AH0 D EH1 S T R IY0 AH0 N Z","people":"P IY1 P AH0 L","personally":"P ER1 S AH0 N AH0 L IY0","peter":"P IY1 T ER0","petrol":"P EH1 T R OW0 L","phrase":"F R EY1 Z","pick":"P IH1 K","place":"P L EY1 S","planned":"P L AE1 N D","points":"P OY1 N T S","possibility":"P AA2 S AH0 B IH1 L AH0 T IY2","practice":"P R AE1 K T AH0 S","press":"P R EH1 S","problems":"P R AA1 B L AH0 M Z","produces":"P R AH0 D UW1 S AH0 Z","project":"P R AA1 JH EH0 K T","public":"P AH1 B L IH0 K","put":"P UH1 T","radio":"R EY1 D IY0 OW2","rather":"R AE1 DH ER0","read":"R EH1 D","readers":"R IY1 D ER0 Z","reading":"R IY1 D IH0 NG","reason":"R IY1 Z AH0 N","reception":"R IH0 S EH1 P SH AH0 N","recommend":"R EH2 K AH0 M EH1 N D","reliable":"R IH0 L AY1 AH0 B AH0 L","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","repairs":"R IH0 P EH1 R Z","reset":"R IY0 S EH1 T","result":"R IH0 Z AH1 L T","results":"R IH0 Z AH1 L T S","right":"R AY1 T","road":"R OW1 D","rooms":"R UW1 M Z","rows":"R OW1 Z","running":"R AH1 N IH0 NG","safer":"S EY1 F ER0","sailing":"S EY1 L IH0 NG","saw":"S AO1","say":"S EY1","science":"S AY1 AH0 N S","score":"S K AO1 R","secondly":"S EH1 K AH0 N D L IY0","see":"S IY1","seems":"S IY1 M Z","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","sequence":"S IY1 K W AH0 N S","sequencing":"S IY1 K W AH0 N S IH0 NG","servicing":"S ER1 V IH0 S IH0 NG","several":"S EH1 V R AH0 L","shopping":"SH AA1 P IH0 NG","show":"SH OW1","showing":"SH OW1 IH0 NG","side":"S AY1 D","since":"S IH1 N S","so":"S OW1","some":"S AH1 M","sometimes":"S AH0 M T AY1 M Z","soon":"S UW1 N","space":"S P EY1 S","spaces":"S P EY1 S AH0 Z","speak":"S P IY1 K","specific":"S P AH0 S IH1 F IH0 K","speech":"S P IY1 CH","speed":"S P IY1 D","spend":"S P EH1 N D","start":"S T AA1 R T","statistics":"S T AH0 T IH1 S T IH0 K S","still":"S T IH1 L","stop":"S T AA1 P","street":"S T R IY1 T","study":"S T AH1 D IY0","succeeded":"S AH0 K S IY1 D IH0 D","success":"S AH0 K S EH1 S","such":"S AH1 CH","sue":"S UW1","sue's":"S UW1 Z","suitable":"S UW1 T AH0 B AH0 L","sum":"S AH1 M","summarizing":"S AH1 M ER0 AY2 Z IH0 NG","summary":"S AH1 M ER0 IY0","supermarket":"S UW1 P ER0 M AA2 R K IH0 T","survey":"S ER0 V EY1","tap":"T AE1 P","test":"T EH1 S T","text":"T EH1 K S T","than":"DH AE1 N","thank":"TH AE1 NG K","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","think":"TH IH1 NG K","this":"DH IH1 S","thousands":"TH AW1 Z AH0 N D Z","thus":"DH AH1 S","time":"T AY1 M","to":"T UW1","today":"T AH0 D EY1","tomorrow":"T AH0 M AA1 R OW2","too":"T UW1","total":"T OW1 T AH0 L","tourists":"T UH1 R AH0 S T S","town":"T AW1 N","towns":"T AW1 N Z","transport":"T R AE0 N S P AO1 R T","turn":"T ER1 N","two":"T UW1","type":"T AY1 P","under":"AH1 N D ER0","up":"AH1 P","use":"Y UW1 S","used":"Y UW1 Z D","usually":"Y UW1 ZH AH0 W AH0 L IY0","valuable":"V AE1 L Y AH0 B AH0 L","value":"V AE1 L Y UW0","vehicles":"V IY1 HH IH0 K AH0 L Z","verb":"V ER1 B","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","view":"V Y UW1","village":"V IH1 L AH0 JH","voice":"V OY1 S","voices":"V OY1 S AH0 Z","walking":"W AO1 K IH0 NG","want":"W AA1 N T","was":"W AA1 Z","way":"W EY1","ways":"W EY1 Z","we":"W IY1","we'll":"W IY1 L","weather":"W EH1 DH ER0","welcome":"W EH1 L K AH0 M","well":"W EH1 L","were":"W ER1","west":"W EH1 S T","what":"W AH1 T","when":"W EH1 N","whenever":"W EH0 N EH1 V ER0","wherever":"W EH0 R EH1 V ER0","which":"W IH1 CH","while":"W AY1 L","whole":"HH OW1 L","will":"W IH1 L","winds":"W IH1 N D Z","with":"W IH1 DH","within":"W IH0 DH IH1 N","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","worker":"W ER1 K ER0","worry":"W ER1 IY0","would":"W UH1 D","write":"R AY1 T","writing":"R AY1 T IH0 NG","written":"R IH1 T AH0 N","you":"Y UW1","young":"Y AH1 NG","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return 'aʊ';
+      case 'AY': return 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
 <div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
 <script>
 var dictOn = localStorage.getItem('en-dict') === '1';
@@ -414,7 +538,7 @@ function lookupWord(raw){
   var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
   pop.classList.add('show');
   body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
-  var cacheKey = DICT_TL + ':' + word;
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
   if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
   var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
   var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
@@ -422,7 +546,6 @@ function lookupWord(raw){
     .then(function(j){
       if(!j || !j[0]) return;
       var e = j[0];
-      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
       if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
     }).catch(function(){});
   var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
@@ -435,7 +558,7 @@ function lookupWord(raw){
 function renderDict(word, d){
   var body = document.getElementById('dictBody');
   var h = '<span class="dw">' + esc(word) + '</span>';
-  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
   h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
   if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
   if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
