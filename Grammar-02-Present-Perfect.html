@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 2 — Present Perfect</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← Mục lục (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-02-Present-Perfect-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 2 — Present Perfect</h1>
+  <p>Hiện tại hoàn thành: Present Perfect Simple · Present Perfect Continuous · for / since / ago</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+
+<div class="card">
+  <h2>1. Hiện tại hoàn thành đơn (Present Perfect Simple)</h2>
+  <div class="formula">S + have / has + V₃ (past participle)</div>
+
+  <h3>a) Sự kiện gần đây (Recent events)</h3>
+  <p>Dùng để tả sự việc <b>mới xảy ra gần đây</b>. Việc đã xảy ra trong quá khứ nhưng <b>kết quả vẫn còn ở hiện tại</b>. Không nói rõ thời điểm cụ thể; muốn nhấn mạnh tính “mới đây” thì dùng <i>just</i>, và dùng <i>yet</i> cho việc chưa xảy ra.</p>
+  <div class="ex"><div class="en">I've left my shopping bag behind.</div><div class="vi">Tôi đã để quên túi mua sắm.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've broken my arm, as you can see.</div><div class="vi">Tôi đã bị gãy tay, như bạn thấy đấy. (kết quả còn rõ ở hiện tại)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've just broken my watch.</div><div class="vi">Tôi vừa mới làm vỡ đồng hồ.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I haven't found her phone number yet.</div><div class="vi">Tôi vẫn chưa tìm được số điện thoại của cô ấy.</div><div class="tts"></div></div>
+
+  <h3>b) Sự kiện không xác định thời gian (Indefinite events)</h3>
+  <p>Không cho thời điểm cụ thể: đó là những việc thuộc về <b>trải nghiệm đời mình tính đến nay</b>. Sau cấu trúc <i>It's/This is the first/second time…</i> cũng dùng hiện tại hoàn thành.</p>
+  <div class="ex"><div class="en">I've been to France three times.</div><div class="vi">Tôi đã đến Pháp ba lần (trong đời, không nói rõ khi nào).</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This is the first time I have eaten Japanese food.</div><div class="vi">Đây là lần đầu tiên tôi ăn món Nhật.</div><div class="tts"></div></div>
+
+  <h3>c) Đối chiếu với quá khứ đơn (Past Simple)</h3>
+  <p>Sự việc dùng Past Simple luôn có <b>thời điểm xác định</b>. Thậm chí chỉ cần nhắc tới một <b>địa điểm cụ thể</b> của sự việc cũng có thể gợi ý thời điểm xác định → dùng Past Simple.</p>
+  <div class="ex"><div class="en">I went to France last year. I ate at a Japanese restaurant on Saturday.</div><div class="vi">Tôi đã đi Pháp năm ngoái. Tôi đã ăn ở một nhà hàng Nhật vào thứ Bảy. (có mốc thời gian rõ ràng)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I left my shopping bag on the train.</div><div class="vi">Tôi đã để quên túi mua sắm trên tàu. (địa điểm cụ thể → ngụ ý thời điểm xác định)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Sự việc kéo dài hoặc lặp lại đến hiện tại</h2>
+
+  <h3>a) Present Perfect Simple — trạng thái kéo dài</h3>
+  <p>Tả trạng thái <b>kéo dài tới hiện tại</b>, hoặc hành động theo thói quen trong một khoảng thời gian tính đến nay.</p>
+  <div class="ex"><div class="en">I've lived in this house for five years.</div><div class="vi">Tôi đã sống ở ngôi nhà này năm năm (và vẫn đang sống).</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've never worn a tie to work, and I refuse to start now!</div><div class="vi">Tôi chưa bao giờ đeo cà vạt đi làm, và tôi nhất quyết không bắt đầu bây giờ!</div><div class="tts"></div></div>
+
+  <h3>b) Present Perfect Continuous — hành động đang tiếp diễn</h3>
+  <div class="formula">S + have / has + been + V-ing</div>
+  <p>Cũng tả trạng thái kéo dài tới hiện tại; với nhóm này, dạng đơn và dạng tiếp diễn <b>hầu như không khác nhau về nghĩa</b>, kể cả trong câu hỏi <i>How long…?</i> Một số động từ như <i>wait, sit, lie, stay</i> thì ưa dùng dạng tiếp diễn hơn.</p>
+  <div class="ex"><div class="en">I've been living in this house for five years.</div><div class="vi">Tôi đã sống ở ngôi nhà này năm năm nay.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">How long have you lived in this house? — How long have you been living in this house?</div><div class="vi">Bạn đã sống ở ngôi nhà này bao lâu rồi? (hai cách hỏi tương đương)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been waiting for ages.</div><div class="vi">Tôi đã chờ từ nãy đến giờ (dùng dạng tiếp diễn với <i>wait</i>).</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Đơn hay tiếp diễn? (Simple or Continuous?)</h2>
+
+  <h3>a) Hành động đã hoàn tất → dạng đơn</h3>
+  <p>Dạng đơn nhấn mạnh việc <b>đã xong</b>. Khi nói <b>bao nhiêu / bao nhiêu lượng</b> (how many / how much) thì luôn dùng dạng đơn.</p>
+  <div class="ex"><div class="en">I've finished my homework!</div><div class="vi">Tôi đã làm xong bài tập rồi!</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've written ten pages of my homework!</div><div class="vi">Tôi đã viết được mười trang bài tập! (nói số lượng → dạng đơn)</div><div class="tts"></div></div>
+
+  <h3>b) Chưa hoàn tất hoặc vừa mới dừng → dạng tiếp diễn</h3>
+  <p>Dạng tiếp diễn cho thấy hành động <b>chưa xong</b>, hoặc vừa mới kết thúc gần đây.</p>
+  <div class="ex"><div class="en">We've been walking for hours! Let's have a rest.</div><div class="vi">Chúng ta đã đi bộ mấy tiếng rồi! Nghỉ một lát đi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been digging the garden. That's why I'm so dirty!</div><div class="vi">Tôi vừa đào vườn. Bảo sao người bẩn thế này! (hoạt động vừa diễn ra, dấu vết còn ở hiện tại)</div><div class="tts"></div></div>
+
+  <h3>c) Chú ý vào kết quả hay vào quá trình?</h3>
+  <p>Chú ý vào <b>kết quả ở hiện tại</b> → dạng đơn. Chú ý vào <b>hành động đang diễn ra</b> → dạng tiếp diễn.</p>
+  <div class="ex"><div class="en">I've written my homework. Now I can watch the television.</div><div class="vi">Tôi đã viết xong bài tập. Giờ tôi xem tivi được rồi. (nhấn kết quả)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been writing my homework all evening! I didn't know it would take so long.</div><div class="vi">Tôi đã viết bài tập cả buổi tối! Không ngờ lại lâu thế. (nhấn quá trình)</div><div class="tts"></div></div>
+  <div class="note">⚠️ Ba cụm thời gian hay nhầm: <b>for</b> + khoảng thời gian (for five years), <b>since</b> + mốc bắt đầu (since 2020), <b>ago</b> chỉ dùng với quá khứ đơn cho việc đã kết thúc (two days ago).</div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li><b>Present Perfect Simple</b> tả sự việc <b>không có thời điểm xác định</b>: hoặc sự việc nằm trong khoảng thời gian kéo dài tới hiện tại, hoặc kết quả của nó vẫn còn thấy ở hiện tại. Việc chọn hoàn thành hay quá khứ đơn tùy cách người nói nhìn sự việc: <i>I've had an accident</i> (còn liên hệ hiện tại) so với <i>I had an accident</i> (coi như đã xong, tách khỏi hiện tại).</li>
+    <li>Sự việc dùng hiện tại hoàn thành có thể <b>gần đây hoặc không</b> — không nhất thiết phải mới xảy ra.</li>
+    <li><b>Present Perfect Continuous</b> dùng cho hành động đang tiếp diễn: gợi ý hành động <b>chưa xong</b> hoặc vừa mới xong. Đối chiếu: <i>I've read this book</i> (nhấn việc hoàn thành) — <i>I've been reading this book</i> (nhấn chính hành động, có thể chưa xong). Dạng tiếp diễn cũng nhấn mạnh <b>độ dài thời gian</b> của hành động.</li>
+    <li><b>For</b> chỉ một khoảng thời gian (đã kết thúc hoặc chưa): <i>I waited for three hours. He's been sitting there for ages.</i></li>
+    <li><b>Since</b> chỉ mốc bắt đầu của một khoảng thời gian chưa kết thúc: <i>He's been sitting there since two o'clock.</i></li>
+    <li><b>Ago</b> chỉ thời điểm của một sự việc đã kết thúc (đi với quá khứ đơn): <i>Jill arrived a week ago.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Bài 1 — Chọn câu mô tả phù hợp cho mỗi tranh</h2>
+  <p>Sáu bức tranh được mô tả bằng lời như sau:</p>
+  <ul>
+    <li><b>Tranh a:</b> Một cậu bé mặc đồ đá bóng vừa bước vào nhà, bố mẹ và em gái đang nhìn cậu.</li>
+    <li><b>Tranh b:</b> Một văn phòng bừa bộn, đồ đạc đổ vỡ; một người đàn ông đang giơ tay phàn nàn với hai nhân viên.</li>
+    <li><b>Tranh c:</b> Du khách trong bảo tàng đang ngắm bức chân dung vua Henry VIII (vị vua nổi tiếng có sáu người vợ).</li>
+    <li><b>Tranh d:</b> Khu vực “Arrivals” ở sân bay: một phụ nữ kéo va li vừa đến, bắt tay người ra đón.</li>
+    <li><b>Tranh e:</b> Một người đàn ông đứng chờ trước rạp hát, sốt ruột nhìn đồng hồ.</li>
+    <li><b>Tranh f:</b> Trong phòng, chiếc ghế của Wendy trống trơn; hai người bạn đang thắc mắc về cô ấy.</li>
+  </ul>
+  <p>Mỗi tranh có hai câu — chọn câu <b>phù hợp</b> với tranh:</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p><b>a)</b> Tranh cậu bé vừa đi đá bóng về:</p><div class="opts"><button type="button">Did you enjoy the match?</button><button type="button">Have you enjoyed the match?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>b)</b> Tranh văn phòng bừa bộn:</p><div class="opts"><button type="button">What have you been doing?</button><button type="button">What have you done?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>c)</b> Tranh chân dung Henry VIII:</p><div class="opts"><button type="button">He was married six times.</button><button type="button">He has been married six times.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>d)</b> Tranh sân bay Arrivals:</p><div class="opts"><button type="button">How long have you been here?</button><button type="button">How long are you here for?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>e)</b> Tranh người đàn ông chờ trước rạp:</p><div class="opts"><button type="button">I've been waiting for two hours.</button><button type="button">I waited for two hours.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>f)</b> Tranh chiếc ghế trống của Wendy:</p><div class="opts"><button type="button">Where did Wendy go?</button><button type="button">Where has Wendy been?</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 1: <span class="score-num">0</span>/6</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Bài 2 — Gạch chân / chọn dạng động từ phù hợp nhất</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) ______ my bag anywhere? I can't find it.</p><div class="opts"><button type="button">Did you see</button><button type="button">Have you seen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Larry ______ his novel for the last two years.</p><div class="opts"><button type="button">is writing</button><button type="button">has been writing</button><button type="button">has written</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) From the minute he got up this morning Gary ______ silly questions!</p><div class="opts"><button type="button">asked</button><button type="button">has asked</button><button type="button">has been asking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d1) ______ Helen my message…</p><div class="opts"><button type="button">Have you given</button><button type="button">Did you give</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d2) …when you ______ her?</p><div class="opts"><button type="button">have seen</button><button type="button">saw</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) Sorry, could you say that again? I ______ to you.</p><div class="opts"><button type="button">didn't listen</button><button type="button">haven't listened</button><button type="button">haven't been listening</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) The police think that they ______ your wallet, so call this number.</p><div class="opts"><button type="button">found</button><button type="button">have found</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) ______ before? Eric, this is Amanda.</p><div class="opts"><button type="button">Did you two meet</button><button type="button">Have you two met</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) ______ anyone interesting at the reception?</p><div class="opts"><button type="button">Did you meet</button><button type="button">Have you met</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 2: <span class="score-num">0</span>/9</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Bài 3 — Chia động từ trong ngoặc ở dạng phù hợp</h2>
+  <p>Câu a) phần đầu đã làm mẫu: <i>had</i>.</p>
+  <div class="q"><p>a) I'm sorry about not coming last week. I <b>had</b> (have) a cold and so I <input class="blank" data-answers="stayed" data-display="stayed"> (stay) at home.</p></div>
+  <div class="q"><p>b) Wait a minute! I <input class="blank" data-answers="have|have had" data-display="have / have had"> (have) an idea. Let's go and see Roger. We last <input class="blank" data-answers="saw" data-display="saw"> (see) him a long time ago.</p></div>
+  <div class="q"><p>c) It's nice to be back here in London. This is the second time I <input class="blank" data-answers="have come" data-display="have come"> (come) here.</p></div>
+  <div class="q"><p>d) I'm phoning about your bicycle for sale, which I <input class="blank" data-answers="saw" data-display="saw"> (see) in the local paper. <input class="blank" data-answers="Have you sold" data-display="Have you sold"> (you sell) it? Or is it still available?</p></div>
+  <div class="q"><p>e) This place is in a terrible mess! What on earth <input class="blank" data-answers="have you been doing" data-display="have you been doing"> (you do)?</p></div>
+  <div class="q"><p>f) And now for an item of local news. Hampshire police <input class="blank" data-answers="have found" data-display="have found"> (find) the dangerous snake which <input class="blank" data-answers="went" data-display="went"> (go) missing earlier in the week.</p></div>
+  <div class="q"><p>g) This tooth <input class="blank" data-answers="has been killing" data-display="has been killing"> (kill) me lately! So I <input class="blank" data-answers="have made" data-display="have made"> (make) an appointment with the dentist for next Tuesday.</p></div>
+  <div class="q"><p>h) I can't give you the report I <input class="blank" data-answers="promised" data-display="promised"> (promise) for today because I <input class="blank" data-answers="have not finished|haven't finished" data-display="haven't finished"> (not finish) it.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Kiểm tra Bài 3</button><button type="button" onclick="showFill('ex3')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex3')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 3: <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>Bài 4 — Chọn cụm chỉ thời gian phù hợp nhất</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) I haven't seen Gerry ______ a long time. How is he?</p><div class="opts"><button type="button">for</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) It's ages ______ I last went to a football match.</p><div class="opts"><button type="button">ago</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) I've written to Deborah ______.</p><div class="opts"><button type="button">last week</button><button type="button">recently</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) What have you been doing ______?</p><div class="opts"><button type="button">today</button><button type="button">yesterday</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Have you eaten Italian food ______?</p><div class="opts"><button type="button">before</button><button type="button">already</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I've been living here ______ the end of last year.</p><div class="opts"><button type="button">in</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Actually I had dinner with Sue ______.</p><div class="opts"><button type="button">last night</button><button type="button">lately</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I've been trying to get in touch with David ______.</p><div class="opts"><button type="button">for ages</button><button type="button">for the last time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Terry hasn't been to Edinburgh ______ we went there together.</p><div class="opts"><button type="button">since</button><button type="button">when</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) I can't remember ______ I've had this watch.</p><div class="opts"><button type="button">how long</button><button type="button">when</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 4: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Viết lại câu sao cho nghĩa tương tự (dùng từ cho sẵn, 2–5 từ)</h2>
+  <p class="small">Câu a) là câu mẫu đã làm sẵn: <i>Steve has been learning the violin for a month.</i> Điền phần còn thiếu vào ô (gồm cả từ cho sẵn).</p>
+  <div class="q"><p>b) I haven't been to an Indian restaurant for ages. — <b>since</b><br>It's ages <input class="blank wide" data-answers="since I went to" data-display="since I went to"> an Indian restaurant.</p></div>
+  <div class="q"><p>c) When she heard the results, Mary began to feel more confident. — <b>become</b><br>Since hearing the results <input class="blank wide" data-answers="Mary has become" data-display="Mary has become"> more confident.</p></div>
+  <div class="q"><p>d) The last time Nancy came here was in 1986. — <b>since</b><br>Nancy hasn't <input class="blank wide" data-answers="been here since" data-display="been here since"> 1986.</p></div>
+  <div class="q"><p>e) This is my first visit to Japan. — <b>time</b><br>This is the first <input class="blank wide" data-answers="time I have been" data-display="time I have been"> to Japan.</p></div>
+  <div class="q"><p>f) How long have Helen and Robert been married? — <b>get</b><br>When <input class="blank wide" data-answers="did Helen and Robert get" data-display="did Helen and Robert get"> married?</p></div>
+  <div class="q"><p>g) Jack bought those trousers last month, and has been wearing them ever since. — <b>for</b><br>Jack has <input class="blank wide" data-answers="been wearing those trousers for" data-display="been wearing those trousers for"> a month.</p></div>
+  <div class="q"><p>h) It's a long time since our last conversation. — <b>spoken</b><br>We <input class="blank wide" data-answers="have not spoken for a|haven't spoken for a" data-display="haven't spoken for a"> long time.</p></div>
+  <div class="q"><p>i) Thanks, but I had something to eat earlier. — <b>already</b><br>Thanks, but I've <input class="blank wide" data-answers="already had something to" data-display="already had something to"> eat.</p></div>
+  <div class="q"><p>j) This is my first game of water-polo. — <b>played</b><br>I <input class="blank wide" data-answers="have not played water-polo|haven't played water-polo|have never played water-polo" data-display="haven't played water-polo"> before.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Bài 6 — Hiện tại hoàn thành đơn hay tiếp diễn?</h2>
+  <p>Chia động từ trong ngoặc ở <b>present perfect simple</b> hoặc <b>present perfect continuous</b>. Câu a) đã làm mẫu: <i>has eaten</i>.</p>
+  <div class="q"><p>a) Someone <b>has eaten</b> (eat) all the cakes. I'll have to buy some more.</p></div>
+  <div class="q"><p>b) What <input class="blank" data-answers="have you bought" data-display="have you bought"> (you buy) your sister for her birthday?</p></div>
+  <div class="q"><p>c) My throat is really sore. I <input class="blank" data-answers="have been singing" data-display="have been singing"> (sing) all evening.</p></div>
+  <div class="q"><p>d) Brenda <input class="blank" data-answers="has been learning" data-display="has been learning"> (learn) Russian, but she finds it difficult.</p></div>
+  <div class="q"><p>e) How many people <input class="blank" data-answers="have you invited" data-display="have you invited"> (you invite) to your party?</p></div>
+  <div class="q"><p>f) Those two cats <input class="blank" data-answers="have been sitting" data-display="have been sitting"> (sit) on that branch for the last hour.</p></div>
+  <div class="q"><p>g) It <input class="blank" data-answers="has been raining" data-display="has been raining"> (rain) all day! Why can't it stop?</p></div>
+  <div class="q"><p>h) Diana <input class="blank" data-answers="has worn" data-display="has worn"> (wear) twelve different dresses in the past week!</p></div>
+  <div class="q"><p>i) I <input class="blank" data-answers="have done" data-display="have done"> (do) everything you asked. What should I do now?</p></div>
+  <div class="q"><p>j) Graham and Pauline <input class="blank" data-answers="have been trying" data-display="have been trying"> (try) to find a house for ages, but they can't find one they can afford.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 6: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Bài 7 — Đọc &amp; chia động từ: tin dầu khí</h2>
+  <p>Chia động từ ở <b>past simple</b>, <b>present perfect simple</b> hoặc <b>present perfect continuous</b>. Ô (1) đã làm mẫu: <i>has discovered</i>.</p>
+  <div class="q"><p>It was announced in London this morning that the British Oil Corporation (1) <b>has discovered</b> (discover) oil under the sea near the Welsh coast. The company, which (2) <input class="blank" data-answers="has been drilling" data-display="has been drilling"> (drill) for oil in the area since 2001, (3) <input class="blank" data-answers="found" data-display="found"> (find) small amounts of oil near Swansea last month, and since then (4) <input class="blank" data-answers="has discovered" data-display="has discovered"> (discover) larger amounts under the seabed nearby. Last year the government (5) <input class="blank" data-answers="lent" data-display="lent"> (lend) over £50,000,000 to BOC, and (6) <input class="blank" data-answers="gave" data-display="gave"> (give) permission for the company to build an oil refinery and other facilities in South Wales.</p></div>
+  <div class="q"><p>The reaction of local people to today's news (7) <input class="blank" data-answers="has been" data-display="has been"> (be) mixed so far. Local MPs (8) <input class="blank" data-answers="have already welcomed" data-display="have already welcomed"> (already welcome) the news, pointing out that the oil industry will bring badly needed jobs to the area. But local residents are worried about the danger of pollution. 'Nobody (9) <input class="blank" data-answers="has asked" data-display="has asked"> (ask) us yet what we want,' said Ann Griffiths, leader of the Keep Out The Oil Campaign. 'Look what (10) <input class="blank" data-answers="happened" data-display="happened"> (happen) when they (11) <input class="blank" data-answers="found" data-display="found"> (find) oil in Scotland in the 1960s. The oil companies (12) <input class="blank" data-answers="got" data-display="got"> (get) rich, not the local people. BOC (13) <input class="blank" data-answers="has not told|hasn't told" data-display="hasn't told"> (not tell) us the truth about what this is going to mean for our people.' A BOC spokesman later (14) <input class="blank" data-answers="refused" data-display="refused"> (refuse) to comment. Meanwhile local campaigners (15) <input class="blank" data-answers="have asked" data-display="have asked"> (ask) the government to hold an inquiry.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Kiểm tra Bài 7</button><button type="button" onclick="showFill('ex7')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex7')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 7: <span class="fill-score">—</span>/14</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex8">
+  <h2>Bài 8 — Tìm từ thừa trong từng dòng (lá thư của thợ xây)</h2>
+  <p>Đọc lá thư <i>A letter from the builders</i>. Một số dòng <b>đúng</b>, một số dòng có <b>một từ thừa</b> không nên có. Với mỗi dòng: nếu dòng đúng, chọn <b>✓ (dòng đúng)</b>; nếu có từ thừa, chọn đúng từ đó. Hai dòng đầu là mẫu đã làm sẵn (<i>been</i> và <i>✓</i>) — ở đây làm cả 17 dòng.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p><b>Dòng mẫu 1:</b> “Just a quick note to explain what we have been done”</p><div class="opts"><button type="button">done</button><button type="button">been</button><button type="button">have</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng mẫu 2:</b> “so far this month. The work on the kitchen has gone”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">gone</button><button type="button">work</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 1:</b> “well so far, although we haven't already finished”</p><div class="opts"><button type="button">finished</button><button type="button">already</button><button type="button">although</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 2:</b> “knocking down the outside wall yet. So I wrote”</p><div class="opts"><button type="button">wrote</button><button type="button">so</button><button type="button">wall</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 3:</b> “to you last week and have explained that two of”</p><div class="opts"><button type="button">have</button><button type="button">explained</button><button type="button">week</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 4:</b> “my workmen were ill. They have quite recovered”</p><div class="opts"><button type="button">recovered</button><button type="button">✓ (dòng đúng)</button><button type="button">ill</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 5:</b> “now, I am glad to say, and they have came back”</p><div class="opts"><button type="button">came</button><button type="button">back</button><button type="button">have</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 6:</b> “to work yesterday. As the weather has been bad”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">weather</button><button type="button">bad</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 7:</b> “we have been work inside most of the time, and”</p><div class="opts"><button type="button">been</button><button type="button">work</button><button type="button">inside</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 8:</b> “all the painting is now been finished. We have”</p><div class="opts"><button type="button">finished</button><button type="button">have</button><button type="button">been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 9:</b> “also put in a new window in the kitchen, as you”</p><div class="opts"><button type="button">window</button><button type="button">✓ (dòng đúng)</button><button type="button">kitchen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 10:</b> “have instructed in your last letter. As you”</p><div class="opts"><button type="button">have</button><button type="button">instructed</button><button type="button">letter</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 11:</b> “have not been visiting here for two weeks”</p><div class="opts"><button type="button">been</button><button type="button">visiting</button><button type="button">weeks</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 12:</b> “we have not had the chance to discuss the walls.”</p><div class="opts"><button type="button">chance</button><button type="button">walls</button><button type="button">✓ (dòng đúng)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Dòng 13:</b> “When we checked them we have discovered”</p><div class="opts"><button type="button">discovered</button><button type="button">have</button><button type="button">checked</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Dòng 14:</b> “that they are in a dangerous condition. I'll”</p><div class="opts"><button type="button">✓ (dòng đúng)</button><button type="button">dangerous</button><button type="button">condition</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Dòng 15:</b> “let you know what we have do to them.”</p><div class="opts"><button type="button">do</button><button type="button">them</button><button type="button">have</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 8: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>87</b> (Bài 1: 6 · Bài 2: 9 · Bài 3: 13 ô · Bài 4: 10 · Bài 5: 9 ô · Bài 6: 9 ô · Bài 7: 14 ô · Bài 8: 17 dòng).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

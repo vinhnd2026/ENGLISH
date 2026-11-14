@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 3 — Future Time | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-03-Future-Time.html">🇻🇳 ベトナム語版</a>
+  <h1>Grammar 3 — Future Time</h1>
+  <p>未来の表現：will・going to・未来進行形（Future Continuous）・未来完了形（Future Perfect）・未来を表す現在進行形／現在形・when / until / as soon as</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+
+<div class="card">
+  <h2>1. 未来の予測（Prediction）</h2>
+
+  <h3>a) will — 予測</h3>
+  <div class="formula">S + will + V &nbsp;·&nbsp; 会話では短縮形 'll</div>
+  <p>予測を述べるのに使います。<i>I think</i> や <i>perhaps</i> のような意見を表す言葉が前に来ることが多く、時の表現も必要です。</p>
+  <div class="ex"><div class="en">I think it'll rain tomorrow. Perhaps she'll be late.</div><div class="vi">明日は雨が降ると思う。彼女は遅れるかもしれない。</div><div class="tts"></div></div>
+
+  <h3>b) going to — 原因が見える予測</h3>
+  <div class="formula">S + be + going to + V</div>
+  <p>予測にも使います。特に、出来事の<b>原因が目に見える</b>場合によく使われます。客観的な文でもよく使われます。このような例のほとんどは <i>will</i> でも意味は変わりません。</p>
+  <div class="ex"><div class="en">Look out! There's a bus coming! It's going to hit us!</div><div class="vi">危ない！バスが来る！ぶつかる！</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You're going to fall!</div><div class="vi">落ちるよ！</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Liverpool are going to win the Cup.</div><div class="vi">リヴァプールがカップで優勝するだろう。（客観的な文）</div><div class="tts"></div></div>
+
+  <h3>c) 未来進行形（Future Continuous）— 未来のある時点で進行中</h3>
+  <div class="formula">S + will + be + V-ing</div>
+  <p>未来の特定の時点で<b>進行中</b>の状況を表します。</p>
+  <div class="ex"><div class="en">This time next week I expect I'll be living in London. And I'll probably be cycling to work.</div><div class="vi">来週の今ごろはロンドンに住んでいるはずだ。そしておそらく自転車で通勤しているだろう。</div><div class="tts"></div></div>
+
+  <h3>d) 未来完了形（Future Perfect）— 未来の時点から振り返る</h3>
+  <div class="formula">S + will + have + V₃ (past participle)</div>
+  <p>未来のある時点から振り返って、その時点までに<b>完了している</b>ことを表します。その未来の時点では現在完了形で言えます：<i>The film has started.</i></p>
+  <div class="ex"><div class="en">By the time we get there, the film will have started.</div><div class="vi">私たちが着くころには、映画は始まっているだろう。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 意図と決定（Intention）</h2>
+
+  <h3>a) going to — すでに決めた意図</h3>
+  <p>現在の意図や計画を表します。<b>すでに決めている</b>ことです。</p>
+  <div class="ex"><div class="en">I'm going to fix the television tomorrow.</div><div class="vi">明日テレビを直すつもりだ。（すでに決めている）</div><div class="tts"></div></div>
+
+  <h3>b) will — その場の決定</h3>
+  <p>話している<b>その瞬間に決めた</b>ことに使います。</p>
+  <div class="ex"><div class="en">I know, I'll get him a wallet for his birthday.</div><div class="vi">そうだ、彼の誕生日に財布を買おう。（その場の決定）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. 確定した予定と時刻表（Fixed arrangements &amp; timetables）</h2>
+
+  <h3>a) 現在進行形（Present Continuous）— 確定した予定</h3>
+  <div class="formula">S + be + V-ing （未来の意味で）</div>
+  <p><b>確定した</b>予定を表します。手帳に書かれた約束や社交的な予定が多いです。社交的な予定を尋ねるときにも使います。</p>
+  <div class="ex"><div class="en">Sorry, I can't help you, I'm leaving in the morning.</div><div class="vi">ごめん、手伝えません。朝出発するんです。（予定が確定している）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Are you doing anything this evening?</div><div class="vi">今晩、何か予定はありますか？</div><div class="tts"></div></div>
+
+  <h3>b) 現在形（Present Simple）— 時刻表・プログラム</h3>
+  <p><b>時刻表、プログラム、カレンダー</b>に基づく未来の出来事を表します。</p>
+  <div class="ex"><div class="en">My train leaves at 11.30 tomorrow morning.</div><div class="vi">私の列車は明日の午前11時30分に出発します。（時刻表通り）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. when, until, as soon as の後</h2>
+  <p>時の表現 <i>when, until, as soon as</i> の後は、未来のことでも<b>現在の形</b>（現在形）を使い、その節では <i>will</i> を使いません。完了を強調したいときは現在完了形（Present Perfect）を使います。</p>
+  <div class="formula">I'll … + when / until / as soon as + S + V（現在形） / have + V₃</div>
+  <div class="ex"><div class="en">I'll wait for you here until you get back.</div><div class="vi">あなたが戻るまでここで待っています。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll tell you the news when I see you.</div><div class="vi">会ったときにその知らせを伝えます。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll wait here until you have finished. — Call me when you have finished.</div><div class="vi">終わるまでここで待っています。— 終わったら電話して。（現在完了形で完了を強調）</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>will</b> と <b>going to</b> はどちらも予測に使います。<i>going to</i> は、起こりそうなことの<b>原因が見える</b>ときに特によく使われます（<i>You're going to fall!</i>）。<i>will</i> には <i>I think / perhaps</i> や時の表現が伴うことが多いです。</li>
+    <li><b>going to</b> ＝<b>前もって決めた</b>意図・計画、<b>will</b> ＝<b>話すその瞬間の</b>決定。</li>
+    <li><b>未来進行形（Future Continuous）</b>（<i>will be + V-ing</i>）：未来のある時点で進行中の状況。<b>未来完了形（Future Perfect）</b>（<i>will have + V₃</i>）：未来のある時点までに完了していること。</li>
+    <li><b>現在進行形（Present Continuous）</b>は確定した予定に使い、社交的な予定を尋ねるときにも使います（<i>Are you doing anything this evening?</i>）。</li>
+    <li><b>現在形（Present Simple）</b>は時刻表やプログラムに基づく出来事に使います（<i>My train leaves at 11.30</i>）。</li>
+    <li>未来について <i>when, until, as soon as</i> の後では、<i>will</i> ではなく<b>現在形（Present Simple）</b>か<b>現在完了形（Present Perfect）</b>（完了の強調）を使います：<i>I'll tell you the news when I see you. Call me when you have finished.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 最も適切な未来の形を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Why ______ a new mountain bike?</p><div class="opts"><button type="button">are you going to buy</button><button type="button">will you buy</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Don't phone between 8.00 and 9.00. ______ then.</p><div class="opts"><button type="button">I'll study</button><button type="button">I'll be studying</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Look out! That tree ______ fall!</p><div class="opts"><button type="button">will</button><button type="button">is going to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Let me know as soon as Louise ______ there.</p><div class="opts"><button type="button">will get</button><button type="button">gets</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Great news! Jean and Chris ______ to stay with us.</p><div class="opts"><button type="button">will come</button><button type="button">are coming</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) According to this timetable, the bus ______ at 6.00.</p><div class="opts"><button type="button">is going to arrive</button><button type="button">arrives</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Can you call me at 7.00, because ______ tomorrow.</p><div class="opts"><button type="button">I'll leave</button><button type="button">I'm leaving</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) If you arrive late at the sale, the best things ______.</p><div class="opts"><button type="button">will go</button><button type="button">will have gone</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 動詞を適切な未来の形にしよう</h2>
+  <p>正解が複数ある場合があります。a) は例として解かれています：<i>am visiting</i>。</p>
+  <div class="q"><p>a) I can't see you on Thursday afternoon. I <b>am visiting</b> (visit) our Birmingham branch.</p></div>
+  <div class="q"><p>b) George <input class="blank" data-answers="will not be|won't be" data-display="won't be"> (not be) back until six. Can I take a message?</p></div>
+  <div class="q"><p>c) What <input class="blank" data-answers="are you going to buy" data-display="are you going to buy"> (you buy) with the money you won in the lottery?</p></div>
+  <div class="q"><p>d) I don't think you <input class="blank" data-answers="will have" data-display="will have"> (have) any problems at the airport.</p></div>
+  <div class="q"><p>e) <input class="blank" data-answers="Are you taking|Are you going to take" data-display="Are you taking"> (you take) your dog with you to Scotland?</p></div>
+  <div class="q"><p>f) All the hotels are full. Where <input class="blank" data-answers="are we going to spend" data-display="are we going to spend"> (we spend) the night?</p></div>
+  <div class="q"><p>g) You'd better not come in July. My mother <input class="blank" data-answers="will be staying|is staying" data-display="will be staying"> (stay) with me then.</p></div>
+  <div class="q"><p>h) What time <input class="blank" data-answers="does your plane leave" data-display="does your plane leave"> (your plane leave)?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 動詞を適切な未来の形にしよう（続き）</h2>
+  <p>a) は例として解かれています：<i>will have stopped</i>。</p>
+  <div class="q"><p>a) By the time we reach home, the rain <b>will have stopped</b> (stop).</p></div>
+  <div class="q"><p>b) This time next week I <input class="blank" data-answers="will be lying" data-display="will be lying"> (lie) on the beach in Spain.</p></div>
+  <div class="q"><p>c) In ten years' time I <input class="blank" data-answers="will be working" data-display="will be working"> (work) for a different company.</p></div>
+  <div class="q"><p>d) If we don't get there by 6.00, Jack <input class="blank" data-answers="will have left" data-display="will have left"> (leave).</p></div>
+  <div class="q"><p>e) In July they <input class="blank" data-answers="will have been married" data-display="will have been married"> (be married) for twenty years.</p></div>
+  <div class="q"><p>f) In the year 2500 a lot of people <input class="blank" data-answers="will be living|will live" data-display="will be living"> (live) on the Moon.</p></div>
+  <div class="q"><p>g) When you get to the station, I <input class="blank" data-answers="will be waiting" data-display="will be waiting"> (wait) for you outside.</p></div>
+  <div class="q"><p>h) Don't worry! The plane <input class="blank" data-answers="will land|is going to land|will be landing" data-display="will land"> (land) in a moment.</p></div>
+  <div class="q"><p>i) By the time you come home, I <input class="blank" data-answers="will have finished" data-display="will have finished"> (finish) the decorating.</p></div>
+  <div class="q"><p>j) Come round between eight and nine. We <input class="blank" data-answers="will be watching" data-display="will be watching"> (watch) the match on television then.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 読んで動詞を活用させよう：Computafuture</h2>
+  <p>(1) は例として解かれています：<i>you will be doing</i>。</p>
+  <div class="q"><p>Have you ever wondered what exactly (1) <b>you will be doing</b> (you do) in ten years time? Well, according to computer expert Tom Vincent, computers (2) <input class="blank" data-answers="will soon be able" data-display="will soon be able"> (soon be able) to make accurate predictions about the future. Professor Vincent, from Cambridge, (3) <input class="blank" data-answers="is holding" data-display="is holding"> (hold) a press conference next week to describe the computer which he calls 'Computafuture'. 'This computer can tell us what life (4) <input class="blank" data-answers="will be" data-display="will be"> (be) like, based on data describing past events,' explains Professor Vincent. For example, Computafuture can predict how many people (5) <input class="blank" data-answers="will live|will be living" data-display="will live"> (live) in a particular area, or whether there (6) <input class="blank" data-answers="will be" data-display="will be"> (be) a lot of rain during a particular period. Professor Vincent also believes that by the year 2050, computers (7) <input class="blank" data-answers="will have replaced" data-display="will have replaced"> (replace) teachers, and (8) <input class="blank" data-answers="will also be doing|will also do" data-display="will also be doing"> (also do) most of the jobs now being done by the police. 'Computers are becoming more intelligent all the time,' says Professor Vincent. 'Soon they (9) <input class="blank" data-answers="will be directing" data-display="will be directing"> (direct) traffic and (10) <input class="blank" data-answers="will be teaching|will teach" data-display="will be teaching"> (teach) our children. And telling us about the future.'</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 動詞を活用させよう：未来の時の節</h2>
+  <p>すべての文が未来について述べています。a) の最初の動詞は例として解かれています：<i>see</i>。</p>
+  <div class="q"><p>a) When I <b>see</b> (see) you tomorrow, I <input class="blank" data-answers="will tell" data-display="will tell"> (tell) you my news.</p></div>
+  <div class="q"><p>b) As soon as we <input class="blank" data-answers="get" data-display="get"> (get) there, we <input class="blank" data-answers="will phone" data-display="will phone"> (phone) for a taxi.</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="will go" data-display="will go"> (go) to the library before I <input class="blank" data-answers="do" data-display="do"> (do) the shopping.</p></div>
+  <div class="q"><p>d) We <input class="blank" data-answers="will wait" data-display="will wait"> (wait) here until the rain <input class="blank" data-answers="stops|has stopped" data-display="stops"> (stop).</p></div>
+  <div class="q"><p>e) I <input class="blank" data-answers="will get" data-display="will get"> (get) £50 from the bank when it <input class="blank" data-answers="opens" data-display="opens"> (open).</p></div>
+  <div class="q"><p>f) After you <input class="blank" data-answers="take|have taken" data-display="take"> (take) the medicine, you <input class="blank" data-answers="will feel" data-display="will feel"> (feel) better.</p></div>
+  <div class="q"><p>g) You have to stay until you <input class="blank" data-answers="finish|have finished" data-display="finish"> (finish) your work.</p></div>
+  <div class="q"><p>h) I <input class="blank" data-answers="will let" data-display="will let"> (let) you know the minute I <input class="blank" data-answers="hear" data-display="hear"> (hear) the results.</p></div>
+  <div class="q"><p>i) Before we <input class="blank" data-answers="paint" data-display="paint"> (paint) the wall, we <input class="blank" data-answers="will have" data-display="will have"> (have) a cup of tea.</p></div>
+  <div class="q"><p>j) We <input class="blank" data-answers="will climb" data-display="will climb"> (climb) over the wall as soon as it <input class="blank" data-answers="gets|has got" data-display="gets"> (get) dark.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/18</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>問題6 — 各行の余分な単語を見つけよう（Keeping a diary）</h2>
+  <p>文章 <i>Keeping a diary</i> を読んでください。<b>正しい</b>行もあれば、<b>余分な単語が1つ</b>入っている行もあります。各行について、正しければ <b>✓（正しい行）</b> を、余分な単語があればその単語を選んでください。最初の2行は解かれている例です（<i>will</i> と <i>✓</i>）— ここでは17行すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p><b>例の行1：</b> “Are you one of those people who will know”</p><div class="opts"><button type="button">know</button><button type="button">will</button><button type="button">people</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>例の行2：</b> “exactly what they will be doing every day next”</p><div class="opts"><button type="button">doing</button><button type="button">✓（正しい行）</button><button type="button">every</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>1行目：</b> “week? When the different days will arrive,”</p><div class="opts"><button type="button">arrive</button><button type="button">will</button><button type="button">days</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>2行目：</b> “will you have get out your diary, or are”</p><div class="opts"><button type="button">have</button><button type="button">diary</button><button type="button">get</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>3行目：</b> “you the kind of person who will just guess?”</p><div class="opts"><button type="button">guess</button><button type="button">person</button><button type="button">✓（正しい行）</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>4行目：</b> “Some people will write their appointments”</p><div class="opts"><button type="button">write</button><button type="button">will</button><button type="button">people</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>5行目：</b> “in a diary, but others just hope that they will”</p><div class="opts"><button type="button">✓（正しい行）</button><button type="button">diary</button><button type="button">hope</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>6行目：</b> “remember. For example, tonight I'm be going”</p><div class="opts"><button type="button">going</button><button type="button">be</button><button type="button">tonight</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>7行目：</b> “to the cinema, but perhaps I'll not forget all”</p><div class="opts"><button type="button">forget</button><button type="button">cinema</button><button type="button">not</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>8行目：</b> “about it. You see, I will never keep a diary.”</p><div class="opts"><button type="button">never</button><button type="button">will</button><button type="button">diary</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>9行目：</b> “I try not to forget my appointments, but I know”</p><div class="opts"><button type="button">appointments</button><button type="button">✓（正しい行）</button><button type="button">forget</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>10行目：</b> “that I will usually do. I just don't like planning”</p><div class="opts"><button type="button">usually</button><button type="button">will</button><button type="button">planning</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>11行目：</b> “my future. I know that one day I'm going to”</p><div class="opts"><button type="button">future</button><button type="button">going</button><button type="button">✓（正しい行）</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>12行目：</b> “make a serious mistake. I'll be miss an important”</p><div class="opts"><button type="button">be</button><button type="button">miss</button><button type="button">mistake</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>13行目：</b> “examination, or by the time I remember it and”</p><div class="opts"><button type="button">✓（正しい行）</button><button type="button">time</button><button type="button">examination</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>14行目：</b> “get there, it will have been finished. Perhaps”</p><div class="opts"><button type="button">have</button><button type="button">finished</button><button type="button">been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>15行目：</b> “that will be when I have finally buy a diary.”</p><div class="opts"><button type="button">buy</button><button type="button">have</button><button type="button">finally</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題6の点数： <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>68</b> 問です（問題1：8 · 問題2：7か所 · 問題3：9か所 · 問題4：9か所 · 問題5：18か所 · 問題6：17行）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      data.ipa = e.phonetic || (e.phonetics ? (e.phonetics.map(function(p){ return p.text; }).filter(Boolean)[0] || '') : '');
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  if(d.ipa) h += '<span class="dp">' + esc(d.ipa.replace(/ɛ/g, 'e')) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
