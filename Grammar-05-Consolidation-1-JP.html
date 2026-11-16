@@ -453,17 +453,17 @@ function pronIPA(arpabet, accent){
       case 'AE': return 'æ';
       case 'AH': return stress === '0' ? 'ə' : 'ʌ';
       case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
-      case 'AW': return 'aʊ';
-      case 'AY': return 'aɪ';
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
       case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
       case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
       case 'EY': return 'eɪ';
       case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
-      case 'IY': return stress === '0' ? 'i' : 'iː';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
       case 'OW': return uk ? 'əʊ' : 'oʊ';
       case 'OY': return 'ɔɪ';
       case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
-      case 'UW': return 'uː';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
     }
     return '';
   }
