@@ -29,7 +29,7 @@ Tổng lộ trình: **56 unit** (35 Grammar + 21 Vocabulary), xem đầy đủ �
 
 ## Level C1 — Advanced
 
-Thư mục [`advanced/`](advanced/): **50 unit** (Grammar 1–30 + Vocabulary 1–20) trình độ C1, cùng cấu trúc 3 bản VN · JP · EN, đang bổ sung dần. Bài đã có: Advanced Grammar 1 — Present time.
+Thư mục [`advanced/`](advanced/): **50 unit** (Grammar 1–30 + Vocabulary 1–20) trình độ C1, cùng cấu trúc 3 bản VN · JP · EN — ✅ **đã có đủ 50/50 bài**.
 
 ## Ghi chú
 
