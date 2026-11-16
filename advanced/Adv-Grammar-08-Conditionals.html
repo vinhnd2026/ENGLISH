@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 8 — Conditionals</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Mục lục</a> &nbsp;·&nbsp; <a href="Adv-Grammar-08-Conditionals-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-08-Conditionals-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 8 — Conditionals</h1>
+  <p>Câu điều kiện (Conditionals): Các mẫu cơ bản · Biến thể của mệnh đề if · Các cách diễn đạt điều kiện khác</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Các mẫu câu điều kiện cơ bản</h2>
+
+  <h3>a) Luôn đúng / thói quen — present + present, past + past</h3>
+  <div class="formula">if + hiện tại, hiện tại &nbsp;·&nbsp; if + quá khứ, quá khứ</div>
+  <p>Khi điều kiện và kết quả là việc <b>luôn đúng</b> hoặc một <b>thói quen</b>, cả hai vế dùng cùng một thì: hiện tại với hiện tại cho hiện tại, quá khứ với quá khứ cho quá khứ.</p>
+  <div class="ex"><div class="en">If I work late, I get tired.</div><div class="vi">Nếu tôi làm việc muộn, tôi sẽ mệt. (luôn đúng)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If the water is boiling, it means the food is nearly ready.</div><div class="vi">Nếu nước đang sôi thì nghĩa là món ăn sắp chín.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">We went home early if it was foggy.</div><div class="vi">Trời có sương mù là chúng tôi về nhà sớm. (thói quen trong quá khứ)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If it was snowing, we stayed at home.</div><div class="vi">Nếu trời có tuyết rơi, chúng tôi ở nhà.</div><div class="tts"></div></div>
+
+  <h3>b) Tình huống thật có thể xảy ra — present + future</h3>
+  <div class="formula">if + hiện tại, will / going to / câu mệnh lệnh</div>
+  <p>Khi ta cho rằng kết quả <b>thật sự có thể xảy ra</b>, vế chính dùng thì tương lai (<i>will</i>, <i>going to</i>) hoặc câu mệnh lệnh.</p>
+  <div class="ex"><div class="en">If you keep driving like that, you're going to have an accident.</div><div class="vi">Nếu anh cứ lái xe như thế, anh sẽ gặp tai nạn đấy.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you see Mark, tell him I'll ring him tomorrow.</div><div class="vi">Nếu gặp Mark, bảo anh ấy là mai tôi sẽ gọi. (câu mệnh lệnh)</div><div class="tts"></div></div>
+
+  <h3>c) Tình huống giả định — past + would</h3>
+  <div class="formula">if + quá khứ đơn, would + V</div>
+  <p>Khi tình huống là <b>giả định, không có thật</b> ở hiện tại hoặc tương lai, vế if dùng quá khứ đơn và vế chính dùng <i>would</i>. Với động từ <i>be</i>, dạng chuẩn là <i>were</i> cho mọi ngôi (trong lời nói hằng ngày vẫn nghe <i>was</i>). Ở ngôi thứ nhất, có thể dùng <i>should</i> thay cho <i>would</i>.</p>
+  <div class="ex"><div class="en">If I knew the answer, I'd tell you.</div><div class="vi">Nếu tôi biết đáp án, tôi đã nói cho bạn rồi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If I was having a party, I wouldn't invite Marcia.</div><div class="vi">Nếu tôi mở tiệc, tôi sẽ không mời Marcia.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If I left home, I think I should be lonely.</div><div class="vi">Nếu tôi rời nhà, tôi nghĩ mình sẽ cô đơn. (should thay would ở ngôi thứ nhất)</div><div class="tts"></div></div>
+
+  <h3>d) Giả định về quá khứ — past perfect + would have</h3>
+  <div class="formula">if + quá khứ hoàn thành, would have + V3</div>
+  <p>Để nói về sự việc <b>đã qua</b> nhưng ta hình dung kết quả khác đi, vế if lùi về quá khứ hoàn thành và vế chính dùng <i>would have</i>.</p>
+  <div class="ex"><div class="en">If I had known you were coming, I would have met you at the station.</div><div class="vi">Nếu biết bạn đến, tôi đã ra ga đón.</div><div class="tts"></div></div>
+
+  <h3>e) Dùng với động từ khuyết thiếu (modals)</h3>
+  <div class="formula">if + hiện tại, should / can &nbsp;·&nbsp; if + quá khứ, could &nbsp;·&nbsp; if + quá khứ hoàn thành, might have</div>
+  <p>Vế chính có thể chứa các động từ khuyết thiếu khác: <i>should / can</i> cho tình huống thật ở hiện tại, <i>could</i> cho tình huống giả định, và <i>might have</i> cho giả định về quá khứ.</p>
+  <div class="ex"><div class="en">If you get wet, you should change your clothes immediately.</div><div class="vi">Nếu bị ướt, bạn nên thay đồ ngay.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you come early, we can discuss the problem together.</div><div class="vi">Nếu bạn đến sớm, chúng ta có thể bàn vấn đề cùng nhau.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If I had the money, I could help you.</div><div class="vi">Nếu có tiền, tôi có thể giúp bạn.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you hadn't reminded me, I might have forgotten.</div><div class="vi">Nếu bạn không nhắc, có lẽ tôi đã quên.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Các biến thể của mệnh đề if</h2>
+
+  <h3>a) If only — nhấn mạnh điều ước</h3>
+  <p>Thêm <i>only</i> sau <i>if</i> để <b>nhấn mạnh</b> tình huống giả định; với sự việc quá khứ, nó còn gợi sự tiếc nuối. Vế chính thường được lược bỏ.</p>
+  <div class="ex"><div class="en">If only I had enough time!</div><div class="vi">Giá mà tôi có đủ thời gian!</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If only I hadn't drunk too much, this wouldn't have happened!</div><div class="vi">Giá mà tôi đã không uống quá nhiều, chuyện này đã chẳng xảy ra!</div><div class="tts"></div></div>
+
+  <h3>b) Unless và các từ thay cho if</h3>
+  <p><i>Unless</i> nghĩa là “chỉ trừ khi / nếu … không”. Khi một việc phụ thuộc vào một điều kiện khác, <i>if</i> có thể được thay bằng <i>as long as / so long as</i>, <i>provided (that)</i> hoặc <i>only if</i>. Còn <i>even if</i> diễn tả việc vẫn xảy ra <b>dù điều kiện thế nào</b>.</p>
+  <div class="ex"><div class="en">I'll go ahead and get the tickets unless you call me this afternoon.</div><div class="vi">Tôi sẽ cứ mua vé, trừ khi chiều nay bạn gọi cho tôi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll do what you say provided the police are not informed.</div><div class="vi">Tôi sẽ làm như anh nói, với điều kiện cảnh sát không được báo.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Even if it rains, we'll still go for a picnic.</div><div class="vi">Dù trời mưa, chúng ta vẫn đi dã ngoại.</div><div class="tts"></div></div>
+
+  <h3>c) Điều kiện quá khứ, kết quả ở hiện tại (câu điều kiện hỗn hợp)</h3>
+  <div class="formula">if + quá khứ hoàn thành, would + V (không có have)</div>
+  <p>Nếu điều kiện thuộc về quá khứ nhưng kết quả kéo dài đến <b>hiện tại</b>, ta kết hợp quá khứ hoàn thành ở vế if với <i>would</i> + động từ nguyên thể ở vế chính.</p>
+  <div class="ex"><div class="en">If Jim hadn't missed the plane, he would be here by now.</div><div class="vi">Nếu Jim không lỡ chuyến bay, giờ này anh ấy đã ở đây.</div><div class="tts"></div></div>
+
+  <h3>d) Should, were to, happen to sau if</h3>
+  <p>Sau <i>if</i>, <i>should</i> và <i>were to</i> khiến sự việc nghe <b>ít có khả năng xảy ra hơn</b>, còn <i>happen to</i> nhấn mạnh yếu tố <b>tình cờ</b> (thường đi cùng <i>should</i>).</p>
+  <div class="ex"><div class="en">If you should see Ann, could you ask her to call me?</div><div class="vi">Nếu (lỡ) bạn có gặp Ann, bạn nhắn cô ấy gọi cho tôi được không?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If I were to ask you to marry me, what would you say?</div><div class="vi">Nếu tôi ngỏ lời cầu hôn bạn, bạn sẽ nói gì?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you happen to see Helen, could you ask her to call me?</div><div class="vi">Nếu tình cờ gặp Helen, bạn nhắn cô ấy gọi cho tôi nhé?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you should happen to be passing, drop in for a cup of tea.</div><div class="vi">Nếu có dịp đi ngang qua, ghé vào uống chén trà nhé.</div><div class="tts"></div></div>
+
+  <h3>e) If it were not for / If it hadn't been for</h3>
+  <p>Hai cấu trúc này nói một việc <b>phụ thuộc</b> vào một người/việc khác như thế nào — tương đương “nếu không có / nếu không nhờ …”.</p>
+  <div class="ex"><div class="en">If it weren't for Jim, this company would be in a mess.</div><div class="vi">Nếu không có Jim, công ty này đã rối tung.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If it hadn't been for their goalkeeper, United would have lost.</div><div class="vi">Nếu không nhờ thủ môn của họ, United đã thua.</div><div class="tts"></div></div>
+
+  <h3>f) Will và would: lịch sự và nhấn mạnh</h3>
+  <p><i>Will / would</i> sau <i>if</i> có thể là cách nói <b>lịch sự</b>; riêng <i>will</i> còn mang nghĩa nhấn mạnh “cứ khăng khăng làm”.</p>
+  <div class="ex"><div class="en">If you will wait here, I'll see if Mrs Green is free.</div><div class="vi">Nếu ông/bà vui lòng đợi ở đây, tôi sẽ xem bà Green có rảnh không. (lịch sự)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you will stay out late, no wonder you are tired!</div><div class="vi">Cứ khăng khăng thức khuya đi chơi, bảo sao bạn không mệt! (khăng khăng)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Các cách khác để diễn đạt điều kiện</h2>
+
+  <h3>a) Supposing và otherwise</h3>
+  <p><i>Supposing / suppose</i> thay được cho <i>if</i>, chủ yếu trong văn nói. <i>Otherwise</i> nghĩa là “nếu không thì”, đặt ở đầu hoặc cuối câu.</p>
+  <div class="ex"><div class="en">Supposing you won the football pools, what would you do?</div><div class="vi">Giả sử bạn trúng cá cược bóng đá, bạn sẽ làm gì?</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Thanks for your directions to the house. We wouldn't have found it otherwise.</div><div class="vi">Cảm ơn bạn đã chỉ đường đến nhà. Nếu không, chúng tôi đã chẳng tìm thấy.</div><div class="tts"></div></div>
+
+  <h3>b) But for + danh từ</h3>
+  <p><i>But for</i> thay cho <i>if … not</i> trong văn trang trọng, và bắt buộc phải đi với một <b>danh từ / cụm danh từ</b>.</p>
+  <div class="ex"><div class="en">But for your help, we would have been in trouble.</div><div class="vi">Nếu không nhờ bạn giúp, chúng tôi đã gặp rắc rối.</div><div class="tts"></div></div>
+
+  <h3>c) If so / If not</h3>
+  <p><i>If so</i> (nếu vậy) và <i>if not</i> (nếu không) thay cho cả một ý đã hiểu ngầm ở câu trước.</p>
+  <div class="ex"><div class="en">There is a possibility that Jack will be late. If so, I will take his place.</div><div class="vi">Có khả năng Jack sẽ đến muộn. Nếu vậy, tôi sẽ thay chỗ anh ấy.</div><div class="tts"></div></div>
+
+  <h3>d) Lược bỏ if trong văn nói: câu mệnh lệnh + and</h3>
+  <p>Trong lời nói hằng ngày, một câu mệnh lệnh có thể thay cho mệnh đề <i>if</i>.</p>
+  <div class="ex"><div class="en">Sit down, and I'll make us a cup of tea.</div><div class="vi">Ngồi xuống đi, tôi sẽ pha trà cho chúng ta. (= Nếu bạn ngồi xuống …)</div><div class="tts"></div></div>
+
+  <h3>e) If + tính từ: lược bỏ động từ be</h3>
+  <p>Trong các cụm như <i>if it is necessary / possible</i>, có thể bỏ động từ <i>be</i>.</p>
+  <div class="ex"><div class="en">If interested, apply within.</div><div class="vi">Nếu quan tâm, xin nộp đơn bên trong.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If necessary, take a taxi.</div><div class="vi">Nếu cần, hãy bắt taxi.</div><div class="tts"></div></div>
+
+  <h3>f) If với nghĩa “mặc dù”</h3>
+  <p>Trong văn trang trọng, <i>if</i> có thể mang nghĩa “mặc dù”, thường ở dạng <i>if</i> + tính từ.</p>
+  <div class="ex"><div class="en">The room was well-furnished, if a little badly decorated.</div><div class="vi">Căn phòng được trang bị đầy đủ, dù trang trí hơi kém.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li>Bốn mẫu cơ bản: <b>present + present</b> (luôn đúng/thói quen), <b>present + will</b> (tình huống thật), <b>past + would</b> (giả định), <b>past perfect + would have</b> (giả định về quá khứ).</li>
+    <li>Trong câu giả định, <i>be</i> thường dùng <i>were</i> cho mọi ngôi; ngôi thứ nhất có thể dùng <i>should</i> thay <i>would</i>.</li>
+    <li>Điều kiện ở quá khứ có thể cho kết quả ở hiện tại: <b>past perfect + would</b> (câu điều kiện hỗn hợp).</li>
+    <li><i>Unless</i> = <i>if … not</i>; <i>provided (that)</i>, <i>as/so long as</i>, <i>only if</i> cũng thay được <i>if</i>; <i>even if</i> = “dù … đi nữa”.</li>
+    <li><i>Should</i>, <i>were to</i> và <i>happen to</i> sau <i>if</i> làm khả năng xảy ra nghe xa vời / tình cờ hơn.</li>
+    <li><i>If it were not for / if it hadn't been for</i> và <i>but for</i> + danh từ = “nếu không có / nếu không nhờ …”.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Chia động từ trong ngoặc</h2>
+  <p>Điền dạng đúng của động từ trong ngoặc vào mỗi chỗ trống.</p>
+  <div class="q"><p>a) Now we're lost! If you <input class="blank" data-answers="had written down" data-display="had written down"> (write down) Mary's directions, this <input class="blank" data-answers="would not have happened|wouldn't have happened" data-display="would not have happened"> (not/happen).</p></div>
+  <div class="q"><p>b) Why don't we emigrate? If we <input class="blank" data-answers="lived" data-display="lived"> (live) in Australia, at least the weather <input class="blank" data-answers="would be" data-display="would be"> (be) better!</p></div>
+  <div class="q"><p>c) I'm afraid that Smith is a hardened criminal. If we <input class="blank" data-answers="do not punish" data-display="do not punish"> (not/punish) him this time, he <input class="blank" data-answers="will only commit" data-display="will only commit"> (only/commit) more crimes.</p></div>
+  <div class="q"><p>d) Thanks to Dr Jones, I'm still alive! If it <input class="blank" data-answers="had not been|were not|was not|hadn't been" data-display="had not been"> (not/be) for her, I <input class="blank" data-answers="would be" data-display="would be"> (be) dead for certain.</p></div>
+  <div class="q"><p>e) I'm sorry I can't lend you any money. You know that if I <input class="blank" data-answers="had" data-display="had"> (have) it, I <input class="blank" data-answers="would lend" data-display="would lend"> (lend) it to you.</p></div>
+  <div class="q"><p>f) Don't be afraid. If you <input class="blank" data-answers="touch" data-display="touch"> (touch) the dog, it <input class="blank" data-answers="won't bite|will not bite" data-display="won't bite"> (not/bite).</p></div>
+  <div class="q"><p>g) In those days, if you <input class="blank" data-answers="had" data-display="had"> (have) a job, you <input class="blank" data-answers="were" data-display="were"> (be) lucky.</p></div>
+  <div class="q"><p>h) It's always the same! If I <input class="blank" data-answers="decide" data-display="decide"> (decide) to leave the office early, my boss <input class="blank" data-answers="calls" data-display="calls"> (call) me after I've left!</p></div>
+  <div class="q"><p>i) What a terrible thing to happen! Just think, if we <input class="blank" data-answers="had not missed|hadn't missed" data-display="had not missed"> (not/miss) the plane, we <input class="blank" data-answers="would have been killed" data-display="would have been killed"> (kill) in the crash.</p></div>
+  <div class="q"><p>j) Did you enjoy your meal? If you <input class="blank" data-answers="have finished" data-display="have finished"> (finish) eating, I <input class="blank" data-answers="will clear away" data-display="will clear away"> (clear away) the plates.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Bài 2 — Câu có đúng ngữ pháp không?</h2>
+  <p>Quyết định xem mỗi câu dưới đây có dùng được (đúng ngữ pháp) hay không.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) If you haven't received a letter yet, you haven't got the job.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) If it isn't for David, we are missing the bus.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) If it's raining, we go to the pub on the corner instead.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) If you didn't lend us the money, we would have gone to the bank.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) If you should happen to change your mind, drop me a line.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) If it wasn't for the rain, we would have been home by now.</p><div class="opts"><button type="button">Not possible</button><button type="button">Possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) If you will drive so fast, no wonder the police keep stopping you.</p><div class="opts"><button type="button">Not possible</button><button type="button">Possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) If I knew you were coming, I would have met you at the airport.</p><div class="opts"><button type="button">Not possible</button><button type="button">Possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) But for you helped us, we would have taken much longer.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) If Jack joins the team, I'm leaving.</p><div class="opts"><button type="button">Possible</button><button type="button">Not possible</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 2: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Bài 3 — Chọn phần kết đúng</h2>
+  <p>Chọn phương án (a–c) kết thúc câu một cách đúng ngữ pháp và hợp nghĩa.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>1) If you'd told me you were coming ______</p><div class="opts"><button type="button">a) I can get some food in.</button><button type="button">b) I'd have found us something to eat.</button><button type="button">c) I made a lovely dish.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>2) If you're too ill to come ______</p><div class="opts"><button type="button">a) I'll come over and see you.</button><button type="button">b) I wouldn't have done all this for you.</button><button type="button">c) I asked someone else.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>3) If I'd known you weren't coming ______</p><div class="opts"><button type="button">a) I wouldn't be very upset.</button><button type="button">b) I would like to know why.</button><button type="button">c) I wouldn't have gone to so much trouble.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>4) If you're not coming ______</p><div class="opts"><button type="button">a) perhaps you'd have the courtesy to tell me.</button><button type="button">b) we'd never have met.</button><button type="button">c) you'd be so lucky.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>5) If only you'd come ______</p><div class="opts"><button type="button">a) I'll be the happiest girl alive.</button><button type="button">b) I'd have had a lovely time.</button><button type="button">c) I would look forward to it.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>6) If you do decide to come ______</p><div class="opts"><button type="button">a) the party's always a success.</button><button type="button">b) I won't be coming either.</button><button type="button">c) let me know.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>7) If you really don't want to come ______</p><div class="opts"><button type="button">a) I'll understand.</button><button type="button">b) I can't be sure.</button><button type="button">c) tell me tomorrow.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 3: <span class="score-num">0</span>/7</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Hoàn thành câu bằng cụm chứa động từ cho sẵn</h2>
+  <p>Hoàn thành mỗi câu bằng một cụm có chứa động từ trong ngoặc ở dạng thích hợp.</p>
+  <div class="q"><p>a) If I were <input class="blank" data-answers="to say I" data-display="to say I"> (say) loved you, what would you do?</p></div>
+  <div class="q"><p>b) If it <input class="blank" data-answers="had not rained|had not been raining|hadn't rained" data-display="had not rained"> (rain) I would have gone out for a walk.</p></div>
+  <div class="q"><p>c) If you'd told me it was a surprise party, I <input class="blank" data-answers="would not have said|wouldn't have said" data-display="would not have said"> (say) anything to Uncle Dave!</p></div>
+  <div class="q"><p>d) Thanks for your help with the garden; I <input class="blank" data-answers="could not have done it|couldn't have done it" data-display="could not have done it"> (do) otherwise.</p></div>
+  <div class="q"><p>e) If only Mick had come to the disco, then we <input class="blank" data-answers="would have had" data-display="would have had"> (have) a great time!</p></div>
+  <div class="q"><p>f) <input class="blank" data-answers="Unless you pay|If you do not pay" data-display="Unless you pay"> (pay) the phone bill today, the phone will be cut off.</p></div>
+  <div class="q"><p>g) If I <input class="blank" data-answers="had not had|hadn't had" data-display="had not had"> (had) your tools, I wouldn't have been able to fix the car.</p></div>
+  <div class="q"><p>h) Those wires look a bit dangerous; <input class="blank" data-answers="I would not touch them|I wouldn't touch them" data-display="I would not touch them"> (touch) if I were you.</p></div>
+  <div class="q"><p>i) If <input class="blank" data-answers="it was not|it were not|it had not been|it wasn't|it weren't|it hadn't been" data-display="it was not"> (be) the goalkeeper's heroics, we would have lost the match.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Viết lại câu ba lần với từ cho sẵn</h2>
+  <p>Viết lại mỗi câu ba lần, mỗi lần chứa từ in hoa cho sẵn. Điền toàn bộ câu đã viết lại vào ô trống.</p>
+  <div class="q"><p>a) We won't go away if the weather is bad.</p>
+  <p>UNLESS → <input class="blank wide" data-answers="We'll go away unless the weather is bad|We won't go away unless the weather improves|We'll go away unless the weather's bad|We will go away unless the weather is bad" data-display="We'll go away unless the weather is bad"></p>
+  <p>ONLY → <input class="blank wide" data-answers="We will only go away if the weather improves|We'll only go away if the weather improves" data-display="We will only go away if the weather improves"></p>
+  <p>STAY → <input class="blank wide" data-answers="We will stay at home if the weather is bad|We'll stay at home if the weather is bad" data-display="We will stay at home if the weather is bad"></p>
+  </div>
+  <div class="q"><p>b) If you hurry up you won't be late.</p>
+  <p>DON'T → <input class="blank wide" data-answers="If you do not hurry up you will be late|If you do not hurry up you'll be late|If you do not hurry up you won't be late" data-display="If you do not hurry up you will be late"></p>
+  <p>OR → <input class="blank wide" data-answers="Hurry up, or you will be late|Hurry up, or you'll be late" data-display="Hurry up, or you will be late"></p>
+  <p>WANT → <input class="blank wide" data-answers="If you do not want to be late, hurry up" data-display="If you do not want to be late, hurry up"></p>
+  </div>
+  <div class="q"><p>c) If they offered you the job, would you accept?</p>
+  <p>WERE TO → <input class="blank wide" data-answers="If they were to offer you the job, would you accept?" data-display="If they were to offer you the job, would you accept?"></p>
+  <p>SHOULD → <input class="blank wide" data-answers="If they should offer you the job, would you accept?" data-display="If they should offer you the job, would you accept?"></p>
+  <p>HAPPENED → <input class="blank wide" data-answers="If they happened to offer you the job, would you accept?" data-display="If they happened to offer you the job, would you accept?"></p>
+  </div>
+  <div class="q"><p>d) Without your help, I would have given up years ago.</p>
+  <p>HADN'T BEEN → <input class="blank wide" data-answers="If it had not been for your help, I would have given up years ago" data-display="If it had not been for your help, I would have given up years ago"></p>
+  <p>BUT → <input class="blank wide" data-answers="But for your help, I would have given up years ago" data-display="But for your help, I would have given up years ago"></p>
+  <p>HADN'T HELPED → <input class="blank wide" data-answers="If you had not helped me, I would have given up years ago|If you had not helped, I would have given up years ago" data-display="If you had not helped (me), I would have given up years ago"></p>
+  </div>
+  <div class="q"><p>e) I'll lend you the money on condition that you pay it back next week.</p>
+  <p>PROVIDED → <input class="blank wide" data-answers="I'll lend you the money, provided that you pay it back next week|I'll lend you the money, provided you pay it back next week|I will lend you the money, provided that you pay it back next week|I will lend you the money, provided you pay it back next week" data-display="I'll lend you the money, provided (that) you pay it back next week"></p>
+  <p>LONG → <input class="blank wide" data-answers="I'll lend you the money, as long as you pay it back next week|I will lend you the money, as long as you pay it back next week" data-display="I'll lend you the money, as long as you pay it back next week"></p>
+  <p>ONLY → <input class="blank wide" data-answers="I'll only lend you the money if you pay it back next week|I will only lend you the money if you pay it back next week" data-display="I'll only lend you the money if you pay it back next week"></p>
+  </div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+  <p class="small">Mẹo chấm: máy tự bỏ qua hoa/thường và dấu câu. Nếu máy báo sai chỉ vì khác cách viết (ví dụ dạng rút gọn), hãy bấm “Hiện đáp án” để tự đối chiếu.</p>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Bài 6 — Điền một từ vào mỗi chỗ trống</h2>
+  <p>Hoàn thành đoạn văn bằng cách điền đúng một từ vào mỗi chỗ trống.</p>
+  <div class="q"><p>Mr Jeffries, I have decided against a prison sentence in your case. You may walk free from this court on (1) <input class="blank" data-answers="condition" data-display="condition"> that you report to Chesham police station every Friday for the next six months. Should you fail to (2) <input class="blank" data-answers="do" data-display="do"> so, you will be given one warning; and if you persist (3) <input class="blank" data-answers="in" data-display="in"> failing to meet this obligation, you will return to this court for a harsher sentence. (4) <input class="blank" data-answers="Unless" data-display="Unless"> you can present good reason why you were unable to report to the station, you will (5) <input class="blank" data-answers="find|land" data-display="find"> yourself in severe trouble. If you are (6) <input class="blank" data-answers="unable" data-display="unable"> to attend because of illness, please note that a medical certificate must be produced, signed by your doctor, proving your state of health. You should realise that (7) <input class="blank" data-answers="but" data-display="but"> for your previous good conduct, I would (8) <input class="blank" data-answers="have" data-display="have"> had no hesitation in imposing a prison sentence. And I shall not forget that if your friend had (9) <input class="blank" data-answers="not" data-display="not"> intervened in the fight, you might (10) <input class="blank" data-answers="have" data-display="have"> seriously injured the defendant.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 6: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Bài 7 — Hoàn thành câu thứ hai với từ cho sẵn</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) I didn't have the money so I didn't buy a new suit. <b>(would)</b></p><p>If I <input class="blank" data-answers="had had the money I would have bought" data-display="had had the money I would have bought"> a new suit.</p></div>
+  <div class="q"><p>b) If you are in London by any chance, come and see me. <b>(happen)</b></p><p>If you <input class="blank" data-answers="happen to be in London" data-display="happen to be in London"> come and see me.</p></div>
+  <div class="q"><p>c) If you insist on doing everything yourself, of course you'll feel tired! <b>(will)</b></p><p>If you <input class="blank" data-answers="will do everything yourself" data-display="will do everything yourself">, of course you'll feel tired!</p></div>
+  <div class="q"><p>d) Please take a seat, and I'll inquire for you. <b>(will)</b></p><p>If you <input class="blank" data-answers="will just take a seat|will take a seat" data-display="will (just) take a seat">, I'll inquire for you.</p></div>
+  <div class="q"><p>e) If you do the shopping, I'll cook lunch. <b>(and)</b></p><p>You <input class="blank" data-answers="do the shopping and" data-display="do the shopping and"> I'll cook lunch.</p></div>
+  <div class="q"><p>f) If Pauline hadn't been interested, the project would have been abandoned. <b>(interest)</b></p><p>But <input class="blank" data-answers="for Pauline's interest" data-display="for Pauline's interest"> the project would have been abandoned.</p></div>
+  <div class="q"><p>g) The fire was brought under control thanks to the night-watchman. <b>(for)</b></p><p>If it hadn't <input class="blank" data-answers="been for the night-watchman, the fire would have" data-display="been for the night-watchman, the fire would have"> got out of control.</p></div>
+  <div class="q"><p>h) Dick is in prison because a detective recognised him. <b>(if)</b></p><p>Dick wouldn't <input class="blank" data-answers="be in prison if a detective had not" data-display="be in prison if a detective had not"> recognised him.</p></div>
+  <div class="q"><p>i) I am not tall enough to reach the shelf. <b>(taller)</b></p><p>If I <input class="blank" data-answers="was taller I could|were taller I could|was a bit taller I could|were a bit taller I could|was taller I would be able to|were taller I would be able to|was a bit taller I would be able to|were a bit taller I would be able to" data-display="were taller I could"> reach the shelf.</p></div>
+  <div class="q"><p>j) But for Helen acting so wonderfully, the play would be a flop. <b>(wonderful)</b></p><p>If it <input class="blank" data-answers="were not for Helen's wonderful acting|was not for Helen's wonderful acting" data-display="were not for Helen's wonderful acting"> the play would be a flop.</p></div>
+  <div class="q"><p>k) It won't make any difference if City score first; United will still win. <b>(even)</b></p><p>United <input class="blank" data-answers="will still win, even if|will win, even if" data-display="will (still) win, even if"> City score first.</p></div>
+  <div class="q"><p>l) Getting up early makes me feel hungry. <b>(get)</b></p><p>If <input class="blank" data-answers="I get up early it" data-display="I get up early it"> makes me feel hungry.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Kiểm tra Bài 7</button><button type="button" onclick="showFill('ex7')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex7')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 7: <span class="fill-score">—</span>/12</span> <span class="fb fill-fb"></span>
+  <p class="small">Mẹo chấm: máy tự bỏ qua hoa/thường và dấu câu. Nếu máy báo sai chỉ vì khác cách viết (ví dụ dạng rút gọn), hãy bấm “Hiện đáp án” để tự đối chiếu.</p>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>Bài 8 — Hoàn thành bức thư theo bản ghi chú</h2>
+  <p>Dựa vào bản ghi chú (memo) dưới đây, hoàn thành bức thư: mỗi chỗ trống điền một hoặc hai từ. Các từ cần điền không xuất hiện trong bản ghi chú.</p>
+  <div class="formula">YELLOW BRICK ROAD RECORD COMPANY — MEMO<br>Brian, tell Carter's again that their account must be paid. If they don't pay in ten days we're going to have to go to the law. If they're in financial trouble, they can get in touch with our Finance Dept. If they pay up we can keep their account open. If they don't we shall, if we really have to, close their account. If they have settled the account already, say sorry for this letter.</div>
+  <div class="q"><p>Credit Controller<br>Carter's Record Store<br><br>Dear Sir/Madam,<br>We would like to (1) <input class="blank" data-answers="remind" data-display="remind"> you that your account is two months overdue. On the basis of our goodwill, we are prepared to allow you another ten days to settle your account. However, if you (2) <input class="blank" data-answers="fail|are unable" data-display="fail"> to pay your outstanding bills within ten days you (3) <input class="blank" data-answers="will leave" data-display="will leave"> us with no alternative but to take legal action. That is, (4) <input class="blank" data-answers="unless" data-display="unless"> we receive full payment by 20 March, we (5) <input class="blank" data-answers="will take" data-display="will take"> steps to reclaim our money, plus compensation costs. (6) <input class="blank" data-answers="Should" data-display="Should"> you be experiencing financial difficulties, please contact our Finance Department. (7) <input class="blank" data-answers="Providing|Provided" data-display="Providing"> that you settle your account within the specified time period, we (8) <input class="blank" data-answers="are|will be" data-display="are"> happy to continue to do business with you. However, we will, if (9) <input class="blank" data-answers="necessary" data-display="necessary">, take the regrettable step of closing your account. We are sorry that the situation has come to this, but if you had paid your bills over the last two months, we would not be in this position now. You (10) <input class="blank" data-answers="may" data-display="may"> have settled your account in the last two days; if so, please accept our apologies for this letter.<br>Yours faithfully,<br>Brian Eccles<br>Customer Services<br>Yellow Brick Road Record Company</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ Kiểm tra Bài 8</button><button type="button" onclick="showFill('ex8')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex8')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 8: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>93</b> (Bài 1: 20 ô · Bài 2: 10 · Bài 3: 7 · Bài 4: 9 · Bài 5: 15 · Bài 6: 10 ô · Bài 7: 12 · Bài 8: 10 ô).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="../index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<script>
+var PRON = {"abandoned":"AH0 B AE1 N D AH0 N D","able":"EY1 B AH0 L","accept":"AE0 K S EH1 P T","accident":"AE1 K S AH0 D AH0 N T","account":"AH0 K AW1 N T","acting":"AE1 K T IH0 NG","action":"AE1 K SH AH0 N","advanced":"AH0 D V AE1 N S T","afraid":"AH0 F R EY1 D","after":"AE1 F T ER0","afternoon":"AE2 F T ER0 N UW1 N","again":"AH0 G EH1 N","against":"AH0 G EH1 N S T","ago":"AH0 G OW1","ahead":"AH0 HH EH1 D","airport":"EH1 R P AO2 R T","alive":"AH0 L AY1 V","all":"AO1 L","allow":"AH0 L AW1","already":"AO0 L R EH1 D IY0","alternative":"AO0 L T ER1 N AH0 T IH0 V","always":"AO1 L W EY2 Z","am":"AE1 M","an":"AE1 N","and":"AH0 N D","ang":"AE1 NG","ann":"AE1 N","another":"AH0 N AH1 DH ER0","answer":"AE1 N S ER0","any":"EH1 N IY0","anything":"EH1 N IY0 TH IH2 NG","apologies":"AH0 P AA1 L AH0 JH IY2 Z","apply":"AH0 P L AY1","are":"AA1 R","as":"AE1 Z","ask":"AE1 S K","asked":"AE1 S K T","at":"AE1 T","attend":"AH0 T EH1 N D","australia":"AO0 S T R EY1 L Y AH0","away":"AH0 W EY1","ba":"B IY2 EY1","back":"B AE1 K","bad":"B AE1 D","badly":"B AE1 D L IY0","bank":"B AE1 NG K","basis":"B EY1 S AH0 S","bay":"B EY1","be":"B IY1","because":"B IH0 K AO1 Z","been":"B IH1 N","better":"B EH1 T ER0","bi":"B AY1","bill":"B IH1 L","bills":"B IH1 L Z","bit":"B IH1 T","bite":"B AY1 T","boiling":"B OY1 L IH0 NG","boss":"B AA1 S","brian":"B R AY1 AH0 N","brick":"B R IH1 K","brought":"B R AO1 T","bus":"B AH1 S","business":"B IH1 Z N AH0 S","but":"B AH1 T","buy":"B AY1","by":"B AY1","call":"K AO1 L","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","carter's":"K AA1 R T ER0 Z","case":"K EY1 S","certain":"S ER1 T AH0 N","certificate":"S ER0 T IH1 F IH0 K AH0 T","chance":"CH AE1 N S","change":"CH EY1 N JH","chi":"K AY1","chia":"CH IY1 AH0","cho":"CH OW1","chu":"CH UW1","city":"S IH1 T IY0","clear":"K L IH1 R","close":"K L OW1 S","closing":"K L OW1 Z IH0 NG","clothes":"K L OW1 DH Z","come":"K AH1 M","coming":"K AH1 M IH0 NG","commit":"K AH0 M IH1 T","company":"K AH1 M P AH0 N IY2","compensation":"K AA2 M P AH0 N S EY1 SH AH0 N","condition":"K AH0 N D IH1 SH AH0 N","conditionals":"K AH0 N D IH1 SH AH0 N AH0 L Z","conduct":"K AA1 N D AH0 K T","contact":"K AA1 N T AE2 K T","continue":"K AH0 N T IH1 N Y UW0","control":"K AH0 N T R OW1 L","controller":"K AH0 N T R OW1 L ER0","cook":"K UH1 K","corner":"K AO1 R N ER0","costs":"K AA1 S T S","could":"K UH1 D","course":"K AO1 R S","court":"K AO1 R T","courtesy":"K ER1 T AH0 S IY0","crash":"K R AE1 SH","credit":"K R EH1 D AH0 T","crimes":"K R AY1 M Z","criminal":"K R IH1 M AH0 N AH0 L","cup":"K AH1 P","customer":"K AH1 S T AH0 M ER0","cut":"K AH1 T","dangerous":"D EY1 N JH ER0 AH0 S","dave":"D EY1 V","david":"D EY1 V IH0 D","days":"D EY1 Z","dead":"D EH1 D","dear":"D IH1 R","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","decorated":"D EH1 K ER0 EY2 T IH0 D","defendant":"D IH0 F EH1 N D AH0 N T","department":"D IH0 P AA1 R T M AH0 N T","detective":"D IH0 T EH1 K T IH0 V","di":"D IY1","dick":"D IH1 K","did":"D IH1 D","didn't":"D IH1 D AH0 N T","difference":"D IH1 F ER0 AH0 N S","difficulties":"D IH1 F AH0 K AH0 L T IY0 Z","directions":"D ER0 EH1 K SH AH0 N Z","disco":"D IH1 S K OW0","discuss":"D IH0 S K AH1 S","dish":"D IH1 SH","do":"D UW1","doctor":"D AA1 K T ER0","dog":"D AO1 G","doing":"D UW1 IH0 NG","don't":"D OW1 N T","done":"D AH1 N","down":"D AW1 N","dr":"D R AY1 V","drive":"D R AY1 V","driving":"D R AY1 V IH0 NG","drop":"D R AA1 P","drunk":"D R AH1 NG K","dung":"D AH1 NG","early":"ER1 L IY0","eat":"IY1 T","eating":"IY1 T IH0 NG","eccles":"EH1 K AH0 L Z","either":"IY1 DH ER0","else":"EH1 L S","emigrate":"EH1 M AH0 G R EY2 T","english":"IH1 NG G L IH0 SH","enjoy":"EH2 N JH OY1","enough":"IH0 N AH1 F","even":"IY1 V IH0 N","every":"EH1 V ER0 IY0","everything":"EH1 V R IY0 TH IH2 NG","experiencing":"IH0 K S P IH1 R IY0 AH0 N S IH0 NG","fail":"F EY1 L","failing":"F EY1 L IH0 NG","faithfully":"F EY1 TH F AH0 L IY0","fast":"F AE1 S T","feel":"F IY1 L","fight":"F AY1 T","finance":"F AH0 N AE1 N S","financial":"F AH0 N AE1 N SH AH0 L","finish":"F IH1 N IH0 SH","fire":"F AY1 ER0","first":"F ER1 S T","fix":"F IH1 K S","flop":"F L AA1 P","foggy":"F AA1 G IY0","food":"F UW1 D","football":"F UH1 T B AO2 L","for":"F AO1 R","forget":"F ER0 G EH1 T","forgotten":"F ER0 G AA1 T AH0 N","forward":"F AO1 R W ER0 D","found":"F AW1 N D","free":"F R IY1","friday":"F R AY1 D IY0","friend":"F R EH1 N D","from":"F R AH1 M","full":"F UH1 L","future":"F Y UW1 CH ER0","ga":"G AA1","garden":"G AA1 R D AH0 N","get":"G EH1 T","getting":"G EH1 T IH0 NG","gian":"JH IY1 AA0 N","girl":"G ER1 L","given":"G IH1 V AH0 N","go":"G OW1","goalkeeper":"G OW1 L K IY2 P ER0","going":"G OW1 IH0 NG","gone":"G AO1 N","good":"G UH1 D","goodwill":"G UH1 D W IH1 L","got":"G AA1 T","grammar":"G R AE1 M ER0","great":"G R EY1 T","green":"G R IY1 N","had":"HH AE1 D","hadn't":"HH AE1 D AH0 N T","happen":"HH AE1 P AH0 N","happened":"HH AE1 P AH0 N D","happiest":"HH AE1 P IY0 AH0 S T","happy":"HH AE1 P IY0","hardened":"HH AA1 R D AH0 N D","harsher":"HH AA1 R SH ER0","has":"HH AE1 Z","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","having":"HH AE1 V IH0 NG","hay":"HH EY1","he":"HH IY1","health":"HH EH1 L TH","helen":"HH EH1 L AH0 N","help":"HH EH1 L P","helped":"HH EH1 L P T","her":"HH ER1","here":"HH IY1 R","heroics":"HH IH0 R OW1 IH0 K S","hesitation":"HH EH2 Z AH0 T EY1 SH AH0 N","hi":"HH AY1","him":"HH IH1 M","his":"HH IH1 Z","ho":"HH OW1","home":"HH OW1 M","house":"HH AW1 S","however":"HH AW2 EH1 V ER0","hu":"HH UW1","hungry":"HH AH1 NG G R IY0","hurry":"HH ER1 IY0","i'd":"AY1 D","i'll":"AY1 L","i'm":"AY1 M","i've":"AY1 V","if":"IH1 F","ill":"IH1 L","illness":"IH1 L N AH0 S","immediately":"IH2 M IY1 D IY2 AH0 T L IY0","imposing":"IH2 M P OW1 Z IH0 NG","in":"IH0 N","informed":"IH2 N F AO1 R M D","injured":"IH1 N JH ER0 D","inquire":"IH2 N K W AY1 R","insist":"IH2 N S IH1 S T","instead":"IH2 N S T EH1 D","interest":"IH1 N T R AH0 S T","interested":"IH1 N T R AH0 S T IH0 D","intervened":"IH2 N T ER0 V IY1 N D","invite":"IH2 N V AY1 T","is":"IH1 Z","isn't":"IH1 Z AH0 N T","it":"IH1 T","it's":"IH1 T S","jack":"JH AE1 K","jeffries":"JH EH1 F R IY0 Z","jim":"JH IH1 M","job":"JH AA1 B","joins":"JH OY1 N Z","jones":"JH OW1 N Z","just":"JH AH1 S T","keep":"K IY1 P","key":"K IY1","ki":"K IY1","kill":"K IH1 L","knew":"N UW1","know":"N OW1","known":"N OW1 N","lai":"L AY1","last":"L AE1 S T","late":"L EY1 T","law":"L AO1","least":"L IY1 S T","leave":"L IY1 V","leaving":"L IY1 V IH0 NG","left":"L EH1 F T","legal":"L IY1 G AH0 L","lend":"L EH1 N D","let":"L EH1 T","letter":"L EH1 T ER0","like":"L AY1 K","line":"L AY1 N","little":"L IH1 T AH0 L","live":"L AY1 V","lo":"L OW1","london":"L AH1 N D AH0 N","lonely":"L OW1 N L IY0","long":"L AO1 NG","longer":"L AO1 NG G ER0","look":"L UH1 K","lost":"L AO1 S T","loved":"L AH1 V D","lovely":"L AH1 V L IY0","lu":"L UW1","lucky":"L AH1 K IY0","lunch":"L AH1 N CH","madam":"M AE1 D AH0 M","made":"M EY1 D","mai":"M AY1","make":"M EY1 K","makes":"M EY1 K S","mang":"M AE1 NG","march":"M AA1 R CH","marcia":"M AA1 R SH AH0","mark":"M AA1 R K","marry":"M EH1 R IY0","mary's":"M EH1 R IY0 Z","match":"M AE1 CH","may":"M EY1","me":"M IY1","meal":"M IY1 L","means":"M IY1 N Z","medical":"M EH1 D AH0 K AH0 L","meet":"M IY1 T","memo":"M EH1 M OW2","mess":"M EH1 S","met":"M EH1 T","mick":"M IH1 K","might":"M AY1 T","mind":"M AY1 N D","miss":"M IH1 S","missed":"M IH1 S T","missing":"M IH1 S IH0 NG","modals":"M OW1 D AH0 L Z","model":"M AA1 D AH0 L","money":"M AH1 N IY0","months":"M AH1 N TH S","more":"M AO1 R","mr":"M IH1 S T ER0","mrs":"M IH1 S IH0 Z","mu":"M UW1","much":"M AH1 CH","must":"M AH1 S T","my":"M AY1","nay":"N EY1","nearly":"N IH1 R L IY0","necessary":"N EH1 S AH0 S EH2 R IY0","never":"N EH1 V ER0","new":"N UW1","next":"N EH1 K S T","ng":"EH1 NG","ngo":"EH0 NG G OW1","no":"N OW1","not":"N AA1 T","note":"N OW1 T","now":"N AW1","nu":"N UW1","obligation":"AA2 B L AH0 G EY1 SH AH0 N","of":"AH1 V","off":"AO1 F","offered":"AO1 F ER0 D","office":"AO1 F IH0 S","on":"AA1 N","one":"W AH1 N","only":"OW1 N L IY0","open":"OW1 P AH0 N","or":"AO1 R","otherwise":"AH1 DH ER0 W AY2 Z","our":"AW1 ER0","out":"AW1 T","outstanding":"AW2 T S T AE1 N D IH0 NG","over":"OW1 V ER0","overdue":"OW1 V ER0 D UW1","paid":"P EY1 D","party":"P AA1 R T IY0","party's":"P AA1 R T IY0 Z","passing":"P AE1 S IH0 NG","past":"P AE1 S T","pauline":"P AO0 L IY1 N","pay":"P EY1","payment":"P EY1 M AH0 N T","perfect":"P ER0 F EH1 K T","perhaps":"P ER0 HH AE1 P S","period":"P IH1 R IY0 AH0 D","persist":"P ER0 S IH1 S T","ph":"P IY1 EY1 CH","phone":"F OW1 N","picnic":"P IH1 K N IH2 K","place":"P L EY1 S","plane":"P L EY1 N","plates":"P L EY1 T S","play":"P L EY1","please":"P L IY1 Z","plus":"P L AH1 S","points":"P OY1 N T S","police":"P AH0 L IY1 S","pools":"P UW1 L Z","position":"P AH0 Z IH1 SH AH0 N","possibility":"P AA2 S AH0 B IH1 L AH0 T IY2","possible":"P AA1 S AH0 B AH0 L","practice":"P R AE1 K T AH0 S","prepared":"P R IY0 P EH1 R D","present":"P R EH1 Z AH0 N T","previous":"P R IY1 V IY0 AH0 S","prison":"P R IH1 Z AH0 N","problem":"P R AA1 B L AH0 M","produced":"P R AH0 D UW1 S T","project":"P R AA1 JH EH0 K T","provided":"P R AH0 V AY1 D IH0 D","proving":"P R UW1 V IH0 NG","pub":"P AH1 B","punish":"P AH1 N IH0 SH","qu":"K UW1","qua":"K W AA1","quan":"K W AO1 N","ra":"R AA1","rain":"R EY1 N","raining":"R EY1 N IH0 NG","rains":"R EY1 N Z","reach":"R IY1 CH","ready":"R EH1 D IY0","realise":"R IY1 AH0 L AY2 Z","really":"R IH1 L IY0","reason":"R IY1 Z AH0 N","receive":"R AH0 S IY1 V","received":"R AH0 S IY1 V D","reclaim":"R IY0 K L EY1 M","recognised":"R EH1 K AH0 G N AY2 Z D","record":"R AH0 K AO1 R D","regrettable":"R IH0 G R EH1 T AH0 B AH0 L","reminded":"R IY0 M AY1 N D IH0 D","report":"R IY0 P AO1 R T","return":"R IH0 T ER1 N","ring":"R IH1 NG","road":"R OW1 D","room":"R UW1 M","sai":"S AY1","same":"S EY1 M","sao":"S AW1","say":"S EY1","score":"S K AO1 R","seat":"S IY1 T","see":"S IY1","sentence":"S EH1 N T AH0 N S","seriously":"S IH1 R IY0 AH0 S L IY0","services":"S ER1 V AH0 S AH0 Z","settle":"S EH1 T AH0 L","settled":"S EH1 T AH0 L D","severe":"S AH0 V IH1 R","shall":"SH AE1 L","shelf":"SH EH1 L F","shopping":"SH AA1 P IH0 NG","should":"SH UH1 D","signed":"S AY1 N D","sir":"S ER1","sit":"S IH1 T","situation":"S IH2 CH UW0 EY1 SH AH0 N","six":"S IH1 K S","smith":"S M IH1 TH","snowing":"S N OW1 IH0 NG","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","sorry":"S AA1 R IY0","specified":"S P EH1 S AH0 F AY2 D","state":"S T EY1 T","station":"S T EY1 SH AH0 N","stay":"S T EY1","stayed":"S T EY1 D","step":"S T EH1 P","steps":"S T EH1 P S","still":"S T IH1 L","stopping":"S T AA1 P IH0 NG","store":"S T AO1 R","success":"S AH0 K S EH1 S","suit":"S UW1 T","suppose":"S AH0 P OW1 Z","supposing":"S AH0 P OW1 Z IH0 NG","sure":"SH UH1 R","surprise":"S ER0 P R AY1 Z","ta":"T AA1","tai":"T AY1","take":"T EY1 K","taken":"T EY1 K AH0 N","tall":"T AO1 L","taller":"T AO1 L ER0","taxi":"T AE1 K S IY0","tea":"T IY1","team":"T IY1 M","tell":"T EH1 L","ten":"T EH1 N","terrible":"T EH1 R AH0 B AH0 L","th":"T IY1 EY1 CH","thanks":"TH AE1 NG K S","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","then":"DH EH1 N","theo":"TH IY1 OW0","there":"DH EH1 R","they":"DH EY1","they're":"DH EH1 R","thi":"TH IY1","thing":"TH IH1 NG","think":"TH IH1 NG K","this":"DH IH1 S","those":"DH OW1 Z","ti":"T IY1","tickets":"T IH1 K AH0 T S","time":"T AY1 M","tired":"T AY1 ER0 D","to":"T UW1","today":"T AH0 D EY1","together":"T AH0 G EH1 DH ER0","told":"T OW1 L D","tomorrow":"T AH0 M AA1 R OW2","too":"T UW1","tools":"T UW1 L Z","touch":"T AH1 CH","trang":"T R AE1 NG","trouble":"T R AH1 B AH0 L","tung":"T AH1 NG","two":"T UW1","ty":"T AY1","unable":"AH0 N EY1 B AH0 L","uncle":"AH1 NG K AH0 L","under":"AH1 N D ER0","understand":"AH2 N D ER0 S T AE1 N D","united":"Y UW0 N AY1 T IH0 D","unless":"AH0 N L EH1 S","up":"AH1 P","upset":"AH0 P S EH1 T","us":"AH1 S","very":"V EH1 R IY0","vi":"V AY1","wait":"W EY1 T","walk":"W AO1 K","want":"W AA1 N T","warning":"W AO1 R N IH0 NG","was":"W AA1 Z","wasn't":"W AA1 Z AH0 N T","water":"W AO1 T ER0","we":"W IY1","we'd":"W IY1 D","we'll":"W IY1 L","we're":"W IY1 R","weather":"W EH1 DH ER0","week":"W IY1 K","went":"W EH1 N T","were":"W ER1","weren't":"W ER1 AH0 N T","wet":"W EH1 T","what":"W AH1 T","why":"W AY1","will":"W IH1 L","win":"W IH1 N","wires":"W AY1 ER0 Z","with":"W IH1 DH","within":"W IH0 DH IH1 N","without":"W IH0 TH AW1 T","won":"W AH1 N","won't":"W OW1 N T","wonder":"W AH1 N D ER0","wonderful":"W AH1 N D ER0 F AH0 L","wonderfully":"W AH1 N D ER0 F AH0 L IY0","work":"W ER1 K","would":"W UH1 D","wouldn't":"W UH1 D AH0 N T","write":"R AY1 T","xu":"Z UW1","years":"Y IH1 R Z","yellow":"Y EH1 L OW0","yet":"Y EH1 T","you":"Y UW1","you'd":"Y UW1 D","you'll":"Y UW1 L","you're":"Y UH1 R","your":"Y AO1 R","yours":"Y UH1 R Z","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
