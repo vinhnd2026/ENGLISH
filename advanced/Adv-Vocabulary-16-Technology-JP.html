@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Vocabulary 16 — Technology | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Adv-Vocabulary-16-Technology.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Adv-Vocabulary-16-Technology-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Vocabulary 16 — Technology</h1>
+  <p>テクノロジー：機器と機械・電気と工具・語形成・問題と解決策</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 機器の名前 — 機械とテクノロジーの語彙</h2>
+  <div class="formula">contraption · gadget · appliance · equipment · machinery · component · manual · automation · overhaul · experiment</div>
+  <p><b>Contraption</b> は用途が分かりにくい奇妙な装置、<b>gadget</b> は小さくて便利な工夫された機器です。<b>Appliance</b> は家庭用電化製品（洗濯機、冷蔵庫など）を指します。</p>
+  <p><b>Equipment</b> と <b>machinery</b> はどちらも<b>不可算名詞</b>です。<i>equipment</i> は目的に必要な機器一式、<i>machinery</i> は機械全般、特に大型の産業機械を指します。</p>
+  <p><b>Component</b> は機械の部品、<b>manual</b> は取扱説明書、<b>automation</b> は人手の代わりに機械を使うこと、<b>overhaul</b> は全体の点検・修理、<b>experiment</b> は科学の実験です。</p>
+  <div class="ex"><div class="en">What a peculiar contraption! What on earth is that for?</div><div class="vi">何と奇妙な装置だろう！いったい何に使うのだろう？</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">A washing-machine is probably the most useful household appliance.</div><div class="vi">洗濯機はおそらく最も便利な家庭用電化製品だ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">My brother has a shop selling photographic equipment.</div><div class="vi">兄は写真撮影用の機器を売る店を持っている。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 電気の語彙 — コード、プラグ、電源</h2>
+  <div class="formula">plug · socket · cable · lead · wire · fuse · mains · live · powered by · run by</div>
+  <p><b>Plug</b>（プラグ）は壁の <b>socket</b>（コンセント）に差し込みます。<b>Cable</b> や <b>lead</b> は機器と電源をつなぐコードで、<b>wire</b> はその中の金属線です。</p>
+  <p><b>Live</b> は電気が通っているという意味で、とても危険です。<b>Fuse</b>（ヒューズ）は電流が強すぎると切れて回路を遮断します。<b>powered by / run by</b> は何をエネルギー源として動くかを表します。</p>
+  <p>区別しましょう：<b>motor</b> は電気で動き、<b>engine</b> は燃料を燃やし、<b>machine</b> は機械の総称です。形容詞は <b>electrical</b>（<i>electrical engineer</i>）、名詞は <b>electricity</b>、<b>electrician</b> は電気技師です。</p>
+  <div class="ex"><div class="en">Don't touch that wire! It's live.</div><div class="vi">その線に触るな！電気が通っている。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This small vacuum cleaner is run by batteries.</div><div class="vi">この小型掃除機は電池で動く。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The appliance is powered by a small electric motor.</div><div class="vi">その機器は小型の電動モーターで動いている。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. 工具とその部品</h2>
+  <div class="formula">pliers · spanner · screwdriver · hammer · chisel · grinder · mixer · blender · blade · point · edge · bolt · nut · screw</div>
+  <p><b>Pliers</b>（ペンチ）は線をつかんでねじり、<b>spanner</b>（スパナ）は <b>nut</b>（ナット）や <b>bolt</b>（ボルト）を回し、<b>screwdriver</b>（ドライバー）は <b>screw</b>（ねじ）を回します。</p>
+  <p>台所では：<b>grinder</b> は粉に挽き（コーヒー豆）、<b>mixer</b> は材料を混ぜ、<b>blender</b> は液体状に砕きます。</p>
+  <p>包丁については：<b>blade</b> は平らな刃の部分、<b>point</b> は鋭い先端、<b>edge</b> は切るための刃先です。</p>
+  <div class="ex"><div class="en">The electrician twisted the wires together using a pair of pliers.</div><div class="vi">電気技師はペンチを使って線をねじり合わせた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I can't undo this nut. I need a larger spanner.</div><div class="vi">このナットが外せない。もっと大きなスパナが必要だ。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. 技術文書の語形成</h2>
+  <div class="formula">INSTALL → installation · MAINTAIN → maintenance · ADJUST → adjustable · ELECTRIC → electrical · APPLY → appliance · CYLINDER → cylindrical · TIGHT → tighten · SAFE → safety · PROTECT → protective · PROCEED → procedure</div>
+  <p>技術マニュアルには派生語が多く出てきます：<i>-tion / -ance</i> で終わる名詞（<i>installation, maintenance</i>）、<i>-able / -ical / -ive</i> で終わる形容詞（<i>adjustable, cylindrical, protective</i>）。</p>
+  <p>個別に覚えるペア：<i>tight → tighten</i>（締める）、<i>safe → safety</i>（安全）、<i>proceed → procedure</i>（手順）、そして <i>apply → appliance</i>（目的に「応用される」機器）。</p>
+  <div class="ex"><div class="en">Regular maintenance from a qualified engineer is advised.</div><div class="vi">資格のある技師による定期的な保守が勧められる。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">All engineers must observe all necessary safety precautions.</div><div class="vi">すべての技師は必要な安全対策をすべて守らなければならない。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>5. 問題と解決策 — 「It needs -ing」と決まった表現</h2>
+  <div class="formula">It needs oiling / recharging / sharpening / tightening / servicing / painting / adjusting / replacing / winding up / re-programming.</div>
+  <p><b>need + -ing</b> は受動の意味を持ちます：<i>It needs oiling</i> ＝「油を差す必要がある」。問題ごとに解決策が決まっています：ドアのきしみ→油を差す、電池切れ→充電する、鉛筆が鈍い→削る、ねじの緩み→締める。</p>
+  <p>読解文の決まった表現：<i>an aid to convenience</i>（便利さの助け）、<i>the very reason</i>（まさにその理由）、<i>at someone's beck and call</i>（いつでも言いつけに応じる）、<i>on the strict understanding that…</i>（…という明確な約束のもとで）、<i>to the point where…</i>（…という段階まで）、<i>fend for yourself</i>（自分のことは自分でする）。</p>
+  <div class="ex"><div class="en">The battery is dead. It needs recharging.</div><div class="vi">電池が切れている。充電が必要だ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Parents lose their freedom and the children lose the ability to fend for themselves.</div><div class="vi">親は自由を失い、子どもは自分のことを自分でする力を失う。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>Equipment</b> と <b>machinery</b> は不可算名詞。<b>appliance</b> は家庭用電化製品、<b>gadget</b> は小さくて便利な機器、<b>contraption</b> は奇妙な装置。</li>
+    <li><b>Plug</b> は <b>socket</b> に差す。<b>live</b> は電気が通っていること、<b>fuse</b> はヒューズ。機器はエネルギー源によって <b>powered by / run by</b> と言う。</li>
+    <li><b>Motor</b> は電気、<b>engine</b> は燃料で動く。<b>electrical</b>（形容詞）≠ <b>electrician</b>（電気技師）≠ <b>electricity</b>（電気）。</li>
+    <li>工具：<b>pliers</b> はつかんでねじり、<b>spanner</b> はナットやボルトを回し、<b>screwdriver</b> はねじを回す。包丁には <b>blade</b>（刃）、<b>point</b>（先端）、<b>edge</b>（刃先）がある。</li>
+    <li>技術文書の語形成：<i>installation, maintenance, adjustable, electrical, appliance, cylindrical, tighten, safety, protective, procedure</i>。</li>
+    <li><b>Need + -ing</b> は受動の意味：<i>It needs recharging</i> ＝「充電してもらう必要がある」。問題ごとに解決の動詞が決まっている。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題 1 — 正しい答えを選ぼう：携帯電話</h2>
+  <p>文章を読んで、各空欄に最も適した答え（A、B、C、D）を選んでください。空欄（1）は例として完成しています。</p>
+  <div class="q"><p>I was reading an advert for a mobile phone the other day, which described the aforesaid object as an 'aid to (1) <b>convenience</b>'. As a techno-phobe who does not possess a mobile phone, still less an on-line connection, I was intrigued by the astonishing presumptuousness of this claim. For the (2) ______ reason I do not have a mobile phone is that I don't want to be at someone else's beck and (3) ______ 24 hours a day. But apparently there are plenty of sane adults out there who do. In fact I know plenty of people who bought their phone on the (4) ______ understanding that it was to be used for emergencies only. But the insidious thing gradually took over their lives, to the (5) ______ where it seems they can barely live without it. Giving a mobile phone to a child makes even less sense. Parents lose their freedom and the children lose the ability to (6) ______ for themselves.</p></div>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>2) For the ______ reason I do not have a mobile phone is that I don't want to be at someone else's beck and call 24 hours a day.</p><div class="opts"><button type="button">sheer</button><button type="button">perfect</button><button type="button">very</button><button type="button">utter</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>3) I don't want to be at someone else's beck and ______ 24 hours a day.</p><div class="opts"><button type="button">cry</button><button type="button">ring</button><button type="button">need</button><button type="button">call</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>4) In fact I know plenty of people who bought their phone on the ______ understanding that it was to be used for emergencies only.</p><div class="opts"><button type="button">strict</button><button type="button">absolute</button><button type="button">severe</button><button type="button">precise</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>5) But the insidious thing gradually took over their lives, to the ______ where it seems they can barely live without it.</p><div class="opts"><button type="button">mark</button><button type="button">point</button><button type="button">spot</button><button type="button">position</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>6) Parents lose their freedom and the children lose the ability to ______ for themselves.</p><div class="opts"><button type="button">support</button><button type="button">keep</button><button type="button">fend</button><button type="button">sustain</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/5</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題 2 — ボックスの語を入れよう</h2>
+  <p>ボックス内の語を1つずつ使って、各文を完成させてください。a) は例として完成しています。</p>
+  <div class="formula">appliance · component · equipment · gadget · manual · automation · contraption · experiment · machinery · overhaul</div>
+  <div class="q"><p>a) What a peculiar <b>contraption</b>! What on earth is that for? <span class="small">(例 a))</span></p></div>
+  <div class="q"><p>b) A washing-machine is probably the most useful household <input class="blank" data-answers="appliance" data-display="appliance">.</p></div>
+  <div class="q"><p>c) We will have to order a new <input class="blank" data-answers="component" data-display="component"> to replace the damaged one.</p></div>
+  <div class="q"><p>d) The noise of <input class="blank" data-answers="machinery" data-display="machinery"> filled the factory and nearly deafened me.</p></div>
+  <div class="q"><p>e) I can't make this computer work. Let's read the <input class="blank" data-answers="manual" data-display="manual"> again.</p></div>
+  <div class="q"><p>f) Scientists in this laboratory are conducting an interesting <input class="blank" data-answers="experiment" data-display="experiment">.</p></div>
+  <div class="q"><p>g) When <input class="blank" data-answers="automation" data-display="automation"> is introduced, the number of workers will be reduced.</p></div>
+  <div class="q"><p>h) Do you like this new <input class="blank" data-answers="gadget" data-display="gadget"> I bought for peeling potatoes?</p></div>
+  <div class="q"><p>i) Every six months the nuclear reactor needs a complete <input class="blank" data-answers="overhaul" data-display="overhaul">.</p></div>
+  <div class="q"><p>j) My brother has a shop selling photographic <input class="blank" data-answers="equipment" data-display="equipment">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題 3 — つづりの間違いを直そう</h2>
+  <p>この文章のほとんどの行には、つづりか句読点の間違いが1つあります。最初の3行（番号0）は修正済みの例です。各行について、正しいつづりを入力してください。その行が正しい場合は ✓ と入力してください。</p>
+  <div class="q"><p>0) When faced with some new and possibly bewildering tecnological → <b>technological</b></p></div>
+  <div class="q"><p>0) change, most people react, in one of two ways. They either recoil → <b>react in</b></p></div>
+  <div class="q"><p>0) from anything new, claiming that it is unnecessary, or too complicated → <b>✓</b></p></div>
+  <div class="q"><p>1) or that it somehow makes life less personal. Or they learn to adapt to → <input class="blank" data-answers="✓|correct|tick" data-display="✓"></p></div>
+  <div class="q"><p>4) us, they still represent a threat to our freedom, and give us a → <input class="blank" data-answers="✓|correct|tick" data-display="✓"></p></div>
+  <div class="q"><p>5) frigtening sense of a future in which all decisions will be taken by → <input class="blank" data-answers="frightening" data-display="frightening"></p></div>
+  <div class="q"><p>6) machines. This may be because they seem misterious, and difficult → <input class="blank" data-answers="mysterious" data-display="mysterious"></p></div>
+  <div class="q"><p>8) for, and you usually get vauge answers about how 'they give you → <input class="blank" data-answers="vague" data-display="vague"></p></div>
+  <div class="q"><p>10) and use them in our dayly work, have very little idea of how they → <input class="blank" data-answers="daily" data-display="daily"></p></div>
+  <div class="q"><p>12) bussiness programme, even if things occasionally go wrong for no → <input class="blank" data-answers="business" data-display="business"></p></div>
+  <div class="q"><p>13) apparant reason. Presumably much the same happened when the → <input class="blank" data-answers="apparent" data-display="apparent"></p></div>
+  <div class="q"><p>14) telephone and the television became widespred. What seems to → <input class="blank" data-answers="widespread" data-display="widespread"></p></div>
+  <div class="q"><p>15) alarm most people is the speed of technological change, rather than → <input class="blank" data-answers="✓|correct|tick" data-display="✓"></p></div>
+  <div class="q"><p>16) change itself. And the objections that are maid to new technology → <input class="blank" data-answers="made" data-display="made"></p></div>
+  <div class="q"><p>17) may well have a point to them, since change is not always an → <input class="blank" data-answers="✓|correct|tick" data-display="✓"></p></div>
+  <div class="q"><p>19) said for the oil lamp, the cole fire, and forms of entertainment, such → <input class="blank" data-answers="coal" data-display="coal"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3b">
+  <h2>問題3（続き） — 句読点を直そう</h2>
+  <p>次の行には句読点の間違いがあります。各行のハイライト部分について、正しい句読点の書き方を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>2) the new invention, and eventually <em class="hl">wonder, how</em> they could possibly</p><div class="opts"><button type="button">wonder, how</button><button type="button">wonder how</button><button type="button">wonder. How</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>3) have existed without it. Take computers as an <em class="hl">example, for</em> many of</p><div class="opts"><button type="button">example, for</button><button type="button">example for</button><button type="button">example. For</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>7) to understand. Ask most <em class="hl">people, what</em> you can use a home computer</p><div class="opts"><button type="button">people, what</button><button type="button">people what</button><button type="button">people. What</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>9) information'. In fact, even those of us who are familiar with <em class="hl">computers'</em></p><div class="opts"><button type="button">computers'</button><button type="button">computer's</button><button type="button">computers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>11) actually <em class="hl">work?</em> But it does not take long to learn how to operate a</p><div class="opts"><button type="button">work?</button><button type="button">work,</button><button type="button">work.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>18) improvement. As we discover during power <em class="hl">cuts</em> there is a lot to be</p><div class="opts"><button type="button">cuts</button><button type="button">cuts,</button><button type="button">cuts.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>20) as books or board games, that <em class="hl">dont</em> have to be plugged in to work.</p><div class="opts"><button type="button">dont</button><button type="button">do'nt</button><button type="button">don't</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題3の点数： <span class="score-num">0</span>/7</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題 4 — 問題と解決策を結ぼう</h2>
+  <p>各問題（a〜j）に解決策（1〜10）を1つずつ結びつけてください。解決策の番号を空欄に入力してください。a) は例として完成しています。</p>
+  <div class="formula">1 It needs servicing. · 2 It needs tightening. · 3 It needs painting. · 4 It needs oiling. · 5 It needs re-programming. · 6 It needs recharging. · 7 It needs sharpening. · 8 It needs winding up. · 9 It needs adjusting. · 10 It needs replacing.</div>
+  <div class="q"><p>a) The door squeaks. → <b>4</b> <span class="small">(例 a))</span></p></div>
+  <div class="q"><p>b) The battery is dead. → <input class="blank" data-answers="6" data-display="6"></p></div>
+  <div class="q"><p>c) The pencil is blunt. → <input class="blank" data-answers="7" data-display="7"></p></div>
+  <div class="q"><p>d) The screw is coming loose. → <input class="blank" data-answers="2" data-display="2"></p></div>
+  <div class="q"><p>e) My watch has stopped. → <input class="blank" data-answers="8" data-display="8"></p></div>
+  <div class="q"><p>f) The car seat is too far back. → <input class="blank" data-answers="9" data-display="9"></p></div>
+  <div class="q"><p>g) The light bulb is flickering. → <input class="blank" data-answers="10" data-display="10"></p></div>
+  <div class="q"><p>h) The car's got a few things wrong with it. → <input class="blank" data-answers="1" data-display="1"></p></div>
+  <div class="q"><p>i) The wall looks very bare. → <input class="blank" data-answers="3" data-display="3"></p></div>
+  <div class="q"><p>j) The TV isn't picking up the signals from the video recorder. → <input class="blank" data-answers="5" data-display="5"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題 5 — 語形成：技術文書</h2>
+  <p>行末の大文字の語から作った語（複合語でも可）で、各空欄を完成させてください。空欄（1）は例として完成しています。</p>
+  <h3>テキスト1</h3>
+  <div class="q"><p>(1) <b>Installation</b> of your new energy-efficient domestic gas boiler is free of charge, and will be performed within 5 days of payment. Regular (2) <input class="blank" data-answers="maintenance" data-display="maintenance"> from a qualified engineer is advised. The system comes with an (3) <input class="blank" data-answers="adjustable" data-display="adjustable"> cover, which can be kept fully extended or half down. The cover must be completely removed for repairs to be carried out. As with all (4) <input class="blank" data-answers="electrical" data-display="electrical"> equipment, please exercise great care if you are attempting to repair the (5) <input class="blank" data-answers="appliance" data-display="appliance"> yourself.</p></div>
+  <p class="small">INSTALL · MAINTAIN · ADJUST · ELECTRIC · APPLY</p>
+  <h3>テキスト2</h3>
+  <div class="q"><p>Attach the rotating motor to the (6) <input class="blank" data-answers="cylindrical" data-display="cylindrical"> lead-pipe. Screw the motor down into place. If the motor does not engage, remove it and (7) <input class="blank" data-answers="tighten" data-display="tighten"> the lead-pipe. All engineers installing or repairing this machinery must observe all necessary (8) <input class="blank" data-answers="safety" data-display="safety"> precautions. This includes the wearing of goggles, masks and other (9) <input class="blank" data-answers="protective" data-display="protective"> equipment. For instructions on how to remove the outlet valve, please refer to the (10) <input class="blank" data-answers="procedure" data-display="procedure"> described on page 28 of this manual.</p></div>
+  <p class="small">CYLINDER · TIGHT · SAFE · PROTECT · PROCEED</p>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>問題 6 — 最も適切な語を選ぼう</h2>
+  <p>各文で最も適切な語を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) The hair-drier is fitted with a three point ______.</p><div class="opts"><button type="button">cable</button><button type="button">plug</button><button type="button">socket</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Don't touch that wire! It's ______.</p><div class="opts"><button type="button">live</button><button type="button">lively</button><button type="button">living</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) This small vacuum cleaner is ______ by batteries.</p><div class="opts"><button type="button">motivate</button><button type="button">powered</button><button type="button">run</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) The set wouldn't work because there was a faulty ______.</p><div class="opts"><button type="button">connection</button><button type="button">joint</button><button type="button">link</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I can't use my drill here. The ______ isn't long enough.</p><div class="opts"><button type="button">lead</button><button type="button">plug</button><button type="button">wire</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>f) Turn off the mains first in case you get a/an ______.</p><div class="opts"><button type="button">impact</button><button type="button">jolt</button><button type="button">shock</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Oh dear, the lights have gone off! The ______ must have gone.</p><div class="opts"><button type="button">cable</button><button type="button">fuse</button><button type="button">safety</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Can you lend me that cassette? I want to ______ it.</p><div class="opts"><button type="button">record</button><button type="button">transcribe</button><button type="button">write</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>i) The appliance is powered by a small electric ______.</p><div class="opts"><button type="button">engine</button><button type="button">machine</button><button type="button">motor</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) Jim has just started work as an ______ engineer.</p><div class="opts"><button type="button">electrical</button><button type="button">electricity</button><button type="button">electrician</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>k) The electrician twisted the wires together using a pair of ______.</p><div class="opts"><button type="button">hammers</button><button type="button">chisels</button><button type="button">pliers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>l) I buy coffee beans and put them in a ______.</p><div class="opts"><button type="button">grinder</button><button type="button">mixer</button><button type="button">blender</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>m) The good thing about this knife is that the ______ can be replaced.</p><div class="opts"><button type="button">blade</button><button type="button">point</button><button type="button">edge</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>n) I can't undo this nut. I need a larger ______.</p><div class="opts"><button type="button">bolt</button><button type="button">screwdriver</button><button type="button">spanner</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題6の点数： <span class="score-num">0</span>/14</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>66</b> 問です（問題1：5 · 問題2：9 · 問題3：20 · 問題4：9 · 問題5：9 · 問題6：14）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"ability":"AH0 B IH1 L AH0 T IY2","able":"EY1 B AH0 L","about":"AH0 B AW1 T","absolute":"AE1 B S AH0 L UW2 T","actually":"AE1 K CH UW2 AH0 L IY0","adapt":"AH0 D AE1 P T","adjust":"AH0 JH AH1 S T","adjustable":"AH0 JH AH1 S T AH0 B AH0 L","adjusting":"AH0 JH AH1 S T IH0 NG","adults":"AH0 D AH1 L T S","advanced":"AH0 D V AE1 N S T","advert":"AE1 D V ER0 T","advised":"AE0 D V AY1 Z D","aforesaid":"AH0 F AO1 R S EH2 D","again":"AH0 G EH1 N","aid":"EY1 D","alarm":"AH0 L AA1 R M","all":"AO1 L","always":"AO1 L W EY2 Z","an":"AE1 N","and":"AH0 N D","answers":"AE1 N S ER0 Z","anything":"EH1 N IY0 TH IH2 NG","apparently":"AH0 P EH1 R AH0 N T L IY0","appliance":"AH0 P L AY1 AH0 N S","apply":"AH0 P L AY1","are":"AA1 R","as":"AE1 Z","ask":"AE1 S K","astonishing":"AH0 S T AA1 N IH0 SH IH0 NG","at":"AE1 T","attach":"AH0 T AE1 CH","attempting":"AH0 T EH1 M P T IH0 NG","automation":"AO0 T AH0 M EY1 SH AH0 N","back":"B AE1 K","bare":"B EH1 R","barely":"B EH1 R L IY0","batteries":"B AE1 T ER0 IY0 Z","battery":"B AE1 T ER0 IY0","be":"B IY1","beans":"B IY1 N Z","became":"B IH0 K EY1 M","because":"B IH0 K AO1 Z","beck":"B EH1 K","bewildering":"B IH0 W IH1 L D ER0 IH0 NG","blade":"B L EY1 D","blender":"B L EH1 N D ER0","blunt":"B L AH1 N T","board":"B AO1 R D","boiler":"B OY1 L ER0","bolt":"B OW1 L T","books":"B UH1 K S","bought":"B AA1 T","brother":"B R AH1 DH ER0","bulb":"B AH1 L B","but":"B AH1 T","buy":"B AY1","by":"B AY1","cable":"K EY1 B AH0 L","call":"K AO1 L","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","car's":"K AA1 R Z","care":"K EH1 R","carried":"K AE1 R IY0 D","case":"K EY1 S","cassette":"K AH0 S EH1 T","change":"CH EY1 N JH","charge":"CH AA1 R JH","child":"CH AY1 L D","children":"CH IH1 L D R AH0 N","chisel":"CH IH1 Z AH0 L","chisels":"CH IH1 Z AH0 L Z","claim":"K L EY1 M","claiming":"K L EY1 M IH0 NG","cleaner":"K L IY1 N ER0","coffee":"K AA1 F IY0","cole":"K OW1 L","comes":"K AH1 M Z","coming":"K AH1 M IH0 NG","complete":"K AH0 M P L IY1 T","completely":"K AH0 M P L IY1 T L IY0","complicated":"K AA1 M P L AH0 K EY2 T AH0 D","component":"K AH0 M P OW1 N AH0 N T","computer":"K AH0 M P Y UW1 T ER0","computer's":"K AH0 M P Y UW1 T ER0 Z","computers":"K AH0 M P Y UW1 T ER0 Z","computers'":"K AH0 M P Y UW1 T ER0 Z","conducting":"K AH0 N D AH1 K T IH0 NG","connection":"K AH0 N EH1 K SH AH0 N","contraption":"K AH0 N T R AE1 P SH AH0 N","convenience":"K AH0 N V IY1 N Y AH0 N S","could":"K UH1 D","cover":"K AH1 V ER0","cry":"K R AY1","cuts":"K AH1 T S","cylinder":"S IH1 L AH0 N D ER0","cylindrical":"S AH0 L IH1 N D R IH0 K AH0 L","damaged":"D AE1 M AH0 JH D","day":"D EY1","days":"D EY1 Z","dead":"D EH1 D","dear":"D IH1 R","decisions":"D IH0 S IH1 ZH AH0 N Z","described":"D IH0 S K R AY1 B D","difficult":"D IH1 F AH0 K AH0 L T","discover":"D IH0 S K AH1 V ER0","do":"D UW1","does":"D AH1 Z","domestic":"D AH0 M EH1 S T IH0 K","don't":"D OW1 N T","door":"D AO1 R","down":"D AW1 N","drill":"D R IH1 L","during":"D UH1 R IH0 NG","earth":"ER1 TH","edge":"EH1 JH","either":"IY1 DH ER0","electric":"IH0 L EH1 K T R IH0 K","electrical":"IH0 L EH1 K T R IH0 K AH0 L","electrician":"IH0 L EH0 K T R IH1 SH AH0 N","electricity":"IH0 L EH2 K T R IH1 S AH0 T IY0","else's":"EH1 L S IH0 Z","emergencies":"IH0 M ER1 JH AH0 N S IY0 Z","engage":"EH0 N G EY1 JH","engine":"EH1 N JH AH0 N","engineer":"EH1 N JH AH0 N IH1 R","engineers":"EH1 N JH AH0 N IH1 R Z","english":"IH1 NG G L IH0 SH","enough":"IH0 N AH1 F","entertainment":"EH2 N T ER0 T EY1 N M AH0 N T","equipment":"IH0 K W IH1 P M AH0 N T","even":"IY1 V IH0 N","eventually":"IH0 V EH1 N CH AH0 W AH0 L IY0","every":"EH1 V ER0 IY0","example":"IH0 G Z AE1 M P AH0 L","exercise":"EH1 K S ER0 S AY2 Z","existed":"IH0 G Z IH1 S T AH0 D","experiment":"IH0 K S P EH1 R AH0 M AH0 N T","extended":"IH0 K S T EH1 N D AH0 D","faced":"F EY1 S T","fact":"F AE1 K T","factory":"F AE1 K T ER0 IY0","familiar":"F AH0 M IH1 L Y ER0","far":"F AA1 R","faulty":"F AO1 L T IY0","fend":"F EH1 N D","few":"F Y UW1","filled":"F IH1 L D","fire":"F AY1 ER0","first":"F ER1 S T","fitted":"F IH1 T AH0 D","flickering":"F L IH1 K ER0 IH0 NG","for":"F AO1 R","forms":"F AO1 R M Z","free":"F R IY1","freedom":"F R IY1 D AH0 M","from":"F R AH1 M","fully":"F UH1 L IY0","fuse":"F Y UW1 Z","future":"F Y UW1 CH ER0","gadget":"G AE1 JH AH0 T","games":"G EY1 M Z","gas":"G AE1 S","get":"G EH1 T","give":"G IH1 V","giving":"G IH1 V IH0 NG","go":"G OW1","goggles":"G AA1 G AH0 L Z","gone":"G AO1 N","good":"G UH1 D","got":"G AA1 T","gradually":"G R AE1 JH UW0 AH0 L IY0","great":"G R EY1 T","grinder":"G R AY1 N D ER0","half":"HH AE1 F","hammer":"HH AE1 M ER0","hammers":"HH AE1 M ER0 Z","happened":"HH AE1 P AH0 N D","has":"HH AE1 Z","have":"HH AE1 V","here":"HH IY1 R","home":"HH OW1 M","hours":"AW1 ER0 Z","household":"HH AW1 S HH OW2 L D","how":"HH AW1","idea":"AY0 D IY1 AH0","if":"IH1 F","impact":"IH2 M P AE1 K T","improvement":"IH2 M P R UW1 V M AH0 N T","in":"IH0 N","includes":"IH2 N K L UW1 D Z","ing":"IH1 NG","insidious":"IH2 N S IH1 D IY2 AH0 S","install":"IH2 N S T AO1 L","installation":"IH2 N S T AH0 L EY1 SH AH0 N","installing":"IH2 N S T AO1 L IH0 NG","instructions":"IH2 N S T R AH1 K SH AH0 N Z","interesting":"IH1 N T R AH0 S T IH0 NG","into":"IH1 N T UW0","intrigued":"IH1 N T R IY0 G D","introduced":"IH2 N T R AH0 D UW1 S T","invention":"IH2 N V EH1 N SH AH0 N","is":"IH1 Z","isn't":"IH1 Z AH0 N T","it":"IH1 T","it's":"IH1 T S","itself":"IH2 T S EH1 L F","jim":"JH IH1 M","joint":"JH OY1 N T","jolt":"JH OW1 L T","just":"JH AH1 S T","keep":"K IY1 P","kept":"K EH1 P T","key":"K IY1","knife":"N AY1 F","know":"N OW1","laboratory":"L AE1 B R AH0 T AO2 R IY0","lamp":"L AE1 M P","larger":"L AA1 R JH ER0","lead":"L EH1 D","learn":"L ER1 N","lend":"L EH1 N D","less":"L EH1 S","let's":"L EH1 T S","life":"L AY1 F","light":"L AY1 T","lights":"L AY1 T S","like":"L AY1 K","link":"L IH1 NG K","little":"L IH1 T AH0 L","live":"L AY1 V","lively":"L AY1 V L IY0","lives":"L IH1 V Z","living":"L IH1 V IH0 NG","long":"L AO1 NG","looks":"L UH1 K S","loose":"L UW1 S","lose":"L UW1 Z","lot":"L AA1 T","machine":"M AH0 SH IY1 N","machinery":"M AH0 SH IY1 N ER0 IY0","machines":"M AH0 SH IY1 N Z","maid":"M EY1 D","mains":"M EY1 N Z","maintain":"M EY0 N T EY1 N","maintenance":"M EY1 N T AH0 N AH0 N S","make":"M EY1 K","makes":"M EY1 K S","manual":"M AE1 N Y UW0 AH0 L","many":"M EH1 N IY0","mark":"M AA1 R K","masks":"M AE1 S K S","may":"M EY1","me":"M IY1","mixer":"M IH1 K S ER0","mobile":"M OW1 B AH0 L","months":"M AH1 N TH S","most":"M OW1 S T","motivate":"M OW1 T AH0 V EY2 T","motor":"M OW1 T ER0","much":"M AH1 CH","must":"M AH1 S T","my":"M AY1","nearly":"N IH1 R L IY0","necessary":"N EH1 S AH0 S EH2 R IY0","need":"N IY1 D","needs":"N IY1 D Z","new":"N UW1","no":"N OW1","noise":"N OY1 Z","not":"N AA1 T","nuclear":"N UW1 K L IY0 ER0","number":"N AH1 M B ER0","nut":"N AH1 T","object":"AA1 B JH EH0 K T","objections":"AH0 B JH EH1 K SH AH0 N Z","observe":"AH0 B Z ER1 V","occasionally":"AH0 K EY1 ZH AH0 N AH0 L IY0","of":"AH1 V","off":"AO1 F","oh":"OW1","oil":"OY1 L","oiling":"OY1 L IH0 NG","on":"AA1 N","on-line":"AO1 N L AY2 N","one":"W AH1 N","only":"OW1 N L IY0","operate":"AA1 P ER0 EY2 T","or":"AO1 R","order":"AO1 R D ER0","other":"AH1 DH ER0","our":"AW1 ER0","out":"AW1 T","outlet":"AW1 T L EH2 T","over":"OW1 V ER0","overhaul":"OW1 V ER0 HH AO2 L","page":"P EY1 JH","painting":"P EY1 N T IH0 NG","pair":"P EH1 R","parents":"P EH1 R AH0 N T S","payment":"P EY1 M AH0 N T","peculiar":"P AH0 K Y UW1 L Y ER0","peeling":"P IY1 L IH0 NG","pencil":"P EH1 N S AH0 L","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","performed":"P ER0 F AO1 R M D","personal":"P ER1 S IH0 N AH0 L","phone":"F OW1 N","photographic":"F OW2 T AH0 G R AE1 F IH0 K","picking":"P IH1 K IH0 NG","place":"P L EY1 S","please":"P L IY1 Z","plenty":"P L EH1 N T IY0","pliers":"P L AY1 ER0 Z","plug":"P L AH1 G","plugged":"P L AH1 G D","point":"P OY1 N T","points":"P OY1 N T S","position":"P AH0 Z IH1 SH AH0 N","possess":"P AH0 Z EH1 S","possibly":"P AA1 S AH0 B L IY0","potatoes":"P AH0 T EY1 T OW0 Z","power":"P AW1 ER0","powered":"P AW1 ER0 D","practice":"P R AE1 K T AH0 S","precautions":"P R IY0 K AO1 SH AH0 N Z","precise":"P R IH0 S AY1 S","presumably":"P R AH0 Z UW1 M AH0 B L IY0","probably":"P R AA1 B AH0 B L IY2","procedure":"P R AH0 S IY1 JH ER0","proceed":"P R AH0 S IY1 D","programme":"P R OW1 G R AE2 M","protect":"P R AH0 T EH1 K T","protective":"P R AH0 T EH1 K T IH0 V","put":"P UH1 T","qualified":"K W AA1 L AH0 F AY2 D","rather":"R AE1 DH ER0","react":"R IY0 AE1 K T","reactor":"R IY0 AE1 K T ER0","read":"R EH1 D","reading":"R IY1 D IH0 NG","reason":"R IY1 Z AH0 N","recharging":"R IY0 CH AA1 R JH IH0 NG","recoil":"R IY0 K OY1 L","record":"R AH0 K AO1 R D","recorder":"R IH0 K AO1 R D ER0","reduced":"R AH0 D UW1 S T","refer":"R AH0 F ER1","regular":"R EH1 G Y AH0 L ER0","remove":"R IY0 M UW1 V","removed":"R IY0 M UW1 V D","repair":"R IH0 P EH1 R","repairing":"R IH0 P EH1 R IH0 NG","repairs":"R IH0 P EH1 R Z","replace":"R IY2 P L EY1 S","replaced":"R IY2 P L EY1 S T","replacing":"R IH0 P L EY1 S IH0 NG","represent":"R EH2 P R IH0 Z EH1 N T","ring":"R IH1 NG","rotating":"R OW1 T EY2 T IH0 NG","run":"R AH1 N","safe":"S EY1 F","safety":"S EY1 F T IY0","said":"S EH1 D","same":"S EY1 M","sane":"S EY1 N","scientists":"S AY1 AH0 N T IH0 S T S","screw":"S K R UW1","screwdriver":"S K R UW1 D R AY2 V ER0","seat":"S IY1 T","seem":"S IY1 M","seems":"S IY1 M Z","selling":"S EH1 L IH0 NG","sense":"S EH1 N S","servicing":"S ER1 V IH0 S IH0 NG","set":"S EH1 T","severe":"S AH0 V IH1 R","sharpening":"SH AA1 R P AH0 N IH0 NG","sheer":"SH IH1 R","shock":"SH AA1 K","shop":"SH AA1 P","signals":"S IH1 G N AH0 L Z","since":"S IH1 N S","six":"S IH1 K S","small":"S M AO1 L","socket":"S AA1 K AH0 T","some":"S AH1 M","somehow":"S AH1 M HH AW2","someone":"S AH1 M W AH2 N","someone's":"S AH1 M W AH2 N Z","spanner":"S P AE1 N ER0","speed":"S P IY1 D","spot":"S P AA1 T","squeaks":"S K W IY1 K S","started":"S T AA1 R T IH0 D","still":"S T IH1 L","stopped":"S T AA1 P T","strict":"S T R IH1 K T","such":"S AH1 CH","support":"S AH0 P AO1 R T","sustain":"S AH0 S T EY1 N","system":"S IH1 S T AH0 M","take":"T EY1 K","taken":"T EY1 K AH0 N","technological":"T EH2 K N AH0 L AA1 JH IH0 K AH0 L","technology":"T EH0 K N AA1 L AH0 JH IY0","telephone":"T EH1 L AH0 F OW2 N","television":"T EH1 L AH0 V IH2 ZH AH0 N","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","themselves":"DH EH0 M S EH1 L V Z","there":"DH EH1 R","they":"DH EY1","thing":"TH IH1 NG","things":"TH IH1 NG Z","this":"DH IH1 S","those":"DH OW1 Z","threat":"TH R EH1 T","three":"TH R IY1","tight":"T AY1 T","tighten":"T AY1 T AH0 N","tightening":"T AY1 T AH0 N IH0 NG","to":"T UW1","together":"T AH0 G EH1 DH ER0","too":"T UW1","took":"T UH1 K","touch":"T AH1 CH","transcribe":"T R AE0 N S K R AY1 B","turn":"T ER1 N","tv":"T IY1 V IY1","twisted":"T W IH1 S T IH0 D","two":"T UW1","understand":"AH2 N D ER0 S T AE1 N D","understanding":"AH2 N D ER0 S T AE1 N D IH0 NG","undo":"AH0 N D UW1","unnecessary":"AH0 N N EH1 S AH0 S EH2 R IY0","up":"AH1 P","us":"AH1 S","use":"Y UW1 S","used":"Y UW1 Z D","useful":"Y UW1 S F AH0 L","using":"Y UW1 Z IH0 NG","usually":"Y UW1 ZH AH0 W AH0 L IY0","utter":"AH1 T ER0","vacuum":"V AE1 K Y UW0 M","valve":"V AE1 L V","very":"V EH1 R IY0","video":"V IH1 D IY0 OW0","vocabulary":"V OW0 K AE1 B Y AH0 L EH2 R IY0","wall":"W AO1 L","want":"W AA1 N T","was":"W AA1 Z","watch":"W AA1 CH","ways":"W EY1 Z","we":"W IY1","wearing":"W EH1 R IH0 NG","well":"W EH1 L","what":"W AH1 T","when":"W EH1 N","where":"W EH1 R","which":"W IH1 CH","who":"HH UW1","will":"W IH1 L","winding":"W AY1 N D IH0 NG","wire":"W AY1 ER0","wires":"W AY1 ER0 Z","with":"W IH1 DH","within":"W IH0 DH IH1 N","without":"W IH0 TH AW1 T","wonder":"W AH1 N D ER0","work":"W ER1 K","workers":"W ER1 K ER0 Z","wouldn't":"W UH1 D AH0 N T","write":"R AY1 T","wrong":"R AO1 NG","you":"Y UW1","your":"Y AO1 R","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
