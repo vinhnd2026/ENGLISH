@@ -1,4 +1,10 @@
-Bài học tiếng Anh tương tác
+# English — First Certificate Language Practice
+
+Bài học tiếng Anh tương tác (HTML) xây dựng theo sách:
+
+- **Sách:** *First Certificate Language Practice*
+- **Tác giả:** Michael Vince
+- **Nhà xuất bản:** Macmillan, 2003 (bản with key, ISBN 1 405 00766 4)
 
 🌐 **Xem trực tuyến (GitHub Pages):** https://vinhnd2026.github.io/ENGLISH/
 
@@ -20,6 +26,10 @@ Tổng lộ trình: **56 unit** (35 Grammar + 21 Vocabulary), xem đầy đủ �
 - Ví dụ có nút nghe giọng Anh 🇬🇧 / Mỹ 🇺🇸 (Web Speech API)
 - Bài tập tương tác: trắc nghiệm chọn dạng đúng, điền dạng động từ, phán đoán suitable/unsuitable, viết lại câu — chấm điểm ngay
 - Đáp án đối chiếu phần **Grammar Answers / Vocabulary Answers** ở cuối sách
+
+## Level C1 — Advanced
+
+Thư mục [`advanced/`](advanced/): **50 unit** (Grammar 1–30 + Vocabulary 1–20) trình độ C1, cùng cấu trúc 3 bản VN · JP · EN, đang bổ sung dần. Bài đã có: Advanced Grammar 1 — Present time.
 
 ## Ghi chú
 
