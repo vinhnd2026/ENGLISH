@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 21 — Verbs + prepositions</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Mục lục</a> &nbsp;·&nbsp; <a href="Adv-Grammar-21-Verbs-Prepositions-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-21-Verbs-Prepositions-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 21 — Verbs + prepositions</h1>
+  <p>Động từ + giới từ: in · for · of · with · from · on · against · about · at · to</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. Động từ + <i>in, for, of, with</i></h2>
+  <p>Nhiều động từ tiếng Anh luôn đi kèm một giới từ cố định — chọn sai giới từ sẽ làm câu sai hoặc đổi nghĩa. Cách học hiệu quả nhất là học cả cụm <b>động từ + giới từ</b> như một đơn vị duy nhất. Bài này hệ thống các động từ thường gặp theo giới từ đi kèm.</p>
+
+  <h3>a) Động từ + <i>in</i></h3>
+  <div class="formula">be absorbed in · confide in · be engrossed in · implicate someone in · involve someone in · result in · specialise in · succeed in</div>
+  <div class="ex"><div class="en">She specialises in stomach disorders.</div><div class="vi">Cô ấy chuyên về các chứng rối loạn dạ dày. (specialise in)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He confided in me about his plans.</div><div class="vi">Anh ấy tâm sự với tôi về kế hoạch của mình. (confide in someone)</div><div class="tts"></div></div>
+
+  <h3>b) Động từ + <i>for</i></h3>
+  <div class="formula">account for · allow for · apologise for · blame someone for · care for · cater for · charge someone for · count for · earmark something for · pay for</div>
+  <div class="ex"><div class="en">Let me apologise for Jack — he's stuck in traffic.</div><div class="vi">Cho tôi xin lỗi thay cho Jack — cậu ấy đang kẹt xe. (apologise for someone: xin lỗi thay ai)</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>allow for something</i> = tính đến, dự phòng cho điều gì; <i>count for</i> = có giá trị, được coi trọng (thường gặp: <i>count for nothing</i> = chẳng có giá trị gì).</div>
+
+  <h3>c) Động từ + <i>of</i></h3>
+  <div class="formula">accuse someone of · convict someone of · remind someone of · suspect someone of</div>
+  <div class="ex"><div class="en">Two men were convicted of fraud.</div><div class="vi">Hai người đàn ông bị kết tội lừa đảo. (convict someone of)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This house reminds me of my own home.</div><div class="vi">Ngôi nhà này làm tôi nhớ đến nhà mình. (remind someone of)</div><div class="tts"></div></div>
+
+  <h3>d) Động từ + <i>with</i></h3>
+  <div class="formula">acquaint someone with · associate with · charge someone with · coincide with · collide with · comply with · confront someone with · confuse A with B · deal with · discuss something with someone · meet with · plead with · provide someone with · tamper with · trust someone with</div>
+  <div class="ex"><div class="en">The room was cluttered with boxes.</div><div class="vi">Căn phòng chất đầy thùng hộp. (be cluttered with)</div><div class="tts"></div></div>
+  <div class="note">⚠️ Một số cụm + <i>with</i> hầu như chỉ gặp ở thể bị động: <i>be cluttered with, be crammed with, be packed with, be faced with</i>. Riêng <i>be concerned with</i> nghĩa là “liên quan đến”, khác hẳn <i>be concerned about</i> = “lo lắng về” (xem mục 2d).</div>
+</div>
+
+<div class="card">
+  <h2>2. Động từ + <i>from, on, against, about</i></h2>
+
+  <h3>a) Động từ + <i>from</i></h3>
+  <div class="formula">benefit from · derive something from · deter someone from · differ from · distinguish A from B · distract someone from · exempt someone from · expel someone from · refrain from · resign from · result from · stem from · suffer from · translate something from … into …</div>
+  <div class="ex"><div class="en">His anxiety stemmed from nervous tension and stress.</div><div class="vi">Sự lo âu của anh ấy bắt nguồn từ căng thẳng thần kinh và stress. (stem from)</div><div class="tts"></div></div>
+  <div class="note">⚠️ Đừng nhầm chiều nhân quả: <i>result in</i> + kết quả (việc A <b>gây ra</b> B), còn <i>result from</i> + nguyên nhân (việc B <b>do</b> A gây ra). Tương tự: <i>distinguish A from B</i> hoặc <i>distinguish between A and B</i>.</div>
+
+  <h3>b) Động từ + <i>on</i></h3>
+  <div class="formula">base something on · blame something on someone · be centred on · concentrate on · decide on · depend on · elaborate on · impose on · insist on · pride oneself on</div>
+  <div class="ex"><div class="en">Alan prides himself on his punctuality.</div><div class="vi">Alan tự hào về sự đúng giờ của mình. (pride oneself on)</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>blame</i> có hai mẫu: <i>blame someone for something</i> (đổ lỗi cho ai về việc gì) và <i>blame something on someone</i> (đổ việc gì lên đầu ai).</div>
+
+  <h3>c) Động từ + <i>against</i></h3>
+  <div class="formula">insure something against · protest against</div>
+  <div class="ex"><div class="en">Is it possible to insure my bike against theft?</div><div class="vi">Có thể mua bảo hiểm chống trộm cho xe đạp của tôi không? (insure something against)</div><div class="tts"></div></div>
+
+  <h3>d) Động từ + <i>about</i></h3>
+  <div class="formula">argue about · be concerned about · boast about · decide about · protest about</div>
+  <div class="ex"><div class="en">She is always boasting about her wealthy parents.</div><div class="vi">Cô ấy lúc nào cũng khoe khoang về bố mẹ giàu có của mình. (boast about)</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>protest</i> đi được với cả <i>against</i> và <i>about</i>: <i>protest against / about the decision</i>.</div>
+</div>
+
+<div class="card">
+  <h2>3. Động từ + <i>at, to</i> và các giới từ khác</h2>
+
+  <h3>a) Động từ + <i>at</i></h3>
+  <div class="formula">glance at · guess at · hint at · marvel at</div>
+  <div class="ex"><div class="en">I marvelled at Jane's ability to jump so high.</div><div class="vi">Tôi thán phục khả năng nhảy cao của Jane. (marvel at)</div><div class="tts"></div></div>
+
+  <h3>b) Động từ + <i>to</i></h3>
+  <div class="formula">answer to (a description) · appeal to · apply oneself to · attend to · attribute something to · commit oneself to · confess to · devote oneself to · prefer A to B · react to · refer to · refer someone to someone · be resigned to · resort to · see to · subject someone to · succeed to (the throne) · be used to doing</div>
+  <div class="ex"><div class="en">The doctor referred me to a specialist.</div><div class="vi">Bác sĩ chuyển tôi đến gặp bác sĩ chuyên khoa. (refer someone to someone)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I prefer tea to coffee.</div><div class="vi">Tôi thích trà hơn cà phê. (prefer A to B — không dùng <i>than</i>)</div><div class="tts"></div></div>
+  <div class="note">⚠️ <i>be used to</i> + V-ing = quen với việc gì (khác hẳn <i>used to</i> + V = trước đây thường làm). <i>Answer to a description</i> = khớp với bản mô tả (thường nói về người bị truy nã). <i>Resort to</i> = đành phải dùng đến (biện pháp cuối cùng).</div>
+
+  <h3>c) Động từ + <i>out</i></h3>
+  <div class="formula">phase something out</div>
+  <div class="ex"><div class="en">The old system is being phased out.</div><div class="vi">Hệ thống cũ đang bị loại bỏ dần. (phase out)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li>Học động từ theo <b>cả cụm với giới từ đi kèm</b>: <i>succeed in, apologise for, accuse of, comply with, refrain from…</i></li>
+    <li>Cặp dễ nhầm: <i>accuse someone <b>of</b></i> nhưng <i>charge someone <b>with</b></i>; <i>blame someone <b>for</b> something</i> nhưng <i>blame something <b>on</b> someone</i>.</li>
+    <li><i>result <b>in</b></i> + kết quả (gây ra) ↔ <i>result <b>from</b></i> + nguyên nhân (bắt nguồn từ); tương tự <i>stem from</i> = bắt nguồn từ.</li>
+    <li>Nhiều cụm + <i>with</i> thường ở thể bị động: <i>be packed with, be crammed with, be cluttered with, be faced with</i>.</li>
+    <li><i>prefer A <b>to</b> B</i> (không dùng <i>than</i>); <i>be used <b>to</b></i> + V-ing; <i>translate <b>from</b> … <b>into</b> …</i></li>
+    <li>Một động từ đổi giới từ là đổi nghĩa: <i>be concerned <b>about</b></i> = lo lắng về ↔ <i>be concerned <b>with</b></i> = liên quan đến; <i>protest <b>against / about</b></i> đều được.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Điền một giới từ thích hợp</h2>
+  <p>Điền một giới từ thích hợp vào mỗi ô trống.</p>
+  <div class="q"><p>a) I really prefer just about anything <input class="blank" data-answers="to" data-display="to"> watching television.</p></div>
+  <div class="q"><p>b) This year's conference coincided <input class="blank" data-answers="with" data-display="with"> two other major conventions.</p></div>
+  <div class="q"><p>c) Is it possible to insure my bike <input class="blank" data-answers="against" data-display="against"> theft?</p></div>
+  <div class="q"><p>d) The problem stems <input class="blank" data-answers="from" data-display="from"> the government's lack of action.</p></div>
+  <div class="q"><p>e) When I asked Jean, she hinted <input class="blank" data-answers="at" data-display="at"> the chance of a promotion for me.</p></div>
+  <div class="q"><p>f) Being rich doesn't count <input class="blank" data-answers="for" data-display="for"> much on a desert island.</p></div>
+  <div class="q"><p>g) I pleaded <input class="blank" data-answers="with" data-display="with"> John to change his mind, but he wouldn't listen.</p></div>
+  <div class="q"><p>h) I can't stand the way she is always boasting <input class="blank" data-answers="about" data-display="about"> her wealthy parents.</p></div>
+  <div class="q"><p>i) My grandfather is always confusing Madonna <input class="blank" data-answers="with" data-display="with"> Maradona.</p></div>
+  <div class="q"><p>j) Could you please refrain <input class="blank" data-answers="from" data-display="from"> smoking in the lecture hall.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Bài 2 — Điền động từ thích hợp: Sức khỏe của tôi</h2>
+  <p>Hoàn thành đoạn văn bằng một động từ thích hợp ở mỗi ô trống.</p>
+  <div class="q"><p>I had a difficult time last year with my health. For several months I was (1) <input class="blank" data-answers="suffering" data-display="suffering"> from periodic headaches and almost constant nausea. I made several visits to my GP, who (2) <input class="blank" data-answers="attributed" data-display="attributed"> my headaches to migraine and (3) <input class="blank" data-answers="provided" data-display="provided"> me with medication. When this failed to work he (4) <input class="blank" data-answers="concentrated|focused" data-display="concentrated"> on my nausea as the root cause, (5) <input class="blank" data-answers="blaming" data-display="blaming"> my headaches on the nausea. I was (6) <input class="blank" data-answers="subjected" data-display="subjected"> to five blood tests, none of which revealed anything significant. I (7) <input class="blank" data-answers="discussed" data-display="discussed"> my diet with the doctor at length, and we tried eliminating certain foods from my meals. He (8) <input class="blank" data-answers="suggested" data-display="suggested">, for example, I might (9) <input class="blank" data-answers="benefit" data-display="benefit"> from a low-fibre diet. But still the symptoms persisted, and I was starting to (10) <input class="blank" data-answers="resign" data-display="resign"> myself to feeling ill for the rest of my life. I was understandably concerned about the possibility of it being something serious, even a brain tumour, but the doctor said that my anxiety in this respect (11) <input class="blank" data-answers="stemmed|resulted" data-display="stemmed"> from nervous tension and stress. After six months I was (12) <input class="blank" data-answers="referred" data-display="referred"> to a consultant at the hospital, who (13) <input class="blank" data-answers="specialised|specialized" data-display="specialised"> in stomach disorders. She said that, even (14) <input class="blank" data-answers="allowing" data-display="allowing"> for my age and stressful lifestyle, it was still abnormal to experience symptoms like these for so long. She (15) <input class="blank" data-answers="elaborated" data-display="elaborated"> on all the possible causes of nausea in detail, and suggested that in my case the nausea might be the result of a liver disorder.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Kiểm tra Bài 2</button><button type="button" onclick="showFill('ex2')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex2')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 2: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Bài 3 — Hoàn thành câu thứ hai</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) Peter always trusts me with his secrets. <b>(in)</b></p><p>Peter <input class="blank wide" data-answers="always confides in" data-display="always confides in"> me.</p></div>
+  <div class="q"><p>b) A true story forms the basis of Mary's new novel. <b>(on)</b></p><p>Mary's new novel <input class="blank wide" data-answers="is based on" data-display="is based on"> a true story.</p></div>
+  <div class="q"><p>c) I thought it was marvellous that Jane could jump so high. <b>(at)</b></p><p>I <input class="blank wide" data-answers="marvelled at Jane's ability" data-display="marvelled at Jane's ability"> to jump so high.</p></div>
+  <div class="q"><p>d) A lot of people were packed on to the bus. <b>(with)</b></p><p>The bus <input class="blank wide" data-answers="was packed with" data-display="was packed with"> people.</p></div>
+  <div class="q"><p>e) You were in my dreams last night. <b>(about)</b></p><p>I <input class="blank wide" data-answers="dreamed about you|dreamt about you" data-display="dreamed about you"> last night.</p></div>
+  <div class="q"><p>f) Danny was asked to leave the school for bad behaviour. <b>(from)</b></p><p>Danny was <input class="blank wide" data-answers="expelled from the school" data-display="expelled from the school"> for bad behaviour.</p></div>
+  <div class="q"><p>g) This house makes me think of my own home! <b>(of)</b></p><p>This house <input class="blank wide" data-answers="reminds me of" data-display="reminds me of"> my own home.</p></div>
+  <div class="q"><p>h) Tina rewrote the French book in Spanish. <b>(from)</b></p><p>Tina <input class="blank wide" data-answers="translated the book from French" data-display="translated the book from French"> into Spanish.</p></div>
+  <div class="q"><p>i) Christmas and roast turkey go together in my mind. <b>(with)</b></p><p>Christmas <input class="blank wide" data-answers="is associated with" data-display="is associated with"> roast turkey in my mind.</p></div>
+  <div class="q"><p>j) I think a rest would do you good. <b>(from)</b></p><p>I think you <input class="blank wide" data-answers="would benefit from" data-display="would benefit from"> a rest.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Kiểm tra Bài 3</button><button type="button" onclick="showFill('ex3')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex3')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Điền một từ vào mỗi ô trống</h2>
+  <p>Điền một từ vào mỗi ô trống. Mỗi từ cần điền là một dạng của động từ đã học ở phần lý thuyết đầu bài.</p>
+  <div class="q"><p>a) The idea of marriage doesn't <input class="blank" data-answers="appeal" data-display="appeal"> to me.</p></div>
+  <div class="q"><p>b) We <input class="blank" data-answers="succeeded" data-display="succeeded"> in finding Ann's house at the second attempt.</p></div>
+  <div class="q"><p>c) However poor I was I would not <input class="blank" data-answers="resort" data-display="resort"> to stealing.</p></div>
+  <div class="q"><p>d) Have you <input class="blank" data-answers="accounted" data-display="accounted"> for the wind speed in your calculations?</p></div>
+  <div class="q"><p>e) He confessed when he was <input class="blank" data-answers="confronted|faced" data-display="confronted"> with the evidence.</p></div>
+  <div class="q"><p>f) You need to <input class="blank" data-answers="apply" data-display="apply"> yourself more to your work.</p></div>
+  <div class="q"><p>g) Alan <input class="blank" data-answers="prides|prided" data-display="prides"> himself on his punctuality.</p></div>
+  <div class="q"><p>h) I was <input class="blank" data-answers="distracted" data-display="distracted"> from doing my work by the music.</p></div>
+  <div class="q"><p>i) I <input class="blank" data-answers="apologise|apologize" data-display="apologise"> for breaking your electric drill.</p></div>
+  <div class="q"><p>j) Tina <input class="blank" data-answers="paid" data-display="paid"> for everyone's lunch yesterday, as she'd just won some money on the lottery.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Điền giới từ thích hợp: Cách cư xử nơi công cộng</h2>
+  <p>Hoàn thành đoạn văn bằng một giới từ thích hợp ở mỗi ô trống.</p>
+  <div class="q"><p>It never ceases to amaze me how little notice some people now take (1) <input class="blank" data-answers="of" data-display="of"> rules in public places. When I was a child, it would never have occurred to me not to comply (2) <input class="blank" data-answers="with" data-display="with"> the rules. If someone smoked in defiance of a 'No Smoking' sign on a train, they would rapidly be reminded (3) <input class="blank" data-answers="of" data-display="of"> their transgression by several irate passengers, who would refer the errant smoker (4) <input class="blank" data-answers="to" data-display="to"> the sign in no uncertain terms. What's more, the person accused would normally apologise (5) <input class="blank" data-answers="for" data-display="for"> his indiscretion, and would certainly refrain (6) <input class="blank" data-answers="from" data-display="from"> repeating his anti-social behaviour. These days reminding someone (7) <input class="blank" data-answers="of" data-display="of"> their public duty not to drop litter or swear on the streets is likely to succeed only (8) <input class="blank" data-answers="in" data-display="in"> unleashing a torrent of verbal abuse (9) <input class="blank" data-answers="from" data-display="from"> the wrongdoer. Many people seem blithely unaware that, for example, the 'silence in the library' rule applies (10) <input class="blank" data-answers="to" data-display="to"> them, as much as to anyone else. Asking them is not enough, pleading (11) <input class="blank" data-answers="with" data-display="with"> them might still not deter them (12) <input class="blank" data-answers="from" data-display="from"> their noisy chat, resorting (13) <input class="blank" data-answers="to" data-display="to"> physical violence, an undesirable option, seems the only one likely to get a result. But, in all seriousness, what really annoys me is that one is made to feel churlish or old-fashioned just to insist (14) <input class="blank" data-answers="on" data-display="on"> basic respect of everyday manners. Truly, it seems polite behaviour and good manners count (15) <input class="blank" data-answers="for" data-display="for"> nothing in today's society.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Bài 6 — Hoàn thành câu thứ hai</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) When he has to face a crisis, Tony panics. <b>(faced)</b></p><p>Tony panics <input class="blank wide" data-answers="when faced with" data-display="when faced with"> a crisis.</p></div>
+  <div class="q"><p>b) Collecting stamps gives me a lot of pleasure. <b>(derive)</b></p><p>I <input class="blank wide" data-answers="derive a lot of pleasure from" data-display="derive a lot of pleasure from"> collecting stamps.</p></div>
+  <div class="q"><p>c) The arrested man did not look the same as the wanted man. <b>(answer)</b></p><p>The arrested man did not <input class="blank wide" data-answers="answer to the description of" data-display="answer to the description of"> the wanted man.</p></div>
+  <div class="q"><p>d) The facts of the case were familiar to the lawyer. <b>(acquainted)</b></p><p>The lawyer <input class="blank wide" data-answers="was acquainted with" data-display="was acquainted with"> the facts of the case.</p></div>
+  <div class="q"><p>e) The deaths of over fifty people were caused by the storm. <b>(resulted)</b></p><p>The storm <input class="blank wide" data-answers="resulted in over fifty people being" data-display="resulted in over fifty people being"> killed.</p></div>
+  <div class="q"><p>f) We have given winter equipment to all the soldiers. <b>(provided)</b></p><p>All the soldiers <input class="blank wide" data-answers="have been provided with" data-display="have been provided with"> winter equipment.</p></div>
+  <div class="q"><p>g) It's just our luck that the funeral is at the same time as our holiday in Crete. <b>(coincide)</b></p><p>It's just our luck that <input class="blank wide" data-answers="the funeral coincides with our holiday" data-display="the funeral coincides with our holiday"> in Crete.</p></div>
+  <div class="q"><p>h) You haven't really explained exactly how the money disappeared. <b>(account)</b></p><p>Your explanation <input class="blank wide" data-answers="does not really account for the disappearance" data-display="does not really account for the disappearance"> of the money.</p></div>
+  <div class="q"><p>i) An ancient philosopher is supposed to have said these words. <b>(attributed)</b></p><p>These words <input class="blank wide" data-answers="are attributed to" data-display="are attributed to"> an ancient philosopher.</p></div>
+  <div class="q"><p>j) I'm sure Brian won't mind looking after the baby. <b>(care)</b></p><p>I'm sure Brian won't object <input class="blank wide" data-answers="to taking care of" data-display="to taking care of"> the baby.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 6: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+  <p class="small">Mẹo chấm: máy tự bỏ qua hoa/thường và dấu câu. Nếu máy báo sai chỉ vì khác cách viết (ví dụ dạng rút gọn), hãy bấm “Hiện đáp án” để tự đối chiếu.</p>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>70</b> (Bài 1: 10 · Bài 2: 15 ô · Bài 3: 10 · Bài 4: 10 · Bài 5: 15 ô · Bài 6: 10).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="../index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<script>
+var PRON = {"ability":"AH0 B IH1 L AH0 T IY2","abnormal":"AE0 B N AO1 R M AH0 L","about":"AH0 B AW1 T","absorbed":"AH0 B Z AO1 R B D","abuse":"AH0 B Y UW1 S","account":"AH0 K AW1 N T","accuse":"AH0 K Y UW1 Z","accused":"AH0 K Y UW1 Z D","acquaint":"AH0 K W EY1 N T","acquainted":"AH0 K W EY1 N T IH0 D","action":"AE1 K SH AH0 N","advanced":"AH0 D V AE1 N S T","after":"AE1 F T ER0","against":"AH0 G EH1 N S T","age":"EY1 JH","ai":"AY1","alan":"AE1 L AH0 N","all":"AO1 L","allow":"AH0 L AW1","almost":"AO1 L M OW2 S T","always":"AO1 L W EY2 Z","amaze":"AH0 M EY1 Z","an":"AE1 N","ancient":"EY1 N CH AH0 N T","and":"AH0 N D","ang":"AE1 NG","ann's":"AE1 N Z","annoys":"AH0 N OY1 Z","answer":"AE1 N S ER0","anxiety":"AE0 NG Z AY1 AH0 T IY0","anyone":"EH1 N IY0 W AH2 N","anything":"EH1 N IY0 TH IH2 NG","apologise":"AH0 P AA1 L AH0 JH AY2 Z","appeal":"AH0 P IY1 L","applies":"AH0 P L AY1 Z","apply":"AH0 P L AY1","argue":"AA1 R G Y UW0","arrested":"ER0 EH1 S T IH0 D","as":"AE1 Z","asked":"AE1 S K T","asking":"AE1 S K IH0 NG","associate":"AH0 S OW1 S IY0 AH0 T","at":"AE1 T","attempt":"AH0 T EH1 M P T","attend":"AH0 T EH1 N D","attribute":"AE1 T R AH0 B Y UW2 T","attributed":"AH0 T R IH1 B Y AH0 T IH0 D","baby":"B EY1 B IY0","bad":"B AE1 D","base":"B EY1 S","basic":"B EY1 S IH0 K","basis":"B EY1 S AH0 S","be":"B IY1","behaviour":"B IH0 HH EY1 V Y ER0","being":"B IY1 IH0 NG","benefit":"B EH1 N AH0 F IH0 T","between":"B IH0 T W IY1 N","bi":"B AY1","bike":"B AY1 K","blame":"B L EY1 M","blithely":"B L AY1 TH L IY0","blood":"B L AH1 D","boast":"B OW1 S T","boasting":"B OW1 S T IH0 NG","book":"B UH1 K","boxes":"B AA1 K S AH0 Z","brain":"B R EY1 N","breaking":"B R EY1 K IH0 NG","brian":"B R AY1 AH0 N","bus":"B AH1 S","but":"B AH1 T","by":"B AY1","calculations":"K AE2 L K Y AH0 L EY1 SH AH0 N Z","can't":"K AE1 N T","cao":"K AW1","care":"K EH1 R","case":"K EY1 S","cater":"K EY1 T ER0","cause":"K AA1 Z","caused":"K AA1 Z D","causes":"K AA1 Z AH0 Z","ceases":"S IY1 S IH0 Z","certain":"S ER1 T AH0 N","certainly":"S ER1 T AH0 N L IY0","chance":"CH AE1 N S","change":"CH EY1 N JH","charge":"CH AA1 R JH","chat":"CH AE1 T","chi":"K AY1","child":"CH AY1 L D","cho":"CH OW1","christmas":"K R IH1 S M AH0 S","churlish":"CH ER1 L IH0 SH","cluttered":"K L AH1 T ER0 D","coffee":"K AA1 F IY0","coincide":"K OW2 IH0 N S AY1 D","coincided":"K OW2 AH0 N S AY1 D AH0 D","collecting":"K AH0 L EH1 K T IH0 NG","collide":"K AH0 L AY1 D","commit":"K AH0 M IH1 T","comply":"K AH0 M P L AY1","concentrate":"K AA1 N S AH0 N T R EY2 T","concerned":"K AH0 N S ER1 N D","conference":"K AA1 N F ER0 AH0 N S","confess":"K AH0 N F EH1 S","confessed":"K AH0 N F EH1 S T","confide":"K AH0 N F AY1 D","confided":"K AH0 N F AY1 D IH0 D","confront":"K AH0 N F R AH1 N T","confuse":"K AH0 N F Y UW1 Z","confusing":"K AH0 N F Y UW1 Z IH0 NG","constant":"K AA1 N S T AH0 N T","consultant":"K AH0 N S AH1 L T AH0 N T","conventions":"K AH0 N V EH1 N SH AH0 N Z","convict":"K AA1 N V IH0 K T","convicted":"K AH0 N V IH1 K T AH0 D","could":"K UH1 D","count":"K AW1 N T","crammed":"K R AE1 M D","crete":"K R IY1 T","crisis":"K R AY1 S AH0 S","danny":"D AE1 N IY0","days":"D EY1 Z","deal":"D IY1 L","deaths":"D EH1 TH S","decide":"D IH2 S AY1 D","decision":"D IH0 S IH1 ZH AH0 N","defiance":"D IH0 F AY1 AH0 N S","depend":"D IH0 P EH1 N D","derive":"D ER0 AY1 V","description":"D IH0 S K R IH1 P SH AH0 N","desert":"D EH1 Z ER0 T","detail":"D IH0 T EY1 L","deter":"D IH0 T ER1","devote":"D IH0 V OW1 T","did":"D IH1 D","diet":"D AY1 AH0 T","differ":"D IH1 F ER0","difficult":"D IH1 F AH0 K AH0 L T","disappeared":"D IH2 S AH0 P IH1 R D","discuss":"D IH0 S K AH1 S","disorder":"D IH0 S AO1 R D ER0","disorders":"D IH0 S AO1 R D ER0 Z","distinguish":"D IH0 S T IH1 NG G W IH0 SH","distract":"D IH0 S T R AE1 K T","do":"D UW1","doctor":"D AA1 K T ER0","doesn't":"D AH1 Z AH0 N T","doing":"D UW1 IH0 NG","dreams":"D R IY1 M Z","drill":"D R IH1 L","drop":"D R AA1 P","duty":"D UW1 T IY0","earmark":"IH1 R M AA2 R K","elaborate":"IH0 L AE1 B R AH0 T","electric":"IH0 L EH1 K T R IH0 K","eliminating":"IH0 L IH1 M AH0 N EY2 T IH0 NG","else":"EH1 L S","english":"IH1 NG G L IH0 SH","engrossed":"IH0 N G R OW1 S T","enough":"IH0 N AH1 F","equipment":"IH0 K W IH1 P M AH0 N T","errant":"EH1 R AH0 N T","even":"IY1 V IH0 N","everyday":"EH1 V R IY0 D EY1","everyone's":"EH1 V R IY0 W AH2 N Z","evidence":"EH1 V AH0 D AH0 N S","exactly":"IH0 G Z AE1 K T L IY0","example":"IH0 G Z AE1 M P AH0 L","exempt":"IH0 G Z EH1 M P T","expel":"IH0 K S P EH1 L","experience":"IH0 K S P IH1 R IY0 AH0 N S","explained":"IH0 K S P L EY1 N D","explanation":"EH2 K S P L AH0 N EY1 SH AH0 N","face":"F EY1 S","faced":"F EY1 S T","facts":"F AE1 K T S","failed":"F EY1 L D","familiar":"F AH0 M IH1 L Y ER0","feel":"F IY1 L","feeling":"F IY1 L IH0 NG","fifty":"F IH1 F T IY0","finding":"F AY1 N D IH0 NG","five":"F AY1 V","foods":"F UW1 D Z","for":"F AO1 R","forms":"F AO1 R M Z","fraud":"F R AO1 D","french":"F R EH1 N CH","from":"F R AH1 M","funeral":"F Y UW1 N ER0 AH0 L","get":"G EH1 T","given":"G IH1 V AH0 N","gives":"G IH1 V Z","glance":"G L AE1 N S","go":"G OW1","good":"G UH1 D","government's":"G AH1 V ER0 M AH0 N T S","grammar":"G R AE1 M ER0","grandfather":"G R AE1 N D F AA2 DH ER0","guess":"G EH1 S","had":"HH AE1 D","hall":"HH AO1 L","has":"HH AE1 Z","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","he":"HH IY1","he's":"HH IY1 Z","headaches":"HH EH1 D EY2 K S","health":"HH EH1 L TH","her":"HH ER1","hi":"HH AY1","high":"HH AY1","himself":"HH IH0 M S EH1 L F","hint":"HH IH1 N T","hinted":"HH IH1 N T AH0 D","his":"HH IH1 Z","ho":"HH OW1","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","hospital":"HH AA1 S P IH2 T AH0 L","house":"HH AW1 S","how":"HH AW1","however":"HH AW2 EH1 V ER0","i'm":"AY1 M","idea":"AY0 D IY1 AH0","if":"IH1 F","ill":"IH1 L","implicate":"IH1 M P L IH0 K EY2 T","impose":"IH2 M P OW1 Z","in":"IH0 N","indiscretion":"IH2 N D IH0 S K R EH1 SH AH0 N","insist":"IH2 N S IH1 S T","insure":"IH2 N SH UH1 R","into":"IH1 N T UW0","involve":"IH2 N V AA1 L V","irate":"AY0 R EY1 T","is":"IH1 Z","island":"AY1 L AH0 N D","it":"IH1 T","it's":"IH1 T S","jack":"JH AE1 K","jane":"JH EY1 N","jane's":"JH EY1 N Z","jean":"JH IY1 N","john":"JH AA1 N","jump":"JH AH1 M P","just":"JH AH1 S T","key":"K IY1","ki":"K IY1","killed":"K IH1 L D","lack":"L AE1 K","last":"L AE1 S T","lawyer":"L AO1 Y ER0","leave":"L IY1 V","lecture":"L EH1 K CH ER0","length":"L EH1 NG K TH","let":"L EH1 T","li":"L IY1","life":"L AY1 F","lifestyle":"L AY1 F S T AY2 L","like":"L AY1 K","likely":"L AY1 K L IY0","listen":"L IH1 S AH0 N","litter":"L IH1 T ER0","little":"L IH1 T AH0 L","liver":"L IH1 V ER0","lo":"L OW1","long":"L AO1 NG","look":"L UH1 K","looking":"L UH1 K IH0 NG","lot":"L AA1 T","lottery":"L AA1 T ER0 IY0","lu":"L UW1","luck":"L AH1 K","lunch":"L AH1 N CH","made":"M EY1 D","madonna":"M AH0 D AA1 N AH0","major":"M EY1 JH ER0","makes":"M EY1 K S","man":"M AE1 N","manners":"M AE1 N ER0 Z","many":"M EH1 N IY0","maradona":"M AA2 R AH0 D OW1 N AH2","marriage":"M EH1 R IH0 JH","marvel":"M AA1 R V AH0 L","marvelled":"M AA0 R V EH1 L D","marvellous":"M AA1 R V AH0 L AH0 S","mary's":"M EH1 R IY0 Z","me":"M IY1","meals":"M IY1 L Z","medication":"M EH2 D AH0 K EY1 SH AH0 N","meet":"M IY1 T","men":"M EH1 N","might":"M AY1 T","migraine":"M AY1 G R EY2 N","mind":"M AY1 N D","model":"M AA1 D AH0 L","money":"M AH1 N IY0","months":"M AH1 N TH S","more":"M AO1 R","much":"M AH1 CH","music":"M Y UW1 Z IH0 K","my":"M AY1","myself":"M AY2 S EH1 L F","nausea":"N AO1 Z IY0 AH0","need":"N IY1 D","nervous":"N ER1 V AH0 S","never":"N EH1 V ER0","new":"N UW1","ng":"EH1 NG","night":"N AY1 T","no":"N OW1","noisy":"N OY1 Z IY0","none":"N AH1 N","normally":"N AO1 R M AH0 L IY0","not":"N AA1 T","nothing":"N AH1 TH IH0 NG","notice":"N OW1 T AH0 S","novel":"N AA1 V AH0 L","now":"N AW1","object":"AA1 B JH EH0 K T","occurred":"AH0 K ER1 D","of":"AH1 V","old":"OW1 L D","old-fashioned":"OW2 L D F AE1 SH AH0 N D","on":"AA1 N","one":"W AH1 N","oneself":"W AH2 N S EH1 L F","only":"OW1 N L IY0","option":"AA1 P SH AH0 N","or":"AO1 R","other":"AH1 DH ER0","our":"AW1 ER0","out":"AW1 T","over":"OW1 V ER0","own":"OW1 N","packed":"P AE1 K T","panics":"P AE1 N IH0 K S","parents":"P EH1 R AH0 N T S","passengers":"P AE1 S AH0 N JH ER0 Z","pay":"P EY1","people":"P IY1 P AH0 L","periodic":"P IH2 R IY0 AA1 D IH0 K","persisted":"P ER0 S IH1 S T IH0 D","person":"P ER1 S AH0 N","peter":"P IY1 T ER0","ph":"P IY1 EY1 CH","phase":"F EY1 Z","phased":"F EY1 Z D","philosopher":"F AH0 L AA1 S AH0 F ER0","physical":"F IH1 Z IH0 K AH0 L","places":"P L EY1 S AH0 Z","plans":"P L AE1 N Z","plead":"P L IY1 D","pleaded":"P L IY1 D IH0 D","pleading":"P L IY1 D IH0 NG","please":"P L IY1 Z","pleasure":"P L EH1 ZH ER0","points":"P OY1 N T S","polite":"P AH0 L AY1 T","poor":"P UW1 R","possibility":"P AA2 S AH0 B IH1 L AH0 T IY2","possible":"P AA1 S AH0 B AH0 L","practice":"P R AE1 K T AH0 S","prefer":"P R AH0 F ER1","prepositions":"P R EH2 P AH0 Z IH1 SH AH0 N Z","pride":"P R AY1 D","prides":"P R AY1 D Z","problem":"P R AA1 B L AH0 M","promotion":"P R AH0 M OW1 SH AH0 N","protest":"P R OW1 T EH2 S T","provide":"P R AH0 V AY1 D","provided":"P R AH0 V AY1 D IH0 D","public":"P AH1 B L IH0 K","punctuality":"P AH2 NG K CH UW0 AE1 L IH0 T IY0","qu":"K UW1","qua":"K W AA1","quan":"K W AO1 N","ra":"R AA1","rapidly":"R AE1 P AH0 D L IY0","react":"R IY0 AE1 K T","really":"R IH1 L IY0","refer":"R AH0 F ER1","referred":"R AH0 F ER1 D","refrain":"R IH0 F R EY1 N","remind":"R IY0 M AY1 N D","reminded":"R IY0 M AY1 N D IH0 D","reminding":"R IY0 M AY1 N D IH0 NG","reminds":"R IY0 M AY1 N D Z","repeating":"R IH0 P IY1 T IH0 NG","resign":"R IH0 Z AY1 N","resigned":"R IH0 Z AY1 N D","resort":"R IH0 Z AO1 R T","resorting":"R IH0 Z AO1 R T IH0 NG","respect":"R IH0 S P EH1 K T","rest":"R EH1 S T","result":"R IH0 Z AH1 L T","resulted":"R IH0 Z AH1 L T IH0 D","revealed":"R IH0 V IY1 L D","rewrote":"R IY0 R OW1 T","rich":"R IH1 CH","roast":"R OW1 S T","room":"R UW1 M","root":"R UW1 T","rule":"R UW1 L","rules":"R UW1 L Z","sai":"S AY1","said":"S EH1 D","same":"S EY1 M","sao":"S AW1","school":"S K UW1 L","second":"S EH1 K AH0 N D","secrets":"S IY1 K R AH0 T S","see":"S IY1","seem":"S IY1 M","seems":"S IY1 M Z","serious":"S IH1 R IY0 AH0 S","seriousness":"S IH1 R IY0 AH0 S N AH0 S","several":"S EH1 V R AH0 L","she":"SH IY1","she'd":"SH IY1 D","sign":"S AY1 N","significant":"S AH0 G N IH1 F IH0 K AH0 N T","silence":"S AY1 L AH0 N S","six":"S IH1 K S","smoked":"S M OW1 K T","smoker":"S M OW1 K ER0","smoking":"S M OW1 K IH0 NG","so":"S OW1","society":"S AH0 S AY1 AH0 T IY0","soldiers":"S OW1 L JH ER0 Z","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","spanish":"S P AE1 N IH0 SH","specialise":"S P EH1 SH AH0 L AY2 Z","specialist":"S P EH1 SH AH0 L AH0 S T","speed":"S P IY1 D","stamps":"S T AE1 M P S","stand":"S T AE1 N D","starting":"S T AA1 R T IH0 NG","stealing":"S T IY1 L IH0 NG","stem":"S T EH1 M","stemmed":"S T EH1 M D","stems":"S T EH1 M Z","still":"S T IH1 L","stomach":"S T AH1 M AH0 K","storm":"S T AO1 R M","story":"S T AO1 R IY0","streets":"S T R IY1 T S","stress":"S T R EH1 S","stressful":"S T R EH1 S F AH0 L","stuck":"S T AH1 K","subject":"S AH0 B JH EH1 K T","succeed":"S AH0 K S IY1 D","suffer":"S AH1 F ER0","suggested":"S AH0 JH EH1 S T IH0 D","supposed":"S AH0 P OW1 Z D","sure":"SH UH1 R","suspect":"S AH0 S P EH1 K T","swear":"S W EH1 R","symptoms":"S IH1 M P T AH0 M Z","system":"S IH1 S T AH0 M","take":"T EY1 K","tamper":"T AE1 M P ER0","tea":"T IY1","television":"T EH1 L AH0 V IH2 ZH AH0 N","tension":"T EH1 N SH AH0 N","terms":"T ER1 M Z","tests":"T EH1 S T S","th":"T IY1 EY1 CH","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","theft":"TH EH1 F T","their":"DH EH1 R","them":"DH EH1 M","theo":"TH IY1 OW0","these":"DH IY1 Z","they":"DH EY1","thi":"TH IY1","think":"TH IH1 NG K","this":"DH IH1 S","thought":"TH AO1 T","throne":"TH R OW1 N","thuy":"T UW1","ti":"T IY1","time":"T AY1 M","tina":"T IY1 N AH0","to":"T UW1","today's":"T AH0 D EY1 Z","together":"T AH0 G EH1 DH ER0","tony":"T OW1 N IY0","torrent":"T AO1 R AH0 N T","traffic":"T R AE1 F IH0 K","train":"T R EY1 N","trang":"T R AE1 NG","transgression":"T R AE0 N Z G R EH1 SH AH0 N","translate":"T R AE0 N Z L EY1 T","tried":"T R AY1 D","true":"T R UW1","truly":"T R UW1 L IY0","trust":"T R AH1 S T","trusts":"T R AH1 S T S","turkey":"T ER1 K IY0","two":"T UW1","unaware":"AH2 N AH0 W EH1 R","uncertain":"AH0 N S ER1 T AH0 N","understandably":"AH2 N D ER0 S T AE1 N D AH0 B L IY0","undesirable":"AH2 N D IH0 Z AY1 R AH0 B AH0 L","unleashing":"AH0 N L IY1 SH IH0 NG","used":"Y UW1 Z D","verbal":"V ER1 B AH0 L","verbs":"V ER1 B Z","vi":"V AY1","violence":"V AY1 AH0 L AH0 N S","visits":"V IH1 Z IH0 T S","wanted":"W AO1 N T IH0 D","was":"W AA1 Z","watching":"W AA1 CH IH0 NG","way":"W EY1","we":"W IY1","wealthy":"W EH1 L TH IY0","were":"W ER1","what":"W AH1 T","what's":"W AH1 T S","when":"W EH1 N","which":"W IH1 CH","who":"HH UW1","wind":"W AY1 N D","winter":"W IH1 N T ER0","with":"W IH1 DH","won":"W AH1 N","won't":"W OW1 N T","words":"W ER1 D Z","work":"W ER1 K","would":"W UH1 D","wouldn't":"W UH1 D AH0 N T","wrongdoer":"R AO1 NG D UW1 ER0","year":"Y IH1 R","year's":"Y IH1 R Z","yesterday":"Y EH1 S T ER0 D EY2","you":"Y UW1","your":"Y AO1 R","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
