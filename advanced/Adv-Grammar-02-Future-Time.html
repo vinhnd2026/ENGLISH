@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 2 — Future time</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Mục lục</a> &nbsp;·&nbsp; <a href="Adv-Grammar-02-Future-Time-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-02-Future-Time-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 2 — Future time</h1>
+  <p>Thì tương lai: will · going to · Present Continuous · Future Continuous · Future Perfect · Các cách nói khác về tương lai</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. Đối lập cơ bản: will, going to và Present Continuous</h2>
+
+  <h3>a) Will — dự đoán và quyết định tức thời</h3>
+  <div class="formula">S + will + V</div>
+  <p><i>Will</i> thường được xem là thì tương lai “dự đoán”: nó nói về <b>sự thật đã biết</b> hoặc điều người nói <b>cho là đúng</b> về tương lai.</p>
+  <div class="ex"><div class="en">I'll be late home this evening.</div><div class="vi">Tôi tối nay sẽ về nhà muộn. (dự đoán)</div><div class="tts"></div></div>
+  <p><i>Will</i> cũng có thể diễn tả một <b>phỏng đoán ngay ở hiện tại</b>:</p>
+  <div class="ex"><div class="en">That'll be Jim at the door.</div><div class="vi">Chắc là Jim ở cửa đấy. (người nói phỏng đoán)</div><div class="tts"></div></div>
+  <p>Và <i>will</i> còn dùng cho <b>quyết định được đưa ra ngay tại lúc nói</b>:</p>
+  <div class="ex"><div class="en">I'll take this one.</div><div class="vi">Tôi sẽ lấy cái này. (quyết định ngay tại chỗ)</div><div class="tts"></div></div>
+
+  <h3>b) Be going to — ý định đã định và dấu hiệu ở hiện tại</h3>
+  <div class="formula">S + am / is / are + going to + V</div>
+  <p><i>Be going to</i> diễn tả <b>ý định, kế hoạch đã được quyết định trước lúc nói</b>:</p>
+  <div class="ex"><div class="en">I'm going to wait here until Carol gets back.</div><div class="vi">Tôi định đợi ở đây cho đến khi Carol quay lại. (ý định đã định)</div><div class="tts"></div></div>
+  <p>Nó cũng dùng cho sự việc mà <b>nguyên nhân hay dấu hiệu đã rõ ngay ở hiện tại</b>:</p>
+  <div class="ex"><div class="en">Look at that tree! It's going to fall.</div><div class="vi">Nhìn cái cây kia! Nó sắp đổ rồi. (dấu hiệu rõ ở hiện tại)</div><div class="tts"></div></div>
+  <p>Lưu ý: quyết định diễn đạt bằng <i>going to</i> thường hướng tới một thời điểm <b>xa hơn</b> trong tương lai, chứ không phải quyết định ngay tức thì như với <i>will</i>.</p>
+
+  <h3>c) Present Continuous — việc đã sắp xếp cố định</h3>
+  <div class="formula">S + am / is / are + V-ing &nbsp;·&nbsp; thường kèm mốc thời gian</div>
+  <p>Thì hiện tại tiếp diễn dùng cho <b>kế hoạch đã sắp xếp xong</b>, nhất là các cuộc hẹn xã giao và chuyện đi lại. Cách dùng này rất gần nghĩa với <i>going to</i>:</p>
+  <div class="ex"><div class="en">I am having a party next week.</div><div class="vi">Tuần tới tôi tổ chức tiệc. (≈ I am going to have a party next week.)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Future Continuous và Future Perfect</h2>
+
+  <h3>a) Future Continuous — đang diễn ra tại một mốc tương lai</h3>
+  <div class="formula">S + will be + V-ing</div>
+  <p>Thì tương lai tiếp diễn nói về việc <b>sẽ đang diễn ra</b> tại một thời điểm trong tương lai:</p>
+  <div class="ex"><div class="en">Come round in the morning. I'll be painting in the kitchen.</div><div class="vi">Sáng mai ghé qua nhé. Lúc đó tôi sẽ đang sơn nhà bếp.</div><div class="tts"></div></div>
+  <p>Nó còn dùng cho những việc <b>dù sao cũng sẽ xảy ra</b> theo thông lệ, không phải do ta chủ động sắp đặt:</p>
+  <div class="ex"><div class="en">I won't bother to fix a time to see you, because I'll be calling into the office anyway several times next week.</div><div class="vi">Tôi không cần hẹn giờ gặp bạn đâu, vì tuần tới đằng nào tôi cũng sẽ ghé văn phòng mấy lần.</div><div class="tts"></div></div>
+  <p>Trong một số ngữ cảnh, tương lai tiếp diễn nghe <b>lịch sự hơn</b> <i>will</i> khi hỏi về kế hoạch của người khác; nó cũng dùng cho <b>kế hoạch và sắp xếp cố định</b>:</p>
+  <div class="ex"><div class="en">Will you be going to the shops later? — The band will be performing live in Paris this summer.</div><div class="vi">Lát nữa bạn có đi mua sắm không? (hỏi lịch sự) — Ban nhạc sẽ biểu diễn trực tiếp ở Paris mùa hè này. (sắp xếp cố định)</div><div class="tts"></div></div>
+
+  <h3>b) Future Perfect — nhìn lại từ một mốc tương lai</h3>
+  <div class="formula">S + will have + V<sub>3</sub> &nbsp;·&nbsp; S + will have been + V-ing</div>
+  <p>Thì tương lai hoàn thành, ở cả dạng đơn và dạng tiếp diễn, đặt ta tại một mốc tương lai rồi <b>nhìn lại</b>: dạng đơn nói việc <b>đã hoàn tất</b> trước mốc đó, dạng tiếp diễn nói việc <b>đã kéo dài</b> cho đến mốc đó:</p>
+  <div class="ex"><div class="en">In two years' time I'll have finished the book. — By the end of the month, I'll have been working for this firm for a year.</div><div class="vi">Hai năm nữa tôi sẽ viết xong cuốn sách. — Đến cuối tháng, tôi sẽ đã làm việc cho công ty này được một năm.</div><div class="tts"></div></div>
+  <p>Dạng này còn dùng để <b>phỏng đoán về việc đã xảy ra</b>:</p>
+  <div class="ex"><div class="en">You won't have heard the news, of course.</div><div class="vi">Chắc là bạn chưa nghe tin này đâu. (phỏng đoán về việc đã qua)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Các cách nói khác về tương lai</h2>
+
+  <h3>a) be to · be about to · be on the point of · be due to · just</h3>
+  <p><b>Be to</b> dùng cho những sắp xếp mang tính <b>chính thức</b>:</p>
+  <div class="ex"><div class="en">All students are to assemble in the hall at 9.00.</div><div class="vi">Tất cả học sinh phải tập trung tại hội trường lúc 9 giờ. (sắp xếp chính thức)</div><div class="tts"></div></div>
+  <p><b>Be about to</b> và <b>be on the point of</b> đều nói về việc <b>sắp xảy ra ngay</b> trong khoảnh khắc tới:</p>
+  <div class="ex"><div class="en">I think the play is about to start now. — Mary is on the point of resigning.</div><div class="vi">Tôi nghĩ vở kịch sắp bắt đầu rồi. — Mary sắp sửa từ chức.</div><div class="tts"></div></div>
+  <p><b>Be due to</b> nói về <b>thời gian theo lịch trình</b>:</p>
+  <div class="ex"><div class="en">The play is due to start in five minutes. — Ann's flight is due at 6.20.</div><div class="vi">Vở kịch theo lịch sẽ bắt đầu trong năm phút nữa. — Chuyến bay của Ann dự kiến đến lúc 6 giờ 20.</div><div class="tts"></div></div>
+  <p><b>Just</b> — với hiện tại tiếp diễn, hoặc trong cụm <i>just about to</i> — cũng tả việc đang ở ngay điểm sắp xảy ra:</p>
+  <div class="ex"><div class="en">Hurry up! The train is just leaving.</div><div class="vi">Nhanh lên! Tàu sắp chạy rồi đấy.</div><div class="tts"></div></div>
+
+  <h3>b) Present Simple và Present Perfect trong mệnh đề tương lai</h3>
+  <p>Trong <b>mệnh đề thời gian</b> nói về tương lai (sau <i>when, as soon as…</i>), ta dùng <b>hiện tại đơn</b> thay cho <i>will</i>; nếu muốn nhấn mạnh việc đó <b>hoàn tất trước</b>, có thể dùng <b>hiện tại hoàn thành</b>:</p>
+  <div class="ex"><div class="en">When we get there, we'll have dinner. — When we've had a rest, we'll go out.</div><div class="vi">Khi đến nơi, chúng ta sẽ ăn tối. — Khi đã nghỉ ngơi xong, chúng ta sẽ ra ngoài.</div><div class="tts"></div></div>
+  <p>Hiện tại đơn còn dùng cho <b>sự kiện cố định</b> không phụ thuộc vào ý muốn của người nói, và cho các mốc trên <b>lịch</b>:</p>
+  <div class="ex"><div class="en">Tom retires in three years. — Christmas is on a Tuesday next year.</div><div class="vi">Ba năm nữa Tom nghỉ hưu. (sự kiện cố định) — Năm tới Giáng sinh rơi vào thứ Ba. (lịch)</div><div class="tts"></div></div>
+
+  <h3>c) hope, các động từ suy nghĩ + will, và shall</h3>
+  <p><i>Hope</i> có thể đi với động từ ở thì hiện tại hoặc với <i>will</i>:</p>
+  <div class="ex"><div class="en">I hope it doesn't rain. — I hope it won't rain.</div><div class="vi">Tôi hy vọng trời không mưa. — Tôi hy vọng trời sẽ không mưa.</div><div class="tts"></div></div>
+  <p>Hầu hết các <b>động từ chỉ suy nghĩ</b> — <i>think, believe, expect, doubt</i> — đều có thể đi với <i>will</i> khi có nghĩa tương lai:</p>
+  <div class="ex"><div class="en">I expect the train will be late. — I doubt whether United will win.</div><div class="vi">Tôi đoán tàu sẽ đến muộn. — Tôi nghi là United khó thắng.</div><div class="tts"></div></div>
+  <p><i>Shall</i> dùng cho ngôi thứ nhất để nói về tương lai thường được coi là cách dùng của <b>tiếng Anh Anh</b>, mang sắc thái trang trọng, hình thức và đang dần ít dùng.</p>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li><b>Will</b>: dự đoán, phỏng đoán (kể cả về hiện tại) và quyết định ngay tại lúc nói. <b>Going to</b>: kế hoạch đã quyết định trước, và sự việc có dấu hiệu rõ ở hiện tại. <b>Present Continuous</b>: việc đã sắp xếp cố định, thường kèm mốc thời gian.</li>
+    <li><b>Future Continuous</b> (<i>will be + V-ing</i>): việc đang diễn ra tại một mốc tương lai; việc dù sao cũng sẽ xảy ra; cách hỏi về kế hoạch lịch sự hơn <i>will</i>.</li>
+    <li><b>Future Perfect</b>: việc đã hoàn tất trước một mốc tương lai (<i>will have + V<sub>3</sub></i>) hoặc đã kéo dài đến mốc đó (<i>will have been + V-ing</i>); cũng dùng để phỏng đoán về việc đã qua.</li>
+    <li><b>be about to / be on the point of</b> = sắp xảy ra ngay; <b>be due to</b> = theo lịch trình; <b>be to</b> = sắp xếp chính thức.</li>
+    <li>Trong mệnh đề thời gian về tương lai (<i>when, as soon as…</i>) dùng <b>hiện tại đơn</b>, hoặc <b>hiện tại hoàn thành</b> nếu nhấn mạnh sự hoàn tất — không dùng <i>will</i>.</li>
+    <li><i>hope</i> đi được với cả hiện tại và <i>will</i>; các động từ suy nghĩ (<i>think, believe, expect, doubt</i>) đi với <i>will</i> khi nói về tương lai; <i>shall</i> ngôi thứ nhất là cách dùng trang trọng của tiếng Anh Anh.</li>
+  </ol>
+</div>
+
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Chia động từ trong ngoặc</h2>
+  <p>Điền dạng động từ thích hợp cho động từ trong ngoặc.</p>
+  <div class="q"><p>a) In twenty-four hours' time <input class="blank" data-answers="I'll be relaxing|I will be relaxing" data-display="I'll be relaxing"> (I/relax) on my yacht.</p></div>
+  <div class="q"><p>b) 'There's someone at the door.' 'That <input class="blank" data-answers="will be" data-display="will be"> (be) the postman.'</p></div>
+  <div class="q"><p>c) By the time you get back, Harry <input class="blank" data-answers="will have left" data-display="will have left"> (leave).</p></div>
+  <div class="q"><p>d) It's only a short trip. I <input class="blank" data-answers="will be" data-display="will be"> (be) back in an hour.</p></div>
+  <div class="q"><p>e) What <input class="blank" data-answers="are you doing|are you going to do" data-display="are you doing"> (you/do) this Saturday evening? Would you like to go out?</p></div>
+  <div class="q"><p>f) By the end of the week we <input class="blank" data-answers="will have decided" data-display="will have decided"> (decide) what to do.</p></div>
+  <div class="q"><p>g) It <input class="blank" data-answers="won't be|will not be" data-display="won't be"> (not/be) long before Doctor Smith is here.</p></div>
+  <div class="q"><p>h) We'll go to the park when you <input class="blank" data-answers="finish|have finished" data-display="finish"> (finish) your tea.</p></div>
+  <div class="q"><p>i) It's very hot in here. I think I <input class="blank" data-answers="am going to faint" data-display="am going to faint"> (faint).</p></div>
+  <div class="q"><p>j) What <input class="blank" data-answers="are you giving|are you going to give" data-display="are you giving"> (you/give) Ann for her birthday? Have you decided yet?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Bài 2 — Tìm từ thừa</h2>
+  <p>Trong hầu hết các dòng của đoạn văn dưới đây có một từ thừa. Viết từ thừa vào ô trống ở cuối dòng; nếu dòng đó đã đúng, gõ ✓.</p>
+  <div class="q"><p>1. In August Gordon will then have been at his company for 25 years, <input class="blank" data-answers="then" data-display="then"></p><p>2. and he's getting for a bonus of three weeks paid holiday. So we've <input class="blank" data-answers="for" data-display="for"></p><p>3. decided to hire a car and drive around Eastern Europe. We'll be <input class="blank" data-answers="✓|tick|correct" data-display="✓"></p><p>4. leaving towards the end of August, and our aim there is to visit as <input class="blank" data-answers="there" data-display="there"></p><p>5. many countries as we can. We're flying out to Budapest – soon we're <input class="blank" data-answers="soon" data-display="soon"></p><p>6. due to catch a plane on the 28th day – and then we'll be stopping over <input class="blank" data-answers="day" data-display="day"></p><p>7. at a friend's house, before starting our grand tour. We'll most probably <input class="blank" data-answers="✓|tick|correct" data-display="✓"></p><p>8. spend the best part of a week in Hungary. When we've just finished <input class="blank" data-answers="just" data-display="just"></p><p>9. there, we'll probably be go to Romania, but beyond that we haven't <input class="blank" data-answers="be" data-display="be"></p><p>10. planned too much arrangements. We will know a bit more by the end <input class="blank" data-answers="arrangements" data-display="arrangements"></p><p>11. of this week, when we're getting a whole load of brochures from the <input class="blank" data-answers="✓|tick|correct" data-display="✓"></p><p>12. tourist board. We'd like to get to as far as Russia, but realistically I <input class="blank" data-answers="to" data-display="to"></p><p>13. doubt whether we'll have time. I hope it won't be too expensive – <input class="blank" data-answers="✓|tick|correct" data-display="✓"></p><p>14. from till now on we'll really have to tighten our belts! I can't wait! <input class="blank" data-answers="till" data-display="till"></p><p>15. In just over two months' of time we'll be having the time of our lives! <input class="blank" data-answers="of" data-display="of"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Kiểm tra Bài 2</button><button type="button" onclick="showFill('ex2')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex2')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 2: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Bài 3 — Chọn cách tiếp nối phù hợp nhất</h2>
+  <p>Chọn cách tiếp nối phù hợp nhất cho mỗi câu.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) According to the latest forecast, the tunnel ______</p><div class="opts"><button type="button">will be finished next year.</button><button type="button">will have been finished next year.</button><button type="button">is finishing next year.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Paula's flight is bound to be late although ______</p><div class="opts"><button type="button">it arrives at 6.00.</button><button type="button">it's due at 6.00.</button><button type="button">it's arriving at six.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) It's no use phoning Bob at the office, he ______</p><div class="opts"><button type="button">will be leaving.</button><button type="button">is leaving.</button><button type="button">will have left.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Everyone says that this year City ______</p><div class="opts"><button type="button">are going to win the Cup.</button><button type="button">are winning the Cup.</button><button type="button">win the Cup.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) I don't feel like visiting my relatives this year so ______</p><div class="opts"><button type="button">I won't go.</button><button type="button">I'm not going.</button><button type="button">I don't go.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) You can borrow this calculator, I ______</p><div class="opts"><button type="button">am not going to need it.</button><button type="button">won't have been needing it.</button><button type="button">am not needing it.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) I'm sorry dinner isn't ready yet, but it ______</p><div class="opts"><button type="button">is going to be ready in a minute.</button><button type="button">will have been ready in a minute.</button><button type="button">will be ready in a minute.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Can you send me the results as soon as you ______</p><div class="opts"><button type="button">hear anything?</button><button type="button">are hearing anything?</button><button type="button">will have heard anything?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) You can try asking Martin for help but ______</p><div class="opts"><button type="button">it won't do you any good.</button><button type="button">it's not doing you any good.</button><button type="button">it won't be doing you any good.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Don't worry about the mistake you made, nobody ______</p><div class="opts"><button type="button">is noticing.</button><button type="button">will notice.</button><button type="button">will be noticing.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Hoàn thành câu thứ hai</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm sau mỗi câu). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) I don't suppose you have heard the news. <b>(won't)</b></p><p>You <input class="blank" data-answers="won't have heard|will not have heard" data-display="won't have heard"> the news.</p></div>
+  <div class="q"><p>b) The Prime Minister expects an easy victory for his party in the election. <b>(believes)</b></p><p>The Prime Minister <input class="blank" data-answers="believes his party will win" data-display="believes his party will win"> the election easily.</p></div>
+  <div class="q"><p>c) I've been in this company for almost three years. <b>(will)</b></p><p>By the end of the month <input class="blank" data-answers="I will have been|I'll have been" data-display="I will have been"> in this company for three years.</p></div>
+  <div class="q"><p>d) This book will take me two years to write. <b>(have)</b></p><p>In two years' time <input class="blank" data-answers="I will have written|I will have finished|I'll have written|I'll have finished" data-display="I will have written"> this book.</p></div>
+  <div class="q"><p>e) Scientists are on the point of making a vital breakthrough. <b>(about)</b></p><p>Scientists are <input class="blank" data-answers="about to make" data-display="about to make"> a vital breakthrough.</p></div>
+  <div class="q"><p>f) Maria is pregnant again. <b>(have)</b></p><p>Maria is <input class="blank" data-answers="going to have another" data-display="going to have another"> baby.</p></div>
+  <div class="q"><p>g) I'll be home late. <b>(until)</b></p><p>I <input class="blank" data-answers="won't be home until|will not be home until" data-display="won't be home until"> late.</p></div>
+  <div class="q"><p>h) No one knows what the result of the match is going to be. <b>(who)</b></p><p>No one knows <input class="blank" data-answers="who is going to win" data-display="who is going to win"> the match.</p></div>
+  <div class="q"><p>i) Don't worry; David won't be late. <b>(here)</b></p><p>Don't worry; David <input class="blank" data-answers="will be here on|will be on" data-display="will be here on"> time.</p></div>
+  <div class="q"><p>j) Mary and Alan's wedding is next weekend. <b>(getting)</b></p><p>Mary and Alan <input class="blank" data-answers="are getting married" data-display="are getting married"> next weekend.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Bài 5 — Chọn hai đáp án đúng</h2>
+  <p>Mỗi câu có đúng hai đáp án đúng trong ba lựa chọn A, B, C. Hãy chọn cặp đáp án đúng.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>a) We've run out of fuel.<br><b>A</b> What will we do now? &nbsp; <b>B</b> What do we do now? &nbsp; <b>C</b> What are we going to do now?</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) You can't leave early,<br><b>A</b> we're having a meeting. &nbsp; <b>B</b> we're going to have a meeting. &nbsp; <b>C</b> we will have a meeting.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Oh dear, I've broken the vase!<br><b>A</b> What will your mother say? &nbsp; <b>B</b> What is your mother going to say? &nbsp; <b>C</b> What is your mother saying?</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) According to the weather forecast,<br><b>A</b> it'll rain tomorrow. &nbsp; <b>B</b> it's raining tomorrow. &nbsp; <b>C</b> it's going to rain tomorrow.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) I'd like to call round and see you.<br><b>A</b> What will you have done by the morning? &nbsp; <b>B</b> What'll you be doing in the morning? &nbsp; <b>C</b> What are you doing in the morning?</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I've got nothing to do tomorrow so<br><b>A</b> I'll get up late. &nbsp; <b>B</b> I am to get up late. &nbsp; <b>C</b> I'm going to get up late.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) It's my eighteenth birthday next month so<br><b>A</b> I'm on the point of having a party. &nbsp; <b>B</b> I'm having a party. &nbsp; <b>C</b> I'll be having a party.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Why don't you come with us?<br><b>A</b> It'll be a great trip. &nbsp; <b>B</b> It's going to be a great trip. &nbsp; <b>C</b> It's a great trip.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) When you get to the airport<br><b>A</b> someone is going to be waiting for you. &nbsp; <b>B</b> someone is due to wait for you. &nbsp; <b>C</b> someone will be waiting for you.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) Shut up, will you!<br><b>A</b> I'm getting really angry. &nbsp; <b>B</b> I'm going to get really angry in a minute. &nbsp; <b>C</b> I'm getting really angry in a minute.</p><div class="opts"><button type="button">A + B</button><button type="button">A + C</button><button type="button">B + C</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 5: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>Bài 6 — Chọn từ / cụm từ đúng</h2>
+  <p>Chọn từ hoặc cụm từ chỉ thời gian đúng trong mỗi câu.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I'll be back ______.</p><div class="opts"><button type="button">after a few minutes</button><button type="button">in a few minutes</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) I'm sure that everything will be all right ______.</p><div class="opts"><button type="button">at the end</button><button type="button">in the end</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Please call me ______ you hear any news.</p><div class="opts"><button type="button">the moment</button><button type="button">exactly when</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) I should be back ______ the film begins.</p><div class="opts"><button type="button">by the time</button><button type="button">at the time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I'm sure Fiona will be here ______.</p><div class="opts"><button type="button">before long</button><button type="button">after a while</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I can't leave on Tuesday. I won't be ready ______.</p><div class="opts"><button type="button">until then</button><button type="button">by then</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) By ______ I'll be in Bangkok.</p><div class="opts"><button type="button">twenty four hours</button><button type="button">this time tomorrow</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Diana will be retiring ______.</p><div class="opts"><button type="button">soon</button><button type="button">already</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) There will be no official announcements ______.</p><div class="opts"><button type="button">forthwith</button><button type="button">from now on</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) Bye for now. I'll see you ______.</p><div class="opts"><button type="button">in two weeks' time</button><button type="button">two weeks later</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Điểm Bài 6: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Bài 7 — Hoàn thành các cụm diễn đạt cố định</h2>
+  <p>Dùng các từ trong hộp để hoàn thành các cụm diễn đạt quen thuộc bắt đầu bằng I'll (mỗi ô trống một từ).</p>
+  <div class="formula">let · give · be · go · see · come · have · go · be · see</div>
+  <div class="q"><p>a) I'll <input class="blank" data-answers="see" data-display="see"> what I can do.</p></div>
+  <div class="q"><p>b) I'll <input class="blank" data-answers="have" data-display="have"> a look and get back to you.</p></div>
+  <div class="q"><p>c) I'll <input class="blank" data-answers="give" data-display="give"> it some thought.</p></div>
+  <div class="q"><p>d) I'll <input class="blank" data-answers="let" data-display="let"> you know by tomorrow.</p></div>
+  <div class="q"><p>e) I'll just <input class="blank" data-answers="go" data-display="go"> and get it.</p></div>
+  <div class="q"><p>f) I'll <input class="blank" data-answers="go" data-display="go"> halves with you.</p></div>
+  <div class="q"><p>g) I'll <input class="blank" data-answers="see" data-display="see"> to it.</p></div>
+  <div class="q"><p>h) I'll <input class="blank" data-answers="be" data-display="be"> back in a minute.</p></div>
+  <div class="q"><p>i) I'll <input class="blank" data-answers="be" data-display="be"> about five minutes.</p></div>
+  <div class="q"><p>j) I'll <input class="blank" data-answers="come" data-display="come"> and show you.</p></div>
+  <h3>Cụm diễn đạt nào có nghĩa sau đây?</h3>
+  <div class="q"><p>1) I will try and do this for you. → <input class="blank" data-answers="a" data-display="a"> <span class="small">(gõ chữ cái a–j của câu chứa cụm đó)</span></p></div>
+  <div class="q"><p>2) I'll share it with you. → <input class="blank" data-answers="f" data-display="f"> <span class="small">(gõ chữ cái a–j của câu chứa cụm đó)</span></p></div>
+  <div class="q"><p>3) I'll fix it/arrange it. → <input class="blank" data-answers="g" data-display="g"> <span class="small">(gõ chữ cái a–j của câu chứa cụm đó)</span></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Kiểm tra Bài 7</button><button type="button" onclick="showFill('ex7')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex7')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 7: <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>78</b> (Bài 1: 10 · Bài 2: 15 · Bài 3: 10 · Bài 4: 10 · Bài 5: 10 · Bài 6: 10 · Bài 7: 13).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="../index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","according":"AH0 K AO1 R D IH0 NG","advanced":"AH0 D V AE1 N S T","after":"AE1 F T ER0","again":"AH0 G EH1 N","aim":"EY1 M","airport":"EH1 R P AO2 R T","alan":"AE1 L AH0 N","alan's":"AE1 L AH0 N Z","all":"AO1 L","almost":"AO1 L M OW2 S T","already":"AO0 L R EH1 D IY0","although":"AO2 L DH OW1","am":"AE1 M","an":"AE1 N","and":"AH0 N D","ang":"AE1 NG","angry":"AE1 NG G R IY0","ann":"AE1 N","ann's":"AE1 N Z","announcements":"AH0 N AW1 N S M AH0 N T S","any":"EH1 N IY0","anything":"EH1 N IY0 TH IH2 NG","anyway":"EH1 N IY0 W EY2","are":"AA1 R","around":"ER0 AW1 N D","arrange":"ER0 EY1 N JH","arrangements":"ER0 EY1 N JH M AH0 N T S","arrives":"ER0 AY1 V Z","arriving":"ER0 AY1 V IH0 NG","as":"AE1 Z","asking":"AE1 S K IH0 NG","assemble":"AH0 S EH1 M B AH0 L","at":"AE1 T","august":"AA1 G AH0 S T","ba":"B IY2 EY1","baby":"B EY1 B IY0","back":"B AE1 K","ban":"B AE1 N","band":"B AE1 N D","bangkok":"B AE0 NG K AA1 K","bay":"B EY1","be":"B IY1","because":"B IH0 K AO1 Z","been":"B IH1 N","before":"B IH0 F AO1 R","begins":"B IH0 G IH1 N Z","believe":"B IH0 L IY1 V","believes":"B IH0 L IY1 V Z","belts":"B EH1 L T S","best":"B EH1 S T","beyond":"B IH0 AA1 N D","bi":"B AY1","birthday":"B ER1 TH D EY2","bit":"B IH1 T","board":"B AO1 R D","bob":"B AA1 B","bonus":"B OW1 N AH0 S","book":"B UH1 K","borrow":"B AA1 R OW2","bother":"B AA1 DH ER0","bound":"B AW1 N D","breakthrough":"B R EY1 K TH R UW2","brochures":"B R OW0 SH UH1 R Z","broken":"B R OW1 K AH0 N","budapest":"B UW1 D AH0 P EH2 S T","but":"B AH1 T","by":"B AY1","bye":"B AY1","calculator":"K AE1 L K Y AH0 L EY2 T ER0","call":"K AO1 L","calling":"K AO1 L IH0 NG","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","carol":"K AE1 R AH0 L","catch":"K AE1 CH","chia":"CH IY1 AH0","cho":"CH OW1","christmas":"K R IH1 S M AH0 S","city":"S IH1 T IY0","come":"K AH1 M","company":"K AH1 M P AH0 N IY2","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","countries":"K AH1 N T R IY0 Z","course":"K AO1 R S","cup":"K AH1 P","david":"D EY1 V IH0 D","day":"D EY1","dear":"D IH1 R","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","di":"D IY1","diana":"D AY0 AE1 N AH0","dinner":"D IH1 N ER0","do":"D UW1","doctor":"D AA1 K T ER0","doesn't":"D AH1 Z AH0 N T","doing":"D UW1 IH0 NG","don't":"D OW1 N T","done":"D AH1 N","door":"D AO1 R","doubt":"D AW1 T","drive":"D R AY1 V","due":"D UW1","early":"ER1 L IY0","easily":"IY1 Z AH0 L IY0","eastern":"IY1 S T ER0 N","easy":"IY1 Z IY0","eighteenth":"EY0 T IY1 N TH","election":"IH0 L EH1 K SH AH0 N","end":"EH1 N D","english":"IH1 NG G L IH0 SH","europe":"Y UH1 R AH0 P","evening":"IY1 V N IH0 NG","everyone":"EH1 V R IY0 W AH2 N","everything":"EH1 V R IY0 TH IH2 NG","exactly":"IH0 G Z AE1 K T L IY0","expect":"IH0 K S P EH1 K T","expects":"IH0 K S P EH1 K T S","expensive":"IH0 K S P EH1 N S IH0 V","faint":"F EY1 N T","fall":"F AO1 L","far":"F AA1 R","feel":"F IY1 L","few":"F Y UW1","film":"F IH1 L M","finish":"F IH1 N IH0 SH","finished":"F IH1 N IH0 SH T","finishing":"F IH1 N IH0 SH IH0 NG","fiona":"F IY0 OW1 N AH0","firm":"F ER1 M","five":"F AY1 V","fix":"F IH1 K S","flight":"F L AY1 T","flying":"F L AY1 IH0 NG","for":"F AO1 R","forecast":"F AO1 R K AE2 S T","forthwith":"F AO1 R TH W IH1 TH","four":"F AO1 R","friend's":"F R EH1 N D Z","from":"F R AH1 M","fuel":"F Y UW1 AH0 L","future":"F Y UW1 CH ER0","get":"G EH1 T","gets":"G EH1 T S","getting":"G EH1 T IH0 NG","gian":"JH IY1 AA0 N","give":"G IH1 V","go":"G OW1","going":"G OW1 IH0 NG","good":"G UH1 D","gordon":"G AO1 R D AH0 N","got":"G AA1 T","grammar":"G R AE1 M ER0","grand":"G R AE1 N D","great":"G R EY1 T","had":"HH AE1 D","hall":"HH AO1 L","halves":"HH AE1 V Z","harry":"HH EH1 R IY0","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","having":"HH AE1 V IH0 NG","hay":"HH EY1","he":"HH IY1","he's":"HH IY1 Z","hear":"HH IY1 R","heard":"HH ER1 D","hearing":"HH IY1 R IH0 NG","help":"HH EH1 L P","her":"HH ER1","here":"HH IY1 R","hi":"HH AY1","hire":"HH AY1 ER0","his":"HH IH1 Z","ho":"HH OW1","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","hope":"HH OW1 P","hot":"HH AA1 T","hour":"AW1 ER0","hours":"AW1 ER0 Z","hours'":"AW1 R Z","house":"HH AW1 S","hungary":"HH AH1 NG G ER0 IY0","hurry":"HH ER1 IY0","hy":"HH AY1","i'd":"AY1 D","i'll":"AY1 L","i'm":"AY1 M","i've":"AY1 V","in":"IH0 N","into":"IH1 N T UW0","is":"IH1 Z","isn't":"IH1 Z AH0 N T","it":"IH1 T","it'll":"IH1 T AH0 L","it's":"IH1 T S","jim":"JH IH1 M","just":"JH AH1 S T","key":"K IY1","ki":"K IY1","kia":"K IY1 ER0","kitchen":"K IH1 CH AH0 N","know":"N OW1","knows":"N OW1 Z","lai":"L AY1","late":"L EY1 T","later":"L EY1 T ER0","latest":"L EY1 T AH0 S T","leave":"L IY1 V","leaving":"L IY1 V IH0 NG","left":"L EH1 F T","let":"L EH1 T","like":"L AY1 K","live":"L AY1 V","lives":"L IH1 V Z","lo":"L OW1","load":"L OW1 D","long":"L AO1 NG","look":"L UH1 K","made":"M EY1 D","mai":"M AY1","making":"M EY1 K IH0 NG","mang":"M AE1 NG","many":"M EH1 N IY0","maria":"M ER0 IY1 AH0","martin":"M AA1 R T AH0 N","mary":"M EH1 R IY0","match":"M AE1 CH","me":"M IY1","meeting":"M IY1 T IH0 NG","minister":"M IH1 N AH0 S T ER0","minute":"M IH1 N AH0 T","minutes":"M IH1 N AH0 T S","mistake":"M IH0 S T EY1 K","model":"M AA1 D AH0 L","moment":"M OW1 M AH0 N T","month":"M AH1 N TH","months'":"M AA1 N TH S","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","mother":"M AH1 DH ER0","mu":"M UW1","much":"M AH1 CH","my":"M AY1","nay":"N EY1","need":"N IY1 D","needing":"N IY1 D IH0 NG","news":"N UW1 Z","next":"N EH1 K S T","ng":"EH1 NG","nghi":"G IY1","ngo":"EH0 NG G OW1","no":"N OW1","nobody":"N OW1 B AA2 D IY2","not":"N AA1 T","nothing":"N AH1 TH IH0 NG","notice":"N OW1 T AH0 S","noticing":"N OW1 T IH0 S IH0 NG","now":"N AW1","of":"AH1 V","office":"AO1 F IH0 S","official":"AH0 F IH1 SH AH0 L","oh":"OW1","on":"AA1 N","one":"W AH1 N","only":"OW1 N L IY0","our":"AW1 ER0","out":"AW1 T","over":"OW1 V ER0","paid":"P EY1 D","painting":"P EY1 N T IH0 NG","paris":"P EH1 R IH0 S","park":"P AA1 R K","part":"P AA1 R T","party":"P AA1 R T IY0","paula's":"P AO1 L AH0 Z","perfect":"P ER0 F EH1 K T","performing":"P ER0 F AO1 R M IH0 NG","ph":"P IY1 EY1 CH","phoning":"F OW1 N IH0 NG","plane":"P L EY1 N","planned":"P L AE1 N D","play":"P L EY1","please":"P L IY1 Z","point":"P OY1 N T","points":"P OY1 N T S","postman":"P OW1 S T M AH0 N","practice":"P R AE1 K T AH0 S","pregnant":"P R EH1 G N AH0 N T","present":"P R EH1 Z AH0 N T","prime":"P R AY1 M","probably":"P R AA1 B AH0 B L IY2","qua":"K W AA1","quay":"K IY1","ra":"R AA1","rain":"R EY1 N","raining":"R EY1 N IH0 NG","ready":"R EH1 D IY0","realistically":"R IY2 AH0 L IH1 S T IH0 K L IY0","really":"R IH1 L IY0","relatives":"R EH1 L AH0 T IH0 V Z","relax":"R IH0 L AE1 K S","resigning":"R IH0 Z AY1 N IH0 NG","rest":"R EH1 S T","result":"R IH0 Z AH1 L T","results":"R IH0 Z AH1 L T S","retires":"R IH0 T AY1 R Z","retiring":"R IH0 T AY1 R IH0 NG","right":"R AY1 T","romania":"R OW0 M EY1 N IY0 AH0","round":"R AW1 N D","run":"R AH1 N","russia":"R AH1 SH AH0","sao":"S AW1","saturday":"S AE1 T ER0 D IY0","say":"S EY1","saying":"S EY1 IH0 NG","says":"S EH1 Z","scientists":"S AY1 AH0 N T IH0 S T S","see":"S IY1","send":"S EH1 N D","several":"S EH1 V R AH0 L","shall":"SH AE1 L","share":"SH EH1 R","shops":"SH AA1 P S","short":"SH AO1 R T","should":"SH UH1 D","show":"SH OW1","shut":"SH AH1 T","simple":"S IH1 M P AH0 L","six":"S IH1 K S","smith":"S M IH1 TH","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","soon":"S UW1 N","sorry":"S AA1 R IY0","spend":"S P EH1 N D","start":"S T AA1 R T","starting":"S T AA1 R T IH0 NG","stopping":"S T AA1 P IH0 NG","students":"S T UW1 D AH0 N T S","summer":"S AH1 M ER0","suppose":"S AH0 P OW1 Z","sure":"SH UH1 R","ta":"T AA1","take":"T EY1 K","tea":"T IY1","th":"T IY1 EY1 CH","that":"DH AE1 T","that'll":"DH AE1 T AH0 L","the":"DH AH0","then":"DH EH1 N","theo":"TH IY1 OW0","there":"DH EH1 R","there's":"DH EH1 R Z","thi":"TH IY1","think":"TH IH1 NG K","this":"DH IH1 S","thought":"TH AO1 T","three":"TH R IY1","ti":"T IY1","tighten":"T AY1 T AH0 N","till":"T IH1 L","time":"T AY1 M","times":"T AY1 M Z","tin":"T IH1 N","to":"T UW1","tom":"T AA1 M","tomorrow":"T AH0 M AA1 R OW2","too":"T UW1","tour":"T UH1 R","tourist":"T UH1 R AH0 S T","towards":"T AH0 W AO1 R D Z","train":"T R EY1 N","trang":"T R AE1 NG","tree":"T R IY1","trip":"T R IH1 P","try":"T R AY1","tu":"T UW1","tuesday":"T UW1 Z D IY0","tunnel":"T AH1 N AH0 L","twenty":"T W EH1 N T IY0","twenty-four":"T W EH1 N T IY0 F AO2 R","two":"T UW1","ty":"T AY1","united":"Y UW0 N AY1 T IH0 D","until":"AH0 N T IH1 L","up":"AH1 P","us":"AH1 S","use":"Y UW1 S","vase":"V EY1 S","very":"V EH1 R IY0","vi":"V AY1","victory":"V IH1 K T ER0 IY0","visit":"V IH1 Z IH0 T","visiting":"V IH1 Z IH0 T IH0 NG","vital":"V AY1 T AH0 L","wait":"W EY1 T","waiting":"W EY1 T IH0 NG","we":"W IY1","we'd":"W IY1 D","we'll":"W IY1 L","we're":"W IY1 R","we've":"W IY1 V","weather":"W EH1 DH ER0","wedding":"W EH1 D IH0 NG","week":"W IY1 K","weekend":"W IY1 K EH2 N D","weeks":"W IY1 K S","weeks'":"W IY1 K S","what":"W AH1 T","what'll":"W AH1 T AH0 L","when":"W EH1 N","whether":"W EH1 DH ER0","while":"W AY1 L","who":"HH UW1","whole":"HH OW1 L","why":"W AY1","will":"W IH1 L","win":"W IH1 N","winning":"W IH1 N IH0 NG","with":"W IH1 DH","won't":"W OW1 N T","working":"W ER1 K IH0 NG","worry":"W ER1 IY0","would":"W UH1 D","write":"R AY1 T","yacht":"Y AA1 T","year":"Y IH1 R","years":"Y IH1 R Z","years'":"Y IH1 R Z","yet":"Y EH1 T","you":"Y UW1","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

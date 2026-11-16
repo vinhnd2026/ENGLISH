@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 6 — Passive 1 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index</a> &nbsp;·&nbsp; <a href="Adv-Grammar-06-Passive-1.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Adv-Grammar-06-Passive-1-JP.html">🇯🇵 日本語版</a>
+  <h1>Advanced · Grammar 6 — Passive 1</h1>
+  <p>The passive: Agent &amp; instrument · Two-object verbs · Complements · Omitting the agent</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Basic uses of the passive</h2>
+  <div class="formula">S + be + past participle (V₃) &nbsp;·&nbsp; the object of the active sentence becomes the subject</div>
+  <p>The passive puts the person or thing that <b>receives</b> the action in subject position. The verb is always <i>be</i> + past participle, and the tense is shown by the form of <i>be</i>.</p>
+
+  <h3>a) Agent and instrument</h3>
+  <p>The person who performs the action in a passive sentence is called the <b>agent</b>, and is introduced by <i>by</i>; the agent may or may not be mentioned. A thing which causes something to happen is called an <b>instrument</b>, and is introduced by <i>with</i>.</p>
+  <div class="ex"><div class="en">My purse was found by one of the cleaners.</div><div class="vi">(the agent is one of the cleaners)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">A new road has been built.</div><div class="vi">(the agent is not mentioned)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He was hit on the head with a hammer.</div><div class="vi">(the instrument is a hammer)</div><div class="tts"></div></div>
+
+  <h3>b) Verbs with two objects</h3>
+  <p>Verbs which have two objects can be made passive in <b>two ways</b>: either the indirect object (usually a person) or the direct object can become the subject.</p>
+  <div class="ex"><div class="en">I was handed a note. — A note was handed to me.</div><div class="vi">(two passive versions of the same sentence)</div><div class="tts"></div></div>
+  <p>Other common verbs of this type are:</p>
+  <div class="formula">bring · give · lend · pass · pay · promise · sell · send · show · tell</div>
+
+  <h3>c) Verbs with object and complement</h3>
+  <p>Some verbs have a noun or adjective which describes their object (an object complement). When these verbs are made passive, the complement goes <b>directly after the verb</b>.</p>
+  <div class="ex"><div class="en">We elected Jim class representative. → Jim was elected class representative.</div><div class="vi">(elect + object + complement)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Everyone considered him a failure. → He was considered a failure.</div><div class="vi">(consider + object + complement)</div><div class="tts"></div></div>
+
+  <h3>d) Verbs which can't be passive</h3>
+  <p>Most verbs with an object (transitive verbs) can be made passive: <i>drive</i>, for example, is transitive because one can drive something (a car). However, a few transitive verbs <b>may not</b> be used in the passive. These include:</p>
+  <div class="formula">become · fit · get · have · lack · let · like · resemble · suit</div>
+  <p>Verbs with no object (intransitive verbs) cannot be passive either, because there is no object to become the subject. <i>Fall</i>, for instance, is intransitive — you cannot “fall something” — so we cannot say <i>*The tree was fallen</i>; the sentence must stay active:</p>
+  <div class="ex"><div class="en">The tree fell.</div><div class="vi">(active only)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Using and not mentioning the agent</h2>
+
+  <h3>a) Change of focus</h3>
+  <p>The passive can change the emphasis of a sentence: the active sentence focuses on the doer, while the passive focuses on the receiver of the action — and the agent can still be mentioned at the end.</p>
+  <div class="ex"><div class="en">Jack won the prize. — The prize was won by Jack.</div><div class="vi">(focus on Jack — focus on the prize)</div><div class="tts"></div></div>
+
+  <h3>b) Four reasons for leaving out the agent</h3>
+  <p>The agent is <b>unknown</b> — in this case there is no point in adding “by somebody”:</p>
+  <div class="ex"><div class="en">My wallet has been taken.</div><div class="vi">(we do not know who took it)</div><div class="tts"></div></div>
+  <p>The subject is <b>“people in general”</b>, or a general “you”:</p>
+  <div class="ex"><div class="en">Bicycles are widely used in the city instead of public transport.</div><div class="vi">(a generalised agent)</div><div class="tts"></div></div>
+  <p>The agent is <b>obvious</b>, or has already been referred to:</p>
+  <div class="ex"><div class="en">Linda has been arrested!</div><div class="vi">(we assume: by the police)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The company agreed to our request and a new car park was opened.</div><div class="vi">(no need to repeat the agent)</div><div class="tts"></div></div>
+  <p>The agent is <b>unimportant</b> to the meaning of the sentence:</p>
+  <div class="ex"><div class="en">I was advised to obtain a visa in advance.</div><div class="vi">(who gave the advice does not matter)</div><div class="tts"></div></div>
+
+  <h3>c) Impersonality and processes</h3>
+  <p>Using the passive is a way of avoiding the naming of a specific person who is responsible for an action:</p>
+  <div class="ex"><div class="en">It has been decided to reduce all salaries by 10%.</div><div class="vi">(the decision-makers are not named)</div><div class="tts"></div></div>
+  <p>In descriptions of processes, the emphasis is on the actions performed rather than on the people who perform them:</p>
+  <div class="ex"><div class="en">Then the packets are packed into boxes of twenty-four.</div><div class="vi">(a process description)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>The passive is <b>be + past participle</b>; the focus moves from the doer to the receiver of the action.</li>
+    <li>An <b>agent</b> (the doer) is introduced by <i>by</i>; an <b>instrument</b> (a tool) is introduced by <i>with</i> — do not mix them up.</li>
+    <li>Verbs with <b>two objects</b> (<i>give, send, show, tell…</i>) have two passive versions.</li>
+    <li>With verbs that take a <b>complement</b> (<i>elect, consider…</i>), the complement stays directly after the passive verb.</li>
+    <li>Some verbs have <b>no passive</b>: <i>become, fit, have, lack, let, like, resemble, suit</i>. Intransitive verbs cannot be passive either.</li>
+    <li><b>Leave the agent out</b> when it is unknown, obvious, generalised or unimportant — and for impersonality or process descriptions.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Correct the verb forms</h2>
+  <p>Correct any verb forms which are impossible or inappropriate. If a sentence is already correct, type the verb phrase exactly as it stands.</p>
+  <div class="q"><p>a) <i>A lot of homes in the area have been being broken into by burglars.</i></p><p>→ A lot of homes in the area <input class="blank" data-answers="have been broken into" data-display="have been broken into"> by burglars.</p><div class="fb"></div></div>
+  <div class="q"><p>b) <i>As I drove south, I could see that the old road was rebuilding.</i></p><p>→ As I drove south, I could see that the old road <input class="blank" data-answers="was being rebuilt" data-display="was being rebuilt">.</p><div class="fb"></div></div>
+  <div class="q"><p>c) <i>I suppose the letter will have been delivered by now.</i></p><p>→ I suppose the letter <input class="blank" data-answers="will have been delivered" data-display="will have been delivered"> by now.</p><div class="fb"></div></div>
+  <div class="q"><p>d) <i>There is nothing more annoying than been interrupted when you are speaking.</i></p><p>→ There is nothing more annoying than <input class="blank" data-answers="being interrupted" data-display="being interrupted"> when you are speaking.</p><div class="fb"></div></div>
+  <div class="q"><p>e) <i>Jim was been given the sack from his new job.</i></p><p>→ Jim <input class="blank" data-answers="was given|has been given" data-display="was given"> the sack from his new job.</p><div class="fb"></div></div>
+  <div class="q"><p>f) <i>Somehow without my noticing my wallet had been disappeared.</i></p><p>→ Somehow without my noticing my wallet <input class="blank" data-answers="had disappeared|has disappeared|disappeared" data-display="had disappeared">.</p><div class="fb"></div></div>
+  <div class="q"><p>g) <i>The new shopping centre was opened by the local MP.</i></p><p>→ The new shopping centre <input class="blank" data-answers="was opened" data-display="was opened"> by the local MP.</p><div class="fb"></div></div>
+  <div class="q"><p>h) <i>A lot of meetings have been held, but nothing has being decided yet.</i></p><p>→ A lot of meetings have been held, but nothing <input class="blank" data-answers="has been decided" data-display="has been decided"> yet.</p><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+  <p class="small">Scoring tip: capital letters and punctuation are ignored automatically. If you are marked wrong only because of a different written form (for example a contraction), press “Show answers” and check for yourself.</p>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Complete the second sentence</h2>
+  <p>Both sentences in each pair have the same meaning. Complete the second sentence.</p>
+  <div class="q"><p>a) The crowd was slowly filling the huge stadium.</p><p>→ The huge stadium <input class="blank" data-answers="was slowly being filled" data-display="was slowly being filled"> by the crowd.</p></div>
+  <div class="q"><p>b) The inventor of the computer simplified the work of the accountants.</p><p>→ Since the computer <input class="blank" data-answers="was invented|has been invented" data-display="was invented"> the work of accountants <input class="blank" data-answers="has been" data-display="has been"> simplified.</p></div>
+  <div class="q"><p>c) Someone has suggested that the shop should close.</p><p>→ It <input class="blank" data-answers="has been suggested" data-display="has been suggested"> that the shop should close.</p></div>
+  <div class="q"><p>d) 'I'd take out some travel insurance if I were you, Mr Smith.'</p><p>→ Mr Smith <input class="blank" data-answers="was advised to" data-display="was advised to"> take out some travel insurance.</p></div>
+  <div class="q"><p>e) The waitress will bring your drinks in a moment.</p><p>→ Your drinks <input class="blank" data-answers="will be brought" data-display="will be brought"> in a moment.</p></div>
+  <div class="q"><p>f) Someone used a knife to open the window.</p><p>→ This window <input class="blank" data-answers="was opened with" data-display="was opened with"> a knife.</p></div>
+  <div class="q"><p>g) You will hear from us when we have finished dealing with your complaint.</p><p>→ After your complaint <input class="blank" data-answers="has been dealt with" data-display="has been dealt with">, you will hear from us.</p></div>
+  <div class="q"><p>h) An announcement of their engagement appeared in the local paper.</p><p>→ Their engagement <input class="blank" data-answers="was announced" data-display="was announced"> in the local paper.</p></div>
+  <div class="q"><p>i) Nobody ever heard anything of David again.</p><p>→ Nothing <input class="blank" data-answers="was ever heard of" data-display="was ever heard of"> David again.</p></div>
+  <div class="q"><p>j) They paid Sheila £1,000 as a special bonus.</p><p>→ £1,000 <input class="blank" data-answers="was paid to" data-display="was paid to"> Sheila as a special bonus.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/11</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Rewrite in the passive</h2>
+  <p>Rewrite each sentence in the passive, omitting the underlined words (the agent). Type the passive verb phrase in the blank.</p>
+  <div class="q"><p>a) <u>Someone</u> left the phone off the hook all night.</p><p>→ The phone <input class="blank" data-answers="was left" data-display="was left"> off the hook all night.</p></div>
+  <div class="q"><p>b) <u>The government</u> has announced that petrol prices will rise tomorrow.</p><p>→ It <input class="blank" data-answers="has been announced" data-display="has been announced"> that petrol prices will rise tomorrow.</p></div>
+  <div class="q"><p>c) <u>A burglar</u> broke into our house last week.</p><p>→ Our house <input class="blank" data-answers="was broken into" data-display="was broken into"> last week.</p></div>
+  <div class="q"><p>d) <u>People</u> asked me the way three times.</p><p>→ I <input class="blank" data-answers="was asked" data-display="was asked"> the way three times.</p></div>
+  <div class="q"><p>e) <u>The fruit-pickers</u> pick the apples early in the morning.</p><p>→ The apples <input class="blank" data-answers="are picked" data-display="are picked"> early in the morning.</p></div>
+  <div class="q"><p>f) It's time <u>the authorities</u> did something about this problem.</p><p>→ It's time something <input class="blank" data-answers="was done" data-display="was done"> about this problem.</p></div>
+  <div class="q"><p>g) Lots of <u>people</u> had parked their cars on the pavement.</p><p>→ Lots of cars <input class="blank" data-answers="had been parked" data-display="had been parked"> on the pavement.</p></div>
+  <div class="q"><p>h) The government agreed with the report and so <u>they</u> changed the law.</p><p>→ The government agreed with the report and so the law <input class="blank" data-answers="was changed" data-display="was changed">.</p></div>
+  <div class="q"><p>i) <u>You</u> have to fill in an application form.</p><p>→ An application form <input class="blank" data-answers="has to be filled in" data-display="has to be filled in">.</p></div>
+  <div class="q"><p>j) <u>They</u> don't know what happened to the ship.</p><p>→ It <input class="blank" data-answers="is not known|isnt known" data-display="is not known"> what happened to the ship.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Put the verbs into a passive form</h2>
+  <p>Put each verb in brackets into an appropriate passive verb form.</p>
+  <div class="q"><p>a) The boxes <input class="blank" data-answers="have not been packed|havent been packed" data-display="have not been packed"> (not/pack) yet.</p></div>
+  <div class="q"><p>b) Your food <input class="blank" data-answers="is still being prepared" data-display="is still being prepared"> (still/prepare).</p></div>
+  <div class="q"><p>c) The new ship <input class="blank" data-answers="will be launched|is being launched" data-display="will be launched"> (launch) next week.</p></div>
+  <div class="q"><p>d) Luckily by the time we got there the painting <input class="blank" data-answers="had not been sold" data-display="had not been sold"> (not/sell).</p></div>
+  <div class="q"><p>e) We had to go on holiday because our house <input class="blank" data-answers="was being decorated" data-display="was being decorated"> (decorate).</p></div>
+  <div class="q"><p>f) I'm afraid that next week's meeting <input class="blank" data-answers="has been cancelled|is cancelled" data-display="has been cancelled"> (cancel).</p></div>
+  <div class="q"><p>g) If we don't hurry, all the tickets <input class="blank" data-answers="will have been sold|will be sold" data-display="will have been sold"> (sell) by the time we get there.</p></div>
+  <div class="q"><p>h) All main courses <input class="blank" data-answers="are served" data-display="are served"> (serve) with vegetables or salad. At least that is what is written on the menu.</p></div>
+  <div class="q"><p>i) The second goal <input class="blank" data-answers="was scored" data-display="was scored"> (score) by Hughes in the 41st minute.</p></div>
+  <div class="q"><p>j) The cathedral <input class="blank" data-answers="was built" data-display="was built"> (build) in the fourteenth century.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>Exercise 5 — Which agents are unnecessary?</h2>
+  <p>Choose the sentences where the agent phrase (the highlighted part, beginning with <i>by</i>) is unnecessary.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) My jewellery has been stolen <em class="hl">by a thief</em>!</p><div class="opts"><button type="button">Unnecessary — leave it out</button><button type="button">Necessary — keep it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) It has been decided <em class="hl">by the authorities</em> that Wednesday will be a school holiday.</p><div class="opts"><button type="button">Necessary — keep it</button><button type="button">Unnecessary — leave it out</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Harry was pushed over <em class="hl">by someone standing next to him</em> in the queue.</p><div class="opts"><button type="button">Unnecessary — leave it out</button><button type="button">Necessary — keep it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) The goods are transported <em class="hl">by rail</em> to our warehouse in the Midlands.</p><div class="opts"><button type="button">Necessary — keep it</button><button type="button">Unnecessary — leave it out</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I was told <em class="hl">by someone</em> that you have a vacancy for a computer operator.</p><div class="opts"><button type="button">Unnecessary — leave it out</button><button type="button">Necessary — keep it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Sue has been picked <em class="hl">by the selectors</em> for the national event.</p><div class="opts"><button type="button">Necessary — keep it</button><button type="button">Unnecessary — leave it out</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) The letter was sent <em class="hl">by post</em> on the 21st of last month.</p><div class="opts"><button type="button">Unnecessary — leave it out</button><button type="button">Necessary — keep it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) The larger portrait was painted <em class="hl">by a little-known Flemish artist</em>.</p><div class="opts"><button type="button">Necessary — keep it</button><button type="button">Unnecessary — leave it out</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) It has been agreed <em class="hl">by everyone</em> that no smoking should be allowed.</p><div class="opts"><button type="button">Unnecessary — leave it out</button><button type="button">Necessary — keep it</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) As I arrived at the conference a note was handed to me <em class="hl">by one of the delegates</em>.</p><div class="opts"><button type="button">Necessary — keep it</button><button type="button">Unnecessary — leave it out</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 5: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Put the verbs into a passive form (continued)</h2>
+  <p>Put each verb in brackets into an appropriate passive verb form.</p>
+  <div class="q"><p>a) Nothing <input class="blank" data-answers="has been seen" data-display="has been seen"> (see) of Pauline since her car <input class="blank" data-answers="was found" data-display="was found"> (find) abandoned near Newbury last week.</p></div>
+  <div class="q"><p>b) As our new furniture <input class="blank" data-answers="is being delivered|is going to be delivered" data-display="is being delivered"> (deliver) on Monday morning I'll have to stay at home to check that it <input class="blank" data-answers="has not been damaged|was not damaged|hasnt been damaged" data-display="has not been damaged"> (not/damage) during transit.</p></div>
+  <div class="q"><p>c) The new Alhambra hatchback, which in this country <input class="blank" data-answers="is sold|is being sold" data-display="is sold"> (sell) under the name 'Challenger', <input class="blank" data-answers="is fitted" data-display="is fitted"> (fit) with electric windows as standard.</p></div>
+  <div class="q"><p>d) For the past few days I <input class="blank" data-answers="have been working" data-display="have been working"> (work) in Jack's office, as my own office <input class="blank" data-answers="is being redecorated" data-display="is being redecorated"> (redecorate).</p></div>
+  <div class="q"><p>e) It <input class="blank" data-answers="has been announced" data-display="has been announced"> (announce) that the proposed new office block <input class="blank" data-answers="will now not be built" data-display="will now not be built"> (now/not/build) because of the current economic situation.</p></div>
+  <div class="q"><p>f) A major new deposit of oil <input class="blank" data-answers="has been discovered" data-display="has been discovered"> (discover) in the North Sea. It <input class="blank" data-answers="is thought" data-display="is thought"> (think) to be nearly twice the size of the largest existing field.</p></div>
+  <div class="q"><p>g) Pictures of the surface of the planet Venus <input class="blank" data-answers="were received" data-display="were received"> (receive) yesterday from the space probe 'Explorer' which <input class="blank" data-answers="was launched" data-display="was launched"> (launch) last year.</p></div>
+  <div class="q"><p>h) A large sum <input class="blank" data-answers="was raised" data-display="was raised"> (raise) for the Fund by a recent charity concert but the target of £250,000 <input class="blank" data-answers="has still not been reached" data-display="has still not been reached"> (still/not/reach).</p></div>
+  <div class="q"><p>i) No decision <input class="blank" data-answers="will be made" data-display="will be made"> (make) about any future appointment until all suitable candidates <input class="blank" data-answers="have been interviewed" data-display="have been interviewed"> (interview).</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/18</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Exercise 7 — Rewrite in a more formal style</h2>
+  <p>Rewrite each sentence in a more formal style so that it contains a passive form of the word given in capitals. Type the passive verb phrase in the blank.</p>
+  <div class="q"><p>a) Sorry, but we've lost your letter. <b>(MISLAY)</b></p><p>→ Unfortunately your letter <input class="blank" data-answers="has been mislaid" data-display="has been mislaid">.</p></div>
+  <div class="q"><p>b) The police are grilling Harry down at the station. <b>(QUESTION)</b></p><p>→ Harry <input class="blank" data-answers="is being questioned" data-display="is being questioned"> at the police station.</p></div>
+  <div class="q"><p>c) They've found the remains of an old Roman villa nearby. <b>(DISCOVER)</b></p><p>→ The remains of an old Roman villa <input class="blank" data-answers="have been discovered" data-display="have been discovered"> nearby.</p></div>
+  <div class="q"><p>d) You'll get a rise in salary after six months. <b>(RAISE)</b></p><p>→ After six months your salary <input class="blank" data-answers="will be raised" data-display="will be raised">.</p></div>
+  <div class="q"><p>e) They stopped playing the match after half an hour. <b>(ABANDON)</b></p><p>→ The match <input class="blank" data-answers="was abandoned" data-display="was abandoned"> after half an hour.</p></div>
+  <div class="q"><p>f) They stopped traffic from using the centre. <b>(BAN)</b></p><p>→ Traffic <input class="blank" data-answers="was banned from using|was banned from" data-display="was banned from (using)"> the centre.</p></div>
+  <div class="q"><p>g) They took Chris to court for dangerous driving. <b>(PROSECUTE)</b></p><p>→ Chris <input class="blank" data-answers="was prosecuted" data-display="was prosecuted"> for dangerous driving.</p></div>
+  <div class="q"><p>h) You usually eat this kind of fish with a white sauce. <b>(SERVE)</b></p><p>→ This fish <input class="blank" data-answers="is usually served" data-display="is usually served"> with a white sauce.</p></div>
+  <div class="q"><p>i) I don't know your name. <b>(INTRODUCE)</b></p><p>→ We <input class="blank" data-answers="have not been introduced|havent been introduced" data-display="have not been introduced">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Check Exercise 7</button><button type="button" onclick="showFill('ex7')">👁 Show answers</button><button type="button" onclick="resetFill('ex7')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 7: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>Exercise 8 — Read the letter and complete the verbs</h2>
+  <p>Put each verb in brackets into a suitable active or passive verb form.</p>
+  <div class="q"><p>Dear Mrs Patel,<br>We are delighted to inform you that you (1) <input class="blank" data-answers="have been selected" data-display="have been selected"> (select) for a free holiday. According to our information, you (2) <input class="blank" data-answers="answered" data-display="answered"> (answer) a telephone survey last month, as a result of which your name (3) <input class="blank" data-answers="was entered" data-display="was entered"> (enter) in the holiday draw. Now our computer (4) <input class="blank" data-answers="has chosen" data-display="has chosen"> (choose) your name, so you and your family (5) <input class="blank" data-answers="are invited" data-display="are invited"> (invite) to spend a week in a European destination of your choice. This offer (6) <input class="blank" data-answers="is made" data-display="is made"> (make) on the condition that you attend a special promotions day with other lucky families in your region who (7) <input class="blank" data-answers="have been offered" data-display="have been offered"> (offer) a similar deal. You (8) <input class="blank" data-answers="are asked" data-display="are asked"> (ask) to attend on any Saturday next month at the Royal Hotel, Manchester. If you (9) <input class="blank" data-answers="are interested" data-display="are interested"> (interest) in attending and taking up this offer, please (10) <input class="blank" data-answers="detach" data-display="detach"> (detach) the slip below and return it to us as soon as possible.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ Check Exercise 8</button><button type="button" onclick="showFill('ex8')">👁 Show answers</button><button type="button" onclick="resetFill('ex8')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 8: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>Exercise 9 — Complete the e-mail to all staff</h2>
+  <p>Using the notes as a guide, complete the e-mail to all company staff. Put the verbs in brackets into a suitable passive verb form.</p>
+  <div class="ex"><div class="en">NOTES FROM MANAGEMENT MEETING — Tell staff:</div><div class="vi">· We'll try flexi-time for 3 months.<br>· After 3 months we'll get the opinions of all staff.<br>· We'll look at feedback comments and make a decision.<br>· We may try it for another month.<br>· All workers will have to arrive 8-9.30.<br>· We hope you like the idea!</div></div>
+  <div class="q"><p>FROM: The Managing Director<br>TO: All staff<br><br>It (1) <input class="blank" data-answers="has been decided" data-display="has been decided"> (decide) to adopt a flexi-time system for a trial period of three months. After this period (2) <input class="blank" data-answers="elapses|has elapsed" data-display="elapses"> (elapse) all members of staff (3) <input class="blank" data-answers="will be consulted" data-display="will be consulted"> (consult) through their line manager, and feedback (4) <input class="blank" data-answers="will be sought" data-display="will be sought"> (seek). Comments (5) <input class="blank" data-answers="will be collected" data-display="will be collected"> (collect) and analysed before a decision (6) <input class="blank" data-answers="is made" data-display="is made"> (make) as to whether the system (7) <input class="blank" data-answers="will be adopted|should be adopted" data-display="will be adopted"> (adopt) permanently or not. Alternatively, the trial period (8) <input class="blank" data-answers="will be extended|may be extended" data-display="will be extended"> (extend) for a further month. All employees (9) <input class="blank" data-answers="are required|will be required" data-display="are required"> (require) to arrive between the hours of 8.00 and 9.30, and to leave after they have fulfilled their contractual obligations of eight hours. It (10) <input class="blank" data-answers="is hoped" data-display="is hoped"> (hope) that this arrangement meets with your enthusiastic approval!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ Check Exercise 9</button><button type="button" onclick="showFill('ex9')">👁 Show answers</button><button type="button" onclick="resetFill('ex9')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 9: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>96</b> (Exercise 1: 8 · Exercise 2: 11 blanks · Exercise 3: 10 · Exercise 4: 10 · Exercise 5: 10 · Exercise 6: 18 blanks · Exercise 7: 9 · Exercise 8: 10 blanks · Exercise 9: 10 blanks).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"abandon":"AH0 B AE1 N D AH0 N","abandoned":"AH0 B AE1 N D AH0 N D","about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","according":"AH0 K AO1 R D IH0 NG","accountants":"AH0 K AW1 N T AH0 N T S","action":"AE1 K SH AH0 N","actions":"AE1 K SH AH0 N Z","active":"AE1 K T IH0 V","adding":"AE1 D IH0 NG","adjective":"AE1 JH IH0 K T IH0 V","adopt":"AH0 D AA1 P T","advance":"AH0 D V AE1 N S","advanced":"AH0 D V AE1 N S T","advice":"AE0 D V AY1 S","advised":"AE0 D V AY1 Z D","afraid":"AH0 F R EY1 D","after":"AE1 F T ER0","again":"AH0 G EH1 N","agent":"EY1 JH AH0 N T","agents":"EY1 JH AH0 N T S","agreed":"AH0 G R IY1 D","alhambra":"AE0 L HH AE1 M B R AH0","all":"AO1 L","allowed":"AH0 L AW1 D","already":"AO0 L R EH1 D IY0","also":"AO1 L S OW0","alternatively":"AO0 L T ER1 N AH0 T IH0 V L IY0","always":"AO1 L W EY2 Z","american":"AH0 M EH1 R AH0 K AH0 N","an":"AE1 N","and":"AH0 N D","announce":"AH0 N AW1 N S","announced":"AH0 N AW1 N S T","announcement":"AH0 N AW1 N S M AH0 N T","annoying":"AH0 N OY1 IH0 NG","another":"AH0 N AH1 DH ER0","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","anything":"EH1 N IY0 TH IH2 NG","appeared":"AH0 P IH1 R D","apples":"AE1 P AH0 L Z","application":"AE2 P L AH0 K EY1 SH AH0 N","appointment":"AH0 P OY1 N T M AH0 N T","appropriate":"AH0 P R OW1 P R IY0 AH0 T","approval":"AH0 P R UW1 V AH0 L","are":"AA1 R","area":"EH1 R IY0 AH0","arrangement":"ER0 EY1 N JH M AH0 N T","arrested":"ER0 EH1 S T IH0 D","arrive":"ER0 AY1 V","arrived":"ER0 AY1 V D","artist":"AA1 R T AH0 S T","as":"AE1 Z","ask":"AE1 S K","asked":"AE1 S K T","assume":"AH0 S UW1 M","at":"AE1 T","attend":"AH0 T EH1 N D","attending":"AH0 T EH1 N D IH0 NG","authorities":"AH0 TH AO1 R AH0 T IY0 Z","automatically":"AO2 T AH0 M AE1 T IH0 K L IY0","available":"AH0 V EY1 L AH0 B AH0 L","avoiding":"AH0 V OY1 D IH0 NG","away":"AH0 W EY1","back":"B AE1 K","ban":"B AE1 N","basic":"B EY1 S IH0 K","be":"B IY1","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","becomes":"B IH0 K AH1 M Z","been":"B IH1 N","before":"B IH0 F AO1 R","beginning":"B IH0 G IH1 N IH0 NG","being":"B IY1 IH0 NG","below":"B IH0 L OW1","between":"B IH0 T W IY1 N","bicycles":"B AY1 S IH0 K AH0 L Z","blank":"B L AE1 NG K","blanks":"B L AE1 NG K S","block":"B L AA1 K","bonus":"B OW1 N AH0 S","both":"B OW1 TH","boxes":"B AA1 K S AH0 Z","brackets":"B R AE1 K AH0 T S","bring":"B R IH1 NG","british":"B R IH1 T IH0 SH","broke":"B R OW1 K","broken":"B R OW1 K AH0 N","build":"B IH1 L D","built":"B IH1 L T","burglar":"B ER1 G L ER0","burglars":"B ER1 G L ER0 Z","but":"B AH1 T","button":"B AH1 T AH0 N","by":"B AY1","called":"K AO1 L D","can":"K AE1 N","can't":"K AE1 N T","cancel":"K AE1 N S AH0 L","candidates":"K AE1 N D AH0 D EY0 T S","cannot":"K AE1 N AA0 T","capital":"K AE1 P AH0 T AH0 L","capitals":"K AE1 P AH0 T AH0 L Z","car":"K AA1 R","cars":"K AA1 R Z","case":"K EY1 S","cathedral":"K AH0 TH IY1 D R AH0 L","causes":"K AA1 Z AH0 Z","centre":"S EH1 N T ER0","century":"S EH1 N CH ER0 IY0","change":"CH EY1 N JH","changed":"CH EY1 N JH D","charity":"CH EH1 R IH0 T IY0","check":"CH EH1 K","choice":"CH OY1 S","choose":"CH UW1 Z","chris":"K R IH1 S","city":"S IH1 T IY0","class":"K L AE1 S","cleaners":"K L IY1 N ER0 Z","click":"K L IH1 K","close":"K L OW1 S","collect":"K AH0 L EH1 K T","come":"K AH1 M","comments":"K AA1 M EH0 N T S","common":"K AA1 M AH0 N","company":"K AH1 M P AH0 N IY2","complaint":"K AH0 M P L EY1 N T","complement":"K AA1 M P L AH0 M AH0 N T","complements":"K AA1 M P L AH0 M AH0 N T S","complete":"K AH0 M P L IY1 T","computer":"K AH0 M P Y UW1 T ER0","concert":"K AA1 N S ER0 T","condition":"K AH0 N D IH1 SH AH0 N","conference":"K AA1 N F ER0 AH0 N S","consider":"K AH0 N S IH1 D ER0","considered":"K AH0 N S IH1 D ER0 D","consult":"K AH0 N S AH1 L T","contains":"K AH0 N T EY1 N Z","continued":"K AH0 N T IH1 N Y UW0 D","contraction":"K AH0 N T R AE1 K SH AH0 N","contractual":"K AH0 N T R AE1 K CH UW0 AH0 L","correct":"K ER0 EH1 K T","could":"K UH1 D","country":"K AH1 N T R IY0","courses":"K AO1 R S AH0 Z","court":"K AO1 R T","crowd":"K R AW1 D","current":"K ER1 AH0 N T","damage":"D AE1 M AH0 JH","dangerous":"D EY1 N JH ER0 AH0 S","david":"D EY1 V IH0 D","day":"D EY1","days":"D EY1 Z","deal":"D IY1 L","dealing":"D IY1 L IH0 NG","dear":"D IH1 R","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","decision":"D IH0 S IH1 ZH AH0 N","decorate":"D EH1 K ER0 EY2 T","delegates":"D EH1 L AH0 G EY2 T S","delighted":"D IH0 L AY1 T AH0 D","deliver":"D IH0 L IH1 V ER0","delivered":"D IH0 L IH1 V ER0 D","deposit":"D AH0 P AA1 Z IH0 T","describes":"D IH0 S K R AY1 B Z","description":"D IH0 S K R IH1 P SH AH0 N","descriptions":"D IH0 S K R IH1 P SH AH0 N Z","destination":"D EH2 S T AH0 N EY1 SH AH0 N","detach":"D IH1 T AE2 CH","device":"D IH0 V AY1 S","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","different":"D IH1 F ER0 AH0 N T","direct":"D ER0 EH1 K T","directly":"D ER0 EH1 K T L IY0","director":"D ER0 EH1 K T ER0","disappeared":"D IH2 S AH0 P IH1 R D","discover":"D IH0 S K AH1 V ER0","do":"D UW1","doer":"D UW1 R","does":"D AH1 Z","don't":"D OW1 N T","down":"D AW1 N","draw":"D R AO1","drinks":"D R IH1 NG K S","drive":"D R AY1 V","driving":"D R AY1 V IH0 NG","drove":"D R OW1 V","during":"D UH1 R IH0 NG","e-mail":"IY1 M EY2 L","each":"IY1 CH","early":"ER1 L IY0","eat":"IY1 T","economic":"EH2 K AH0 N AA1 M IH0 K","eight":"EY1 T","either":"IY1 DH ER0","elapse":"IH0 L AE1 P S","elect":"IH0 L EH1 K T","elected":"IH0 L EH1 K T AH0 D","electric":"IH0 L EH1 K T R IH0 K","emphasis":"EH1 M F AH0 S AH0 S","employees":"EH0 M P L OY1 IY0 Z","end":"EH1 N D","engagement":"EH0 N G EY1 JH M AH0 N T","english":"IH1 NG G L IH0 SH","enter":"EH1 N T ER0","enthusiastic":"IH0 N TH UW2 Z IY0 AE1 S T IH0 K","european":"Y UH2 R AH0 P IY1 AH0 N","event":"IH0 V EH1 N T","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","everyone":"EH1 V R IY0 W AH2 N","exactly":"IH0 G Z AE1 K T L IY0","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","existing":"IH0 G Z IH1 S T IH0 NG","extend":"IH0 K S T EH1 N D","failure":"F EY1 L Y ER0","fall":"F AO1 L","fallen":"F AA1 L AH0 N","families":"F AE1 M AH0 L IY0 Z","family":"F AE1 M AH0 L IY0","feedback":"F IY1 D B AE2 K","fell":"F EH1 L","few":"F Y UW1","field":"F IY1 L D","fill":"F IH1 L","filling":"F IH1 L IH0 NG","find":"F AY1 N D","finished":"F IH1 N IH0 SH T","fish":"F IH1 SH","fit":"F IH1 T","flemish":"F L EH1 M IH0 SH","focus":"F OW1 K AH0 S","focuses":"F OW1 K AH0 S IH0 Z","food":"F UW1 D","for":"F AO1 R","form":"F AO1 R M","formal":"F AO1 R M AH0 L","forms":"F AO1 R M Z","found":"F AW1 N D","four":"F AO1 R","fourteenth":"F AO1 R T IY1 N TH","free":"F R IY1","from":"F R AH1 M","fulfilled":"F UH0 L F IH1 L D","fund":"F AH1 N D","furniture":"F ER1 N IH0 CH ER0","further":"F ER1 DH ER0","future":"F Y UW1 CH ER0","gave":"G EY1 V","general":"JH EH1 N ER0 AH0 L","get":"G EH1 T","give":"G IH1 V","given":"G IH1 V AH0 N","go":"G OW1","goal":"G OW1 L","goes":"G OW1 Z","goods":"G UH1 D Z","got":"G AA1 T","government":"G AH1 V ER0 M AH0 N T","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","grilling":"G R IH1 L IH0 NG","guide":"G AY1 D","had":"HH AE1 D","half":"HH AE1 F","hammer":"HH AE1 M ER0","handed":"HH AE1 N D AH0 D","happen":"HH AE1 P AH0 N","happened":"HH AE1 P AH0 N D","harry":"HH EH1 R IY0","has":"HH AE1 Z","hatchback":"HH AE1 CH B AE2 K","have":"HH AE1 V","he":"HH IY1","head":"HH EH1 D","hear":"HH IY1 R","heard":"HH ER1 D","held":"HH EH1 L D","her":"HH ER1","here":"HH IY1 R","highlighted":"HH AY1 L AY2 T IH0 D","him":"HH IH1 M","his":"HH IH1 Z","hit":"HH IH1 T","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","homes":"HH OW1 M Z","hook":"HH UH1 K","hope":"HH OW1 P","hotel":"HH OW0 T EH1 L","hour":"AW1 ER0","hours":"AW1 ER0 Z","house":"HH AW1 S","however":"HH AW2 EH1 V ER0","huge":"HH Y UW1 JH","hughes":"HH Y UW1 Z","hurry":"HH ER1 IY0","i'd":"AY1 D","i'll":"AY1 L","i'm":"AY1 M","idea":"AY0 D IY1 AH0","if":"IH1 F","ignored":"IH2 G N AO1 R D","impersonality":"IH2 M P ER2 S AH0 N AE1 L AH0 T IY0","impossible":"IH2 M P AA1 S AH0 B AH0 L","in":"IH0 N","inappropriate":"IH2 N AH0 P R OW1 P R IY0 IH0 T","include":"IH2 N K L UW1 D","index":"IH1 N D EH0 K S","indirect":"IH2 N D ER0 EH1 K T","inform":"IH2 N F AO1 R M","information":"IH2 N F ER0 M EY1 SH AH0 N","instance":"IH1 N S T AH0 N S","instead":"IH2 N S T EH1 D","instrument":"IH1 N S T R AH0 M AH0 N T","insurance":"IH2 N SH UH1 R AH0 N S","interest":"IH1 N T R AH0 S T","interrupted":"IH2 N T ER0 AH1 P T IH0 D","interview":"IH1 N T ER0 V Y UW2","into":"IH1 N T UW0","intransitive":"IH2 N T R AE1 N S AH0 T IH0 V","introduce":"IH2 N T R AH0 D UW1 S","introduced":"IH2 N T R AH0 D UW1 S T","inventor":"IH2 N V EH1 N T ER0","invite":"IH2 N V AY1 T","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","items":"AY1 T AH0 M Z","its":"IH1 T S","jack":"JH AE1 K","jack's":"JH AE1 K S","jim":"JH IH1 M","job":"JH AA1 B","keep":"K IY1 P","key":"K IY1","kind":"K AY1 N D","knife":"N AY1 F","know":"N OW1","lack":"L AE1 K","large":"L AA1 R JH","larger":"L AA1 R JH ER0","largest":"L AA1 R JH AH0 S T","last":"L AE1 S T","launch":"L AO1 N CH","law":"L AO1","least":"L IY1 S T","leave":"L IY1 V","leaving":"L IY1 V IH0 NG","left":"L EH1 F T","lend":"L EH1 N D","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","let":"L EH1 T","letter":"L EH1 T ER0","letters":"L EH1 T ER0 Z","like":"L AY1 K","linda":"L IH1 N D AH0","line":"L AY1 N","listen":"L IH1 S AH0 N","lists":"L IH1 S T S","local":"L OW1 K AH0 L","look":"L UH1 K","lost":"L AO1 S T","lot":"L AA1 T","lots":"L AA1 T S","luckily":"L AH1 K AH0 L IY0","lucky":"L AH1 K IY0","made":"M EY1 D","main":"M EY1 N","major":"M EY1 JH ER0","make":"M EY1 K","management":"M AE1 N AH0 JH M AH0 N T","manager":"M AE1 N AH0 JH ER0","managing":"M AE1 N AH0 JH IH0 NG","manchester":"M AE1 N CH EH2 S T ER0","marked":"M AA1 R K T","match":"M AE1 CH","matter":"M AE1 T ER0","may":"M EY1","me":"M IY1","meaning":"M IY1 N IH0 NG","meeting":"M IY1 T IH0 NG","meetings":"M IY1 T IH0 NG Z","meets":"M IY1 T S","members":"M EH1 M B ER0 Z","mentioned":"M EH1 N SH AH0 N D","mentioning":"M EH1 N SH AH0 N IH0 NG","menu":"M EH1 N Y UW0","midlands":"M IH1 D L AE2 N D Z","minute":"M IH1 N AH0 T","mix":"M IH1 K S","mode":"M OW1 D","model":"M AA1 D AH0 L","moment":"M OW1 M AH0 N T","monday":"M AH1 N D IY0","month":"M AH1 N TH","months":"M AH1 N TH S","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","moves":"M UW1 V Z","mr":"M IH1 S T ER0","mrs":"M IH1 S IH0 Z","must":"M AH1 S T","my":"M AY1","name":"N EY1 M","named":"N EY1 M D","naming":"N EY1 M IH0 NG","national":"N AE1 SH AH0 N AH0 L","near":"N IH1 R","nearby":"N IH1 R B AY1","nearly":"N IH1 R L IY0","necessary":"N EH1 S AH0 S EH2 R IY0","need":"N IY1 D","new":"N UW1","newbury":"N UW1 B EH2 R IY0","next":"N EH1 K S T","night":"N AY1 T","no":"N OW1","nobody":"N OW1 B AA2 D IY2","north":"N AO1 R TH","not":"N AA1 T","note":"N OW1 T","notes":"N OW1 T S","nothing":"N AH1 TH IH0 NG","noticing":"N OW1 T IH0 S IH0 NG","noun":"N AW1 N","now":"N AW1","object":"AA1 B JH EH0 K T","objects":"AA1 B JH EH0 K T S","obligations":"AA2 B L AH0 G EY1 SH AH0 N Z","obtain":"AH0 B T EY1 N","obvious":"AA1 B V IY0 AH0 S","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","office":"AO1 F IH0 S","oil":"OY1 L","old":"OW1 L D","omitting":"OW0 M IH1 T IH0 NG","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","open":"OW1 P AH0 N","opened":"OW1 P AH0 N D","operator":"AA1 P ER0 EY2 T ER0","opinions":"AH0 P IH1 N Y AH0 N Z","or":"AO1 R","other":"AH1 DH ER0","our":"AW1 ER0","out":"AW1 T","over":"OW1 V ER0","own":"OW1 N","pack":"P AE1 K","packed":"P AE1 K T","packets":"P AE1 K IH0 T S","page":"P EY1 JH","paid":"P EY1 D","painted":"P EY1 N T IH0 D","painting":"P EY1 N T IH0 NG","pair":"P EH1 R","paper":"P EY1 P ER0","park":"P AA1 R K","parked":"P AA1 R K T","part":"P AA1 R T","participle":"P AA1 R T IH0 S IH2 P AH0 L","pass":"P AE1 S","passive":"P AE1 S IH0 V","past":"P AE1 S T","patel":"P AH0 T EH1 L","pauline":"P AO0 L IY1 N","pavement":"P EY1 V M AH0 N T","pay":"P EY1","people":"P IY1 P AH0 L","perform":"P ER0 F AO1 R M","performed":"P ER0 F AO1 R M D","performs":"P ER0 F AO1 R M Z","period":"P IH1 R IY0 AH0 D","permanently":"P ER1 M AH0 N AH0 N T L IY0","person":"P ER1 S AH0 N","petrol":"P EH1 T R OW0 L","phone":"F OW1 N","phrase":"F R EY1 Z","pick":"P IH1 K","picked":"P IH1 K T","pictures":"P IH1 K CH ER0 Z","planet":"P L AE1 N AH0 T","playing":"P L EY1 IH0 NG","please":"P L IY1 Z","point":"P OY1 N T","points":"P OY1 N T S","police":"P AH0 L IY1 S","portrait":"P AO1 R T R AH0 T","position":"P AH0 Z IH1 SH AH0 N","possible":"P AA1 S AH0 B AH0 L","post":"P OW1 S T","practice":"P R AE1 K T AH0 S","prepare":"P R IY0 P EH1 R","press":"P R EH1 S","prices":"P R AY1 S AH0 Z","prize":"P R AY1 Z","probe":"P R OW1 B","problem":"P R AA1 B L AH0 M","process":"P R AA1 S EH2 S","processes":"P R AA1 S EH0 S AH0 Z","promise":"P R AA1 M AH0 S","promotions":"P R AH0 M OW1 SH AH0 N Z","proposed":"P R AH0 P OW1 Z D","prosecute":"P R AA1 S AH0 K Y UW2 T","public":"P AH1 B L IH0 K","punctuation":"P AH2 NG K CH UW0 EY1 SH AH0 N","purse":"P ER1 S","pushed":"P UH1 SH T","put":"P UH1 T","puts":"P UH1 T S","question":"K W EH1 S CH AH0 N","queue":"K Y UW1","rail":"R EY1 L","raise":"R EY1 Z","rather":"R AE1 DH ER0","reach":"R IY1 CH","read":"R EH1 D","reading":"R IY1 D IH0 NG","reasons":"R IY1 Z AH0 N Z","rebuilding":"R IY0 B IH1 L D IH0 NG","receive":"R AH0 S IY1 V","receiver":"R AH0 S IY1 V ER0","receives":"R AH0 S IY1 V Z","recent":"R IY1 S AH0 N T","redecorate":"R IY0 D EH1 K ER0 EY2 T","reduce":"R AH0 D UW1 S","referred":"R AH0 F ER1 D","region":"R IY1 JH AH0 N","reload":"R IY0 L OW1 D","remains":"R IH0 M EY1 N Z","repeat":"R IH0 P IY1 T","report":"R IY0 P AO1 R T","representative":"R EH2 P R AH0 Z EH1 N T AH0 T IH0 V","request":"R IH0 K W EH1 S T","require":"R IY2 K W AY1 ER0","resemble":"R IH0 Z EH1 M B AH0 L","reset":"R IY0 S EH1 T","responsible":"R IY0 S P AA1 N S AH0 B AH0 L","result":"R IH0 Z AH1 L T","return":"R IH0 T ER1 N","rewrite":"R IY0 R AY1 T","right":"R AY1 T","rise":"R AY1 Z","road":"R OW1 D","roman":"R OW1 M AH0 N","rows":"R OW1 Z","royal":"R OY1 AH0 L","sack":"S AE1 K","salad":"S AE1 L AH0 D","salaries":"S AE1 L ER0 IY0 Z","salary":"S AE1 L ER0 IY0","same":"S EY1 M","saturday":"S AE1 T ER0 D IY0","sauce":"S AO1 S","say":"S EY1","school":"S K UW1 L","score":"S K AO1 R","scoring":"S K AO1 R IH0 NG","sea":"S IY1","second":"S EH1 K AH0 N D","see":"S IY1","seek":"S IY1 K","select":"S AH0 L EH1 K T","sell":"S EH1 L","send":"S EH1 N D","sent":"S EH1 N T","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","serve":"S ER1 V","sheila":"SH IY1 L AH0","ship":"SH IH1 P","shop":"SH AA1 P","shopping":"SH AA1 P IH0 NG","should":"SH UH1 D","show":"SH OW1","shown":"SH OW1 N","similar":"S IH1 M AH0 L ER0","simplified":"S IH1 M P L AH0 F AY2 D","since":"S IH1 N S","situation":"S IH2 CH UW0 EY1 SH AH0 N","six":"S IH1 K S","size":"S AY1 Z","slip":"S L IH1 P","slowly":"S L OW1 L IY0","smith":"S M IH1 TH","smoking":"S M OW1 K IH0 NG","so":"S OW1","some":"S AH1 M","somebody":"S AH1 M B AA2 D IY0","somehow":"S AH1 M HH AW2","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","soon":"S UW1 N","sorry":"S AA1 R IY0","south":"S AW1 TH","space":"S P EY1 S","speaking":"S P IY1 K IH0 NG","special":"S P EH1 SH AH0 L","specific":"S P AH0 S IH1 F IH0 K","speed":"S P IY1 D","spend":"S P EH1 N D","st":"S T R IY1 T","stadium":"S T EY1 D IY0 AH0 M","staff":"S T AE1 F","standard":"S T AE1 N D ER0 D","standing":"S T AE1 N D IH0 NG","stands":"S T AE1 N D Z","start":"S T AA1 R T","station":"S T EY1 SH AH0 N","stay":"S T EY1","stays":"S T EY1 Z","still":"S T IH1 L","stolen":"S T OW1 L AH0 N","stop":"S T AA1 P","stopped":"S T AA1 P T","style":"S T AY1 L","subject":"S AH0 B JH EH1 K T","sue":"S UW1","suggested":"S AH0 JH EH1 S T IH0 D","suit":"S UW1 T","suitable":"S UW1 T AH0 B AH0 L","sum":"S AH1 M","summary":"S AH1 M ER0 IY0","suppose":"S AH0 P OW1 Z","surface":"S ER1 F AH0 S","survey":"S ER0 V EY1","system":"S IH1 S T AH0 M","take":"T EY1 K","taken":"T EY1 K AH0 N","taking":"T EY1 K IH0 NG","tap":"T AE1 P","target":"T AA1 R G AH0 T","telephone":"T EH1 L AH0 F OW2 N","tell":"T EH1 L","tense":"T EH1 N S","test":"T EH1 S T","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","they've":"DH EY1 V","thief":"TH IY1 F","thing":"TH IH1 NG","think":"TH IH1 NG K","this":"DH IH1 S","three":"TH R IY1","through":"TH R UW1","tickets":"T IH1 K AH0 T S","time":"T AY1 M","times":"T AY1 M Z","tip":"T IH1 P","to":"T UW1","told":"T OW1 L D","tomorrow":"T AH0 M AA1 R OW2","took":"T UH1 K","tool":"T UW1 L","total":"T OW1 T AH0 L","traffic":"T R AE1 F IH0 K","transit":"T R AE1 N Z IH0 T","transitive":"T R AE1 N S AH0 T IH0 V","transport":"T R AE0 N S P AO1 R T","transported":"T R AE0 N S P AO1 R T IH0 D","travel":"T R AE1 V AH0 L","tree":"T R IY1","trial":"T R AY1 AH0 L","try":"T R AY1","turn":"T ER1 N","twenty-four":"T W EH1 N T IY0 F AO2 R","twice":"T W AY1 S","two":"T UW1","type":"T AY1 P","under":"AH1 N D ER0","underlined":"AH1 N D ER0 L AY2 N D","unfortunately":"AH0 N F AO1 R CH AH0 N AH0 T L IY0","unimportant":"AH0 N IH0 M P AO1 R T AH0 N T","unknown":"AH0 N N OW1 N","unnecessary":"AH0 N N EH1 S AH0 S EH2 R IY0","until":"AH0 N T IH1 L","up":"AH1 P","us":"AH1 S","use":"Y UW1 S","used":"Y UW1 Z D","uses":"Y UW1 S AH0 Z","using":"Y UW1 Z IH0 NG","usually":"Y UW1 ZH AH0 W AH0 L IY0","vacancy":"V EY1 K AH0 N S IY0","vegetables":"V EH1 JH T AH0 B AH0 L Z","venus":"V IY1 N AH0 S","verb":"V ER1 B","verbs":"V ER1 B Z","versions":"V ER1 ZH AH0 N Z","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","villa":"V IH1 L AH0","visa":"V IY1 Z AH0","voice":"V OY1 S","voices":"V OY1 S AH0 Z","waitress":"W EY1 T R AH0 S","wallet":"W AO1 L AH0 T","warehouse":"W EH1 R HH AW2 S","was":"W AA1 Z","way":"W EY1","ways":"W EY1 Z","we":"W IY1","we'll":"W IY1 L","we've":"W IY1 V","wednesday":"W EH1 N Z D IY0","week":"W IY1 K","week's":"W IY1 K S","were":"W ER1","what":"W AH1 T","when":"W EH1 N","where":"W EH1 R","whether":"W EH1 DH ER0","which":"W IH1 CH","while":"W AY1 L","white":"W AY1 T","who":"HH UW1","widely":"W AY1 D L IY0","will":"W IH1 L","window":"W IH1 N D OW0","windows":"W IH1 N D OW0 Z","with":"W IH1 DH","without":"W IH0 TH AW1 T","won":"W AH1 N","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","workers":"W ER1 K ER0 Z","written":"R IH1 T AH0 N","wrong":"R AO1 NG","year":"Y IH1 R","yesterday":"Y EH1 S T ER0 D EY2","yet":"Y EH1 T","you":"Y UW1","you'll":"Y UW1 L","your":"Y AO1 R","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

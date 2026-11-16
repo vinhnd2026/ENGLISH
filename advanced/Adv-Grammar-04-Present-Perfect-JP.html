@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 4 — Present perfect | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Adv-Grammar-04-Present-Perfect.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-04-Present-Perfect-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 4 — Present perfect</h1>
+  <p>現在完了：現在完了形（Present Perfect Simple）・現在完了進行形（Present Perfect Continuous）・過去形との対比・現在完了と使う時の表現</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 現在完了形（Present Perfect Simple）— 過去と今をつなぐ形</h2>
+  <div class="formula">S + have / has + 過去分詞（V<sub>3</sub>）</div>
+  <p>現在完了形は、過去の出来事を現在の時点と結びつけて述べる形です。主に次のような場合に使います。</p>
+  <h3>a) つい最近の出来事（具体的な時は言わない）— <i>just</i> と一緒によく使う</h3>
+  <div class="ex"><div class="en">We've missed the turning.</div><div class="vi">曲がり角を通り過ぎてしまった。（ついさっきの出来事）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've just seen a ghost!</div><div class="vi">たった今、幽霊を見た！（<i>just</i>＝「ちょうど今」）</div><div class="tts"></div></div>
+  <h3>b) 過去のいつかはっきりしない出来事</h3>
+  <div class="ex"><div class="en">Jim has had three car accidents.</div><div class="vi">ジムは（今までに）3回、車の事故に遭っている。（具体的な時は不明）</div><div class="tts"></div></div>
+  <h3>c) 結果が今に残っている過去の出来事</h3>
+  <div class="ex"><div class="en">I've twisted my ankle.</div><div class="vi">足首をひねってしまった。（だから今、びっこを引いている）</div><div class="tts"></div></div>
+  <h3>d) 今まで続いている状態（状態動詞とともに）</h3>
+  <div class="ex"><div class="en">I've lived here for the past ten years.</div><div class="vi">この10年間、ここに住んでいる。（今も住んでいる）</div><div class="tts"></div></div>
+  <h3>e) 今までの期間に繰り返されてきた習慣</h3>
+  <div class="ex"><div class="en">I've been jogging every morning for the last month.</div><div class="vi">この1か月、毎朝ジョギングをしている。</div><div class="tts"></div></div>
+  <h3>f) 過去形（Past Simple）との対比</h3>
+  <p>過去形は、<b>はっきりした時</b>を表す表現とともに使います。その時が明示されている場合もあれば、文脈から分かる場合もあります。最近の出来事については、話し手の<b>気持ち</b>によって選ぶ形が変わります。今とつながっていると感じれば現在完了形、今から切り離されたことと感じれば（時間的・場所的に離れていれば）過去形を使います。</p>
+  <div class="ex"><div class="en">I've bought a new car. — I bought the car after all.</div><div class="vi">新しい車を買った。（いつかは不明）— 結局、あの車を買った。（話題に出ていた車＝時が暗黙のうちに特定されている）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've left my wallet in the car. I'm going back to get it. — I left my wallet in the car. I'm going back to get it.</div><div class="vi">車に財布を置いてきた。取りに戻るところだ。（現在完了形は出来事が今に近く感じる場合、過去形は出来事が遠く離れたと感じる場合）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 現在完了進行形（Present Perfect Continuous）— 続いている・続いてきた動作</h2>
+  <div class="formula">S + have / has + been + V-ing</div>
+  <p>現在完了進行形も過去と今を結びますが、動作の<b>過程</b>に焦点があります。時の表現や文脈によって、次のような意味になります。</p>
+  <h3>a) 今の瞬間まで続いている状態・動作</h3>
+  <div class="ex"><div class="en">I've been waiting for you for three hours!</div><div class="vi">3時間もあなたを待っているんです！</div><div class="tts"></div></div>
+  <h3>b) まだ終わっていない動作</h3>
+  <div class="ex"><div class="en">I've been cleaning the house but I still haven't finished.</div><div class="vi">家の掃除をしているが、まだ終わっていない。</div><div class="tts"></div></div>
+  <h3>c) 動作の長さを強調する</h3>
+  <div class="ex"><div class="en">I've been writing letters all morning.</div><div class="vi">午前中ずっと手紙を書いている。</div><div class="tts"></div></div>
+  <h3>d) ちょうど終わったばかりの動作（結果が見える）</h3>
+  <div class="ex"><div class="en">I've been running. That's why I look hot.</div><div class="vi">走ってきたところだ。だからこんなに暑そうに見えるのだ。</div><div class="tts"></div></div>
+  <h3>e) 繰り返されてきた動作</h3>
+  <div class="ex"><div class="en">I've been taking French lessons this year.</div><div class="vi">今年はフランス語のレッスンを受け続けている。</div><div class="tts"></div></div>
+  <h3>f) 現在完了形との対比</h3>
+  <p>状態動詞の一部では、2つの形にほとんど<b>違いがありません</b>：<i>How long have you lived here?</i> ≈ <i>How long have you been living here?</i> <i>sit, lie, wait, stay</i> のような動詞は<b>進行形を好みます</b>。最もはっきりした違いは「完了」かどうかです。終わったこと、特に個数などの結果を言う場合は、成果を強調する現在完了形を使います。終わっていない、またはちょうど終わったところで、長さを強調する場合は進行形を使います。</p>
+  <div class="ex"><div class="en">I've ironed five shirts this morning. — I've been ironing my shirts this morning.</div><div class="vi">今朝、シャツを5枚アイロンがけした。（結果を強調）— 今朝はシャツのアイロンがけをしている。（まだ終わっていない可能性；長さを強調）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. 現在完了と使う時の表現</h2>
+  <p>完了形の意味は、時の表現と強く結びついています。過去形か現在完了形かは、使う時の表現によって決まることもあります。</p>
+  <h3>a) 過去形と使う — 特定の、終わった時</h3>
+  <div class="formula">yesterday · last week · on Sunday</div>
+  <h3>b) 現在完了と使う — 「今まで」という不特定の時</h3>
+  <div class="formula">since 1968 · already</div>
+  <h3>c) どちらの形とも使う表現</h3>
+  <p>多くの時の表現は、特定の形に固定されていません。終わった時を指すか、今までの期間を指すかは、話し手の見方によります。</p>
+  <div class="formula">for · never · before · all my life · for a long time · today · all day · every day · recently</div>
+  <div class="ex"><div class="en">I haven't seen Helen recently. — I saw Jim recently.</div><div class="vi">最近ヘレンに会っていない。— 最近ジムに会った。（同じ <i>recently</i> でも形が違う）</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>現在完了形</b>（have/has + 過去分詞）：最近の出来事（<i>just</i> とよく使う）、時の分からない出来事、結果が今に残る出来事、今まで続く状態を表す。</li>
+    <li>終わった特定の時（<i>yesterday, last week, on Sunday</i>）とは現在完了形を使わない。その場合は過去形を使う。</li>
+    <li><b>現在完了進行形</b>（have/has been + V-ing）：過程や長さを強調し、未完了の動作、ちょうど終わった動作、繰り返しの動作を表す。</li>
+    <li>終わったこと、特に個数などの結果を言う場合は現在完了形（<i>I've ironed five shirts</i>）を、長さを強調する場合は進行形を使う。</li>
+    <li><i>sit, lie, wait, stay</i> は進行形を好み、<i>How long …?</i> の質問では <i>live</i> などの動詞で2つの形に大差はない。</li>
+    <li>時の表現：<i>since</i> 〜, <i>already</i> は現在完了と、<i>yesterday, last week, on Sunday</i> は過去形と使う。<i>for, never, before, today, recently</i> などは話し手の見方次第でどちらとも使う。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 正しい動詞の形を選ぼう</h2>
+  <p>各文で正しい形を選んでください。2か所選ぶ文は (1) と (2) の2つの問題に分け、もう一方の箇所には正しい形を入れてあります。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p>a) I can't believe it, Inspector. You mean that Smith ______ money from the till all this time!</p><div class="opts"><button type="button">stole</button><button type="button">has stolen</button><button type="button">has been stealing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>b) (1) You three boys look very guilty! What ______ since I left the room?</p><div class="opts"><button type="button">did you do</button><button type="button">have you done</button><button type="button">have you been doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) (2) You three boys look very guilty! What have you been doing since I ______ the room?</p><div class="opts"><button type="button">left</button><button type="button">have left</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (1) Why on earth ______ me about that loose floorboard? I tripped over it just now and hurt myself.</p><div class="opts"><button type="button">didn't you tell</button><button type="button">haven't you told</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (2) Why on earth didn't you tell me about that loose floorboard? I ______ over it just now and hurt myself.</p><div class="opts"><button type="button">tripped</button><button type="button">have tripped</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) (1) It's a long time since I ______ your brother Paul. What has he been doing lately?</p><div class="opts"><button type="button">saw</button><button type="button">have seen</button><button type="button">have been seeing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) (2) It's a long time since I saw your brother Paul. What ______ lately?</p><div class="opts"><button type="button">did he do</button><button type="button">has he done</button><button type="button">has he been doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) (1) I can't believe that you ______ three pizzas already! I only brought them in fifteen minutes ago!</p><div class="opts"><button type="button">ate</button><button type="button">have eaten</button><button type="button">have been eating</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) (2) I can't believe that you have eaten three pizzas already! I ______ them in fifteen minutes ago!</p><div class="opts"><button type="button">only brought</button><button type="button">have only brought</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) (1) Don't forget that you ______ Mrs Dawson. She has been waiting outside since 10.30.</p><div class="opts"><button type="button">didn't see</button><button type="button">haven't seen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) (2) Don't forget that you haven't seen Mrs Dawson. She ______ outside since 10.30.</p><div class="opts"><button type="button">has waited</button><button type="button">has been waiting</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) (1) What ______ of Brighton? Did you stay there long?</p><div class="opts"><button type="button">did you think</button><button type="button">have you thought</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) (2) What did you think of Brighton? ______ there long?</p><div class="opts"><button type="button">Did you stay</button><button type="button">Have you stayed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) (1) I feel really tired. I ______ the garden for the last three hours and I haven't rested for a single moment.</p><div class="opts"><button type="button">weeded</button><button type="button">have weeded</button><button type="button">have been weeding</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) (2) I feel really tired. I have been weeding the garden for the last three hours and I ______ for a single moment.</p><div class="opts"><button type="button">didn't rest</button><button type="button">haven't rested</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (1) I'm having problems with David. He ______ me up in the middle of the night and telling me his troubles.</p><div class="opts"><button type="button">has called</button><button type="button">has been calling</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (2) I'm having problems with David. He has been calling me up in the middle of the night and ______ me his troubles.</p><div class="opts"><button type="button">told</button><button type="button">telling</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) (1) How long ______ driving lessons? And have you taken your test yet?</p><div class="opts"><button type="button">did you have</button><button type="button">have you had</button><button type="button">have you been having</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) (2) How long have you been having driving lessons? And ______ your test yet?</p><div class="opts"><button type="button">did you take</button><button type="button">have you taken</button><button type="button">have you been taking</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/19</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — 合う終わり方をすべて見つけよう</h2>
+  <p>文の前半には、合う終わり方（1〜10）が1つ以上あります。合う番号をすべて、カンマで区切って入力してください（例：5, 8）。</p>
+  <div class="formula">1 time and time again · 2 all my life · 3 so far · 4 for the time being · 5 for the past hour or two · 6 yet · 7 till half past eight · 8 for a while · 9 the other day · 10 long</div>
+  <div class="q"><p>例 a) I haven't been feeling very well … <b>5, 8</b></p></div>
+  <div class="q"><p>b) I went to the dentist's <input class="blank" data-answers="9" data-display="9">.</p></div>
+  <div class="q"><p>c) I've lived here <input class="blank" data-answers="2, 8|8, 2" data-display="2, 8">.</p></div>
+  <div class="q"><p>d) Don't worry. I haven't been waiting <input class="blank" data-answers="10" data-display="10">.</p></div>
+  <div class="q"><p>e) I've written two pages <input class="blank" data-answers="3" data-display="3">.</p></div>
+  <div class="q"><p>f) I waited outside your house <input class="blank" data-answers="7, 8, 9|7, 9, 8|8, 7, 9|8, 9, 7|9, 7, 8|9, 8, 7" data-display="7, 8, 9">.</p></div>
+  <div class="q"><p>g) I've warned you about this <input class="blank" data-answers="1" data-display="1">.</p></div>
+  <div class="q"><p>h) I haven't made a decision <input class="blank" data-answers="2, 3, 6, 8|2, 3, 8, 6|2, 6, 3, 8|2, 6, 8, 3|2, 8, 3, 6|2, 8, 6, 3|3, 2, 6, 8|3, 2, 8, 6|3, 6, 2, 8|3, 6, 8, 2|3, 8, 2, 6|3, 8, 6, 2|6, 2, 3, 8|6, 2, 8, 3|6, 3, 2, 8|6, 3, 8, 2|6, 8, 2, 3|6, 8, 3, 2|8, 2, 3, 6|8, 2, 6, 3|8, 3, 2, 6|8, 3, 6, 2|8, 6, 2, 3|8, 6, 3, 2" data-display="2, 3, 6, 8">.</p></div>
+  <div class="q"><p>i) The repair worked <input class="blank" data-answers="8" data-display="8">.</p></div>
+  <div class="q"><p>j) I've decided to believe you <input class="blank" data-answers="4" data-display="4">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 括弧内の動詞を活用させよう</h2>
+  <p>括弧内の動詞を、最も適切な完了形または過去形にして入力してください。</p>
+  <div class="q"><p>a) So far we <input class="blank" data-answers="haven't noticed|have not noticed" data-display="haven't noticed"> (not/notice) anything unusual, but we <input class="blank" data-answers="have not been paying|haven't been paying" data-display="have not been paying"> (not/pay) very close attention.</p></div>
+  <div class="q"><p>b) I'm sorry I <input class="blank" data-answers="have not come|have not been coming|haven't come|haven't been coming" data-display="have not come"> (not/come) to class lately.</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="have been working" data-display="have been working"> (work) late in the evenings for the past fortnight.</p></div>
+  <div class="q"><p>d) I wonder if Mary <input class="blank" data-answers="has reached" data-display="has reached"> (reach) home yet? She <input class="blank" data-answers="left" data-display="left"> (leave) too late to catch the bus.</p></div>
+  <div class="q"><p>e) Here is the news. The Home Office <input class="blank" data-answers="has announced" data-display="has announced"> (announce) that the two prisoners who <input class="blank" data-answers="escaped" data-display="escaped"> (escape) from Dartmoor prison earlier this morning <input class="blank" data-answers="have given themselves up" data-display="have given themselves up"> (give themselves up) to local police.</p></div>
+  <div class="q"><p>f) <input class="blank" data-answers="Have you made up" data-display="Have you made up"> (you/make up) your minds? What <input class="blank" data-answers="have you decided" data-display="have you decided"> (you/decide) to do?</p></div>
+  <div class="q"><p>g) Harry <input class="blank" data-answers="left" data-display="left"> (leave) home rather suddenly and we <input class="blank" data-answers="have not heard|haven't heard" data-display="have not heard"> (not/hear) from him since.</p></div>
+  <div class="q"><p>h) Recent research <input class="blank" data-answers="has shown" data-display="has shown"> (show) that Columbus <input class="blank" data-answers="did not discover|didn't discover" data-display="did not discover"> (not/discover) America, but that Vikings <input class="blank" data-answers="landed" data-display="landed"> (land) there five hundred years before him.</p></div>
+  <div class="q"><p>i) I think that people <input class="blank" data-answers="have become|are becoming" data-display="have become"> (become) tired of the poor quality of television programmes, though they <input class="blank" data-answers="have improved|have been improving" data-display="have improved"> (improve) lately.</p></div>
+  <div class="q"><p>j) <input class="blank" data-answers="Has something happened" data-display="Has something happened"> (something/happen) to the phone lines? I <input class="blank" data-answers="have been trying" data-display="have been trying"> (try) to get through to Glasgow for the past hour.</p></div>
+  <div class="q"><p>k) Bill <input class="blank" data-answers="got" data-display="got"> (get) that new job, but he <input class="blank" data-answers="has been complaining" data-display="has been complaining"> (complain) about it ever since.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/22</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。短縮形の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 2文目を完成させよう</h2>
+  <p>与えられた語（太字）を使って、1文目と意味が同じになるよう2文目を完成させてください。与えられた語は変えてはいけません。</p>
+  <div class="q"><p>例 a) This has been my home for thirty years. <b>(lived)</b></p><p>I <b>have lived here</b> for thirty years.</p></div>
+  <div class="q"><p>b) Eating Chinese food is new to me. <b>(never)</b></p><p>I <input class="blank" data-answers="have never eaten Chinese food" data-display="have never eaten Chinese food"> before.</p></div>
+  <div class="q"><p>c) Tony hasn't been to Paris before. <b>(first)</b></p><p>It's <input class="blank" data-answers="the first time Tony has been" data-display="the first time Tony has been"> to Paris.</p></div>
+  <div class="q"><p>d) We haven't been swimming for ages. <b>(since)</b></p><p>It's <input class="blank" data-answers="ages since we went|ages since we have been" data-display="ages since we went"> swimming.</p></div>
+  <div class="q"><p>e) Mary started learning French five years ago. <b>(has)</b></p><p>Mary <input class="blank" data-answers="has been learning French for" data-display="has been learning French for"> five years.</p></div>
+  <div class="q"><p>f) I am on the tenth page of this letter I am writing. <b>(ten)</b></p><p>So far I <input class="blank" data-answers="have written ten pages" data-display="have written ten pages"> of this letter.</p></div>
+  <div class="q"><p>g) It's over twenty years since they got married. <b>(for)</b></p><p>They have <input class="blank" data-answers="been married for more" data-display="been married for more"> than twenty years.</p></div>
+  <div class="q"><p>h) The last time I saw Dick was in 1995. <b>(seen)</b></p><p>I haven't <input class="blank" data-answers="seen Dick since" data-display="seen Dick since"> 1995.</p></div>
+  <div class="q"><p>i) There is a definite improvement in your work. <b>(has)</b></p><p>Lately <input class="blank" data-answers="your work has definitely" data-display="your work has definitely"> improved.</p></div>
+  <div class="q"><p>j) This is my second visit to Hungary. <b>(visited)</b></p><p>This is the <input class="blank" data-answers="second time I have visited" data-display="second time I have visited"> Hungary.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>問題5 — 正しい語句を選ぼう</h2>
+  <p>各文で正しい語句を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) The price of petrol ______ by 15% over the past year.</p><div class="opts"><button type="button">has risen</button><button type="button">has been rising</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) No wonder you are overweight! ______ chocolates all day long!</p><div class="opts"><button type="button">You have eaten</button><button type="button">You have been eating</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) ______ a really good book this morning.</p><div class="opts"><button type="button">I've read</button><button type="button">I've been reading</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Doesn't this room look better? ______ some posters up on the walls.</p><div class="opts"><button type="button">I've put</button><button type="button">I've been putting</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Don't disappoint me! ______ on you.</p><div class="opts"><button type="button">I've counted</button><button type="button">I've been counting</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) Don't forget your pills today. ______</p><div class="opts"><button type="button">Have you taken them?</button><button type="button">Have you been taking them?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Who ______ my scarf?</p><div class="opts"><button type="button">has worn</button><button type="button">has been wearing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I think there's something wrong with your motorbike. ______ some very funny noises.</p><div class="opts"><button type="button">It's made</button><button type="button">It's been making</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Jack ______ for a pay-rise three times this year.</p><div class="opts"><button type="button">has asked</button><button type="button">has been asking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) ______ Ann all evening, but there's no reply.</p><div class="opts"><button type="button">I've been phoning</button><button type="button">I've phoned</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題5の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 文章を読んで動詞を活用させよう：ロンドンへの引っ越し</h2>
+  <p>文章を読み、括弧内の動詞を正しい形（過去形・現在完了形・現在完了進行形）にして入力してください。</p>
+  <div class="q"><p>I (1) <input class="blank" data-answers="moved" data-display="moved"> (move) to London three weeks ago to take up a new post at my company's London office. Ever since then, I (2) <input class="blank" data-answers="have been wondering" data-display="have been wondering"> (wonder) if I (3) <input class="blank" data-answers="made" data-display="made"> (make) the right decision. I (4) <input class="blank" data-answers="have seen" data-display="have seen"> (see) a lot of negative things about living in the capital, and I can't say London (5) <input class="blank" data-answers="has made" data-display="has made"> (make) a very favourable impression on me. It's so polluted and expensive, and the people are so distant. You see, I (6) <input class="blank" data-answers="grew up" data-display="grew up"> (grow up) in a fairly small town called Devizes and I (7) <input class="blank" data-answers="spent|have spent" data-display="spent"> (spend) all of my life there. I (8) <input class="blank" data-answers="always wanted|have always wanted" data-display="always wanted"> (always/want) to live in a big city and so when my company (9) <input class="blank" data-answers="offered" data-display="offered"> (offer) me a job in London, I (10) <input class="blank" data-answers="jumped" data-display="jumped"> (jump) at the chance. I think I'm not alone in my aversion to the big city. According to a programme I (11) <input class="blank" data-answers="have just heard" data-display="have just heard"> (just/hear) on the radio, more and more people (12) <input class="blank" data-answers="have stopped" data-display="have stopped"> (stop) working in London recently, and a lot of large companies (13) <input class="blank" data-answers="have chosen|have been choosing" data-display="have chosen"> (choose) to move away from the centre. Oh well, it's too late to change my mind now, because the job is up and running, and I (14) <input class="blank" data-answers="have already sold" data-display="have already sold"> (already/sell) my house in Devizes. But I must admit, over the past few days, I (15) <input class="blank" data-answers="have secretly been hoping" data-display="have secretly been hoping"> (secretly/hope) that the company would relocate me back to my old town.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。短縮形の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card" id="ex7">
+  <h2>問題7 — 正しい時の表現を選ぼう</h2>
+  <p>各文で正しい語句を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) It's a long time ______ I last saw you.</p><div class="opts"><button type="button">since</button><button type="button">when</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) I've seen Bill quite often ______.</p><div class="opts"><button type="button">lately</button><button type="button">from time to time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Have you spoken to the director ______?</p><div class="opts"><button type="button">beforehand</button><button type="button">already</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) I've lived in the same house ______.</p><div class="opts"><button type="button">for years</button><button type="button">for ever</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I've read the paper ______.</p><div class="opts"><button type="button">now</button><button type="button">still</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Diana has bought a computer ______.</p><div class="opts"><button type="button">two years ago</button><button type="button">since then</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Nothing much has been happening ______.</p><div class="opts"><button type="button">by now</button><button type="button">so far</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I've finished reading her new book ______.</p><div class="opts"><button type="button">at last</button><button type="button">this evening</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Sue bought a CD player last week and she's been listening to music ______.</p><div class="opts"><button type="button">ever since</button><button type="button">for a while</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Sorry, but I haven't got that work finished ______.</p><div class="opts"><button type="button">already</button><button type="button">yet</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題7の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>問題8 — 表現と場面を結びつけよう</h2>
+  <p>表現 a〜j を読み、場面 1〜10 に合う表現の文字を入力してください。</p>
+  <div class="formula">a) Have you heard the one about …? · b) I haven't seen you for ages! · c) I've had enough of this! · d) Sorry, you've lost me! · e) I've had a brainwave! · f) It's been one of those days! · g) I've had enough, thanks. · h) I haven't had a chance yet. · i) I've been having second thoughts. · j) Oh, haven't you heard?</div>
+  <div class="q"><p>1) Saying you don't follow what someone is saying. → <input class="blank" data-answers="d" data-display="d"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>2) Having doubts about a big decision. → <input class="blank" data-answers="i" data-display="i"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>3) Having a brilliant idea. → <input class="blank" data-answers="e" data-display="e"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>例 4) Introducing a joke. → <b>a</b></p></div>
+  <div class="q"><p>5) Declining more food. → <input class="blank" data-answers="g" data-display="g"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>6) Spreading gossip. → <input class="blank" data-answers="j" data-display="j"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>7) Seeing an old face from the past. → <input class="blank" data-answers="b" data-display="b"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>8) Having a frustrating time, when everything is going wrong. → <input class="blank" data-answers="f" data-display="f"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>9) Wanting to stop doing something because it's annoying you. → <input class="blank" data-answers="c" data-display="c"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="q"><p>10) Apologising for not doing something you said you'd do. → <input class="blank" data-answers="h" data-display="h"> <span class="small">(合う表現の文字 a〜j を入力)</span></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ 問題8をチェック</button><button type="button" onclick="showFill('ex8')">👁 答えを見る</button><button type="button" onclick="resetFill('ex8')">↺ やり直す</button></div>
+  <span class="score">問題8の点数： <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>103</b> 問です（問題1：19 · 問題2：9 · 問題3：22か所 · 問題4：9 · 問題5：10 · 問題6：15か所 · 問題7：10 · 問題8：9）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","accidents":"AE1 K S AH0 D AH0 N T S","according":"AH0 K AO1 R D IH0 NG","admit":"AH0 D M IH1 T","advanced":"AH0 D V AE1 N S T","after":"AE1 F T ER0","again":"AH0 G EH1 N","ages":"EY1 JH AH0 Z","ago":"AH0 G OW1","all":"AO1 L","alone":"AH0 L OW1 N","already":"AO0 L R EH1 D IY0","always":"AO1 L W EY2 Z","am":"AE1 M","america":"AH0 M EH1 R AH0 K AH0","an":"AE1 N","and":"AH0 N D","ankle":"AE1 NG K AH0 L","ann":"AE1 N","announce":"AH0 N AW1 N S","annoying":"AH0 N OY1 IH0 NG","anything":"EH1 N IY0 TH IH2 NG","apologising":"AH0 P AA1 L AH0 JH AY2 Z IH0 NG","are":"AA1 R","asked":"AE1 S K T","asking":"AE1 S K IH0 NG","at":"AE1 T","ate":"EY1 T","attention":"AH0 T EH1 N SH AH0 N","aversion":"AH0 V ER1 ZH AH0 N","away":"AH0 W EY1","back":"B AE1 K","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","been":"B IH1 N","before":"B IH0 F AO1 R","beforehand":"B IH0 F AO1 R HH AE2 N D","being":"B IY1 IH0 NG","believe":"B IH0 L IY1 V","better":"B EH1 T ER0","big":"B IH1 G","bill":"B IH1 L","book":"B UH1 K","bought":"B AA1 T","boys":"B OY1 Z","brighton":"B R AY1 T AH0 N","brilliant":"B R IH1 L Y AH0 N T","brother":"B R AH1 DH ER0","brought":"B R AO1 T","bus":"B AH1 S","but":"B AH1 T","by":"B AY1","called":"K AO1 L D","calling":"K AO1 L IH0 NG","can't":"K AE1 N T","capital":"K AE1 P AH0 T AH0 L","car":"K AA1 R","catch":"K AE1 CH","cd":"S IY2 D IY1","centre":"S EH1 N T ER0","chance":"CH AE1 N S","change":"CH EY1 N JH","chinese":"CH AY0 N IY1 Z","chocolates":"CH AO1 K L AH0 T S","choose":"CH UW1 Z","city":"S IH1 T IY0","class":"K L AE1 S","cleaning":"K L IY1 N IH0 NG","close":"K L OW1 S","columbus":"K AH0 L AH1 M B AH0 S","come":"K AH1 M","companies":"K AH1 M P AH0 N IY2 Z","company":"K AH1 M P AH0 N IY2","company's":"K AH1 M P AH0 N IY0 Z","complain":"K AH0 M P L EY1 N","computer":"K AH0 M P Y UW1 T ER0","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","counted":"K AW1 N T IH0 D","counting":"K AW1 N T IH0 NG","david":"D EY1 V IH0 D","dawson":"D AO1 S AH0 N","day":"D EY1","days":"D EY1 Z","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","decision":"D IH0 S IH1 ZH AH0 N","declining":"D IH0 K L AY1 N IH0 NG","definite":"D EH1 F AH0 N AH0 T","dentist's":"D EH1 N T IH0 S T S","diana":"D AY0 AE1 N AH0","dick":"D IH1 K","did":"D IH1 D","didn't":"D IH1 D AH0 N T","director":"D ER0 EH1 K T ER0","disappoint":"D IH2 S AH0 P OY1 N T","discover":"D IH0 S K AH1 V ER0","distant":"D IH1 S T AH0 N T","do":"D UW1","doesn't":"D AH1 Z AH0 N T","doing":"D UW1 IH0 NG","don't":"D OW1 N T","done":"D AH1 N","doubts":"D AW1 T S","driving":"D R AY1 V IH0 NG","earlier":"ER1 L IY0 ER0","earth":"ER1 TH","eaten":"IY1 T AH0 N","eating":"IY1 T IH0 NG","eight":"EY1 T","english":"IH1 NG G L IH0 SH","enough":"IH0 N AH1 F","escape":"IH0 S K EY1 P","evening":"IY1 V N IH0 NG","evenings":"IY1 V N IH0 NG Z","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","everything":"EH1 V R IY0 TH IH2 NG","expensive":"IH0 K S P EH1 N S IH0 V","face":"F EY1 S","fairly":"F EH1 R L IY0","far":"F AA1 R","favourable":"F EY1 V ER0 AH0 B AH0 L","feel":"F IY1 L","feeling":"F IY1 L IH0 NG","few":"F Y UW1","fifteen":"F IH0 F T IY1 N","finished":"F IH1 N IH0 SH T","first":"F ER1 S T","five":"F AY1 V","floorboard":"F L AO1 R B AO2 R D","follow":"F AA1 L OW0","food":"F UW1 D","for":"F AO1 R","forget":"F ER0 G EH1 T","fortnight":"F AO1 R T N AY2 T","french":"F R EH1 N CH","from":"F R AH1 M","frustrating":"F R AH1 S T R EY2 T IH0 NG","funny":"F AH1 N IY0","garden":"G AA1 R D AH0 N","get":"G EH1 T","ghost":"G OW1 S T","give":"G IH1 V","glasgow":"G L AE1 S K OW2","going":"G OW1 IH0 NG","good":"G UH1 D","gossip":"G AA1 S AH0 P","got":"G AA1 T","grammar":"G R AE1 M ER0","grow":"G R OW1","guilty":"G IH1 L T IY0","had":"HH AE1 D","half":"HH AE1 F","happen":"HH AE1 P AH0 N","happening":"HH AE1 P AH0 N IH0 NG","harry":"HH EH1 R IY0","has":"HH AE1 Z","hasn't":"HH AE1 Z AH0 N T","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","having":"HH AE1 V IH0 NG","he":"HH IY1","hear":"HH IY1 R","heard":"HH ER1 D","helen":"HH EH1 L AH0 N","her":"HH ER1","here":"HH IY1 R","him":"HH IH1 M","his":"HH IH1 Z","home":"HH OW1 M","hope":"HH OW1 P","hot":"HH AA1 T","hour":"AW1 ER0","hours":"AW1 ER0 Z","house":"HH AW1 S","how":"HH AW1","hundred":"HH AH1 N D R AH0 D","hungary":"HH AH1 NG G ER0 IY0","hurt":"HH ER1 T","i'm":"AY1 M","i've":"AY1 V","idea":"AY0 D IY1 AH0","if":"IH1 F","impression":"IH2 M P R EH1 SH AH0 N","improve":"IH2 M P R UW1 V","improved":"IH2 M P R UW1 V D","improvement":"IH2 M P R UW1 V M AH0 N T","in":"IH0 N","inspector":"IH2 N S P EH1 K T ER0","introducing":"IH2 N T R AH0 D UW1 S IH0 NG","ironed":"AY1 ER0 N D","ironing":"AY1 ER0 N IH0 NG","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","jack":"JH AE1 K","jim":"JH IH1 M","job":"JH AA1 B","jogging":"JH AA1 G IH0 NG","joke":"JH OW1 K","jump":"JH AH1 M P","just":"JH AH1 S T","key":"K IY1","land":"L AE1 N D","large":"L AA1 R JH","last":"L AE1 S T","late":"L EY1 T","lately":"L EY1 T L IY0","learning":"L ER1 N IH0 NG","leave":"L IY1 V","left":"L EH1 F T","lessons":"L EH1 S AH0 N Z","letter":"L EH1 T ER0","letters":"L EH1 T ER0 Z","lie":"L AY1","life":"L AY1 F","lines":"L AY1 N Z","listening":"L IH1 S AH0 N IH0 NG","live":"L AY1 V","lived":"L IH1 V D","living":"L IH1 V IH0 NG","local":"L OW1 K AH0 L","london":"L AH1 N D AH0 N","long":"L AO1 NG","look":"L UH1 K","loose":"L UW1 S","lost":"L AO1 S T","lot":"L AA1 T","made":"M EY1 D","make":"M EY1 K","making":"M EY1 K IH0 NG","married":"M EH1 R IY0 D","mary":"M EH1 R IY0","me":"M IY1","mean":"M IY1 N","middle":"M IH1 D AH0 L","mind":"M AY1 N D","minds":"M AY1 N D Z","minutes":"M IH1 N AH0 T S","missed":"M IH1 S T","moment":"M OW1 M AH0 N T","money":"M AH1 N IY0","month":"M AH1 N TH","more":"M AO1 R","morning":"M AO1 R N IH0 NG","motorbike":"M OW1 T ER0 B AY2 K","move":"M UW1 V","mrs":"M IH1 S IH0 Z","much":"M AH1 CH","music":"M Y UW1 Z IH0 K","must":"M AH1 S T","my":"M AY1","myself":"M AY2 S EH1 L F","negative":"N EH1 G AH0 T IH0 V","never":"N EH1 V ER0","new":"N UW1","news":"N UW1 Z","night":"N AY1 T","no":"N OW1","noises":"N OY1 Z IH0 Z","not":"N AA1 T","nothing":"N AH1 TH IH0 NG","notice":"N OW1 T AH0 S","now":"N AW1","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","office":"AO1 F IH0 S","often":"AO1 F AH0 N","oh":"OW1","old":"OW1 L D","on":"AA1 N","one":"W AH1 N","only":"OW1 N L IY0","or":"AO1 R","other":"AH1 DH ER0","outside":"AW1 T S AY1 D","over":"OW1 V ER0","overweight":"OW2 V ER0 W EY1 T","page":"P EY1 JH","pages":"P EY1 JH AH0 Z","paper":"P EY1 P ER0","paris":"P EH1 R IH0 S","past":"P AE1 S T","paul":"P AO1 L","pay":"P EY1","pay-rise":"P EY1 R AY2 Z","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","petrol":"P EH1 T R OW0 L","phone":"F OW1 N","phoned":"F OW1 N D","phoning":"F OW1 N IH0 NG","pills":"P IH1 L Z","pizzas":"P IY1 T S AH0 Z","player":"P L EY1 ER0","points":"P OY1 N T S","police":"P AH0 L IY1 S","polluted":"P AH0 L UW1 T IH0 D","poor":"P UW1 R","post":"P OW1 S T","posters":"P OW1 S T ER0 Z","practice":"P R AE1 K T AH0 S","present":"P R EH1 Z AH0 N T","price":"P R AY1 S","prison":"P R IH1 Z AH0 N","prisoners":"P R IH1 Z AH0 N ER0 Z","problems":"P R AA1 B L AH0 M Z","programme":"P R OW1 G R AE2 M","programmes":"P R OW1 G R AE2 M Z","put":"P UH1 T","putting":"P AH1 T IH0 NG","quality":"K W AA1 L AH0 T IY0","quite":"K W AY1 T","radio":"R EY1 D IY0 OW2","rather":"R AE1 DH ER0","reach":"R IY1 CH","read":"R EH1 D","reading":"R IY1 D IH0 NG","really":"R IH1 L IY0","recent":"R IY1 S AH0 N T","recently":"R IY1 S AH0 N T L IY0","relocate":"R IY2 L OW1 K EY0 T","repair":"R IH0 P EH1 R","reply":"R IH0 P L AY1","research":"R IY0 S ER1 CH","rest":"R EH1 S T","rested":"R EH1 S T AH0 D","right":"R AY1 T","risen":"R IH1 Z AH0 N","rising":"R AY1 Z IH0 NG","room":"R UW1 M","running":"R AH1 N IH0 NG","said":"S EH1 D","same":"S EY1 M","saw":"S AO1","say":"S EY1","saying":"S EY1 IH0 NG","scarf":"S K AA1 R F","second":"S EH1 K AH0 N D","secretly":"S IY1 K R IH0 T L IY0","see":"S IY1","seeing":"S IY1 IH0 NG","seen":"S IY1 N","sell":"S EH1 L","she":"SH IY1","she's":"SH IY1 Z","shirts":"SH ER1 T S","show":"SH OW1","simple":"S IH1 M P AH0 L","since":"S IH1 N S","single":"S IH1 NG G AH0 L","sit":"S IH1 T","small":"S M AO1 L","smith":"S M IH1 TH","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","sorry":"S AA1 R IY0","spend":"S P EH1 N D","spoken":"S P OW1 K AH0 N","spreading":"S P R EH1 D IH0 NG","started":"S T AA1 R T IH0 D","stay":"S T EY1","stayed":"S T EY1 D","stealing":"S T IY1 L IH0 NG","still":"S T IH1 L","stole":"S T OW1 L","stolen":"S T OW1 L AH0 N","stop":"S T AA1 P","suddenly":"S AH1 D AH0 N L IY0","sue":"S UW1","sunday":"S AH1 N D EY2","swimming":"S W IH1 M IH0 NG","take":"T EY1 K","taken":"T EY1 K AH0 N","taking":"T EY1 K IH0 NG","television":"T EH1 L AH0 V IH2 ZH AH0 N","tell":"T EH1 L","telling":"T EH1 L IH0 NG","ten":"T EH1 N","tenth":"T EH1 N TH","test":"T EH1 S T","than":"DH AE1 N","thanks":"TH AE1 NG K S","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","them":"DH EH1 M","themselves":"DH EH0 M S EH1 L V Z","then":"DH EH1 N","there":"DH EH1 R","there's":"DH EH1 R Z","they":"DH EY1","things":"TH IH1 NG Z","think":"TH IH1 NG K","thirty":"TH ER1 D IY2","this":"DH IH1 S","those":"DH OW1 Z","though":"DH OW1","thought":"TH AO1 T","thoughts":"TH AO1 T S","three":"TH R IY1","through":"TH R UW1","till":"T IH1 L","time":"T AY1 M","times":"T AY1 M Z","tired":"T AY1 ER0 D","to":"T UW1","today":"T AH0 D EY1","told":"T OW1 L D","tony":"T OW1 N IY0","too":"T UW1","town":"T AW1 N","tripped":"T R IH1 P T","troubles":"T R AH1 B AH0 L Z","try":"T R AY1","turning":"T ER1 N IH0 NG","twenty":"T W EH1 N T IY0","twisted":"T W IH1 S T IH0 D","two":"T UW1","unusual":"AH0 N Y UW1 ZH UW2 AH0 L","up":"AH1 P","very":"V EH1 R IY0","vikings":"V AY1 K IH0 NG Z","visit":"V IH1 Z IH0 T","visited":"V IH1 Z IH0 T IH0 D","wait":"W EY1 T","waited":"W EY1 T IH0 D","waiting":"W EY1 T IH0 NG","wallet":"W AO1 L AH0 T","walls":"W AO1 L Z","want":"W AA1 N T","wanting":"W AA1 N T IH0 NG","warned":"W AO1 R N D","was":"W AA1 Z","we":"W IY1","we've":"W IY1 V","wearing":"W EH1 R IH0 NG","weeded":"W IY1 D IH0 D","weeding":"W IY1 D IH0 NG","week":"W IY1 K","weeks":"W IY1 K S","well":"W EH1 L","went":"W EH1 N T","what":"W AH1 T","when":"W EH1 N","while":"W AY1 L","who":"HH UW1","why":"W AY1","with":"W IH1 DH","wonder":"W AH1 N D ER0","work":"W ER1 K","worked":"W ER1 K T","working":"W ER1 K IH0 NG","worn":"W AO1 R N","worry":"W ER1 IY0","would":"W UH1 D","writing":"R AY1 T IH0 NG","written":"R IH1 T AH0 N","wrong":"R AO1 NG","year":"Y IH1 R","years":"Y IH1 R Z","yesterday":"Y EH1 S T ER0 D EY2","yet":"Y EH1 T","you":"Y UW1","you'd":"Y UW1 D","you've":"Y UW1 V","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
