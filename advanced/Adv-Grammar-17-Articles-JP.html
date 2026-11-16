@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 17 — Articles | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Adv-Grammar-17-Articles.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-17-Articles-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 17 — Articles</h1>
+  <p>冠詞（articles）：種類・集団・地名と the ・ most と the most ・ a/an と無冠詞</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 定冠詞（the）— 発展的な用法</h2>
+  <h3>a) 種類・クラス全体を表す</h3>
+  <p><i>the</i> + 単数名詞で<b>種やクラス全体</b>を表すことができます。無冠詞の複数形よりも改まった言い方です。</p>
+  <div class="ex"><div class="en">The tiger is threatened with extinction.</div><div class="vi">トラは絶滅の危機に瀕している。（種全体）</div><div class="tts"></div></div>
+  <h3>b) 民族集団と人々のグループ</h3>
+  <p><b>民族集団全体</b>を指すときは <i>the</i> を使います。ただし、集団の中の個人にはこの形は使いません。</p>
+  <div class="ex"><div class="en">The French eat in restaurants more than the English.</div><div class="vi">フランス人はイギリス人よりもレストランで食事をすることが多い。（民族集団全体）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">A Frenchman / a Frenchwoman, an Englishman / an Englishwoman.</div><div class="vi">フランス人男性／女性、イギリス人男性／女性。（個人には a/an）</div><div class="tts"></div></div>
+  <p>明らかに複数と分かるグループにも <i>the</i> が付きます：<i>the Social Democrats、The Rolling Stones</i>。ただし、冠詞の付かないグループ名もあります：<i>Pink Floyd、Queen</i>。</p>
+  <h3>c) 唯一のものと肩書き</h3>
+  <p>唯一と考えられるものには <i>the</i> が付きます：<i>the moon、the sun</i>。ただし、宇宙にはほかの「太陽」や「月」も存在します：</p>
+  <div class="ex"><div class="en">This planet has a small moon.</div><div class="vi">この惑星には小さな月（衛星）がある。（唯一の月ではない）</div><div class="tts"></div></div>
+  <p>唯一性のある肩書きにも <i>the</i> がよく付きます：<i>the director of studies</i>。肩書きの後ろに修飾語が続くと、<i>the</i> はさらに付きやすくなります（必須ではありません）：</p>
+  <div class="ex"><div class="en">She became President in 1998. — She became (the) President of the United States in 1998.</div><div class="vi">彼女は1998年に大統領になった。— 彼女は1998年にアメリカ合衆国の大統領になった。</div><div class="tts"></div></div>
+  <h3>d) 名前の一部である the</h3>
+  <p><i>the</i> が名前の一部になっている場合は大文字で書きます。新聞名など：<i>The Independent、The Sunday Times</i>。</p>
+  <h3>e) 楽器</h3>
+  <p>楽器を演奏する動詞の後では <i>the</i> を使います。ただし、<i>a</i> が自然な場面では <i>a</i> を使います：</p>
+  <div class="ex"><div class="en">Jane plays the flute.</div><div class="vi">ジェーンはフルートを演奏する。（楽器には the）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There was a small brown flute in the window of the shop.</div><div class="vi">店の窓に小さな茶色のフルートが1本あった。（不特定の1本には a）</div><div class="tts"></div></div>
+  <h3>f) 強調の用法</h3>
+  <p><i>the</i> を<b>強く発音</b>すると、後ろの名詞が強調されます。「まさに〜だ」という意味合いです：</p>
+  <div class="ex"><div class="en">This hotel is the place to stay.</div><div class="vi">このホテルこそ泊まるべき場所だ。（the を強調）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 地名と the</h2>
+  <h3>a) the を使う地名</h3>
+  <div class="formula">川：the Thames · 山脈：the Alps · 海洋・大きな海：the Mediterranean · 唯一の地形：the Channel、the Arctic · 方角・地域：the East、the Middle East · 集合的・複数の国名：The United Kingdom、The Netherlands</div>
+  <p><i>Lebanon</i> と <i>Gambia</i> の前にも <i>the</i> がよく付きます：<i>the Lebanon、the Gambia</i>。</p>
+  <h3>b) the を使わない地名</h3>
+  <div class="formula">単独の山頂：Everest（ただし The Matterhorn） · 大陸：Asia · 通常の国名：France</div>
+  <h3>c) 地名と “of” の句</h3>
+  <p>後置修飾、とりわけ <i>… of …</i> の句は地名の冠詞に影響します。比べてみましょう：</p>
+  <div class="ex"><div class="en">Leeds University / The University of Leeds — London Bridge / The Tower of London.</div><div class="vi">of の句を伴う名前には the が付く：リーズ大学／ロンドン塔。</div><div class="tts"></div></div>
+  <p>地名の最初の部分自体が固有名詞の場合は、通常の無冠詞の規則が適用されます：<i>Brown's Restaurant</i>（ただし <i>The Garden House Hotel</i>）。地理名でも同様です：<i>Canvey Island</i> に対して <i>The Isle of Man</i>。</p>
+</div>
+
+<div class="card">
+  <h2>3. Most と the most — そして文脈の重要性</h2>
+  <h3>a) Most（the なし）— 一般的な話</h3>
+  <div class="ex"><div class="en">Most hotels in England are very expensive.</div><div class="vi">イギリスのホテルのほとんどはとても高い。（一般論）</div><div class="tts"></div></div>
+  <h3>b) The most — 最上級、特定の対象</h3>
+  <div class="ex"><div class="en">This is the most expensive hotel in town.</div><div class="vi">これは町でいちばん高いホテルだ。（特定のホテル）</div><div class="tts"></div></div>
+  <h3>c) 文脈に依存する the</h3>
+  <p><i>the</i> は<b>すでに言及されたもの</b>や文脈から明らかなものを指すため、その用法は状況に大きく左右されます：</p>
+  <div class="ex"><div class="en">The Smiths had a son and a daughter. The son was in the Army and the daughter was training to be a doctor.</div><div class="vi">スミス夫妻には息子と娘がいた。その息子は軍隊におり、娘は医者になるための訓練を受けていた。（the ＝既出のもの）</div><div class="tts"></div></div>
+  <p>同じように、次の例の <i>the Saturday</i> は、すでに話に出た週の土曜日を指します（「その週の土曜日に…」）：</p>
+  <div class="ex"><div class="en">On the Saturday, there was a terrible storm.</div><div class="vi">（その週の）土曜日、ひどい嵐があった。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. 不定冠詞（a/an）と無冠詞</h2>
+  <h3>a) a/an — 職業・役割</h3>
+  <div class="ex"><div class="en">Tony is a builder. — Tony was the builder of that house.</div><div class="vi">トニーは建築作業員だ。（職業 — a）— トニーはあの家を建てた職人だ。（特定の人 — the）</div><div class="tts"></div></div>
+  <h3>b) a/an — 測定の表現</h3>
+  <p><i>a/an</i> は測定の単位で「〜につき1回」の意味を表します。改まった文体では <i>per</i> に置き換えることもできます：</p>
+  <div class="formula">three times a week · fifty kilometres an hour · £3.50 a kilo · £15,000 a year</div>
+  <h3>c) a/an — 知らない人</h3>
+  <p>人名の前に <i>a/an</i> を付けると、その人が<b>よく知らない人物</b>であることが強調されます：</p>
+  <div class="ex"><div class="en">A Mr Jones called while you were out.</div><div class="vi">あなたがいない間に、ジョーンズさんという人から電話があった。（知らない人）</div><div class="tts"></div></div>
+  <h3>d) 無冠詞 — 人名と作品</h3>
+  <p>人名だけではその人本人を指しますが、<i>a</i> を付けるとその人の<b>作品</b>を指します：</p>
+  <div class="ex"><div class="en">Matthew Smith is one of my favourite artists. — A Matthew Smith hangs in their bedroom.</div><div class="vi">マシュー・スミスは私のお気に入りの芸術家の1人だ。（人）— 彼らの寝室にはマシュー・スミスの作品が1点掛かっている。（作品）</div><div class="tts"></div></div>
+  <h3>e) 無冠詞 — 組織と通りの名前</h3>
+  <p>唯一の組織でも <i>the</i> を付けないものがあります：<i>Parliament</i>（ただし <i>The (House of) Commons</i>）。ほとんどの通りの名前にも冠詞は付きません：<i>Green Road、Godwin Street</i>。例外は <i>The High Street、The Strand</i>、そして前に形容詞のない通りの名前です：<i>Holly Drive</i> と <i>The Drive</i> を比べてください。</p>
+  <div class="note">⚠️ 同じ名詞でも、意味によって冠詞が付いたり付かなかったりします。ほかの言語に訳すときは、形ではなく意味に基づいて判断しましょう。例：<i>I know how to use a computer. A pound and a half of cheese. Terry has flu. I've got a headache.</i></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li><b>The + 単数名詞</b>で種・クラス全体を表すことができる（<i>the tiger</i>）— 無冠詞の複数形より改まった言い方。</li>
+    <li>民族集団全体には <i>the</i>（<i>the French</i>）、個人には <i>a/an</i>（<i>a Frenchman</i>）。</li>
+    <li>地名：川・山脈・海・地域・集合的な国名には <i>the</i>（<i>the Thames、the Alps、The Netherlands</i>）；山頂・大陸・通常の国名には付けない（<i>Everest、Asia、France</i>）。</li>
+    <li><i>of</i> の句を伴う地名にはたいてい <i>the</i> が付く：<i>The University of Leeds、The Tower of London</i>。</li>
+    <li><b>Most</b> ＝一般的な大多数、<b>the most</b> ＝特定の対象についての最上級。</li>
+    <li><i>the</i> は既出のもの、文脈から明らかなものを指す（<i>the son…、on the Saturday</i>）。</li>
+    <li><i>a/an</i> は職業、測定（<i>three times a week</i>）、知らない人（<i>a Mr Jones</i>）に使う。通り名と一部の組織は無冠詞（<i>Parliament、Green Road</i> — 例外：<i>The High Street</i>）。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>問題1 — 文章に冠詞を入れよう</h2>
+  <p>各空欄に <i>a / an / the</i> を入れましょう。冠詞が不要な場合は <b>–</b> を入力してください。</p>
+  <div class="q"><p>It has been announced that for (1) <input class="blank" data-answers="the" data-display="the"> third consecutive month there has been (2) <input class="blank" data-answers="a" data-display="a"> rise in (3) <input class="blank" data-answers="the" data-display="the"> number of (4) <input class="blank" data-answers="-" data-display="—"> people unemployed, rather than (5) <input class="blank" data-answers="the" data-display="the"> fall that had been predicted. (6) <input class="blank" data-answers="the" data-display="The"> rise was blamed on (7) <input class="blank" data-answers="the" data-display="the"> continuing uncertainty over (8) <input class="blank" data-answers="-" data-display="—"> government economic policy, and couldn't come at (9) <input class="blank" data-answers="a" data-display="a"> worse time for (10) <input class="blank" data-answers="the" data-display="the"> Prime Minister, who is facing (11) <input class="blank" data-answers="-" data-display="—"> growing criticism over (12) <input class="blank" data-answers="the" data-display="the"> way (13) <input class="blank" data-answers="the" data-display="the"> present crisis is being handled. (14) <input class="blank" data-answers="-" data-display="—"> MPs are increasingly voicing (15) <input class="blank" data-answers="-" data-display="—"> fears that despite (16) <input class="blank" data-answers="the" data-display="the"> recent devaluation of (17) <input class="blank" data-answers="the" data-display="the"> pound and cuts in (18) <input class="blank" data-answers="-" data-display="—"> interest rates, (19) <input class="blank" data-answers="the" data-display="the"> government still expects (20) <input class="blank" data-answers="the" data-display="the"> recovery of the economy to take three or even four years. To make (21) <input class="blank" data-answers="-" data-display="—"> matters worse, (22) <input class="blank" data-answers="the" data-display="the"> number of small businesses going into (23) <input class="blank" data-answers="-" data-display="—"> liquidation is still at (24) <input class="blank" data-answers="a|-" data-display="a / –"> record level, and (25) <input class="blank" data-answers="the" data-display="the"> housing market is showing no signs of recovery. Some backbenchers expect (26) <input class="blank" data-answers="a" data-display="a"> general election before (27) <input class="blank" data-answers="the" data-display="the"> end of (28) <input class="blank" data-answers="the" data-display="the"> winter unless there is (29) <input class="blank" data-answers="a" data-display="a"> rapid change of (30) <input class="blank" data-answers="-" data-display="—"> fortune.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ 問題1をチェック</button><button type="button" onclick="showFill('ex1')">👁 答えを見る</button><button type="button" onclick="resetFill('ex1')">↺ やり直す</button></div>
+  <span class="score">問題1の点数： <span class="fill-score">—</span>/30</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — 正しい冠詞を選ぼう</h2>
+  <p>______ の位置に入る正しい冠詞を選びましょう。文中のほかの冠詞は正しい形を入れてあります。<b>—</b> は冠詞が不要という意味です。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) (1) Helen doesn't like ______ cream cakes sold in the local bakery.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>a) (2) Helen doesn't like the cream cakes sold in ______ local bakery.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) (1) ______ handball is fast becoming a popular sport worldwide.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) (2) Handball is fast becoming ______ popular sport worldwide.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (1) We could see that ______ Alps were covered in snow.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) (2) We could see that the Alps were covered in ______ snow.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) (1) It's ______ long time since I met a lovely person like you!</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) (2) It's a long time since I met ______ lovely person like you!</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) (1) Diana has ______ degree in engineering from the University of London.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) (2) Diana has a degree in ______ engineering from the University of London.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) (3) Diana has a degree in engineering from ______ University of London.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) (1) At ______ present moment, man seems to have an uncertain future.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) (2) At the present moment, ______ man seems to have an uncertain future.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) (3) At the present moment, man seems to have ______ uncertain future.</p><div class="opts"><button type="button">the</button><button type="button">an</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) (1) ______ problem for today's students is how to survive financially.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) (2) The problem for ______ today's students is how to survive financially.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) (1) ______ French enjoy spending holidays in the countryside.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) (2) The French enjoy spending holidays in ______ countryside.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (1) Please do not turn on ______ water-heater in the bathroom.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (2) Please do not turn on the water-heater in ______ bathroom.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) (1) Sue bought ______ Picasso I was telling you about last week.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) (2) Sue bought the Picasso I was telling you about ______ last week.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/22</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 冠詞の誤りを直そう</h2>
+  <p>下の各文には冠詞の位置に誤りがあります。各空欄に正しい冠詞を入れましょう。冠詞が不要な場合は <b>–</b> を入力してください。</p>
+  <div class="q"><p>a) It's not <input class="blank" data-answers="-" data-display="—"> first-class accommodation unless it has a private bathroom.</p></div>
+  <div class="q"><p>b) On this record <input class="blank" data-answers="the" data-display="the"> twins play <input class="blank" data-answers="a" data-display="a"> piano duet.</p></div>
+  <div class="q"><p>c) <input class="blank" data-answers="-" data-display="—"> halfway through <input class="blank" data-answers="the" data-display="the"> meal we realised what <input class="blank" data-answers="the" data-display="the"> waiter had said.</p></div>
+  <div class="q"><p>d) If <input class="blank" data-answers="a|-" data-display="a / –"> Mrs Hillier phones, say I'm away on <input class="blank" data-answers="a" data-display="a"> trip.</p></div>
+  <div class="q"><p>e) There is <input class="blank" data-answers="-" data-display="—"> wonderful scenery in <input class="blank" data-answers="the" data-display="the"> eastern part of Turkey.</p></div>
+  <div class="q"><p>f) <input class="blank" data-answers="the" data-display="The"> cocker spaniel is one of <input class="blank" data-answers="the" data-display="the"> most popular pet dogs.</p></div>
+  <div class="q"><p>g) There is going to be fog and <input class="blank" data-answers="-" data-display="—"> cold weather all <input class="blank" data-answers="-" data-display="—"> next week.</p></div>
+  <div class="q"><p>h) I spent <input class="blank" data-answers="a" data-display="a"> very interesting holiday at <input class="blank" data-answers="-" data-display="—"> Lake Coniston in England.</p></div>
+  <div class="q"><p>i) We are against war in general, so of course we are against <input class="blank" data-answers="a" data-display="a"> war like this between <input class="blank" data-answers="a" data-display="a"> superpower and <input class="blank" data-answers="a" data-display="a"> developing country.</p></div>
+  <div class="q"><p>j) <input class="blank" data-answers="-" data-display="—"> Burglaries are definitely on <input class="blank" data-answers="the" data-display="the"> increase.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/21</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 冠詞を入れよう</h2>
+  <p>各空欄に <i>a / an / the</i> を入れましょう。冠詞が不要な場合は <b>–</b> を入力してください。</p>
+  <div class="q"><p>a) I'm going to stand for Parliament at <input class="blank" data-answers="the" data-display="the"> next election.</p></div>
+  <div class="q"><p>b) When I left <input class="blank" data-answers="the" data-display="the"> station, I had to stand in <input class="blank" data-answers="a|the" data-display="a / the"> queue for <input class="blank" data-answers="a" data-display="a"> taxi for <input class="blank" data-answers="a" data-display="a"> long time.</p></div>
+  <div class="q"><p>c) We took <input class="blank" data-answers="a" data-display="a"> trip around London and saw <input class="blank" data-answers="-" data-display="—"> Tower Bridge.</p></div>
+  <div class="q"><p>d) <input class="blank" data-answers="the" data-display="The"> happiness of the majority depends on <input class="blank" data-answers="-" data-display="—"> hard work for everyone.</p></div>
+  <div class="q"><p>e) <input class="blank" data-answers="-" data-display="—"> most main roads in this part of <input class="blank" data-answers="the" data-display="the"> country follow <input class="blank" data-answers="the" data-display="the"> line of <input class="blank" data-answers="the|-" data-display="the / –"> roads built by <input class="blank" data-answers="the" data-display="the"> Romans.</p></div>
+  <div class="q"><p>f) Have you got <input class="blank" data-answers="the" data-display="the"> latest record by <input class="blank" data-answers="the" data-display="the"> Gipsy Kings?</p></div>
+  <div class="q"><p>g) If I had <input class="blank" data-answers="the|-" data-display="the / –"> time, I would like to take up <input class="blank" data-answers="-" data-display="—"> archery.</p></div>
+  <div class="q"><p>h) We spent <input class="blank" data-answers="a" data-display="a"> pleasant evening having <input class="blank" data-answers="-" data-display="—"> drinks at <input class="blank" data-answers="the" data-display="the"> Robin Hood.</p></div>
+  <div class="q"><p>i) <input class="blank" data-answers="the" data-display="The"> Nile flows right through <input class="blank" data-answers="the" data-display="the"> city.</p></div>
+  <div class="q"><p>j) <input class="blank" data-answers="the" data-display="The"> summer I spent in <input class="blank" data-answers="the" data-display="the"> USA was one of <input class="blank" data-answers="the" data-display="the"> best in my life.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/26</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — 冠詞を入れよう</h2>
+  <p>各空欄に <i>a / an / the</i> を入れましょう。冠詞が不要な場合は <b>–</b> を入力してください。</p>
+  <div class="q"><p>a) She was <input class="blank" data-answers="the" data-display="the"> first woman to cross <input class="blank" data-answers="the" data-display="the"> Atlantic in <input class="blank" data-answers="a" data-display="a"> canoe.</p></div>
+  <div class="q"><p>b) Go down <input class="blank" data-answers="the" data-display="the"> High Street and turn right into <input class="blank" data-answers="-" data-display="—"> Mill Road.</p></div>
+  <div class="q"><p>c) Please let me carry <input class="blank" data-answers="the" data-display="the"> shopping. It's <input class="blank" data-answers="the" data-display="the"> least I can do.</p></div>
+  <div class="q"><p>d) I don't like <input class="blank" data-answers="-" data-display="—"> milk in <input class="blank" data-answers="-" data-display="—"> coffee.</p></div>
+  <div class="q"><p>e) At <input class="blank" data-answers="the" data-display="the"> end of <input class="blank" data-answers="a" data-display="a"> busy day, <input class="blank" data-answers="-" data-display="—"> sleep is <input class="blank" data-answers="the" data-display="the"> best tonic.</p></div>
+  <div class="q"><p>f) <input class="blank" data-answers="the" data-display="The"> James Joyce I knew wasn't <input class="blank" data-answers="a" data-display="a"> novelist and wasn't <input class="blank" data-answers="-" data-display="—"> Irish either.</p></div>
+  <div class="q"><p>g) We'll go for <input class="blank" data-answers="a" data-display="a"> walk if <input class="blank" data-answers="the" data-display="the"> sun comes out.</p></div>
+  <div class="q"><p>h) This is <input class="blank" data-answers="the" data-display="the"> last time I do you <input class="blank" data-answers="a" data-display="a"> favour for a while.</p></div>
+  <div class="q"><p>i) I'm staying in <input class="blank" data-answers="the" data-display="the"> Hilton so you can leave me <input class="blank" data-answers="a" data-display="a"> message.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/22</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>問題6 — 余分な “the” を見つけよう</h2>
+  <p>下の各引用には、余分な <i>the</i> がちょうど1つずつ含まれています。元の文（斜体）を読み、余分な <i>the</i> を取り除いた文を空欄に入力しましょう。</p>
+  <div class="q"><p>a) <i>and in the many respects</i></p><p>→ <input class="blank wide" data-answers="and in many respects" data-display="and in many respects"></p><div class="fb"></div></div>
+  <div class="q"><p>b) <i>our lives are the much richer for them</i></p><p>→ <input class="blank wide" data-answers="our lives are much richer for them" data-display="our lives are much richer for them"></p><div class="fb"></div></div>
+  <div class="q"><p>c) <i>But the teachers and other academics are claiming</i></p><p>→ <input class="blank wide" data-answers="But teachers and other academics are claiming" data-display="But teachers and other academics are claiming"></p><div class="fb"></div></div>
+  <div class="q"><p>d) <i>effects on a generation of the users</i></p><p>→ <input class="blank wide" data-answers="effects on a generation of users" data-display="effects on a generation of users"></p><div class="fb"></div></div>
+  <div class="q"><p>e) <i>now widely available on the word processing software</i></p><p>→ <input class="blank wide" data-answers="now widely available on word processing software" data-display="now widely available on word processing software"></p><div class="fb"></div></div>
+  <div class="q"><p>f) <i>Professor John Silver of the Sydney University, Australia, said</i></p><p>→ <input class="blank wide" data-answers="Professor John Silver of Sydney University, Australia, said" data-display="Professor John Silver of Sydney University, Australia, said"></p><div class="fb"></div></div>
+  <div class="q"><p>g) <i>to learn even the most basic of the mathematical sums</i></p><p>→ <input class="blank wide" data-answers="to learn even the most basic of mathematical sums" data-display="to learn even the most basic of mathematical sums"></p><div class="fb"></div></div>
+  <div class="q"><p>h) <i>look to the computer to make the decisions for them</i></p><p>→ <input class="blank wide" data-answers="look to the computer to make decisions for them" data-display="look to the computer to make decisions for them"></p><div class="fb"></div></div>
+  <div class="q"><p>i) <i>to tell them who to marry or what the house to buy</i></p><p>→ <input class="blank wide" data-answers="to tell them who to marry or what house to buy" data-display="to tell them who to marry or what house to buy"></p><div class="fb"></div></div>
+  <div class="q"><p>j) <i>a future individual incapable of the independent human thought</i></p><p>→ <input class="blank wide" data-answers="a future individual incapable of independent human thought" data-display="a future individual incapable of independent human thought"></p><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+  <span class="score">問題6の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+  <p class="small">採点のコツ：大文字・小文字と句読点は自動で無視されます。書き方の違いだけで不正解になった場合は、「答えを見る」を押して自分で確認してください。</p>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>問題7 — 冠詞を入れよう</h2>
+  <p>各空欄に <i>a / an / the</i> を入れましょう。冠詞が不要な場合は <b>–</b> を入力してください。</p>
+  <div class="q"><p>a) Please watch <input class="blank" data-answers="the" data-display="the"> cabin attendant as she demonstrates <input class="blank" data-answers="the" data-display="the"> use of <input class="blank" data-answers="the" data-display="the"> oxygen mask.</p></div>
+  <div class="q"><p>b) Paul spent <input class="blank" data-answers="-" data-display="—"> half of his life in <input class="blank" data-answers="the" data-display="the"> Far East.</p></div>
+  <div class="q"><p>c) You have to use at <input class="blank" data-answers="-" data-display="—"> least <input class="blank" data-answers="a" data-display="a"> pint and <input class="blank" data-answers="a" data-display="a"> half of milk.</p></div>
+  <div class="q"><p>d) Dick has <input class="blank" data-answers="a" data-display="a"> sore throat and is taking <input class="blank" data-answers="-" data-display="—"> medicine.</p></div>
+  <div class="q"><p>e) We arranged <input class="blank" data-answers="-" data-display="—"> accommodation on <input class="blank" data-answers="the" data-display="the"> outskirts of <input class="blank" data-answers="the" data-display="the"> city.</p></div>
+  <div class="q"><p>f) There is <input class="blank" data-answers="a" data-display="a"> very difficult crossword in '<input class="blank" data-answers="the" data-display="The">' Times.</p></div>
+  <div class="q"><p>g) Could you give me <input class="blank" data-answers="the" data-display="the"> information I asked for in <input class="blank" data-answers="the" data-display="the"> letter I sent you?</p></div>
+  <div class="q"><p>h) I bought <input class="blank" data-answers="-" data-display="—"> jewellery for my sister but it wasn't <input class="blank" data-answers="the" data-display="the"> kind she likes.</p></div>
+  <div class="q"><p>i) I always wanted to be <input class="blank" data-answers="an" data-display="an"> astronaut but <input class="blank" data-answers="the" data-display="the"> ambition wore off.</p></div>
+  <div class="q"><p>j) And <input class="blank" data-answers="-" data-display="—"> last of all, don't forget to put <input class="blank" data-answers="the" data-display="the"> cat out for <input class="blank" data-answers="the" data-display="the"> night.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ 問題7をチェック</button><button type="button" onclick="showFill('ex7')">👁 答えを見る</button><button type="button" onclick="resetFill('ex7')">↺ やり直す</button></div>
+  <span class="score">問題7の点数： <span class="fill-score">—</span>/24</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex8">
+  <h2>問題8 — 正しい冠詞を選ぼう</h2>
+  <p>______ の位置に入る正しい冠詞を選びましょう。文中のほかの冠詞は正しい形を入れてあります。<b>—</b> は冠詞が不要という意味です。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) (1) Brenda is ______ ideal for the job. She has a wealth of experience.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>a) (2) Brenda is ideal for ______ job. She has a wealth of experience.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>a) (3) Brenda is ideal for the job. She has ______ wealth of experience.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>a) (4) Brenda is ideal for the job. She has a wealth of ______ experience.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) (1) ______ safety at work is a major concern for us.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) (2) Safety at ______ work is a major concern for us.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) (3) Safety at work is ______ major concern for us.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (1) ______ poorest people in the country live in this city.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (2) The poorest people in ______ country live in this city.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) (1) Have you seen ______ new 'Hamlet' at the National Theatre?</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) (2) Have you seen the new 'Hamlet' at ______ National Theatre?</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) (1) There is ______ beautiful countryside within easy reach of the hotel.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) (2) There is beautiful countryside within ______ easy reach of the hotel.</p><div class="opts"><button type="button">an</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) (3) There is beautiful countryside within easy reach of ______ hotel.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) (1) I have ______ terrible cold and am staying in bed today.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) (2) I have a terrible cold and am staying in ______ bed today.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) (1) I earn £3 ______ hour as a supermarket cashier on Saturdays.</p><div class="opts"><button type="button">an</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) (2) I earn £3 an hour as ______ supermarket cashier on Saturdays.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) (3) I earn £3 an hour as a supermarket cashier on ______ Saturdays.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) (1) ______ charge for excess luggage is £10 a kilo.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) (2) The charge for ______ excess luggage is £10 a kilo.</p><div class="opts"><button type="button">an</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) (3) The charge for excess luggage is £10 ______ kilo.</p><div class="opts"><button type="button">a</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (1) ______ most of life is a matter of getting on with others.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (2) Most of ______ life is a matter of getting on with others.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) (3) Most of life is ______ matter of getting on with others.</p><div class="opts"><button type="button">a</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) (4) Most of life is a matter of getting on with ______ others.</p><div class="opts"><button type="button">the</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) (1) This country is officially called ______ United Kingdom of Great Britain and Northern Ireland.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) (2) This country is officially called the United Kingdom of ______ Great Britain and Northern Ireland.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) (3) This country is officially called the United Kingdom of Great Britain and ______ Northern Ireland.</p><div class="opts"><button type="button">The</button><button type="button">—</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題8の点数： <span class="score-num">0</span>/29</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>184</b> 問です（問題1：30か所 · 問題2：22 · 問題3：21か所 · 問題4：26か所 · 問題5：22か所 · 問題6：10 · 問題7：24か所 · 問題8：29）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","academics":"AE2 K AH0 D EH1 M IH0 K S","accommodation":"AH0 K AA2 M AH0 D EY1 SH AH0 N","advanced":"AH0 D V AE1 N S T","against":"AH0 G EH1 N S T","all":"AO1 L","alps":"AE1 L P S","always":"AO1 L W EY2 Z","am":"AE1 M","ambition":"AE0 M B IH1 SH AH0 N","an":"AE1 N","and":"AH0 N D","announced":"AH0 N AW1 N S T","archery":"AA1 R CH ER0 IY0","arctic":"AA1 R K T IH0 K","are":"AA1 R","army":"AA1 R M IY0","around":"ER0 AW1 N D","arranged":"ER0 EY1 N JH D","articles":"AA1 R T AH0 K AH0 L Z","artists":"AA1 R T IH0 S T S","as":"AE1 Z","asia":"EY1 ZH AH0","asked":"AE1 S K T","astronaut":"AE1 S T R AH0 N AA2 T","at":"AE1 T","atlantic":"AH0 T L AE1 N T IH0 K","attendant":"AH0 T EH1 N D AH0 N T","australia":"AO0 S T R EY1 L Y AH0","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","bakery":"B EY1 K ER0 IY0","basic":"B EY1 S IH0 K","bathroom":"B AE1 TH R UW2 M","be":"B IY1","beautiful":"B Y UW1 T AH0 F AH0 L","became":"B IH0 K EY1 M","becoming":"B IH0 K AH1 M IH0 NG","bed":"B EH1 D","bedroom":"B EH1 D R UW2 M","been":"B IH1 N","before":"B IH0 F AO1 R","being":"B IY1 IH0 NG","best":"B EH1 S T","between":"B IH0 T W IY1 N","blamed":"B L EY1 M D","bought":"B AA1 T","brenda":"B R EH1 N D AH0","bridge":"B R IH1 JH","britain":"B R IH1 T AH0 N","brown":"B R AW1 N","brown's":"B R AW1 N Z","builder":"B IH1 L D ER0","built":"B IH1 L T","burglaries":"B ER1 G L ER0 IY0 Z","businesses":"B IH1 Z N AH0 S AH0 Z","busy":"B IH1 Z IY0","but":"B AH1 T","buy":"B AY1","by":"B AY1","cabin":"K AE1 B AH0 N","cakes":"K EY1 K S","called":"K AO1 L D","can":"K AE1 N","canoe":"K AH0 N UW1","carry":"K AE1 R IY0","cashier":"K AE0 SH IH1 R","cat":"K AE1 T","change":"CH EY1 N JH","channel":"CH AE1 N AH0 L","charge":"CH AA1 R JH","cheese":"CH IY1 Z","city":"S IH1 T IY0","claiming":"K L EY1 M IH0 NG","cocker":"K AA1 K ER0","coffee":"K AA1 F IY0","cold":"K OW1 L D","come":"K AH1 M","comes":"K AH1 M Z","commons":"K AA1 M AH0 N Z","computer":"K AH0 M P Y UW1 T ER0","concern":"K AH0 N S ER1 N","coniston":"K AA1 N AH0 S T AH0 N","consecutive":"K AH0 N S EH1 K Y AH0 T IH0 V","continuing":"K AH0 N T IH1 N Y UW0 IH0 NG","could":"K UH1 D","couldn't":"K UH1 D AH0 N T","country":"K AH1 N T R IY0","countryside":"K AH1 N T R IY0 S AY2 D","course":"K AO1 R S","covered":"K AH1 V ER0 D","cream":"K R IY1 M","crisis":"K R AY1 S AH0 S","criticism":"K R IH1 T IH0 S IH2 Z AH0 M","cross":"K R AO1 S","crossword":"K R AO1 S W ER2 D","cuts":"K AH1 T S","daughter":"D AO1 T ER0","day":"D EY1","decisions":"D IH0 S IH1 ZH AH0 N Z","definitely":"D EH1 F AH0 N AH0 T L IY0","degree":"D IH0 G R IY1","democrats":"D EH1 M AH0 K R AE2 T S","demonstrates":"D EH1 M AH0 N S T R EY2 T S","depends":"D IH0 P EH1 N D Z","despite":"D IH0 S P AY1 T","devaluation":"D IH0 V AE2 L Y UW0 EY1 SH AH0 N","developing":"D IH0 V EH1 L AH0 P IH0 NG","diana":"D AY0 AE1 N AH0","dick":"D IH1 K","difficult":"D IH1 F AH0 K AH0 L T","director":"D ER0 EH1 K T ER0","do":"D UW1","doctor":"D AA1 K T ER0","doesn't":"D AH1 Z AH0 N T","dogs":"D AA1 G Z","don't":"D OW1 N T","down":"D AW1 N","drinks":"D R IH1 NG K S","drive":"D R AY1 V","duet":"D UW0 EH1 T","earn":"ER1 N","east":"IY1 S T","eastern":"IY1 S T ER0 N","easy":"IY1 Z IY0","eat":"IY1 T","economic":"EH2 K AH0 N AA1 M IH0 K","economy":"IH0 K AA1 N AH0 M IY0","effects":"IH0 F EH1 K T S","either":"IY1 DH ER0","election":"IH0 L EH1 K SH AH0 N","end":"EH1 N D","engineering":"EH1 N JH AH0 N IH1 R IH0 NG","england":"IH1 NG G L AH0 N D","english":"IH1 NG G L IH0 SH","englishman":"IH1 NG G L IH0 SH M AH0 N","englishwoman":"IH1 NG G L IH0 SH W UH2 M AH0 N","enjoy":"EH2 N JH OY1","even":"IY1 V IH0 N","evening":"IY1 V N IH0 NG","everest":"EH1 V ER0 AH0 S T","everyone":"EH1 V R IY0 W AH2 N","excess":"EH1 K S EH2 S","expect":"IH0 K S P EH1 K T","expects":"IH0 K S P EH1 K T S","expensive":"IH0 K S P EH1 N S IH0 V","experience":"IH0 K S P IH1 R IY0 AH0 N S","extinction":"IH0 K S T IH1 NG K SH AH0 N","facing":"F EY1 S IH0 NG","fall":"F AO1 L","far":"F AA1 R","fast":"F AE1 S T","favour":"F EY1 V ER0","favourite":"F EY1 V ER0 IH0 T","fears":"F IH1 R Z","fifty":"F IH1 F T IY0","financially":"F AH0 N AE1 N SH AH0 L IY0","first":"F ER1 S T","first-class":"F ER2 S T K L AE1 S","flows":"F L OW1 Z","floyd":"F L OY1 D","flu":"F L UW1","flute":"F L UW1 T","fog":"F AA1 G","follow":"F AA1 L OW0","for":"F AO1 R","forget":"F ER0 G EH1 T","fortune":"F AO1 R CH AH0 N","four":"F AO1 R","france":"F R AE1 N S","french":"F R EH1 N CH","frenchman":"F R EH1 N CH M AE0 N","from":"F R AH1 M","future":"F Y UW1 CH ER0","gambia":"G AE1 M B IY0 AH0","garden":"G AA1 R D AH0 N","general":"JH EH1 N ER0 AH0 L","generation":"JH EH2 N ER0 EY1 SH AH0 N","getting":"G EH1 T IH0 NG","give":"G IH1 V","go":"G OW1","godwin":"G AA1 D W IH0 N","going":"G OW1 IH0 NG","got":"G AA1 T","government":"G AH1 V ER0 M AH0 N T","grammar":"G R AE1 M ER0","great":"G R EY1 T","green":"G R IY1 N","growing":"G R OW1 IH0 NG","had":"HH AE1 D","half":"HH AE1 F","halfway":"HH AE1 F W EY1","handball":"HH AE1 N D B AO2 L","handled":"HH AE1 N D AH0 L D","hangs":"HH AE1 NG Z","happiness":"HH AE1 P IY0 N AH0 S","hard":"HH AA1 R D","has":"HH AE1 Z","have":"HH AE1 V","having":"HH AE1 V IH0 NG","headache":"HH EH1 D EY2 K","helen":"HH EH1 L AH0 N","high":"HH AY1","hillier":"HH IH1 L IY0 ER0","hilton":"HH IH1 L T AH0 N","his":"HH IH1 Z","holiday":"HH AA1 L AH0 D EY2","holidays":"HH AA1 L AH0 D EY2 Z","holly":"HH AA1 L IY0","hood":"HH UH1 D","hotel":"HH OW0 T EH1 L","hotels":"HH OW0 T EH1 L Z","hour":"AW1 ER0","house":"HH AW1 S","housing":"HH AW1 Z IH0 NG","how":"HH AW1","human":"HH Y UW1 M AH0 N","i'm":"AY1 M","i've":"AY1 V","ideal":"AY0 D IY1 L","if":"IH1 F","in":"IH0 N","incapable":"IH2 N K EY1 P AH0 B AH0 L","increase":"IH2 N K R IY1 S","increasingly":"IH0 N K R IY1 S IH0 NG L IY0","independent":"IH2 N D IH0 P EH1 N D AH0 N T","individual":"IH2 N D AH0 V IH1 JH AH0 W AH0 L","information":"IH2 N F ER0 M EY1 SH AH0 N","interest":"IH1 N T R AH0 S T","interesting":"IH1 N T R AH0 S T IH0 NG","into":"IH1 N T UW0","ireland":"AY1 ER0 L AH0 N D","irish":"AY1 R IH0 SH","is":"IH1 Z","island":"AY1 L AH0 N D","isle":"AY1 L","it":"IH1 T","it's":"IH1 T S","james":"JH EY1 M Z","jane":"JH EY1 N","job":"JH AA1 B","john":"JH AA1 N","jones":"JH OW1 N Z","joyce":"JH OY1 S","key":"K IY1","kilo":"K IH1 L OW2","kilometres":"K IH2 L AO1 M AH2 T ER0 Z","kind":"K AY1 N D","kingdom":"K IH1 NG D AH0 M","kings":"K IH1 NG Z","knew":"N UW1","know":"N OW1","lake":"L EY1 K","last":"L AE1 S T","latest":"L EY1 T AH0 S T","learn":"L ER1 N","least":"L IY1 S T","leave":"L IY1 V","lebanon":"L EH1 B AH0 N AH0 N","leeds":"L IY1 D Z","left":"L EH1 F T","let":"L EH1 T","letter":"L EH1 T ER0","level":"L EH1 V AH0 L","life":"L AY1 F","like":"L AY1 K","likes":"L AY1 K S","line":"L AY1 N","liquidation":"L IH2 K W IH0 D EY1 SH AH0 N","live":"L AY1 V","lives":"L IH1 V Z","local":"L OW1 K AH0 L","london":"L AH1 N D AH0 N","long":"L AO1 NG","look":"L UH1 K","lovely":"L AH1 V L IY0","luggage":"L AH1 G AH0 JH","main":"M EY1 N","major":"M EY1 JH ER0","majority":"M AH0 JH AO1 R AH0 T IY0","make":"M EY1 K","man":"M AE1 N","many":"M EH1 N IY0","market":"M AA1 R K AH0 T","marry":"M EH1 R IY0","mask":"M AE1 S K","mathematical":"M AE2 TH AH0 M AE1 T IH0 K AH0 L","matter":"M AE1 T ER0","matters":"M AE1 T ER0 Z","matthew":"M AE1 TH Y UW0","me":"M IY1","meal":"M IY1 L","medicine":"M EH1 D AH0 S AH0 N","mediterranean":"M EH2 D AH0 T ER0 EY1 N IY0 AH0 N","message":"M EH1 S AH0 JH","met":"M EH1 T","middle":"M IH1 D AH0 L","milk":"M IH1 L K","mill":"M IH1 L","minister":"M IH1 N AH0 S T ER0","moment":"M OW1 M AH0 N T","month":"M AH1 N TH","moon":"M UW1 N","more":"M AO1 R","most":"M OW1 S T","mps":"EH1 M P IY1 Z","mr":"M IH1 S T ER0","mrs":"M IH1 S IH0 Z","much":"M AH1 CH","my":"M AY1","national":"N AE1 SH AH0 N AH0 L","netherlands":"N EH1 DH ER0 L AH0 N D Z","new":"N UW1","next":"N EH1 K S T","night":"N AY1 T","nile":"N AY1 L","no":"N OW1","northern":"N AO1 R DH ER0 N","not":"N AA1 T","novelist":"N AA1 V AH0 L AH0 S T","now":"N AW1","number":"N AH1 M B ER0","of":"AH1 V","off":"AO1 F","officially":"AH0 F IH1 SH AH0 L IY0","on":"AA1 N","one":"W AH1 N","or":"AO1 R","other":"AH1 DH ER0","others":"AH1 DH ER0 Z","our":"AW1 ER0","out":"AW1 T","outskirts":"AW1 T S K ER2 T S","over":"OW1 V ER0","oxygen":"AA1 K S AH0 JH AH0 N","parliament":"P AA1 R L AH0 M AH0 N T","part":"P AA1 R T","paul":"P AO1 L","people":"P IY1 P AH0 L","per":"P ER1","person":"P ER1 S AH0 N","pet":"P EH1 T","phones":"F OW1 N Z","piano":"P IY0 AE1 N OW0","picasso":"P IH0 K AA1 S OW0","pink":"P IH1 NG K","pint":"P AY1 N T","place":"P L EY1 S","planet":"P L AE1 N AH0 T","play":"P L EY1","plays":"P L EY1 Z","pleasant":"P L EH1 Z AH0 N T","please":"P L IY1 Z","points":"P OY1 N T S","policy":"P AA1 L AH0 S IY0","poorest":"P UW1 R IH0 S T","popular":"P AA1 P Y AH0 L ER0","pound":"P AW1 N D","practice":"P R AE1 K T AH0 S","predicted":"P R IH0 D IH1 K T IH0 D","present":"P R EH1 Z AH0 N T","president":"P R EH1 Z AH0 D EH2 N T","prime":"P R AY1 M","private":"P R AY1 V AH0 T","problem":"P R AA1 B L AH0 M","processing":"P R AA1 S EH0 S IH0 NG","professor":"P R AH0 F EH1 S ER0","put":"P UH1 T","queen":"K W IY1 N","queue":"K Y UW1","rapid":"R AE1 P AH0 D","rates":"R EY1 T S","rather":"R AE1 DH ER0","reach":"R IY1 CH","realised":"R IY1 AH0 L AY2 Z D","recent":"R IY1 S AH0 N T","record":"R AH0 K AO1 R D","recovery":"R IH0 K AH1 V R IY0","respects":"R IH0 S P EH1 K T S","restaurant":"R EH1 S T ER0 AA2 N T","restaurants":"R EH1 S T ER0 AA2 N T S","richer":"R IH1 CH ER0","right":"R AY1 T","rise":"R AY1 Z","road":"R OW1 D","roads":"R OW1 D Z","robin":"R AA1 B AH0 N","rolling":"R OW1 L IH0 NG","romans":"R OW1 M AH0 N Z","safety":"S EY1 F T IY0","said":"S EH1 D","saturday":"S AE1 T ER0 D IY0","saturdays":"S AE1 T ER0 D IY0 Z","saw":"S AO1","say":"S EY1","scenery":"S IY1 N ER0 IY0","see":"S IY1","seems":"S IY1 M Z","seen":"S IY1 N","sent":"S EH1 N T","she":"SH IY1","shop":"SH AA1 P","shopping":"SH AA1 P IH0 NG","showing":"SH OW1 IH0 NG","signs":"S AY1 N Z","silver":"S IH1 L V ER0","since":"S IH1 N S","sister":"S IH1 S T ER0","sleep":"S L IY1 P","small":"S M AO1 L","smith":"S M IH1 TH","smiths":"S M IH1 TH S","snow":"S N OW1","so":"S OW1","social":"S OW1 SH AH0 L","software":"S AO1 F T W EH2 R","sold":"S OW1 L D","some":"S AH1 M","son":"S AH1 N","sore":"S AO1 R","spaniel":"S P AE1 N Y AH0 L","spending":"S P EH1 N D IH0 NG","spent":"S P EH1 N T","sport":"S P AO1 R T","stand":"S T AE1 N D","states":"S T EY1 T S","station":"S T EY1 SH AH0 N","stay":"S T EY1","staying":"S T EY1 IH0 NG","still":"S T IH1 L","stones":"S T OW1 N Z","storm":"S T AO1 R M","strand":"S T R AE1 N D","street":"S T R IY1 T","students":"S T UW1 D AH0 N T S","studies":"S T AH1 D IY0 Z","sue":"S UW1","summer":"S AH1 M ER0","sums":"S AH1 M Z","sun":"S AH1 N","sunday":"S AH1 N D EY2","supermarket":"S UW1 P ER0 M AA2 R K IH0 T","superpower":"S UW2 P ER0 P AW1 ER0","survive":"S ER0 V AY1 V","sydney":"S IH1 D N IY0","take":"T EY1 K","taking":"T EY1 K IH0 NG","taxi":"T AE1 K S IY0","teachers":"T IY1 CH ER0 Z","tell":"T EH1 L","telling":"T EH1 L IH0 NG","terrible":"T EH1 R AH0 B AH0 L","terry":"T EH1 R IY0","thames":"T EH1 M Z","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","theatre":"TH IY1 AH0 T ER0","their":"DH EH1 R","them":"DH EH1 M","there":"DH EH1 R","third":"TH ER1 D","this":"DH IH1 S","thought":"TH AO1 T","threatened":"TH R EH1 T AH0 N D","three":"TH R IY1","throat":"TH R OW1 T","through":"TH R UW1","tiger":"T AY1 G ER0","time":"T AY1 M","times":"T AY1 M Z","to":"T UW1","today":"T AH0 D EY1","today's":"T AH0 D EY1 Z","tonic":"T AA1 N IH0 K","tony":"T OW1 N IY0","took":"T UH1 K","tower":"T AW1 ER0","town":"T AW1 N","training":"T R EY1 N IH0 NG","trip":"T R IH1 P","turkey":"T ER1 K IY0","turn":"T ER1 N","twins":"T W IH1 N Z","uncertain":"AH0 N S ER1 T AH0 N","uncertainty":"AH0 N S ER1 T AH0 N T IY0","unemployed":"AH2 N EH0 M P L OY1 D","united":"Y UW0 N AY1 T IH0 D","university":"Y UW2 N AH0 V ER1 S AH0 T IY0","unless":"AH0 N L EH1 S","up":"AH1 P","us":"AH1 S","usa":"Y UW2 EH2 S EY1","use":"Y UW1 S","users":"Y UW1 Z ER0 Z","very":"V EH1 R IY0","voicing":"V OY1 S IH0 NG","waiter":"W EY1 T ER0","walk":"W AO1 K","wanted":"W AO1 N T IH0 D","war":"W AO1 R","was":"W AA1 Z","wasn't":"W AA1 Z AH0 N T","watch":"W AA1 CH","way":"W EY1","we":"W IY1","we'll":"W IY1 L","wealth":"W EH1 L TH","weather":"W EH1 DH ER0","week":"W IY1 K","were":"W ER1","what":"W AH1 T","when":"W EH1 N","while":"W AY1 L","who":"HH UW1","widely":"W AY1 D L IY0","window":"W IH1 N D OW0","winter":"W IH1 N T ER0","with":"W IH1 DH","within":"W IH0 DH IH1 N","woman":"W UH1 M AH0 N","wonderful":"W AH1 N D ER0 F AH0 L","word":"W ER1 D","wore":"W AO1 R","work":"W ER1 K","worldwide":"W ER1 L D W AY1 D","worse":"W ER1 S","would":"W UH1 D","year":"Y IH1 R","years":"Y IH1 R Z","you":"Y UW1"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

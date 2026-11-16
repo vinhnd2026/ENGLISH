@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced · Grammar 19 — Verbs + infinitive or -ing</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Mục lục</a> &nbsp;·&nbsp; <a href="Adv-Grammar-19-Verbs-Infinitive-Ing-JP.html">🇯🇵 日本語版</a> &nbsp;·&nbsp; <a href="Adv-Grammar-19-Verbs-Infinitive-Ing-EN.html">🇬🇧 English</a>
+  <h1>Advanced · Grammar 19 — Verbs + infinitive or -ing</h1>
+  <p>Động từ + nguyên mẫu có to · Động từ + -ing · Những động từ đổi nghĩa theo dạng đi sau</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Nghe ví dụ</h2>
+  <p>Chọn giọng đọc một lần ở đây (Anh 🇬🇧 hoặc Mỹ 🇺🇸) — tất cả các nút 🔊 Nghe ở từng câu ví dụ sẽ đọc bằng giọng đã chọn. Có thể chọn riêng <b>model giọng</b> cho từng loại giọng ở hai hàng dưới đây (danh sách lấy từ các giọng có sẵn trên thiết bị của bạn).</p>
+  <div class="toolbar">
+    <span><b>Giọng đọc:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 Giọng Anh Anh</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 Giọng Anh Mỹ</button>
+    <label>Tốc độ: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Dừng đọc</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 Model giọng Anh Anh:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Nghe thử</button></div>
+  <div class="voice-row"><span><b>🇺🇸 Model giọng Anh Mỹ:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Nghe thử</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Cả hai dạng đều được — nhưng nghĩa thay đổi</h2>
+  <p>Một nhóm động từ có thể theo sau bởi <b>-ing</b> hoặc <b>nguyên mẫu có to</b>, nhưng hai dạng mang <b>hai nghĩa khác nhau</b>. Đây là nhóm dễ gây lỗi nhất, cần học theo từng cặp đối lập.</p>
+
+  <h3>a) forget / remember — việc cần làm và ký ức</h3>
+  <p>Đi với <i>to</i>: nói về <b>việc cần làm</b> (nghĩa vụ — hướng về phía trước). Đi với <i>-ing</i>: nói về <b>sự kiện đã qua</b> (ký ức — nhìn lại phía sau). Cả hai động từ còn có thể đi với mệnh đề <i>that</i>.</p>
+  <div class="ex"><div class="en">I had to phone the office, but I forgot to do it.</div><div class="vi">Tôi phải gọi điện cho văn phòng, nhưng tôi quên mất không làm. (việc cần làm)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I don't remember learning to walk.</div><div class="vi">Tôi không nhớ việc mình học đi hồi nhỏ. (ký ức)</div><div class="tts"></div></div>
+
+  <h3>b) try — cố gắng và thử nghiệm</h3>
+  <p>Đi với <i>to</i>: <b>cố gắng</b> làm một việc — việc đó có thể thành công hoặc thất bại. Đi với <i>-ing</i>: <b>thử làm để trải nghiệm</b>, hoặc làm một thí nghiệm.</p>
+  <div class="ex"><div class="en">I tried to warn him, but it was too late.</div><div class="vi">Tôi đã cố cảnh báo anh ta, nhưng đã quá muộn. (cố gắng)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Try taking an aspirin. You'll feel better.</div><div class="vi">Thử uống một viên aspirin xem. Bạn sẽ thấy đỡ hơn. (thử nghiệm)</div><div class="tts"></div></div>
+
+  <h3>c) go on — tiếp tục việc cũ và chuyển sang việc mới</h3>
+  <p>Đi với <i>-ing</i>: <b>tiếp tục cùng một hành động</b> đang làm. Đi với <i>to</i>: <b>chuyển sang điểm tiếp theo</b>, thường là trong một bài phát biểu.</p>
+  <div class="ex"><div class="en">She went on working even though it was late.</div><div class="vi">Cô ấy vẫn tiếp tục làm việc dù đã khuya. (tiếp tục việc cũ)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The Prime Minister went on to praise the Chancellor.</div><div class="vi">Thủ tướng nói tiếp sang phần ca ngợi Bộ trưởng Tài chính. (chuyển sang điểm mới trong bài phát biểu)</div><div class="tts"></div></div>
+
+  <h3>d) mean — dự định và kéo theo</h3>
+  <p>Đi với <i>to</i>: mang nghĩa <b>dự định</b> (intend). Đi với <i>-ing</i> và chủ ngữ phi ngôi: chỉ <b>điều mà một việc kéo theo, bao hàm</b>. Khi giải thích ý nghĩa, có thể dùng mệnh đề <i>that</i>.</p>
+  <div class="ex"><div class="en">Sorry, I meant to tell you about the party.</div><div class="vi">Xin lỗi, tôi đã định nói với bạn về bữa tiệc. (dự định)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If we catch the early train, it will mean getting up at 6.00.</div><div class="vi">Nếu bắt chuyến tàu sớm, điều đó có nghĩa là phải dậy lúc 6 giờ. (kéo theo)</div><div class="tts"></div></div>
+
+  <h3>e) regret — thông báo đáng tiếc và hối tiếc</h3>
+  <p>Đi với <i>to</i>: dùng trong <b>thông báo trang trọng</b> về điều đáng tiếc sắp nói ra. Đi với <i>-ing</i>: <b>hối tiếc về việc đã làm</b> trong quá khứ. Cũng có thể dùng mệnh đề <i>that</i>.</p>
+  <div class="ex"><div class="en">We regret to inform you that your application has been unsuccessful.</div><div class="vi">Chúng tôi rất tiếc phải thông báo rằng đơn của bạn không được chấp nhận. (thông báo)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I regret saying that to him.</div><div class="vi">Tôi hối tiếc vì đã nói điều đó với anh ta. (hối tiếc)</div><div class="tts"></div></div>
+
+  <h3>f) stop — dừng để làm việc khác và chấm dứt hẳn</h3>
+  <p>Đi với <i>to</i>: <b>dừng lại với mục đích</b> làm một việc khác. Đi với <i>-ing</i>: <b>chấm dứt hẳn</b> một hoạt động.</p>
+  <div class="ex"><div class="en">Jane stopped to check the oil level in the engine.</div><div class="vi">Jane dừng lại để kiểm tra mức dầu trong động cơ. (dừng có mục đích)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The baby has stopped waking up during the night now.</div><div class="vi">Em bé giờ đã hết thức giấc giữa đêm rồi. (chấm dứt hẳn)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Cả hai dạng đều được — nghĩa gần như không đổi</h2>
+
+  <h3>a) can't bear, hate, like, love, prefer</h3>
+  <p>Các động từ này đi được với cả hai dạng. Riêng <i>like to</i> thường chỉ <b>sở thích theo thói quen</b>; còn <i>don't like to</i> đôi khi mang nghĩa “cho rằng <b>không nên</b> làm”.</p>
+  <div class="ex"><div class="en">We like to go out to lunch on Sunday.</div><div class="vi">Chúng tôi thích ra ngoài ăn trưa vào Chủ nhật. (thói quen)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I don't like to disturb colleagues at home.</div><div class="vi">Tôi cho rằng không nên làm phiền đồng nghiệp khi họ ở nhà.</div><div class="tts"></div></div>
+
+  <h3>b) attempt, begin, continue, intend, plan, propose, start</h3>
+  <p>Với nhóm này, dùng <i>-ing</i> hay nguyên mẫu có <i>to</i> <b>không khác nhau về nghĩa</b>. Riêng <i>intend, plan, propose</i> còn có thể đi với mệnh đề <i>that</i> (trong mệnh đề có thể có <i>should</i>).</p>
+</div>
+
+<div class="card">
+  <h2>3. Động từ có tân ngữ: -ing hoặc nguyên mẫu có to</h2>
+
+  <h3>a) admit</h3>
+  <p>Dùng được với hoặc không có <i>to</i> trước <i>-ing</i>; cũng có thể đi với mệnh đề <i>that</i>.</p>
+  <div class="ex"><div class="en">They admitted (to) being members of the gang.</div><div class="vi">Chúng đã thú nhận là thành viên của băng đảng.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He admitted that he was wrong.</div><div class="vi">Anh ta thừa nhận rằng mình đã sai.</div><div class="tts"></div></div>
+
+  <h3>b) allow, forbid, permit</h3>
+  <p>Có <b>tân ngữ + to</b>: cho / cấm ai làm gì. Không có tân ngữ người, dùng dạng <b>-ing</b> cho hoạt động nói chung.</p>
+  <div class="ex"><div class="en">The school forbids students to smoke in the classrooms.</div><div class="vi">Nhà trường cấm học sinh hút thuốc trong lớp học.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The school does not allow smoking.</div><div class="vi">Nhà trường không cho phép hút thuốc.</div><div class="tts"></div></div>
+
+  <h3>c) consider</h3>
+  <p><b>Tân ngữ + to</b>: chỉ <b>ý kiến, đánh giá</b>. Đi với <i>-ing</i>: nghĩa là <b>cân nhắc, suy nghĩ về</b>. Mệnh đề <i>that</i> cũng chỉ ý kiến.</p>
+  <div class="ex"><div class="en">She is considered to be the finest pianist of her generation.</div><div class="vi">Cô ấy được coi là nghệ sĩ piano xuất sắc nhất thế hệ của mình. (đánh giá)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">At one point I considered emigrating to Canada.</div><div class="vi">Có lúc tôi đã cân nhắc việc di cư sang Canada. (cân nhắc)</div><div class="tts"></div></div>
+
+  <h3>d) imagine</h3>
+  <p><b>Tân ngữ + to</b>; hoặc <b>(tân ngữ) + -ing</b>; mệnh đề <i>that</i> mang nghĩa “đoán rằng”.</p>
+  <div class="ex"><div class="en">I imagined the castle to be haunted.</div><div class="vi">Tôi tưởng tượng tòa lâu đài có ma.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I couldn't imagine (her) living in a place like that.</div><div class="vi">Tôi không thể tưởng tượng (cô ấy) sống ở một nơi như thế.</div><div class="tts"></div></div>
+
+  <h3>e) require</h3>
+  <p><b>Tân ngữ + to</b>: yêu cầu ai làm gì. Đi với <i>-ing</i>: nghĩa là “cần được làm” (giống <i>needs doing</i>).</p>
+  <div class="ex"><div class="en">They required him to fill out a form.</div><div class="vi">Họ yêu cầu anh ta điền một mẫu đơn.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">These letters require typing.</div><div class="vi">Những lá thư này cần được đánh máy.</div><div class="tts"></div></div>
+
+  <h3>f) hear, see, watch + tân ngữ</h3>
+  <p>Theo sau bởi <b>nguyên mẫu không to</b>: hành động được nhìn / nghe thấy <b>trọn vẹn, hoàn tất</b>. Theo sau bởi <b>-ing</b>: hành động <b>đang diễn ra</b> dở dang.</p>
+  <div class="ex"><div class="en">We watched all the cars cross the finishing line.</div><div class="vi">Chúng tôi xem tất cả các xe cán đích. (trọn vẹn)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I heard someone coming up the stairs.</div><div class="vi">Tôi nghe thấy có người đang đi lên cầu thang. (đang diễn ra)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. Thường theo sau bởi nguyên mẫu có to; nguyên mẫu không to</h2>
+
+  <h3>a) Các động từ thường đi với nguyên mẫu có to</h3>
+  <div class="formula">agree · appear · arrange · ask · attempt · choose · dare · decide · demand · deserve · expect · fail · happen · hasten · hope · hurry · learn · long · manage · neglect · offer · pay · plan · pledge · pretend · promise · refuse · resolve · seek · seem · struggle · swear · threaten · vow · want · wish</div>
+  <p><i>Appear, (so) happen</i> và <i>seem</i> chỉ dùng <b>phi ngôi</b> với mệnh đề <i>that</i>:</p>
+  <div class="ex"><div class="en">It appears that I've made a mistake. — It so happens that he is my brother! — It seems that Mary is going to win.</div><div class="vi">Có vẻ như tôi đã mắc lỗi. — Tình cờ anh ấy lại là anh trai tôi! — Có vẻ Mary sắp thắng.</div><div class="tts"></div></div>
+  <p><i>Want</i> có thể dùng thân mật với <i>-ing</i>, nghĩa gần như <i>need</i>:</p>
+  <div class="ex"><div class="en">The car wants cleaning.</div><div class="vi">Chiếc xe cần được rửa.</div><div class="tts"></div></div>
+
+  <h3>b) Nguyên mẫu không to: help, make, let</h3>
+  <p><i>Help</i> dùng được <b>có hoặc không có</b> <i>to</i>. <i>Make</i> và <i>let</i> đi với tân ngữ + nguyên mẫu <b>không</b> <i>to</i>; nhưng ở dạng bị động, <i>make</i> phải có <i>to</i>.</p>
+  <div class="ex"><div class="en">I helped George (to) carry the bags.</div><div class="vi">Tôi giúp George xách các túi.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They made me leave. — I was made to leave.</div><div class="vi">Họ bắt tôi phải đi. — Tôi bị bắt phải đi. (bị động có to)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">They didn't let me leave. Let me go!</div><div class="vi">Họ không cho tôi đi. Buông tôi ra!</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>5. Thường theo sau bởi -ing; động từ + tân ngữ + to</h2>
+
+  <h3>a) Các động từ thường đi với -ing</h3>
+  <div class="formula">appreciate · avoid · can't stand · contemplate · delay · deny · detest · dislike · endure · enjoy · escape · excuse · face · fancy · feel like · finish · give up · involve · it's no good / use · keep on · leave off · look forward to · mention · mind · miss · postpone · practise · put off · resent · risk · spend / waste time · suggest</div>
+  <p><i>Appreciate</i> thường đi với <b>sở hữu + -ing</b>. <i>Involve</i> có chủ ngữ phi ngôi.</p>
+  <div class="ex"><div class="en">I appreciate your trying to help.</div><div class="vi">Tôi cảm ơn việc bạn đã cố gắng giúp đỡ.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Being an athlete involves regular training.</div><div class="vi">Làm vận động viên thì phải tập luyện đều đặn.</div><div class="tts"></div></div>
+
+  <h3>b) Các động từ đi với tân ngữ + to</h3>
+  <div class="formula">advise · assist · beg · bribe · command · dare · employ · enable · encourage · instruct · invite · lead · order · persuade · select · send · teach · tell · train · urge · warn</div>
+  <p><i>Dare</i> khi có tân ngữ thì đi với <i>to</i>; khi không có tân ngữ, <i>to</i> có thể lược bỏ.</p>
+  <div class="ex"><div class="en">They dared him to jump. — I didn't dare (to) say anything. — How dare you speak like that to me!</div><div class="vi">Chúng thách anh ta nhảy. — Tôi không dám nói gì cả. — Sao anh dám nói với tôi như thế!</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Điểm cốt lõi</h2>
+  <ol>
+    <li><b>forget / remember</b> + <i>to</i> = việc cần làm; + <i>-ing</i> = ký ức về việc đã qua. <b>try</b> + <i>to</i> = cố gắng; + <i>-ing</i> = thử trải nghiệm. <b>stop</b> + <i>to</i> = dừng lại để làm việc khác; + <i>-ing</i> = chấm dứt hẳn. <b>go on</b> + <i>-ing</i> = tiếp tục việc cũ; + <i>to</i> = chuyển sang việc tiếp theo.</li>
+    <li><b>mean</b> + <i>to</i> = dự định; + <i>-ing</i> = kéo theo, bao hàm. <b>regret</b> + <i>to</i> = tiếc phải thông báo; + <i>-ing</i> = hối tiếc việc đã qua.</li>
+    <li><b>like / love / hate / prefer / can't bear</b> và <b>attempt / begin / continue / intend / plan / propose / start</b>: cả hai dạng đều được, nghĩa gần như không đổi.</li>
+    <li><b>allow / forbid / permit</b>: có tân ngữ người thì + <i>to</i>, không có thì + <i>-ing</i>. <b>admit, consider, imagine</b> còn có thể đi với mệnh đề <i>that</i>.</li>
+    <li><b>hear / see / watch</b> + tân ngữ + nguyên mẫu không <i>to</i> = hành động trọn vẹn; + <i>-ing</i> = hành động đang diễn ra. <b>make / let</b> + tân ngữ + nguyên mẫu không <i>to</i> — riêng bị động của <i>make</i> phải có <i>to</i>.</li>
+    <li>Nhiều động từ còn đi được với mệnh đề <i>that</i> (agree, decide, hope, admit, suggest…); <i>want</i> + <i>-ing</i> trong văn nói thân mật nghĩa là <i>need</i>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — Bài tập</h2>
+  <p>Chọn / điền xong bấm Kiểm tra để xem điểm ngay.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Bài 1 — Chọn dạng đúng</h2>
+  <p>Mỗi câu có hai lựa chọn (in nghiêng ở cuối câu). Gõ dạng đúng vào ô trống.</p>
+  <div class="q"><p>a) What do you mean <input class="blank" data-answers="to do" data-display="to do"> about the leaky pipes? <i>(to do / doing)</i></p></div>
+  <div class="q"><p>b) I never imagined the mountains <input class="blank" data-answers="to be" data-display="to be"> so high! <i>(to be / being)</i></p></div>
+  <div class="q"><p>c) Don't forget <input class="blank" data-answers="to wake me" data-display="to wake me"> before you leave. <i>(to wake me / waking me)</i></p></div>
+  <div class="q"><p>d) I regret <input class="blank" data-answers="to tell you" data-display="to tell you"> that we cannot accept your offer. <i>(to tell you / telling you)</i></p></div>
+  <div class="q"><p>e) Did you manage <input class="blank" data-answers="to find" data-display="to find"> the book you were looking for? <i>(to find / finding)</i></p></div>
+  <div class="q"><p>f) I tried <input class="blank" data-answers="to take|taking" data-display="to take"> that medicine you gave me, but I couldn't swallow it. <i>(taking / to take)</i></p></div>
+  <div class="q"><p>g) We have postponed <input class="blank" data-answers="telling" data-display="telling"> anyone the news until after Christmas. <i>(to tell / telling)</i></p></div>
+  <div class="q"><p>h) Have you considered <input class="blank" data-answers="buying" data-display="buying"> a microwave oven? <i>(to buy / buying)</i></p></div>
+  <div class="q"><p>i) Sorry I'm late — I had to stop <input class="blank" data-answers="to pick up" data-display="to pick up"> the children from school. <i>(to pick up / picking up)</i></p></div>
+  <div class="q"><p>j) Margaret was slow at school, but she went on <input class="blank" data-answers="to be" data-display="to be"> Prime Minister. <i>(to be / being)</i></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Kiểm tra Bài 1</button><button type="button" onclick="showFill('ex1')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex1')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 1: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Bài 2 — Điền động từ trong hộp</h2>
+  <p>Chọn động từ phù hợp trong hộp và chia ở dạng đúng để hoàn thành câu.</p>
+  <div class="formula">look forward to · die · arrange · consider · do · face · grow · appear · intend · dare</div>
+  <div class="q"><p>a) It's too late to buy any food. We'll have to make <input class="blank" data-answers="do" data-display="do"> with what we've got.</p></div>
+  <div class="q"><p>b) I hardly <input class="blank" data-answers="dare" data-display="dare"> ask how much it cost!</p></div>
+  <div class="q"><p>c) Have you ever <input class="blank" data-answers="considered" data-display="considered"> taking a year off work?</p></div>
+  <div class="q"><p>d) I didn't like the town at first, but I <input class="blank" data-answers="grew" data-display="grew"> to love it eventually.</p></div>
+  <div class="q"><p>e) What do you <input class="blank" data-answers="intend" data-display="intend"> doing after this course has finished?</p></div>
+  <div class="q"><p>f) We are all <input class="blank" data-answers="looking forward to" data-display="looking forward to"> our holiday in Australia this year. It's going to be such an adventure.</p></div>
+  <div class="q"><p>g) Jim and I <input class="blank" data-answers="arranged" data-display="arranged"> to meet at 6.00, but he didn't turn up.</p></div>
+  <div class="q"><p>h) It <input class="blank" data-answers="appears" data-display="appears"> that we won't need to pay so much after all.</p></div>
+  <div class="q"><p>i) I can't wait for Saturday! I'm really <input class="blank" data-answers="dying" data-display="dying"> to see you!</p></div>
+  <div class="q"><p>j) I can't <input class="blank" data-answers="face" data-display="face"> getting up at 6.30 tomorrow morning! I'll catch a later train.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Kiểm tra Bài 2</button><button type="button" onclick="showFill('ex2')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex2')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 2: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Bài 3 — Hoàn thành câu thứ hai</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) It's very kind of you to give me a lift. <b>(appreciate)</b></p><p>I <input class="blank" data-answers="appreciate you giving" data-display="appreciate you giving"> me a lift.</p></div>
+  <div class="q"><p>b) If I take the job I'll have to move to Paris. <b>(mean)</b></p><p>Taking <input class="blank" data-answers="the job will mean" data-display="the job will mean"> moving to Paris.</p></div>
+  <div class="q"><p>c) Parking is not permitted here. <b>(park)</b></p><p>You are <input class="blank" data-answers="not permitted to park|not allowed to park" data-display="not permitted to park"> here.</p></div>
+  <div class="q"><p>d) 'Shall I carry that bag for you, Pauline?' said John. <b>(offered)</b></p><p>John <input class="blank" data-answers="offered to carry Pauline's" data-display="offered to carry Pauline's"> bag for her.</p></div>
+  <div class="q"><p>e) Winning the football pools meant we could buy a new car. <b>(enabled)</b></p><p>Winning the football pools <input class="blank" data-answers="enabled us to" data-display="enabled us to"> buy a new car.</p></div>
+  <div class="q"><p>f) There is a risk that he will miss the plane if he waits. <b>(risks)</b></p><p>He <input class="blank" data-answers="risks missing the plane" data-display="risks missing the plane"> if he waits.</p></div>
+  <div class="q"><p>g) I believed you were the murderer because of this clue. <b>(led)</b></p><p>This clue <input class="blank" data-answers="led me to believe" data-display="led me to believe"> that you were the murderer.</p></div>
+  <div class="q"><p>h) Does using the hotel swimming pool cost extra? <b>(pay)</b></p><p>Do you have to <input class="blank" data-answers="pay to use|pay extra to use" data-display="pay to use"> the hotel swimming pool?</p></div>
+  <div class="q"><p>i) I think that this is the right street. <b>(appears)</b></p><p>This <input class="blank" data-answers="appears to be" data-display="appears to be"> the right street.</p></div>
+  <div class="q"><p>j) Jean succeeded in finishing all her work on time. <b>(managed)</b></p><p>Jean <input class="blank" data-answers="managed to finish" data-display="managed to finish"> all her work on time.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Kiểm tra Bài 3</button><button type="button" onclick="showFill('ex3')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex3')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Bài 4 — Hoàn thành câu thứ hai</h2>
+  <p>Hoàn thành câu thứ hai sao cho nghĩa tương đương câu thứ nhất, dùng từ cho sẵn (in đậm). Không được thay đổi từ cho sẵn.</p>
+  <div class="q"><p>a) They said they would like me to stay with them in Florida. <b>(invited)</b></p><p>They <input class="blank" data-answers="invited me to" data-display="invited me to"> stay with them in Florida.</p></div>
+  <div class="q"><p>b) Calling Jim is pointless, because his phone is out of order. <b>(use)</b></p><p>It's no <input class="blank" data-answers="use calling Jim" data-display="use calling Jim"> because his phone is out of order.</p></div>
+  <div class="q"><p>c) It is compulsory for all students to leave a cash deposit. <b>(required)</b></p><p>All students <input class="blank" data-answers="are required to" data-display="are required to"> leave a cash deposit.</p></div>
+  <div class="q"><p>d) You waste time if you copy your work out again, so don't do it. <b>(copying)</b></p><p>Don't <input class="blank" data-answers="waste time copying" data-display="waste time copying"> your work out again.</p></div>
+  <div class="q"><p>e) I bet you wouldn't ask David to come with you to the party! <b>(if)</b></p><p>I dare <input class="blank" data-answers="you to ask David if he will come|you to ask David if he will go" data-display="you to ask David if he will come"> to the party with you!</p></div>
+  <div class="q"><p>f) 'Please don't leave me on my own,' Martin begged us. <b>(him)</b></p><p>Martin begged us <input class="blank" data-answers="not to leave him on his" data-display="not to leave him on his"> own.</p></div>
+  <div class="q"><p>g) If you work for this company, you have to travel a lot. <b>(involves)</b></p><p>Working for this company <input class="blank" data-answers="involves a lot" data-display="involves a lot"> of travel.</p></div>
+  <div class="q"><p>h) Joe doesn't like it when people treat him like a child. <b>(resents)</b></p><p>Joe <input class="blank" data-answers="resents being treated" data-display="resents being treated"> like a child.</p></div>
+  <div class="q"><p>i) It was resolved that the matter would be brought up at the next meeting. <b>(bring)</b></p><p>They resolved <input class="blank" data-answers="to bring the matter" data-display="to bring the matter"> up at the next meeting.</p></div>
+  <div class="q"><p>j) The police were told that the use of unnecessary force was forbidden. <b>(not)</b></p><p>The police were instructed <input class="blank" data-answers="not to use" data-display="not to use"> unnecessary force.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Kiểm tra Bài 4</button><button type="button" onclick="showFill('ex4')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex4')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 4: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Bài 5 — Chia động từ trong ngoặc</h2>
+  <p>Điền dạng đúng (gerund hoặc infinitive) của động từ trong ngoặc.</p>
+  <div class="q"><p>a) Sorry, I meant <input class="blank" data-answers="to tell you" data-display="to tell you"> (tell) I would be out, but I forgot.</p></div>
+  <div class="q"><p>b) That's all for now. I <input class="blank" data-answers="hope to" data-display="hope to"> (hope) hear from you soon!</p></div>
+  <div class="q"><p>c) If I take the new job, it <input class="blank" data-answers="will mean" data-display="will mean"> (mean) working a lot harder!</p></div>
+  <div class="q"><p>d) Are you still tired? Or do <input class="blank" data-answers="you feel like" data-display="you feel like"> (feel) going out for a meal?</p></div>
+  <div class="q"><p>e) Jane is <input class="blank" data-answers="said to be" data-display="said to be"> (say) the most outstanding player in the team.</p></div>
+  <div class="q"><p>f) I wish you <input class="blank" data-answers="would not keep|wouldn't keep" data-display="would not keep"> (keep) complaining all the time!</p></div>
+  <div class="q"><p>g) How <input class="blank" data-answers="can you suggest|could you suggest" data-display="can you suggest"> (suggest) that I would take a bribe! I've never been so insulted!</p></div>
+  <div class="q"><p>h) We offered to help Helen carry her bags, but she said she <input class="blank" data-answers="could manage" data-display="could manage"> (manage) on her own.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Kiểm tra Bài 5</button><button type="button" onclick="showFill('ex5')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex5')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 5: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Bài 6 — Đọc và chia động từ: Nữ nghệ sĩ violin Yukie Hanue</h2>
+  <p>Hoàn thành đoạn văn bằng cách chia các động từ trong ngoặc ở dạng gerund hoặc infinitive phù hợp.</p>
+  <div class="q"><p>Yukie Hanue is considered by many (1) <input class="blank" data-answers="to be" data-display="to be"> (be) the finest violinist of her generation — and she's still in her early twenties. When we visited her, in the music department of the University of New York, she was too busy practising (2) <input class="blank" data-answers="to talk" data-display="to talk"> (talk), but she invited us (3) <input class="blank" data-answers="to have" data-display="to have"> (have) a coffee with her in her mid-morning break. Astonishingly, she manages (4) <input class="blank" data-answers="to combine" data-display="to combine"> (combine) her PhD at the university with international concerts and recitals, numerous public appearances and interviews. She evidently thrives on the workload, buzzing around the place with an industrious enthusiasm that leaves us all breathless. Her fame as a performer means (5) <input class="blank" data-answers="making" data-display="making"> (make) regular appearances at high-profile events. Last month, for example, she agreed (6) <input class="blank" data-answers="to appear" data-display="to appear"> (appear) in a series of recitals organised by Coca-Cola. This involved (7) <input class="blank" data-answers="travelling|traveling" data-display="travelling"> (travel) to far-flung places like Seoul, Oslo and Montevideo on successive days, a schedule which would have caused any normal person to wilt. 'I can't stand (8) <input class="blank" data-answers="doing" data-display="doing"> (do) nothing,' she says. 'I happen (9) <input class="blank" data-answers="to have" data-display="to have"> (have) a particular talent, and it would be wasteful not (10) <input class="blank" data-answers="to exploit" data-display="to exploit"> (exploit) it to the full.' I encouraged her (11) <input class="blank" data-answers="to tell" data-display="to tell"> (tell) me about her upbringing, but she was rather reticent to sing her own praises. I did, however, succeed in persuading her (12) <input class="blank" data-answers="to confess" data-display="to confess"> (confess) to a secret desire. 'If I hadn't been a musician, I would have loved to train (13) <input class="blank" data-answers="to become" data-display="to become"> (become) a martial arts expert,' she says. Certainly, she would have had the discipline, but I couldn't imagine someone so physically frail actually (14) <input class="blank" data-answers="standing" data-display="standing"> (stand) there hitting someone. But it was an interesting revelation, and one that I was (15) <input class="blank" data-answers="to learn" data-display="to learn"> (learn) more about during my day with her.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Kiểm tra Bài 6</button><button type="button" onclick="showFill('ex6')">👁 Hiện đáp án</button><button type="button" onclick="resetFill('ex6')">↺ Làm lại</button></div>
+  <span class="score">Điểm Bài 6: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Tổng kết buổi học</h2>
+  <p>Tổng số câu đã chấm trong bài này: <b>63</b> (Bài 1: 10 · Bài 2: 10 · Bài 3: 10 · Bài 4: 10 · Bài 5: 8 · Bài 6: 15 ô).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Làm lại từ đầu (tải lại trang)</button> <a href="../index.html"><button type="button">← Về mục lục</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Mặc định (giọng đầu tiên của thiết bị)', gb:'Thiết bị chưa có giọng Anh Anh', us:'Thiết bị chưa có giọng Anh Mỹ'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Nghe';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa đúng — đáp án đúng: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Đúng!' : '❌ Chưa khớp — bấm “Hiện đáp án” để đối chiếu.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 Tất cả đều đúng!' : 'Đúng ' + right + '/' + inputs.length + ' — sửa các ô viền đỏ rồi kiểm tra lại.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Đáp án: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Tra từ</button>
+<div id="dictHint">Chế độ tra từ đang BẬT — chạm/bấm vào bất kỳ từ tiếng Anh nào trong bài để xem nghĩa, bấm nút 🔍 Tra từ để tắt.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","accept":"AE0 K S EH1 P T","actually":"AE1 K CH UW2 AH0 L IY0","admit":"AH0 D M IH1 T","admitted":"AH0 D M IH1 T IH0 D","advanced":"AH0 D V AE1 N S T","adventure":"AE0 D V EH1 N CH ER0","advise":"AE0 D V AY1 Z","after":"AE1 F T ER0","again":"AH0 G EH1 N","agree":"AH0 G R IY1","agreed":"AH0 G R IY1 D","ai":"AY1","all":"AO1 L","allow":"AH0 L AW1","an":"AE1 N","and":"AH0 N D","ang":"AE1 NG","any":"EH1 N IY0","anyone":"EH1 N IY0 W AH2 N","anything":"EH1 N IY0 TH IH2 NG","appear":"AH0 P IH1 R","appearances":"AH0 P IH1 R AH0 N S AH0 Z","appears":"AH0 P IH1 R Z","application":"AE2 P L AH0 K EY1 SH AH0 N","appreciate":"AH0 P R IY1 SH IY0 EY2 T","are":"AA1 R","around":"ER0 AW1 N D","arrange":"ER0 EY1 N JH","arts":"AA1 R T S","as":"AE1 Z","ask":"AE1 S K","aspirin":"AE1 S P R IH0 N","assist":"AH0 S IH1 S T","astonishingly":"AH0 S T AA1 N IH0 SH IH0 NG L IY0","at":"AE1 T","athlete":"AE1 TH L IY2 T","attempt":"AH0 T EH1 M P T","australia":"AO0 S T R EY1 L Y AH0","avoid":"AH0 V OY1 D","baby":"B EY1 B IY0","bag":"B AE1 G","bags":"B AE1 G Z","bao":"B AW1","be":"B IY1","bear":"B EH1 R","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","been":"B IH1 N","before":"B IH0 F AO1 R","beg":"B EH1 G","begged":"B EH1 G D","begin":"B IH0 G IH1 N","being":"B IY1 IH0 NG","believed":"B IH0 L IY1 V D","bet":"B EH1 T","better":"B EH1 T ER0","bi":"B AY1","book":"B UH1 K","break":"B R EY1 K","breathless":"B R EH1 TH L AH0 S","bribe":"B R AY1 B","bring":"B R IH1 NG","brother":"B R AH1 DH ER0","brought":"B R AO1 T","busy":"B IH1 Z IY0","but":"B AH1 T","buy":"B AY1","buying":"B AY1 IH0 NG","buzzing":"B AH1 Z IH0 NG","by":"B AY1","ca":"K AH1","calling":"K AO1 L IH0 NG","can't":"K AE1 N T","canada":"K AE1 N AH0 D AH0","cannot":"K AE1 N AA0 T","car":"K AA1 R","carry":"K AE1 R IY0","cars":"K AA1 R Z","cash":"K AE1 SH","castle":"K AE1 S AH0 L","catch":"K AE1 CH","caused":"K AA1 Z D","certainly":"S ER1 T AH0 N L IY0","chancellor":"CH AE1 N S AH0 L ER0","check":"CH EH1 K","chi":"K AY1","chia":"CH IY1 AH0","child":"CH AY1 L D","children":"CH IH1 L D R AH0 N","cho":"CH OW1","choose":"CH UW1 Z","christmas":"K R IH1 S M AH0 S","chung":"CH AH1 NG","classrooms":"K L AE1 S R UW2 M Z","cleaning":"K L IY1 N IH0 NG","clue":"K L UW1","coca-cola":"K OW2 K AH0 K OW1 L AA0","coffee":"K AA1 F IY0","colleagues":"K AA1 L IY0 G Z","combine":"K AA1 M B AY0 N","come":"K AH1 M","coming":"K AH1 M IH0 NG","command":"K AH0 M AE1 N D","company":"K AH1 M P AH0 N IY2","complaining":"K AH0 M P L EY1 N IH0 NG","compulsory":"K AH0 M P AH1 L S ER0 IY0","concerts":"K AA1 N S ER0 T S","confess":"K AH0 N F EH1 S","consider":"K AH0 N S IH1 D ER0","considered":"K AH0 N S IH1 D ER0 D","contemplate":"K AA1 N T AH0 M P L EY2 T","continue":"K AH0 N T IH1 N Y UW0","copy":"K AA1 P IY0","copying":"K AA1 P IY0 IH0 NG","cost":"K AA1 S T","could":"K UH1 D","couldn't":"K UH1 D AH0 N T","course":"K AO1 R S","cross":"K R AO1 S","dang":"D AE1 NG","dare":"D EH1 R","dared":"D EH1 R D","david":"D EY1 V IH0 D","day":"D EY1","days":"D EY1 Z","decide":"D IH2 S AY1 D","delay":"D IH0 L EY1","demand":"D IH0 M AE1 N D","deny":"D IH0 N AY1","department":"D IH0 P AA1 R T M AH0 N T","deposit":"D AH0 P AA1 Z IH0 T","deserve":"D IH0 Z ER1 V","desire":"D IH0 Z AY1 ER0","detest":"D IH0 T EH1 S T","di":"D IY1","did":"D IH1 D","didn't":"D IH1 D AH0 N T","die":"D AY1","discipline":"D IH1 S AH0 P L AH0 N","dislike":"D IH0 S L AY1 K","disturb":"D IH0 S T ER1 B","do":"D UW1","does":"D AH1 Z","doesn't":"D AH1 Z AH0 N T","doing":"D UW1 IH0 NG","don't":"D OW1 N T","during":"D UH1 R IH0 NG","early":"ER1 L IY0","em":"EH1 M","emigrating":"EH1 M AH0 G R EY2 T IH0 NG","employ":"EH0 M P L OY1","enable":"EH0 N EY1 B AH0 L","enabled":"EH0 N EY1 B AH0 L D","encourage":"EH0 N K ER1 IH0 JH","encouraged":"EH0 N K ER1 IH0 JH D","endure":"EH0 N D Y UH1 R","engine":"EH1 N JH AH0 N","english":"IH1 NG G L IH0 SH","enjoy":"EH2 N JH OY1","enthusiasm":"IH0 N TH UW1 Z IY0 AE2 Z AH0 M","escape":"IH0 S K EY1 P","even":"IY1 V IH0 N","events":"IH0 V EH1 N T S","eventually":"IH0 V EH1 N CH AH0 W AH0 L IY0","ever":"EH1 V ER0","evidently":"EH1 V AH0 D AH0 N T L IY0","example":"IH0 G Z AE1 M P AH0 L","excuse":"IH0 K S K Y UW1 S","expect":"IH0 K S P EH1 K T","expert":"EH1 K S P ER0 T","exploit":"EH1 K S P L OY2 T","extra":"EH1 K S T R AH0","face":"F EY1 S","fail":"F EY1 L","fame":"F EY1 M","fancy":"F AE1 N S IY0","feel":"F IY1 L","fill":"F IH1 L","find":"F AY1 N D","finding":"F AY1 N D IH0 NG","finest":"F AY1 N AH0 S T","finish":"F IH1 N IH0 SH","finished":"F IH1 N IH0 SH T","finishing":"F IH1 N IH0 SH IH0 NG","first":"F ER1 S T","florida":"F L AO1 R AH0 D AH0","food":"F UW1 D","football":"F UH1 T B AO2 L","for":"F AO1 R","forbid":"F ER0 B IH1 D","forbidden":"F AO1 R B IH0 D AH0 N","forbids":"F ER0 B IH1 D Z","force":"F AO1 R S","forget":"F ER0 G EH1 T","forgot":"F ER0 G AA1 T","form":"F AO1 R M","forward":"F AO1 R W ER0 D","frail":"F R EY1 L","from":"F R AH1 M","full":"F UH1 L","gang":"G AE1 NG","gave":"G EY1 V","generation":"JH EH2 N ER0 EY1 SH AH0 N","george":"JH AO1 R JH","gerund":"JH EH1 R AH0 N D","getting":"G EH1 T IH0 NG","give":"G IH1 V","go":"G OW1","going":"G OW1 IH0 NG","good":"G UH1 D","got":"G AA1 T","grammar":"G R AE1 M ER0","grow":"G R OW1","had":"HH AE1 D","hadn't":"HH AE1 D AH0 N T","happen":"HH AE1 P AH0 N","happens":"HH AE1 P AH0 N Z","harder":"HH AA1 R D ER0","hardly":"HH AA1 R D L IY0","has":"HH AE1 Z","hasten":"HH EY1 S AH0 N","hate":"HH EY1 T","haunted":"HH AO1 N T IH0 D","have":"HH AE1 V","hay":"HH EY1","he":"HH IY1","hear":"HH IY1 R","heard":"HH ER1 D","helen":"HH EH1 L AH0 N","help":"HH EH1 L P","helped":"HH EH1 L P T","her":"HH ER1","here":"HH IY1 R","hi":"HH AY1","high":"HH AY1","high-profile":"HH AY2 P R OW1 F AY0 L","him":"HH IH1 M","his":"HH IH1 Z","hitting":"HH IH1 T IH0 NG","ho":"HH OW1","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","hope":"HH OW1 P","hotel":"HH OW0 T EH1 L","how":"HH AW1","however":"HH AW2 EH1 V ER0","hurry":"HH ER1 IY0","i'll":"AY1 L","i'm":"AY1 M","i've":"AY1 V","if":"IH1 F","imagine":"IH2 M AE1 JH AH0 N","imagined":"IH2 M AE1 JH AH0 N D","in":"IH0 N","industrious":"IH2 N D AH1 S T R IY0 AH0 S","infinitive":"IH2 N F IH1 N IH0 T IH0 V","inform":"IH2 N F AO1 R M","ing":"IH1 NG","instruct":"IH2 N S T R AH1 K T","instructed":"IH2 N S T R AH1 K T AH0 D","insulted":"IH2 N S AH1 L T IH0 D","intend":"IH2 N T EH1 N D","interesting":"IH1 N T R AH0 S T IH0 NG","international":"IH2 N T ER0 N AE1 SH AH0 N AH0 L","interviews":"IH1 N T ER0 V Y UW2 Z","invite":"IH2 N V AY1 T","invited":"IH2 N V AY1 T AH0 D","involve":"IH2 N V AA1 L V","involved":"IH2 N V AA1 L V D","involves":"IH2 N V AA1 L V Z","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","jane":"JH EY1 N","jean":"JH IY1 N","jim":"JH IH1 M","job":"JH AA1 B","joe":"JH OW1","john":"JH AA1 N","jump":"JH AH1 M P","keep":"K IY1 P","key":"K IY1","ki":"K IY1","kind":"K AY1 N D","last":"L AE1 S T","late":"L EY1 T","later":"L EY1 T ER0","lead":"L EH1 D","leaky":"L IY1 K IY0","learn":"L ER1 N","learning":"L ER1 N IH0 NG","leave":"L IY1 V","leaves":"L IY1 V Z","led":"L EH1 D","let":"L EH1 T","letters":"L EH1 T ER0 Z","level":"L EH1 V AH0 L","lift":"L IH1 F T","like":"L AY1 K","line":"L AY1 N","living":"L IH1 V IH0 NG","lo":"L OW1","long":"L AO1 NG","look":"L UH1 K","looking":"L UH1 K IH0 NG","lot":"L AA1 T","love":"L AH1 V","loved":"L AH1 V D","lunch":"L AH1 N CH","ma":"M AA1","made":"M EY1 D","make":"M EY1 K","manage":"M AE1 N AH0 JH","managed":"M AE1 N AH0 JH D","manages":"M AE1 N IH0 JH IH0 Z","mang":"M AE1 NG","many":"M EH1 N IY0","margaret":"M AA1 R G ER0 IH0 T","martial":"M AA1 R SH AH0 L","martin":"M AA1 R T AH0 N","mary":"M EH1 R IY0","matter":"M AE1 T ER0","me":"M IY1","meal":"M IY1 L","mean":"M IY1 N","means":"M IY1 N Z","meant":"M EH1 N T","medicine":"M EH1 D AH0 S AH0 N","meet":"M IY1 T","meeting":"M IY1 T IH0 NG","members":"M EH1 M B ER0 Z","mention":"M EH1 N SH AH0 N","microwave":"M AY1 K R AH0 W EY2 V","mind":"M AY1 N D","minister":"M IH1 N AH0 S T ER0","miss":"M IH1 S","mistake":"M IH0 S T EY1 K","model":"M AA1 D AH0 L","montevideo":"M AA2 N T AH0 V IH1 D IY0 OW2","month":"M AH1 N TH","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","mountains":"M AW1 N T AH0 N Z","move":"M UW1 V","moving":"M UW1 V IH0 NG","mu":"M UW1","much":"M AH1 CH","murderer":"M ER1 D ER0 ER0","music":"M Y UW1 Z IH0 K","musician":"M Y UW0 Z IH1 SH AH0 N","my":"M AY1","need":"N IY1 D","needs":"N IY1 D Z","neglect":"N AH0 G L EH1 K T","never":"N EH1 V ER0","new":"N UW1","news":"N UW1 Z","next":"N EH1 K S T","ng":"EH1 NG","nghi":"G IY1","ngo":"EH0 NG G OW1","night":"N AY1 T","no":"N OW1","normal":"N AO1 R M AH0 L","not":"N AA1 T","nothing":"N AH1 TH IH0 NG","now":"N AW1","numerous":"N UW1 M ER0 AH0 S","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","offered":"AO1 F ER0 D","office":"AO1 F IH0 S","oil":"OY1 L","on":"AA1 N","one":"W AH1 N","or":"AO1 R","order":"AO1 R D ER0","organised":"AO1 R G AH0 N AY2 Z D","oslo":"AA1 Z L OW0","our":"AW1 ER0","out":"AW1 T","outstanding":"AW2 T S T AE1 N D IH0 NG","oven":"AH1 V AH0 N","own":"OW1 N","paris":"P EH1 R IH0 S","park":"P AA1 R K","parking":"P AA1 R K IH0 NG","particular":"P ER0 T IH1 K Y AH0 L ER0","party":"P AA1 R T IY0","pauline":"P AO0 L IY1 N","pay":"P EY1","people":"P IY1 P AH0 L","performer":"P ER0 F AO1 R M ER0","permit":"P ER0 M IH1 T","permitted":"P ER0 M IH1 T IH0 D","person":"P ER1 S AH0 N","persuade":"P ER0 S W EY1 D","persuading":"P ER0 S W EY1 D IH0 NG","ph":"P IY1 EY1 CH","phd":"P IY1 EY2 CH D IY1","phi":"F AY1","phone":"F OW1 N","physically":"F IH1 Z IH0 K AH0 L IY0","pianist":"P IY0 AE1 N AH0 S T","piano":"P IY0 AE1 N OW0","pick":"P IH1 K","picking":"P IH1 K IH0 NG","pipes":"P AY1 P S","place":"P L EY1 S","places":"P L EY1 S AH0 Z","plan":"P L AE1 N","plane":"P L EY1 N","player":"P L EY1 ER0","please":"P L IY1 Z","pledge":"P L EH1 JH","point":"P OY1 N T","pointless":"P OY1 N T L AH0 S","points":"P OY1 N T S","police":"P AH0 L IY1 S","pool":"P UW1 L","pools":"P UW1 L Z","postpone":"P OW0 S T P OW1 N","postponed":"P OW0 S T P OW1 N D","practice":"P R AE1 K T AH0 S","practise":"P R AE1 K T IH0 S","praise":"P R EY1 Z","praises":"P R EY1 Z AH0 Z","prefer":"P R AH0 F ER1","pretend":"P R IY0 T EH1 N D","prime":"P R AY1 M","promise":"P R AA1 M AH0 S","propose":"P R AH0 P OW1 Z","public":"P AH1 B L IH0 K","put":"P UH1 T","qu":"K UW1","qua":"K W AA1","ra":"R AA1","rather":"R AE1 DH ER0","really":"R IH1 L IY0","recitals":"R IH0 S AY1 T AH0 L Z","refuse":"R AH0 F Y UW1 Z","regret":"R AH0 G R EH1 T","regular":"R EH1 G Y AH0 L ER0","remember":"R IH0 M EH1 M B ER0","require":"R IY2 K W AY1 ER0","required":"R IY0 K W AY1 ER0 D","resent":"R IH0 Z EH1 N T","resents":"R IH0 Z EH1 N T S","resolve":"R IY0 Z AA1 L V","resolved":"R IY0 Z AA1 L V D","reticent":"R EH1 T IH0 S AH0 N T","revelation":"R EH2 V AH0 L EY1 SH AH0 N","right":"R AY1 T","risk":"R IH1 S K","risks":"R IH1 S K S","sai":"S AY1","said":"S EH1 D","sang":"S AE1 NG","sao":"S AW1","saturday":"S AE1 T ER0 D IY0","say":"S EY1","saying":"S EY1 IH0 NG","says":"S EH1 Z","schedule":"S K EH1 JH UH0 L","school":"S K UW1 L","secret":"S IY1 K R AH0 T","see":"S IY1","seek":"S IY1 K","seem":"S IY1 M","seems":"S IY1 M Z","select":"S AH0 L EH1 K T","send":"S EH1 N D","seoul":"S OW1 L","series":"S IH1 R IY0 Z","shall":"SH AE1 L","she":"SH IY1","she's":"SH IY1 Z","should":"SH UH1 D","sing":"S IH1 NG","slow":"S L OW1","smoke":"S M OW1 K","smoking":"S M OW1 K IH0 NG","so":"S OW1","someone":"S AH1 M W AH2 N","soon":"S UW1 N","sorry":"S AA1 R IY0","speak":"S P IY1 K","spend":"S P EH1 N D","stairs":"S T EH1 R Z","stand":"S T AE1 N D","start":"S T AA1 R T","stay":"S T EY1","still":"S T IH1 L","stop":"S T AA1 P","stopped":"S T AA1 P T","street":"S T R IY1 T","struggle":"S T R AH1 G AH0 L","students":"S T UW1 D AH0 N T S","succeed":"S AH0 K S IY1 D","succeeded":"S AH0 K S IY1 D IH0 D","successive":"S AH0 K S EH1 S IH0 V","such":"S AH1 CH","suggest":"S AH0 JH EH1 S T","sunday":"S AH1 N D EY2","swallow":"S W AA1 L OW0","swear":"S W EH1 R","swimming":"S W IH1 M IH0 NG","ta":"T AA1","take":"T EY1 K","taking":"T EY1 K IH0 NG","talent":"T AE1 L AH0 N T","talk":"T AO1 K","teach":"T IY1 CH","team":"T IY1 M","tell":"T EH1 L","telling":"T EH1 L IH0 NG","th":"T IY1 EY1 CH","thang":"TH AE1 NG","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","them":"DH EH1 M","theo":"TH IY1 OW0","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","thi":"TH IY1","think":"TH IH1 NG K","this":"DH IH1 S","though":"DH OW1","threaten":"TH R EH1 T AH0 N","thrives":"TH R AY1 V Z","ti":"T IY1","time":"T AY1 M","tired":"T AY1 ER0 D","to":"T UW1","told":"T OW1 L D","tomorrow":"T AH0 M AA1 R OW2","too":"T UW1","town":"T AW1 N","train":"T R EY1 N","training":"T R EY1 N IH0 NG","trang":"T R AE1 NG","travel":"T R AE1 V AH0 L","treat":"T R IY1 T","tried":"T R AY1 D","try":"T R AY1","trying":"T R AY1 IH0 NG","turn":"T ER1 N","twenties":"T W EH1 N T IY0 Z","typing":"T AY1 P IH0 NG","university":"Y UW2 N AH0 V ER1 S AH0 T IY0","unnecessary":"AH0 N N EH1 S AH0 S EH2 R IY0","unsuccessful":"AH2 N S AH0 K S EH1 S F AH0 L","until":"AH0 N T IH1 L","up":"AH1 P","upbringing":"AH1 P B R IH2 NG IH0 NG","urge":"ER1 JH","us":"AH1 S","use":"Y UW1 S","using":"Y UW1 Z IH0 NG","verbs":"V ER1 B Z","very":"V EH1 R IY0","vi":"V AY1","violin":"V AY0 AH0 L IH1 N","violinist":"V AY0 AH0 L IH1 N AH0 S T","visited":"V IH1 Z IH0 T IH0 D","vow":"V AW1","wait":"W EY1 T","waits":"W EY1 T S","wake":"W EY1 K","waking":"W EY1 K IH0 NG","walk":"W AO1 K","want":"W AA1 N T","wants":"W AA1 N T S","warn":"W AO1 R N","was":"W AA1 Z","waste":"W EY1 S T","wasteful":"W EY1 S T F AH0 L","watch":"W AA1 CH","watched":"W AA1 CH T","we":"W IY1","we'll":"W IY1 L","we've":"W IY1 V","went":"W EH1 N T","were":"W ER1","what":"W AH1 T","when":"W EH1 N","which":"W IH1 CH","will":"W IH1 L","wilt":"W IH1 L T","win":"W IH1 N","winning":"W IH1 N IH0 NG","wish":"W IH1 SH","with":"W IH1 DH","won't":"W OW1 N T","work":"W ER1 K","working":"W ER1 K IH0 NG","workload":"W ER1 K L OW2 D","would":"W UH1 D","wouldn't":"W UH1 D AH0 N T","wrong":"R AO1 NG","xu":"Z UW1","year":"Y IH1 R","york":"Y AO1 R K","you":"Y UW1","you'll":"Y UW1 L","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'vi', DICT_MM = 'vi';
+var LBL = {loading:'đang tra…', listen:'Nghe', trlabel:'Nghĩa tiếng Việt', deflabel:'Định nghĩa tiếng Anh', notfound:'Không tìm thấy trong từ điển. Thử tra dạng gốc của từ (bỏ -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
