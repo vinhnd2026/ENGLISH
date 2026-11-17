@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 4 — Present Time | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-04-Present-Time.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-04-Present-Time-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 4 — Present Time</h1>
+  <p>Present time: Present Simple · Present Continuous · State verbs · Spelling of the -ing form</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+<div class="card">
+  <h2>1. The Present Simple</h2>
+
+  <h3>a) Permanent facts and truths</h3>
+  <div class="formula">S + V / V-s,es &nbsp;·&nbsp; <i>takes, flows, work…</i></div>
+  <p>Used for facts that are <b>always true and permanent</b> — common in scientific and geographical descriptions, and for situations that are generally true in everyday life.</p>
+  <div class="ex"><div class="en">The light from the Sun takes 8 mins 20 secs to reach the Earth.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The River Po flows into the Adriatic Sea.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I work in an office and live in a flat in the suburbs.</div><div class="tts"></div></div>
+
+  <h3>b) Habits and repeated actions</h3>
+  <p>Used for <b>habits and routines</b>; it often goes with an adverb of frequency (<i>usually, always, often…</i>).</p>
+  <div class="ex"><div class="en">I usually take the bus to work.</div><div class="tts"></div></div>
+
+  <h3>c) Summaries of events</h3>
+  <p>It can be used to <b>summarise the events</b> of a story, a film or a book, or in a chronological table of historical events.</p>
+  <div class="ex"><div class="en">In Chapter 1, Susan meets David, and agrees to go to the school dance with him.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">In 1789 the French Revolution begins.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. The Present Continuous</h2>
+  <div class="formula">S + am / is / are + V-ing</div>
+
+  <h3>a) Actions in progress, not finished</h3>
+  <p>Used for actions that are <b>temporary and unfinished</b> — happening at the moment of speaking, or around the present time.</p>
+  <div class="ex"><div class="en">I'm doing the washing-up.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm reading one of the Harry Potter books at the moment.</div><div class="tts"></div></div>
+
+  <h3>b) Temporary habits and repeated actions over a short period</h3>
+  <p>It can also describe a habit that lasts only for <b>a short period</b>, or a single repeated action — in that case a <b>time expression is needed</b>. Used with <i>always</i>, it often has an exaggerated or complaining tone.</p>
+  <div class="ex"><div class="en">At the moment we're sending all the mail by courier, because the Post Office is on strike.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Whenever I see Tom he's smoking.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You're always borrowing money from me!</div><div class="vi">(a complaint)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. State verbs — a common point of confusion</h2>
+
+  <h3>a) Verbs not normally used in the continuous form</h3>
+  <p>Some verbs describe <b>states that already last over a period of time</b>, so they are not normally used in the continuous form. These are called <b>state verbs</b>:</p>
+  <p><i>be, believe, cost, depend, have, hear, know, matter, smell, suppose, taste, think, understand</i></p>
+
+  <h3>b) A change of meaning in the continuous form</h3>
+  <p>A few of the verbs above <b>can</b> be used in the continuous form — but then their meaning changes to an “action” meaning:</p>
+  <div class="ex"><div class="en">Tim is being rather difficult at the moment.</div><div class="vi">(be = behave: how someone acts)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm having breakfast.</div><div class="vi">(have = eat)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm tasting the soup, to check if it needs more salt.</div><div class="vi">(taste = sample, try the flavour of)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm thinking of buying a new car.</div><div class="vi">(think = consider)</div><div class="tts"></div></div>
+
+  <h3>c) Simple or continuous: permanent or temporary?</h3>
+  <p>Many situations can use both forms: the simple form for a <b>permanent situation or general habit</b>, the continuous form for a <b>temporary</b> one.</p>
+  <div class="ex"><div class="en">I live in London.</div><div class="vi">(that is my permanent home)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'm living in London.</div><div class="vi">(just for a year — my home is in Athens)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Do you sleep a lot?</div><div class="vi">(asking about a habit)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Are you sleeping enough?</div><div class="vi">(asking about the present situation)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li>The <b>Present Simple</b> describes facts and habitual actions. The <b>Present Continuous</b> describes an action still in progress at the time of speaking.</li>
+    <li>Many verbs describing a <b>state</b> (not a momentary event) are used only in the simple form. Verbs of mental activity such as <i>understand, know</i> belong to this group.</li>
+    <li>Some verbs have both a state meaning and an event meaning, but <b>the two meanings are not the same</b>.</li>
+    <li>When we describe a photograph, we usually describe the scene as if it <b>were happening right now</b> → use the Present Continuous.</li>
+    <li>Present forms are also used to talk about <b>future time</b> (see Grammar 3 — Future time).</li>
+    <li>There are cases where English uses the <b>Present Perfect</b> where other languages use a present tense (see Grammar 2): <i>I've lived in Milan all my life.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the most suitable verb form</h2>
+  <p>Choose the correct verb form in each sentence.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) What sort of work ______?</p><div class="opts"><button type="button">do you do</button><button type="button">are you doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) I can't talk now. I ______ the dinner.</p><div class="opts"><button type="button">cook</button><button type="button">I'm cooking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) What shall we have? ______ fish?</p><div class="opts"><button type="button">Do you like</button><button type="button">Are you liking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Can I borrow this typewriter? Or ______ it?</p><div class="opts"><button type="button">do you use</button><button type="button">are you using</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) What ______ in the evenings?</p><div class="opts"><button type="button">do the people here do</button><button type="button">are the people here doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) Follow that bus. Then you ______ left.</p><div class="opts"><button type="button">turn</button><button type="button">are turning</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) A lot of people think that the Sun ______ around the Earth.</p><div class="opts"><button type="button">goes</button><button type="button">is going</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) Excuse me, ______ your newspaper? Could I borrow it?</p><div class="opts"><button type="button">do you read</button><button type="button">are you reading</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) ______ for the bus to Newcastle?</p><div class="opts"><button type="button">Do you wait</button><button type="button">Are you waiting</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Andy ______ his own house in the country.</p><div class="opts"><button type="button">builds</button><button type="button">is building</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Put the verbs in: Present Simple or Present Continuous?</h2>
+  <p>Put each verb in brackets into the present simple or the present continuous. In sentence a) the first box (<i>do we do</i>) is a worked example — here, fill in all 16 boxes.</p>
+  <div class="q"><p>a) There's nobody here, and the door's locked. What <input class="blank" data-answers="do we do" data-display="do we do"> (we do) now?</p></div>
+  <div class="q"><p>b) What <input class="blank" data-answers="are you looking" data-display="are you looking"> (you look) at? <input class="blank" data-answers="Am I wearing" data-display="Am I wearing"> (I wear) the wrong clothes?</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="am looking after" data-display="am looking after"> (look after) Jack's dog this weekend. <input class="blank" data-answers="Do you want" data-display="Do you want"> (you want) to take it for a walk?</p></div>
+  <div class="q"><p>d) Who <input class="blank" data-answers="drives" data-display="drives"> (drive) the Mercedes that's parked outside?</p></div>
+  <div class="q"><p>e) I <input class="blank" data-answers="still have" data-display="still have"> (still have) a pain in my leg but it <input class="blank" data-answers="is getting" data-display="is getting"> (get) better.</p></div>
+  <div class="q"><p>f) Who <input class="blank" data-answers="is Sue dancing" data-display="is Sue dancing"> (Sue dance) with? That's not her brother, is it?</p></div>
+  <div class="q"><p>g) Harry always <input class="blank" data-answers="looks" data-display="looks"> (look) untidy! He <input class="blank" data-answers="wears" data-display="wears"> (wear) dirty jeans.</p></div>
+  <div class="q"><p>h) I <input class="blank" data-answers="am writing" data-display="am writing"> (write) in reply to your advertisement in the Daily News.</p></div>
+  <div class="q"><p>i) That plant I bought <input class="blank" data-answers="is not growing|isn't growing" data-display="is not growing"> (not grow) very much. And I <input class="blank" data-answers="water" data-display="water"> (water) it every day.</p></div>
+  <div class="q"><p>j) Which hotel <input class="blank" data-answers="do you stay" data-display="do you stay"> (you stay) in when you <input class="blank" data-answers="come" data-display="come"> (come) here?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/16</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Present or future?</h2>
+  <p>Decide whether the verb form in each sentence refers to <b>present (Present)</b> time or <b>future (Future)</b> time. Sentence a) is the example: <i>future</i>.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) Where are you staying on Saturday night?</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) George retires at the end of next year.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) What are we doing when the guests arrive?</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) I'm trying really hard to understand this book.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Wait for me here until I get back.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Sue is leaving in the morning.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) I'm waiting for the bus.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I'm off now and I'm taking the car.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) They're showing a Woody Allen film on Channel 4 tonight.</p><div class="opts"><button type="button">Present</button><button type="button">Future</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) I'm going for a walk this evening.</p><div class="opts"><button type="button">Future</button><button type="button">Present</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — The -ing form and spelling rules</h2>
+  <p>Write the -ing form of the 10 verbs, then complete the 3 spelling rules. Rule bank: <i>drop the e and add -ing · double the consonant and add -ing · just add -ing</i>.</p>
+  <div class="q"><p>a) Write the -ing form: &nbsp; write → <input class="blank" data-answers="writing" data-display="writing"> &nbsp;·&nbsp; swim → <input class="blank" data-answers="swimming" data-display="swimming"> &nbsp;·&nbsp; get → <input class="blank" data-answers="getting" data-display="getting"> &nbsp;·&nbsp; admit → <input class="blank" data-answers="admitting" data-display="admitting"> &nbsp;·&nbsp; annoy → <input class="blank" data-answers="annoying" data-display="annoying"> &nbsp;·&nbsp; begin → <input class="blank" data-answers="beginning" data-display="beginning"> &nbsp;·&nbsp; study → <input class="blank" data-answers="studying" data-display="studying"> &nbsp;·&nbsp; like → <input class="blank" data-answers="liking" data-display="liking"> &nbsp;·&nbsp; try → <input class="blank" data-answers="trying" data-display="trying"> &nbsp;·&nbsp; decide → <input class="blank" data-answers="deciding" data-display="deciding"></p></div>
+  <div class="q"><p>b) Rule 1 — If a word ends in <i>vowel + consonant + -e</i> (like <i>write</i>): <input class="blank" data-answers="drop the e and add -ing" data-display="drop the e and add -ing"></p></div>
+  <div class="q"><p>c) Rule 2 — If a word ends in <i>vowel + consonant</i> (like <i>swim</i>): <input class="blank" data-answers="double the consonant and add -ing" data-display="double the consonant and add -ing"></p></div>
+  <div class="q"><p>d) Rule 3 — Words ending in <i>-y</i> (like <i>try, annoy</i>): <input class="blank" data-answers="just add -ing|add -ing" data-display="just add -ing"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Rewrite the sentences using a verb from the box</h2>
+  <p>Use a verb from the box to replace the <i>italic part</i> of each sentence. Verb box: <i>be · cost · feel · have · see · smell · taste · think of</i>. Example a) <i>This flower has a wonderful perfume.</i> → <i>The flower smells wonderful.</i></p>
+  <div class="q"><p>b) <i>I think you are behaving in a very silly way.</i><br>→ I think you <input class="blank" data-answers="are being" data-display="are being"> very silly.</p></div>
+  <div class="q"><p>c) <i>She is expecting a baby in the summer.</i><br>→ She <input class="blank" data-answers="is having" data-display="is having"> a baby in the summer.</p></div>
+  <div class="q"><p>d) <i>Nancy is considering moving to Scotland.</i><br>→ Nancy <input class="blank" data-answers="is thinking of" data-display="is thinking of"> moving to Scotland.</p></div>
+  <div class="q"><p>e) <i>Don't go in. They are holding a meeting.</i><br>→ Don't go in. They <input class="blank" data-answers="are having" data-display="are having"> a meeting.</p></div>
+  <div class="q"><p>f) <i>I am meeting Janet this evening actually.</i><br>→ I <input class="blank" data-answers="am seeing" data-display="am seeing"> Janet this evening actually.</p></div>
+  <div class="q"><p>g) <i>Good clothes are becoming more and more expensive.</i><br>→ Good clothes <input class="blank" data-answers="cost" data-display="cost"> more and more.</p></div>
+  <div class="q"><p>h) <i>I am trying the soup to see if it needs more salt.</i><br>→ I <input class="blank" data-answers="am tasting" data-display="am tasting"> the soup to see if it needs more salt.</p></div>
+  <div class="q"><p>i) <i>Helen is taking a bath at the moment.</i><br>→ Helen <input class="blank" data-answers="is having" data-display="is having"> a bath at the moment.</p></div>
+  <div class="q"><p>j) <i>I think that you would be happier in another job.</i><br>→ I <input class="blank" data-answers="feel" data-display="feel"> that you would be happier in another job.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Read and complete: Katherine's letter</h2>
+  <p>Put each verb in brackets into the present simple or the present continuous. Box (1) (<i>am just writing</i>) is a worked example — here, fill in all 20 boxes.</p>
+  <div class="q"><p>Dear Aunt Jean,<br>I (1) <input class="blank" data-answers="am just writing" data-display="am just writing"> (just write) to tell you how much I (2) <input class="blank" data-answers="appreciate" data-display="appreciate"> (appreciate) the money you sent me, and to tell you how I (3) <input class="blank" data-answers="am getting on" data-display="am getting on"> (get on) in my first term at university. Actually I (4) <input class="blank" data-answers="am really enjoying" data-display="am really enjoying"> (really enjoy) myself! I (5) <input class="blank" data-answers="am studying" data-display="am studying"> (study) quite hard as well, but at the moment I (6) <input class="blank" data-answers="am spending|spend" data-display="am spending / spend"> (spend) a lot of time just making friends. I (7) <input class="blank" data-answers="am still staying" data-display="am still staying"> (still stay) with my friend Sue, and I (8) <input class="blank" data-answers="am looking for" data-display="am looking for"> (look for) somewhere of my own to live. Only a few of the first-year students (9) <input class="blank" data-answers="live" data-display="live"> (live) in college here, and I (10) <input class="blank" data-answers="seem" data-display="seem"> (seem) to be spending a lot of time travelling backwards and forwards. I (11) <input class="blank" data-answers="go" data-display="go"> (go) to lectures every morning, and most afternoons I (12) <input class="blank" data-answers="study" data-display="study"> (study) in the library. In fact I (13) <input class="blank" data-answers="am writing" data-display="am writing"> (write) this letter instead of an essay on Hamlet! I (14) <input class="blank" data-answers="think" data-display="think"> (think) I'll buy some new clothes with the money you sent. Everything (15) <input class="blank" data-answers="costs" data-display="costs"> (cost) a lot here, and I (16) <input class="blank" data-answers="am saving" data-display="am saving"> (save) to buy a winter coat. It (17) <input class="blank" data-answers="gets" data-display="gets"> (get) really cold here in the evenings. I now (18) <input class="blank" data-answers="know" data-display="know"> (know) some other students and generally speaking we (19) <input class="blank" data-answers="have" data-display="have"> (have) quite a good time socially! I (20) <input class="blank" data-answers="am also learning" data-display="am also learning"> (also learn) to drive. See you soon.<br>Katherine</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>78</b> (Exercise 1: 10 · Exercise 2: 16 blanks · Exercise 3: 10 · Exercise 4: 13 blanks (10 -ing forms + 3 spelling rules) · Exercise 5: 9 blanks · Exercise 6: 20 blanks).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","above":"AH0 B AH1 V","accent":"AH0 K S EH1 N T","action":"AE1 K SH AH0 N","actions":"AE1 K SH AH0 N Z","activity":"AE0 K T IH1 V AH0 T IY0","acts":"AE1 K T S","actually":"AE1 K CH UW2 AH0 L IY0","add":"AE1 D","admit":"AH0 D M IH1 T","adriatic":"EY2 D R IY0 AE1 T IH0 K","adverb":"AE1 D V ER0 B","advertisement":"AE0 D V ER1 T AH0 Z M AH0 N T","after":"AE1 F T ER0","afternoons":"AE2 F T ER0 N UW1 N Z","again":"AH0 G EH1 N","agrees":"AH0 G R IY1 Z","all":"AO1 L","allen":"AE1 L AH0 N","already":"AO0 L R EH1 D IY0","also":"AO1 L S OW0","always":"AO1 L W EY2 Z","am":"AE1 M","american":"AH0 M EH1 R AH0 K AH0 N","an":"AE1 N","and":"AH0 N D","andy":"AE1 N D IY0","annoy":"AH0 N OY1","another":"AH0 N AH1 DH ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","appreciate":"AH0 P R IY1 SH IY0 EY2 T","are":"AA1 R","around":"ER0 AW1 N D","arrive":"ER0 AY1 V","as":"AE1 Z","asking":"AE1 S K IH0 NG","at":"AE1 T","athens":"AE1 TH AH0 N Z","aunt":"AE1 N T","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","baby":"B EY1 B IY0","back":"B AE1 K","backwards":"B AE1 K W ER0 D Z","bank":"B AE1 NG K","bath":"B AE1 TH","be":"B IY1","because":"B IH0 K AO1 Z","becoming":"B IH0 K AH1 M IH0 NG","begin":"B IH0 G IH1 N","begins":"B IH0 G IH1 N Z","behave":"B IH0 HH EY1 V","behaving":"B IH0 HH EY1 V IH0 NG","being":"B IY1 IH0 NG","believe":"B IH0 L IY1 V","belong":"B IH0 L AO1 NG","below":"B IH0 L OW1","better":"B EH1 T ER0","blanks":"B L AE1 NG K S","book":"B UH1 K","books":"B UH1 K S","borrow":"B AA1 R OW2","borrowing":"B AA1 R OW0 IH0 NG","both":"B OW1 TH","bought":"B AA1 T","box":"B AA1 K S","boxes":"B AA1 K S AH0 Z","brackets":"B R AE1 K AH0 T S","breakfast":"B R EH1 K F AH0 S T","british":"B R IH1 T IH0 SH","brother":"B R AH1 DH ER0","building":"B IH1 L D IH0 NG","builds":"B IH1 L D Z","bus":"B AH1 S","but":"B AH1 T","button":"B AH1 T AH0 N","buy":"B AY1","buying":"B AY1 IH0 NG","by":"B AY1","called":"K AO1 L D","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","case":"K EY1 S","cases":"K EY1 S AH0 Z","change":"CH EY1 N JH","changes":"CH EY1 N JH AH0 Z","channel":"CH AE1 N AH0 L","chapter":"CH AE1 P T ER0","check":"CH EH1 K","choose":"CH UW1 Z","chronological":"K R AA2 N AH0 L AA1 JH IH0 K AH0 L","click":"K L IH1 K","clothes":"K L OW1 DH Z","coat":"K OW1 T","cold":"K OW1 L D","college":"K AA1 L IH0 JH","come":"K AH1 M","common":"K AA1 M AH0 N","complaining":"K AH0 M P L EY1 N IH0 NG","complaint":"K AH0 M P L EY1 N T","complete":"K AH0 M P L IY1 T","confusion":"K AH0 N F Y UW1 ZH AH0 N","consider":"K AH0 N S IH1 D ER0","considering":"K AH0 N S IH1 D ER0 IH0 NG","consonant":"K AA1 N S AH0 N AH0 N T","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","cook":"K UH1 K","cooking":"K UH1 K IH0 NG","correct":"K ER0 EH1 K T","cost":"K AA1 S T","could":"K UH1 D","country":"K AH1 N T R IY0","courier":"K ER1 IY0 ER0","daily":"D EY1 L IY0","dance":"D AE1 N S","david":"D EY1 V IH0 D","day":"D EY1","dear":"D IH1 R","decide":"D IH2 S AY1 D","depend":"D IH0 P EH1 N D","describe":"D IH0 S K R AY1 B","describes":"D IH0 S K R AY1 B Z","describing":"D IH0 S K R AY1 B IH0 NG","descriptions":"D IH0 S K R IH1 P SH AH0 N Z","device":"D IH0 V AY1 S","dictionary":"D IH1 K SH AH0 N EH2 R IY0","difficult":"D IH1 F AH0 K AH0 L T","dinner":"D IH1 N ER0","dirty":"D ER1 T IY0","do":"D UW1","dog":"D AO1 G","doing":"D UW1 IH0 NG","don't":"D OW1 N T","door's":"D AO1 R Z","double":"D AH1 B AH0 L","drive":"D R AY1 V","drop":"D R AA1 P","each":"IY1 CH","earth":"ER1 TH","eat":"IY1 T","end":"EH1 N D","ending":"EH1 N D IH0 NG","ends":"EH1 N D Z","english":"IH1 NG G L IH0 SH","enjoy":"EH2 N JH OY1","enough":"IH0 N AH1 F","es":"EH1 S","essay":"EH0 S EY1","evening":"IY1 V N IH0 NG","evenings":"IY1 V N IH0 NG Z","event":"IH0 V EH1 N T","events":"IH0 V EH1 N T S","every":"EH1 V ER0 IY0","everyday":"EH1 V R IY0 D EY1","everything":"EH1 V R IY0 TH IH2 NG","exaggerated":"IH0 G Z AE1 JH ER0 EY2 T AH0 D","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","excuse":"IH0 K S K Y UW1 S","exercise":"EH1 K S ER0 S AY2 Z","expecting":"IH0 K S P EH1 K T IH0 NG","expensive":"IH0 K S P EH1 N S IH0 V","expression":"IH0 K S P R EH1 SH AH0 N","fact":"F AE1 K T","facts":"F AE1 K T S","feel":"F IY1 L","few":"F Y UW1","fill":"F IH1 L","film":"F IH1 L M","finished":"F IH1 N IH0 SH T","first":"F ER1 S T","first-year":"F ER1 S T Y IH2 R","fish":"F IH1 SH","flat":"F L AE1 T","flavour":"F L EY1 V ER0","flower":"F L AW1 ER0","flows":"F L OW1 Z","follow":"F AA1 L OW0","for":"F AO1 R","form":"F AO1 R M","forms":"F AO1 R M Z","forwards":"F AO1 R W ER0 D Z","french":"F R EH1 N CH","frequency":"F R IY1 K W AH0 N S IY0","friend":"F R EH1 N D","friends":"F R EH1 N D Z","from":"F R AH1 M","future":"F Y UW1 CH ER0","general":"JH EH1 N ER0 AH0 L","generally":"JH EH1 N ER0 AH0 L IY0","geographical":"JH IY2 AH0 G R AE1 F IH0 K AH0 L","george":"JH AO1 R JH","get":"G EH1 T","go":"G OW1","goes":"G OW1 Z","going":"G OW1 IH0 NG","good":"G UH1 D","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","group":"G R UW1 P","grow":"G R OW1","guests":"G EH1 S T S","habit":"HH AE1 B AH0 T","habits":"HH AE1 B AH0 T S","habitual":"HH AH0 B IH1 CH UW0 AH0 L","hamlet":"HH AE1 M L AH0 T","happening":"HH AE1 P AH0 N IH0 NG","happier":"HH AE1 P IY0 ER0","hard":"HH AA1 R D","harry":"HH EH1 R IY0","has":"HH AE1 Z","have":"HH AE1 V","having":"HH AE1 V IH0 NG","he":"HH IY1","he's":"HH IY1 Z","hear":"HH IY1 R","helen":"HH EH1 L AH0 N","her":"HH ER1","here":"HH IY1 R","him":"HH IH1 M","his":"HH IH1 Z","historical":"HH IH0 S T AO1 R IH0 K AH0 L","holding":"HH OW1 L D IH0 NG","home":"HH OW1 M","hotel":"HH OW0 T EH1 L","house":"HH AW1 S","how":"HH AW1","html":"EY2 CH T IY2 EH2 M EH1 L","i'll":"AY1 L","i'm":"AY1 M","i've":"AY1 V","if":"IH1 F","in":"IH0 N","index":"IH1 N D EH0 K S","ing":"IH1 NG","instead":"IH2 N S T EH1 D","into":"IH1 N T UW0","is":"IH1 Z","it":"IH1 T","italic":"AY0 T AE1 L IH0 K","items":"AY1 T AH0 M Z","its":"IH1 T S","jack's":"JH AE1 K S","janet":"JH AE1 N AH0 T","jean":"JH IY1 N","jeans":"JH IY1 N Z","job":"JH AA1 B","just":"JH AH1 S T","katherine":"K AE1 TH ER0 IH0 N","katherine's":"K AE1 TH ER0 IH0 N Z","key":"K IY1","know":"N OW1","languages":"L AE1 NG G W AH0 JH AH0 Z","last":"L AE1 S T","lasts":"L AE1 S T S","learn":"L ER1 N","leaving":"L IY1 V IH0 NG","lectures":"L EH1 K CH ER0 Z","left":"L EH1 F T","leg":"L EH1 G","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","letter":"L EH1 T ER0","library":"L AY1 B R EH0 R IY2","life":"L AY1 F","light":"L AY1 T","like":"L AY1 K","liking":"L AY1 K IH0 NG","listen":"L IH1 S AH0 N","lists":"L IH1 S T S","live":"L AY1 V","lived":"L IH1 V D","living":"L IH1 V IH0 NG","locked":"L AA1 K T","london":"L AH1 N D AH0 N","look":"L UH1 K","lot":"L AA1 T","mail":"M EY1 L","making":"M EY1 K IH0 NG","many":"M EH1 N IY0","matter":"M AE1 T ER0","me":"M IY1","meaning":"M IY1 N IH0 NG","meanings":"M IY1 N IH0 NG Z","meeting":"M IY1 T IH0 NG","meets":"M IY1 T S","mental":"M EH1 N T AH0 L","mercedes":"M ER0 S EY1 D IY0 Z","milan":"M AH0 L AA1 N","mins":"M IH1 N Z","mode":"M OW1 D","model":"M AA1 D AH0 L","moment":"M OW1 M AH0 N T","momentary":"M OW1 M AH0 N T EH2 R IY0","money":"M AH1 N IY0","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","moving":"M UW1 V IH0 NG","much":"M AH1 CH","my":"M AY1","myself":"M AY2 S EH1 L F","nancy":"N AE1 N S IY0","needed":"N IY1 D AH0 D","needs":"N IY1 D Z","new":"N UW1","newcastle":"N UW1 K AE2 S AH0 L","news":"N UW1 Z","newspaper":"N UW1 Z P EY2 P ER0","next":"N EH1 K S T","night":"N AY1 T","nobody":"N OW1 B AA2 D IY2","normally":"N AO1 R M AH0 L IY0","not":"N AA1 T","now":"N AW1","of":"AH1 V","off":"AO1 F","office":"AO1 F IH0 S","often":"AO1 F AH0 N","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","or":"AO1 R","other":"AH1 DH ER0","outside":"AW1 T S AY1 D","over":"OW1 V ER0","own":"OW1 N","page":"P EY1 JH","pain":"P EY1 N","parked":"P AA1 R K T","part":"P AA1 R T","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","perfume":"P ER0 F Y UW1 M","period":"P IH1 R IY0 AH0 D","permanent":"P ER1 M AH0 N AH0 N T","photograph":"F OW1 T AH0 G R AE2 F","pick":"P IH1 K","plant":"P L AE1 N T","po":"P OW1","point":"P OY1 N T","points":"P OY1 N T S","post":"P OW1 S T","potter":"P AA1 T ER0","practice":"P R AE1 K T AH0 S","present":"P R EH1 Z AH0 N T","press":"P R EH1 S","progress":"P R AA1 G R EH2 S","put":"P UH1 T","quite":"K W AY1 T","rather":"R AE1 DH ER0","reach":"R IY1 CH","read":"R EH1 D","reading":"R IY1 D IH0 NG","really":"R IH1 L IY0","refers":"R AH0 F ER1 Z","reload":"R IY0 L OW1 D","repeated":"R IH0 P IY1 T IH0 D","replace":"R IY2 P L EY1 S","reply":"R IH0 P L AY1","reset":"R IY0 S EH1 T","retires":"R IH0 T AY1 R Z","revolution":"R EH2 V AH0 L UW1 SH AH0 N","rewrite":"R IY0 R AY1 T","right":"R AY1 T","river":"R IH1 V ER0","routines":"R UW0 T IY1 N Z","rows":"R OW1 Z","rule":"R UW1 L","rules":"R UW1 L Z","salt":"S AO1 L T","same":"S EY1 M","sample":"S AE1 M P AH0 L","saturday":"S AE1 T ER0 D IY0","save":"S EY1 V","scene":"S IY1 N","school":"S K UW1 L","scientific":"S AY2 AH0 N T IH1 F IH0 K","score":"S K AO1 R","scotland":"S K AA1 T L AH0 N D","sea":"S IY1","secs":"S EH1 K S","see":"S IY1","seem":"S IY1 M","sending":"S EH1 N D IH0 NG","sent":"S EH1 N T","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","shall":"SH AE1 L","she":"SH IY1","short":"SH AO1 R T","show":"SH OW1","showing":"SH OW1 IH0 NG","silly":"S IH1 L IY0","simple":"S IH1 M P AH0 L","single":"S IH1 NG G AH0 L","situation":"S IH2 CH UW0 EY1 SH AH0 N","situations":"S IH2 CH UW0 EY1 SH AH0 N Z","sleep":"S L IY1 P","sleeping":"S L IY1 P IH0 NG","smell":"S M EH1 L","smells":"S M EH1 L Z","smoking":"S M OW1 K IH0 NG","so":"S OW1","socially":"S OW1 SH AH0 L IY0","some":"S AH1 M","someone":"S AH1 M W AH2 N","somewhere":"S AH1 M W EH2 R","soon":"S UW1 N","sort":"S AO1 R T","soup":"S UW1 P","speaking":"S P IY1 K IH0 NG","specific":"S P AH0 S IH1 F IH0 K","speed":"S P IY1 D","spelling":"S P EH1 L IH0 NG","spend":"S P EH1 N D","spending":"S P EH1 N D IH0 NG","start":"S T AA1 R T","state":"S T EY1 T","states":"S T EY1 T S","stay":"S T EY1","staying":"S T EY1 IH0 NG","still":"S T IH1 L","stop":"S T AA1 P","story":"S T AO1 R IY0","strike":"S T R AY1 K","students":"S T UW1 D AH0 N T S","study":"S T AH1 D IY0","suburbs":"S AH1 B ER0 B Z","such":"S AH1 CH","sue":"S UW1","suitable":"S UW1 T AH0 B AH0 L","summaries":"S AH1 M ER0 IY0 Z","summarise":"S AH1 M ER0 AY2 Z","summary":"S AH1 M ER0 IY0","summer":"S AH1 M ER0","sun":"S AH1 N","suppose":"S AH0 P OW1 Z","susan":"S UW1 Z AH0 N","swim":"S W IH1 M","table":"T EY1 B AH0 L","take":"T EY1 K","takes":"T EY1 K S","taking":"T EY1 K IH0 NG","talk":"T AO1 K","tap":"T AE1 P","taste":"T EY1 S T","tasting":"T EY1 S T IH0 NG","tell":"T EH1 L","temporary":"T EH1 M P ER0 EH2 R IY0","tense":"T EH1 N S","term":"T ER1 M","test":"T EH1 S T","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","their":"DH EH1 R","then":"DH EH1 N","there":"DH EH1 R","there's":"DH EH1 R Z","these":"DH IY1 Z","they":"DH EY1","they're":"DH EH1 R","think":"TH IH1 NG K","thinking":"TH IH1 NG K IH0 NG","this":"DH IH1 S","tim":"T IH1 M","time":"T AY1 M","to":"T UW1","tom":"T AA1 M","tone":"T OW1 N","tonight":"T AH0 N AY1 T","total":"T OW1 T AH0 L","travelling":"T R AE1 V AH0 L IH0 NG","true":"T R UW1","truths":"T R UW1 TH S","try":"T R AY1","trying":"T R AY1 IH0 NG","turn":"T ER1 N","turning":"T ER1 N IH0 NG","two":"T UW1","type":"T AY1 P","typewriter":"T AY1 P R AY2 T ER0","under":"AH1 N D ER0","understand":"AH2 N D ER0 S T AE1 N D","unfinished":"AH0 N F IH1 N IH0 SH T","university":"Y UW2 N AH0 V ER1 S AH0 T IY0","untidy":"AH0 N T AY1 D IY0","until":"AH0 N T IH1 L","use":"Y UW1 S","used":"Y UW1 Z D","uses":"Y UW1 S AH0 Z","using":"Y UW1 Z IH0 NG","usually":"Y UW1 ZH AH0 W AH0 L IY0","verb":"V ER1 B","verbs":"V ER1 B Z","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","voice":"V OY1 S","voices":"V OY1 S AH0 Z","vowel":"V AW1 AH0 L","wait":"W EY1 T","waiting":"W EY1 T IH0 NG","walk":"W AO1 K","want":"W AA1 N T","washing-up":"W AA1 SH IH0 NG AH2 P","water":"W AO1 T ER0","way":"W EY1","we":"W IY1","we're":"W IY1 R","wear":"W EH1 R","weekend":"W IY1 K EH2 N D","well":"W EH1 L","were":"W ER1","what":"W AH1 T","when":"W EH1 N","whenever":"W EH0 N EH1 V ER0","where":"W EH1 R","whether":"W EH1 DH ER0","which":"W IH1 CH","who":"HH UW1","will":"W IH1 L","winter":"W IH1 N T ER0","with":"W IH1 DH","wonderful":"W AH1 N D ER0 F AH0 L","woody":"W UH1 D IY0","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","would":"W UH1 D","write":"R AY1 T","writing":"R AY1 T IH0 NG","wrong":"R AO1 NG","year":"Y IH1 R","you":"Y UW1","you're":"Y UH1 R","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

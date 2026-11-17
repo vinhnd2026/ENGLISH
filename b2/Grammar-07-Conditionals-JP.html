@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 7 — Conditionals | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-07-Conditionals.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-07-Conditionals-EN.html">🇬🇧 English</a>
+  <h1>Grammar 7 — Conditionals</h1>
+  <p>条件文（Conditionals）：第一条件文・第二条件文・第三条件文・混合条件文・unless / provided / as long as・should・were to</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+
+<div class="card">
+  <h2>1. 現実的・起こりそうな状況 — 第一条件文（First conditional）</h2>
+  <div class="formula">If + 現在形, &nbsp;will / won't + 動詞の原形</div>
+  <p>第一条件文（first conditional）は<b>現実的、または起こる可能性のある</b>状況を表します。<i>if</i> の後ろは現在形ですが、指している時間は未来です。結果の節では <i>will / won't</i> が一般的で、<i>going to</i> や <i>can</i> も使えます。</p>
+  <div class="ex"><div class="en">If you fall, I won't be able to catch you!</div><div class="vi">落ちたら、受け止められないよ！（実際に起こりうる）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If it rains, we're going to get wet.</div><div class="vi">雨が降れば、私たちは濡れてしまう。（will の代わりに going to）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If the cases are too heavy, I can help you carry them.</div><div class="vi">スーツケースが重すぎたら、運ぶのを手伝うよ。（結果の節の can）</div><div class="tts"></div></div>
+  <h3>Unless、provided、as long as</h3>
+  <p><i>Unless</i> は <i>If … not</i>（〜しなければ／〜でない限り）という意味です。<i>Provided</i> や <i>as long as</i> も条件を導くことができます（〜するなら／〜する限り）。</p>
+  <div class="ex"><div class="en">Unless you leave at once, I'll call the police. (= If you don't leave at once, I'll call the police.)</div><div class="vi">今すぐ出ていかなければ、警察を呼ぶぞ。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Provided you leave now, you'll catch the train.</div><div class="vi">今すぐ出発すれば、電車に間に合うよ。</div><div class="tts"></div></div>
+  <h3>命令文で結果を表す／<i>if</i> の代わりに <i>should</i></h3>
+  <p>結果の節の代わりに命令文を使うこともよくあります：<i>Get me some cigarettes, and I'll pay you later.</i> また、<i>if</i> の代わりに <i>should</i> を使うと「万が一〜したら」という意味になり、起こる可能性が低く感じられます。</p>
+  <div class="ex"><div class="en">Should you see John, can you give him a message?</div><div class="vi">もしジョンに会うことがあったら、伝言を伝えてもらえますか。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 現実ではない・想像上の現在／未来 — 第二条件文（Second conditional）</h2>
+  <div class="formula">If + 過去形, &nbsp;would + 動詞の原形</div>
+  <p>第二条件文（second conditional）は<b>現実ではない、想像上の</b>状況を表します。<i>if</i> の後ろは過去形ですが、指している時間は未来です。結果の節では <i>would</i> が一般的で、不確かな場合は <i>might / could</i> も使います。</p>
+  <div class="ex"><div class="en">If you fell, you would hurt yourself.</div><div class="vi">（もし落ちるようなことがあれば）けがをするだろう。（想像上の状況）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you became a millionaire, you might be unhappy.</div><div class="vi">大金持ちになっても、幸せとは限らないかもしれない。（might＝不確かな予測）</div><div class="tts"></div></div>
+  <h3>were と were to</h3>
+  <p>丁寧な言い方では、すべての人称で <i>was</i> の代わりに <i>were</i> がよく使われます。<i>Were to</i> も第二条件文の表し方の1つです。</p>
+  <div class="ex"><div class="en">If I were taller, I'd join the basketball team. · If I were you, I'd leave now.</div><div class="vi">背が高ければ、バスケットボール部に入るのに。・私があなたなら、今すぐ出発します。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If they were to offer me the job, I'd turn it down.</div><div class="vi">もしその仕事を提示されても、断るだろう。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. 現実ではない過去 — 第三条件文（Third conditional）と混合条件文</h2>
+  <div class="formula">If + 過去完了形, &nbsp;would have + 過去分詞</div>
+  <p>第三条件文（third conditional）は<b>過去の現実ではない</b>状況を表します。実際に起こったこととは違う過去を想像します。結果の節には <i>might / could</i> もよく使われます。</p>
+  <div class="ex"><div class="en">If John had studied more, he would have got better marks.</div><div class="vi">ジョンがもっと勉強していたら（実際はしなかった）、もっと良い成績が取れていただろう。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you had tried harder, you might have succeeded.</div><div class="vi">もっと努力していたら、成功していたかもしれない。</div><div class="tts"></div></div>
+  <h3>混合条件文（Mixed conditions）</h3>
+  <p>過去の出来事の結果が現在まで続いている場合は、<i>if</i> 節を第三条件文の形、結果の節を第二条件文の形にできます。</p>
+  <div class="ex"><div class="en">If you had saved some money, you wouldn't be so hard up.</div><div class="vi">お金を少し貯めていたら、今こんなにお金に困ってはいないだろう。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. if のその他の使い方</h2>
+  <p><i>If</i> には <i>when / whenever</i>（〜するたびに）という意味があり、このタイプでは両方の節とも現在形です。<i>If</i> には「〜というのが本当なら」という意味もあります。また、<i>if</i> ＋過去形は、実際に可能性があった、または真実だと分かっている過去の出来事にも使われ、特別な文法ルールはありません。</p>
+  <div class="ex"><div class="en">If/When/Whenever it rains, we play football indoors instead.</div><div class="vi">雨が降るときはいつも、代わりに室内でサッカーをする。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">If you missed the TV programme last night, you can borrow my recording.</div><div class="vi">昨夜そのテレビ番組を見逃したなら、私の録画を貸してあげるよ。</div><div class="tts"></div></div>
+</div>
+
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>第一条件文の現在形は、現在ではなく<b>未来</b>のことを指します。</li>
+    <li>第二条件文の過去形は、過去ではなく<b>未来</b>のことを指します。</li>
+    <li>第一条件文と第二条件文の違いは<b>話し手の態度</b>で決まることがあります。起こる可能性が高い→第一条件文、低い・想像上→第二条件文。<i>If she falls, she'll land in the safety net.</i>（本当に落ちる可能性がある）に対して <i>If she fell, she would land in the safety net.</i>（仮定の話）。</li>
+    <li>予測が不確かなときは、条件文に <i>might</i> や <i>could</i> がよく使われます。</li>
+    <li><b>混合条件文</b>も可能で、特に過去の出来事の結果が現在に残っている場合に使います：<i>If Brenda hadn't stolen the money, she wouldn't be in prison.</i></li>
+    <li><i>Unless、provided、as long as</i> はいずれも条件を導くことができます。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+<div class="card" id="ex1">
+<h2>問題1 — 適切な動詞の形を選ぼう（1）</h2>
+<p>各空欄に最も適切な動詞の形を選んでください。元の文には空欄が2つあり、2つの質問に分けています（もう一方の空欄には正解が入っています）。</p>
+<div class="quiz-mc">
+<div class="q" data-correct="0"><p>a-1) If the machine ______, you press this button.</p><div class="opts"><button type="button">stops</button><button type="button">will stop</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>a-2) If the machine stops, you ______ this button.</p><div class="opts"><button type="button">press</button><button type="button">will press</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>b-1) I can't understand what he sees in her! If anyone ______ me like that, I would be extremely angry!</p><div class="opts"><button type="button">treats</button><button type="button">will treat</button><button type="button">treated</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>b-2) I can't understand what he sees in her! If anyone treated me like that, I ______ extremely angry!</p><div class="opts"><button type="button">am</button><button type="button">will be</button><button type="button">would be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>c-1) If you ______ me with this exercise, I will do the same for you one day.</p><div class="opts"><button type="button">help</button><button type="button">helped</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>c-2) If you help me with this exercise, I ______ do the same for you one day.</p><div class="opts"><button type="button">will</button><button type="button">would</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-1) According to the timetable, if the train ______ on time, we will arrive at 5.30.</p><div class="opts"><button type="button">leaves</button><button type="button">left</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-2) According to the timetable, if the train leaves on time, we ______ arrive at 5.30.</p><div class="opts"><button type="button">will</button><button type="button">would</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>e-1) If it ______ fine tomorrow, we will go to the coast.</p><div class="opts"><button type="button">is</button><button type="button">will be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>e-2) If it is fine tomorrow, we ______ to the coast.</p><div class="opts"><button type="button">go</button><button type="button">will go</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>f-1) If we ______ a taxi, we will get there before the play starts.</p><div class="opts"><button type="button">find</button><button type="button">found</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>f-2) If we find a taxi, we ______ there before the play starts.</p><div class="opts"><button type="button">will get</button><button type="button">would get</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>g-1) It's quite simple really. If you ______ these tablets every day, then you will lose weight.</p><div class="opts"><button type="button">take</button><button type="button">will take</button><button type="button">took</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>g-2) It's quite simple really. If you take these tablets every day, then you ______ weight.</p><div class="opts"><button type="button">lose</button><button type="button">will lose</button><button type="button">lost</button><button type="button">would lose</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>h-1) I don't like this flat. I think I ______ happier if I lived in a house in the country.</p><div class="opts"><button type="button">am</button><button type="button">will be</button><button type="button">I'd be</button></div><div class="fb"></div></div>
+<div class="q" data-correct="3"><p>h-2) I don't like this flat. I think I'd be happier if I ______ in a house in the country.</p><div class="opts"><button type="button">live</button><button type="button">will live</button><button type="button">would live</button><button type="button">lived</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>i-1) I don't know how to play baseball, but I'm sure that if I ______, I would play a lot better than anyone in this awful team!</p><div class="opts"><button type="button">will do</button><button type="button">did</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>i-2) I don't know how to play baseball, but I'm sure that if I did, I ______ a lot better than anyone in this awful team!</p><div class="opts"><button type="button">play</button><button type="button">will play</button><button type="button">would play</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>j-1) If I ______ you tonight, will you be in?</p><div class="opts"><button type="button">phone</button><button type="button">will phone</button><button type="button">phoned</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-2) If I phone you tonight, ______ in?</p><div class="opts"><button type="button">are you</button><button type="button">will you be</button><button type="button">would you be</button></div><div class="fb"></div></div>
+</div>
+<span class="score">問題1の点数： <span class="score-num">0</span>/20</span>
+</div>
+<div class="card" id="ex2">
+<h2>問題2 — 適切な動詞の形を選ぼう（2）</h2>
+<p>各空欄に最も適切な動詞の形を選んでください（問題1と同じ分け方です）。</p>
+<div class="quiz-mc">
+<div class="q" data-correct="1"><p>a-1) Why didn't you tell me? If you ______ me, I would have helped you.</p><div class="opts"><button type="button">told</button><button type="button">had told</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>a-2) Why didn't you tell me? If you had told me, I ______ you.</p><div class="opts"><button type="button">had helped</button><button type="button">would have helped</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>b-1) If Bill ______ the car, he wouldn't be in prison now.</p><div class="opts"><button type="button">didn't steal</button><button type="button">hadn't stolen</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>b-2) If Bill hadn't stolen the car, he ______ in prison now.</p><div class="opts"><button type="button">wasn't</button><button type="button">wouldn't be</button><button type="button">hadn't been</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>c-1) If Ann ______ so fast, her car wouldn't have crashed into a tree.</p><div class="opts"><button type="button">wasn't driving</button><button type="button">didn't drive</button><button type="button">hadn't driven</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>c-2) If Ann hadn't driven so fast, her car ______ into a tree.</p><div class="opts"><button type="button">didn't crash</button><button type="button">wouldn't crash</button><button type="button">wouldn't have crashed</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>d-1) Let me give you some advice. If you ______ less, you wouldn't feel so tired.</p><div class="opts"><button type="button">smoked</button><button type="button">would smoke</button><button type="button">had smoked</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>d-2) Let me give you some advice. If you smoked less, you ______ so tired.</p><div class="opts"><button type="button">didn't feel</button><button type="button">wouldn't feel</button><button type="button">wouldn't have felt</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>e-1) What bad luck! If Alan ______ over, he would have won the race.</p><div class="opts"><button type="button">didn't fall</button><button type="button">hadn't fallen</button><button type="button">wouldn't fall</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>e-2) What bad luck! If Alan hadn't fallen over, he ______ the race.</p><div class="opts"><button type="button">won</button><button type="button">would win</button><button type="button">would have won</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>f-1) If you ______ me last week, I would have been able to come.</p><div class="opts"><button type="button">invited</button><button type="button">had invited</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>f-2) If you had invited me last week, I ______ to come.</p><div class="opts"><button type="button">was able</button><button type="button">had been able</button><button type="button">would have been able</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>g-1) I'm sure your letter hasn't arrived yet. If it ______, I'm sure I would have noticed it.</p><div class="opts"><button type="button">came</button><button type="button">had come</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p>g-2) I'm sure your letter hasn't arrived yet. If it had come, I'm sure I ______ it.</p><div class="opts"><button type="button">noticed</button><button type="button">had noticed</button><button type="button">would have noticed</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>h-1) We have a suggestion to make. How ______ if we offered you the job of assistant manager?</p><div class="opts"><button type="button">do you feel</button><button type="button">would you feel</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>h-2) We have a suggestion to make. How would you feel if we ______ you the job of assistant manager?</p><div class="opts"><button type="button">offered</button><button type="button">would offer</button><button type="button">had offered</button></div><div class="fb"></div></div>
+<div class="q" data-correct="0"><p>i-1) If you ______ us the money, we would pay you back next week.</p><div class="opts"><button type="button">lent</button><button type="button">had lent</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>i-2) If you lent us the money, we ______ you back next week.</p><div class="opts"><button type="button">paid</button><button type="button">would pay</button><button type="button">had paid</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-1) Terry never catches anything when he goes fishing. And if he ______ a fish, he would throw it back!</p><div class="opts"><button type="button">catches</button><button type="button">caught</button><button type="button">had caught</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p>j-2) Terry never catches anything when he goes fishing. And if he caught a fish, he ______ it back!</p><div class="opts"><button type="button">throws</button><button type="button">would throw</button></div><div class="fb"></div></div>
+</div>
+<span class="score">問題2の点数： <span class="score-num">0</span>/20</span>
+</div>
+<div class="card fill-sec" id="ex3">
+<h2>問題3 — かっこ内の動詞を適切な形にしよう</h2>
+<p>かっこ内の動詞を適切な形にしてください。a) の <i>had known</i> は解答例です。</p>
+<div class="q"><p>a) Why didn't you phone? If I (know) <input class="blank" data-answers="had known" data-display="had known"> you were coming, I (meet) <input class="blank" data-answers="would have met" data-display="would have met"> you at the airport.</p></div>
+<div class="q"><p>b) It's a pity you missed the party. If you (come) <input class="blank" data-answers="had come" data-display="had come">, you (meet) <input class="blank" data-answers="would have met" data-display="would have met"> my friends from Hungary.</p></div>
+<div class="q"><p>c) If we (have) <input class="blank" data-answers="had" data-display="had"> some tools, we (be able) <input class="blank" data-answers="would be able" data-display="would be able"> to repair the car, but we haven't got any with us.</p></div>
+<div class="q"><p>d) If you (not help) <input class="blank" data-answers="hadn't helped|had not helped|didn't help|did not help" data-display="hadn't helped"> me, I (not pass) <input class="blank" data-answers="wouldn't have passed|would not have passed" data-display="wouldn't have passed"> the exam.</p></div>
+<div class="q"><p>e) It's a beautiful house, and I (buy) <input class="blank" data-answers="would buy" data-display="would buy"> it if I (have) <input class="blank" data-answers="had" data-display="had"> the money, but I can't afford it.</p></div>
+<div class="q"><p>f) I can't imagine what I (do) <input class="blank" data-answers="would do" data-display="would do"> with the money if I (win) <input class="blank" data-answers="won" data-display="won"> the lottery.</p></div>
+<div class="q"><p>g) If Mark (train) <input class="blank" data-answers="trained" data-display="trained"> harder, he (be) <input class="blank" data-answers="would be" data-display="would be"> a good runner.</p></div>
+<div class="q"><p>h) If Claire (listen) <input class="blank" data-answers="had listened" data-display="had listened"> to her mother, she (not marry) <input class="blank" data-answers="wouldn't have married|would not have married" data-display="wouldn't have married"> David in the first place.</p></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+<span class="score">問題3の点数： <span class="fill-score">—</span>/16</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card fill-sec" id="ex4">
+<h2>問題4 — 条件文を書き換えよう</h2>
+<p>意味を変えずに、与えられた言葉で始めて各文を書き換えてください。文の続きを入力してください。</p>
+<div class="note">📌 <b>例 a)</b> I didn't have an umbrella with me and so I got wet. → <i>I wouldn't have got wet if I'd had an umbrella with me.</i></div>
+<div class="q"><p>b) I'll call the police if you don't leave me alone! — <b>Unless …</b></p><input class="blank wide" data-answers="you leave me alone, I'll call the police|you leave me alone, I will call the police" data-display="you leave me alone, I'll call the police" placeholder="you leave me alone, …"><div class="fb"></div></div>
+<div class="q"><p>c) In the snowy weather we don't go to school. — <b>If …</b></p><input class="blank wide" data-answers="it's snowing, we don't go to school|it is snowing, we don't go to school|it's snowing, we do not go to school" data-display="it's snowing, we don't go to school" placeholder="it's snowing, …"><div class="fb"></div></div>
+<div class="q"><p>d) Without Jack's help, I wouldn't have been able to move the table. — <b>If …</b></p><input class="blank wide" data-answers="Jack hadn't helped me, I wouldn't have been able to move the table|Jack hadn't helped me, I would not have been able to move the table" data-display="Jack hadn't helped me, I wouldn't have been able to move the table" placeholder="Jack hadn't helped me, …"><div class="fb"></div></div>
+<div class="q"><p>e) Make me some coffee, and I'll give you one of my biscuits. — <b>If …</b></p><input class="blank wide" data-answers="you make me some coffee, I'll give you one of my biscuits|you make me some coffee, I will give you one of my biscuits" data-display="you make me some coffee, I'll give you one of my biscuits" placeholder="you make me some coffee, …"><div class="fb"></div></div>
+<div class="q"><p>f) If you hadn't told me about Sue's hair, I wouldn't have noticed. — <b>Unless …</b></p><input class="blank wide" data-answers="you'd told me about Sue's hair, I wouldn't have noticed|you had told me about Sue's hair, I wouldn't have noticed|you'd told me about Sue's hair, I would not have noticed" data-display="you'd told me about Sue's hair, I wouldn't have noticed" placeholder="you'd told me about Sue's hair, …"><div class="fb"></div></div>
+<div class="q"><p>g) If you see Peter, tell him to be here at 8.00. — <b>Should …</b></p><input class="blank wide" data-answers="you see Peter, tell him to be here at 8.00" data-display="you see Peter, tell him to be here at 8.00" placeholder="you see Peter, …"><div class="fb"></div></div>
+<div class="q"><p>h) I wouldn't accept if you asked me to marry you! — <b>If you were …</b></p><input class="blank wide" data-answers="to ask me to marry you, I wouldn't accept|to ask me to marry you, I would not accept" data-display="to ask me to marry you, I wouldn't accept" placeholder="to ask me to marry you, …"><div class="fb"></div></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+<span class="score">問題4の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card" id="ex5">
+<h2>問題5 — 場面に合う文を選ぼう</h2>
+<p>各場面は言葉で説明されています。場面に最も合う条件文を選んでください。</p>
+<div class="quiz-mc">
+<div class="q" data-correct="0"><p><b>場面 a)</b> 空中ブランコの芸人が高いところで演技していて、下には安全ネットがある。彼女は本当に落ちる可能性がある。</p><div class="opts"><button type="button">If she falls, she'll land in the safety net.</button><button type="button">If she fell, she'd land in the safety net.</button><button type="button">If she had fallen, she would have landed in the safety net.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="2"><p><b>場面 b)</b> 友達2人がレストランでまずい食事を終えたところ。スープは注文しなかった — そして今、そのことをよかったと思っている。</p><div class="opts"><button type="button">It's worse if we order soup.</button><button type="button">It would be worse if we ordered soup.</button><button type="button">It would have been worse if we'd ordered soup.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p><b>場面 c)</b> 女性が公園で、とても大きく獰猛そうな犬を見ている。その犬は彼女の犬ではない — あんな犬を飼ったら、と想像しているだけだ。</p><div class="opts"><button type="button">If I own a dog like that, I'll keep it on a lead.</button><button type="button">If I owned a dog like that, I'd keep it on a lead.</button><button type="button">If I had owned a dog like that, I'd have kept it on a lead.</button></div><div class="fb"></div></div>
+<div class="q" data-correct="1"><p><b>場面 d)</b> 美術館の来館者が抽象画を眺めていて、本物の人物に似た肖像画だったらいいのにと思っている。</p><div class="opts"><button type="button">I like it more if it looks like someone I know.</button><button type="button">I'd like it more if it looked like someone I knew.</button><button type="button">I'd have liked it more if it had looked like someone I knew.</button></div><div class="fb"></div></div>
+</div>
+<span class="score">問題5の点数： <span class="score-num">0</span>/4</span>
+</div>
+<div class="card fill-sec" id="ex6">
+<h2>問題6 — 短縮形で書き換えよう</h2>
+<p>各文を短縮形（contracted forms）を使って書き換えてください。</p>
+<div class="note">📌 <b>例 a)</b> If I had known, I would have told you. → <i>If I'd known, I'd have told you.</i></div>
+<div class="q"><p>b) Tony would not have crashed if he had been more careful.</p><input class="blank wide" data-answers="Tony wouldn't have crashed if he'd been more careful.|Tony wouldn't have crashed if he had been more careful." data-display="Tony wouldn't have crashed if he'd been more careful." placeholder="Tony wouldn't have crashed …"><div class="fb"></div></div>
+<div class="q"><p>c) If I had my credit card with me, I would have bought the coat.</p><input class="blank wide" data-answers="If I'd had my credit card with me, I'd have bought the coat." data-display="If I'd had my credit card with me, I'd have bought the coat." placeholder="If I'd had …"><div class="fb"></div></div>
+<div class="q"><p>d) You would not have got lost if you had taken the map.</p><input class="blank wide" data-answers="You wouldn't have got lost if you'd taken the map.|You wouldn't have got lost if you had taken the map." data-display="You wouldn't have got lost if you'd taken the map." placeholder="You wouldn't have got lost …"><div class="fb"></div></div>
+<div class="q"><p>e) If Graham had not lost his watch, he would not have missed the plane.</p><input class="blank wide" data-answers="If Graham hadn't lost his watch, he wouldn't have missed the plane.|If Graham hadn't lost his watch, he would not have missed the plane." data-display="If Graham hadn't lost his watch, he wouldn't have missed the plane." placeholder="If Graham hadn't lost …"><div class="fb"></div></div>
+<div class="q"><p>f) If you had not told me her name, I would have found out from someone else.</p><input class="blank wide" data-answers="If you hadn't told me her name, I would've found out from someone else.|If you hadn't told me her name, I would have found out from someone else." data-display="If you hadn't told me her name, I would've found out from someone else." placeholder="If you hadn't told me …"><div class="fb"></div></div>
+<div class="q"><p>g) If I were you, I would try getting up earlier.</p><input class="blank wide" data-answers="If I were you, I'd try getting up earlier." data-display="If I were you, I'd try getting up earlier." placeholder="If I were you, …"><div class="fb"></div></div>
+<div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ 問題6をチェック</button><button type="button" onclick="showFill('ex6')">👁 答えを見る</button><button type="button" onclick="resetFill('ex6')">↺ やり直す</button></div>
+<span class="score">問題6の点数： <span class="fill-score">—</span>/6</span> <span class="fb fill-fb"></span>
+</div>
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>73問（問題1：20 · 問題2：20 · 問題3：16か所 · 問題4：7 · 問題5：4 · 問題6：6）</b></p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"able":"EY1 B AH0 L","about":"AH0 B AW1 T","accept":"AE0 K S EH1 P T","according":"AH0 K AO1 R D IH0 NG","advice":"AE0 D V AY1 S","afford":"AH0 F AO1 R D","airport":"EH1 R P AO2 R T","alan":"AE1 L AH0 N","alone":"AH0 L OW1 N","am":"AE1 M","an":"AE1 N","and":"AH0 N D","angry":"AE1 NG G R IY0","ann":"AE1 N","any":"EH1 N IY0","anyone":"EH1 N IY0 W AH2 N","anything":"EH1 N IY0 TH IH2 NG","are":"AA1 R","arrive":"ER0 AY1 V","arrived":"ER0 AY1 V D","as":"AE1 Z","asked":"AE1 S K T","assistant":"AH0 S IH1 S T AH0 N T","at":"AE1 T","awful":"AA1 F AH0 L","back":"B AE1 K","bad":"B AE1 D","baseball":"B EY1 S B AO1 L","basketball":"B AE1 S K AH0 T B AO2 L","be":"B IY1","beautiful":"B Y UW1 T AH0 F AH0 L","became":"B IH0 K EY1 M","been":"B IH1 N","before":"B IH0 F AO1 R","better":"B EH1 T ER0","bill":"B IH1 L","biscuits":"B IH1 S K AH0 T S","borrow":"B AA1 R OW2","bought":"B AA1 T","brenda":"B R EH1 N D AH0","but":"B AH1 T","button":"B AH1 T AH0 N","buy":"B AY1","call":"K AO1 L","came":"K EY1 M","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","card":"K AA1 R D","careful":"K EH1 R F AH0 L","carry":"K AE1 R IY0","cases":"K EY1 S AH0 Z","catch":"K AE1 CH","catches":"K AE1 CH AH0 Z","caught":"K AA1 T","cigarettes":"S IH2 G ER0 EH1 T S","claire":"K L EH1 R","coast":"K OW1 S T","coat":"K OW1 T","coffee":"K AA1 F IY0","come":"K AH1 M","coming":"K AH1 M IH0 NG","conditional":"K AH0 N D IH1 SH AH0 N AH0 L","conditionals":"K AH0 N D IH1 SH AH0 N AH0 L Z","conditions":"K AH0 N D IH1 SH AH0 N Z","contracted":"K AA1 N T R AE0 K T AH0 D","could":"K UH1 D","country":"K AH1 N T R IY0","crash":"K R AE1 SH","crashed":"K R AE1 SH T","credit":"K R EH1 D AH0 T","david":"D EY1 V IH0 D","day":"D EY1","did":"D IH1 D","didn't":"D IH1 D AH0 N T","do":"D UW1","dog":"D AO1 G","don't":"D OW1 N T","down":"D AW1 N","drive":"D R AY1 V","driven":"D R IH1 V AH0 N","driving":"D R AY1 V IH0 NG","earlier":"ER1 L IY0 ER0","else":"EH1 L S","english":"IH1 NG G L IH0 SH","every":"EH1 V ER0 IY0","exam":"IH0 G Z AE1 M","exercise":"EH1 K S ER0 S AY2 Z","extremely":"EH0 K S T R IY1 M L IY0","fall":"F AO1 L","fallen":"F AA1 L AH0 N","falls":"F AO1 L Z","fast":"F AE1 S T","feel":"F IY1 L","fell":"F EH1 L","felt":"F EH1 L T","find":"F AY1 N D","fine":"F AY1 N","first":"F ER1 S T","fish":"F IH1 SH","fishing":"F IH1 SH IH0 NG","flat":"F L AE1 T","football":"F UH1 T B AO2 L","for":"F AO1 R","forms":"F AO1 R M Z","found":"F AW1 N D","friends":"F R EH1 N D Z","from":"F R AH1 M","get":"G EH1 T","getting":"G EH1 T IH0 NG","give":"G IH1 V","go":"G OW1","goes":"G OW1 Z","going":"G OW1 IH0 NG","good":"G UH1 D","got":"G AA1 T","graham":"G R EY1 AH0 M","grammar":"G R AE1 M ER0","had":"HH AE1 D","hadn't":"HH AE1 D AH0 N T","hair":"HH EH1 R","happier":"HH AE1 P IY0 ER0","hard":"HH AA1 R D","harder":"HH AA1 R D ER0","hasn't":"HH AE1 Z AH0 N T","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","he":"HH IY1","heavy":"HH EH1 V IY0","help":"HH EH1 L P","helped":"HH EH1 L P T","her":"HH ER1","here":"HH IY1 R","him":"HH IH1 M","his":"HH IH1 Z","house":"HH AW1 S","how":"HH AW1","hungary":"HH AH1 NG G ER0 IY0","hurt":"HH ER1 T","i'd":"AY1 D","i'll":"AY1 L","i'm":"AY1 M","if":"IH1 F","imagine":"IH2 M AE1 JH AH0 N","in":"IH0 N","indoors":"IH1 N D AO2 R Z","instead":"IH2 N S T EH1 D","into":"IH1 N T UW0","invited":"IH2 N V AY1 T AH0 D","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","jack's":"JH AE1 K S","job":"JH AA1 B","john":"JH AA1 N","join":"JH OY1 N","keep":"K IY1 P","kept":"K EH1 P T","key":"K IY1","knew":"N UW1","know":"N OW1","known":"N OW1 N","land":"L AE1 N D","landed":"L AE1 N D AH0 D","last":"L AE1 S T","later":"L EY1 T ER0","lead":"L EH1 D","leave":"L IY1 V","leaves":"L IY1 V Z","left":"L EH1 F T","lent":"L EH1 N T","less":"L EH1 S","let":"L EH1 T","letter":"L EH1 T ER0","like":"L AY1 K","liked":"L AY1 K T","listen":"L IH1 S AH0 N","live":"L AY1 V","lived":"L IH1 V D","long":"L AO1 NG","looked":"L UH1 K T","looks":"L UH1 K S","lose":"L UW1 Z","lost":"L AO1 S T","lot":"L AA1 T","lottery":"L AA1 T ER0 IY0","luck":"L AH1 K","machine":"M AH0 SH IY1 N","make":"M EY1 K","manager":"M AE1 N AH0 JH ER0","map":"M AE1 P","mark":"M AA1 R K","marks":"M AA1 R K S","marry":"M EH1 R IY0","me":"M IY1","meet":"M IY1 T","message":"M EH1 S AH0 JH","might":"M AY1 T","millionaire":"M IH2 L Y AH0 N EH1 R","missed":"M IH1 S T","mixed":"M IH1 K S T","money":"M AH1 N IY0","more":"M AO1 R","mother":"M AH1 DH ER0","move":"M UW1 V","my":"M AY1","name":"N EY1 M","net":"N EH1 T","never":"N EH1 V ER0","next":"N EH1 K S T","night":"N AY1 T","not":"N AA1 T","noticed":"N OW1 T AH0 S T","now":"N AW1","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","offered":"AO1 F ER0 D","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","order":"AO1 R D ER0","ordered":"AO1 R D ER0 D","out":"AW1 T","over":"OW1 V ER0","own":"OW1 N","owned":"OW1 N D","paid":"P EY1 D","party":"P AA1 R T IY0","pass":"P AE1 S","pay":"P EY1","peter":"P IY1 T ER0","phone":"F OW1 N","phoned":"F OW1 N D","pity":"P IH1 T IY0","place":"P L EY1 S","plane":"P L EY1 N","play":"P L EY1","points":"P OY1 N T S","police":"P AH0 L IY1 S","practice":"P R AE1 K T AH0 S","press":"P R EH1 S","prison":"P R IH1 Z AH0 N","programme":"P R OW1 G R AE2 M","provided":"P R AH0 V AY1 D IH0 D","quite":"K W AY1 T","race":"R EY1 S","rains":"R EY1 N Z","really":"R IH1 L IY0","recording":"R AH0 K AO1 R D IH0 NG","repair":"R IH0 P EH1 R","runner":"R AH1 N ER0","safety":"S EY1 F T IY0","same":"S EY1 M","saved":"S EY1 V D","school":"S K UW1 L","second":"S EH1 K AH0 N D","see":"S IY1","sees":"S IY1 Z","she":"SH IY1","she'd":"SH IY1 D","she'll":"SH IY1 L","should":"SH UH1 D","simple":"S IH1 M P AH0 L","smoke":"S M OW1 K","smoked":"S M OW1 K T","snowy":"S N OW1 IY0","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","soup":"S UW1 P","starts":"S T AA1 R T S","steal":"S T IY1 L","stolen":"S T OW1 L AH0 N","stop":"S T AA1 P","stops":"S T AA1 P S","studied":"S T AH1 D IY0 D","succeeded":"S AH0 K S IY1 D IH0 D","sue's":"S UW1 Z","suggestion":"S AH0 JH EH1 S CH AH0 N","sure":"SH UH1 R","table":"T EY1 B AH0 L","tablets":"T AE1 B L AH0 T S","take":"T EY1 K","taken":"T EY1 K AH0 N","taller":"T AO1 L ER0","taxi":"T AE1 K S IY0","team":"T IY1 M","tell":"T EH1 L","terry":"T EH1 R IY0","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","think":"TH IH1 NG K","third":"TH ER1 D","this":"DH IH1 S","throw":"TH R OW1","throws":"TH R OW1 Z","time":"T AY1 M","timetable":"T AY1 M T EY2 B AH0 L","tired":"T AY1 ER0 D","to":"T UW1","told":"T OW1 L D","tomorrow":"T AH0 M AA1 R OW2","tonight":"T AH0 N AY1 T","tony":"T OW1 N IY0","too":"T UW1","took":"T UH1 K","tools":"T UW1 L Z","train":"T R EY1 N","treat":"T R IY1 T","treated":"T R IY1 T IH0 D","treats":"T R IY1 T S","tree":"T R IY1","tried":"T R AY1 D","try":"T R AY1","turn":"T ER1 N","tv":"T IY1 V IY1","umbrella":"AH0 M B R EH1 L AH0","understand":"AH2 N D ER0 S T AE1 N D","unhappy":"AH0 N HH AE1 P IY0","unless":"AH0 N L EH1 S","up":"AH1 P","us":"AH1 S","was":"W AA1 Z","wasn't":"W AA1 Z AH0 N T","watch":"W AA1 CH","we":"W IY1","we'd":"W IY1 D","we're":"W IY1 R","weather":"W EH1 DH ER0","week":"W IY1 K","weight":"W EY1 T","were":"W ER1","wet":"W EH1 T","what":"W AH1 T","when":"W EH1 N","whenever":"W EH0 N EH1 V ER0","why":"W AY1","will":"W IH1 L","win":"W IH1 N","with":"W IH1 DH","without":"W IH0 TH AW1 T","won":"W AH1 N","won't":"W OW1 N T","worse":"W ER1 S","would":"W UH1 D","wouldn't":"W UH1 D AH0 N T","yet":"Y EH1 T","you":"Y UW1","you'll":"Y UW1 L","your":"Y AO1 R","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

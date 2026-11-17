@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 3 — Future Time | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-03-Future-Time.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-03-Future-Time-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 3 — Future Time</h1>
+  <p>Future time: Will · Going to · Future Continuous · Future Perfect · Present Continuous / Present Simple for the future · when / until / as soon as</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+<div class="card">
+  <h2>1. Predicting the future</h2>
+
+  <h3>a) Will — predictions</h3>
+  <div class="formula">S + will + V &nbsp;·&nbsp; in speech, usually shortened to 'll</div>
+  <p>Used to make predictions. It is often introduced by <i>I think</i> or by opinion words such as <i>perhaps</i>, and it needs a time expression to go with it.</p>
+  <div class="ex"><div class="en">I think it'll rain tomorrow. Perhaps she'll be late.</div><div class="tts"></div></div>
+
+  <h3>b) Going to — predictions when we can see the cause</h3>
+  <div class="formula">S + be + going to + V</div>
+  <p>Also used for predictions, and especially common when we can <b>see the cause</b> of something that is about to happen. It is also common in objective statements. In most of these cases, <i>will</i> can also be used without changing the meaning.</p>
+  <div class="ex"><div class="en">Look out! There's a bus coming! It's going to hit us!</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">You're going to fall!</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Liverpool are going to win the Cup.</div><div class="vi">(an objective statement)</div><div class="tts"></div></div>
+
+  <h3>c) Future Continuous — in progress at a future moment</h3>
+  <div class="formula">S + will + be + V-ing</div>
+  <p>It describes a situation that will be <b>in progress</b> at a particular moment in the future.</p>
+  <div class="ex"><div class="en">This time next week I expect I'll be living in London. And I'll probably be cycling to work.</div><div class="tts"></div></div>
+
+  <h3>d) Future Perfect — looking back from the future</h3>
+  <div class="formula">S + will + have + V₃ (past participle)</div>
+  <p>We stand at a point in the future and look back: the event <b>will already have been completed before that point</b>. When that future moment comes, we can say it in the present perfect: <i>The film has started.</i></p>
+  <div class="ex"><div class="en">By the time we get there, the film will have started.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Intentions and decisions</h2>
+
+  <h3>a) Going to — an intention we already have</h3>
+  <p>It describes a present intention or plan — something we have <b>already decided</b>.</p>
+  <div class="ex"><div class="en">I'm going to fix the television tomorrow.</div><div class="vi">(already decided)</div><div class="tts"></div></div>
+
+  <h3>b) Will — a decision made at the moment of speaking</h3>
+  <p>Used for a decision made <b>instantly</b>, at the very moment of speaking.</p>
+  <div class="ex"><div class="en">I know, I'll get him a wallet for his birthday.</div><div class="vi">(a decision made at the moment of speaking)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Fixed arrangements and timetables</h2>
+
+  <h3>a) Present Continuous — fixed arrangements</h3>
+  <div class="formula">S + be + V-ing (with a future meaning)</div>
+  <p>It describes arrangements that are <b>certain and fixed</b> — usually social appointments and meetings, as written in a diary. It is also used to ask about social arrangements.</p>
+  <div class="ex"><div class="en">Sorry, I can't help you, I'm leaving in the morning.</div><div class="vi">(already arranged)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Are you doing anything this evening?</div><div class="tts"></div></div>
+
+  <h3>b) Present Simple — timetables and programmes</h3>
+  <p>It describes a future event based on a <b>timetable, programme or schedule</b>.</p>
+  <div class="ex"><div class="en">My train leaves at 11.30 tomorrow morning.</div><div class="vi">(according to the train timetable)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>4. Sau when, until, as soon as</h2>
+  <p>After the time words <i>when, until, as soon as</i>, we use a <b>present form</b> (the present simple) even when we are talking about the future — we do <b>not</b> use <i>will</i> in that clause. To emphasise that the event will be complete, use the present perfect.</p>
+  <div class="formula">I'll … + when / until / as soon as + S + V (present simple) / have + V₃</div>
+  <div class="ex"><div class="en">I'll wait for you here until you get back.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll tell you the news when I see you.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I'll wait here until you have finished. — Call me when you have finished.</div><div class="vi">(the present perfect emphasises completion)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>Will</b> and <b>going to</b> are both used for predictions; <i>going to</i> is especially common when we can <b>clearly see the cause</b> of something about to happen (<i>You're going to fall!</i>). With <i>will</i> there is often <i>I think / perhaps</i> and a time expression.</li>
+    <li><b>Going to</b> = an intention or plan <b>decided in advance</b>; <b>will</b> = a decision made <b>at the moment of speaking</b>.</li>
+    <li><b>Future Continuous</b> (<i>will be + V-ing</i>): a situation in progress at a moment in the future. <b>Future Perfect</b> (<i>will have + V₃</i>): an event completed before a point in the future.</li>
+    <li>The <b>Present Continuous</b> is used for fixed arrangements, and to ask about social arrangements (<i>Are you doing anything this evening?</i>).</li>
+    <li>The <b>Present Simple</b> is used for events in a timetable or programme (<i>My train leaves at 11.30</i>).</li>
+    <li>After <i>when, until, as soon as</i> referring to the future, use the <b>present simple</b> or the <b>present perfect</b> (to emphasise completion), not <i>will</i>: <i>I'll tell you the news when I see you. Call me when you have finished.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the most suitable future form</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Why ______ a new mountain bike?</p><div class="opts"><button type="button">are you going to buy</button><button type="button">will you buy</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Don't phone between 8.00 and 9.00. ______ then.</p><div class="opts"><button type="button">I'll study</button><button type="button">I'll be studying</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Look out! That tree ______ fall!</p><div class="opts"><button type="button">will</button><button type="button">is going to</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Let me know as soon as Louise ______ there.</p><div class="opts"><button type="button">will get</button><button type="button">gets</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Great news! Jean and Chris ______ to stay with us.</p><div class="opts"><button type="button">will come</button><button type="button">are coming</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) According to this timetable, the bus ______ at 6.00.</p><div class="opts"><button type="button">is going to arrive</button><button type="button">arrives</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Can you call me at 7.00, because ______ tomorrow.</p><div class="opts"><button type="button">I'll leave</button><button type="button">I'm leaving</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) If you arrive late at the sale, the best things ______.</p><div class="opts"><button type="button">will go</button><button type="button">will have gone</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Put the verbs into a suitable future form</h2>
+  <p>More than one answer may be correct; the checker accepts the standard forms. Sentence a) is given as an example: <i>am visiting</i>.</p>
+  <div class="q"><p>a) I can't see you on Thursday afternoon. I <b>am visiting</b> (visit) our Birmingham branch.</p></div>
+  <div class="q"><p>b) George <input class="blank" data-answers="will not be|won't be" data-display="won't be"> (not be) back until six. Can I take a message?</p></div>
+  <div class="q"><p>c) What <input class="blank" data-answers="are you going to buy" data-display="are you going to buy"> (you buy) with the money you won in the lottery?</p></div>
+  <div class="q"><p>d) I don't think you <input class="blank" data-answers="will have" data-display="will have"> (have) any problems at the airport.</p></div>
+  <div class="q"><p>e) <input class="blank" data-answers="Are you taking|Are you going to take" data-display="Are you taking"> (you take) your dog with you to Scotland?</p></div>
+  <div class="q"><p>f) All the hotels are full. Where <input class="blank" data-answers="are we going to spend" data-display="are we going to spend"> (we spend) the night?</p></div>
+  <div class="q"><p>g) You'd better not come in July. My mother <input class="blank" data-answers="will be staying|is staying" data-display="will be staying"> (stay) with me then.</p></div>
+  <div class="q"><p>h) What time <input class="blank" data-answers="does your plane leave" data-display="does your plane leave"> (your plane leave)?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Put the verbs into a suitable future form (continued)</h2>
+  <p>Sentence a) is given as an example: <i>will have stopped</i>.</p>
+  <div class="q"><p>a) By the time we reach home, the rain <b>will have stopped</b> (stop).</p></div>
+  <div class="q"><p>b) This time next week I <input class="blank" data-answers="will be lying" data-display="will be lying"> (lie) on the beach in Spain.</p></div>
+  <div class="q"><p>c) In ten years' time I <input class="blank" data-answers="will be working" data-display="will be working"> (work) for a different company.</p></div>
+  <div class="q"><p>d) If we don't get there by 6.00, Jack <input class="blank" data-answers="will have left" data-display="will have left"> (leave).</p></div>
+  <div class="q"><p>e) In July they <input class="blank" data-answers="will have been married" data-display="will have been married"> (be married) for twenty years.</p></div>
+  <div class="q"><p>f) In the year 2500 a lot of people <input class="blank" data-answers="will be living|will live" data-display="will be living"> (live) on the Moon.</p></div>
+  <div class="q"><p>g) When you get to the station, I <input class="blank" data-answers="will be waiting" data-display="will be waiting"> (wait) for you outside.</p></div>
+  <div class="q"><p>h) Don't worry! The plane <input class="blank" data-answers="will land|is going to land|will be landing" data-display="will land"> (land) in a moment.</p></div>
+  <div class="q"><p>i) By the time you come home, I <input class="blank" data-answers="will have finished" data-display="will have finished"> (finish) the decorating.</p></div>
+  <div class="q"><p>j) Come round between eight and nine. We <input class="blank" data-answers="will be watching" data-display="will be watching"> (watch) the match on television then.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Read and complete: Computafuture</h2>
+  <p>Box (1) is given as an example: <i>you will be doing</i>.</p>
+  <div class="q"><p>Have you ever wondered what exactly (1) <b>you will be doing</b> (you do) in ten years time? Well, according to computer expert Tom Vincent, computers (2) <input class="blank" data-answers="will soon be able" data-display="will soon be able"> (soon be able) to make accurate predictions about the future. Professor Vincent, from Cambridge, (3) <input class="blank" data-answers="is holding" data-display="is holding"> (hold) a press conference next week to describe the computer which he calls 'Computafuture'. 'This computer can tell us what life (4) <input class="blank" data-answers="will be" data-display="will be"> (be) like, based on data describing past events,' explains Professor Vincent. For example, Computafuture can predict how many people (5) <input class="blank" data-answers="will live|will be living" data-display="will live"> (live) in a particular area, or whether there (6) <input class="blank" data-answers="will be" data-display="will be"> (be) a lot of rain during a particular period. Professor Vincent also believes that by the year 2050, computers (7) <input class="blank" data-answers="will have replaced" data-display="will have replaced"> (replace) teachers, and (8) <input class="blank" data-answers="will also be doing|will also do" data-display="will also be doing"> (also do) most of the jobs now being done by the police. 'Computers are becoming more intelligent all the time,' says Professor Vincent. 'Soon they (9) <input class="blank" data-answers="will be directing" data-display="will be directing"> (direct) traffic and (10) <input class="blank" data-answers="will be teaching|will teach" data-display="will be teaching"> (teach) our children. And telling us about the future.'</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Put the verbs in: future time clauses</h2>
+  <p>All the sentences refer to the future. In sentence a) the first verb is given as an example: <i>see</i>.</p>
+  <div class="q"><p>a) When I <b>see</b> (see) you tomorrow, I <input class="blank" data-answers="will tell" data-display="will tell"> (tell) you my news.</p></div>
+  <div class="q"><p>b) As soon as we <input class="blank" data-answers="get" data-display="get"> (get) there, we <input class="blank" data-answers="will phone" data-display="will phone"> (phone) for a taxi.</p></div>
+  <div class="q"><p>c) I <input class="blank" data-answers="will go" data-display="will go"> (go) to the library before I <input class="blank" data-answers="do" data-display="do"> (do) the shopping.</p></div>
+  <div class="q"><p>d) We <input class="blank" data-answers="will wait" data-display="will wait"> (wait) here until the rain <input class="blank" data-answers="stops|has stopped" data-display="stops"> (stop).</p></div>
+  <div class="q"><p>e) I <input class="blank" data-answers="will get" data-display="will get"> (get) £50 from the bank when it <input class="blank" data-answers="opens" data-display="opens"> (open).</p></div>
+  <div class="q"><p>f) After you <input class="blank" data-answers="take|have taken" data-display="take"> (take) the medicine, you <input class="blank" data-answers="will feel" data-display="will feel"> (feel) better.</p></div>
+  <div class="q"><p>g) You have to stay until you <input class="blank" data-answers="finish|have finished" data-display="finish"> (finish) your work.</p></div>
+  <div class="q"><p>h) I <input class="blank" data-answers="will let" data-display="will let"> (let) you know the minute I <input class="blank" data-answers="hear" data-display="hear"> (hear) the results.</p></div>
+  <div class="q"><p>i) Before we <input class="blank" data-answers="paint" data-display="paint"> (paint) the wall, we <input class="blank" data-answers="will have" data-display="will have"> (have) a cup of tea.</p></div>
+  <div class="q"><p>j) We <input class="blank" data-answers="will climb" data-display="will climb"> (climb) over the wall as soon as it <input class="blank" data-answers="gets|has got" data-display="gets"> (get) dark.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/18</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>Exercise 6 — Find the extra word in each line (Keeping a diary)</h2>
+  <p>Read the passage <i>Keeping a diary</i>. Some lines are <b>correct</b>, and some lines contain <b>one extra word</b> that should not be there. For each line: if the line is correct, choose <b>✓ (correct line)</b>; if there is an extra word, choose that word. The first two lines are given as worked examples (<i>will</i> and <i>✓</i>) — here, answer all 17 lines.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p><b>Example line 1:</b> “Are you one of those people who will know”</p><div class="opts"><button type="button">know</button><button type="button">will</button><button type="button">people</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Example line 2:</b> “exactly what they will be doing every day next”</p><div class="opts"><button type="button">doing</button><button type="button">✓ (correct line)</button><button type="button">every</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 1:</b> “week? When the different days will arrive,”</p><div class="opts"><button type="button">arrive</button><button type="button">will</button><button type="button">days</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 2:</b> “will you have get out your diary, or are”</p><div class="opts"><button type="button">have</button><button type="button">diary</button><button type="button">get</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 3:</b> “you the kind of person who will just guess?”</p><div class="opts"><button type="button">guess</button><button type="button">person</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 4:</b> “Some people will write their appointments”</p><div class="opts"><button type="button">write</button><button type="button">will</button><button type="button">people</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 5:</b> “in a diary, but others just hope that they will”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">diary</button><button type="button">hope</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 6:</b> “remember. For example, tonight I'm be going”</p><div class="opts"><button type="button">going</button><button type="button">be</button><button type="button">tonight</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 7:</b> “to the cinema, but perhaps I'll not forget all”</p><div class="opts"><button type="button">forget</button><button type="button">cinema</button><button type="button">not</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 8:</b> “about it. You see, I will never keep a diary.”</p><div class="opts"><button type="button">never</button><button type="button">will</button><button type="button">diary</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 9:</b> “I try not to forget my appointments, but I know”</p><div class="opts"><button type="button">appointments</button><button type="button">✓ (correct line)</button><button type="button">forget</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 10:</b> “that I will usually do. I just don't like planning”</p><div class="opts"><button type="button">usually</button><button type="button">will</button><button type="button">planning</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 11:</b> “my future. I know that one day I'm going to”</p><div class="opts"><button type="button">future</button><button type="button">going</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 12:</b> “make a serious mistake. I'll be miss an important”</p><div class="opts"><button type="button">be</button><button type="button">miss</button><button type="button">mistake</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 13:</b> “examination, or by the time I remember it and”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">time</button><button type="button">examination</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 14:</b> “get there, it will have been finished. Perhaps”</p><div class="opts"><button type="button">have</button><button type="button">finished</button><button type="button">been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 15:</b> “that will be when I have finally buy a diary.”</p><div class="opts"><button type="button">buy</button><button type="button">have</button><button type="button">finally</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 6: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>68</b> (Exercise 1: 8 · Exercise 2: 7 blanks · Exercise 3: 9 blanks · Exercise 4: 9 blanks · Exercise 5: 18 blanks · Exercise 6: 17 lines).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"able":"EY1 B AH0 L","about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","accepts":"AE0 K S EH1 P T S","according":"AH0 K AO1 R D IH0 NG","accurate":"AE1 K Y ER0 AH0 T","advance":"AH0 D V AE1 N S","after":"AE1 F T ER0","afternoon":"AE2 F T ER0 N UW1 N","again":"AH0 G EH1 N","airport":"EH1 R P AO2 R T","all":"AO1 L","already":"AO0 L R EH1 D IY0","also":"AO1 L S OW0","am":"AE1 M","american":"AH0 M EH1 R AH0 K AH0 N","an":"AE1 N","and":"AH0 N D","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","anything":"EH1 N IY0 TH IH2 NG","appointments":"AH0 P OY1 N T M AH0 N T S","are":"AA1 R","area":"EH1 R IY0 AH0","arranged":"ER0 EY1 N JH D","arrangements":"ER0 EY1 N JH M AH0 N T S","arrive":"ER0 AY1 V","arrives":"ER0 AY1 V Z","as":"AE1 Z","ask":"AE1 S K","at":"AE1 T","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","bank":"B AE1 NG K","based":"B EY1 S T","be":"B IY1","beach":"B IY1 CH","because":"B IH0 K AO1 Z","becoming":"B IH0 K AH1 M IH0 NG","been":"B IH1 N","before":"B IH0 F AO1 R","being":"B IY1 IH0 NG","believes":"B IH0 L IY1 V Z","below":"B IH0 L OW1","best":"B EH1 S T","better":"B EH1 T ER0","between":"B IH0 T W IY1 N","bike":"B AY1 K","birmingham":"B ER1 M IH0 NG HH AE2 M","birthday":"B ER1 TH D EY2","blanks":"B L AE1 NG K S","both":"B OW1 TH","box":"B AA1 K S","branch":"B R AE1 N CH","british":"B R IH1 T IH0 SH","bus":"B AH1 S","but":"B AH1 T","button":"B AH1 T AH0 N","buy":"B AY1","by":"B AY1","call":"K AO1 L","calls":"K AO1 L Z","cambridge":"K EY1 M B R IH0 JH","can":"K AE1 N","can't":"K AE1 N T","cases":"K EY1 S AH0 Z","cause":"K AA1 Z","certain":"S ER1 T AH0 N","changing":"CH EY1 N JH IH0 NG","check":"CH EH1 K","checker":"CH EH1 K ER0","children":"CH IH1 L D R AH0 N","choose":"CH UW1 Z","chris":"K R IH1 S","cinema":"S IH1 N AH0 M AH0","clause":"K L AO1 Z","clauses":"K L AO1 Z AH0 Z","clearly":"K L IH1 R L IY0","click":"K L IH1 K","climb":"K L AY1 M","come":"K AH1 M","comes":"K AH1 M Z","coming":"K AH1 M IH0 NG","common":"K AA1 M AH0 N","company":"K AH1 M P AH0 N IY2","complete":"K AH0 M P L IY1 T","completed":"K AH0 M P L IY1 T AH0 D","completion":"K AH0 M P L IY1 SH AH0 N","computafuture":"K AH0 M P Y UW1 T AH0 F Y UW2 CH ER0","computer":"K AH0 M P Y UW1 T ER0","computers":"K AH0 M P Y UW1 T ER0 Z","conference":"K AA1 N F ER0 AH0 N S","contain":"K AH0 N T EY1 N","continued":"K AH0 N T IH1 N Y UW0 D","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","correct":"K ER0 EH1 K T","cup":"K AH1 P","cycling":"S AY1 K AH0 L IH0 NG","dark":"D AA1 R K","data":"D EY1 T AH0","day":"D EY1","days":"D EY1 Z","decided":"D IH2 S AY1 D IH0 D","decision":"D IH0 S IH1 ZH AH0 N","decisions":"D IH0 S IH1 ZH AH0 N Z","decorating":"D EH1 K ER0 EY2 T IH0 NG","describe":"D IH0 S K R AY1 B","describes":"D IH0 S K R AY1 B Z","describing":"D IH0 S K R AY1 B IH0 NG","device":"D IH0 V AY1 S","diary":"D AY1 ER0 IY0","dictionary":"D IH1 K SH AH0 N EH2 R IY0","different":"D IH1 F ER0 AH0 N T","direct":"D ER0 EH1 K T","do":"D UW1","dog":"D AO1 G","doing":"D UW1 IH0 NG","don't":"D OW1 N T","done":"D AH1 N","during":"D UH1 R IH0 NG","each":"IY1 CH","eight":"EY1 T","emphasise":"EH1 M F AH0 S AY2 Z","emphasises":"EH1 M F AH0 S AY2 Z IH0 Z","english":"IH1 NG G L IH0 SH","especially":"AH0 S P EH1 SH L IY0","even":"IY1 V IH0 N","evening":"IY1 V N IH0 NG","event":"IH0 V EH1 N T","events":"IH0 V EH1 N T S","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","exactly":"IH0 G Z AE1 K T L IY0","examination":"IH0 G Z AE2 M AH0 N EY1 SH AH0 N","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","expect":"IH0 K S P EH1 K T","expert":"EH1 K S P ER0 T","explains":"IH0 K S P L EY1 N Z","expression":"IH0 K S P R EH1 SH AH0 N","extra":"EH1 K S T R AH0","fall":"F AO1 L","feel":"F IY1 L","film":"F IH1 L M","finally":"F AY1 N AH0 L IY0","find":"F AY1 N D","finish":"F IH1 N IH0 SH","finished":"F IH1 N IH0 SH T","first":"F ER1 S T","fix":"F IH1 K S","fixed":"F IH1 K S T","for":"F AO1 R","forget":"F ER0 G EH1 T","form":"F AO1 R M","forms":"F AO1 R M Z","from":"F R AH1 M","full":"F UH1 L","future":"F Y UW1 CH ER0","george":"JH AO1 R JH","get":"G EH1 T","gets":"G EH1 T S","given":"G IH1 V AH0 N","go":"G OW1","going":"G OW1 IH0 NG","gone":"G AO1 N","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","great":"G R EY1 T","guess":"G EH1 S","happen":"HH AE1 P AH0 N","has":"HH AE1 Z","have":"HH AE1 V","he":"HH IY1","hear":"HH IY1 R","help":"HH EH1 L P","here":"HH IY1 R","him":"HH IH1 M","his":"HH IH1 Z","hit":"HH IH1 T","hold":"HH OW1 L D","home":"HH OW1 M","hope":"HH OW1 P","hotels":"HH OW0 T EH1 L Z","how":"HH AW1","html":"EY2 CH T IY2 EH2 M EH1 L","i'll":"AY1 L","i'm":"AY1 M","if":"IH1 F","important":"IH2 M P AO1 R T AH0 N T","in":"IH0 N","index":"IH1 N D EH0 K S","instantly":"IH1 N S T AH0 N T L IY0","intelligent":"IH2 N T EH1 L AH0 JH AH0 N T","intention":"IH2 N T EH1 N CH AH0 N","intentions":"IH2 N T EH1 N CH AH0 N Z","into":"IH1 N T UW0","introduced":"IH2 N T R AH0 D UW1 S T","is":"IH1 Z","it":"IH1 T","it'll":"IH1 T AH0 L","it's":"IH1 T S","items":"AY1 T AH0 M Z","its":"IH1 T S","jack":"JH AE1 K","jean":"JH IY1 N","jobs":"JH AA1 B Z","july":"JH UW2 L AY1","just":"JH AH1 S T","keep":"K IY1 P","keeping":"K IY1 P IH0 NG","key":"K IY1","kind":"K AY1 N D","know":"N OW1","land":"L AE1 N D","late":"L EY1 T","leave":"L IY1 V","leaves":"L IY1 V Z","leaving":"L IY1 V IH0 NG","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","let":"L EH1 T","library":"L AY1 B R EH0 R IY2","lie":"L AY1","life":"L AY1 F","like":"L AY1 K","line":"L AY1 N","lines":"L AY1 N Z","listen":"L IH1 S AH0 N","lists":"L IH1 S T S","live":"L AY1 V","liverpool":"L IH1 V ER0 P UW2 L","living":"L IH1 V IH0 NG","london":"L AH1 N D AH0 N","look":"L UH1 K","looking":"L UH1 K IH0 NG","lot":"L AA1 T","lottery":"L AA1 T ER0 IY0","louise":"L UW0 IY1 Z","made":"M EY1 D","make":"M EY1 K","many":"M EH1 N IY0","married":"M EH1 R IY0 D","match":"M AE1 CH","may":"M EY1","me":"M IY1","meaning":"M IY1 N IH0 NG","medicine":"M EH1 D AH0 S AH0 N","meetings":"M IY1 T IH0 NG Z","message":"M EH1 S AH0 JH","minute":"M IH1 N AH0 T","miss":"M IH1 S","mistake":"M IH0 S T EY1 K","mode":"M OW1 D","model":"M AA1 D AH0 L","moment":"M OW1 M AH0 N T","money":"M AH1 N IY0","moon":"M UW1 N","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","mother":"M AH1 DH ER0","mountain":"M AW1 N T AH0 N","my":"M AY1","needs":"N IY1 D Z","never":"N EH1 V ER0","new":"N UW1","news":"N UW1 Z","next":"N EH1 K S T","night":"N AY1 T","nine":"N AY1 N","not":"N AA1 T","now":"N AW1","objective":"AH0 B JH EH1 K T IH0 V","of":"AH1 V","off":"AO1 F","often":"AO1 F AH0 N","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","open":"OW1 P AH0 N","opinion":"AH0 P IH1 N Y AH0 N","or":"AO1 R","others":"AH1 DH ER0 Z","our":"AW1 ER0","out":"AW1 T","outside":"AW1 T S AY1 D","over":"OW1 V ER0","page":"P EY1 JH","paint":"P EY1 N T","participle":"P AA1 R T IH0 S IH2 P AH0 L","particular":"P ER0 T IH1 K Y AH0 L ER0","passage":"P AE1 S AH0 JH","past":"P AE1 S T","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","perhaps":"P ER0 HH AE1 P S","period":"P IH1 R IY0 AH0 D","person":"P ER1 S AH0 N","phone":"F OW1 N","pick":"P IH1 K","plan":"P L AE1 N","plane":"P L EY1 N","planning":"P L AE1 N IH0 NG","point":"P OY1 N T","points":"P OY1 N T S","police":"P AH0 L IY1 S","practice":"P R AE1 K T AH0 S","predict":"P R IH0 D IH1 K T","predicting":"P R IH0 D IH1 K T IH0 NG","predictions":"P R IY0 D IH1 K SH AH0 N Z","present":"P R EH1 Z AH0 N T","press":"P R EH1 S","probably":"P R AA1 B AH0 B L IY2","problems":"P R AA1 B L AH0 M Z","professor":"P R AH0 F EH1 S ER0","programme":"P R OW1 G R AE2 M","programmes":"P R OW1 G R AE2 M Z","progress":"P R AA1 G R EH2 S","put":"P UH1 T","rain":"R EY1 N","reach":"R IY1 CH","read":"R EH1 D","reading":"R IY1 D IH0 NG","refer":"R AH0 F ER1","referring":"R IH0 F ER1 IH0 NG","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","replace":"R IY2 P L EY1 S","reset":"R IY0 S EH1 T","results":"R IH0 Z AH1 L T S","right":"R AY1 T","round":"R AW1 N D","rows":"R OW1 Z","sale":"S EY1 L","say":"S EY1","says":"S EH1 Z","schedule":"S K EH1 JH UH0 L","score":"S K AO1 R","scotland":"S K AA1 T L AH0 N D","see":"S IY1","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","serious":"S IH1 R IY0 AH0 S","she'll":"SH IY1 L","shopping":"SH AA1 P IH0 NG","shortened":"SH AO1 R T AH0 N D","should":"SH UH1 D","show":"SH OW1","simple":"S IH1 M P AH0 L","situation":"S IH2 CH UW0 EY1 SH AH0 N","six":"S IH1 K S","social":"S OW1 SH AH0 L","some":"S AH1 M","something":"S AH1 M TH IH0 NG","soon":"S UW1 N","sorry":"S AA1 R IY0","spain":"S P EY1 N","speaking":"S P IY1 K IH0 NG","specific":"S P AH0 S IH1 F IH0 K","speech":"S P IY1 CH","speed":"S P IY1 D","spend":"S P EH1 N D","stand":"S T AE1 N D","standard":"S T AE1 N D ER0 D","start":"S T AA1 R T","started":"S T AA1 R T IH0 D","statement":"S T EY1 T M AH0 N T","statements":"S T EY1 T M AH0 N T S","station":"S T EY1 SH AH0 N","stay":"S T EY1","stop":"S T AA1 P","stopped":"S T AA1 P T","study":"S T AH1 D IY0","studying":"S T AH1 D IY0 IH0 NG","such":"S AH1 CH","suitable":"S UW1 T AH0 B AH0 L","summary":"S AH1 M ER0 IY0","take":"T EY1 K","talking":"T AO1 K IH0 NG","tap":"T AE1 P","taxi":"T AE1 K S IY0","tea":"T IY1","teach":"T IY1 CH","teachers":"T IY1 CH ER0 Z","television":"T EH1 L AH0 V IH2 ZH AH0 N","tell":"T EH1 L","telling":"T EH1 L IH0 NG","ten":"T EH1 N","test":"T EH1 S T","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","then":"DH EH1 N","there":"DH EH1 R","there's":"DH EH1 R Z","these":"DH IY1 Z","they":"DH EY1","things":"TH IH1 NG Z","think":"TH IH1 NG K","this":"DH IH1 S","those":"DH OW1 Z","thursday":"TH ER1 Z D EY2","time":"T AY1 M","timetable":"T AY1 M T EY2 B AH0 L","timetables":"T AY1 M T EY2 B AH0 L Z","to":"T UW1","tom":"T AA1 M","tomorrow":"T AH0 M AA1 R OW2","tonight":"T AH0 N AY1 T","total":"T OW1 T AH0 L","traffic":"T R AE1 F IH0 K","train":"T R EY1 N","tree":"T R IY1","try":"T R AY1","turn":"T ER1 N","twenty":"T W EH1 N T IY0","two":"T UW1","type":"T AY1 P","under":"AH1 N D ER0","until":"AH0 N T IH1 L","us":"AH1 S","use":"Y UW1 S","used":"Y UW1 Z D","usually":"Y UW1 ZH AH0 W AH0 L IY0","verb":"V ER1 B","verbs":"V ER1 B Z","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","vincent":"V IH1 N S AH0 N T","visit":"V IH1 Z IH0 T","visiting":"V IH1 Z IH0 T IH0 NG","voice":"V OY1 S","voices":"V OY1 S AH0 Z","wait":"W EY1 T","wall":"W AO1 L","wallet":"W AO1 L AH0 T","watch":"W AA1 CH","we":"W IY1","week":"W IY1 K","well":"W EH1 L","what":"W AH1 T","when":"W EH1 N","where":"W EH1 R","whether":"W EH1 DH ER0","which":"W IH1 CH","who":"HH UW1","why":"W AY1","will":"W IH1 L","win":"W IH1 N","with":"W IH1 DH","without":"W IH0 TH AW1 T","won":"W AH1 N","wondered":"W AH1 N D ER0 D","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","worry":"W ER1 IY0","write":"R AY1 T","written":"R IH1 T AH0 N","year":"Y IH1 R","years":"Y IH1 R Z","years'":"Y IH1 R Z","you":"Y UW1","you'd":"Y UW1 D","you're":"Y UH1 R","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

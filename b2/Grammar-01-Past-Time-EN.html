@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 1 — Past Time | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-01-Past-Time.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-01-Past-Time-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 1 — Past Time</h1>
+  <p>Past tenses: Past Simple · Past Continuous · Past Perfect · Used to · Would · Participle clauses</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Talking about past events</h2>
+
+  <h3>a) Past Simple — main events, finished</h3>
+  <div class="formula">S + V-ed / V₂ &nbsp;·&nbsp; <i>went, bought, saw…</i></div>
+  <p>Used for actions and events that are <b>complete</b> in the past — this is the tense that tells the main events of a story.</p>
+  <div class="ex"><div class="en">Susan went into the station and bought a ticket.</div><div class="tts"></div></div>
+
+  <h3>b) Past Continuous — background / actions in progress</h3>
+  <div class="formula">S + was / were + V-ing</div>
+  <p>Used for an action that was <b>in progress</b> at a past moment, often to describe the scene around the main event.</p>
+  <div class="ex"><div class="en">There were a lot of people waiting in the station. Some were sleeping on the benches, and others were walking up and down.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Susan was looking for Graham, so she didn't sit down.</div><div class="tts"></div></div>
+  <p>A common pattern: <b>past continuous (background, longer) + past simple (a sudden, shorter event that interrupts it)</b>:</p>
+  <div class="ex"><div class="en">While Susan was trying to get onto the platform, a man grabbed her handbag.</div><div class="tts"></div></div>
+
+  <h3>c) Past Perfect — the “past of the past”</h3>
+  <div class="formula">S + had + V₃ (past participle)</div>
+  <p>When there are two past events, use the Past Perfect for the one that <b>happened first</b>, so the order is clear.</p>
+  <div class="ex"><div class="en">By the time the train arrived, Susan had managed to push her way to the front of the crowd.</div><div class="vi">Note the order: Susan reached the front of the crowd <i>first</i>; the train arrived <i>second</i>.</div><div class="tts"></div></div>
+  <p>If <i>before / after</i> already makes the order clear, the Past Perfect is <b>not required</b>:</p>
+  <div class="ex"><div class="en">Before the train arrived, Susan managed to push her way to the front of the crowd.</div><div class="tts"></div></div>
+  <div class="note">⚠️ Do not use the Past Perfect just because something happened “a long time ago”. Use it only when you need to show <b>before–after order between two past moments</b>.</div>
+
+  <h3>d) Participle clauses</h3>
+  <div class="formula">Before / After / While + V-ing, + main clause</div>
+  <p>A phrase with <i>before / after / while + V-ing</i> opens the sentence, followed by the main clause. One essential condition: <b>the subject of both parts must be the same person or thing</b>.</p>
+  <div class="ex"><div class="en">After struggling with him, Susan pulled the bag from his hands.</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Past habits</h2>
+
+  <h3>a) Past Simple</h3>
+  <p>It can also describe past habits or states, but it usually <b>needs a time expression</b> to go with it.</p>
+  <div class="ex"><div class="en">I always got up at six in those days.</div><div class="vi">(a past habit)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I lived in Austria for several years.</div><div class="vi">(a past state)</div><div class="tts"></div></div>
+
+  <h3>b) Used to</h3>
+  <div class="formula">S + used to + V &nbsp;·&nbsp; negative: didn't use to &nbsp;·&nbsp; question: Did … use to …?</div>
+  <p>It describes past habits or states <b>without needing</b> a time expression. <i>Used to</i> strongly suggests that the habit or state <b>no longer exists now</b> — it creates a contrast with the present. It is only used for the past; there is no present form.</p>
+  <div class="ex"><div class="en">I used to get up at six, but now I get up at eight.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I used to own a horse.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I didn't use to like beer. — Did you use to swim every day?</div><div class="tts"></div></div>
+
+  <h3>c) Would</h3>
+  <div class="formula">S + would + V (repeated actions only)</div>
+  <p>It describes the typical, repeated actions of a person in the past; it is common in writing and in personal reminiscence. Unlike <i>used to</i>: <b>would cannot describe states</b> (you cannot say *<i>would be a dancer</i> to mean “used to be a dancer”), and its contrast with the present is also weaker.</p>
+  <div class="ex"><div class="en">Every evening was the same. Jack would turn on the radio, light his pipe and fall asleep.</div><div class="tts"></div></div>
+
+  <h3>d) Past Continuous + always — annoying habits</h3>
+  <p>The Past Continuous with a frequency adverb (<i>always</i>…) can describe a repeated past action, often an annoying habit.</p>
+  <div class="ex"><div class="en">When Peter was younger, he was always getting into trouble.</div><div class="tts"></div></div>
+  <div class="note">⚠️ Apart from this use, the Past Continuous is <b>not</b> used for ordinary past habits or routines — that is the job of the Past Simple / used to / would.</div>
+
+  <h3>e) Polite and tentative</h3>
+  <p>The Past Continuous with <i>think, hope, wonder</i> makes what you say softer, more polite or more tentative.</p>
+  <div class="ex"><div class="en">I was thinking of having a party next week. I was hoping you would join us. I was wondering if you could help me.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>Past Simple</b>: an event completed in the past (the main events when telling a story); it also describes past habits and routines.</li>
+    <li><b>Past Continuous</b>: (a) describes the background scene; (b) an action in progress, often contrasted with a sudden event. Not used for past routines.</li>
+    <li><b>Participle clauses</b> (<i>Before/After/While + V-ing</i>) open the main clause; the subject of both parts must be the same.</li>
+    <li><b>Past Perfect</b>: a past event that happened before another past event. With <i>before/after</i>, the Past Perfect is optional. Do not use it just because something happened “long ago”.</li>
+    <li><b>Used to</b>: past only; there is no present form.</li>
+    <li><b>Would</b>: describes habitual past actions, mainly in writing; its contrast with the present is weaker than <i>used to</i>; <b>never</b> used for states. Example: <i>Jim would always make his mother a cup of tea after lunch</i> (an action), but you must say <i>Sally used to be a dancer</i> (a state).</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Match each picture with a sentence</h2>
+  <p>There are four pictures, described in words as follows:</p>
+  <ul>
+    <li><b>Picture 1:</b> Close-up — Peter is holding his passport and wallet in his jacket pocket.</li>
+    <li><b>Picture 2:</b> Peter is talking on the phone, taking notes.</li>
+    <li><b>Picture 3:</b> Peter is packing clothes into a suitcase on the bed.</li>
+    <li><b>Picture 4:</b> Peter is leaving the house, with a bag over his shoulder.</li>
+  </ul>
+  <p>The sentences available:</p>
+  <ol type="a">
+    <li>When he left the house, Peter forgot that he had put his passport and wallet in his other jacket.</li>
+    <li>After phoning the airport, Peter packed his suitcase.</li>
+    <li>When he returned from Portugal in March, Peter put his passport and wallet in his jacket pocket.</li>
+    <li>A few days before leaving for his summer holiday, Peter phoned the airport to check his flight.</li>
+    <li>While Peter was packing his suitcase, he realised that he hadn't checked his flight.</li>
+    <li>While Peter was packing his suitcase, the phone rang.</li>
+  </ol>
+  <p class="small">Note: there are 6 sentences but only 4 pictures — 2 sentences are distractors. Click the correct letter for each picture.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="2"><p><b>Picture 1</b> — the correct sentence is:</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p><b>Picture 2</b> — the correct sentence is:</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Picture 3</b> — the correct sentence is:</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Picture 4</b> — the correct sentence is:</p><div class="opts"><button type="button">a</button><button type="button">b</button><button type="button">c</button><button type="button">d</button><button type="button">e</button><button type="button">f</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/4</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Exercise 2 — Choose the most suitable verb form</h2>
+  <p class="small">Sentence a) is given as an example (<i>had forgotten</i>). Here, answer all 11 sentences.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I suddenly remembered that I ______ my keys.</p><div class="opts"><button type="button">forgot</button><button type="button">had forgotten</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) While Diana ______ her favourite television programme, there was a power-cut.</p><div class="opts"><button type="button">watched</button><button type="button">was watching</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Tom ______ in the house at the end of the street.</p><div class="opts"><button type="button">used to live</button><button type="button">would live</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) Who ______ the car at the time of the accident?</p><div class="opts"><button type="button">was driving</button><button type="button">drove</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) By the time Sheila got back, Chris ______.</p><div class="opts"><button type="button">went</button><button type="button">had gone</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) David ______ Japanese food before, so he knew what to order.</p><div class="opts"><button type="button">ate</button><button type="button">had eaten</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) I ______ some shopping yesterday, when I saw that Dutch friend of yours.</p><div class="opts"><button type="button">did</button><button type="button">was doing</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I ______ sweets much more than I do now.</p><div class="opts"><button type="button">used to like</button><button type="button">was liking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) What exactly ______ when I came into your office yesterday?</p><div class="opts"><button type="button">were you doing</button><button type="button">did you do</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Laura missed the party because no-one ______ her about it.</p><div class="opts"><button type="button">was telling</button><button type="button">had told</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>k) Tanya ______ be a doctor.</p><div class="opts"><button type="button">would</button><button type="button">used to</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 2: <span class="score-num">0</span>/11</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Put the verbs in brackets into the correct form</h2>
+  <p>Fill in a suitable past form. <b>Use the Past Perfect only when it is really necessary.</b> In sentence a), <i>was trying</i> is given.</p>
+  <div class="q"><p>a) While I <b>was trying</b> (try) to get my car started, a passing car <input class="blank" data-answers="stopped" data-display="stopped"> (stop) and the driver <input class="blank" data-answers="offered" data-display="offered"> (offer) to help me.</p></div>
+  <div class="q"><p>b) The police <input class="blank" data-answers="paid" data-display="paid"> (pay) no attention to Clare's complaint because she <input class="blank" data-answers="had phoned" data-display="had phoned"> (phone) them so many times before.</p></div>
+  <div class="q"><p>c) Mary <input class="blank" data-answers="was not wearing|wasn't wearing" data-display="was not wearing"> (not wear) her glasses at the time, so she <input class="blank" data-answers="did not notice|didn't notice" data-display="didn't notice"> (not notice) what kind of car the man <input class="blank" data-answers="was driving" data-display="was driving"> (drive).</p></div>
+  <div class="q"><p>d) Nick <input class="blank" data-answers="lay" data-display="lay"> (lie) down on the grass for a while, next to some tourists who <input class="blank" data-answers="were feeding" data-display="were feeding"> (feed) the ducks.</p></div>
+  <div class="q"><p>e) Tony <input class="blank" data-answers="admitted" data-display="admitted"> (admit) that he <input class="blank" data-answers="had hit" data-display="had hit"> (hit) the other car, but said that he <input class="blank" data-answers="had not damaged|hadn't damaged" data-display="hadn't damaged"> (not damage) it.</p></div>
+  <div class="q"><p>f) Sorry, I <input class="blank" data-answers="was not listening|wasn't listening" data-display="wasn't listening"> (not listen) to you. I <input class="blank" data-answers="was thinking" data-display="was thinking"> (think) about something else.</p></div>
+  <div class="q"><p>g) Helen <input class="blank" data-answers="felt|was feeling" data-display="felt / was feeling"> (feel) very tired, and when she <input class="blank" data-answers="finished|had finished" data-display="finished / had finished"> (finish) her work, she <input class="blank" data-answers="fell" data-display="fell"> (fall) asleep.</p></div>
+  <div class="q"><p>h) The police <input class="blank" data-answers="got" data-display="got"> (get) to Clare's house as fast as they could, but the burglars <input class="blank" data-answers="had disappeared" data-display="had disappeared"> (disappear).</p></div>
+  <div class="q"><p>i) I <input class="blank" data-answers="phoned" data-display="phoned"> (phone) you last night but you <input class="blank" data-answers="did not answer|didn't answer" data-display="didn't answer"> (not answer). What <input class="blank" data-answers="were you doing" data-display="were you doing"> (you do)?</p></div>
+  <div class="q"><p>j) We <input class="blank" data-answers="did not go|didn't go" data-display="didn't go"> (not go) out yesterday because it <input class="blank" data-answers="was raining" data-display="was raining"> (rain).</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/24</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>Exercise 4 — Suitable or unsuitable?</h2>
+  <p>Look at the <em class="hl">italic, highlighted</em> verb form in each sentence: is it used <b>suitably</b> or <b>unsuitably</b>? Sentence a) is the example: <i>unsuitable</i>.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) While I <em class="hl">had</em> a bath, someone knocked on the door.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Sally <em class="hl">didn't go</em> to a boxing match before.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Harry tried to repair the car, but he didn't really know what he <em class="hl">was doing</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) What <em class="hl">did you wear</em> to the Ponsonby's party?</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) <em class="hl">Were you eating</em> spaghetti every day when you lived in Italy?</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) I didn't know you <em class="hl">had bought</em> a new car.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) They all wanted to believe her, but suspected she <em class="hl">was lying</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) As Peggy walked home, she tried to remember what <em class="hl">happened</em>.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) 'What a terrible day!' thought Lucy. Everything <em class="hl">had gone</em> wrong!</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) Although it rained a lot, I <em class="hl">was enjoying</em> my holiday last year.</p><div class="opts"><button type="button">suitable</button><button type="button">unsuitable</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 4: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Read and complete: The Lost City</h2>
+  <p>Put a suitable past form for all 20 verbs in the passage. Number (1) <i>invited</i> is the worked example — here you fill in all 20 boxes.</p>
+  <div class="q"><p>When Professor Mallory, the famous archaeologist, (1) <input class="blank" data-answers="invited" data-display="invited"> (invite) me to take part in his expedition to find the Lost City of the Himalayas, I (2) <input class="blank" data-answers="did not hesitate|didn't hesitate" data-display="did not hesitate"> (not hesitate) to accept his invitation. Mallory (3) <input class="blank" data-answers="had discovered" data-display="had discovered"> (discover) an ancient map showing the position of the city, although no European (4) <input class="blank" data-answers="had ever been" data-display="had ever been"> (ever go) to the area before. In fact, most of Mallory's colleagues either (5) <input class="blank" data-answers="believed" data-display="believed"> (believe) that the city (6) <input class="blank" data-answers="never existed|had never existed" data-display="never existed / had never existed"> (never exist) or (7) <input class="blank" data-answers="felt" data-display="felt"> (feel) that it (8) <input class="blank" data-answers="vanished|had vanished" data-display="vanished / had vanished"> (vanish) long ago and (9) <input class="blank" data-answers="become|had become" data-display="become / had become"> (become) simply a legend. According to the Professor, the builders of the city (10) <input class="blank" data-answers="had hidden" data-display="had hidden"> (hide) it among the mountains in order to protect its immense riches. He (11) <input class="blank" data-answers="believed" data-display="believed"> (believe) that the descendants of these ancient people (12) <input class="blank" data-answers="were still keeping|still kept" data-display="were still keeping / still kept"> (still keep) themselves apart from the rest of mankind for the very same reasons. So when we (13) <input class="blank" data-answers="set off" data-display="set off"> (set off) on a cool May morning towards the distant mountains, each of us (14) <input class="blank" data-answers="was looking forward" data-display="was looking forward"> (look forward) to exciting discoveries. For a week or more we (15) <input class="blank" data-answers="climbed" data-display="climbed"> (climb) higher and higher, following the map, which Mallory (16) <input class="blank" data-answers="studied" data-display="studied"> (study) from time to time. Then one afternoon, while we (17) <input class="blank" data-answers="were resting" data-display="were resting"> (rest) at the top of a valley, we (18) <input class="blank" data-answers="noticed" data-display="noticed"> (notice) that a rider on a horse (19) <input class="blank" data-answers="was waving" data-display="was waving"> (wave) at us from the other side of the valley. A rider whose clothes (20) <input class="blank" data-answers="shone|were shining" data-display="shone / were shining"> (shine) like gold!</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Rewrite the sentences with a participle clause</h2>
+  <p>Rewrite each sentence, starting with the word given and using a <i>Before / After / While + V-ing</i> phrase. Type the complete sentence in the box.</p>
+  <div class="note">📌 <b>Example a)</b> Norman collected the parcel, but then he realised it was the wrong one. → <i>After collecting the parcel, Norman realised it was the wrong one.</i></div>
+  <div class="q"><p>b) Sue left the house but first she checked that she had her keys. — <b>Before …</b></p><input class="blank wide" data-answers="Before leaving the house, Sue checked that she had her keys." data-display="Before leaving the house, Sue checked that she had her keys." placeholder="Before …"><div class="fb"></div></div>
+  <div class="q"><p>c) Mark was parking his car when he noticed the wing-mirror was broken. — <b>While …</b></p><input class="blank wide" data-answers="While parking his car, Mark noticed the wing-mirror was broken." data-display="While parking his car, Mark noticed the wing-mirror was broken." placeholder="While …"><div class="fb"></div></div>
+  <div class="q"><p>d) Julia cleaned the house, but then she fell asleep on the sofa. — <b>After …</b></p><input class="blank wide" data-answers="After cleaning the house, Julia fell asleep on the sofa." data-display="After cleaning the house, Julia fell asleep on the sofa." placeholder="After …"><div class="fb"></div></div>
+  <div class="q"><p>e) Brian bought a new television, but first he checked all the prices. — <b>Before …</b></p><input class="blank wide" data-answers="Before buying a new television, Brian checked all the prices." data-display="Before buying a new television, Brian checked all the prices." placeholder="Before …"><div class="fb"></div></div>
+  <div class="q"><p>f) Alan was skiing in Switzerland and met his old friend, Ken. — <b>While …</b></p><input class="blank wide" data-answers="While skiing in Switzerland, Alan met his old friend, Ken." data-display="While skiing in Switzerland, Alan met his old friend, Ken." placeholder="While …"><div class="fb"></div></div>
+  <div class="q"><p>g) Kate took two aspirins, and then she felt a lot better. — <b>After …</b></p><input class="blank wide" data-answers="After taking two aspirins, Kate felt a lot better." data-display="After taking two aspirins, Kate felt a lot better." placeholder="After …"><div class="fb"></div></div>
+  <div class="q"><p>h) Sheila went out for the evening, but first she washed her hair. — <b>Before …</b></p><input class="blank wide" data-answers="Before going out for the evening, Sheila washed her hair." data-display="Before going out for the evening, Sheila washed her hair." placeholder="Before …"><div class="fb"></div></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+  <p class="small">Grading tip: capitalisation and punctuation are ignored. In Exercise 6, if the checker marks you wrong only because of one or two different words, press “Show answers” and compare for yourself.</p>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>76</b> (Exercise 1: 4 · Exercise 2: 11 · Exercise 3: 24 blanks · Exercise 4: 10 · Exercise 5: 20 blanks · Exercise 6: 7 sentences).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","accept":"AE0 K S EH1 P T","accident":"AE1 K S AH0 D AH0 N T","according":"AH0 K AO1 R D IH0 NG","action":"AE1 K SH AH0 N","actions":"AE1 K SH AH0 N Z","admit":"AH0 D M IH1 T","adverb":"AE1 D V ER0 B","after":"AE1 F T ER0","afternoon":"AE2 F T ER0 N UW1 N","again":"AH0 G EH1 N","ago":"AH0 G OW1","airport":"EH1 R P AO2 R T","alan":"AE1 L AH0 N","all":"AO1 L","already":"AO0 L R EH1 D IY0","also":"AO1 L S OW0","although":"AO2 L DH OW1","always":"AO1 L W EY2 Z","american":"AH0 M EH1 R AH0 K AH0 N","among":"AH0 M AH1 NG","an":"AE1 N","ancient":"EY1 N CH AH0 N T","and":"AH0 N D","annoying":"AH0 N OY1 IH0 NG","another":"AH0 N AH1 DH ER0","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","apart":"AH0 P AA1 R T","archaeologist":"AA2 R K IY0 AA1 L AH0 JH IH0 S T","are":"AA1 R","area":"EH1 R IY0 AH0","around":"ER0 AW1 N D","arrived":"ER0 AY1 V D","as":"AE1 Z","asleep":"AH0 S L IY1 P","aspirins":"AE1 S P R AH0 N Z","at":"AE1 T","ate":"EY1 T","attention":"AH0 T EH1 N SH AH0 N","austria":"AO1 S T R IY0 AH0","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","background":"B AE1 K G R AW2 N D","bag":"B AE1 G","bath":"B AE1 TH","be":"B IY1","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","bed":"B EH1 D","beer":"B IH1 R","before":"B IH0 F AO1 R","believe":"B IH0 L IY1 V","below":"B IH0 L OW1","benches":"B EH1 N CH IH0 Z","better":"B EH1 T ER0","between":"B IH0 T W IY1 N","blanks":"B L AE1 NG K S","both":"B OW1 TH","bought":"B AA1 T","box":"B AA1 K S","boxes":"B AA1 K S AH0 Z","boxing":"B AA1 K S IH0 NG","brackets":"B R AE1 K AH0 T S","brian":"B R AY1 AH0 N","british":"B R IH1 T IH0 SH","broken":"B R OW1 K AH0 N","builders":"B IH1 L D ER0 Z","burglars":"B ER1 G L ER0 Z","but":"B AH1 T","button":"B AH1 T AH0 N","by":"B AY1","came":"K EY1 M","can":"K AE1 N","cannot":"K AE1 N AA0 T","capitalisation":"K AH0 P IH2 T AH0 L AH0 Z EY1 SH AH0 N","car":"K AA1 R","check":"CH EH1 K","checked":"CH EH1 K T","checker":"CH EH1 K ER0","choose":"CH UW1 Z","chris":"K R IH1 S","city":"S IH1 T IY0","clare's":"K L EH2 R Z","clause":"K L AO1 Z","clauses":"K L AO1 Z AH0 Z","cleaned":"K L IY1 N D","clear":"K L IH1 R","click":"K L IH1 K","climb":"K L AY1 M","close-up":"K L OW1 S AH2 P","clothes":"K L OW1 DH Z","colleagues":"K AA1 L IY0 G Z","collected":"K AH0 L EH1 K T AH0 D","collecting":"K AH0 L EH1 K T IH0 NG","come":"K AH1 M","common":"K AA1 M AH0 N","compare":"K AH0 M P EH1 R","complaint":"K AH0 M P L EY1 N T","complete":"K AH0 M P L IY1 T","completed":"K AH0 M P L IY1 T AH0 D","condition":"K AH0 N D IH1 SH AH0 N","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","contrast":"K AA1 N T R AE0 S T","contrasted":"K AH0 N T R AE1 S T AH0 D","cool":"K UW1 L","correct":"K ER0 EH1 K T","could":"K UH1 D","creates":"K R IY0 EY1 T S","crowd":"K R AW1 D","cup":"K AH1 P","damage":"D AE1 M AH0 JH","dancer":"D AE1 N S ER0","david":"D EY1 V IH0 D","day":"D EY1","days":"D EY1 Z","descendants":"D IH0 S EH1 N D AH0 N T S","describe":"D IH0 S K R AY1 B","described":"D IH0 S K R AY1 B D","describes":"D IH0 S K R AY1 B Z","device":"D IH0 V AY1 S","diana":"D AY0 AE1 N AH0","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","didn't":"D IH1 D AH0 N T","different":"D IH1 F ER0 AH0 N T","disappear":"D IH2 S AH0 P IH1 R","discover":"D IH0 S K AH1 V ER0","discoveries":"D IH0 S K AH1 V ER0 IY0 Z","distant":"D IH1 S T AH0 N T","distractors":"D IH0 S T R AE1 K T ER0 Z","do":"D UW1","doctor":"D AA1 K T ER0","doing":"D UW1 IH0 NG","door":"D AO1 R","down":"D AW1 N","drive":"D R AY1 V","driver":"D R AY1 V ER0","driving":"D R AY1 V IH0 NG","drove":"D R OW1 V","ducks":"D AH1 K S","dutch":"D AH1 CH","each":"IY1 CH","eaten":"IY1 T AH0 N","eating":"IY1 T IH0 NG","eight":"EY1 T","either":"IY1 DH ER0","else":"EH1 L S","end":"EH1 N D","english":"IH1 NG G L IH0 SH","enjoying":"EH2 N JH OY1 IH0 NG","essential":"EH0 S EH1 N SH AH0 L","european":"Y UH2 R AH0 P IY1 AH0 N","evening":"IY1 V N IH0 NG","event":"IH0 V EH1 N T","events":"IH0 V EH1 N T S","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","everything":"EH1 V R IY0 TH IH2 NG","exactly":"IH0 G Z AE1 K T L IY0","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exciting":"IH0 K S AY1 T IH0 NG","exercise":"EH1 K S ER0 S AY2 Z","exist":"IH0 G Z IH1 S T","exists":"IH0 G Z IH1 S T S","expedition":"EH2 K S P AH0 D IH1 SH AH0 N","expression":"IH0 K S P R EH1 SH AH0 N","fact":"F AE1 K T","fall":"F AO1 L","famous":"F EY1 M AH0 S","fast":"F AE1 S T","favourite":"F EY1 V ER0 IH0 T","feed":"F IY1 D","feel":"F IY1 L","fell":"F EH1 L","felt":"F EH1 L T","few":"F Y UW1","fill":"F IH1 L","find":"F AY1 N D","finish":"F IH1 N IH0 SH","finished":"F IH1 N IH0 SH T","first":"F ER1 S T","flight":"F L AY1 T","followed":"F AA1 L OW0 D","following":"F AA1 L OW0 IH0 NG","follows":"F AA1 L OW0 Z","food":"F UW1 D","for":"F AO1 R","forgot":"F ER0 G AA1 T","forgotten":"F ER0 G AA1 T AH0 N","form":"F AO1 R M","forward":"F AO1 R W ER0 D","four":"F AO1 R","frequency":"F R IY1 K W AH0 N S IY0","friend":"F R EH1 N D","from":"F R AH1 M","front":"F R AH1 N T","get":"G EH1 T","getting":"G EH1 T IH0 NG","given":"G IH1 V AH0 N","glasses":"G L AE1 S AH0 Z","go":"G OW1","gold":"G OW1 L D","gone":"G AO1 N","got":"G AA1 T","grabbed":"G R AE1 B D","graded":"G R EY1 D AH0 D","grading":"G R EY1 D IH0 NG","graham":"G R EY1 AH0 M","grammar":"G R AE1 M ER0","grass":"G R AE1 S","habit":"HH AE1 B AH0 T","habits":"HH AE1 B AH0 T S","habitual":"HH AH0 B IH1 CH UW0 AH0 L","had":"HH AE1 D","hadn't":"HH AE1 D AH0 N T","hair":"HH EH1 R","handbag":"HH AE1 N D B AE2 G","hands":"HH AE1 N D Z","happened":"HH AE1 P AH0 N D","harry":"HH EH1 R IY0","having":"HH AE1 V IH0 NG","he":"HH IY1","helen":"HH EH1 L AH0 N","help":"HH EH1 L P","her":"HH ER1","here":"HH IY1 R","hesitate":"HH EH1 Z AH0 T EY2 T","hide":"HH AY1 D","higher":"HH AY1 ER0","highlighted":"HH AY1 L AY2 T IH0 D","him":"HH IH1 M","himalayas":"HH IH2 M AH0 L AY1 AH0 S","his":"HH IH1 Z","hit":"HH IH1 T","holding":"HH OW1 L D IH0 NG","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","hope":"HH OW1 P","hoping":"HH OW1 P IH0 NG","horse":"HH AO1 R S","house":"HH AW1 S","html":"EY2 CH T IY2 EH2 M EH1 L","if":"IH1 F","ignored":"IH2 G N AO1 R D","immense":"IH2 M EH1 N S","in":"IH0 N","index":"IH1 N D EH0 K S","interrupts":"IH2 N T ER0 AH1 P T S","into":"IH1 N T UW0","invitation":"IH2 N V IH0 T EY1 SH AH0 N","invite":"IH2 N V AY1 T","invited":"IH2 N V AY1 T AH0 D","is":"IH1 Z","it":"IH1 T","italic":"AY0 T AE1 L IH0 K","italy":"IH1 T AH0 L IY0","items":"AY1 T AH0 M Z","its":"IH1 T S","jack":"JH AE1 K","jacket":"JH AE1 K AH0 T","japanese":"JH AE2 P AH0 N IY1 Z","jim":"JH IH1 M","job":"JH AA1 B","join":"JH OY1 N","julia":"JH UW1 L Y AH0","just":"JH AH1 S T","kate":"K EY1 T","keep":"K IY1 P","ken":"K EH1 N","key":"K IY1","keys":"K IY1 Z","kind":"K AY1 N D","knew":"N UW1","knocked":"N AA1 K T","know":"N OW1","last":"L AE1 S T","laura":"L AO1 R AH0","leaving":"L IY1 V IH0 NG","left":"L EH1 F T","legend":"L EH1 JH AH0 N D","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","letter":"L EH1 T ER0","lie":"L AY1","light":"L AY1 T","like":"L AY1 K","liking":"L AY1 K IH0 NG","listen":"L IH1 S AH0 N","lists":"L IH1 S T S","live":"L AY1 V","lived":"L IH1 V D","long":"L AO1 NG","longer":"L AO1 NG G ER0","look":"L UH1 K","looking":"L UH1 K IH0 NG","lost":"L AO1 S T","lot":"L AA1 T","lucy":"L UW1 S IY0","lunch":"L AH1 N CH","lying":"L AY1 IH0 NG","main":"M EY1 N","mainly":"M EY1 N L IY0","make":"M EY1 K","makes":"M EY1 K S","mallory":"M AE1 L ER0 IY0","mallory's":"M AE1 L ER0 IY0 Z","man":"M AE1 N","managed":"M AE1 N AH0 JH D","mankind":"M AE1 N K AY1 N D","many":"M EH1 N IY0","map":"M AE1 P","march":"M AA1 R CH","mark":"M AA1 R K","marks":"M AA1 R K S","mary":"M EH1 R IY0","match":"M AE1 CH","may":"M EY1","me":"M IY1","mean":"M IY1 N","meaning":"M IY1 N IH0 NG","met":"M EH1 T","missed":"M IH1 S T","mode":"M OW1 D","model":"M AA1 D AH0 L","moment":"M OW1 M AH0 N T","moments":"M OW1 M AH0 N T S","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","mother":"M AH1 DH ER0","mountains":"M AW1 N T AH0 N Z","much":"M AH1 CH","must":"M AH1 S T","my":"M AY1","necessary":"N EH1 S AH0 S EH2 R IY0","need":"N IY1 D","needing":"N IY1 D IH0 NG","needs":"N IY1 D Z","negative":"N EH1 G AH0 T IH0 V","never":"N EH1 V ER0","new":"N UW1","next":"N EH1 K S T","nick":"N IH1 K","night":"N AY1 T","no":"N OW1","no-one":"N OW1 W AH0 N","norman":"N AO1 R M AH0 N","not":"N AA1 T","note":"N OW1 T","notes":"N OW1 T S","notice":"N OW1 T AH0 S","noticed":"N OW1 T AH0 S T","now":"N AW1","number":"N AH1 M B ER0","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","office":"AO1 F IH0 S","often":"AO1 F AH0 N","old":"OW1 L D","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","onto":"AA1 N T UW0","open":"OW1 P AH0 N","opens":"OW1 P AH0 N Z","optional":"AA1 P SH AH0 N AH0 L","or":"AO1 R","order":"AO1 R D ER0","ordinary":"AO1 R D AH0 N EH2 R IY0","other":"AH1 DH ER0","others":"AH1 DH ER0 Z","out":"AW1 T","over":"OW1 V ER0","own":"OW1 N","packed":"P AE1 K T","packing":"P AE1 K IH0 NG","page":"P EY1 JH","parcel":"P AA1 R S AH0 L","parking":"P AA1 R K IH0 NG","part":"P AA1 R T","participle":"P AA1 R T IH0 S IH2 P AH0 L","parts":"P AA1 R T S","party":"P AA1 R T IY0","passage":"P AE1 S AH0 JH","passing":"P AE1 S IH0 NG","passport":"P AE1 S P AO2 R T","past":"P AE1 S T","pattern":"P AE1 T ER0 N","pay":"P EY1","peggy":"P EH1 G IY0","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","person":"P ER1 S AH0 N","personal":"P ER1 S IH0 N AH0 L","peter":"P IY1 T ER0","phone":"F OW1 N","phoned":"F OW1 N D","phoning":"F OW1 N IH0 NG","phrase":"F R EY1 Z","pick":"P IH1 K","picture":"P IH1 K CH ER0","pictures":"P IH1 K CH ER0 Z","pipe":"P AY1 P","platform":"P L AE1 T F AO2 R M","pocket":"P AA1 K AH0 T","points":"P OY1 N T S","police":"P AH0 L IY1 S","polite":"P AH0 L AY1 T","ponsonby's":"P AA1 N S AH0 N B IY0 Z","portugal":"P AO1 R CH AH0 G AH0 L","position":"P AH0 Z IH1 SH AH0 N","power-cut":"P AW1 ER0 K AH2 T","practice":"P R AE1 K T AH0 S","present":"P R EH1 Z AH0 N T","press":"P R EH1 S","prices":"P R AY1 S AH0 Z","professor":"P R AH0 F EH1 S ER0","programme":"P R OW1 G R AE2 M","progress":"P R AA1 G R EH2 S","protect":"P R AH0 T EH1 K T","pulled":"P UH1 L D","punctuation":"P AH2 NG K CH UW0 EY1 SH AH0 N","push":"P UH1 SH","put":"P UH1 T","question":"K W EH1 S CH AH0 N","radio":"R EY1 D IY0 OW2","rain":"R EY1 N","rained":"R EY1 N D","rang":"R AE1 NG","reached":"R IY1 CH T","read":"R EH1 D","reading":"R IY1 D IH0 NG","realised":"R IY1 AH0 L AY2 Z D","really":"R IH1 L IY0","reasons":"R IY1 Z AH0 N Z","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","remembered":"R IH0 M EH1 M B ER0 D","reminiscence":"R EH2 M AH0 N IH1 S AH0 N S","repair":"R IH0 P EH1 R","repeated":"R IH0 P IY1 T IH0 D","required":"R IY0 K W AY1 ER0 D","reset":"R IY0 S EH1 T","rest":"R EH1 S T","returned":"R IH0 T ER1 N D","rewrite":"R IY0 R AY1 T","riches":"R IH1 CH AH0 Z","rider":"R AY1 D ER0","right":"R AY1 T","routines":"R UW0 T IY1 N Z","rows":"R OW1 Z","said":"S EH1 D","sally":"S AE1 L IY0","same":"S EY1 M","saw":"S AO1","say":"S EY1","scene":"S IY1 N","score":"S K AO1 R","second":"S EH1 K AH0 N D","see":"S IY1","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","set":"S EH1 T","several":"S EH1 V R AH0 L","she":"SH IY1","sheila":"SH IY1 L AH0","shine":"SH AY1 N","shopping":"SH AA1 P IH0 NG","shorter":"SH AO1 R T ER0","shoulder":"SH OW1 L D ER0","show":"SH OW1","showing":"SH OW1 IH0 NG","side":"S AY1 D","simple":"S IH1 M P AH0 L","simply":"S IH1 M P L IY0","sit":"S IH1 T","six":"S IH1 K S","skiing":"S K IY1 IH0 NG","sleeping":"S L IY1 P IH0 NG","so":"S OW1","sofa":"S OW1 F AH0","softer":"S AA1 F T ER0","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","sorry":"S AA1 R IY0","spaghetti":"S P AH0 G EH1 T IY0","specific":"S P AH0 S IH1 F IH0 K","speed":"S P IY1 D","start":"S T AA1 R T","started":"S T AA1 R T IH0 D","starting":"S T AA1 R T IH0 NG","state":"S T EY1 T","states":"S T EY1 T S","station":"S T EY1 SH AH0 N","still":"S T IH1 L","stop":"S T AA1 P","story":"S T AO1 R IY0","street":"S T R IY1 T","strongly":"S T R AO1 NG L IY0","struggling":"S T R AH1 G AH0 L IH0 NG","study":"S T AH1 D IY0","subject":"S AH0 B JH EH1 K T","sudden":"S AH1 D AH0 N","suddenly":"S AH1 D AH0 N L IY0","sue":"S UW1","suggests":"S AH0 JH EH1 S T S","suitable":"S UW1 T AH0 B AH0 L","suitably":"S UW1 T AH0 B L IY0","suitcase":"S UW1 T K EY2 S","summary":"S AH1 M ER0 IY0","summer":"S AH1 M ER0","susan":"S UW1 Z AH0 N","suspected":"S AH0 S P EH1 K T IH0 D","sweets":"S W IY1 T S","swim":"S W IH1 M","switzerland":"S W IH1 T S ER0 L AH0 N D","take":"T EY1 K","taking":"T EY1 K IH0 NG","talking":"T AO1 K IH0 NG","tanya":"T AA1 N Y AH0","tap":"T AE1 P","tea":"T IY1","television":"T EH1 L AH0 V IH2 ZH AH0 N","telling":"T EH1 L IH0 NG","tells":"T EH1 L Z","tense":"T EH1 N S","tenses":"T EH1 N S IH0 Z","tentative":"T EH1 N T AH0 T IH0 V","terrible":"T EH1 R AH0 B AH0 L","test":"T EH1 S T","than":"DH AE1 N","that":"DH AE1 T","the":"DH AH0","them":"DH EH1 M","themselves":"DH EH0 M S EH1 L V Z","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","thing":"TH IH1 NG","think":"TH IH1 NG K","thinking":"TH IH1 NG K IH0 NG","this":"DH IH1 S","those":"DH OW1 Z","thought":"TH AO1 T","ticket":"T IH1 K AH0 T","time":"T AY1 M","times":"T AY1 M Z","tip":"T IH1 P","tired":"T AY1 ER0 D","to":"T UW1","told":"T OW1 L D","tom":"T AA1 M","tony":"T OW1 N IY0","took":"T UH1 K","top":"T AA1 P","total":"T OW1 T AH0 L","tourists":"T UH1 R AH0 S T S","towards":"T AH0 W AO1 R D Z","train":"T R EY1 N","tried":"T R AY1 D","trouble":"T R AH1 B AH0 L","try":"T R AY1","trying":"T R AY1 IH0 NG","turn":"T ER1 N","two":"T UW1","type":"T AY1 P","typical":"T IH1 P AH0 K AH0 L","under":"AH1 N D ER0","unlike":"AH0 N L AY1 K","unsuitable":"AH0 N S UW1 T AH0 B AH0 L","up":"AH1 P","us":"AH1 S","use":"Y UW1 S","used":"Y UW1 Z D","using":"Y UW1 Z IH0 NG","usually":"Y UW1 ZH AH0 W AH0 L IY0","valley":"V AE1 L IY0","vanish":"V AE1 N IH0 SH","verb":"V ER1 B","verbs":"V ER1 B Z","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","voice":"V OY1 S","voices":"V OY1 S AH0 Z","waiting":"W EY1 T IH0 NG","walked":"W AO1 K T","walking":"W AO1 K IH0 NG","wallet":"W AO1 L AH0 T","wanted":"W AO1 N T IH0 D","was":"W AA1 Z","washed":"W AA1 SH T","watched":"W AA1 CH T","watching":"W AA1 CH IH0 NG","wave":"W EY1 V","way":"W EY1","we":"W IY1","weaker":"W IY1 K ER0","wear":"W EH1 R","week":"W IY1 K","went":"W EH1 N T","were":"W ER1","what":"W AH1 T","when":"W EH1 N","which":"W IH1 CH","while":"W AY1 L","who":"HH UW1","whose":"HH UW1 Z","will":"W IH1 L","wing-mirror":"W IH1 NG M IH2 R ER0","with":"W IH1 DH","without":"W IH0 TH AW1 T","wonder":"W AH1 N D ER0","wondering":"W AH1 N D ER0 IH0 NG","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","would":"W UH1 D","writing":"R AY1 T IH0 NG","wrong":"R AO1 NG","year":"Y IH1 R","years":"Y IH1 R Z","yesterday":"Y EH1 S T ER0 D EY2","you":"Y UW1","younger":"Y AH1 NG G ER0","your":"Y AO1 R","yours":"Y UH1 R Z","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

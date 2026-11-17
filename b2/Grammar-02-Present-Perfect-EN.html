@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 2 — Present Perfect | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-02-Present-Perfect.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-02-Present-Perfect-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 2 — Present Perfect</h1>
+  <p>The present perfect: Present Perfect Simple · Present Perfect Continuous · for / since / ago</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+<div class="card">
+  <h2>1. The Present Perfect Simple</h2>
+  <div class="formula">S + have / has + V₃ (past participle)</div>
+
+  <h3>a) Recent events</h3>
+  <p>Used to describe events that <b>have happened recently</b>. The event took place in the past, but <b>its result is still in the present</b>. No definite time is given; to emphasise recentness, use <i>just</i>, and use <i>yet</i> for something that has not happened.</p>
+  <div class="ex"><div class="en">I've left my shopping bag behind.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've broken my arm, as you can see.</div><div class="vi">(the result is still plainly visible now)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've just broken my watch.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I haven't found her phone number yet.</div><div class="tts"></div></div>
+
+  <h3>b) Indefinite events</h3>
+  <p>No definite time is given: these are events in <b>our life experience up to now</b>. After <i>It's/This is the first/second time…</i> we also use the present perfect.</p>
+  <div class="ex"><div class="en">I've been to France three times.</div><div class="vi">(in my life up to now — no definite time is stated)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This is the first time I have eaten Japanese food.</div><div class="tts"></div></div>
+
+  <h3>c) Contrast with the Past Simple</h3>
+  <p>Events described with the Past Simple always have a <b>definite time</b>. Even mentioning a <b>definite place</b> for an event can suggest a definite time → use the Past Simple.</p>
+  <div class="ex"><div class="en">I went to France last year. I ate at a Japanese restaurant on Saturday.</div><div class="vi">(with definite time expressions: <i>last year</i>, <i>on Saturday</i>)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I left my shopping bag on the train.</div><div class="vi">(a definite place is mentioned, suggesting a definite time)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. Events that last or repeat up to the present</h2>
+
+  <h3>a) Present Perfect Simple — a lasting state</h3>
+  <p>It describes a state that <b>lasts up to the present</b>, or a habitual action in a period of time up to now.</p>
+  <div class="ex"><div class="en">I've lived in this house for five years.</div><div class="vi">(and I am still living here)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've never worn a tie to work, and I refuse to start now!</div><div class="tts"></div></div>
+
+  <h3>b) Present Perfect Continuous — an action in progress</h3>
+  <div class="formula">S + have / has + been + V-ing</div>
+  <p>It also describes a state lasting up to the present; with this group, there is <b>little difference in meaning</b> between the simple and continuous forms, including in <i>How long…?</i> questions. Some verbs, such as <i>wait, sit, lie, stay</i>, prefer the continuous form.</p>
+  <div class="ex"><div class="en">I've been living in this house for five years.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">How long have you lived in this house? — How long have you been living in this house?</div><div class="vi">(the two questions are equivalent)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been waiting for ages.</div><div class="vi">(the continuous form is preferred with <i>wait</i>)</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. Simple or continuous?</h2>
+
+  <h3>a) Completed action → the simple form</h3>
+  <p>The simple form emphasises that the action is <b>complete</b>. When we say <b>how many / how much</b>, we always use the simple form.</p>
+  <div class="ex"><div class="en">I've finished my homework!</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've written ten pages of my homework!</div><div class="vi">(an amount is stated → the simple form)</div><div class="tts"></div></div>
+
+  <h3>b) Not completed, or just stopped → the continuous form</h3>
+  <p>The continuous form shows that the action is <b>not complete</b>, or that it has finished only recently.</p>
+  <div class="ex"><div class="en">We've been walking for hours! Let's have a rest.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been digging the garden. That's why I'm so dirty!</div><div class="vi">(the activity has just been going on; its traces are still visible)</div><div class="tts"></div></div>
+
+  <h3>c) Focus on the result, or on the activity?</h3>
+  <p>Focus on the <b>present result</b> → simple form. Focus on the <b>action in progress</b> → continuous form.</p>
+  <div class="ex"><div class="en">I've written my homework. Now I can watch the television.</div><div class="vi">(focus on the result)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've been writing my homework all evening! I didn't know it would take so long.</div><div class="vi">(focus on the activity in progress)</div><div class="tts"></div></div>
+  <div class="note">⚠️ Three time expressions that are often confused: <b>for</b> + a period of time (for five years), <b>since</b> + the starting point (since 2020), and <b>ago</b>, used only with the past simple for finished events (two days ago).</div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>The Present Perfect Simple</b> describes events with <b>no definite time</b>: either the event lies in a period of time leading up to the present, or its result is still evident in the present. The choice between the present perfect and the past simple depends on how the speaker views the event: <i>I've had an accident</i> (still connected with the present) compared with <i>I had an accident</i> (viewed as finished, separate from the present).</li>
+    <li>Events described with the present perfect may be <b>recent, or not</b> — they do not have to have happened just now.</li>
+    <li><b>The Present Perfect Continuous</b> is used for an action in progress: it suggests the action is <b>unfinished</b> or has only just finished. Compare: <i>I've read this book</i> (completion emphasised) — <i>I've been reading this book</i> (the action itself emphasised; it may not be complete). The continuous form also emphasises the <b>length of time</b> of the action.</li>
+    <li><b>For</b> refers to a period of time (finished or unfinished): <i>I waited for three hours. He's been sitting there for ages.</i></li>
+    <li><b>Since</b> refers to the point at which an unfinished period of time began: <i>He's been sitting there since two o'clock.</i></li>
+    <li><b>Ago</b> refers to the time of a finished event (used with the past simple): <i>Jill arrived a week ago.</i></li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the sentence that matches each picture</h2>
+  <p>There are six pictures, described in words as follows:</p>
+  <ul>
+    <li><b>Picture a:</b> A boy in football kit has just walked into the house; his parents and his sister are looking at him.</li>
+    <li><b>Picture b:</b> A messy office with things tipped over; a man is raising his hands, complaining to two employees.</li>
+    <li><b>Picture c:</b> Museum visitors are looking at a portrait of King Henry VIII (the king famous for having six wives).</li>
+    <li><b>Picture d:</b> The “Arrivals” area at an airport: a woman who has just arrived, pulling a suitcase, shakes hands with the person meeting her.</li>
+    <li><b>Picture e:</b> A man is waiting outside a theatre, impatiently looking at his watch.</li>
+    <li><b>Picture f:</b> In a room, Wendy's chair is empty; two friends are wondering about her.</li>
+  </ul>
+  <p>Each picture has two sentences — choose the one that <b>suits</b> the picture:</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p><b>a)</b> The boy who has just come home from football:</p><div class="opts"><button type="button">Did you enjoy the match?</button><button type="button">Have you enjoyed the match?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>b)</b> The messy office:</p><div class="opts"><button type="button">What have you been doing?</button><button type="button">What have you done?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>c)</b> The portrait of Henry VIII:</p><div class="opts"><button type="button">He was married six times.</button><button type="button">He has been married six times.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>d)</b> The airport Arrivals area:</p><div class="opts"><button type="button">How long have you been here?</button><button type="button">How long are you here for?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>e)</b> The man waiting outside the theatre:</p><div class="opts"><button type="button">I've been waiting for two hours.</button><button type="button">I waited for two hours.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>f)</b> Wendy's empty chair:</p><div class="opts"><button type="button">Where did Wendy go?</button><button type="button">Where has Wendy been?</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/6</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>Exercise 2 — Choose the most suitable verb form</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) ______ my bag anywhere? I can't find it.</p><div class="opts"><button type="button">Did you see</button><button type="button">Have you seen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) Larry ______ his novel for the last two years.</p><div class="opts"><button type="button">is writing</button><button type="button">has been writing</button><button type="button">has written</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) From the minute he got up this morning Gary ______ silly questions!</p><div class="opts"><button type="button">asked</button><button type="button">has asked</button><button type="button">has been asking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d1) ______ Helen my message…</p><div class="opts"><button type="button">Have you given</button><button type="button">Did you give</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d2) …when you ______ her?</p><div class="opts"><button type="button">have seen</button><button type="button">saw</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) Sorry, could you say that again? I ______ to you.</p><div class="opts"><button type="button">didn't listen</button><button type="button">haven't listened</button><button type="button">haven't been listening</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) The police think that they ______ your wallet, so call this number.</p><div class="opts"><button type="button">found</button><button type="button">have found</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) ______ before? Eric, this is Amanda.</p><div class="opts"><button type="button">Did you two meet</button><button type="button">Have you two met</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) ______ anyone interesting at the reception?</p><div class="opts"><button type="button">Did you meet</button><button type="button">Have you met</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 2: <span class="score-num">0</span>/9</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Put the verbs in brackets into a suitable form</h2>
+  <p>In sentence a) the first verb is given as an example: <i>had</i>.</p>
+  <div class="q"><p>a) I'm sorry about not coming last week. I <b>had</b> (have) a cold and so I <input class="blank" data-answers="stayed" data-display="stayed"> (stay) at home.</p></div>
+  <div class="q"><p>b) Wait a minute! I <input class="blank" data-answers="have|have had" data-display="have / have had"> (have) an idea. Let's go and see Roger. We last <input class="blank" data-answers="saw" data-display="saw"> (see) him a long time ago.</p></div>
+  <div class="q"><p>c) It's nice to be back here in London. This is the second time I <input class="blank" data-answers="have come" data-display="have come"> (come) here.</p></div>
+  <div class="q"><p>d) I'm phoning about your bicycle for sale, which I <input class="blank" data-answers="saw" data-display="saw"> (see) in the local paper. <input class="blank" data-answers="Have you sold" data-display="Have you sold"> (you sell) it? Or is it still available?</p></div>
+  <div class="q"><p>e) This place is in a terrible mess! What on earth <input class="blank" data-answers="have you been doing" data-display="have you been doing"> (you do)?</p></div>
+  <div class="q"><p>f) And now for an item of local news. Hampshire police <input class="blank" data-answers="have found" data-display="have found"> (find) the dangerous snake which <input class="blank" data-answers="went" data-display="went"> (go) missing earlier in the week.</p></div>
+  <div class="q"><p>g) This tooth <input class="blank" data-answers="has been killing" data-display="has been killing"> (kill) me lately! So I <input class="blank" data-answers="have made" data-display="have made"> (make) an appointment with the dentist for next Tuesday.</p></div>
+  <div class="q"><p>h) I can't give you the report I <input class="blank" data-answers="promised" data-display="promised"> (promise) for today because I <input class="blank" data-answers="have not finished|haven't finished" data-display="haven't finished"> (not finish) it.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/13</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>Exercise 4 — Choose the most suitable time expression</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) I haven't seen Gerry ______ a long time. How is he?</p><div class="opts"><button type="button">for</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) It's ages ______ I last went to a football match.</p><div class="opts"><button type="button">ago</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) I've written to Deborah ______.</p><div class="opts"><button type="button">last week</button><button type="button">recently</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) What have you been doing ______?</p><div class="opts"><button type="button">today</button><button type="button">yesterday</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Have you eaten Italian food ______?</p><div class="opts"><button type="button">before</button><button type="button">already</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) I've been living here ______ the end of last year.</p><div class="opts"><button type="button">in</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Actually I had dinner with Sue ______.</p><div class="opts"><button type="button">last night</button><button type="button">lately</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I've been trying to get in touch with David ______.</p><div class="opts"><button type="button">for ages</button><button type="button">for the last time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Terry hasn't been to Edinburgh ______ we went there together.</p><div class="opts"><button type="button">since</button><button type="button">when</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>j) I can't remember ______ I've had this watch.</p><div class="opts"><button type="button">how long</button><button type="button">when</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 4: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Complete the second sentence so that it has a similar meaning (use the word given, 2–5 words)</h2>
+  <p class="small">Sentence a) is given as a worked example: <i>Steve has been learning the violin for a month.</i> Type the missing part in the box (including the word given).</p>
+  <div class="q"><p>b) I haven't been to an Indian restaurant for ages. — <b>since</b><br>It's ages <input class="blank wide" data-answers="since I went to" data-display="since I went to"> an Indian restaurant.</p></div>
+  <div class="q"><p>c) When she heard the results, Mary began to feel more confident. — <b>become</b><br>Since hearing the results <input class="blank wide" data-answers="Mary has become" data-display="Mary has become"> more confident.</p></div>
+  <div class="q"><p>d) The last time Nancy came here was in 1986. — <b>since</b><br>Nancy hasn't <input class="blank wide" data-answers="been here since" data-display="been here since"> 1986.</p></div>
+  <div class="q"><p>e) This is my first visit to Japan. — <b>time</b><br>This is the first <input class="blank wide" data-answers="time I have been" data-display="time I have been"> to Japan.</p></div>
+  <div class="q"><p>f) How long have Helen and Robert been married? — <b>get</b><br>When <input class="blank wide" data-answers="did Helen and Robert get" data-display="did Helen and Robert get"> married?</p></div>
+  <div class="q"><p>g) Jack bought those trousers last month, and has been wearing them ever since. — <b>for</b><br>Jack has <input class="blank wide" data-answers="been wearing those trousers for" data-display="been wearing those trousers for"> a month.</p></div>
+  <div class="q"><p>h) It's a long time since our last conversation. — <b>spoken</b><br>We <input class="blank wide" data-answers="have not spoken for a|haven't spoken for a" data-display="haven't spoken for a"> long time.</p></div>
+  <div class="q"><p>i) Thanks, but I had something to eat earlier. — <b>already</b><br>Thanks, but I've <input class="blank wide" data-answers="already had something to" data-display="already had something to"> eat.</p></div>
+  <div class="q"><p>j) This is my first game of water-polo. — <b>played</b><br>I <input class="blank wide" data-answers="have not played water-polo|haven't played water-polo|have never played water-polo" data-display="haven't played water-polo"> before.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Present perfect simple or continuous?</h2>
+  <p>Put each verb in brackets into the <b>present perfect simple</b> or the <b>present perfect continuous</b>. Sentence a) is given as an example: <i>has eaten</i>.</p>
+  <div class="q"><p>a) Someone <b>has eaten</b> (eat) all the cakes. I'll have to buy some more.</p></div>
+  <div class="q"><p>b) What <input class="blank" data-answers="have you bought" data-display="have you bought"> (you buy) your sister for her birthday?</p></div>
+  <div class="q"><p>c) My throat is really sore. I <input class="blank" data-answers="have been singing" data-display="have been singing"> (sing) all evening.</p></div>
+  <div class="q"><p>d) Brenda <input class="blank" data-answers="has been learning" data-display="has been learning"> (learn) Russian, but she finds it difficult.</p></div>
+  <div class="q"><p>e) How many people <input class="blank" data-answers="have you invited" data-display="have you invited"> (you invite) to your party?</p></div>
+  <div class="q"><p>f) Those two cats <input class="blank" data-answers="have been sitting" data-display="have been sitting"> (sit) on that branch for the last hour.</p></div>
+  <div class="q"><p>g) It <input class="blank" data-answers="has been raining" data-display="has been raining"> (rain) all day! Why can't it stop?</p></div>
+  <div class="q"><p>h) Diana <input class="blank" data-answers="has worn" data-display="has worn"> (wear) twelve different dresses in the past week!</p></div>
+  <div class="q"><p>i) I <input class="blank" data-answers="have done" data-display="have done"> (do) everything you asked. What should I do now?</p></div>
+  <div class="q"><p>j) Graham and Pauline <input class="blank" data-answers="have been trying" data-display="have been trying"> (try) to find a house for ages, but they can't find one they can afford.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/9</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>Exercise 7 — Read and complete: oil news</h2>
+  <p>Put each verb into the <b>past simple</b>, the <b>present perfect simple</b> or the <b>present perfect continuous</b>. Box (1) is given as an example: <i>has discovered</i>.</p>
+  <div class="q"><p>It was announced in London this morning that the British Oil Corporation (1) <b>has discovered</b> (discover) oil under the sea near the Welsh coast. The company, which (2) <input class="blank" data-answers="has been drilling" data-display="has been drilling"> (drill) for oil in the area since 2001, (3) <input class="blank" data-answers="found" data-display="found"> (find) small amounts of oil near Swansea last month, and since then (4) <input class="blank" data-answers="has discovered" data-display="has discovered"> (discover) larger amounts under the seabed nearby. Last year the government (5) <input class="blank" data-answers="lent" data-display="lent"> (lend) over £50,000,000 to BOC, and (6) <input class="blank" data-answers="gave" data-display="gave"> (give) permission for the company to build an oil refinery and other facilities in South Wales.</p></div>
+  <div class="q"><p>The reaction of local people to today's news (7) <input class="blank" data-answers="has been" data-display="has been"> (be) mixed so far. Local MPs (8) <input class="blank" data-answers="have already welcomed" data-display="have already welcomed"> (already welcome) the news, pointing out that the oil industry will bring badly needed jobs to the area. But local residents are worried about the danger of pollution. 'Nobody (9) <input class="blank" data-answers="has asked" data-display="has asked"> (ask) us yet what we want,' said Ann Griffiths, leader of the Keep Out The Oil Campaign. 'Look what (10) <input class="blank" data-answers="happened" data-display="happened"> (happen) when they (11) <input class="blank" data-answers="found" data-display="found"> (find) oil in Scotland in the 1960s. The oil companies (12) <input class="blank" data-answers="got" data-display="got"> (get) rich, not the local people. BOC (13) <input class="blank" data-answers="has not told|hasn't told" data-display="hasn't told"> (not tell) us the truth about what this is going to mean for our people.' A BOC spokesman later (14) <input class="blank" data-answers="refused" data-display="refused"> (refuse) to comment. Meanwhile local campaigners (15) <input class="blank" data-answers="have asked" data-display="have asked"> (ask) the government to hold an inquiry.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ Check Exercise 7</button><button type="button" onclick="showFill('ex7')">👁 Show answers</button><button type="button" onclick="resetFill('ex7')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 7: <span class="fill-score">—</span>/14</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex8">
+  <h2>Exercise 8 — Find the extra word in each line (a letter from the builders)</h2>
+  <p>Read the letter <i>A letter from the builders</i>. Some lines are <b>correct</b>, and some lines contain <b>one extra word</b> that should not be there. For each line: if the line is correct, choose <b>✓ (correct line)</b>; if there is an extra word, choose that word. The first two lines are given as worked examples (<i>been</i> and <i>✓</i>) — here, answer all 17 lines.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p><b>Example line 1:</b> “Just a quick note to explain what we have been done”</p><div class="opts"><button type="button">done</button><button type="button">been</button><button type="button">have</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Example line 2:</b> “so far this month. The work on the kitchen has gone”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">gone</button><button type="button">work</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 1:</b> “well so far, although we haven't already finished”</p><div class="opts"><button type="button">finished</button><button type="button">already</button><button type="button">although</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 2:</b> “knocking down the outside wall yet. So I wrote”</p><div class="opts"><button type="button">wrote</button><button type="button">so</button><button type="button">wall</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 3:</b> “to you last week and have explained that two of”</p><div class="opts"><button type="button">have</button><button type="button">explained</button><button type="button">week</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 4:</b> “my workmen were ill. They have quite recovered”</p><div class="opts"><button type="button">recovered</button><button type="button">✓ (correct line)</button><button type="button">ill</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 5:</b> “now, I am glad to say, and they have came back”</p><div class="opts"><button type="button">came</button><button type="button">back</button><button type="button">have</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 6:</b> “to work yesterday. As the weather has been bad”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">weather</button><button type="button">bad</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 7:</b> “we have been work inside most of the time, and”</p><div class="opts"><button type="button">been</button><button type="button">work</button><button type="button">inside</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 8:</b> “all the painting is now been finished. We have”</p><div class="opts"><button type="button">finished</button><button type="button">have</button><button type="button">been</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 9:</b> “also put in a new window in the kitchen, as you”</p><div class="opts"><button type="button">window</button><button type="button">✓ (correct line)</button><button type="button">kitchen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 10:</b> “have instructed in your last letter. As you”</p><div class="opts"><button type="button">have</button><button type="button">instructed</button><button type="button">letter</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 11:</b> “have not been visiting here for two weeks”</p><div class="opts"><button type="button">been</button><button type="button">visiting</button><button type="button">weeks</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 12:</b> “we have not had the chance to discuss the walls.”</p><div class="opts"><button type="button">chance</button><button type="button">walls</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 13:</b> “When we checked them we have discovered”</p><div class="opts"><button type="button">discovered</button><button type="button">have</button><button type="button">checked</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 14:</b> “that they are in a dangerous condition. I'll”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">dangerous</button><button type="button">condition</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 15:</b> “let you know what we have do to them.”</p><div class="opts"><button type="button">do</button><button type="button">them</button><button type="button">have</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 8: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>87</b> (Exercise 1: 6 · Exercise 2: 9 · Exercise 3: 13 blanks · Exercise 4: 10 · Exercise 5: 9 blanks · Exercise 6: 9 blanks · Exercise 7: 14 blanks · Exercise 8: 17 lines).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","accident":"AE1 K S AH0 D AH0 N T","action":"AE1 K SH AH0 N","activity":"AE0 K T IH1 V AH0 T IY0","actually":"AE1 K CH UW2 AH0 L IY0","afford":"AH0 F AO1 R D","after":"AE1 F T ER0","again":"AH0 G EH1 N","ages":"EY1 JH AH0 Z","ago":"AH0 G OW1","airport":"EH1 R P AO2 R T","all":"AO1 L","already":"AO0 L R EH1 D IY0","also":"AO1 L S OW0","although":"AO2 L DH OW1","always":"AO1 L W EY2 Z","am":"AE1 M","amanda":"AH0 M AE1 N D AH0","american":"AH0 M EH1 R AH0 K AH0 N","amount":"AH0 M AW1 N T","amounts":"AH0 M AW1 N T S","an":"AE1 N","and":"AH0 N D","ann":"AE1 N","announced":"AH0 N AW1 N S T","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","anyone":"EH1 N IY0 W AH2 N","anywhere":"EH1 N IY0 W EH2 R","appointment":"AH0 P OY1 N T M AH0 N T","are":"AA1 R","area":"EH1 R IY0 AH0","arm":"AA1 R M","arrivals":"ER0 AY1 V AH0 L Z","arrived":"ER0 AY1 V D","as":"AE1 Z","ask":"AE1 S K","asked":"AE1 S K T","asking":"AE1 S K IH0 NG","at":"AE1 T","ate":"EY1 T","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","bad":"B AE1 D","badly":"B AE1 D L IY0","bag":"B AE1 G","be":"B IY1","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","been":"B IH1 N","before":"B IH0 F AO1 R","began":"B IH0 G AE1 N","behind":"B IH0 HH AY1 N D","below":"B IH0 L OW1","between":"B IH0 T W IY1 N","bicycle":"B AY1 S IH0 K AH0 L","birthday":"B ER1 TH D EY2","blanks":"B L AE1 NG K S","book":"B UH1 K","bought":"B AA1 T","box":"B AA1 K S","boy":"B OY1","brackets":"B R AE1 K AH0 T S","branch":"B R AE1 N CH","brenda":"B R EH1 N D AH0","bring":"B R IH1 NG","british":"B R IH1 T IH0 SH","broken":"B R OW1 K AH0 N","build":"B IH1 L D","builders":"B IH1 L D ER0 Z","but":"B AH1 T","button":"B AH1 T AH0 N","buy":"B AY1","cakes":"K EY1 K S","call":"K AO1 L","came":"K EY1 M","campaign":"K AE0 M P EY1 N","campaigners":"K AE0 M P EY1 N ER0 Z","can":"K AE1 N","can't":"K AE1 N T","cats":"K AE1 T S","chair":"CH EH1 R","chance":"CH AE1 N S","check":"CH EH1 K","checked":"CH EH1 K T","choice":"CH OY1 S","choose":"CH UW1 Z","click":"K L IH1 K","coast":"K OW1 S T","cold":"K OW1 L D","come":"K AH1 M","coming":"K AH1 M IH0 NG","comment":"K AA1 M EH0 N T","companies":"K AH1 M P AH0 N IY2 Z","company":"K AH1 M P AH0 N IY2","compare":"K AH0 M P EH1 R","compared":"K AH0 M P EH1 R D","complaining":"K AH0 M P L EY1 N IH0 NG","complete":"K AH0 M P L IY1 T","completed":"K AH0 M P L IY1 T AH0 D","completion":"K AH0 M P L IY1 SH AH0 N","condition":"K AH0 N D IH1 SH AH0 N","confident":"K AA1 N F AH0 D AH0 N T","confused":"K AH0 N F Y UW1 Z D","connected":"K AH0 N EH1 K T IH0 D","contain":"K AH0 N T EY1 N","continuous":"K AH0 N T IH1 N Y UW0 AH0 S","contrast":"K AA1 N T R AE0 S T","conversation":"K AA2 N V ER0 S EY1 SH AH0 N","corporation":"K AO2 R P ER0 EY1 SH AH0 N","correct":"K ER0 EH1 K T","could":"K UH1 D","danger":"D EY1 N JH ER0","dangerous":"D EY1 N JH ER0 AH0 S","david":"D EY1 V IH0 D","day":"D EY1","days":"D EY1 Z","deborah":"D EH1 B ER0 AH0","definite":"D EH1 F AH0 N AH0 T","dentist":"D EH1 N T AH0 S T","depends":"D IH0 P EH1 N D Z","describe":"D IH0 S K R AY1 B","described":"D IH0 S K R AY1 B D","describes":"D IH0 S K R AY1 B Z","device":"D IH0 V AY1 S","diana":"D AY0 AE1 N AH0","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","didn't":"D IH1 D AH0 N T","difference":"D IH1 F ER0 AH0 N S","different":"D IH1 F ER0 AH0 N T","difficult":"D IH1 F AH0 K AH0 L T","digging":"D IH1 G IH0 NG","dinner":"D IH1 N ER0","dirty":"D ER1 T IY0","discover":"D IH0 S K AH1 V ER0","discovered":"D IH0 S K AH1 V ER0 D","discuss":"D IH0 S K AH1 S","do":"D UW1","doing":"D UW1 IH0 NG","done":"D AH1 N","down":"D AW1 N","dresses":"D R EH1 S AH0 Z","drill":"D R IH1 L","each":"IY1 CH","earlier":"ER1 L IY0 ER0","earth":"ER1 TH","eat":"IY1 T","eaten":"IY1 T AH0 N","edinburgh":"EH1 D AH0 N B ER0 OW0","either":"IY1 DH ER0","emphasise":"EH1 M F AH0 S AY2 Z","emphasised":"EH1 M F AH0 S AY2 Z D","emphasises":"EH1 M F AH0 S AY2 Z IH0 Z","employees":"EH0 M P L OY1 IY0 Z","empty":"EH1 M P T IY0","end":"EH1 N D","english":"IH1 NG G L IH0 SH","enjoy":"EH2 N JH OY1","enjoyed":"EH2 N JH OY1 D","equivalent":"IH0 K W IH1 V AH0 L AH0 N T","eric":"EH1 R IH0 K","even":"IY1 V IH0 N","evening":"IY1 V N IH0 NG","event":"IH0 V EH1 N T","events":"IH0 V EH1 N T S","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","everything":"EH1 V R IY0 TH IH2 NG","evident":"EH1 V AH0 D AH0 N T","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","experience":"IH0 K S P IH1 R IY0 AH0 N S","explain":"IH0 K S P L EY1 N","explained":"IH0 K S P L EY1 N D","expression":"IH0 K S P R EH1 SH AH0 N","expressions":"IH0 K S P R EH1 SH AH0 N Z","extra":"EH1 K S T R AH0","facilities":"F AH0 S IH1 L AH0 T IY0 Z","famous":"F EY1 M AH0 S","far":"F AA1 R","feel":"F IY1 L","find":"F AY1 N D","finds":"F AY1 N D Z","finish":"F IH1 N IH0 SH","finished":"F IH1 N IH0 SH T","first":"F ER1 S T","five":"F AY1 V","focus":"F OW1 K AH0 S","follows":"F AA1 L OW0 Z","food":"F UW1 D","football":"F UH1 T B AO2 L","for":"F AO1 R","form":"F AO1 R M","forms":"F AO1 R M Z","found":"F AW1 N D","france":"F R AE1 N S","friends":"F R EH1 N D Z","from":"F R AH1 M","game":"G EY1 M","garden":"G AA1 R D AH0 N","gary":"G EH1 R IY0","gerry":"JH EH1 R IY0","get":"G EH1 T","give":"G IH1 V","given":"G IH1 V AH0 N","glad":"G L AE1 D","go":"G OW1","going":"G OW1 IH0 NG","gone":"G AO1 N","got":"G AA1 T","government":"G AH1 V ER0 M AH0 N T","graded":"G R EY1 D AH0 D","graham":"G R EY1 AH0 M","grammar":"G R AE1 M ER0","griffiths":"G R IH1 F IH0 TH S","group":"G R UW1 P","habitual":"HH AH0 B IH1 CH UW0 AH0 L","had":"HH AE1 D","hampshire":"HH AE1 M P SH ER0","hands":"HH AE1 N D Z","happen":"HH AE1 P AH0 N","happened":"HH AE1 P AH0 N D","has":"HH AE1 Z","hasn't":"HH AE1 Z AH0 N T","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","having":"HH AE1 V IH0 NG","he":"HH IY1","he's":"HH IY1 Z","heard":"HH ER1 D","hearing":"HH IY1 R IH0 NG","helen":"HH EH1 L AH0 N","henry":"HH EH1 N R IY0","her":"HH ER1","here":"HH IY1 R","him":"HH IH1 M","his":"HH IH1 Z","hold":"HH OW1 L D","home":"HH OW1 M","homework":"HH OW1 M W ER2 K","hour":"AW1 ER0","hours":"AW1 ER0 Z","house":"HH AW1 S","how":"HH AW1","html":"EY2 CH T IY2 EH2 M EH1 L","i'll":"AY1 L","i'm":"AY1 M","i've":"AY1 V","idea":"AY0 D IY1 AH0","if":"IH1 F","ill":"IH1 L","impatiently":"IH2 M P EY1 SH AH0 N T L IY0","in":"IH0 N","including":"IH2 N K L UW1 D IH0 NG","indefinite":"IH2 N D EH1 F AH0 N AH0 T","index":"IH1 N D EH0 K S","indian":"IH1 N D IY0 AH0 N","industry":"IH1 N D AH0 S T R IY0","inquiry":"IH2 N K W AY1 R IY2","inside":"IH2 N S AY1 D","instructed":"IH2 N S T R AH1 K T AH0 D","interesting":"IH1 N T R AH0 S T IH0 NG","into":"IH1 N T UW0","invite":"IH2 N V AY1 T","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","italian":"IH2 T AE1 L Y AH0 N","item":"AY1 T AH0 M","items":"AY1 T AH0 M Z","its":"IH1 T S","itself":"IH2 T S EH1 L F","jack":"JH AE1 K","japan":"JH AH0 P AE1 N","japanese":"JH AE2 P AH0 N IY1 Z","jill":"JH IH1 L","jobs":"JH AA1 B Z","just":"JH AH1 S T","keep":"K IY1 P","key":"K IY1","kill":"K IH1 L","king":"K IH1 NG","kit":"K IH1 T","kitchen":"K IH1 CH AH0 N","knocking":"N AA1 K IH0 NG","know":"N OW1","larger":"L AA1 R JH ER0","larry":"L EH1 R IY0","last":"L AE1 S T","lasting":"L AE1 S T IH0 NG","lasts":"L AE1 S T S","lately":"L EY1 T L IY0","later":"L EY1 T ER0","leader":"L IY1 D ER0","leading":"L IY1 D IH0 NG","learn":"L ER1 N","learning":"L ER1 N IH0 NG","left":"L EH1 F T","lend":"L EH1 N D","length":"L EH1 NG K TH","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","let":"L EH1 T","let's":"L EH1 T S","letter":"L EH1 T ER0","lie":"L AY1","lies":"L AY1 Z","life":"L AY1 F","line":"L AY1 N","lines":"L AY1 N Z","listen":"L IH1 S AH0 N","listened":"L IH1 S AH0 N D","listening":"L IH1 S AH0 N IH0 NG","lists":"L IH1 S T S","little":"L IH1 T AH0 L","lived":"L IH1 V D","living":"L IH1 V IH0 NG","local":"L OW1 K AH0 L","london":"L AH1 N D AH0 N","long":"L AO1 NG","look":"L UH1 K","looking":"L UH1 K IH0 NG","make":"M EY1 K","man":"M AE1 N","many":"M EH1 N IY0","married":"M EH1 R IY0 D","mary":"M EH1 R IY0","match":"M AE1 CH","matches":"M AE1 CH AH0 Z","may":"M EY1","me":"M IY1","mean":"M IY1 N","meaning":"M IY1 N IH0 NG","meanwhile":"M IY1 N W AY2 L","meet":"M IY1 T","meeting":"M IY1 T IH0 NG","mentioned":"M EH1 N SH AH0 N D","mentioning":"M EH1 N SH AH0 N IH0 NG","mess":"M EH1 S","message":"M EH1 S AH0 JH","messy":"M EH1 S IY0","met":"M EH1 T","minute":"M IH1 N AH0 T","missing":"M IH1 S IH0 NG","mixed":"M IH1 K S T","mode":"M OW1 D","model":"M AA1 D AH0 L","month":"M AH1 N TH","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","mps":"EH1 M P IY1 Z","much":"M AH1 CH","museum":"M Y UW0 Z IY1 AH0 M","my":"M AY1","nancy":"N AE1 N S IY0","near":"N IH1 R","nearby":"N IH1 R B AY1","needed":"N IY1 D AH0 D","never":"N EH1 V ER0","new":"N UW1","news":"N UW1 Z","next":"N EH1 K S T","nice":"N AY1 S","night":"N AY1 T","no":"N OW1","nobody":"N OW1 B AA2 D IY2","not":"N AA1 T","note":"N OW1 T","novel":"N AA1 V AH0 L","now":"N AW1","number":"N AH1 M B ER0","o'clock":"AH0 K L AA1 K","of":"AH1 V","off":"AO1 F","office":"AO1 F IH0 S","often":"AO1 F AH0 N","oil":"OY1 L","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","or":"AO1 R","other":"AH1 DH ER0","our":"AW1 ER0","out":"AW1 T","outside":"AW1 T S AY1 D","over":"OW1 V ER0","page":"P EY1 JH","pages":"P EY1 JH AH0 Z","painting":"P EY1 N T IH0 NG","paper":"P EY1 P ER0","parents":"P EH1 R AH0 N T S","part":"P AA1 R T","participle":"P AA1 R T IH0 S IH2 P AH0 L","party":"P AA1 R T IY0","past":"P AE1 S T","pauline":"P AO0 L IY1 N","people":"P IY1 P AH0 L","perfect":"P ER0 F EH1 K T","period":"P IH1 R IY0 AH0 D","permission":"P ER0 M IH1 SH AH0 N","person":"P ER1 S AH0 N","phone":"F OW1 N","phoning":"F OW1 N IH0 NG","pick":"P IH1 K","picture":"P IH1 K CH ER0","pictures":"P IH1 K CH ER0 Z","place":"P L EY1 S","plainly":"P L EY1 N L IY0","played":"P L EY1 D","point":"P OY1 N T","pointing":"P OY1 N T IH0 NG","points":"P OY1 N T S","police":"P AH0 L IY1 S","pollution":"P AH0 L UW1 SH AH0 N","portrait":"P AO1 R T R AH0 T","practice":"P R AE1 K T AH0 S","prefer":"P R AH0 F ER1","preferred":"P R AH0 F ER1 D","present":"P R EH1 Z AH0 N T","press":"P R EH1 S","progress":"P R AA1 G R EH2 S","promise":"P R AA1 M AH0 S","pulling":"P UH1 L IH0 NG","put":"P UH1 T","questions":"K W EH1 S CH AH0 N Z","quick":"K W IH1 K","quite":"K W AY1 T","rain":"R EY1 N","raising":"R EY1 Z IH0 NG","reaction":"R IY0 AE1 K SH AH0 N","read":"R EH1 D","reading":"R IY1 D IH0 NG","really":"R IH1 L IY0","recent":"R IY1 S AH0 N T","recently":"R IY1 S AH0 N T L IY0","recentness":"R IY1 S AH0 N T N AH0 S","reception":"R IH0 S EH1 P SH AH0 N","recovered":"R AH0 K AH1 V ER0 D","refers":"R AH0 F ER1 Z","refinery":"R IH0 F AY1 N ER0 IY0","refuse":"R AH0 F Y UW1 Z","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","repeat":"R IH0 P IY1 T","report":"R IY0 P AO1 R T","reset":"R IY0 S EH1 T","residents":"R EH1 Z IH0 D AH0 N T S","rest":"R EH1 S T","restaurant":"R EH1 S T ER0 AA2 N T","result":"R IH0 Z AH1 L T","results":"R IH0 Z AH1 L T S","rich":"R IH1 CH","right":"R AY1 T","robert":"R AA1 B ER0 T","roger":"R AA1 JH ER0","room":"R UW1 M","rows":"R OW1 Z","russian":"R AH1 SH AH0 N","said":"S EH1 D","sale":"S EY1 L","saturday":"S AE1 T ER0 D IY0","saw":"S AO1","say":"S EY1","score":"S K AO1 R","scotland":"S K AA1 T L AH0 N D","sea":"S IY1","seabed":"S IY1 B EH2 D","second":"S EH1 K AH0 N D","see":"S IY1","seen":"S IY1 N","sell":"S EH1 L","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","separate":"S EH1 P ER0 EY2 T","shakes":"SH EY1 K S","she":"SH IY1","shopping":"SH AA1 P IH0 NG","should":"SH UH1 D","show":"SH OW1","shows":"SH OW1 Z","silly":"S IH1 L IY0","similar":"S IH1 M AH0 L ER0","simple":"S IH1 M P AH0 L","since":"S IH1 N S","sing":"S IH1 NG","sister":"S IH1 S T ER0","sit":"S IH1 T","sitting":"S IH1 T IH0 NG","six":"S IH1 K S","small":"S M AO1 L","snake":"S N EY1 K","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","sore":"S AO1 R","sorry":"S AA1 R IY0","south":"S AW1 TH","speaker":"S P IY1 K ER0","specific":"S P AH0 S IH1 F IH0 K","speed":"S P IY1 D","spoken":"S P OW1 K AH0 N","spokesman":"S P OW1 K S M AH0 N","start":"S T AA1 R T","starting":"S T AA1 R T IH0 NG","state":"S T EY1 T","stated":"S T EY1 T IH0 D","stay":"S T EY1","steve":"S T IY1 V","still":"S T IH1 L","stop":"S T AA1 P","stopped":"S T AA1 P T","such":"S AH1 CH","sue":"S UW1","suggest":"S AH0 JH EH1 S T","suggesting":"S AH0 JH EH1 S T IH0 NG","suggests":"S AH0 JH EH1 S T S","suitable":"S UW1 T AH0 B AH0 L","suitcase":"S UW1 T K EY2 S","suits":"S UW1 T S","summary":"S AH1 M ER0 IY0","swansea":"S W AA1 N Z IY0","take":"T EY1 K","tap":"T AE1 P","television":"T EH1 L AH0 V IH2 ZH AH0 N","tell":"T EH1 L","ten":"T EH1 N","terrible":"T EH1 R AH0 B AH0 L","terry":"T EH1 R IY0","test":"T EH1 S T","thanks":"TH AE1 NG K S","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","theatre":"TH IY1 AH0 T ER0","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","things":"TH IH1 NG Z","think":"TH IH1 NG K","this":"DH IH1 S","those":"DH OW1 Z","three":"TH R IY1","throat":"TH R OW1 T","tie":"T AY1","time":"T AY1 M","times":"T AY1 M Z","tipped":"T IH1 P T","to":"T UW1","today":"T AH0 D EY1","today's":"T AH0 D EY1 Z","together":"T AH0 G EH1 DH ER0","took":"T UH1 K","tooth":"T UW1 TH","total":"T OW1 T AH0 L","touch":"T AH1 CH","traces":"T R EY1 S AH0 Z","train":"T R EY1 N","trousers":"T R AW1 Z ER0 Z","truth":"T R UW1 TH","try":"T R AY1","trying":"T R AY1 IH0 NG","tuesday":"T UW1 Z D IY0","turn":"T ER1 N","twelve":"T W EH1 L V","two":"T UW1","type":"T AY1 P","under":"AH1 N D ER0","unfinished":"AH0 N F IH1 N IH0 SH T","up":"AH1 P","us":"AH1 S","use":"Y UW1 S","used":"Y UW1 Z D","verb":"V ER1 B","verbs":"V ER1 B Z","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","viewed":"V Y UW1 D","views":"V Y UW1 Z","viii":"DH AH0 EY1 TH","violin":"V AY0 AH0 L IH1 N","visible":"V IH1 Z AH0 B AH0 L","visit":"V IH1 Z IH0 T","visiting":"V IH1 Z IH0 T IH0 NG","visitors":"V IH1 Z IH0 T ER0 Z","voice":"V OY1 S","voices":"V OY1 S AH0 Z","wait":"W EY1 T","waited":"W EY1 T IH0 D","waiting":"W EY1 T IH0 NG","wales":"W EY1 L Z","walked":"W AO1 K T","walking":"W AO1 K IH0 NG","wall":"W AO1 L","wallet":"W AO1 L AH0 T","walls":"W AO1 L Z","want":"W AA1 N T","was":"W AA1 Z","watch":"W AA1 CH","water-polo":"W AO1 T ER0 P OW2 L OW0","we":"W IY1","we've":"W IY1 V","wear":"W EH1 R","wearing":"W EH1 R IH0 NG","weather":"W EH1 DH ER0","week":"W IY1 K","weeks":"W IY1 K S","welcome":"W EH1 L K AH0 M","well":"W EH1 L","welsh":"W EH1 L CH","wendy":"W EH1 N D IY0","wendy's":"W EH1 N D IY0 Z","went":"W EH1 N T","were":"W ER1","what":"W AH1 T","when":"W EH1 N","where":"W EH1 R","which":"W IH1 CH","who":"HH UW1","why":"W AY1","will":"W IH1 L","window":"W IH1 N D OW0","with":"W IH1 DH","wives":"W AY1 V Z","woman":"W UH1 M AH0 N","wondering":"W AH1 N D ER0 IH0 NG","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","workmen":"W ER1 K M IH0 N","worn":"W AO1 R N","worried":"W ER1 IY0 D","would":"W UH1 D","writing":"R AY1 T IH0 NG","written":"R IH1 T AH0 N","wrote":"R OW1 T","year":"Y IH1 R","years":"Y IH1 R Z","yesterday":"Y EH1 S T ER0 D EY2","yet":"Y EH1 T","you":"Y UW1","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
