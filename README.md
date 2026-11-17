@@ -12,7 +12,7 @@ Bài học tiếng Anh tương tác (HTML) xây dựng theo sách:
 
 | Bài | Nội dung | Trạng thái |
 |---|---|---|
-| [Grammar 1 — Past Time](Grammar-01-Past-Time.html) | Past simple, past continuous, past perfect, used to, would, participle clauses (sách tr. 1–6) | ✅ Đã có (VN · JP · EN) |
+| [Grammar 1 — Past Time](b2/Grammar-01-Past-Time.html) | Past simple, past continuous, past perfect, used to, would, participle clauses (sách tr. 1–6) | ✅ Đã có (VN · JP · EN) |
 | Grammar 2–35 | Present perfect → Consolidation 7 (sách tr. 7–202, gồm 7 bài Consolidation) | ✅ Đã có (VN · JP · EN) |
 | Vocabulary 1–21 | Travel and holidays → Collocations (sách tr. 203–299) | ✅ Đã có (VN · JP · EN) |
 
