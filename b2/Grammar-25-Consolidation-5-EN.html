@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 25 — Consolidation 5 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-25-Consolidation-5.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-25-Consolidation-5-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 25 — Consolidation 5</h1>
+  <p>Review: comparisons · quantifiers (all, no, none, each, every, either, neither) · articles · countable and uncountable nouns</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+
+<div class="card">
+  <h2>📚 Review — Consolidation 5</h2>
+  <p>This is a <b>consolidation</b> unit: there is no new theory. The exercises below review the four most recent areas:</p>
+  <ul>
+    <li><b>Comparisons</b> (Grammar 24): comparatives and superlatives, <i>as … as</i>, <i>such … as</i>, the <i>the more …, the …</i> construction</li>
+    <li><b>Quantifiers</b> (Grammar 23): <i>all, no, none, each, every, either, neither</i> and phrases with <i>of</i></li>
+    <li><b>Articles</b> (Grammar 22): <i>a / an</i>, <i>the</i>, and no article</li>
+    <li><b>Countable and uncountable nouns</b> (Grammar 21): nouns such as <i>furniture, information, traffic</i>, and partitive phrases such as <i>a slice of, a pair of</i></li>
+  </ul>
+  <div class="ex"><div class="en">This is the best party I've ever been to.</div><div class="vi">(superlative + the)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Neither of the lifts was working.</div><div class="vi">(neither + singular verb)</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Could you give me some information about the Arts Festival?</div><div class="vi">(information is uncountable)</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — Points to remember</h2>
+  <ol>
+    <li><b>Uncountable nouns</b> such as <i>furniture, information, traffic, news, work</i> are not used with <i>a/an</i> and have no plural <i>-s</i>. To talk about an amount, use a partitive phrase: <i>a piece of information, an item of news</i>.</li>
+    <li><b>Partitives</b> to learn: <i>a slice of cake, a flight of stairs, a head of hair, a sheet of paper, a lump of coal, a glass of water, a helping of potatoes, a clap of thunder, a pair of shorts / trousers</i>.</li>
+    <li><b>Superlatives</b> always take <i>the</i>: <i>the best, the worst, the earliest</i>; and remember the parallel pattern <i>the more …, the …</i>: <i>The more slowly you walk, the longer it takes.</i></li>
+    <li><b>Neither</b> means “not one of two” (in an affirmative sentence); <b>either</b> has the same meaning in a negative sentence: <i>I didn't talk to either of them.</i></li>
+    <li>After <i>most / some / none / all</i>, use <i>of + the</i> before a specific noun: <i>most of the first week, none of the museums</i>.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>Exercise 1 — Put one suitable word in each numbered space: Holiday problems</h2>
+  <p>Put <b>one</b> suitable word in each numbered space in the text <i>Holiday problems</i>. Space (1) is the worked example (<i>Every</i>) — here you complete all fifteen spaces.</p>
+<div class="q"><p>Somehow I always have problems when I go away on holiday. (1) <input class="blank" data-answers="Every" data-display="Every"> year my travel agent promises me that my holiday will be (2) <input class="blank" data-answers="the" data-display="the"> best I have ever had, but none of these promises has ever (3) <input class="blank" data-answers="come" data-display="come"> true. This year I got food poisoning (4) <input class="blank" data-answers="the" data-display="the"> day I arrived.</p></div>
+  <div class="q"><p>It must have been the fish I ate at the hotel (5) <input class="blank" data-answers="that" data-display="that"> evening. In (6) <input class="blank" data-answers="the" data-display="the"> morning I felt terrible, and I was seen by two doctors. I tried to explain my problem to them, but (7) <input class="blank" data-answers="neither" data-display="neither"> of them spoke English, (8) <input class="blank" data-answers="which" data-display="which"> didn't help. It took me (9) <input class="blank" data-answers="most" data-display="most"> of the first week to recover, and I spent three or four days sitting next to (10) <input class="blank" data-answers="the" data-display="the"> hotel swimming pool reading newspapers.</p></div>
+  <div class="q"><p>By the time I felt better, (11) <input class="blank" data-answers="the" data-display="the"> weather had changed, but I was determined to go sight-seeing, and do (12) <input class="blank" data-answers="some" data-display="some"> swimming. Unfortunately (13) <input class="blank" data-answers="none" data-display="none"> of the museums were open, as there was (14) <input class="blank" data-answers="a" data-display="a"> strike. I would have enjoyed myself (15) <input class="blank" data-answers="more" data-display="more"> if I had stayed at home.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ Check Exercise 1</button><button type="button" onclick="showFill('ex1')">👁 Show answers</button><button type="button" onclick="resetFill('ex1')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 1: <span class="fill-score">—</span>/15</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Complete the second sentence using the word given</h2>
+  <p>Complete the second sentence so that it has a similar meaning to the first, using the <b>word given</b> (do not change the word given). Use between <b>two and five words</b>, including the word given. Item a) is the worked example — here you complete all ten.</p>
+<div class="q"><p>a) That's the worst film I've ever seen. <b>(worse)</b><br>I've <input class="blank" data-answers="never seen a worse" data-display="never seen a worse"> film.</p></div>
+  <div class="q"><p>b) There aren't any sandwiches left, I'm afraid. <b>(all)</b><br>I'm afraid <input class="blank" data-answers="all the sandwiches have been" data-display="all the sandwiches have been"> eaten.</p></div>
+  <div class="q"><p>c) I thought that Martin's last novel was more interesting. <b>(latest)</b><br>Martin's <input class="blank" data-answers="latest novel is not as" data-display="latest novel is not as"> interesting as his last one.</p></div>
+  <div class="q"><p>d) I talked to neither of Harry's sisters. <b>(either)</b><br>I didn't <input class="blank" data-answers="talk to either of" data-display="talk to either of"> Harry's sisters.</p></div>
+  <div class="q"><p>e) Bob is a much better swimmer than George. <b>(swim)</b><br>George <input class="blank" data-answers="can't swim as well|cannot swim as well" data-display="can't swim as well"> as Bob.</p></div>
+  <div class="q"><p>f) If you walk slowly, it takes longer to get there. <b>(longer)</b><br>The more <input class="blank" data-answers="slowly you walk, the longer" data-display="slowly you walk, the longer"> it takes to get there.</p></div>
+  <div class="q"><p>g) Calling the police isn't any good. <b>(no)</b><br>It's <input class="blank" data-answers="no good calling" data-display="no good calling"> the police.</p></div>
+  <div class="q"><p>h) I phoned Norman last of all. <b>(person)</b><br>Norman <input class="blank" data-answers="was the last person I" data-display="was the last person I"> phoned.</p></div>
+  <div class="q"><p>i) This is the best party I've ever been to. <b>(a)</b><br>I've <input class="blank" data-answers="never been to such a" data-display="never been to such a"> good party as this.</p></div>
+  <div class="q"><p>j) I thought this meal would cost more than it did. <b>(less)</b><br>This meal <input class="blank" data-answers="cost less than I had thought|cost less than I thought|cost less than I (had) thought" data-display="cost less than I (had) thought">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>Exercise 3 — Put one word in each space (do not use the word piece)</h2>
+  <p>Put <b>one</b> suitable word in each space. Do <b>not</b> use the word <i>piece</i>. Sentence a) is the worked example (<i>slice</i>) — here you complete all ten.</p>
+<div class="q"><p>a) Would you like another <input class="blank" data-answers="slice" data-display="slice"> of cake?</p></div>
+  <div class="q"><p>b) There is another <input class="blank" data-answers="flight" data-display="flight"> of stairs after this one.</p></div>
+  <div class="q"><p>c) What a lovely <input class="blank" data-answers="head" data-display="head"> of hair you have.</p></div>
+  <div class="q"><p>d) Put up your hand if you need another <input class="blank" data-answers="sheet" data-display="sheet"> of paper.</p></div>
+  <div class="q"><p>e) There was an interesting <input class="blank" data-answers="item" data-display="item"> of news about Japan in the paper.</p></div>
+  <div class="q"><p>f) Could you put a few <input class="blank" data-answers="lumps" data-display="lumps"> of coal on the fire?</p></div>
+  <div class="q"><p>g) Pour me a <input class="blank" data-answers="glass" data-display="glass"> of water, would you?</p></div>
+  <div class="q"><p>h) They gave me a very large <input class="blank" data-answers="helping" data-display="helping"> of potatoes with my dinner.</p></div>
+  <div class="q"><p>i) There was a terrible flash of lightning and a <input class="blank" data-answers="clap" data-display="clap"> of thunder.</p></div>
+  <div class="q"><p>j) Oh bother, I've split my new <input class="blank" data-answers="pair" data-display="pair"> of shorts.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ Check Exercise 3</button><button type="button" onclick="showFill('ex3')">👁 Show answers</button><button type="button" onclick="resetFill('ex3')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 3: <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>Exercise 4 — Rewrite each sentence with the word in capitals</h2>
+  <p>Rewrite each sentence, beginning your answer with the <b>word given in capitals</b>, keeping the meaning the same as the original sentence. Item a) is the worked example (<i>Parking is not allowed here. / There is no parking here.</i>) — here you complete all seven. Type the whole rewritten sentence into the box.</p>
+  <div class="q"><p>a) You are not allowed to park here. — <b>PARKING</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="Parking is not allowed here|There is no parking here" data-display="Parking is not allowed here." placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>b) This house has no furniture. — <b>FURNITURE</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="There is no furniture in the house|There isn't any furniture in the house|There is not any furniture in the house" data-display="There is no furniture in the house." placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>c) There are a lot of people in this room, it seems. — <b>PEOPLE</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="There seem to be a lot of people in this room" data-display="There seem to be a lot of people in this room." placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>d) I would like some information about guided tours of the city. — <b>INFORMATION</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="Can you give me any information about guided tours of the city" data-display="Can you give me any information about guided tours of the city?" placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>e) There was an enthusiastic response from the audience. — <b>AUDIENCE</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="The audience was enthusiastic" data-display="The audience was enthusiastic." placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>f) I like my French teacher, but I prefer maths to all other subjects. — <b>SUBJECT</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="Maths is my favourite subject" data-display="Maths is my favourite subject." placeholder="Type the rewritten sentence…"></div>
+  <div class="q"><p>g) This road is very busy today. — <b>TRAFFIC</b></p>
+  <input class="blank" style="width:min(560px,100%)" data-answers="There is a lot of traffic on this road today" data-display="There is a lot of traffic on this road today." placeholder="Type the rewritten sentence…"></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ Check Exercise 4</button><button type="button" onclick="showFill('ex4')">👁 Show answers</button><button type="button" onclick="resetFill('ex4')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 4: <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>Exercise 5 — Complete the second sentence using the word given</h2>
+  <p>Complete the second sentence so that it has a similar meaning to the first, using the <b>word given</b> (do not change the word given). Use between <b>two and five words</b>, including the word given. Item a) is the worked example — here you complete all six.</p>
+<div class="q"><p>a) Jim teaches French. <b>(works)</b><br>Jim <input class="blank" data-answers="works as a French" data-display="works as a French"> teacher.</p></div>
+  <div class="q"><p>b) Can't you do better than that? <b>(the)</b><br>Is <input class="blank" data-answers="that the best you can" data-display="that the best you can"> do?</p></div>
+  <div class="q"><p>c) I haven't eaten lobster before. <b>(ever)</b><br>This is the <input class="blank" data-answers="first lobster I have ever" data-display="first lobster I have ever"> eaten.</p></div>
+  <div class="q"><p>d) Is Julia a good violinist? <b>(play)</b><br>Can Julia <input class="blank" data-answers="play the violin" data-display="play the violin"> well?</p></div>
+  <div class="q"><p>e) Actually, the only thing you need is a screwdriver. <b>(all)</b><br>Actually <input class="blank" data-answers="all you need is" data-display="all you need is"> a screwdriver.</p></div>
+  <div class="q"><p>f) Both of the lifts were out of order. <b>(of)</b><br>Neither <input class="blank" data-answers="of the lifts was" data-display="of the lifts was"> working.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ Check Exercise 5</button><button type="button" onclick="showFill('ex5')">👁 Show answers</button><button type="button" onclick="resetFill('ex5')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 5: <span class="fill-score">—</span>/6</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex6">
+  <h2>Exercise 6 — Put one suitable word in each space</h2>
+  <p>Put <b>one</b> suitable word in each space. Sentence a) is the worked example (<i>them</i>) — here you complete all eight.</p>
+<div class="q"><p>a) My trousers are creased. I must iron <input class="blank" data-answers="them" data-display="them">.</p></div>
+  <div class="q"><p>b) Could you give me <input class="blank" data-answers="some" data-display="some"> information about the Arts Festival?</p></div>
+  <div class="q"><p>c) I can't come out tonight. I have <input class="blank" data-answers="some" data-display="some"> work to do.</p></div>
+  <div class="q"><p>d) Look at your hair! You must have <input class="blank" data-answers="it" data-display="it"> cut!</p></div>
+  <div class="q"><p>e) I've decided to buy <input class="blank" data-answers="some" data-display="some"> new furniture.</p></div>
+  <div class="q"><p>f) Thank you very much. You've been <input class="blank" data-answers="a" data-display="a"> great help.</p></div>
+  <div class="q"><p>g) Is this <input class="blank" data-answers="the" data-display="the"> cafe you told me about?</p></div>
+  <div class="q"><p>h) Chris was <input class="blank" data-answers="the" data-display="the"> last person to leave the room.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex6')">✔ Check Exercise 6</button><button type="button" onclick="showFill('ex6')">👁 Show answers</button><button type="button" onclick="resetFill('ex6')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 6: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex7">
+  <h2>Exercise 7 — Find the extra word in each line (The house painters)</h2>
+  <p>Look carefully at the text <i>The house painters</i>. Some lines are <b>correct</b>, and some have <b>one extra word</b> which should not be there. For each line: if the line is correct, choose <b>✓ (correct line)</b>; if there is an extra word, choose that word. The first two lines are the worked examples (<i>✓</i> and <i>a</i>) — here you answer all 17 lines.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p><b>Example line 1:</b> “Last week some painters came round to”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">painters</button><button type="button">round</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Example line 2:</b> “paint my house. I usually do this kind of a job”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">a</button><button type="button">kind</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 1:</b> “myself, but I've been here very busy for the last”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">very</button><button type="button">here</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 2:</b> “month. So I called a more local decorating firm,”</p><div class="opts"><button type="button">more</button><button type="button">✓ (correct line)</button><button type="button">local</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 3:</b> “and they agreed to do it for a reasonable price.”</p><div class="opts"><button type="button">agreed</button><button type="button">✓ (correct line)</button><button type="button">reasonable</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 4:</b> “Three men arrived on Monday the morning to”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">Monday</button><button type="button">the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 5:</b> “paint the outside walls. Of course, they were used”</p><div class="opts"><button type="button">were</button><button type="button">✓ (correct line)</button><button type="button">outside</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 6:</b> “the wrong colour and spilt paint all over the”</p><div class="opts"><button type="button">wrong</button><button type="button">✓ (correct line)</button><button type="button">colour</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 7:</b> “front door. Some one of the windows”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">front</button><button type="button">one</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 8:</b> “upstairs were open, and some of paint went”</p><div class="opts"><button type="button">of</button><button type="button">✓ (correct line)</button><button type="button">some</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 9:</b> “inside the house and ruined both the carpet in”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">both</button><button type="button">inside</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 10:</b> “the living-room. They also broke a window.”</p><div class="opts"><button type="button">living-room</button><button type="button">broke</button><button type="button">✓ (correct line)</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 11:</b> “I phoned their company, and the manager”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">phoned</button><button type="button">company</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 12:</b> “assured me that they would repaint than the”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">than</button><button type="button">would</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p><b>Line 13:</b> “walls. Then I went away on a business.”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">away</button><button type="button">a</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p><b>Line 14:</b> “I've just come back, and the walls are a different”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">come</button><button type="button">different</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p><b>Line 15:</b> “colour, but it is still such the wrong colour.”</p><div class="opts"><button type="button">✓ (correct line)</button><button type="button">such</button><button type="button">still</button></div><div class="fb"></div></div>
+  </div>
+  <p>Look carefully at the text <i>The house painters</i>. Some lines are <b>correct</b>, and some have <b>one extra word</b> which should not be there. For each line: if the line is correct, choose <b>✓ (correct line)</b>; if there is an extra word, choose that word. The first two lines are the worked examples (<i>✓</i> and <i>a</i>) — here you answer all 17 lines.</p>
+  <span class="score">Score — Exercise 7: <span class="score-num">0</span>/17</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>73</b> (Exercise 1: 15 · Exercise 2: 10 · Exercise 3: 10 · Exercise 4: 7 · Exercise 5: 6 · Exercise 6: 8 · Exercise 7: 17 lines).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","actually":"AE1 K CH UW2 AH0 L IY0","affirmative":"AH0 F ER1 M AH0 T IH0 V","afraid":"AH0 F R EY1 D","after":"AE1 F T ER0","again":"AH0 G EH1 N","agent":"EY1 JH AH0 N T","agreed":"AH0 G R IY1 D","all":"AO1 L","allowed":"AH0 L AW1 D","also":"AO1 L S OW0","always":"AO1 L W EY2 Z","american":"AH0 M EH1 R AH0 K AH0 N","amount":"AH0 M AW1 N T","an":"AE1 N","and":"AH0 N D","another":"AH0 N AH1 DH ER0","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","are":"AA1 R","areas":"EH1 R IY0 AH0 Z","aren't":"AA1 R AH0 N T","arrived":"ER0 AY1 V D","article":"AA1 R T AH0 K AH0 L","articles":"AA1 R T AH0 K AH0 L Z","arts":"AA1 R T S","as":"AE1 Z","assured":"AH0 SH UH1 R D","at":"AE1 T","ate":"EY1 T","audience":"AA1 D IY0 AH0 N S","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","be":"B IY1","been":"B IH1 N","before":"B IH0 F AO1 R","beginning":"B IH0 G IH1 N IH0 NG","below":"B IH0 L OW1","best":"B EH1 S T","better":"B EH1 T ER0","between":"B IH0 T W IY1 N","bob":"B AA1 B","both":"B OW1 TH","bother":"B AA1 DH ER0","box":"B AA1 K S","british":"B R IH1 T IH0 SH","broke":"B R OW1 K","business":"B IH1 Z N AH0 S","busy":"B IH1 Z IY0","but":"B AH1 T","button":"B AH1 T AH0 N","buy":"B AY1","by":"B AY1","cafe":"K AH0 F EY1","cake":"K EY1 K","called":"K AO1 L D","calling":"K AO1 L IH0 NG","came":"K EY1 M","can":"K AE1 N","can't":"K AE1 N T","capitals":"K AE1 P AH0 T AH0 L Z","carefully":"K EH1 R F AH0 L IY0","carpet":"K AA1 R P AH0 T","change":"CH EY1 N JH","changed":"CH EY1 N JH D","check":"CH EH1 K","choose":"CH UW1 Z","chris":"K R IH1 S","city":"S IH1 T IY0","clap":"K L AE1 P","click":"K L IH1 K","coal":"K OW1 L","colour":"K AH1 L ER0","come":"K AH1 M","company":"K AH1 M P AH0 N IY2","comparatives":"K AH0 M P AE1 R AH0 T IH0 V Z","comparisons":"K AH0 M P EH1 R AH0 S AH0 N Z","complete":"K AH0 M P L IY1 T","consolidation":"K AH0 N S AA2 L AH0 D EY1 SH AH0 N","construction":"K AH0 N S T R AH1 K SH AH0 N","correct":"K ER0 EH1 K T","cost":"K AA1 S T","could":"K UH1 D","countable":"K AW1 N T AH0 B AH0 L","course":"K AO1 R S","creased":"K R IY1 S T","cut":"K AH1 T","day":"D EY1","days":"D EY1 Z","decided":"D IH2 S AY1 D IH0 D","decorating":"D EH1 K ER0 EY2 T IH0 NG","determined":"D IH0 T ER1 M AH0 N D","device":"D IH0 V AY1 S","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","didn't":"D IH1 D AH0 N T","different":"D IH1 F ER0 AH0 N T","dinner":"D IH1 N ER0","do":"D UW1","doctors":"D AA1 K T ER0 Z","door":"D AO1 R","each":"IY1 CH","earliest":"ER1 L IY0 AH0 S T","eaten":"IY1 T AH0 N","eight":"EY1 T","either":"IY1 DH ER0","english":"IH1 NG G L IH0 SH","enjoyed":"EH2 N JH OY1 D","enthusiastic":"IH0 N TH UW2 Z IY0 AE1 S T IH0 K","evening":"IY1 V N IH0 NG","ever":"EH1 V ER0","every":"EH1 V ER0 IY0","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","exercises":"EH1 K S ER0 S AY2 Z AH0 Z","explain":"IH0 K S P L EY1 N","extra":"EH1 K S T R AH0","felt":"F EH1 L T","festival":"F EH1 S T AH0 V AH0 L","few":"F Y UW1","fifteen":"F IH0 F T IY1 N","film":"F IH1 L M","find":"F AY1 N D","fire":"F AY1 ER0","firm":"F ER1 M","first":"F ER1 S T","fish":"F IH1 SH","five":"F AY1 V","flash":"F L AE1 SH","flight":"F L AY1 T","food":"F UW1 D","for":"F AO1 R","four":"F AO1 R","french":"F R EH1 N CH","from":"F R AH1 M","front":"F R AH1 N T","furniture":"F ER1 N IH0 CH ER0","gave":"G EY1 V","george":"JH AO1 R JH","get":"G EH1 T","give":"G IH1 V","given":"G IH1 V AH0 N","glass":"G L AE1 S","go":"G OW1","good":"G UH1 D","got":"G AA1 T","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","great":"G R EY1 T","guided":"G AY1 D AH0 D","had":"HH AE1 D","hair":"HH EH1 R","hand":"HH AE1 N D","harry's":"HH EH1 R IY0 Z","has":"HH AE1 Z","have":"HH AE1 V","haven't":"HH AE1 V AH0 N T","head":"HH EH1 D","help":"HH EH1 L P","helping":"HH EH1 L P IH0 NG","here":"HH IY1 R","his":"HH IH1 Z","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","hotel":"HH OW0 T EH1 L","house":"HH AW1 S","html":"EY2 CH T IY2 EH2 M EH1 L","i'm":"AY1 M","i've":"AY1 V","if":"IH1 F","in":"IH0 N","including":"IH2 N K L UW1 D IH0 NG","index":"IH1 N D EH0 K S","information":"IH2 N F ER0 M EY1 SH AH0 N","inside":"IH2 N S AY1 D","interesting":"IH1 N T R AH0 S T IH0 NG","into":"IH1 N T UW0","iron":"AY1 ER0 N","is":"IH1 Z","isn't":"IH1 Z AH0 N T","it":"IH1 T","it's":"IH1 T S","item":"AY1 T AH0 M","items":"AY1 T AH0 M Z","its":"IH1 T S","japan":"JH AH0 P AE1 N","jim":"JH IH1 M","job":"JH AA1 B","julia":"JH UW1 L Y AH0","just":"JH AH1 S T","keeping":"K IY1 P IH0 NG","key":"K IY1","kind":"K AY1 N D","large":"L AA1 R JH","last":"L AE1 S T","latest":"L EY1 T AH0 S T","learn":"L ER1 N","leave":"L IY1 V","left":"L EH1 F T","less":"L EH1 S","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","lifts":"L IH1 F T S","lightning":"L AY1 T N IH0 NG","like":"L AY1 K","line":"L AY1 N","lines":"L AY1 N Z","listen":"L IH1 S AH0 N","lists":"L IH1 S T S","living-room":"L IH1 V IH0 NG R UW2 M","lobster":"L AA1 B S T ER0","local":"L OW1 K AH0 L","longer":"L AO1 NG G ER0","look":"L UH1 K","lot":"L AA1 T","lovely":"L AH1 V L IY0","lump":"L AH1 M P","manager":"M AE1 N AH0 JH ER0","martin's":"M AA1 R T AH0 N Z","maths":"M AE1 TH S","me":"M IY1","meal":"M IY1 L","meaning":"M IY1 N IH0 NG","means":"M IY1 N Z","men":"M EH1 N","mode":"M OW1 D","model":"M AA1 D AH0 L","monday":"M AH1 N D IY0","month":"M AH1 N TH","more":"M AO1 R","morning":"M AO1 R N IH0 NG","most":"M OW1 S T","much":"M AH1 CH","museums":"M Y UW0 Z IY1 AH0 M Z","must":"M AH1 S T","my":"M AY1","myself":"M AY2 S EH1 L F","need":"N IY1 D","negative":"N EH1 G AH0 T IH0 V","neither":"N IY1 DH ER0","new":"N UW1","news":"N UW1 Z","newspapers":"N UW1 Z P EY2 P ER0 Z","next":"N EH1 K S T","no":"N OW1","none":"N AH1 N","norman":"N AO1 R M AH0 N","not":"N AA1 T","noun":"N AW1 N","nouns":"N AW1 N Z","novel":"N AA1 V AH0 L","numbered":"N AH1 M B ER0 D","of":"AH1 V","off":"AO1 F","oh":"OW1","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","open":"OW1 P AH0 N","or":"AO1 R","order":"AO1 R D ER0","original":"ER0 IH1 JH AH0 N AH0 L","other":"AH1 DH ER0","out":"AW1 T","outside":"AW1 T S AY1 D","over":"OW1 V ER0","page":"P EY1 JH","paint":"P EY1 N T","painters":"P EY1 N T ER0 Z","pair":"P EH1 R","paper":"P EY1 P ER0","parallel":"P EH1 R AH0 L EH2 L","park":"P AA1 R K","parking":"P AA1 R K IH0 NG","partitives":"P AA1 R T AH0 T IH0 V Z","party":"P AA1 R T IY0","pattern":"P AE1 T ER0 N","people":"P IY1 P AH0 L","person":"P ER1 S AH0 N","phoned":"F OW1 N D","phrase":"F R EY1 Z","phrases":"F R EY1 Z AH0 Z","pick":"P IH1 K","piece":"P IY1 S","play":"P L EY1","plural":"P L UH1 R AH0 L","points":"P OY1 N T S","poisoning":"P OY1 Z AH0 N IH0 NG","police":"P AH0 L IY1 S","pool":"P UW1 L","potatoes":"P AH0 T EY1 T OW0 Z","pour":"P AO1 R","practice":"P R AE1 K T AH0 S","prefer":"P R AH0 F ER1","press":"P R EH1 S","price":"P R AY1 S","problem":"P R AA1 B L AH0 M","problems":"P R AA1 B L AH0 M Z","promises":"P R AA1 M AH0 S AH0 Z","put":"P UH1 T","quantifiers":"K W AA1 N T AH0 F AY2 ER0 Z","reading":"R IY1 D IH0 NG","reasonable":"R IY1 Z AH0 N AH0 B AH0 L","recent":"R IY1 S AH0 N T","recover":"R IH0 K AH1 V ER0","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","repaint":"R IY0 P EY1 N T","reset":"R IY0 S EH1 T","response":"R IH0 S P AA1 N S","review":"R IY2 V Y UW1","rewrite":"R IY0 R AY1 T","rewritten":"R IY0 R IH1 T AH0 N","right":"R AY1 T","road":"R OW1 D","room":"R UW1 M","round":"R AW1 N D","rows":"R OW1 Z","ruined":"R UW1 AH0 N D","same":"S EY1 M","sandwiches":"S AE1 N D W IH0 CH IH0 Z","score":"S K AO1 R","screwdriver":"S K R UW1 D R AY2 V ER0","second":"S EH1 K AH0 N D","see":"S IY1","seems":"S IY1 M Z","seen":"S IY1 N","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","seven":"S EH1 V AH0 N","sheet":"SH IY1 T","shorts":"SH AO1 R T S","should":"SH UH1 D","show":"SH OW1","sight-seeing":"S AY1 T S IY2 IH0 NG","similar":"S IH1 M AH0 L ER0","singular":"S IH1 NG G Y AH0 L ER0","sisters":"S IH1 S T ER0 Z","sitting":"S IH1 T IH0 NG","six":"S IH1 K S","slice":"S L AY1 S","slowly":"S L OW1 L IY0","so":"S OW1","some":"S AH1 M","somehow":"S AH1 M HH AW2","space":"S P EY1 S","spaces":"S P EY1 S AH0 Z","specific":"S P AH0 S IH1 F IH0 K","speed":"S P IY1 D","spent":"S P EH1 N T","spilt":"S P IH1 L T","split":"S P L IH1 T","spoke":"S P OW1 K","stairs":"S T EH1 R Z","start":"S T AA1 R T","stayed":"S T EY1 D","still":"S T IH1 L","stop":"S T AA1 P","strike":"S T R AY1 K","subject":"S AH0 B JH EH1 K T","subjects":"S AH1 B JH IH0 K T S","such":"S AH1 CH","suitable":"S UW1 T AH0 B AH0 L","summary":"S AH1 M ER0 IY0","superlative":"S UH0 P ER1 L AH0 T IH0 V","superlatives":"S UH0 P ER1 L AH0 T IH0 V Z","swim":"S W IH1 M","swimmer":"S W IH1 M ER0","swimming":"S W IH1 M IH0 NG","take":"T EY1 K","takes":"T EY1 K S","talk":"T AO1 K","talked":"T AO1 K T","tap":"T AE1 P","teacher":"T IY1 CH ER0","teaches":"T IY1 CH AH0 Z","ten":"T EH1 N","terrible":"T EH1 R AH0 B AH0 L","test":"T EH1 S T","text":"T EH1 K S T","than":"DH AE1 N","thank":"TH AE1 NG K","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","then":"DH EH1 N","theory":"TH IH1 R IY0","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","thing":"TH IH1 NG","this":"DH IH1 S","thought":"TH AO1 T","three":"TH R IY1","thunder":"TH AH1 N D ER0","time":"T AY1 M","to":"T UW1","today":"T AH0 D EY1","told":"T OW1 L D","tonight":"T AH0 N AY1 T","took":"T UH1 K","total":"T OW1 T AH0 L","tours":"T UH1 R Z","traffic":"T R AE1 F IH0 K","travel":"T R AE1 V AH0 L","tried":"T R AY1 D","trousers":"T R AW1 Z ER0 Z","true":"T R UW1","turn":"T ER1 N","two":"T UW1","type":"T AY1 P","uncountable":"AH0 N K AW1 N T AH0 B AH0 L","under":"AH1 N D ER0","unfortunately":"AH0 N F AO1 R CH AH0 N AH0 T L IY0","unit":"Y UW1 N AH0 T","up":"AH1 P","upstairs":"AH0 P S T EH1 R Z","use":"Y UW1 S","used":"Y UW1 Z D","using":"Y UW1 Z IH0 NG","usually":"Y UW1 ZH AH0 W AH0 L IY0","verb":"V ER1 B","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","violinist":"V AY0 AH0 L IH1 N AH0 S T","voice":"V OY1 S","voices":"V OY1 S AH0 Z","walk":"W AO1 K","walls":"W AO1 L Z","was":"W AA1 Z","water":"W AO1 T ER0","weather":"W EH1 DH ER0","week":"W IY1 K","well":"W EH1 L","went":"W EH1 N T","were":"W ER1","what":"W AH1 T","when":"W EH1 N","which":"W IH1 CH","whole":"HH OW1 L","will":"W IH1 L","window":"W IH1 N D OW0","windows":"W IH1 N D OW0 Z","with":"W IH1 DH","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","working":"W ER1 K IH0 NG","works":"W ER1 K S","worse":"W ER1 S","worst":"W ER1 S T","would":"W UH1 D","wrong":"R AO1 NG","year":"Y IH1 R","you":"Y UW1","you've":"Y UW1 V","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

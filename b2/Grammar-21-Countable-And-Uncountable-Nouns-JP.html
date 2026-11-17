@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 21 — Countable and Uncountable Nouns | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-21-Countable-And-Uncountable-Nouns.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-21-Countable-And-Uncountable-Nouns-EN.html">🇬🇧 English</a>
+  <h1>Grammar 21 — Countable and Uncountable Nouns</h1>
+  <p>可算名詞と不可算名詞：Countable nouns・Uncountable nouns・複数形のみの名詞・集合名詞</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 可算名詞と不可算名詞 — 基本</h2>
+  <h3>a) 可算名詞（Countable nouns）</h3>
+  <div class="formula">単数形と複数形がある · 数で数えられる：a shirt, shirts, some shirts, four shirts</div>
+  <p>可算名詞には単数形と複数形があり、動詞は単数・複数のどちらも使え、数で直接数えることができます。</p>
+  <div class="ex"><div class="en">Where is my shirt?</div><div class="vi">私のシャツはどこですか。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Where are my shirts?</div><div class="vi">私のシャツ（複数）はどこですか。</div><div class="tts"></div></div>
+  <h3>b) 不可算名詞（Uncountable nouns）</h3>
+  <div class="formula">形は1つだけ · 動詞は常に単数 · 数では直接数えられず、a/an も直接つかない</div>
+  <p>不可算名詞は形が1つだけで、動詞は常に単数です。数で直接は数えられませんが、<i>a piece of, a bit of</i> のような表現で間接的に数えることができます。</p>
+  <div class="ex"><div class="en">Here is some advice for you.</div><div class="vi">あなたへのアドバイスがあります。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">When I left home my mother gave me two useful bits of advice.</div><div class="vi">家を出るとき、母は役立つアドバイスを2つくれた。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I've found out several interesting pieces of information.</div><div class="vi">興味深い情報をいくつか見つけた。</div><div class="tts"></div></div>
+  <p><i>-s</i> で終わるのに不可算名詞として扱い、単数動詞を取る語もあります：</p>
+  <div class="ex"><div class="en">The news is very bad today.</div><div class="vi">今日のニュースはとても悪い。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Billiards is an interesting game.</div><div class="vi">ビリヤードは面白いゲームだ。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 代表的な不可算名詞</h2>
+  <p><b>物質：</b>water, air, coffee, plastic, iron, paper &nbsp;·&nbsp; <b>抽象概念：</b>life, fun, freedom, health, time, progress &nbsp;·&nbsp; <b>活動：</b>work, travel, sleep, football, help, research &nbsp;·&nbsp; <b>感情：</b>happiness, anger, honesty, hope, respect, courage &nbsp;·&nbsp; <b>物の集まり：</b>furniture, luggage</p>
+  <p><b>英語では不可算でも、他の多くの言語では可算</b>である次の語に特に注意してください：accommodation, advice, behaviour, business, cash, equipment, furniture, health, homework, information, knowledge, luggage, money, permission, rubbish, scenery, traffic, travel, weather, work。</p>
+</div>
+
+<div class="card">
+  <h2>3. 種類を表す用法と意味の変化</h2>
+  <p>不可算名詞の中には、<b>種類・カテゴリー</b>を表すときに可算名詞のように使えるものがあります：</p>
+  <div class="ex"><div class="en">Would you like some fruit after your coffee?</div><div class="vi">コーヒーのあとに果物はいかがですか。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">There are two main fruits exported from Madeira, bananas and pineapples.</div><div class="vi">マデイラから輸出される主な果物は、バナナとパイナップルの2種類だ。</div><div class="tts"></div></div>
+  <p>可算・不可算で<b>意味が変わる</b>語もあります：</p>
+  <ul>
+    <li><i>an iron</i>（アイロン）↔ <i>some iron</i>（鉄＝物質）；<i>a wood</i>（小さな林）↔ <i>some wood</i>（木材）；<i>a paper</i>（新聞）↔ <i>some paper</i>（紙）；<i>a chicken</i>（ニワトリ）↔ <i>chicken</i>（鶏肉）</li>
+    <li><i>a coffee</i> ＝ コーヒー1杯 ↔ <i>coffee</i> ＝ コーヒー（物質）</li>
+    <li><i>business</i>（商売全般）↔ <i>a business</i>（会社）；<i>gossip</i>（うわさ話）↔ <i>a gossip</i>（うわさ好きの人）；<i>hair</i>（髪全体）↔ <i>a hair</i>（髪1本）；<i>help</i>（助け）↔ <i>a help</i>（助けになる人・物）；<i>toast</i>（トースト）↔ <i>a toast</i>（乾杯のあいさつ）；<i>work</i>（仕事）↔ <i>a work</i>（作品）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>4. 複数形のみの名詞と集合名詞</h2>
+  <h3>a) 複数形のみの名詞（Plural nouns）</h3>
+  <div class="formula">trousers, stairs, clothes, contents, feelings, goods, jeans, means, outskirts, surroundings, thanks + 複数動詞</div>
+  <div class="ex"><div class="en">My trousers are too tight.</div><div class="vi">私のズボンはきつすぎる。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The stairs are very steep.</div><div class="vi">その階段はとても急だ。</div><div class="tts"></div></div>
+  <h3>b) 集合名詞（Group nouns）</h3>
+  <div class="formula">government, army, audience, class, company, crew, crowd, family, group, media, press, public, staff, team + 単数動詞も複数動詞も可</div>
+  <p>集団を1つのまとまりとして考えれば単数動詞、個々のメンバーとして考えれば複数動詞を使います。ただし <i>cattle, police, people</i> は常に複数動詞です。</p>
+  <div class="ex"><div class="en">I think the government is/are wrong.</div><div class="vi">政府は間違っていると思う。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The police are arriving shortly.</div><div class="vi">警察がまもなく到着する。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>名詞が<b>可算か不可算か</b>は、必ず辞書で確認すること。</li>
+    <li>名詞の意味は、可算・不可算の使い方によって<b>変わる</b>ことがある（a paper ＝ 新聞、paper ＝ 紙）。</li>
+    <li><i>-s</i> で終わっても<b>単数動詞</b>を取る名詞がある：<i>The news is bad today.</i></li>
+    <li><b>複数形しかない</b>名詞は複数動詞を取る：<i>The police are arriving shortly.</i>、trousers、stairs、clothes など。</li>
+    <li>不可算名詞を数えるときは間接表現を使う：<i>a piece of advice/information, a slice of toast, a glass of milk</i>。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、その場で点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 各文に最も適切な語を選ぼう</h2>
+  <p class="small">a) はすでに入っている例（<i>weather</i>）です — ここでは8問すべてを採点します。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Different countries have different ______.</p><div class="opts"><button type="button">weather</button><button type="button">weathers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) All areas of the skin are in fact covered in tiny ______.</p><div class="opts"><button type="button">hair</button><button type="button">hairs</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) We've looked at the menu and we'd all like ______.</p><div class="opts"><button type="button">chicken</button><button type="button">chickens</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Jack is a millionaire and owns a lot of ______.</p><div class="opts"><button type="button">business</button><button type="button">businesses</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Have you a copy of the complete ______ of Dante?</p><div class="opts"><button type="button">work</button><button type="button">works</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) None of the passengers had insured their ______.</p><div class="opts"><button type="button">baggage</button><button type="button">baggages</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>g) Students must pass their ______ to the front.</p><div class="opts"><button type="button">paper</button><button type="button">papers</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) I'm afraid we can't find cheap ______ for all of you.</p><div class="opts"><button type="button">accommodation</button><button type="button">accommodations</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>問題2 — a / an / some を入れるか、空所のままにして各文を完成させよう</h2>
+  <p><b>a</b>、<b>an</b>、<b>some</b> のいずれかを入力してください。空所のままが正しい場合は <b>none</b> と入力してください。</p>
+  <div class="q"><p>a) When the play ended, there was <input class="blank" data-answers="none" data-display="none"> lengthy applause.</p></div>
+  <div class="q"><p>b) I can't come out tonight. I have <input class="blank" data-answers="some|none" data-display="some"> homework to do.</p></div>
+  <div class="q"><p>c) Sue received <input class="blank" data-answers="an" data-display="an"> excellent education.</p></div>
+  <div class="q"><p>d) The inside is strengthened with <input class="blank" data-answers="a" data-display="a"> steel frame.</p></div>
+  <div class="q"><p>e) My friends bought me <input class="blank" data-answers="a" data-display="a"> coffee maker for my birthday.</p></div>
+  <div class="q"><p>f) David has just bought <input class="blank" data-answers="some" data-display="some"> new furniture.</p></div>
+  <div class="q"><p>g) Let me give you <input class="blank" data-answers="some" data-display="some"> advice.</p></div>
+  <div class="q"><p>h) My trousers need pressing. Can you lend me <input class="blank" data-answers="an" data-display="an"> iron?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ 問題2をチェック</button><button type="button" onclick="showFill('ex2')">👁 答えを見る</button><button type="button" onclick="resetFill('ex2')">↺ やり直す</button></div>
+  <span class="score">問題2の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>問題3 — 各文に最も適切な語を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) I would love to go on a long ______ by train.</p><div class="opts"><button type="button">journey</button><button type="button">travel</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) What's the latest news? Can I look at your ______?</p><div class="opts"><button type="button">paper</button><button type="button">journal</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) Here's your ticket. Do you have any ______?</p><div class="opts"><button type="button">luggage</button><button type="button">suitcase</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Don't forget to buy a sliced ______.</p><div class="opts"><button type="button">bread</button><button type="button">loaf</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) Why don't we leave the car in this ______?</p><div class="opts"><button type="button">car park</button><button type="button">parking</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) I can't come to work today. I have a bad ______.</p><div class="opts"><button type="button">cold</button><button type="button">flu</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Excuse me sir, but do you have a ______ for this gun?</p><div class="opts"><button type="button">licence</button><button type="button">permission</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) Brighton has quite a good ______.</p><div class="opts"><button type="button">beach</button><button type="button">seaside</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題3の点数： <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 各空所に適切な1語を入れよう</h2>
+  <p class="small">a) はすでに入っている例（<i>accommodation</i>）です — ここでは10問すべてを採点します。</p>
+  <div class="q"><p>a) I'm looking for <input class="blank" data-answers="accommodation" data-display="accommodation">. Do you know anywhere I can stay?</p></div>
+  <div class="q"><p>b) Take my <input class="blank" data-answers="advice" data-display="advice">, don't go out alone after dark.</p></div>
+  <div class="q"><p>c) The government plans to improve <input class="blank" data-answers="education" data-display="education"> by paying teachers more.</p></div>
+  <div class="q"><p>d) Can you lend me some <input class="blank" data-answers="paper" data-display="paper">? I want to print out a letter.</p></div>
+  <div class="q"><p>e) I need some <input class="blank" data-answers="information|advice" data-display="information / advice"> about language schools. Can you help me?</p></div>
+  <div class="q"><p>f) Richard is unemployed, and he is looking for a <input class="blank" data-answers="job" data-display="job">.</p></div>
+  <div class="q"><p>g) Could I have some <input class="blank" data-answers="fruit" data-display="fruit">? Those apples and oranges look nice.</p></div>
+  <div class="q"><p>h) I used to have long <input class="blank" data-answers="hair" data-display="hair">, but I had it cut.</p></div>
+  <div class="q"><p>i) I can't do this on my own. Could you give me some <input class="blank" data-answers="help" data-display="help">?</p></div>
+  <div class="q"><p>j) If you can't undo the knot, cut the string with some <input class="blank" data-answers="scissors" data-display="scissors">.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex5">
+  <h2>問題5 — 各文に最も適切な語・句を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) I like your new trousers. Where did you buy ______?</p><div class="opts"><button type="button">A it</button><button type="button">B them</button><button type="button">C them both</button><button type="button">D them all</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) There is always a very large ______ at the church I go to.</p><div class="opts"><button type="button">A congregation</button><button type="button">B audience</button><button type="button">C spectator</button><button type="button">D company</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) The local ______ has agreed to repair the road outside our house.</p><div class="opts"><button type="button">A government</button><button type="button">B people</button><button type="button">C council</button><button type="button">D jury</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>d) When the police arrived, we were pleased to see ______.</p><div class="opts"><button type="button">A him</button><button type="button">B him or her</button><button type="button">C it</button><button type="button">D them</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) The car turned over, but luckily it didn't suffer serious ______.</p><div class="opts"><button type="button">A damage</button><button type="button">B injury</button><button type="button">C damages</button><button type="button">D injuries</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) Sorry, I'm late, but I had a lot of ______ to do.</p><div class="opts"><button type="button">A job</button><button type="button">B work</button><button type="button">C task</button><button type="button">D labour</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) Julie bought herself a complete new ______ for winter.</p><div class="opts"><button type="button">A outfit</button><button type="button">B cloth</button><button type="button">C clothing</button><button type="button">D wear</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) I feel like going out tonight. Let's go to a/an ______.</p><div class="opts"><button type="button">A dancing</button><button type="button">B night</button><button type="button">C club</button><button type="button">D entertainment</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>i) Thanks for a great weekend! We really had a/an ______.</p><div class="opts"><button type="button">A fun</button><button type="button">B enjoyment</button><button type="button">C hospitality</button><button type="button">D good time</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) In order to prove Smith is guilty, we must find some ______.</p><div class="opts"><button type="button">A information</button><button type="button">B evidence</button><button type="button">C knowledge</button><button type="button">D means</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題5の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex6">
+  <h2>問題6 — 各文に最も適切な意味を選ぼう</h2>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) You mustn't lose heart.</p><div class="opts"><button type="button">1) Don't have an operation.</button><button type="button">2) Don't give up hope.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Where's my glass?</p><div class="opts"><button type="button">1) I need a drink.</button><button type="button">2) I can't see.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) Jack has a new post.</p><div class="opts"><button type="button">1) The postman has delivered a letter.</button><button type="button">2) He has a different job.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) All goods must be paid for in advance.</p><div class="opts"><button type="button">1) Nothing enjoyable in life is free.</button><button type="button">2) You have to pay for these things first.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) I've joined a new company.</p><div class="opts"><button type="button">1) I have a new job.</button><button type="button">2) I have some new friends.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) This hotel has class.</p><div class="opts"><button type="button">1) You can study hotel management here.</button><button type="button">2) It is a good quality hotel.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) I don't have the means to help you.</p><div class="opts"><button type="button">1) I'm not able to help.</button><button type="button">2) I can't understand what help you need.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) I'd like some china.</p><div class="opts"><button type="button">1) I want to go abroad.</button><button type="button">2) I need some cups and plates.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) Do you have any cash?</p><div class="opts"><button type="button">1) Do you only have a cheque?</button><button type="button">2) Isn't there a place to pay in this shop?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>j) They have a business in Leeds.</p><div class="opts"><button type="button">1) They have to go there to do a job.</button><button type="button">2) They own a company there.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題6の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex7">
+  <h2>問題7 — 与えられた語を使って、意味が同じになるよう2番目の文を完成させよう</h2>
+  <p>与えられた語（形は変えない）を含め、<b>2〜5語</b>を入力してください。a) はすでに入っている例です — ここでは8問すべてを採点します。</p>
+  <div class="q"><p>a) This island has a large population. <i>(people)</i><br>→ There <input class="blank" data-answers="are a lot of people" data-display="are a lot of people"> on this island.</p></div>
+  <div class="q"><p>b) Do you own these things? <i>(your)</i><br>→ Are <input class="blank" data-answers="these your" data-display="these your"> belongings?</p></div>
+  <div class="q"><p>c) The weather was good on our holiday. <i>(had)</i><br>→ We <input class="blank" data-answers="had good weather" data-display="had good weather"> on our holiday.</p></div>
+  <div class="q"><p>d) There were a lot of cars on the road to Manchester. <i>(traffic)</i><br>→ There <input class="blank" data-answers="was a lot of traffic|was lots of traffic" data-display="was a lot of / lots of traffic"> on the road to Manchester.</p></div>
+  <div class="q"><p>e) Gerry is a very strong person, in my opinion. <i>(strength)</i><br>→ Gerry <input class="blank" data-answers="has great strength" data-display="has great strength">, in my opinion.</p></div>
+  <div class="q"><p>f) There are pieces of paper all over the floor! <i>(litter)</i><br>→ There <input class="blank" data-answers="is litter" data-display="is litter"> all over the floor!</p></div>
+  <div class="q"><p>g) Can I park my car here? <i>(allowed)</i><br>→ Is <input class="blank" data-answers="parking allowed" data-display="parking allowed"> here?</p></div>
+  <div class="q"><p>h) I know these machines are very expensive. <i>(machinery)</i><br>→ I know <input class="blank" data-answers="this machinery is" data-display="this machinery is"> very expensive.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex7')">✔ 問題7をチェック</button><button type="button" onclick="showFill('ex7')">👁 答えを見る</button><button type="button" onclick="resetFill('ex7')">↺ やり直す</button></div>
+  <span class="score">問題7の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex8">
+  <h2>問題8 — 枠内の語を使って各文を完成させよう</h2>
+  <p>枠内の語：<b>piece · item · flight · sheet · head · slice · set · clap</b>。a) はすでに入っている例（<i>piece</i>）です — ここでは8問すべてを採点します。</p>
+  <div class="q"><p>a) Let me give you a <input class="blank" data-answers="piece" data-display="piece"> of advice.</p></div>
+  <div class="q"><p>b) There is an interesting <input class="blank" data-answers="item" data-display="item"> of news in the paper.</p></div>
+  <div class="q"><p>c) A <input class="blank" data-answers="flight" data-display="flight"> of stairs takes you to the top of the house.</p></div>
+  <div class="q"><p>d) Could I have another <input class="blank" data-answers="sheet" data-display="sheet"> of paper, please?</p></div>
+  <div class="q"><p>e) Helen has a lovely <input class="blank" data-answers="head" data-display="head"> of hair.</p></div>
+  <div class="q"><p>f) Do you want another <input class="blank" data-answers="slice" data-display="slice"> of toast?</p></div>
+  <div class="q"><p>g) We bought Mike and Lynn a <input class="blank" data-answers="set" data-display="set"> of cutlery for a wedding present.</p></div>
+  <div class="q"><p>h) The lightning was followed by a <input class="blank" data-answers="clap" data-display="clap"> of thunder.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex8')">✔ 問題8をチェック</button><button type="button" onclick="showFill('ex8')">👁 答えを見る</button><button type="button" onclick="resetFill('ex8')">↺ やり直す</button></div>
+  <span class="score">問題8の点数： <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card fill-sec" id="ex9">
+  <h2>問題9 — 枠内の語を使って各文を完成させよう</h2>
+  <p>枠内の語：<b>bread · spelling · parking · cash · information · lightning · advice · luggage · cookery · accommodation</b>。a) はすでに入っている例（<i>bread</i>）です — ここでは10問すべてを採点します。</p>
+  <div class="q"><p>a) I can't cut this loaf. Do you have a proper <input class="blank" data-answers="bread" data-display="bread"> knife?</p></div>
+  <div class="q"><p>b) I'm afraid that 'neice' is a <input class="blank" data-answers="spelling" data-display="spelling"> mistake.</p></div>
+  <div class="q"><p>c) There's usually a/an <input class="blank" data-answers="parking" data-display="parking"> space opposite the cinema.</p></div>
+  <div class="q"><p>d) We need a/an <input class="blank" data-answers="cash" data-display="cash"> box to keep the money in.</p></div>
+  <div class="q"><p>e) The tourist board have built a/an <input class="blank" data-answers="information" data-display="information"> centre near the castle.</p></div>
+  <div class="q"><p>f) We decided to put a/an <input class="blank" data-answers="lightning" data-display="lightning"> conductor on the roof.</p></div>
+  <div class="q"><p>g) Marjorie used to write a/an <input class="blank" data-answers="advice" data-display="advice"> column in a magazine.</p></div>
+  <div class="q"><p>h) These suitcases are very heavy. We must find a/an <input class="blank" data-answers="luggage" data-display="luggage"> trolley.</p></div>
+  <div class="q"><p>i) I must rush. I'm going to a/an <input class="blank" data-answers="cookery" data-display="cookery"> lesson.</p></div>
+  <div class="q"><p>j) Julie found her flat through a/an <input class="blank" data-answers="accommodation" data-display="accommodation"> agency.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex9')">✔ 問題9をチェック</button><button type="button" onclick="showFill('ex9')">👁 答えを見る</button><button type="button" onclick="resetFill('ex9')">↺ やり直す</button></div>
+  <span class="score">問題9の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex10">
+  <h2>問題10 — 各空所に最も適切な答えを選ぼう：Food habits</h2>
+  <p>全文を読んでから、下の各空所の答えを選んでください。(1) の答え <i>B meals</i> は例です — ここでは15か所すべてを採点します。</p><p><i>Food habits</i><br>Breakfast is one of those (1) ______ that varies from person to person, and country to country. For some (2) ______ it means a (3) ______ of toast and some coffee. In various places I've also been offered (4) ______ or fruit. (5) ______ executives might eat breakfast at the (6) ______, while for many schoolchildren breakfast is a (7) ______ of milk at home, and then a long wait (8) ______ the first break of the morning, when they eat (9) ______ or (10) ______ chocolate bar. Some families sit down and eat together (11) ______ the morning, and listen to (12) ______ news on the radio or (13) ______ early morning television. For other people, the early morning is a rush (14) ______ work or school, and there just simply isn't (15) ______.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>1) Breakfast is one of those ______ that varies from person to person…</p><div class="opts"><button type="button">A times</button><button type="button">B meals</button><button type="button">C foods</button><button type="button">D plates</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>2) For some ______ it means a slice of toast and some coffee.</p><div class="opts"><button type="button">A people</button><button type="button">B persons</button><button type="button">C breakfasts</button><button type="button">D us</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>3) …it means a ______ of toast and some coffee.</p><div class="opts"><button type="button">A sheet</button><button type="button">B loaf</button><button type="button">C slice</button><button type="button">D sandwich</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>4) In various places I've also been offered ______ or fruit.</p><div class="opts"><button type="button">A a cheese</button><button type="button">B the cheese</button><button type="button">C cheese</button><button type="button">D cheeses</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>5) ______ executives might eat breakfast at the office…</p><div class="opts"><button type="button">A Business</button><button type="button">B A business</button><button type="button">C Business's</button><button type="button">D Businessmen</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>6) …might eat breakfast at the ______.</p><div class="opts"><button type="button">A train</button><button type="button">B street</button><button type="button">C morning</button><button type="button">D office</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>7) …for many schoolchildren breakfast is a ______ of milk at home…</p><div class="opts"><button type="button">A glass</button><button type="button">B piece</button><button type="button">C warm</button><button type="button">D box</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>8) …and then a long wait ______ the first break of the morning…</p><div class="opts"><button type="button">A to</button><button type="button">B is</button><button type="button">C until</button><button type="button">D which</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>9) …when they eat ______ or a chocolate bar.</p><div class="opts"><button type="button">A sandwich</button><button type="button">B the sandwich</button><button type="button">C a sandwiches</button><button type="button">D sandwiches</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>10) …or ______ chocolate bar.</p><div class="opts"><button type="button">A a</button><button type="button">B some</button><button type="button">C a piece</button><button type="button">D a glass of</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>11) Some families sit down and eat together ______ the morning…</p><div class="opts"><button type="button">A for</button><button type="button">B in</button><button type="button">C at</button><button type="button">D while</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>12) …and listen to ______ news on the radio…</p><div class="opts"><button type="button">A a</button><button type="button">B what</button><button type="button">C some</button><button type="button">D the</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>13) …or ______ early morning television.</p><div class="opts"><button type="button">A look</button><button type="button">B watch</button><button type="button">C see</button><button type="button">D regard</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>14) …the early morning is a rush ______ work or school…</p><div class="opts"><button type="button">A to</button><button type="button">B from</button><button type="button">C at</button><button type="button">D and</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>15) …and there just simply isn't ______.</p><div class="opts"><button type="button">A there</button><button type="button">B it</button><button type="button">C enough</button><button type="button">D time</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題10の点数： <span class="score-num">0</span>/15</span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンの採点対象は全部で <b>95</b> 問です（問題1：8問 · 問題2：8か所 · 問題3：8問 · 問題4：10か所 · 問題5：10問 · 問題6：10問 · 問題7：8問 · 問題8：8か所 · 問題9：10か所 · 問題10：15か所）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"able":"EY1 B AH0 L","about":"AH0 B AW1 T","abroad":"AH0 B R AO1 D","accommodation":"AH0 K AA2 M AH0 D EY1 SH AH0 N","accommodations":"AH0 K AA2 M AH0 D EY1 SH AH0 N Z","advance":"AH0 D V AE1 N S","advice":"AE0 D V AY1 S","afraid":"AH0 F R EY1 D","after":"AE1 F T ER0","agency":"EY1 JH AH0 N S IY0","agreed":"AH0 G R IY1 D","air":"EH1 R","all":"AO1 L","allowed":"AH0 L AW1 D","alone":"AH0 L OW1 N","also":"AO1 L S OW0","always":"AO1 L W EY2 Z","an":"AE1 N","and":"AH0 N D","anger":"AE1 NG G ER0","another":"AH0 N AH1 DH ER0","any":"EH1 N IY0","anywhere":"EH1 N IY0 W EH2 R","applause":"AH0 P L AO1 Z","apples":"AE1 P AH0 L Z","are":"AA1 R","areas":"EH1 R IY0 AH0 Z","army":"AA1 R M IY0","arrived":"ER0 AY1 V D","arriving":"ER0 AY1 V IH0 NG","at":"AE1 T","audience":"AA1 D IY0 AH0 N S","bad":"B AE1 D","baggage":"B AE1 G AH0 JH","baggages":"B AE1 G IH0 JH IH0 Z","bananas":"B AH0 N AE1 N AH0 Z","bar":"B AA1 R","be":"B IY1","beach":"B IY1 CH","been":"B IH1 N","behaviour":"B IH0 HH EY1 V Y ER0","belongings":"B IH0 L AO1 NG IH0 NG Z","billiards":"B IH1 L Y ER0 D Z","birthday":"B ER1 TH D EY2","bit":"B IH1 T","bits":"B IH1 T S","board":"B AO1 R D","both":"B OW1 TH","bought":"B AA1 T","box":"B AA1 K S","bread":"B R EH1 D","break":"B R EY1 K","breakfast":"B R EH1 K F AH0 S T","breakfasts":"B R EH1 K F AH0 S T S","brighton":"B R AY1 T AH0 N","built":"B IH1 L T","business":"B IH1 Z N AH0 S","business's":"B IH1 Z N IH0 S IH0 Z","businesses":"B IH1 Z N AH0 S AH0 Z","businessmen":"B IH1 Z N IH0 S M EH2 N","but":"B AH1 T","buy":"B AY1","by":"B AY1","can":"K AE1 N","can't":"K AE1 N T","car":"K AA1 R","cars":"K AA1 R Z","cash":"K AE1 SH","castle":"K AE1 S AH0 L","cattle":"K AE1 T AH0 L","centre":"S EH1 N T ER0","cheap":"CH IY1 P","cheese":"CH IY1 Z","cheeses":"CH IY1 Z IH0 Z","cheque":"CH EH1 K","chicken":"CH IH1 K AH0 N","chickens":"CH IH1 K AH0 N Z","china":"CH AY1 N AH0","chocolate":"CH AO1 K L AH0 T","church":"CH ER1 CH","cinema":"S IH1 N AH0 M AH0","clap":"K L AE1 P","class":"K L AE1 S","cloth":"K L AO1 TH","clothes":"K L OW1 DH Z","clothing":"K L OW1 DH IH0 NG","club":"K L AH1 B","coffee":"K AA1 F IY0","cold":"K OW1 L D","column":"K AA1 L AH0 M","come":"K AH1 M","company":"K AH1 M P AH0 N IY2","complete":"K AH0 M P L IY1 T","conductor":"K AH0 N D AH1 K T ER0","congregation":"K AA2 NG G R AH0 G EY1 SH AH0 N","contents":"K AA1 N T EH0 N T S","cookery":"K UH1 K ER0 IY0","copy":"K AA1 P IY0","could":"K UH1 D","council":"K AW1 N S AH0 L","countable":"K AW1 N T AH0 B AH0 L","countries":"K AH1 N T R IY0 Z","country":"K AH1 N T R IY0","courage":"K ER1 AH0 JH","covered":"K AH1 V ER0 D","crew":"K R UW1","crowd":"K R AW1 D","cups":"K AH1 P S","cut":"K AH1 T","cutlery":"K AH1 T L ER0 IY0","damage":"D AE1 M AH0 JH","damages":"D AE1 M AH0 JH AH0 Z","dancing":"D AE1 N S IH0 NG","dante":"D AA1 N T EY0","dark":"D AA1 R K","david":"D EY1 V IH0 D","decided":"D IH2 S AY1 D IH0 D","delivered":"D IH0 L IH1 V ER0 D","did":"D IH1 D","didn't":"D IH1 D AH0 N T","different":"D IH1 F ER0 AH0 N T","do":"D UW1","don't":"D OW1 N T","down":"D AW1 N","drink":"D R IH1 NG K","early":"ER1 L IY0","eat":"IY1 T","education":"EH2 JH AH0 K EY1 SH AH0 N","ended":"EH1 N D AH0 D","english":"IH1 NG G L IH0 SH","enjoyable":"EH2 N JH OY1 AH0 B AH0 L","enjoyment":"EH2 N JH OY1 M AH0 N T","enough":"IH0 N AH1 F","entertainment":"EH2 N T ER0 T EY1 N M AH0 N T","equipment":"IH0 K W IH1 P M AH0 N T","evidence":"EH1 V AH0 D AH0 N S","excellent":"EH1 K S AH0 L AH0 N T","excuse":"IH0 K S K Y UW1 S","executives":"IH0 G Z EH1 K Y AH0 T IH0 V Z","expensive":"IH0 K S P EH1 N S IH0 V","exported":"IH0 K S P AO1 R T AH0 D","fact":"F AE1 K T","families":"F AE1 M AH0 L IY0 Z","family":"F AE1 M AH0 L IY0","feel":"F IY1 L","feelings":"F IY1 L IH0 NG Z","find":"F AY1 N D","first":"F ER1 S T","flat":"F L AE1 T","flight":"F L AY1 T","floor":"F L AO1 R","flu":"F L UW1","followed":"F AA1 L OW0 D","food":"F UW1 D","foods":"F UW1 D Z","football":"F UH1 T B AO2 L","for":"F AO1 R","forget":"F ER0 G EH1 T","found":"F AW1 N D","four":"F AO1 R","frame":"F R EY1 M","free":"F R IY1","freedom":"F R IY1 D AH0 M","friends":"F R EH1 N D Z","from":"F R AH1 M","front":"F R AH1 N T","fruit":"F R UW1 T","fruits":"F R UW1 T S","fun":"F AH1 N","furniture":"F ER1 N IH0 CH ER0","game":"G EY1 M","gave":"G EY1 V","gerry":"JH EH1 R IY0","give":"G IH1 V","glass":"G L AE1 S","go":"G OW1","going":"G OW1 IH0 NG","good":"G UH1 D","goods":"G UH1 D Z","gossip":"G AA1 S AH0 P","government":"G AH1 V ER0 M AH0 N T","grammar":"G R AE1 M ER0","great":"G R EY1 T","group":"G R UW1 P","guilty":"G IH1 L T IY0","gun":"G AH1 N","habits":"HH AE1 B AH0 T S","had":"HH AE1 D","hair":"HH EH1 R","hairs":"HH EH1 R Z","happiness":"HH AE1 P IY0 N AH0 S","has":"HH AE1 Z","have":"HH AE1 V","he":"HH IY1","head":"HH EH1 D","health":"HH EH1 L TH","heart":"HH AA1 R T","heavy":"HH EH1 V IY0","helen":"HH EH1 L AH0 N","help":"HH EH1 L P","her":"HH ER1","here":"HH IY1 R","here's":"HH IH1 R Z","herself":"HH ER0 S EH1 L F","him":"HH IH1 M","holiday":"HH AA1 L AH0 D EY2","home":"HH OW1 M","homework":"HH OW1 M W ER2 K","honesty":"AA1 N AH0 S T IY0","hope":"HH OW1 P","hospitality":"HH AA2 S P AH0 T AE1 L AH0 T IY0","hotel":"HH OW0 T EH1 L","house":"HH AW1 S","i'd":"AY1 D","i'm":"AY1 M","i've":"AY1 V","if":"IH1 F","improve":"IH2 M P R UW1 V","in":"IH0 N","information":"IH2 N F ER0 M EY1 SH AH0 N","injuries":"IH1 N JH ER0 IY0 Z","injury":"IH1 N JH ER0 IY0","inside":"IH2 N S AY1 D","insured":"IH2 N SH UH1 R D","interesting":"IH1 N T R AH0 S T IH0 NG","iron":"AY1 ER0 N","is":"IH1 Z","island":"AY1 L AH0 N D","isn't":"IH1 Z AH0 N T","it":"IH1 T","item":"AY1 T AH0 M","jack":"JH AE1 K","jeans":"JH IY1 N Z","job":"JH AA1 B","joined":"JH OY1 N D","journal":"JH ER1 N AH0 L","journey":"JH ER1 N IY0","julie":"JH UW1 L IY0","jury":"JH UH1 R IY0","just":"JH AH1 S T","keep":"K IY1 P","key":"K IY1","knife":"N AY1 F","knot":"N AA1 T","know":"N OW1","knowledge":"N AA1 L AH0 JH","labour":"L EY1 B ER0","language":"L AE1 NG G W AH0 JH","large":"L AA1 R JH","late":"L EY1 T","latest":"L EY1 T AH0 S T","leave":"L IY1 V","leeds":"L IY1 D Z","left":"L EH1 F T","lend":"L EH1 N D","lengthy":"L EH1 NG TH IY0","lesson":"L EH1 S AH0 N","let":"L EH1 T","let's":"L EH1 T S","letter":"L EH1 T ER0","licence":"L AY1 S AH0 N S","life":"L AY1 F","lightning":"L AY1 T N IH0 NG","like":"L AY1 K","listen":"L IH1 S AH0 N","litter":"L IH1 T ER0","loaf":"L OW1 F","local":"L OW1 K AH0 L","long":"L AO1 NG","look":"L UH1 K","looked":"L UH1 K T","looking":"L UH1 K IH0 NG","lose":"L UW1 Z","lot":"L AA1 T","love":"L AH1 V","lovely":"L AH1 V L IY0","luckily":"L AH1 K AH0 L IY0","luggage":"L AH1 G AH0 JH","lynn":"L IH1 N","machinery":"M AH0 SH IY1 N ER0 IY0","machines":"M AH0 SH IY1 N Z","madeira":"M AH0 D IH1 R AH0","magazine":"M AE1 G AH0 Z IY2 N","main":"M EY1 N","maker":"M EY1 K ER0","management":"M AE1 N AH0 JH M AH0 N T","manchester":"M AE1 N CH EH2 S T ER0","many":"M EH1 N IY0","marjorie":"M AA1 R JH ER0 IY0","me":"M IY1","meals":"M IY1 L Z","means":"M IY1 N Z","media":"M IY1 D IY0 AH0","menu":"M EH1 N Y UW0","might":"M AY1 T","mike":"M AY1 K","milk":"M IH1 L K","millionaire":"M IH2 L Y AH0 N EH1 R","mistake":"M IH0 S T EY1 K","money":"M AH1 N IY0","more":"M AO1 R","morning":"M AO1 R N IH0 NG","mother":"M AH1 DH ER0","must":"M AH1 S T","mustn't":"M AH1 S AH0 N T","my":"M AY1","near":"N IH1 R","need":"N IY1 D","new":"N UW1","news":"N UW1 Z","nice":"N AY1 S","night":"N AY1 T","none":"N AH1 N","not":"N AA1 T","nothing":"N AH1 TH IH0 NG","nouns":"N AW1 N Z","of":"AH1 V","off":"AO1 F","offered":"AO1 F ER0 D","office":"AO1 F IH0 S","on":"AA1 N","one":"W AH1 N","only":"OW1 N L IY0","operation":"AA2 P ER0 EY1 SH AH0 N","opinion":"AH0 P IH1 N Y AH0 N","opposite":"AA1 P AH0 Z AH0 T","or":"AO1 R","oranges":"AO1 R AH0 N JH AH0 Z","order":"AO1 R D ER0","other":"AH1 DH ER0","our":"AW1 ER0","out":"AW1 T","outfit":"AW1 T F IH2 T","outside":"AW1 T S AY1 D","outskirts":"AW1 T S K ER2 T S","over":"OW1 V ER0","own":"OW1 N","owns":"OW1 N Z","paid":"P EY1 D","paper":"P EY1 P ER0","papers":"P EY1 P ER0 Z","park":"P AA1 R K","parking":"P AA1 R K IH0 NG","pass":"P AE1 S","passengers":"P AE1 S AH0 N JH ER0 Z","pay":"P EY1","paying":"P EY1 IH0 NG","people":"P IY1 P AH0 L","permission":"P ER0 M IH1 SH AH0 N","person":"P ER1 S AH0 N","persons":"P ER1 S AH0 N Z","piece":"P IY1 S","pieces":"P IY1 S AH0 Z","pineapples":"P AY1 N AE2 P AH0 L Z","place":"P L EY1 S","places":"P L EY1 S AH0 Z","plans":"P L AE1 N Z","plastic":"P L AE1 S T IH0 K","plates":"P L EY1 T S","play":"P L EY1","please":"P L IY1 Z","pleased":"P L IY1 Z D","plural":"P L UH1 R AH0 L","points":"P OY1 N T S","police":"P AH0 L IY1 S","population":"P AA2 P Y AH0 L EY1 SH AH0 N","post":"P OW1 S T","postman":"P OW1 S T M AH0 N","practice":"P R AE1 K T AH0 S","present":"P R EH1 Z AH0 N T","press":"P R EH1 S","pressing":"P R EH1 S IH0 NG","print":"P R IH1 N T","progress":"P R AA1 G R EH2 S","proper":"P R AA1 P ER0","prove":"P R UW1 V","public":"P AH1 B L IH0 K","put":"P UH1 T","quality":"K W AA1 L AH0 T IY0","quite":"K W AY1 T","radio":"R EY1 D IY0 OW2","really":"R IH1 L IY0","received":"R AH0 S IY1 V D","regard":"R IH0 G AA1 R D","repair":"R IH0 P EH1 R","research":"R IY0 S ER1 CH","respect":"R IH0 S P EH1 K T","richard":"R IH1 CH ER0 D","road":"R OW1 D","roof":"R UW1 F","rubbish":"R AH1 B IH0 SH","rush":"R AH1 SH","sandwich":"S AE1 N D W IH0 CH","sandwiches":"S AE1 N D W IH0 CH IH0 Z","scenery":"S IY1 N ER0 IY0","school":"S K UW1 L","schoolchildren":"S K UW1 L CH IH2 L D R AH0 N","schools":"S K UW1 L Z","seaside":"S IY1 S AY2 D","see":"S IY1","serious":"S IH1 R IY0 AH0 S","set":"S EH1 T","several":"S EH1 V R AH0 L","sheet":"SH IY1 T","shirt":"SH ER1 T","shirts":"SH ER1 T S","shop":"SH AA1 P","shortly":"SH AO1 R T L IY0","simply":"S IH1 M P L IY0","sir":"S ER1","sit":"S IH1 T","skin":"S K IH1 N","sleep":"S L IY1 P","slice":"S L AY1 S","sliced":"S L AY1 S T","smith":"S M IH1 TH","some":"S AH1 M","sorry":"S AA1 R IY0","space":"S P EY1 S","spectator":"S P EH1 K T EY0 T ER0","spelling":"S P EH1 L IH0 NG","staff":"S T AE1 F","stairs":"S T EH1 R Z","stay":"S T EY1","steel":"S T IY1 L","steep":"S T IY1 P","street":"S T R IY1 T","strength":"S T R EH1 NG K TH","strengthened":"S T R EH1 NG TH AH0 N D","string":"S T R IH1 NG","strong":"S T R AO1 NG","students":"S T UW1 D AH0 N T S","study":"S T AH1 D IY0","sue":"S UW1","suffer":"S AH1 F ER0","suitcase":"S UW1 T K EY2 S","suitcases":"S UW1 T K EY2 S IH0 Z","surroundings":"S ER0 AW1 N D IH0 NG Z","take":"T EY1 K","takes":"T EY1 K S","task":"T AE1 S K","teachers":"T IY1 CH ER0 Z","team":"T IY1 M","television":"T EH1 L AH0 V IH2 ZH AH0 N","thanks":"TH AE1 NG K S","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","there's":"DH EH1 R Z","these":"DH IY1 Z","they":"DH EY1","things":"TH IH1 NG Z","think":"TH IH1 NG K","this":"DH IH1 S","those":"DH OW1 Z","through":"TH R UW1","thunder":"TH AH1 N D ER0","ticket":"T IH1 K AH0 T","tight":"T AY1 T","time":"T AY1 M","times":"T AY1 M Z","tiny":"T AY1 N IY0","to":"T UW1","toast":"T OW1 S T","today":"T AH0 D EY1","together":"T AH0 G EH1 DH ER0","tonight":"T AH0 N AY1 T","too":"T UW1","top":"T AA1 P","tourist":"T UH1 R AH0 S T","traffic":"T R AE1 F IH0 K","train":"T R EY1 N","travel":"T R AE1 V AH0 L","trolley":"T R AA1 L IY0","trousers":"T R AW1 Z ER0 Z","turned":"T ER1 N D","two":"T UW1","uncountable":"AH0 N K AW1 N T AH0 B AH0 L","understand":"AH2 N D ER0 S T AE1 N D","undo":"AH0 N D UW1","unemployed":"AH2 N EH0 M P L OY1 D","until":"AH0 N T IH1 L","up":"AH1 P","us":"AH1 S","used":"Y UW1 Z D","useful":"Y UW1 S F AH0 L","usually":"Y UW1 ZH AH0 W AH0 L IY0","varies":"V EH1 R IY0 Z","various":"V EH1 R IY0 AH0 S","very":"V EH1 R IY0","wait":"W EY1 T","want":"W AA1 N T","warm":"W AO1 R M","was":"W AA1 Z","watch":"W AA1 CH","water":"W AO1 T ER0","we":"W IY1","we'd":"W IY1 D","we've":"W IY1 V","wear":"W EH1 R","weather":"W EH1 DH ER0","weathers":"W EH1 DH ER0 Z","wedding":"W EH1 D IH0 NG","weekend":"W IY1 K EH2 N D","were":"W ER1","what":"W AH1 T","what's":"W AH1 T S","when":"W EH1 N","where":"W EH1 R","where's":"W EH1 R Z","which":"W IH1 CH","while":"W AY1 L","why":"W AY1","winter":"W IH1 N T ER0","with":"W IH1 DH","wood":"W UH1 D","work":"W ER1 K","works":"W ER1 K S","would":"W UH1 D","write":"R AY1 T","wrong":"R AO1 NG","you":"Y UW1","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
