@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 18 — Functions 1 | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-18-Functions-1.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-18-Functions-1-EN.html">🇬🇧 English</a>
+  <h1>Grammar 18 — Functions 1</h1>
+  <p>言語の機能（Functions）1：許可を求める · 招待する · 助言する · 謝る · 不平を言う · 道を聞く／教える · 紹介する</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. 言語の機能（Functions）とは？</h2>
+  <p>英語の文は2つの方法で説明できます。<b>文法的な説明</b>（grammatical description）は文の構造についての説明で、<b>機能的な説明</b>（functional description）は、その文が<b>何のために使われるか</b> — 許可を求める、招待する、助言する、謝るなど — を示す説明です。</p>
+  <div class="formula">同じ文でも：文法的な説明 ≠ 機能的な説明</div>
+  <div class="ex"><div class="en">If I were you, I'd leave now.</div><div class="vi">私があなたなら、今すぐ出発します。— 文法的には仮定法（second conditional）ですが、機能としては<b>助言する</b>（giving advice）ために使われています。</div><div class="tts"></div></div>
+  <p>次の3つの文はどれも<b>許可を求める</b>（asking permission）文ですが、丁寧さの度合いが異なります。</p>
+  <div class="ex"><div class="en">Is it all right if I use the phone?</div><div class="vi">電話を使ってもいい？ — 友人に対して：くだけた、気軽な言い方です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Do you think I could possibly phone Australia?</div><div class="vi">オーストラリアに電話をかけてもよろしいでしょうか。— 同じ相手でも、内容が重大なため、より丁寧で改まった言い方になります。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Do you mind if I open the window?</div><div class="vi">窓を開けてもよろしいですか。— 見知らぬ人に対して：丁寧な形を使います。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 状況に合わせて言い方を選ぶ</h2>
+  <p>言葉の選び方は、<b>状況</b>、<b>話している相手</b>、<b>話題</b>によって左右されます。厳密なルールはありませんが、通常、次のような場合には<b>丁寧で改まった言い方</b>を使います。</p>
+  <ul>
+    <li>見知らぬ人や、あまりよく知らない人と話すとき；</li>
+    <li>地位の高い人と話すとき；</li>
+    <li>デリケートな話題について話すとき。</li>
+  </ul>
+  <p>反対に、親しい友人には、くだけた短い言い方の方が自然です。丁寧さの度合いを間違えると、相手に不快感を与えたり、失礼だと思われたりすることがあります。</p>
+  <div class="ex"><div class="en">Shall I carry this bag for you?</div><div class="vi">そのバッグ、持ちましょうか。— 何かすることを申し出る（offering to do something）表現です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Would you like to come round for a drink later?</div><div class="vi">後でうちに飲みに来ませんか。— 招待する（inviting）表現です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Could you tell me how to get to the post office?</div><div class="vi">郵便局への行き方を教えていただけますか。— 道を聞く（asking for directions）表現です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">What do you think I should do?</div><div class="vi">私はどうしたらいいと思いますか。— 助言を求める（asking for advice）表現です。</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>3. このユニットで練習する機能</h2>
+  <p>このユニットで練習するコミュニケーション機能と、それぞれの代表的な文です。</p>
+  <ul>
+    <li><b>Asking for and giving advice</b> — 助言を求める／与える：<i>I think you'd better phone the police.</i></li>
+    <li><b>Agreeing and disagreeing</b> — 同意する／同意しない：<i>I think that's the point exactly. / Actually, I don't think that's right.</i></li>
+    <li><b>Apologising</b> — 謝る：<i>I'm sorry I'm late — it won't happen again.</i></li>
+    <li><b>Complaining</b> — 不平を言う：<i>You might have told me you were having a party!</i></li>
+    <li><b>Ending a conversation</b> — 会話を終わらせる：<i>Well, it's been nice talking to you, but I'm afraid I have to go.</i></li>
+    <li><b>Asking for and giving directions</b> — 道を聞く／教える：<i>It's at the end of this street, opposite the church.</i></li>
+    <li><b>Greeting</b> — 挨拶する；<b>Asking how someone is</b> — 様子を聞く：<i>Hi, Sally, how are you?</i></li>
+    <li><b>Asking for information</b> — 情報を聞く：<i>Could you tell me what time the bank opens?</i></li>
+    <li><b>Introducing yourself and others</b> — 自己紹介と他人の紹介：<i>Jack, this is my brother, Mark.</i></li>
+    <li><b>Inviting</b> — 招待する；<b>Accepting and declining invitations</b> — 招待を受ける／断る：<i>That's very kind of you, I'd love to. / I'd love to come, but I'm already going out that evening.</i></li>
+    <li><b>Offering something</b> — 物を勧める：<i>Would you like some more tea?</i></li>
+    <li><b>Offering to do something</b> — することを申し出る：<i>Would you like me to do the washing-up?</i></li>
+  </ul>
+  <div class="ex"><div class="en">Good morning, I'm Brenda Watson, the Marketing Manager.</div><div class="vi">おはようございます。マーケティングマネージャーのブレンダ・ワトソンです。— 改まった場面での自己紹介（introducing yourself）です。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Excuse me, but is the bus station anywhere near here?</div><div class="vi">すみません、バス停はこの辺りにありますか。— 見知らぬ人に道を聞くときは、"Excuse me" で始めると丁寧です。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>言葉の選び方は、<b>状況</b>、話している相手との<b>関係</b>、そして<b>話題</b>によって決まります。</li>
+    <li>これらの要素と、相手が先に自分にどう話したかに合わせて、くだけた言い方か丁寧な言い方か、<b>適切に応答する</b>必要があります。</li>
+    <li>必要な場面で丁寧な形を使わないと、相手に<b>失礼だ</b>と思われ、会話から望む結果が得られないことがあります。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>問題1 — 文と機能を結びつけよう</h2>
+  <p>各文（a–j）を、リストの中の正しい機能と結びつけてください。</p>
+  <ol>
+    <li>Complaining（不平を言う）</li>
+    <li>Inviting（招待する）</li>
+    <li>Asking for information（情報を聞く）</li>
+    <li>Accepting an invitation（招待を受ける）</li>
+    <li>Asking for advice（助言を求める）</li>
+    <li>Asking for directions（道を聞く）</li>
+    <li>Introducing other people（他人を紹介する）</li>
+    <li>Offering to do something（することを申し出る）</li>
+    <li>Disagreeing（同意しない）</li>
+    <li>Ending a conversation（会話を終わらせる）</li>
+  </ol>
+  <p class="small">a) は解かれている例です（答え：4）— ここでは10問すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="3"><p>a) That's very kind of you, I'd love to.</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="9"><p>b) Well, it's been nice talking to you, but I'm afraid I have to go.</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="5"><p>c) Could you tell me how to get to the post office?</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) You might have told me you were having a party!</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="7"><p>e) Shall I carry this bag for you?</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="4"><p>f) What do you think I should do?</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="8"><p>g) Actually, I don't think that's right.</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) Would you like to come round for a drink later?</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="6"><p>i) Jack, this is my brother, Mark.</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) Could you tell me what time the bank opens?</p><div class="opts"><button type="button">1 · Complaining</button><button type="button">2 · Inviting</button><button type="button">3 · Asking for information</button><button type="button">4 · Accepting an invitation</button><button type="button">5 · Asking for advice</button><button type="button">6 · Asking for directions</button><button type="button">7 · Introducing other people</button><button type="button">8 · Offering to do something</button><button type="button">9 · Disagreeing</button><button type="button">10 · Ending a conversation</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題1の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — 文と機能を結びつけよう</h2>
+  <p>各文（a–j）を、リストの中の正しい機能と結びつけてください。</p>
+  <ol>
+    <li>Declining an invitation（招待を断る）</li>
+    <li>Introducing yourself（自己紹介する）</li>
+    <li>Greeting a friend（友人に挨拶する）</li>
+    <li>Offering to do something（することを申し出る）</li>
+    <li>Asking for directions（道を聞く）</li>
+    <li>Offering something（物を勧める）</li>
+    <li>Agreeing（同意する）</li>
+    <li>Apologising（謝る）</li>
+    <li>Giving directions（道を教える）</li>
+    <li>Giving advice（助言を与える）</li>
+  </ol>
+  <p class="small">a) は解かれている例です（答え：6）— ここでは10問すべてに答えてください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="5"><p>a) Would you like some more tea?</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="9"><p>b) I think you'd better phone the police.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) I'd love to come, but I'm already going out that evening.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Good morning, I'm Brenda Watson, the Marketing Manager.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="7"><p>e) I'm sorry I'm late — it won't happen again.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>f) Would you like me to do the washing-up?</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="4"><p>g) Excuse me, but is the bus station anywhere near here?</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) Hi, Sally, how are you?</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="6"><p>i) I think that's the point exactly.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="8"><p>j) It's at the end of this street, opposite the church.</p><div class="opts"><button type="button">1 · Declining an invitation</button><button type="button">2 · Introducing yourself</button><button type="button">3 · Greeting a friend</button><button type="button">4 · Offering to do something</button><button type="button">5 · Asking for directions</button><button type="button">6 · Offering something</button><button type="button">7 · Agreeing</button><button type="button">8 · Apologising</button><button type="button">9 · Giving directions</button><button type="button">10 · Giving advice</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>問題3 — 最も適切な応答を選ぼう</h2>
+  <p>各文に対して、最も適切な応答（1か2）を選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) Do you feel like going to the cinema this evening?</p><div class="opts"><button type="button">1) That would be great.</button><button type="button">2) Thank you very much for your kind invitation.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) More coffee anybody?</p><div class="opts"><button type="button">1) Would it be all right if I had some more?</button><button type="button">2) I'd love some.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) I wish you wouldn't smoke in here!</p><div class="opts"><button type="button">1) I don't agree, I'm afraid.</button><button type="button">2) Sorry, shall I open the window?</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) Well, it was nice talking to you, but I have to dash.</p><div class="opts"><button type="button">1) Yes, I enjoyed talking to you too.</button><button type="button">2) OK, see you.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>e) Could you tell me whether this train stops at Hatfield?</p><div class="opts"><button type="button">1) I believe I could.</button><button type="button">2) I believe it does.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>f) Shall I collect the tickets for you?</p><div class="opts"><button type="button">1) That would be a real help.</button><button type="button">2) Yes, I think you shall.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>g) What would you do in my situation?</p><div class="opts"><button type="button">1) I think you should ask for a loan from the bank.</button><button type="button">2) I thought you would ask for a loan from the bank.</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>h) How do you do. I'm Bill Thompson.</p><div class="opts"><button type="button">1) Very well thank you.</button><button type="button">2) How do you do.</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題3の点数： <span class="score-num">0</span>/8</span>
+</div>
+
+<div class="card fill-sec" id="ex4">
+  <h2>問題4 — 与えられた単語を使って、意味が同じになるように文を完成させよう</h2>
+  <p>与えられた単語（形は変えない）を使って、2番目の文を1番目とほぼ同じ意味に完成させてください。与えられた単語を含めて2〜5語で答えてください。</p>
+  <div class="note">📌 <b>例 a)</b> Can I offer you a lift home? (<b>like</b>) → Would <b>you like a lift</b> home?</div>
+  <div class="q"><p>b) What time does the next train leave? (<b>tell</b>)<br>Could <input class="blank" data-answers="you tell me what time" data-display="you tell me what time"> the next train leaves?</p></div>
+  <div class="q"><p>c) I think you should sell the car. (<b>I'd</b>)<br>If I <input class="blank" data-answers="were you I'd sell" data-display="were you I'd sell"> the car.</p></div>
+  <div class="q"><p>d) Shall I mow the lawn? (<b>to</b>)<br>Would <input class="blank" data-answers="you like me to" data-display="you like me to"> mow the lawn?</p></div>
+  <div class="q"><p>e) Am I going the right way for Downwood? (<b>this</b>)<br>Is <input class="blank" data-answers="this is the right way for" data-display="this is the right way for"> Downwood?</p></div>
+  <div class="q"><p>f) Do you have to make so much noise! (<b>wouldn't</b>)<br>I <input class="blank" data-answers="wish you wouldn't make" data-display="wish you wouldn't make"> so much noise!</p></div>
+  <div class="q"><p>g) What's your advice? (<b>should</b>)<br>What do <input class="blank" data-answers="you think I should" data-display="you think I should"> do?</p></div>
+  <div class="q"><p>h) Let's go for a pizza. (<b>going</b>)<br>How <input class="blank" data-answers="about going for" data-display="about going for"> a pizza?</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex4')">✔ 問題4をチェック</button><button type="button" onclick="showFill('ex4')">👁 答えを見る</button><button type="button" onclick="resetFill('ex4')">↺ やり直す</button></div>
+  <span class="score">問題4の点数： <span class="fill-score">—</span>/7</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>35</b> 問です（問題1：10 · 問題2：10 · 問題3：8 · 問題4：7か所）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"accepting":"AE0 K S EH1 P T IH0 NG","actually":"AE1 K CH UW2 AH0 L IY0","advice":"AE0 D V AY1 S","afraid":"AH0 F R EY1 D","again":"AH0 G EH1 N","agree":"AH0 G R IY1","agreeing":"AH0 G R IY1 IH0 NG","all":"AO1 L","already":"AO0 L R EH1 D IY0","am":"AE1 M","an":"AE1 N","and":"AH0 N D","anybody":"EH1 N IY0 B AH0 D IY0","anywhere":"EH1 N IY0 W EH2 R","apologising":"AH0 P AA1 L AH0 JH AY2 Z IH0 NG","are":"AA1 R","ask":"AE1 S K","asking":"AE1 S K IH0 NG","at":"AE1 T","australia":"AO0 S T R EY1 L Y AH0","bag":"B AE1 G","bank":"B AE1 NG K","be":"B IY1","been":"B IH1 N","believe":"B IH0 L IY1 V","better":"B EH1 T ER0","bill":"B IH1 L","brenda":"B R EH1 N D AH0","brother":"B R AH1 DH ER0","bus":"B AH1 S","but":"B AH1 T","can":"K AE1 N","car":"K AA1 R","carry":"K AE1 R IY0","church":"CH ER1 CH","cinema":"S IH1 N AH0 M AH0","coffee":"K AA1 F IY0","collect":"K AH0 L EH1 K T","come":"K AH1 M","complaining":"K AH0 M P L EY1 N IH0 NG","conditional":"K AH0 N D IH1 SH AH0 N AH0 L","conversation":"K AA2 N V ER0 S EY1 SH AH0 N","could":"K UH1 D","dash":"D AE1 SH","declining":"D IH0 K L AY1 N IH0 NG","description":"D IH0 S K R IH1 P SH AH0 N","directions":"D ER0 EH1 K SH AH0 N Z","disagreeing":"D IH0 S AH0 G R IY1 IH0 NG","do":"D UW1","does":"D AH1 Z","don't":"D OW1 N T","downwood":"D AW1 N W UH2 D","drink":"D R IH1 NG K","end":"EH1 N D","ending":"EH1 N D IH0 NG","english":"IH1 NG G L IH0 SH","enjoyed":"EH2 N JH OY1 D","evening":"IY1 V N IH0 NG","exactly":"IH0 G Z AE1 K T L IY0","excuse":"IH0 K S K Y UW1 S","feel":"F IY1 L","for":"F AO1 R","friend":"F R EH1 N D","from":"F R AH1 M","functional":"F AH1 NG K SH AH0 N AH0 L","functions":"F AH1 NG K SH AH0 N Z","get":"G EH1 T","giving":"G IH1 V IH0 NG","go":"G OW1","going":"G OW1 IH0 NG","good":"G UH1 D","grammar":"G R AE1 M ER0","grammatical":"G R AH0 M AE1 T AH0 K AH0 L","great":"G R EY1 T","greeting":"G R IY1 T IH0 NG","had":"HH AE1 D","happen":"HH AE1 P AH0 N","hatfield":"HH AE1 T F IY2 L D","have":"HH AE1 V","having":"HH AE1 V IH0 NG","help":"HH EH1 L P","here":"HH IY1 R","hi":"HH AY1","home":"HH OW1 M","how":"HH AW1","i'd":"AY1 D","i'm":"AY1 M","if":"IH1 F","in":"IH0 N","information":"IH2 N F ER0 M EY1 SH AH0 N","introducing":"IH2 N T R AH0 D UW1 S IH0 NG","invitation":"IH2 N V IH0 T EY1 SH AH0 N","invitations":"IH2 N V IH0 T EY1 SH AH0 N Z","inviting":"IH2 N V AY1 T IH0 NG","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","jack":"JH AE1 K","key":"K IY1","kind":"K AY1 N D","late":"L EY1 T","later":"L EY1 T ER0","lawn":"L AO1 N","leave":"L IY1 V","leaves":"L IY1 V Z","let's":"L EH1 T S","lift":"L IH1 F T","like":"L AY1 K","loan":"L OW1 N","love":"L AH1 V","make":"M EY1 K","manager":"M AE1 N AH0 JH ER0","mark":"M AA1 R K","marketing":"M AA1 R K AH0 T IH0 NG","me":"M IY1","might":"M AY1 T","mind":"M AY1 N D","more":"M AO1 R","morning":"M AO1 R N IH0 NG","mow":"M OW1","much":"M AH1 CH","my":"M AY1","near":"N IH1 R","next":"N EH1 K S T","nice":"N AY1 S","noise":"N OY1 Z","now":"N AW1","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","offering":"AO1 F ER0 IH0 NG","office":"AO1 F IH0 S","ok":"OW1 K EY1","on":"AA1 N","open":"OW1 P AH0 N","opens":"OW1 P AH0 N Z","opposite":"AA1 P AH0 Z AH0 T","other":"AH1 DH ER0","others":"AH1 DH ER0 Z","out":"AW1 T","party":"P AA1 R T IY0","people":"P IY1 P AH0 L","permission":"P ER0 M IH1 SH AH0 N","phone":"F OW1 N","pizza":"P IY1 T S AH0","point":"P OY1 N T","points":"P OY1 N T S","police":"P AH0 L IY1 S","possibly":"P AA1 S AH0 B L IY0","post":"P OW1 S T","practice":"P R AE1 K T AH0 S","real":"R IY1 L","right":"R AY1 T","round":"R AW1 N D","sally":"S AE1 L IY0","second":"S EH1 K AH0 N D","see":"S IY1","sell":"S EH1 L","shall":"SH AE1 L","should":"SH UH1 D","situation":"S IH2 CH UW0 EY1 SH AH0 N","smoke":"S M OW1 K","so":"S OW1","some":"S AH1 M","someone":"S AH1 M W AH2 N","something":"S AH1 M TH IH0 NG","sorry":"S AA1 R IY0","station":"S T EY1 SH AH0 N","stops":"S T AA1 P S","street":"S T R IY1 T","talking":"T AO1 K IH0 NG","tea":"T IY1","tell":"T EH1 L","thank":"TH AE1 NG K","that":"DH AE1 T","that's":"DH AE1 T S","the":"DH AH0","think":"TH IH1 NG K","this":"DH IH1 S","thompson":"T AA1 M P S AH0 N","thought":"TH AO1 T","tickets":"T IH1 K AH0 T S","time":"T AY1 M","to":"T UW1","told":"T OW1 L D","too":"T UW1","train":"T R EY1 N","use":"Y UW1 S","very":"V EH1 R IY0","was":"W AA1 Z","washing-up":"W AA1 SH IH0 NG AH2 P","watson":"W AA1 T S AH0 N","way":"W EY1","well":"W EH1 L","were":"W ER1","what":"W AH1 T","what's":"W AH1 T S","whether":"W EH1 DH ER0","window":"W IH1 N D OW0","wish":"W IH1 SH","won't":"W OW1 N T","would":"W UH1 D","wouldn't":"W UH1 D AH0 N T","yes":"Y EH1 S","you":"Y UW1","you'd":"Y UW1 D","your":"Y AO1 R","yourself":"Y ER0 S EH1 L F"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
