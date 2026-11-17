@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 32 — Linking Words 2 | English Lessons</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← Index (index.html)</a> &nbsp;·&nbsp; <a href="Grammar-32-Linking-Words-2.html">🇻🇳 Vietnamese</a> &nbsp;·&nbsp; <a href="Grammar-32-Linking-Words-2-JP.html">🇯🇵 日本語版</a>
+  <h1>Grammar 32 — Linking Words 2</h1>
+  <p>Linking words 2: Because / As / Since · Because of / Due to / Owing to · Text organizers</p>
+</header>
+
+<div class="card">
+  <h2>🎧 Listen to the examples</h2>
+  <p>Choose the reading voice once here (British 🇬🇧 or American 🇺🇸) — every 🔊 Listen button under the example sentences will then use that voice. You can also pick a specific <b>voice model</b> for each accent in the two rows below (the lists come from the voices available on your device).</p>
+  <div class="toolbar">
+    <span><b>Voice:</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 British voice</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 American voice</button>
+    <label>Speed: <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ Stop</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 British voice model:</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 Test</button></div>
+  <div class="voice-row"><span><b>🇺🇸 American voice model:</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 Test</button></div>
+</div>
+
+<div class="card">
+  <h2>1. Reason</h2>
+  <h3>a) Because, as, since</h3>
+  <p><b>As</b> and <b>since</b> have the meaning of <i>because</i>, and they can begin a sentence.</p>
+  <div class="ex"><div class="en">As it was late, we decided to go home.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Since it was late, we decided to go home.</div><div class="tts"></div></div>
+  <p>In formal, written language, <b>for</b> can also mean <i>because</i>, but it cannot begin a sentence.</p>
+  <div class="ex"><div class="en">Peter has given up sailing, for he doesn't have the time.</div><div class="tts"></div></div>
+  <h3>b) Because of, on account of, due to, owing to</h3>
+  <div class="formula">because of / on account of / due to / owing to + noun</div>
+  <p>All of these can be used in place of <i>because of</i> when the reason is expressed as a noun or noun phrase.</p>
+  <div class="ex"><div class="en">Everyone was depressed on account of the bad weather.</div><div class="tts"></div></div>
+  <p>Note this difference:</p>
+  <div class="ex"><div class="en">Sue's success was due to her hard work.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Sue succeeded owing to her hard work.</div><div class="tts"></div></div>
+  <div class="note">⚠️ Remember the pattern: <i>noun + be + due to</i> (the reason follows the verb be), while <i>owing to</i> follows an ordinary verb.</div>
+</div>
+
+<div class="card">
+  <h2>2. Text organizers</h2>
+  <p>As well as linking words that join clauses within a sentence, there are also linking words that join ideas across sentences and paragraphs. These are sometimes called <b>text organizers</b> because they make clear the organization of what we say or write. They are more common in writing or formal speech. They usually come at the start of a sentence and have a comma afterwards, but they can also come after a comma in the middle of a sentence.</p>
+  <h3>a) Sequencing</h3>
+  <p>We often number or order the points we are making:</p>
+  <div class="formula">First (of all) …, Secondly …, Next …, Then …, Finally / lastly / last of all …</div>
+  <p>In narrative, the sequence of events can be introduced by: <i>First …, Then …, After that …, Finally / in the end …</i></p>
+  <h3>b) Adding</h3>
+  <div class="formula">Furthermore …, Moreover …, In addition to …, As well as this …, Besides this …</div>
+  <h3>c) Giving opinions</h3>
+  <div class="formula">Personally …, In my own opinion / view …</div>
+  <h3>d) Giving examples</h3>
+  <div class="formula">For example …, For instance …</div>
+  <p>We can also use <b>such as</b> to give an example, but it is not used at the beginning of a sentence.</p>
+  <div class="ex"><div class="en">The factory produces electrical goods, such as food mixers and other kitchen appliances.</div><div class="tts"></div></div>
+  <h3>e) Showing a result</h3>
+  <p>Formal ways to show a result include:</p>
+  <div class="formula">Consequently …, As a result …, Thus …</div>
+  <h3>f) Making a contrast</h3>
+  <div class="formula">On the other hand …, However …, Nevertheless …, In contrast …, In comparison …</div>
+  <h3>g) Summarizing</h3>
+  <div class="formula">In conclusion …, To sum up …</div>
+  <div class="ex"><div class="en">In conclusion, I would like to thank you all for your help.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Owing to the increased demand for parking spaces, the company has decided to enlarge the car park.</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">This radio is expensive, but on the other hand it has very good reception.</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points</h2>
+  <ol>
+    <li><b>As / since</b> mean <i>because</i> and can begin a sentence; <b>for</b> also means “because” in formal writing, but it cannot begin a sentence.</li>
+    <li><b>Because of / on account of / due to / owing to</b> are followed by a noun; note the difference between <i>noun + be + due to</i> and <i>verb + owing to</i>.</li>
+    <li><b>Text organizers</b> help readers and listeners to follow the development of an argument. Most of the expressions listed are formal in use.</li>
+    <li>Because text organizers make links across sentences, their meaning is only clear when you study the ideas that come before and after them — the whole context.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice</h2>
+  <p>Choose or type your answers, then press the Check button to see your score right away.</p>
+</div>
+
+<div class="card" id="ex1">
+  <h2>Exercise 1 — Choose the most suitable word or phrase</h2>
+  <p>Each item has one gap with two options — choose the word or phrase that best fits the flow of ideas.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="1"><p>a) Many people feel nervous about flying, and worry about the possibility of an accident. ______ , according to statistics, flying is actually safer than walking down the street.</p><div class="opts"><button type="button">Furthermore</button><button type="button">However</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>b) Our local supermarket no longer opens every day, ______ very few people live in our village.</p><div class="opts"><button type="button">as</button><button type="button">on account of</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) (1) There are a number of objections to the planned motorway. ______ , the new road will destroy valuable farming land.</p><div class="opts"><button type="button">As well as this</button><button type="button">First of all</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>c) (2) ______ , it will bring thousands of vehicles and tourists.</p><div class="opts"><button type="button">In contrast</button><button type="button">In addition to this</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>c) (3) ______ , our peaceful way of life will be destroyed forever.</p><div class="opts"><button type="button">As a result</button><button type="button">For example</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) (1) We conducted a survey of accommodation in the town, and came up with some interesting results. The hotels we saw were rather expensive, and ______ the actual facilities on offer were not always impressive.</p><div class="opts"><button type="button">consequently</button><button type="button">moreover</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) (2) ______ , there were many guest houses, offering just bed and breakfast, which were not only good value but also had much better rooms than the hotels did.</p><div class="opts"><button type="button">Besides this</button><button type="button">In contrast</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>d) (3) ______ , I would recommend The Oaks, a particularly impressive guest house in Long Harbour Road.</p><div class="opts"><button type="button">Finally</button><button type="button">Personally</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) (1) ______ the increased demand for parking spaces, the company has decided to enlarge the car park.</p><div class="opts"><button type="button">Owing to</button><button type="button">Since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) (2) ______ the exit road on the west side of the car park will be closed from Monday to allow building work to begin.</p><div class="opts"><button type="button">Consequently</button><button type="button">Nevertheless</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 1: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex2">
+  <h2>Exercise 2 — Put one suitable word in each space</h2>
+  <p>Put <b>one</b> suitable word in each space. Item a) (<i>In</i>) is the worked example — here it is graded like the others.</p>
+  <div class="q"><p>a) <input class="blank" data-answers="in" data-display="In"> conclusion, I would like to thank you all for your help.</p></div>
+  <div class="q"><p>b) <input class="blank" data-answers="as|since" data-display="As/Since"> it's too late to finish the work today, we'll come back tomorrow.</p></div>
+  <div class="q"><p>c) The flight was delayed <input class="blank" data-answers="as" data-display="as"> a result of the high winds.</p></div>
+  <div class="q"><p>d) This radio is expensive, but <input class="blank" data-answers="on" data-display="on"> the other hand it has very good reception.</p></div>
+  <div class="q"><p>e) First <input class="blank" data-answers="of" data-display="of"> all, I would like to welcome you to our annual dinner.</p></div>
+  <div class="q"><p>f) John is a hard worker. As <input class="blank" data-answers="well" data-display="well"> as this, he is completely reliable.</p></div>
+  <div class="q"><p>g) Science has not entirely changed the way we think. <input class="blank" data-answers="for" data-display="For"> instance, we still speak of the 'sunrise' although we know it is the Earth that is moving.</p></div>
+  <div class="q"><p>h) Although this building project seems attractive, in my <input class="blank" data-answers="view|opinion" data-display="view/opinion"> it would be a mistake to spend so much money on it.</p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex2')">✔ Check Exercise 2</button><button type="button" onclick="showFill('ex2')">👁 Show answers</button><button type="button" onclick="resetFill('ex2')">↺ Reset</button></div>
+  <span class="score">Score — Exercise 2: <span class="fill-score">—</span>/8</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex3">
+  <h2>Exercise 3 — Choose the best answer: Owning a car</h2>
+  <p>Read the text and decide which answer (A, B, C or D) best fits each space. Item (1) is the worked example (answer A) — here it is graded like the others.</p>
+  <p><b>Owning a car</b></p>
+  <p>Owning a car has several advantages. <b>(1)</b> ______ you can go wherever you want, whenever you want. You don't have to depend on public transport and <b>(2)</b> ______ you feel more independent. <b>(3)</b> ______ you are able to give lifts to friends, or carry heavy loads of shopping. <b>(4)</b> ______ , there can be problems, especially if you live in a city. Running a car can be expensive, and you have to spend money on items <b>(5)</b> ______ petrol, servicing the car, and repairs. You might also have problems with parking, as everywhere is becoming more and more crowded with cars. <b>(6)</b> ______ , most people feel that the advantages of owning a car outweigh the disadvantages. <b>(7)</b> ______ most young people of my age start driving as soon as they can. <b>(8)</b> ______ , I think that cars nowadays have become essential, but I also feel that they cause a lot of problems, <b>(9)</b> ______ they are noisy and dirty. <b>(10)</b> ______ , the large numbers of cars on the road means that most towns and cities are organized for the convenience of cars, and the needs of pedestrians are ignored.</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>(1) ______ you can go wherever you want, whenever you want.</p><div class="opts"><button type="button">First of all</button><button type="button">As a result</button><button type="button">Personally</button><button type="button">Besides this</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(2) You don't have to depend on public transport and ______ you feel more independent.</p><div class="opts"><button type="button">however</button><button type="button">personally</button><button type="button">since</button><button type="button">as a result</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(3) ______ you are able to give lifts to friends, or carry heavy loads of shopping.</p><div class="opts"><button type="button">In contrast</button><button type="button">In my view</button><button type="button">Besides this</button><button type="button">However</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>(4) ______ , there can be problems, especially if you live in a city.</p><div class="opts"><button type="button">On the other hand</button><button type="button">To sum up</button><button type="button">Thus</button><button type="button">For example</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(5) … you have to spend money on items ______ petrol, servicing the car, and repairs.</p><div class="opts"><button type="button">as</button><button type="button">such as</button><button type="button">owing to</button><button type="button">then</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>(6) ______ , most people feel that the advantages of owning a car outweigh the disadvantages.</p><div class="opts"><button type="button">Finally</button><button type="button">Secondly</button><button type="button">However</button><button type="button">As</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(7) ______ most young people of my age start driving as soon as they can.</p><div class="opts"><button type="button">For</button><button type="button">Next</button><button type="button">As well as this</button><button type="button">Consequently</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(8) ______ , I think that cars nowadays have become essential, but I also feel that they cause a lot of problems…</p><div class="opts"><button type="button">For example</button><button type="button">Personally</button><button type="button">Nevertheless</button><button type="button">In comparison</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>(9) … they cause a lot of problems, ______ they are noisy and dirty.</p><div class="opts"><button type="button">for example</button><button type="button">however</button><button type="button">thus</button><button type="button">since</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>(10) ______ , the large numbers of cars on the road means that most towns and cities are organized for the convenience of cars, and the needs of pedestrians are ignored.</p><div class="opts"><button type="button">As a result</button><button type="button">Moreover</button><button type="button">Personally</button><button type="button">In comparison</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">Score — Exercise 3: <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card">
+  <h2>🏁 Lesson summary</h2>
+  <p>Total graded items in this lesson: <b>28</b> (Exercise 1: 10 · Exercise 2: 8 blanks · Exercise 3: 10).</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ Start again (reload the page)</button> <a href="../index.html"><button type="button">← Back to the index</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'Default (first voice on this device)', gb:'No British voice on this device', us:'No American voice on this device'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 Listen';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ Correct!' : '❌ Not quite — the correct answer is: ' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ Correct!' : '❌ Not an exact match — press “Show answers” to compare.'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 All correct!' : 'You got ' + right + '/' + inputs.length + ' — fix the boxes with red borders and check again.'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = 'Answer: ' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 Dictionary</button>
+<div id="dictHint">Dictionary mode is ON — click or tap any English word in the lesson to see its meaning. Press the 🔍 Dictionary button again to turn it off.</div>
+<script>
+var PRON = {"able":"EY1 B AH0 L","about":"AH0 B AW1 T","accent":"AH0 K S EH1 N T","accident":"AE1 K S AH0 D AH0 N T","accommodation":"AH0 K AA2 M AH0 D EY1 SH AH0 N","according":"AH0 K AO1 R D IH0 NG","account":"AH0 K AW1 N T","across":"AH0 K R AO1 S","actual":"AE1 K CH AH0 W AH0 L","actually":"AE1 K CH UW2 AH0 L IY0","adding":"AE1 D IH0 NG","addition":"AH0 D IH1 SH AH0 N","advantages":"AE0 D V AE1 N T IH0 JH IH0 Z","after":"AE1 F T ER0","afterwards":"AE1 F T ER0 W ER0 D Z","again":"AH0 G EH1 N","age":"EY1 JH","all":"AO1 L","allow":"AH0 L AW1","also":"AO1 L S OW0","although":"AO2 L DH OW1","always":"AO1 L W EY2 Z","american":"AH0 M EH1 R AH0 K AH0 N","an":"AE1 N","and":"AH0 N D","annual":"AE1 N Y UW0 AH0 L","answer":"AE1 N S ER0","answers":"AE1 N S ER0 Z","any":"EH1 N IY0","appliances":"AH0 P L AY1 AH0 N S AH0 Z","are":"AA1 R","argument":"AA1 R G Y AH0 M AH0 N T","as":"AE1 Z","at":"AE1 T","attractive":"AH0 T R AE1 K T IH0 V","available":"AH0 V EY1 L AH0 B AH0 L","away":"AH0 W EY1","back":"B AE1 K","bad":"B AE1 D","be":"B IY1","because":"B IH0 K AO1 Z","become":"B IH0 K AH1 M","becoming":"B IH0 K AH1 M IH0 NG","bed":"B EH1 D","before":"B IH0 F AO1 R","begin":"B IH0 G IH1 N","beginning":"B IH0 G IH1 N IH0 NG","below":"B IH0 L OW1","besides":"B IH0 S AY1 D Z","best":"B EH1 S T","better":"B EH1 T ER0","between":"B IH0 T W IY1 N","blanks":"B L AE1 NG K S","breakfast":"B R EH1 K F AH0 S T","bring":"B R IH1 NG","british":"B R IH1 T IH0 SH","building":"B IH1 L D IH0 NG","but":"B AH1 T","button":"B AH1 T AH0 N","by":"B AY1","called":"K AO1 L D","came":"K EY1 M","can":"K AE1 N","cannot":"K AE1 N AA0 T","car":"K AA1 R","carry":"K AE1 R IY0","cars":"K AA1 R Z","cause":"K AA1 Z","changed":"CH EY1 N JH D","check":"CH EH1 K","choose":"CH UW1 Z","cities":"S IH1 T IY0 Z","city":"S IH1 T IY0","clauses":"K L AO1 Z AH0 Z","clear":"K L IH1 R","click":"K L IH1 K","closed":"K L OW1 Z D","come":"K AH1 M","comma":"K AA1 M AH0","common":"K AA1 M AH0 N","company":"K AH1 M P AH0 N IY2","comparison":"K AH0 M P EH1 R AH0 S AH0 N","completely":"K AH0 M P L IY1 T L IY0","conclusion":"K AH0 N K L UW1 ZH AH0 N","conducted":"K AH0 N D AH1 K T AH0 D","consequently":"K AA1 N S AH0 K W AH0 N T L IY0","context":"K AA1 N T EH0 K S T","contrast":"K AA1 N T R AE0 S T","convenience":"K AH0 N V IY1 N Y AH0 N S","crowded":"K R AW1 D AH0 D","day":"D EY1","decide":"D IH2 S AY1 D","decided":"D IH2 S AY1 D IH0 D","delayed":"D IH0 L EY1 D","demand":"D IH0 M AE1 N D","depend":"D IH0 P EH1 N D","depressed":"D IH0 P R EH1 S T","destroy":"D IH0 S T R OY1","destroyed":"D IH0 S T R OY1 D","development":"D IH0 V EH1 L AH0 P M AH0 N T","device":"D IH0 V AY1 S","dictionary":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","difference":"D IH1 F ER0 AH0 N S","dinner":"D IH1 N ER0","dirty":"D ER1 T IY0","disadvantages":"D IH2 S AH0 D V AE1 N T IH0 JH IH0 Z","doesn't":"D AH1 Z AH0 N T","don't":"D OW1 N T","down":"D AW1 N","driving":"D R AY1 V IH0 NG","due":"D UW1","each":"IY1 CH","earth":"ER1 TH","electrical":"IH0 L EH1 K T R IH0 K AH0 L","end":"EH1 N D","english":"IH1 NG G L IH0 SH","enlarge":"EH2 N L AA1 R JH","entirely":"IH0 N T AY1 ER0 L IY0","especially":"AH0 S P EH1 SH L IY0","essential":"EH0 S EH1 N SH AH0 L","events":"IH0 V EH1 N T S","every":"EH1 V ER0 IY0","everyone":"EH1 V R IY0 W AH2 N","everywhere":"EH1 V R IY0 W EH2 R","example":"IH0 G Z AE1 M P AH0 L","examples":"IH0 G Z AE1 M P AH0 L Z","exercise":"EH1 K S ER0 S AY2 Z","exit":"EH1 G Z IH0 T","expensive":"IH0 K S P EH1 N S IH0 V","expressed":"IH0 K S P R EH1 S T","expressions":"IH0 K S P R EH1 SH AH0 N Z","facilities":"F AH0 S IH1 L AH0 T IY0 Z","factory":"F AE1 K T ER0 IY0","farming":"F AA1 R M IH0 NG","feel":"F IY1 L","few":"F Y UW1","finally":"F AY1 N AH0 L IY0","finish":"F IH1 N IH0 SH","first":"F ER1 S T","fits":"F IH1 T S","flight":"F L AY1 T","flow":"F L OW1","flying":"F L AY1 IH0 NG","follow":"F AA1 L OW0","followed":"F AA1 L OW0 D","follows":"F AA1 L OW0 Z","food":"F UW1 D","for":"F AO1 R","forever":"F ER0 EH1 V ER0","formal":"F AO1 R M AH0 L","friends":"F R EH1 N D Z","from":"F R AH1 M","furthermore":"F ER1 DH ER0 M AO2 R","gap":"G AE1 P","give":"G IH1 V","given":"G IH1 V AH0 N","giving":"G IH1 V IH0 NG","go":"G OW1","good":"G UH1 D","goods":"G UH1 D Z","graded":"G R EY1 D AH0 D","grammar":"G R AE1 M ER0","guest":"G EH1 S T","had":"HH AE1 D","hand":"HH AE1 N D","harbour":"HH AA1 R B ER0","hard":"HH AA1 R D","has":"HH AE1 Z","have":"HH AE1 V","he":"HH IY1","heavy":"HH EH1 V IY0","help":"HH EH1 L P","her":"HH ER1","here":"HH IY1 R","high":"HH AY1","home":"HH OW1 M","hotels":"HH OW0 T EH1 L Z","house":"HH AW1 S","houses":"HH AW1 S AH0 Z","however":"HH AW2 EH1 V ER0","html":"EY2 CH T IY2 EH2 M EH1 L","ideas":"AY0 D IY1 AH0 Z","if":"IH1 F","ignored":"IH2 G N AO1 R D","impressive":"IH2 M P R EH1 S IH0 V","in":"IH0 N","include":"IH2 N K L UW1 D","increased":"IH2 N K R IY1 S T","independent":"IH2 N D IH0 P EH1 N D AH0 N T","index":"IH1 N D EH0 K S","instance":"IH1 N S T AH0 N S","interesting":"IH1 N T R AH0 S T IH0 NG","introduced":"IH2 N T R AH0 D UW1 S T","is":"IH1 Z","it":"IH1 T","it's":"IH1 T S","item":"AY1 T AH0 M","items":"AY1 T AH0 M Z","its":"IH1 T S","john":"JH AA1 N","join":"JH OY1 N","just":"JH AH1 S T","key":"K IY1","kitchen":"K IH1 CH AH0 N","know":"N OW1","land":"L AE1 N D","language":"L AE1 NG G W AH0 JH","large":"L AA1 R JH","last":"L AE1 S T","lastly":"L AE1 S T L IY0","late":"L EY1 T","lesson":"L EH1 S AH0 N","lessons":"L EH1 S AH0 N Z","life":"L AY1 F","lifts":"L IH1 F T S","like":"L AY1 K","linking":"L IH1 NG K IH0 NG","links":"L IH1 NG K S","listed":"L IH1 S T AH0 D","listen":"L IH1 S AH0 N","listeners":"L IH1 S AH0 N ER0 Z","lists":"L IH1 S T S","live":"L AY1 V","loads":"L OW1 D Z","local":"L OW1 K AH0 L","long":"L AO1 NG","longer":"L AO1 NG G ER0","lot":"L AA1 T","make":"M EY1 K","making":"M EY1 K IH0 NG","many":"M EH1 N IY0","mean":"M IY1 N","meaning":"M IY1 N IH0 NG","means":"M IY1 N Z","middle":"M IH1 D AH0 L","might":"M AY1 T","mistake":"M IH0 S T EY1 K","mixers":"M IH1 K S ER0 Z","mode":"M OW1 D","model":"M AA1 D AH0 L","monday":"M AH1 N D IY0","money":"M AH1 N IY0","more":"M AO1 R","moreover":"M AO0 R OW1 V ER0","most":"M OW1 S T","motorway":"M OW1 T ER0 W EY2","moving":"M UW1 V IH0 NG","much":"M AH1 CH","my":"M AY1","narrative":"N AE1 R AH0 T IH0 V","needs":"N IY1 D Z","nervous":"N ER1 V AH0 S","nevertheless":"N EH2 V ER0 DH AH0 L EH1 S","new":"N UW1","next":"N EH1 K S T","no":"N OW1","noisy":"N OY1 Z IY0","not":"N AA1 T","note":"N OW1 T","noun":"N AW1 N","nowadays":"N AW1 AH0 D EY2 Z","number":"N AH1 M B ER0","numbers":"N AH1 M B ER0 Z","oaks":"OW1 K S","objections":"AH0 B JH EH1 K SH AH0 N Z","of":"AH1 V","off":"AO1 F","offer":"AO1 F ER0","offering":"AO1 F ER0 IH0 NG","often":"AO1 F AH0 N","on":"AA1 N","once":"W AH1 N S","one":"W AH1 N","only":"OW1 N L IY0","opens":"OW1 P AH0 N Z","opinion":"AH0 P IH1 N Y AH0 N","opinions":"AH0 P IH1 N Y AH0 N Z","options":"AA1 P SH AH0 N Z","or":"AO1 R","order":"AO1 R D ER0","ordinary":"AO1 R D AH0 N EH2 R IY0","organization":"AO2 R G AH0 N AH0 Z EY1 SH AH0 N","organized":"AO1 R G AH0 N AY2 Z D","organizers":"AO1 R G AH0 N AY2 Z ER0 Z","other":"AH1 DH ER0","others":"AH1 DH ER0 Z","our":"AW1 ER0","outweigh":"AW1 T W EY2","owing":"OW1 IH0 NG","own":"OW1 N","owning":"OW1 N IH0 NG","page":"P EY1 JH","paragraphs":"P AE1 R AH0 G R AE2 F S","park":"P AA1 R K","parking":"P AA1 R K IH0 NG","particularly":"P AA2 R T IH1 K Y AH0 L ER0 L IY0","pattern":"P AE1 T ER0 N","peaceful":"P IY1 S F AH0 L","pedestrians":"P AH0 D EH1 S T R IY0 AH0 N Z","people":"P IY1 P AH0 L","personally":"P ER1 S AH0 N AH0 L IY0","peter":"P IY1 T ER0","petrol":"P EH1 T R OW0 L","phrase":"F R EY1 Z","pick":"P IH1 K","place":"P L EY1 S","planned":"P L AE1 N D","points":"P OY1 N T S","possibility":"P AA2 S AH0 B IH1 L AH0 T IY2","practice":"P R AE1 K T AH0 S","press":"P R EH1 S","problems":"P R AA1 B L AH0 M Z","produces":"P R AH0 D UW1 S AH0 Z","project":"P R AA1 JH EH0 K T","public":"P AH1 B L IH0 K","put":"P UH1 T","radio":"R EY1 D IY0 OW2","rather":"R AE1 DH ER0","read":"R EH1 D","readers":"R IY1 D ER0 Z","reading":"R IY1 D IH0 NG","reason":"R IY1 Z AH0 N","reception":"R IH0 S EH1 P SH AH0 N","recommend":"R EH2 K AH0 M EH1 N D","reliable":"R IH0 L AY1 AH0 B AH0 L","reload":"R IY0 L OW1 D","remember":"R IH0 M EH1 M B ER0","repairs":"R IH0 P EH1 R Z","reset":"R IY0 S EH1 T","result":"R IH0 Z AH1 L T","results":"R IH0 Z AH1 L T S","right":"R AY1 T","road":"R OW1 D","rooms":"R UW1 M Z","rows":"R OW1 Z","running":"R AH1 N IH0 NG","safer":"S EY1 F ER0","sailing":"S EY1 L IH0 NG","saw":"S AO1","say":"S EY1","science":"S AY1 AH0 N S","score":"S K AO1 R","secondly":"S EH1 K AH0 N D L IY0","see":"S IY1","seems":"S IY1 M Z","sentence":"S EH1 N T AH0 N S","sentences":"S EH1 N T AH0 N S AH0 Z","sequence":"S IY1 K W AH0 N S","sequencing":"S IY1 K W AH0 N S IH0 NG","servicing":"S ER1 V IH0 S IH0 NG","several":"S EH1 V R AH0 L","shopping":"SH AA1 P IH0 NG","show":"SH OW1","showing":"SH OW1 IH0 NG","side":"S AY1 D","since":"S IH1 N S","so":"S OW1","some":"S AH1 M","sometimes":"S AH0 M T AY1 M Z","soon":"S UW1 N","space":"S P EY1 S","spaces":"S P EY1 S AH0 Z","speak":"S P IY1 K","specific":"S P AH0 S IH1 F IH0 K","speech":"S P IY1 CH","speed":"S P IY1 D","spend":"S P EH1 N D","start":"S T AA1 R T","statistics":"S T AH0 T IH1 S T IH0 K S","still":"S T IH1 L","stop":"S T AA1 P","street":"S T R IY1 T","study":"S T AH1 D IY0","succeeded":"S AH0 K S IY1 D IH0 D","success":"S AH0 K S EH1 S","such":"S AH1 CH","sue":"S UW1","sue's":"S UW1 Z","suitable":"S UW1 T AH0 B AH0 L","sum":"S AH1 M","summarizing":"S AH1 M ER0 AY2 Z IH0 NG","summary":"S AH1 M ER0 IY0","supermarket":"S UW1 P ER0 M AA2 R K IH0 T","survey":"S ER0 V EY1","tap":"T AE1 P","test":"T EH1 S T","text":"T EH1 K S T","than":"DH AE1 N","thank":"TH AE1 NG K","that":"DH AE1 T","the":"DH AH0","their":"DH EH1 R","them":"DH EH1 M","then":"DH EH1 N","there":"DH EH1 R","these":"DH IY1 Z","they":"DH EY1","think":"TH IH1 NG K","this":"DH IH1 S","thousands":"TH AW1 Z AH0 N D Z","thus":"DH AH1 S","time":"T AY1 M","to":"T UW1","today":"T AH0 D EY1","tomorrow":"T AH0 M AA1 R OW2","too":"T UW1","total":"T OW1 T AH0 L","tourists":"T UH1 R AH0 S T S","town":"T AW1 N","towns":"T AW1 N Z","transport":"T R AE0 N S P AO1 R T","turn":"T ER1 N","two":"T UW1","type":"T AY1 P","under":"AH1 N D ER0","up":"AH1 P","use":"Y UW1 S","used":"Y UW1 Z D","usually":"Y UW1 ZH AH0 W AH0 L IY0","valuable":"V AE1 L Y AH0 B AH0 L","value":"V AE1 L Y UW0","vehicles":"V IY1 HH IH0 K AH0 L Z","verb":"V ER1 B","very":"V EH1 R IY0","vietnamese":"V IY0 EH2 T N AA0 M IY1 S","view":"V Y UW1","village":"V IH1 L AH0 JH","voice":"V OY1 S","voices":"V OY1 S AH0 Z","walking":"W AO1 K IH0 NG","want":"W AA1 N T","was":"W AA1 Z","way":"W EY1","ways":"W EY1 Z","we":"W IY1","we'll":"W IY1 L","weather":"W EH1 DH ER0","welcome":"W EH1 L K AH0 M","well":"W EH1 L","were":"W ER1","west":"W EH1 S T","what":"W AH1 T","when":"W EH1 N","whenever":"W EH0 N EH1 V ER0","wherever":"W EH0 R EH1 V ER0","which":"W IH1 CH","while":"W AY1 L","whole":"HH OW1 L","will":"W IH1 L","winds":"W IH1 N D Z","with":"W IH1 DH","within":"W IH0 DH IH1 N","word":"W ER1 D","words":"W ER1 D Z","work":"W ER1 K","worked":"W ER1 K T","worker":"W ER1 K ER0","worry":"W ER1 IY0","would":"W UH1 D","write":"R AY1 T","writing":"R AY1 T IH0 NG","written":"R IH1 T AH0 N","you":"Y UW1","young":"Y AH1 NG","your":"Y AO1 R"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'en', DICT_MM = 'en';
+var LBL = {loading:'looking up…', listen:'Listen', deflabel:'Definition', notfound:'Not found in the dictionary. Try the base form of the word (without -s / -ed / -ing).'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:'', ex:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; data.ex = d && d.example ? d.example : ''; }
+    }).catch(function(){});
+  var p2 = Promise.resolve(); /* EN version: no translation line — definitions only. */
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(d.ex) h += '<div class="ddef" style="font-style:italic;margin-top:4px">' + esc(d.ex) + '</div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar 34 — Spelling and Pronunciation | 英語レッスン</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f6f7f9;color:#1f2430;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:16px 14px 60px}
+header.top{background:#14335c;color:#fff;border-radius:14px;padding:22px 20px;margin:14px 0 18px}
+header.top a{color:#ffd97a;text-decoration:none;font-size:.92rem}
+header.top h1{margin:6px 0 4px;font-size:1.7rem;line-height:1.25}
+header.top p{margin:2px 0;opacity:.92;font-size:.95rem}
+.card{background:#fff;border:1px solid #e2e6ee;border-radius:12px;padding:18px;margin:14px 0}
+.card h2{margin:0 0 8px;font-size:1.25rem;color:#14335c}
+.card h3{margin:16px 0 6px;font-size:1.05rem;color:#14335c}
+.formula{background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:10px 14px;font-family:Georgia,serif;font-size:1.02rem;margin:8px 0}
+.ex{background:#fbfbf7;border:1px solid #e8e6d8;border-radius:10px;padding:10px 12px;margin:8px 0}
+.ex .en{font-size:1.02rem}
+.ex .vi{color:#555;font-size:.93rem}
+.tts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid #c9d2e3;background:#fff;border-radius:999px;padding:6px 14px;font-size:.92rem}
+button:hover{background:#eef3fb}
+button.primary{background:#14335c;color:#fff;border-color:#14335c}
+button.primary:hover{background:#1d4a82}
+.accent-btn.accent-on{background:#14335c;color:#fff;border-color:#14335c;font-weight:700}
+.voice-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.voice-row select{flex:1;min-width:170px;padding:6px;border:1px solid #b9c6d8;border-radius:8px;background:#fff}
+.tts button{padding:3px 10px;font-size:.85rem}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.95rem}
+.keybox{background:#eaf6ec;border:1px solid #bfe0c6;border-radius:12px;padding:16px 18px;margin:14px 0}
+.keybox h2{margin-top:0;color:#14532d}
+.keybox li{margin:6px 0}
+.q{border:1px solid #e2e6ee;border-radius:10px;padding:12px 14px;margin:10px 0;background:#fff}
+.q p{margin:4px 0 8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts button.chosen-correct{background:#d9f2dd;border-color:#4caf50}
+.opts button.chosen-wrong{background:#fde3e3;border-color:#e57373}
+.opts button:disabled{opacity:.85;cursor:default}
+.fb{font-size:.92rem;margin-top:6px;min-height:1.2em}
+.fb.ok{color:#1b7a2e}.fb.no{color:#b3261e}
+.score{font-weight:700;color:#14335c;background:#eef3fb;border:1px solid #d5e0f2;border-radius:10px;padding:8px 14px;display:inline-block;margin:6px 0}
+input.blank{font:inherit;padding:5px 9px;border:1px solid #b9c4d6;border-radius:8px;min-width:150px;max-width:100%;margin:2px}
+input.blank.ok{border-color:#4caf50;background:#eefaf0}
+input.blank.no{border-color:#e57373;background:#fdf0f0}
+input.wide{min-width:min(520px,100%);width:100%}
+.ans{color:#1b7a2e;font-size:.9rem}
+select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid #b9c4d6}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.small{font-size:.9rem;color:#555}
+em.hl{font-style:italic;background:#fff3cd;padding:0 3px;border-radius:4px}
+@media(max-width:560px){header.top h1{font-size:1.4rem}.card{padding:14px}input.blank{min-width:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a href="../index.html">← 目次へ戻る</a> &nbsp;·&nbsp; <a href="Grammar-34-Spelling-And-Pronunciation.html">🇻🇳 ベトナム語版</a> &nbsp;·&nbsp; <a href="Grammar-34-Spelling-And-Pronunciation-EN.html">🇬🇧 English</a>
+  <h1>Grammar 34 — Spelling and Pronunciation</h1>
+  <p>スペリングと発音：接尾辞 -ful・子音の重ね・-y で終わる語・ie と ei・韻と母音</p>
+</header>
+
+<div class="card">
+  <h2>🎧 例文を聞く</h2>
+  <p>ここで発音を一度選んでください（イギリス英語 🇬🇧／アメリカ英語 🇺🇸）。すべての例文の「🔊 聞く」ボタンは、選んだ発音で読み上げます。下の2行で、発音ごとに<b>音声モデル</b>も選べます（リストはお使いのデバイスにある音声です）。</p>
+  <div class="toolbar">
+    <span><b>発音：</b></span>
+    <button type="button" class="accent-btn" data-accent="en-GB" onclick="setAccent('en-GB')">🇬🇧 イギリス英語</button>
+    <button type="button" class="accent-btn" data-accent="en-US" onclick="setAccent('en-US')">🇺🇸 アメリカ英語</button>
+    <label>速度： <select id="rate"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option></select></label>
+    <button type="button" onclick="speechSynthesis.cancel()">⏹ 停止</button>
+  </div>
+  <div class="voice-row"><span><b>🇬🇧 イギリス英語の音声モデル：</b></span><select id="voice-en-GB" onchange="onVoicePick('en-GB')"></select><button type="button" onclick="testVoice('en-GB')">🔊 試しに聞く</button></div>
+  <div class="voice-row"><span><b>🇺🇸 アメリカ英語の音声モデル：</b></span><select id="voice-en-US" onchange="onVoicePick('en-US')"></select><button type="button" onclick="testVoice('en-US')">🔊 試しに聞く</button></div>
+</div>
+
+<div class="card">
+  <h2>1. よくあるスペリングの問題</h2>
+
+  <h3>a) 接尾辞 -ful（Words ending in -ful）</h3>
+  <div class="formula">useful · helpful — 接尾辞 -ful の l は1つだけ &nbsp;·&nbsp; 副詞：usefully · helpfully</div>
+  <p><i>-ful</i> が接尾辞のとき、<b>l は1つだけ</b>です：<i>useful, helpful</i>。ただし、これらの形容詞に <i>-ly</i> をつけて副詞にすると <i>usefully, helpfully</i> となります。</p>
+  <div class="ex"><div class="en">A good map is very useful when you are travelling.</div><div class="ja">旅行のとき、良い地図はとても役に立ちます。（useful — l は1つ）</div><div class="tts"></div></div>
+
+  <h3>b) 子音の重ね（Doubling of consonants）</h3>
+  <div class="formula">swim → swimming · fit → fitted · thin → thinner</div>
+  <p><b>1音節</b>で「<b>母音1つ＋子音1つ</b>」で終わる語は、<i>-ing, -ed, -er</i> をつけるとき最後の子音を重ねます。</p>
+  <p>同じ終わり方の<b>2音節</b>の語もほとんど重ねます。特にアクセントが<b>第2音節</b>にある場合です：<i>prefer → preferred</i>。アクセントが第1音節なら重ねません：<i>bother → bothering</i>。よく知られた例外として <i>travel → traveller</i> は重ねます。</p>
+  <div class="ex"><div class="en">The children are swimming in the lake.</div><div class="ja">子どもたちは湖で泳いでいます。（swimming — m を重ねる）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He fitted the new lock on the door himself.</div><div class="ja">彼は自分でドアに新しい鍵を取り付けました。（fitted — t を重ねる）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">I preferred the first plan to the second one.</div><div class="ja">私は2番目より最初の案のほうが好きでした。（preferred — r を重ねる）</div><div class="tts"></div></div>
+
+  <h3>c) -y で終わる語（Words ending in -y）</h3>
+  <div class="formula">spy → spies · try → tries, tried · boy → boys · joy → joyful · shy → shyness</div>
+  <p>「<b>子音＋y</b>」で終わる名詞と動詞は、複数形と過去形で <i>-y</i> が <i>-i</i> に変わります：<i>spy → spies; try → tries, tried</i>。2音節の語も同じです：<i>reply → replies, replied; happy → happiness; beauty → beautiful</i>。</p>
+  <p>ただし、<i>-y</i> の前が<b>母音</b>なら変わりません：<i>boy → boys; destroy → destroyed</i>。1音節の語に <i>-ful</i> や <i>-ness</i> をつけるときも <i>-y</i> はそのままです：<i>joy → joyful; shy → shyness</i>。</p>
+  <div class="note">⚠️ 上の y の変化は <i>-ing</i> をつけるときには<b>起こりません</b>：<i>try → trying; study → studying; annoy → annoying</i>。</div>
+  <div class="ex"><div class="en">The spies were watching the house all night.</div><div class="ja">スパイたちは一晩中その家を見張っていました。（spies — y が i に変化）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She tried again and finally succeeded.</div><div class="ja">彼女はもう一度挑戦し、ついに成功しました。（tried）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">It was a joyful day for the whole family.</div><div class="ja">家族みんなにとって楽しい一日でした。（joyful — y はそのまま）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">Their happiness was easy to see.</div><div class="ja">彼らの幸せは一目で分かりました。（happiness）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">What a beautiful garden!</div><div class="ja">なんて美しい庭でしょう！（beautiful）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">He is studying hard this week.</div><div class="ja">彼は今週、一生懸命勉強しています。（studying — -ing の前では y は変わらない）</div><div class="tts"></div></div>
+
+  <h3>d) ie と ei</h3>
+  <div class="formula">i before e, except after c — 音が /iː/ のとき：receive · relief</div>
+  <p>原則は「<b>c の後以外は i が e より前</b>」で、音が <b>/iː/</b> の場合に限ります：<i>receive, relief</i>。音が /iː/ でない語には当てはまりません。例：<i>feign</i>（/feɪn/ と発音）。</p>
+  <div class="ex"><div class="en">Did you receive my letter yesterday?</div><div class="ja">昨日、私の手紙を受け取りましたか。（receive — c の後は ei）</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">She felt great relief when the exam ended.</div><div class="ja">試験が終わったとき、彼女はほっとしました。（relief — ie）</div><div class="tts"></div></div>
+</div>
+
+<div class="card">
+  <h2>2. 発音：韻と母音</h2>
+  <p>2つの語が<b>韻を踏む</b>（rhyme）のは、語尾の音が完全に同じときで、つづりが大きく違うこともあります：<i>hate</i> と <i>wait</i>、<i>rough</i> と <i>stuff</i>。逆に、つづりが似ていても<b>母音がまったく違う</b>語も多くあります。<i>lost / post / toast / ghost / host</i> の中で <i>lost</i> だけ音が違います。確実な方法は、各単語を声に出して聞き比べることです。</p>
+  <div class="ex"><div class="en">The words "hate" and "wait" rhyme.</div><div class="ja">「hate」と「wait」は韻を踏みます（語尾の音 /eɪt/ が同じ）。</div><div class="tts"></div></div>
+  <div class="ex"><div class="en">The words "rough" and "stuff" rhyme, although they are spelled very differently.</div><div class="ja">「rough」と「stuff」は、つづりが大きく違いますが韻を踏みます。</div><div class="tts"></div></div>
+</div>
+
+<div class="keybox">
+  <h2>⭐ Key points — 重要ポイント</h2>
+  <ol>
+    <li>接尾辞 <b>-ful</b> の l は1つだけ：<i>useful, helpful</i> — ただし副詞は <i>usefully, helpfully</i>。</li>
+    <li>「母音1つ＋子音1つ」で終わる語は、<i>-ing/-ed/-er</i> の前で<b>最後の子音を重ねる</b>（<i>swim → swimming</i>）。アクセントが第2音節にある2音節語も同様（<i>prefer → preferred</i>）。例外：<i>traveller</i>。</li>
+    <li><b>子音＋y</b>：-s/-ed の前で y → i（<i>try → tries, tried; happy → happiness</i>）。ただし <i>-ing</i> の前では<b>変わらない</b>（<i>trying, studying</i>）。</li>
+    <li><b>母音＋y</b>：y はそのまま（<i>boy → boys, destroy → destroyed</i>）。1音節の語に -ful/-ness をつけるときもそのまま（<i>joyful, shyness</i>）。</li>
+    <li><b>ie/ei</b>：c の後以外は i が前、音が /iː/ のとき（<i>receive, relief</i>）。音が違う語には当てはまらない（<i>feign</i>）。</li>
+    <li>つづりで発音は決まらない：各単語の<b>母音</b>と<b>韻</b>を確認すること（<i>lost</i> は <i>post / toast / ghost / host</i> と音が違う）。</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>✏️ Practice — 練習問題</h2>
+  <p>選ぶ／入力したら「チェック」を押すと、すぐに点数が分かります。</p>
+</div>
+
+<div class="card fill-sec" id="ex1">
+  <h2>問題1 — つづりの間違いを直そう（1）</h2>
+  <p>各単語を正しいつづりで入力してください。すでに正しい単語は、そのまま入力します。a) はお手本です（<i>studing → studying</i>）— ここでは20語すべてを採点します。</p>
+  <div class="q"><p>a) studing → <input class="blank" data-answers="studying" data-display="studying"></p></div>
+  <div class="q"><p>b) destroying → <input class="blank" data-answers="destroying" data-display="destroying"></p></div>
+  <div class="q"><p>c) donkies → <input class="blank" data-answers="donkeys" data-display="donkeys"></p></div>
+  <div class="q"><p>d) flys → <input class="blank" data-answers="flies" data-display="flies"></p></div>
+  <div class="q"><p>e) niece → <input class="blank" data-answers="niece" data-display="niece"></p></div>
+  <div class="q"><p>f) hurryed → <input class="blank" data-answers="hurried" data-display="hurried"></p></div>
+  <div class="q"><p>g) furnichure → <input class="blank" data-answers="furniture" data-display="furniture"></p></div>
+  <div class="q"><p>h) enough → <input class="blank" data-answers="enough" data-display="enough"></p></div>
+  <div class="q"><p>i) wellcome → <input class="blank" data-answers="welcome" data-display="welcome"></p></div>
+  <div class="q"><p>j) hotter → <input class="blank" data-answers="hotter" data-display="hotter"></p></div>
+  <div class="q"><p>k) reciept → <input class="blank" data-answers="receipt" data-display="receipt"></p></div>
+  <div class="q"><p>l) wonderfull → <input class="blank" data-answers="wonderful" data-display="wonderful"></p></div>
+  <div class="q"><p>m) swimming → <input class="blank" data-answers="swimming" data-display="swimming"></p></div>
+  <div class="q"><p>n) regreted → <input class="blank" data-answers="regretted" data-display="regretted"></p></div>
+  <div class="q"><p>o) hopefuly → <input class="blank" data-answers="hopefully" data-display="hopefully"></p></div>
+  <div class="q"><p>p) applying → <input class="blank" data-answers="applying" data-display="applying"></p></div>
+  <div class="q"><p>q) heard → <input class="blank" data-answers="heard" data-display="heard"></p></div>
+  <div class="q"><p>r) inshurance → <input class="blank" data-answers="insurance" data-display="insurance"></p></div>
+  <div class="q"><p>s) happily → <input class="blank" data-answers="happily" data-display="happily"></p></div>
+  <div class="q"><p>t) advertisment → <input class="blank" data-answers="advertisement" data-display="advertisement"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex1')">✔ 問題1をチェック</button><button type="button" onclick="showFill('ex1')">👁 答えを見る</button><button type="button" onclick="resetFill('ex1')">↺ やり直す</button></div>
+  <span class="score">問題1の点数： <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex2">
+  <h2>問題2 — 韻を踏む単語を探そう</h2>
+  <p>単語ボックス：<b>search · wait · stuff · go · home · come · cow · white · plumber · store</b>。与えられた単語と<b>韻を踏む</b>単語をボックスから選んでください。a) はお手本です（<i>church → search</i>）— ここでは10問すべてを採点します。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="0"><p>a) <b>church</b></p><div class="opts"><button type="button">search</button><button type="button">wait</button><button type="button">home</button><button type="button">cow</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) <b>hate</b></p><div class="opts"><button type="button">go</button><button type="button">wait</button><button type="button">store</button><button type="button">search</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>c) <b>rough</b></p><div class="opts"><button type="button">home</button><button type="button">come</button><button type="button">stuff</button><button type="button">white</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>d) <b>throw</b></p><div class="opts"><button type="button">go</button><button type="button">cow</button><button type="button">plumber</button><button type="button">wait</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>e) <b>comb</b></p><div class="opts"><button type="button">store</button><button type="button">stuff</button><button type="button">home</button><button type="button">come</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>f) <b>dumb</b></p><div class="opts"><button type="button">plumber</button><button type="button">come</button><button type="button">white</button><button type="button">go</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>g) <b>plough</b></p><div class="opts"><button type="button">white</button><button type="button">search</button><button type="button">store</button><button type="button">cow</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>h) <b>height</b></p><div class="opts"><button type="button">white</button><button type="button">stuff</button><button type="button">cow</button><button type="button">home</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>i) <b>summer</b></p><div class="opts"><button type="button">come</button><button type="button">plumber</button><button type="button">wait</button><button type="button">go</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>j) <b>pour</b></p><div class="opts"><button type="button">search</button><button type="button">home</button><button type="button">store</button><button type="button">stuff</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題2の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex3">
+  <h2>問題3 — 接尾辞をつけて書こう</h2>
+  <p>括弧内の接尾辞をつけた完全な単語を書いてください。a) はお手本です（<i>supplying</i>）— ここでは10問すべてを採点します。</p>
+  <div class="q"><p>a) supply + (-ing) → <input class="blank" data-answers="supplying" data-display="supplying"></p></div>
+  <div class="q"><p>b) destroy + (-ed) → <input class="blank" data-answers="destroyed" data-display="destroyed"></p></div>
+  <div class="q"><p>c) apply + (-ed) → <input class="blank" data-answers="applied" data-display="applied"></p></div>
+  <div class="q"><p>d) lonely + (-ness) → <input class="blank" data-answers="loneliness" data-display="loneliness"></p></div>
+  <div class="q"><p>e) employ + (-s) → <input class="blank" data-answers="employs" data-display="employs"></p></div>
+  <div class="q"><p>f) cry + (-s) → <input class="blank" data-answers="cries" data-display="cries"></p></div>
+  <div class="q"><p>g) silly + (-ness) → <input class="blank" data-answers="silliness" data-display="silliness"></p></div>
+  <div class="q"><p>h) annoy + (-s) → <input class="blank" data-answers="annoys" data-display="annoys"></p></div>
+  <div class="q"><p>i) beauty + (-ful) → <input class="blank" data-answers="beautiful" data-display="beautiful"></p></div>
+  <div class="q"><p>j) pretty + (-ness) → <input class="blank" data-answers="prettiness" data-display="prettiness"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex3')">✔ 問題3をチェック</button><button type="button" onclick="showFill('ex3')">👁 答えを見る</button><button type="button" onclick="resetFill('ex3')">↺ やり直す</button></div>
+  <span class="score">問題3の点数： <span class="fill-score">—</span>/10</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card" id="ex4">
+  <h2>問題4 — 母音の音が違う単語を探そう</h2>
+  <p>各グループには、他の単語と<b>母音の音が違う</b>単語が1つあります。それを選んでください。</p>
+  <div class="quiz-mc">
+    <div class="q" data-correct="3"><p>a) become · sung · company · cold · flood</p><div class="opts"><button type="button">become</button><button type="button">sung</button><button type="button">company</button><button type="button">cold</button><button type="button">flood</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="1"><p>b) plate · treat · wait · weight · great</p><div class="opts"><button type="button">plate</button><button type="button">treat</button><button type="button">wait</button><button type="button">weight</button><button type="button">great</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>c) lose · used · choose · blouse · few</p><div class="opts"><button type="button">lose</button><button type="button">used</button><button type="button">choose</button><button type="button">blouse</button><button type="button">few</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>d) doubt · bough · ought · now · shout</p><div class="opts"><button type="button">doubt</button><button type="button">bough</button><button type="button">ought</button><button type="button">now</button><button type="button">shout</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>e) lost · post · toast · ghost · host</p><div class="opts"><button type="button">lost</button><button type="button">post</button><button type="button">toast</button><button type="button">ghost</button><button type="button">host</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>f) mist · missed · list · iced · kissed</p><div class="opts"><button type="button">mist</button><button type="button">missed</button><button type="button">list</button><button type="button">iced</button><button type="button">kissed</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>g) love · done · gone · sunk · won</p><div class="opts"><button type="button">love</button><button type="button">done</button><button type="button">gone</button><button type="button">sunk</button><button type="button">won</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="2"><p>h) bird · search · heart · word · church</p><div class="opts"><button type="button">bird</button><button type="button">search</button><button type="button">heart</button><button type="button">word</button><button type="button">church</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="0"><p>i) two · show · though · go · owe</p><div class="opts"><button type="button">two</button><button type="button">show</button><button type="button">though</button><button type="button">go</button><button type="button">owe</button></div><div class="fb"></div></div>
+    <div class="q" data-correct="3"><p>j) about · wonder · suppose · refer · colour</p><div class="opts"><button type="button">about</button><button type="button">wonder</button><button type="button">suppose</button><button type="button">refer</button><button type="button">colour</button></div><div class="fb"></div></div>
+  </div>
+  <span class="score">問題4の点数： <span class="score-num">0</span>/10</span>
+</div>
+
+<div class="card fill-sec" id="ex5">
+  <h2>問題5 — つづりの間違いを直そう（2）</h2>
+  <p>問題1と同じ要領で、各単語を正しいつづりで入力してください。すでに正しい単語はそのまま入力します。各行に2語ずつ、合計20か所です。</p>
+  <div class="q"><p>a) sincerly → <input class="blank" data-answers="sincerely" data-display="sincerely"> &nbsp;·&nbsp; dictionry → <input class="blank" data-answers="dictionary" data-display="dictionary"></p></div>
+  <div class="q"><p>b) different → <input class="blank" data-answers="different" data-display="different"> &nbsp;·&nbsp; intresting → <input class="blank" data-answers="interesting" data-display="interesting"></p></div>
+  <div class="q"><p>c) loverly → <input class="blank" data-answers="lovely" data-display="lovely"> &nbsp;·&nbsp; necessary → <input class="blank" data-answers="necessary" data-display="necessary"></p></div>
+  <div class="q"><p>d) writing → <input class="blank" data-answers="writing" data-display="writing"> &nbsp;·&nbsp; unninteresting → <input class="blank" data-answers="uninteresting" data-display="uninteresting"></p></div>
+  <div class="q"><p>e) pulover → <input class="blank" data-answers="pullover" data-display="pullover"> &nbsp;·&nbsp; definitly → <input class="blank" data-answers="definitely" data-display="definitely"></p></div>
+  <div class="q"><p>f) friend → <input class="blank" data-answers="friend" data-display="friend"> &nbsp;·&nbsp; responsable → <input class="blank" data-answers="responsible" data-display="responsible"></p></div>
+  <div class="q"><p>g) holliday → <input class="blank" data-answers="holiday" data-display="holiday"> &nbsp;·&nbsp; quantity → <input class="blank" data-answers="quantity" data-display="quantity"></p></div>
+  <div class="q"><p>h) likelihood → <input class="blank" data-answers="likelihood" data-display="likelihood"> &nbsp;·&nbsp; lugage → <input class="blank" data-answers="luggage" data-display="luggage"></p></div>
+  <div class="q"><p>i) impatient → <input class="blank" data-answers="impatient" data-display="impatient"> &nbsp;·&nbsp; studient → <input class="blank" data-answers="student" data-display="student"></p></div>
+  <div class="q"><p>j) finaly → <input class="blank" data-answers="finally" data-display="finally"> &nbsp;·&nbsp; pavement → <input class="blank" data-answers="pavement" data-display="pavement"></p></div>
+  <div class="toolbar"><button type="button" class="primary" onclick="checkFill('ex5')">✔ 問題5をチェック</button><button type="button" onclick="showFill('ex5')">👁 答えを見る</button><button type="button" onclick="resetFill('ex5')">↺ やり直す</button></div>
+  <span class="score">問題5の点数： <span class="fill-score">—</span>/20</span> <span class="fb fill-fb"></span>
+</div>
+
+<div class="card">
+  <h2>🏁 レッスンのまとめ</h2>
+  <p>このレッスンで採点される問題は合計 <b>70</b> 問です（問題1：20語 · 問題2：10 · 問題3：10 · 問題4：10 · 問題5：20語）。</p>
+  <div class="toolbar"><button type="button" onclick="location.reload()">↺ 最初からやり直す（ページを再読み込み）</button> <a href="../index.html"><button type="button">← 目次へ戻る</button></a></div>
+</div>
+</div>
+<script>
+var accent = 'en-GB';
+try{ var savedAccent = localStorage.getItem('en-accent'); if(savedAccent === 'en-GB' || savedAccent === 'en-US') accent = savedAccent; }catch(e){}
+function updateAccentButtons(){
+  document.querySelectorAll('.accent-btn').forEach(function(b){
+    b.classList.toggle('accent-on', b.getAttribute('data-accent') === accent);
+  });
+}
+function setAccent(a){
+  accent = a;
+  try{ localStorage.setItem('en-accent', a); }catch(e){}
+  updateAccentButtons();
+}
+var voiceChoice = {'en-GB':'','en-US':''};
+try{ voiceChoice['en-GB'] = localStorage.getItem('en-voice-en-GB') || ''; voiceChoice['en-US'] = localStorage.getItem('en-voice-en-US') || ''; }catch(e){}
+var VOICE_TXT = {def:'デフォルト（デバイスの最初の音声）', gb:'このデバイスにはイギリス英語の音声がありません', us:'このデバイスにはアメリカ英語の音声がありません'};
+function pickVoice(lang){
+  var vs = speechSynthesis.getVoices();
+  var inLang = vs.filter(function(x){ return x.lang && x.lang.indexOf(lang) === 0; });
+  var chosen = voiceChoice[lang];
+  if(chosen){ var cv = inLang.filter(function(x){ return x.voiceURI === chosen; })[0]; if(cv) return cv; }
+  var v = inLang[0];
+  if(!v) v = vs.filter(function(x){ return x.lang && x.lang.indexOf('en') === 0; })[0];
+  return v || null;
+}
+function populateVoiceSelects(){
+  ['en-GB','en-US'].forEach(function(acc){
+    var sel = document.getElementById('voice-' + acc);
+    if(!sel) return;
+    var list = speechSynthesis.getVoices().filter(function(x){ return x.lang && x.lang.indexOf(acc) === 0; });
+    var cur = voiceChoice[acc];
+    sel.innerHTML = '';
+    if(list.length === 0){ var oe = document.createElement('option'); oe.value = ''; oe.textContent = (acc === 'en-GB' ? VOICE_TXT.gb : VOICE_TXT.us); sel.appendChild(oe); }
+    else {
+      var o0 = document.createElement('option'); o0.value = ''; o0.textContent = VOICE_TXT.def; sel.appendChild(o0);
+      list.forEach(function(v){ var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; sel.appendChild(o); });
+    }
+    sel.value = (cur && list.some(function(v){ return v.voiceURI === cur; })) ? cur : '';
+  });
+}
+function onVoicePick(acc){
+  var sel = document.getElementById('voice-' + acc);
+  voiceChoice[acc] = sel ? sel.value : '';
+  try{ localStorage.setItem('en-voice-' + acc, voiceChoice[acc]); }catch(e){}
+  setAccent(acc);
+}
+function testVoice(acc){
+  setAccent(acc);
+  speak('Hello, this is an English lesson. How are you today?');
+}
+function speak(text){
+  try{
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = accent;
+    u.rate = parseFloat(document.getElementById('rate').value || '0.9');
+    var v = pickVoice(accent);
+    if(v) u.voice = v;
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+updateAccentButtons();
+document.querySelectorAll('.ex').forEach(function(box){
+  var en = box.querySelector('.en'), tts = box.querySelector('.tts');
+  if(!en || !tts) return;
+  var text = en.textContent.trim();
+  var b = document.createElement('button'); b.type='button'; b.textContent='🔊 聞く';
+  b.onclick = function(){ speak(text); };
+  tts.appendChild(b);
+});
+if('speechSynthesis' in window){ speechSynthesis.getVoices(); populateVoiceSelects(); speechSynthesis.onvoiceschanged = function(){ populateVoiceSelects(); }; }
+
+/* ---- Multiple choice: instant check + score ---- */
+document.querySelectorAll('.quiz-mc').forEach(function(quiz){
+  var card = quiz.closest('.card');
+  var scoreEl = card ? card.querySelector('.score-num') : null;
+  var done = 0, right = 0;
+  quiz.querySelectorAll('.q').forEach(function(q){
+    var correct = parseInt(q.dataset.correct, 10);
+    var fb = q.querySelector('.fb');
+    q.querySelectorAll('.opts button').forEach(function(btn, idx){
+      btn.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = '1'; done++;
+        var ok = (idx === correct);
+        if(ok) right++;
+        btn.classList.add(ok ? 'chosen-correct' : 'chosen-wrong');
+        q.querySelectorAll('.opts button').forEach(function(b, bi){
+          b.disabled = true;
+          if(bi === correct) b.classList.add('chosen-correct');
+        });
+        var rightText = q.querySelectorAll('.opts button')[correct].textContent;
+        fb.textContent = ok ? '✅ 正解！' : '❌ 不正解 — 正解は：' + rightText;
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if(scoreEl) scoreEl.textContent = right;
+        q.dataset.right = ok ? '1' : '0';
+      });
+    });
+  });
+});
+
+/* ---- Fill in the blank ---- */
+function norm(s){
+  return (s || '')
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/didn't/g, 'did not').replace(/wasn't/g, 'was not')
+    .replace(/weren't/g, 'were not').replace(/hadn't/g, 'had not')
+    .replace(/don't/g, 'do not')
+    .replace(/[-–—]/g, ' ')
+    .replace(/[.,;:!?'"()]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function acceptedList(inp){
+  return inp.dataset.answers.split('|').map(norm);
+}
+function checkFill(id){
+  var sec = document.getElementById(id);
+  var inputs = sec.querySelectorAll('input.blank');
+  var right = 0;
+  inputs.forEach(function(inp){
+    var ok = acceptedList(inp).indexOf(norm(inp.value)) !== -1;
+    inp.classList.remove('ok','no');
+    inp.classList.add(ok ? 'ok' : 'no');
+    if(ok) right++;
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){
+      var fb = q.querySelector('.fb');
+      if(fb){ fb.textContent = ok ? '✅ 正解！' : '❌ 一致しません —「答えを見る」を押して確認してください。'; fb.className = 'fb ' + (ok ? 'ok' : 'no'); }
+    }
+  });
+  sec.querySelector('.fill-score').textContent = right;
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = right === inputs.length ? '🎉 全部正解！' : '正解 ' + right + '/' + inputs.length + ' — 赤枠の欄を直してもう一度チェックしてください。'; fb.className = 'fb fill-fb ' + (right === inputs.length ? 'ok' : 'no'); }
+  return right;
+}
+function showFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = inp.dataset.display.replace(/ \/.*$/, '');
+    inp.classList.remove('no'); inp.classList.add('ok');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent = '解答：' + inp.dataset.display; fb.className = 'fb ok'; } }
+  });
+  sec.querySelector('.fill-score').textContent = sec.querySelectorAll('input.blank').length;
+}
+function resetFill(id){
+  var sec = document.getElementById(id);
+  sec.querySelectorAll('input.blank').forEach(function(inp){
+    inp.value = ''; inp.classList.remove('ok','no');
+    var q = inp.closest('.q');
+    if(q && id === 'ex6'){ var fb = q.querySelector('.fb'); if(fb){ fb.textContent=''; fb.className='fb'; } }
+  });
+  sec.querySelector('.fill-score').textContent = '—';
+  var fb = sec.querySelector('.fill-fb');
+  if(fb){ fb.textContent = ''; fb.className = 'fb fill-fb'; }
+}
+</script>
+
+
+
+<style>
+#dictBtn{position:fixed;right:14px;bottom:14px;z-index:9998;background:#14335c;color:#fff;border:2px solid #c9a227;border-radius:999px;padding:10px 16px;font-size:15px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+#dictBtn.on{background:#c9a227;color:#14335c}
+#dictHint{position:fixed;left:0;right:0;bottom:0;z-index:9997;background:#14335c;color:#ffe9a8;text-align:center;font-size:13px;padding:6px 10px;display:none}
+body.dict-on #dictHint{display:block}
+body.dict-on{cursor:help}
+#dictPop{position:fixed;left:50%;transform:translateX(-50%);bottom:52px;z-index:9999;width:min(520px,94vw);background:#fff;color:#1c2733;border:2px solid #14335c;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.4);padding:14px 16px;display:none;font-size:15px}
+#dictPop.show{display:block}
+#dictPop .dw{font-size:22px;font-weight:800;color:#14335c}
+#dictPop .dp{color:#666;font-style:italic;margin-left:8px;font-size:15px}
+#dictPop .dpos{color:#8a6d1a;font-weight:700;font-size:13px;text-transform:uppercase}
+#dictPop .dtr{font-size:18px;font-weight:700;margin:6px 0}
+#dictPop .ddef{color:#333;font-size:14px;line-height:1.45}
+#dictPop .dx{position:absolute;top:6px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#888}
+#dictPop .dspk{background:#14335c;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px;margin-left:8px}
+#dictPop .dlabel{font-size:12px;color:#888;margin-top:8px}
+</style>
+<button type="button" id="dictBtn" onclick="toggleDict()">🔍 単語検索</button>
+<div id="dictHint">単語検索モード ON — 文中の英単語をタップすると意味が表示されます。もう一度ボタンを押すと OFF になります。</div>
+<script>
+var PRON = {"about":"AH0 B AW1 T","advertisment":"AE0 D V ER1 T AH0 Z M AH0 N T","after":"AE1 F T ER0","again":"AH0 G EH1 N","all":"AO1 L","although":"AO2 L DH OW1","and":"AH0 N D","annoy":"AH0 N OY1","annoying":"AH0 N OY1 IH0 NG","apply":"AH0 P L AY1","applying":"AH0 P L AY1 IH0 NG","are":"AA1 R","beautiful":"B Y UW1 T AH0 F AH0 L","beauty":"B Y UW1 T IY0","become":"B IH0 K AH1 M","before":"B IH0 F AO1 R","bird":"B ER1 D","blouse":"B L AW1 S","bother":"B AA1 DH ER0","bothering":"B AA1 DH ER0 IH0 NG","bough":"B AW1","boy":"B OY1","boys":"B OY1 Z","children":"CH IH1 L D R AH0 N","choose":"CH UW1 Z","church":"CH ER1 CH","cold":"K OW1 L D","colour":"K AH1 L ER0","comb":"K OW1 M","come":"K AH1 M","company":"K AH1 M P AH0 N IY2","consonants":"K AA1 N S AH0 N AH0 N T S","cow":"K AW1","cry":"K R AY1","day":"D EY1","definitly":"D EH1 F AH0 N AH0 T L IY0","destroy":"D IH0 S T R OY1","destroyed":"D IH0 S T R OY1 D","destroying":"D IH0 S T R OY1 IH0 NG","dictionry":"D IH1 K SH AH0 N EH2 R IY0","did":"D IH1 D","different":"D IH1 F ER0 AH0 N T","differently":"D IH1 F R AH0 N T L IY0","done":"D AH1 N","donkies":"D AA1 NG K IY0 Z","door":"D AO1 R","doubling":"D AH1 B AH0 L IH0 NG","doubt":"D AW1 T","dumb":"D AH1 M","easy":"IY1 Z IY0","ed":"EH1 D","employ":"EH0 M P L OY1","ended":"EH1 N D AH0 D","ending":"EH1 N D IH0 NG","english":"IH1 NG G L IH0 SH","enough":"IH0 N AH1 F","er":"ER0","exam":"IH0 G Z AE1 M","except":"IH0 K S EH1 P T","family":"F AE1 M AH0 L IY0","fe":"F EY1","feign":"F EY1 N","felt":"F EH1 L T","few":"F Y UW1","finally":"F AY1 N AH0 L IY0","finaly":"F AY1 N AH0 L IY0","first":"F ER1 S T","fit":"F IH1 T","fitted":"F IH1 T AH0 D","flood":"F L AH1 D","flys":"F L AY1 Z","for":"F AO1 R","friend":"F R EH1 N D","furnichure":"F ER1 N IH0 CH ER0","garden":"G AA1 R D AH0 N","ghost":"G OW1 S T","go":"G OW1","gone":"G AO1 N","good":"G UH1 D","grammar":"G R AE1 M ER0","great":"G R EY1 T","happily":"HH AE1 P AH0 L IY0","happiness":"HH AE1 P IY0 N AH0 S","happy":"HH AE1 P IY0","hard":"HH AA1 R D","hate":"HH EY1 T","he":"HH IY1","heard":"HH ER1 D","heart":"HH AA1 R T","height":"HH AY1 T","helpful":"HH EH1 L P F AH0 L","helpfully":"HH EH1 L P F AH0 L IY0","himself":"HH IH0 M S EH1 L F","holliday":"HH AA1 L IH0 D EY2","home":"HH OW1 M","hopefuly":"HH OW1 P F AH0 L IY0","host":"HH OW1 S T","hotter":"HH AA1 T ER0","house":"HH AW1 S","hurryed":"HH ER1 IY0 D","iced":"AY1 S T","impatient":"IH2 M P EY1 SH AH0 N T","in":"IH0 N","ing":"IH1 NG","inshurance":"IH0 N SH UH1 R AH0 N S","intresting":"IH1 N T R AH0 S T IH0 NG","is":"IH1 Z","it":"IH1 T","joy":"JH OY1","joyful":"JH OY1 F AH0 L","key":"K IY1","kissed":"K IH1 S T","lake":"L EY1 K","letter":"L EH1 T ER0","likelihood":"L AY1 K L IY0 HH UH2 D","list":"L IH1 S T","lock":"L AA1 K","lonely":"L OW1 N L IY0","lose":"L UW1 Z","lost":"L AO1 S T","love":"L AH1 V","loverly":"L AH1 V ER0 L IY0","lugage":"L AH1 G IH0 JH","ly":"L AY1","map":"M AE1 P","missed":"M IH1 S T","mist":"M IH1 S T","my":"M AY1","necessary":"N EH1 S AH0 S EH2 R IY0","ness":"N EH1 S","new":"N UW1","niece":"N IY1 S","night":"N AY1 T","now":"N AW1","of":"AH1 V","off":"AO1 F","on":"AA1 N","one":"W AH1 N","ought":"AO1 T","owe":"OW1","pavement":"P EY1 V M AH0 N T","plan":"P L AE1 N","plate":"P L EY1 T","plough":"P L AW1","plumber":"P L AH1 M ER0","points":"P OY1 N T S","post":"P OW1 S T","pour":"P AO1 R","practice":"P R AE1 K T AH0 S","prefer":"P R AH0 F ER1","preferred":"P R AH0 F ER1 D","pretty":"P R IH1 T IY0","pronunciation":"P R OW0 N AH2 N S IY0 EY1 SH AH0 N","pulover":"P UH1 L OW2 V ER0","quantity":"K W AA1 N T AH0 T IY0","receive":"R AH0 S IY1 V","reciept":"R IH0 S IY1 T","refer":"R AH0 F ER1","regreted":"R IH0 G R EH1 T IH0 D","relief":"R IH0 L IY1 F","replied":"R IH0 P L AY1 D","replies":"R IH0 P L AY1 Z","reply":"R IH0 P L AY1","responsable":"R IH0 S P AA1 N S AH0 B AH0 L","rhyme":"R AY1 M","rough":"R AH1 F","search":"S ER1 CH","second":"S EH1 K AH0 N D","see":"S IY1","she":"SH IY1","shout":"SH AW1 T","show":"SH OW1","shy":"SH AY1","shyness":"SH AY1 N AH0 S","silly":"S IH1 L IY0","sincerly":"S IH0 N S IH1 R L IY0","spelled":"S P EH1 L D","spelling":"S P EH1 L IH0 NG","spies":"S P AY1 Z","spy":"S P AY1","store":"S T AO1 R","studient":"S T UW1 D AH0 N T","studing":"S T UW1 D IY0 IH0 NG","study":"S T AH1 D IY0","studying":"S T AH1 D IY0 IH0 NG","stuff":"S T AH1 F","succeeded":"S AH0 K S IY1 D IH0 D","summer":"S AH1 M ER0","sung":"S AH1 NG","sunk":"S AH1 NG K","supply":"S AH0 P L AY1","supplying":"S AH0 P L AY1 IH0 NG","suppose":"S AH0 P OW1 Z","swim":"S W IH1 M","swimming":"S W IH1 M IH0 NG","the":"DH AH0","their":"DH EH1 R","they":"DH EY1","thin":"TH IH1 N","thinner":"TH IH1 N ER0","this":"DH IH1 S","though":"DH OW1","throw":"TH R OW1","to":"T UW1","toast":"T OW1 S T","travel":"T R AE1 V AH0 L","traveller":"T R AE1 V AH0 L ER0","travelling":"T R AE1 V AH0 L IH0 NG","treat":"T R IY1 T","tried":"T R AY1 D","tries":"T R AY1 Z","try":"T R AY1","trying":"T R AY1 IH0 NG","two":"T UW1","unninteresting":"AH0 N IH1 N T R AH0 S T IH0 NG","used":"Y UW1 Z D","useful":"Y UW1 S F AH0 L","usefully":"Y UW1 S F AH0 L IY0","very":"V EH1 R IY0","wait":"W EY1 T","was":"W AA1 Z","watching":"W AA1 CH IH0 NG","week":"W IY1 K","weight":"W EY1 T","wellcome":"W EH1 L K AH2 M","were":"W ER1","what":"W AH1 T","when":"W EH1 N","white":"W AY1 T","whole":"HH OW1 L","won":"W AH1 N","wonder":"W AH1 N D ER0","wonderfull":"W AH1 N D ER0 F AH0 L","word":"W ER1 D","words":"W ER1 D Z","writing":"R AY1 T IH0 NG","yesterday":"Y EH1 S T ER0 D EY2","you":"Y UW1"};
+// Offline pronunciation: CMU-style ARPAbet -> IPA (Cambridge-style), accent-aware.
+var PRON_ONSETS = {};
+(function(){ var L = ['pr','br','tr','dr','kr','gr','fr','thr','shr','pl','bl','kl','gl','fl','sl','sp','st','sk','sm','sn','sf','spr','str','skr','skw','spl','py','by','ty','dy','ky','gy','fy','vy','sy','zy','my','ny','ly','hy','tw','dw','kw','gw','sw','thw'];
+  for(var i=0;i<L.length;i++) PRON_ONSETS[L[i]] = 1; })();
+var PRON_UK = {tomato:'/tə.ˈmɑː.təʊ/',banana:'/bə.ˈnɑː.nə/',close:'/kləʊz/',minute:'/ˈmɪn.ɪt/',tomorrow:'/təˈmɒr.əʊ/',article:'/ˈɑː.tɪ.kəl/',particle:'/ˈpɑː.tɪ.kəl/',chocolate:'/ˈtʃɒk.lət/',restaurant:'/ˈres.trɒnt/',really:'/ˈrɪə.li/',government:'/ˈɡʌv.əm.ənt/',either:'/ˈaɪ.ðər/',neither:'/ˈnaɪ.ðər/',schedule:'/ˈʃed.juːl/',vase:'/vɑːz/',herb:'/hɜːb/',leisure:'/ˈleʒ.ər/',patriot:'/ˈpæt.ri.ət/',vitamin:'/ˈvɪt.ə.mɪn/',zebra:'/ˈzeb.rə/',privacy:'/ˈprɪv.ə.si/',dynasty:'/ˈdɪn.ə.sti/',ate:'/et/',shone:'/ʃɒn/',lever:'/ˈliː.vər/',futile:'/ˈfjuː.taɪl/',docile:'/ˈdəʊ.saɪl/',plait:'/plæt/',buoy:'/bɔɪ/',castle:'/ˈkɑː.səl/',often:'/ˈɒf.ən/',soften:'/ˈsɒf.ən/',listen:'/ˈlɪs.ən/',fasten:'/ˈfɑː.sən/',gourmet:'/ˈɡʊə.meɪ/',valet:'/ˈvæl.eɪ/',ballet:'/ˈbæl.eɪ/',beret:'/ˈber.eɪ/',crochet:'/ˈkrəʊ.ʃeɪ/',debris:'/ˈdeb.riː/',chamois:'/ˈʃæm.wɑː/',student:'/ˈstjuː.dənt/',answer:'/ˈɑːn.sə/',because:'/bɪˈkəz/',coffee:'/ˈkɒf.i/',always:'/ˈɔːl.weɪz/',sometimes:'/ˈsʌm.taɪmz/',ask:'/ɑːsk/',fast:'/fɑːst/',after:'/ˈɑːf.tə/',class:'/klɑːs/',glass:'/ɡlɑːs/',grass:'/ɡrɑːs/',pass:'/pɑːs/',path:'/pɑːθ/',bath:'/bɑːθ/',dance:'/dɑːns/',chance:'/tʃɑːns/',example:'/ɪɡˈzɑːm.pəl/',aunt:'/ɑːnt/',laugh:'/lɑːf/',calm:'/kɑːm/',palm:'/pɑːm/',half:'/hɑːf/',rather:'/ˈrɑː.ðə/',father:'/ˈfɑː.ðə/'};
+var PRON_US = {often:'/ˈɑːf.ən/',autumn:'/ˈɑː.t̬əm/',water:'/ˈwɑː.t̬ɚ/',coffee:'/ˈkɑː.fi/',because:'/bɪˈkɑːz/',forest:'/ˈfɔːr.əst/',always:'/ˈɑːl.weɪz/',tomorrow:'/təˈmɔːr.oʊ/',minute:'/ˈmɪn.ət/'};
+var PRON_C = {B:'b',CH:'tʃ',D:'d',DH:'ð',F:'f',G:'ɡ',HH:'h',JH:'dʒ',K:'k',L:'l',M:'m',N:'n',NG:'ŋ',P:'p',R:'r',S:'s',SH:'ʃ',T:'t',TH:'θ',V:'v',W:'w',Y:'j',Z:'z',ZH:'ʒ'};
+function pronIPA(arpabet, accent){
+  var uk = accent !== 'en-US';
+  var toks = arpabet.split(/\s+/), syls = [], i, j;
+  function vow(t){ return /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)\d$/.test(t); }
+  var vidx = [];
+  for(i=0;i<toks.length;i++) if(vow(toks[i])) vidx.push(i);
+  if(!vidx.length) return '';
+  var parts = [];
+  for(var k=0;k<vidx.length;k++){
+    var vi = vidx[k], prevEnd = k===0 ? 0 : vidx[k-1]+1;
+    var before = toks.slice(prevEnd, vi), onset = [], codaPrev = [];
+    if(k===0){ onset = before; }
+    else {
+      var joined = before.map(function(t){ return PRON_C[t] || ''; }).join('');
+      var take = 0;
+      for(var len = Math.min(3, before.length); len >= 1; len--){
+        var cand = before.slice(before.length-len).map(function(t){ return PRON_C[t] || ''; }).join('');
+        if(PRON_ONSETS[cand] || len === 1){ take = len; break; }
+      }
+      onset = before.slice(before.length-take); codaPrev = before.slice(0, before.length-take);
+    }
+    if(codaPrev.length && parts.length){
+      for(j=0;j<codaPrev.length;j++) parts[parts.length-1].tail.push(codaPrev[j]);
+    }
+    parts.push({ onset: onset, vow: toks[vi], tail: [] });
+  }
+  var lastV = vidx[vidx.length-1];
+  parts[parts.length-1].tail = toks.slice(lastV+1);
+  // stress smoothing: downgrade full vowels in unstressed syllables (not word-final open)
+  for(k=0;k<parts.length;k++){
+    var pv = parts[k].vow, pb = pv.slice(0,2), pst = pv.charAt(2);
+    var nextStartsVowel = (k+1 < parts.length) && parts[k+1].onset.length === 0;
+    var hasCoda = parts[k].tail.length > 0;
+    if(pst === '0' && k+1 < parts.length && (hasCoda || !nextStartsVowel)){
+      if(pb === 'AH'){ /* already schwa */ }
+      else if(pb === 'AO' && !(k === parts.length-1)) parts[k].vow = 'AH0';
+      else if(pb === 'AE' && k > 0) parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'T') parts[k].vow = 'AH0';
+      else if(pb === 'UW' && parts[k].onset.join(' ') === 'D') parts[k].vow = 'AH0';
+    }
+    if(pst === '0' && pb === 'AO' && k === parts.length-1 && !hasCoda) parts[k].vow = 'AO0';
+  }
+  function vowIPA(t, nextTok, uk){
+    var base = t.slice(0,2), stress = t.charAt(2);
+    var rhoticNext = _rInTail;
+    switch(base){
+      case 'AA': if(uk && _aaShort) return 'ɒ'; return 'ɑː';
+      case 'AE': return 'æ';
+      case 'AH': return stress === '0' ? 'ə' : 'ʌ';
+      case 'AO': if(uk && nextTok === 'F' && stress !== '0') return 'ɒ'; return uk ? 'ɔː' : (stress === '0' ? 'ɑː' : 'ɔː');
+      case 'AW': return (uk && rhoticNext) ? 'aʊə' : 'aʊ';
+      case 'AY': return (uk && rhoticNext) ? 'aɪə' : 'aɪ';
+      case 'EH': return (uk && rhoticNext) ? 'eə' : 'e';
+      case 'ER': if(stress === '0') return uk ? 'ə' : 'ɚ'; return uk ? 'ɜː' : 'ɝː';
+      case 'EY': return 'eɪ';
+      case 'IH': return (uk && rhoticNext) ? 'ɪə' : 'ɪ';
+      case 'IY': if(rhoticNext) return uk ? 'ɪə' : (stress === '0' ? 'i' : 'ɪ'); return stress === '0' ? 'i' : 'iː';
+      case 'OW': return uk ? 'əʊ' : 'oʊ';
+      case 'OY': return 'ɔɪ';
+      case 'UH': return (uk && rhoticNext) ? 'ʊə' : 'ʊ';
+      case 'UW': if(rhoticNext) return uk ? 'ʊə' : 'ʊ'; return 'uː';
+    }
+    return '';
+  }
+  function seqIPA(list, uk, isTail, nextVowBase){
+    var out = '';
+    for(var m=0;m<list.length;m++){
+      var t = list[m];
+      if(t === 'R'){
+        if(uk){
+          if(!isTail) out += 'r';
+          // tail R in UK: dropped unless next syllable starts with a vowel sound (linking) - keep dropped
+        } else out += 'r';
+      } else out += PRON_C[t] || '';
+    }
+    return out;
+  }
+  var res = '', nSyl = parts.length;
+  var hasPrimary = parts.some(function(p){ return p.vow.charAt(2) === '1'; });
+  var primaryIdx = -1;
+  for(k=0;k<parts.length;k++) if(parts[k].vow.charAt(2) === '1') primaryIdx = k;
+  for(k=0;k<parts.length;k++){
+    var p = parts[k], stress = p.vow.charAt(2);
+    var mark = '';
+    if(stress === '1') mark = (nSyl > 1) ? 'ˈ' : '';
+    else if(stress === '2' && nSyl > 1 && k !== primaryIdx - 1 && !(k === nSyl-1) && !(primaryIdx >= 0 && primaryIdx < k)) mark = 'ˌ';
+    var nextTok = p.tail.length ? p.tail[0] : (k+1 < parts.length && parts[k+1].onset.length ? parts[k+1].onset[0] : null);
+    var _rInTail = p.tail[0] === 'R';
+    var _aaShort = false;
+    if(p.vow.slice(0,2) === 'AA' && uk){
+      if(p.tail.length && p.tail[0] !== 'R') _aaShort = true;
+      else if(!p.tail.length && k < parts.length-1) _aaShort = true;
+    }
+    var vv = vowIPA(p.vow, nextTok, uk);
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') vv = 'u.ə';
+    if(p.vow === 'AH0' && k > 0 && parts[k-1].vow.slice(0,2) === 'UW') bridge = true;
+    if(p.vow === 'AH0' && (p.tail.join(' ') === 'T D' || p.tail.join(' ') === 'T' || p.tail.join(' ') === 'D')) vv = 'ɪ';
+    var s = mark + seqIPA(p.onset, uk, false) + vv + seqIPA(p.tail, uk, true);
+    res += (k ? '.' : '') + s;
+  }
+  res = res.replace(/uː\.u\.ə/g, 'u.ə').replace(/uː\.ə/g, 'u.ə').replace(/uːə/g, 'uə');
+
+  return '/' + res + '/';
+}
+function dictIPA(word){
+  if(typeof PRON === 'undefined') return '';
+  var p = PRON[word];
+  if(!p) return '';
+  var acc = (typeof accent !== 'undefined' && accent) ? accent : (localStorage.getItem('en-accent') || 'en-GB');
+  if(acc !== 'en-US' && PRON_UK[word]) return PRON_UK[word];
+  if(acc === 'en-US' && PRON_US[word]) return PRON_US[word];
+  return pronIPA(p, acc);
+}
+
+</script>
+<div id="dictPop"><button type="button" class="dx" onclick="closeDict()">&times;</button><div id="dictBody"></div></div>
+<script>
+var dictOn = localStorage.getItem('en-dict') === '1';
+var dictCache = {};
+try{ dictCache = JSON.parse(localStorage.getItem('dict-cache') || '{}'); }catch(e){ dictCache = {}; }
+var DICT_TL = 'ja', DICT_MM = 'ja';
+var LBL = {loading:'検索中…', listen:'発音', trlabel:'日本語の意味', deflabel:'英語の定義', notfound:'辞書に見つかりませんでした。原形（-s / -ed / -ing を外した形）で試してください。'};
+function applyDictState(){
+  document.body.classList.toggle('dict-on', dictOn);
+  document.getElementById('dictBtn').classList.toggle('on', dictOn);
+  if(!dictOn) closeDict();
+}
+function toggleDict(){ dictOn = !dictOn; localStorage.setItem('en-dict', dictOn ? '1' : '0'); applyDictState(); }
+function closeDict(){ document.getElementById('dictPop').classList.remove('show'); }
+function wordAtPoint(x, y){
+  var node = null, off = 0;
+  if(document.caretRangeFromPoint){ var r = document.caretRangeFromPoint(x, y); if(r){ node = r.startContainer; off = r.startOffset; } }
+  else if(document.caretPositionFromPoint){ var p = document.caretPositionFromPoint(x, y); if(p){ node = p.offsetNode; off = p.offset; } }
+  if(!node || node.nodeType !== 3) return null;
+  var text = node.textContent, re = /[A-Za-z][A-Za-z'’-]{1,}/g, m;
+  while((m = re.exec(text)) !== null){ if(off >= m.index && off <= m.index + m[0].length) return m[0]; }
+  return null;
+}
+document.addEventListener('click', function(ev){
+  if(!dictOn) return;
+  if(ev.target.closest('#dictPop, #dictBtn, input, select, textarea, button, a, label')) return;
+  var w = null;
+  var sel = window.getSelection ? window.getSelection().toString().trim() : '';
+  if(sel && /^[A-Za-z][A-Za-z'’-]*$/.test(sel)) w = sel;
+  if(!w) w = wordAtPoint(ev.clientX, ev.clientY);
+  if(w && w.length > 1) lookupWord(w);
+});
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function lookupWord(raw){
+  var word = raw.toLowerCase().replace(/’/g, "'");
+  var pop = document.getElementById('dictPop'), body = document.getElementById('dictBody');
+  pop.classList.add('show');
+  body.innerHTML = '<span class="dw">' + esc(word) + '</span> <span class="dp">' + LBL.loading + '</span>';
+  var cacheKey = 'v2:' + DICT_TL + ':' + word;
+  if(dictCache[cacheKey]){ renderDict(word, dictCache[cacheKey]); return; }
+  var data = {ipa:'', pos:'', def:'', tr:''};
+  var p1 = fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){
+      if(!j || !j[0]) return;
+      var e = j[0];
+      if(e.meanings && e.meanings[0]){ data.pos = e.meanings[0].partOfSpeech || ''; var d = e.meanings[0].definitions && e.meanings[0].definitions[0]; data.def = d ? d.definition : ''; }
+    }).catch(function(){});
+  var p2 = fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=' + DICT_TL + '&dt=t&q=' + encodeURIComponent(word))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j[0] && j[0][0]) data.tr = j[0][0][0]; })
+    .catch(function(){})
+    .then(function(){
+      if(data.tr) return;
+      return fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(word) + '&langpair=en|' + DICT_MM)
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){ if(j && j.responseData) data.tr = j.responseData.translatedText || ''; })
+        .catch(function(){});
+    });
+  Promise.all([p1, p2]).then(function(){
+    dictCache[cacheKey] = data;
+    try{ localStorage.setItem('dict-cache', JSON.stringify(dictCache)); }catch(e){}
+    renderDict(word, data);
+  });
+}
+function renderDict(word, d){
+  var body = document.getElementById('dictBody');
+  var h = '<span class="dw">' + esc(word) + '</span>';
+  var ipa = dictIPA(word); if(ipa) h += '<span class="dp">' + esc(ipa) + '</span>';
+  h += '<button type="button" class="dspk" id="dictSpeak">🔊 ' + LBL.listen + '</button>';
+  if(d.tr) h += '<div class="dlabel">' + LBL.trlabel + '</div><div class="dtr">' + esc(d.tr) + '</div>';
+  if(d.def) h += '<div class="dlabel">' + LBL.deflabel + '</div><div>' + (d.pos ? '<span class="dpos">' + esc(d.pos) + '</span> ' : '') + '<span class="ddef">' + esc(d.def) + '</span></div>';
+  if(!d.tr && !d.def) h += '<div class="ddef" style="margin-top:8px">' + LBL.notfound + '</div>';
+  body.innerHTML = h;
+  var sb = document.getElementById('dictSpeak');
+  if(sb) sb.addEventListener('click', function(){ speak(word); });
+}
+applyDictState();
+</script>
+
+</body>
+</html>
